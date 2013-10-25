@@ -1,0 +1,135 @@
+#!/bin/sh
+
+# Run integration tests (on the installed package). This happens on unshared
+# tmpfses, so does not interfere with installed clusters.
+#
+# (C) 2005-2012 Martin Pitt <mpitt@debian.org>
+# (C) 2012-2013 Christoph Berg <myon@debian.org>
+#
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+
+set -e
+
+# call ourselves through unshare in a way that keeps normal stdin
+if [ -z "$UNSHARED" ]; then
+    UNSHARED=1 exec unshare -uimn -- "$0" "$@"
+fi
+
+# unshared program starts here
+set -e
+
+# default config
+TESTSDIR="$(dirname $0)/t"
+: ${PG_UMASKS="022 077"}
+
+help ()
+{
+    echo "postgresql-common testsuite"
+    echo "Syntax: $0 [options] [test ...]"
+    echo "    -u 'umask ...'  list of umasks to run testsuite with [default: 022 077]"
+    exit ${1:-0}
+}
+
+# option parsing
+while getopts "hu:" opt ; do
+    case $opt in
+        h) help ;;
+        u) PG_UMASKS="$OPTARG" ;;
+        *) help 1 ;;
+    esac
+done
+# shift away args
+shift $(($OPTIND - 1))
+
+if [ "$(id -u)" != 0 ]; then
+    echo "Error: this test suite needs to be run as root" >&2
+    exit 1
+fi
+
+# install locales; this happens differently on Debian and Ubuntu
+if [ -e /etc/locale.gen ]; then
+    # Debian
+    while read locale ; do
+	if ! grep -q "^$locale\$" /etc/locale.gen ; then
+	    echo "$locale" >> /etc/locale.gen
+	    run=1
+	fi
+    done <<-EOF
+	en_US.UTF-8 UTF-8
+	ru_RU ISO-8859-5
+	ru_RU.UTF-8 UTF-8
+EOF
+    [ "$run" ] && locale-gen
+else
+    # Ubuntu
+    # locale-gen will skip existing locales, so just call it for all here
+    locale-gen en_US.UTF-8 ru_RU ru_RU.UTF-8
+fi
+
+# stop currently running clusters
+if [ -x "/etc/init.d/postgresql" ]; then
+    /etc/init.d/postgresql stop
+fi
+
+# let everything happen in overlay tmpfses to avoid interfering with already
+# existing clusters; this also speeds up testing
+created_dirs=""
+for d in /etc/postgresql /var/lib/postgresql /var/log/postgresql /var/run/postgresql; do
+    if ! [ -d $d ]; then
+        created_dirs="$created_dirs $d"
+        mkdir -p $d
+    fi
+    mount -n -t tmpfs -o mode=755 tmpfs $d
+done
+# clean up created directories after us
+if [ -n "$created_dirs" ]; then
+    trap "umount $created_dirs; rmdir --ignore-fail-on-non-empty -p $created_dirs" 0 HUP INT QUIT ILL ABRT PIPE TERM
+fi
+chown root:postgres /var/log/postgresql
+chmod 1775 /var/log/postgresql
+chown postgres:postgres /var/run/postgresql
+chmod 2775 /var/run/postgresql
+
+# reset core limit for pg_ctl tests
+ulimit -S -c 0
+
+# start localhost interface
+ifconfig lo up
+
+# set environment
+unset TMPDIR
+unset LC_ALL
+export LANG=en_US.utf8
+
+# set variables which cause taint check errors
+export IFS=' '
+export CDPATH=/usr
+export ENV=/nonexisting
+export BASH_ENV=/nonexisting
+
+if [ $# -eq 0 ]; then
+    set -- $TESTSDIR/*.t
+fi
+
+for U in $PG_UMASKS; do
+    case $U in
+        022) TYPE="default" ;;
+        077) TYPE="tight" ;;
+        *) TYPE="custom" ;;
+    esac
+
+    echo "====== Running all tests with $TYPE umask $U ======="
+    umask $U
+    for T; do
+        echo "=== Running test `basename $T`... ==="
+        perl $T
+    done
+done

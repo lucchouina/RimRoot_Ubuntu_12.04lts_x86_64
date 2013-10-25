@@ -1,0 +1,17 @@
+abee9610a1546df3e70bad710e27728f  usr/lib/python-tz/test-pytz.py
+264fd0583dd52de028a193c78e8f2fc0  usr/share/doc/python-tz/CHANGES.txt
+c8a4c63cad3288d486d15fdd705cdaf0  usr/share/doc/python-tz/PKG-INFO.gz
+7c98f476344e6209c801ec3f2a89d1ed  usr/share/doc/python-tz/README.txt.gz
+bcd947c9b35003460ca8a4ffb2ecac91  usr/share/doc/python-tz/changelog.Debian.gz
+f8abaf6c7166f648518eb606cfe0fbde  usr/share/doc/python-tz/copyright
+709d8e43164a463f7906bfc190dd64ba  usr/share/pyshared/pytz-2011k.egg-info/PKG-INFO
+4ace049952bae0df45ccd715245ca9ef  usr/share/pyshared/pytz-2011k.egg-info/SOURCES.txt
+68b329da9893e34099c7d8ad5cb9c940  usr/share/pyshared/pytz-2011k.egg-info/dependency_links.txt
+ed76ffe63253549d6de9af58ab1d5c53  usr/share/pyshared/pytz-2011k.egg-info/top_level.txt
+68b329da9893e34099c7d8ad5cb9c940  usr/share/pyshared/pytz-2011k.egg-info/zip-safe
+6c38d7b34bb2b5da8260b917520ba95d  usr/share/pyshared/pytz/__init__.py
+3098f22760c2b7c22d00b7c716a1a1e2  usr/share/pyshared/pytz/exceptions.py
+2371e732444a1f7fba22b26211d791c9  usr/share/pyshared/pytz/reference.py
+a741b4408254f02406d61b80ee2dff87  usr/share/pyshared/pytz/tzfile.py
+f7d99a72930e0c14e85786f892ae8f55  usr/share/pyshared/pytz/tzinfo.py
+6432b3f1c917a5522a5801e86477faae  usr/share/python/runtime.d/python-tz.rtupdate

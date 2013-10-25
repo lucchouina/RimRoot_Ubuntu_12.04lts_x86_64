@@ -1,0 +1,12 @@
+/.
+/lib
+/lib/libgssglue.so.1.0.0
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libgssglue1
+/usr/share/doc/libgssglue1/changelog.Debian.gz
+/usr/share/doc/libgssglue1/copyright
+/etc
+/etc/gssapi_mech.conf
+/lib/libgssglue.so.1

@@ -1,0 +1,62 @@
+open-iscsi for Debian
+-----------------------------------
+
+The open-iscsi package contains the userspace portion the Open iSCSI
+project. It depends on iSCSI modules which are already present in
+current (>= 2.6.18) kernels.
+
+WARNING!  Please unmount iSCSI-backed filesystems before upgrading the
+open-iscsi package, as they are not automatically unmounted and the
+restart of iscsid will break the iscsi block devices and prevent any
+outstanding I/O from completing (and require a remount before the
+filesystems will work again).
+
+Automatic login and mount
+-----------------------------------
+
+If you want to automatically connect to all discovered targets, change
+the following line:
+node.startup = manual
+to:
+node.startup = automatic
+
+If you want to automatically mount filesystems on iSCSI volumes,
+change node.startup to automatic as above, and also add _netdev to
+the mount options (in /etc/fstab) for the filesystems you would like
+to mount automatically when open-iscsi is started.
+
+Root on iSCSI
+-----------------------------------
+
+The Debian open-iscsi package now supports root filesystem on iSCSI.  Support
+for this is controlled by the existence of the /etc/iscsi/iscsi.initramfs file.
+There are two ways to include iSCSI boot support in your initramfs:
+
+1) Touch /etc/iscsi/iscsi.initramfs and provide options on the command line.
+   This provides flexibility, but if passwords are used, is not very secure.
+   Available boot line options:
+   	iscsi_initiator, iscsi_target_name, iscsi_target_ip,
+	iscsi_target_port, iscsi_target_group, iscsi_username,
+	iscsi_password, iscsi_in_username, iscsi_in_password
+   See iscsistart --help for a description of each option
+
+2) Provide iSCSI option in /etc/iscsi/iscsi.initramfs.
+   Available options:
+   	ISCSI_INITIATOR, ISCSI_TARGET_NAME, ISCSI_TARGET_IP,
+	ISCSI_TARGET_PORT, ISCSI_TARGET_GROUP, ISCSI_USERNAME
+	ISCSI_PASSWORD, ISCSI_IN_USERNAME, ISCSI_IN_PASSWORD
+
+   Example Syntax:
+
+   ISCSI_TARGET_NAME=iqn.2008-01.com.example:storage.foo
+   ISCSI_TARGET_IP=192.168.1.1
+
+   Remember to set proper permissions if username/passwords are used.
+
+If both facilities are used, command line options overwrite iscsi.initramfs
+options.  Also remember that iSCSI requires a working network device, so
+you'll need to get networking started via an ip= boot option (ex. ip=dhcp).
+You also won't want to restart the device during boot, so set it to manual
+mode in /etc/networking/interfaces.  Leave BOOT=local set in
+/etc/initramfs-tools/initramfs.conf and provide a root=/dev/sd* device as
+the iSCSI disk will look like a local disk.

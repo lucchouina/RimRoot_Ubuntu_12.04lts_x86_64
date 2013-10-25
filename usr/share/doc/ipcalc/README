@@ -1,0 +1,66 @@
+ipcalc
+------
+
+Homepage: http://jodies.de/ipcalc
+
+Author: Krischan Jodies <krischan@jodies.de>
+
+Contributors:
+  Hermann J. Beckers <hj.beckers@kreis-steinfurt.de>
+  Kevin Ivory <ki@sernet.de>
+  Frank Quotschalla <gutschy@netzwerkinfo.de>
+  Sven Anderson <sven@anderson.de>
+  Scott Davis <sdavis@austin-texas.net>
+  Denis A. Hainsworth <denis@ans.net>
+
+This README by: Martin F. Krafft <madduck@madduck.net>
+
+
+
+
+WHAT IS IT?
+===========
+
+<from the homepage>:
+ipcalc takes an IP address and netmask and calculates the resulting
+broadcast, network, Cisco wildcard mask, and host range. By giving a
+second netmask, you can design sub- and supernetworks. It is also
+intended to be a teaching tool and presents the results as
+easy-to-understand binary values.
+
+Enter your netmask(s) in CIDR notation (/25) or dotted decimals
+(255.255.255.0).  Inverse netmasks are recognized.  If you omit the
+netmask ipcalc uses the default netmask for the class of your network.
+Look at the space between the bits of the addresses: The bits before
+it are the network part of the address, the bits after it are the host
+part. You can see two simple facts: In a network address all host bits
+are zero, in a broadcast address they are all set.
+
+The class of your network is determined by its first bits.
+
+If your network is a private internet according to RFC 1918 this is
+remarked.  When displaying subnets the new bits in the network part of
+the netmask are marked in a different color The wildcard is the
+inverse netmask as used for access control lists in Cisco routers.
+
+Do you want to split your network into subnets? Enter the address and
+netmask of your original network and play with the second netmask
+until the result matches your needs.
+
+You can have all this fun at your shell prompt. Originally ipcalc was
+not intended for creating HTML and still works happily in
+/usr/bin/ :-)
+
+
+
+DOCUMENTATION
+=============
+
+There is none, and you shall find that none is necessary. The scripts
+provide verbose usage output when run without the correct arguments,
+so just go ahead and play with them.
+
+
+
+Keep the good times rollin'
+Martin

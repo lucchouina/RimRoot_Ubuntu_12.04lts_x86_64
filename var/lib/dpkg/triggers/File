@@ -1,0 +1,16 @@
+/etc/init ureadahead
+/etc/init.d ureadahead
+/usr/share/info install-info
+/etc/lsb-release plymouth-theme-ubuntu-text
+/etc/ufw/applications.d ufw
+/usr/lib/x86_64-linux-gnu/gio/modules libglib2.0-0
+/usr/lib/gio/modules libglib2.0-0
+/usr/share/glib-2.0/schemas libglib2.0-0
+/usr/man man-db
+/usr/share/man man-db
+/usr/local/man man-db
+/usr/local/share/man man-db
+/usr/X11R6/man man-db
+/opt/man man-db
+/usr/share/myspell/dicts postgresql-common
+/usr/share/hunspell postgresql-common

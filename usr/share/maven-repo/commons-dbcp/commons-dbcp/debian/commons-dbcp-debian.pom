@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>commons-dbcp</groupId>
+	<artifactId>commons-dbcp</artifactId>
+	<version>debian</version>
+	<packaging>jar</packaging>
+	
+	<name>Commons DBCP</name>
+	<inceptionYear>2001</inceptionYear>
+	<description>Commons Database Connection Pooling</description>
+	<url>http://commons.apache.org/dbcp/</url>
+	<issueManagement>
+		<system>jira</system>
+		<url>http://issues.apache.org/jira/browse/DBCP</url>
+	</issueManagement>
+	<scm>
+		<connection>scm:svn:http://svn.apache.org/repos/asf/commons/proper/dbcp/trunk</connection>
+		<developerConnection>scm:svn:https://svn.apache.org/repos/asf/commons/proper/dbcp/trunk</developerConnection>
+		<url>http://svn.apache.org/viewvc/commons/proper/dbcp/trunk</url>
+	</scm>
+	<developers>
+		<developer>
+			<name>Morgan Delagrange</name>
+			<id>morgand</id>
+			<email>
+			</email>
+			<organization>
+			</organization>
+		</developer>
+		<developer>
+			<name>Geir Magnusson</name>
+			<id>geirm</id>
+			<email>
+			</email>
+			<organization>
+			</organization>
+		</developer>
+		<developer>
+			<name>Craig McClanahan</name>
+			<id>craigmcc</id>
+			<email>
+			</email>
+			<organization>
+			</organization>
+		</developer>
+		<developer>
+			<name>John McNally</name>
+			<id>jmcnally</id>
+			<email>
+			</email>
+			<organization>
+			</organization>
+		</developer>
+		<developer>
+			<name>Martin Poeschl</name>
+			<id>mpoeschl</id>
+			<email>mpoeschl@marmot.at</email>
+			<organization>tucana.at</organization>
+		</developer>
+		<developer>
+			<name>Rodney Waldhoff</name>
+			<id>rwaldhoff</id>
+			<email>
+			</email>
+			<organization>
+			</organization>
+		</developer>
+		<developer>
+			<name>David Weinrich</name>
+			<id>dweinr1</id>
+			<email>
+			</email>
+			<organization>
+			</organization>
+		</developer>
+		<developer>
+			<name>Dirk Verbeeck</name>
+			<id>dirkv</id>
+			<email>
+			</email>
+			<organization>
+			</organization>
+		</developer>
+		<developer>
+			<name>Yoav Shapira</name>
+			<id>yoavs</id>
+			<email>yoavs@apache.org</email>
+			<organization>Apache Software Foundation</organization>
+		</developer>
+		<developer>
+			<name>Phil Steitz</name>
+			<id>psteitz</id>
+			<email>
+			</email>
+			<organization>
+			</organization>
+		</developer>
+		<developer>
+			<name>J?rg Schaible</name>
+			<id>joehni</id>
+			<email>joerg.schaible@gmx.de</email>
+			<organization>
+			</organization>
+			<timezone>+1</timezone>
+		</developer>
+		<developer>
+			<name>Mark Thomas</name>
+			<id>markt</id>
+			<email>markt@apache.org</email>
+			<organization>Apache Software Foundation</organization>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>Todd Carmichael</name>
+			<email>toddc@concur.com</email>
+		</contributor>
+		<contributor>
+			<name>Wayne Woodfield</name>
+		</contributor>
+		<contributor>
+			<name>Dain Sundstrom</name>
+			<email>dain@apache.org</email>
+		</contributor>
+		<contributor>
+			<name>Philippe Mouawad</name>
+		</contributor>
+	</contributors>
+	<dependencies>
+		<dependency>
+			<groupId>commons-pool</groupId>
+			<artifactId>commons-pool</artifactId>
+			<version>debian</version>
+		</dependency>
+		<dependency>
+			<groupId>glassfish</groupId>
+			<artifactId>javaee</artifactId>
+			<version>debian</version>
+			<optional>true</optional>
+		</dependency>
+	</dependencies>
+	<properties>
+		<maven.compile.source>1.6</maven.compile.source>
+		<maven.compile.target>1.6</maven.compile.target>
+		<commons.componentid>dbcp</commons.componentid>
+		<commons.release.version>1.4</commons.release.version>
+		<commons.jira.id>DBCP</commons.jira.id>
+		<commons.jira.pid>12310469</commons.jira.pid>
+		<debian.originalVersion>1.4</debian.originalVersion>
+		<debian.package>libcommons-dbcp-java</debian.package>
+	</properties>
+</project>

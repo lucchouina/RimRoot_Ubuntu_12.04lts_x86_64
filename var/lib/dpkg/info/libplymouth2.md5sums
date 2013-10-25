@@ -1,0 +1,7 @@
+ea78a112414e298585e60bb084a921e3  lib/libply-boot-client.so.2.0.0
+121d5f49579c1f68f7893c1eed72c37a  lib/libply-splash-core.so.2.0.0
+cdb7d4fa533b62ffd28cfcf4665bcc92  lib/libply-splash-graphics.so.2.0.0
+f234f4ff032fe8361cb408cfebefe059  lib/libply.so.2.0.0
+673e9d355d180f73d8926d9859886cd6  usr/share/apport/package-hooks/source_plymouth.py
+c446a094dc9fd9cada1566c594d2c837  usr/share/doc/libplymouth2/changelog.Debian.gz
+ca8eb4d38386aa5de79023eb309ee8e9  usr/share/doc/libplymouth2/copyright

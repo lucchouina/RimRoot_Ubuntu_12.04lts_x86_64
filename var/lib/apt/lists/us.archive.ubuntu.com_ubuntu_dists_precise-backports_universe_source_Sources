@@ -1,0 +1,2267 @@
+Package: 0ad
+Binary: 0ad, 0ad-dbg
+Version: 0.0.11-1~ubuntu12.04.1
+Priority: optional
+Section: universe/games
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Build-Depends: autoconf, debhelper (>= 9), dpkg-dev (>= 1.15.5), libboost-dev, libboost-filesystem-dev, libboost-signals-dev, libcurl4-gnutls-dev | libcurl4-dev, libenet-dev (>= 1.3), libjpeg-dev, libmozjs185-dev, libnvtt-dev, libogg-dev, libopenal-dev, libpng-dev, libsdl1.2-dev, libvorbis-dev, libwxgtk2.8-dev, libxcursor-dev, libxml2-dev, pkg-config, zlib1g-dev
+Architecture: amd64 i386 kfreebsd-amd64 kfreebsd-i386
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/0/0ad
+Files:
+ f489a7d064c00f03cfd5ef62b9831fba 1730 0ad_0.0.11-1~ubuntu12.04.1.dsc
+ 0feedd076ea441ca821073b4b7014946 8682272 0ad_0.0.11.orig.tar.xz
+ f783ed8792869aa542b99b029322b632 16006 0ad_0.0.11-1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Vincent Cheng <Vincentc1208@gmail.com>
+Dm-Upload-Allowed: yes
+Homepage: http://www.wildfiregames.com/0ad/
+Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-games/packages/trunk/0ad/
+Vcs-Svn: svn://svn.debian.org/svn/pkg-games/packages/trunk/0ad/
+Package-List: 
+ 0ad deb games optional
+ 0ad-dbg deb debug extra
+Checksums-Sha1:
+ 901fa995c77d7e4ea7c3e79b4bb83e2aa4b65e0e 1730 0ad_0.0.11-1~ubuntu12.04.1.dsc
+ 9d68b3019d2c1a6fb5732e2f160cbdd1e3dc630c 8682272 0ad_0.0.11.orig.tar.xz
+ 8d5c812eb939f8fd7b5facb543b1137db23a5b11 16006 0ad_0.0.11-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ d1bc14ddfb70d6b50d7cfe6766e363b41a8dcf16eb6a94c400d576cee4e310bf 1730 0ad_0.0.11-1~ubuntu12.04.1.dsc
+ a218c42bce111d0bcb02b3a18eb14d7c06a839b8863df362083ebd0835d3c6a3 8682272 0ad_0.0.11.orig.tar.xz
+ 6d2b76bee57abc7f0f2252b0ef14d1d07fb298a4c0287c3961879e1e8958088f 16006 0ad_0.0.11-1~ubuntu12.04.1.debian.tar.gz
+
+Package: 0ad-data
+Binary: 0ad-data
+Version: 0.0.11-1~ubuntu12.04.1
+Priority: optional
+Section: universe/games
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.15.5)
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/0/0ad-data
+Files:
+ 9a37d737ff3fcac5b00c8e6b196754d0 1406 0ad-data_0.0.11-1~ubuntu12.04.1.dsc
+ 5900e406e6bdf761239e8af183a6a6c1 350967036 0ad-data_0.0.11.orig.tar.xz
+ 0f865b3df799e2009dfe264075e70ff5 11216 0ad-data_0.0.11-1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Vincent Cheng <Vincentc1208@gmail.com>
+Dm-Upload-Allowed: yes
+Homepage: http://wildfiregames.com/0ad/
+Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-games/packages/trunk/0ad-data/
+Vcs-Svn: svn://svn.debian.org/svn/pkg-games/packages/trunk/0ad-data/
+Package-List: 
+ 0ad-data deb games optional
+Checksums-Sha1:
+ 56a031777a308dec2c25d85adc0ad2816209a574 1406 0ad-data_0.0.11-1~ubuntu12.04.1.dsc
+ 696585d6268d8b22ee6aba56ffc0aed558a79802 350967036 0ad-data_0.0.11.orig.tar.xz
+ fe6fc0c73b6aa650dec24e20651f64967e86ffa4 11216 0ad-data_0.0.11-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 0a337ca4f3dc3421b3c9ef16800a11a2c95b0ccd530f48d686559687f16c6075 1406 0ad-data_0.0.11-1~ubuntu12.04.1.dsc
+ a28dd9160637bc1345223ec6f9c36bb693350e9dcc35a3194f43ed463b3ba20e 350967036 0ad-data_0.0.11.orig.tar.xz
+ 4d1777af7b10968107b7f2c22d72e1d3e7477f56164265035322dc7d8830ab81 11216 0ad-data_0.0.11-1~ubuntu12.04.1.debian.tar.gz
+
+Package: amsn
+Binary: amsn, amsn-data
+Version: 0.98.9-1ubuntu1~ubuntu12.04.1
+Priority: optional
+Section: universe/x11
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Vivia Nikolaidou <n.vivia@gmail.com>
+Build-Depends: debhelper (>= 9), tcl8.5-dev, tk8.5-dev, libpng12-dev, libjpeg-dev, libnice-dev, libv4l-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386], libfarstream-0.1-dev, libgstreamer-plugins-base0.10-dev, libgupnp-1.0-dev, libgupnp-igd-1.0-dev
+Architecture: any all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/a/amsn
+Files:
+ 053c7a5b4151c4c588ba7dad5b361f50 1462 amsn_0.98.9-1ubuntu1~ubuntu12.04.1.dsc
+ b98f7a26df34a79b8bfade1ff2ccc88a 14262466 amsn_0.98.9.orig.tar.gz
+ c5ec7d3e7429445d6e280d6b30e16a23 24331 amsn_0.98.9-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+Homepage: http://amsn.sourceforge.net/
+Package-List: 
+ amsn deb x11 optional
+ amsn-data deb x11 optional
+Checksums-Sha1:
+ 8f8cb24e5b1420126d6753ceef5a3efbc8dbde58 1462 amsn_0.98.9-1ubuntu1~ubuntu12.04.1.dsc
+ 3ef8c136c16839f1edd392c25069bdc2b718f367 14262466 amsn_0.98.9.orig.tar.gz
+ a9202631d96d1731e32aa0a4d4161cbaa8791152 24331 amsn_0.98.9-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 5c766b1ec62d7b99a08bc8ffc5946212946a13adeb2569f1dd165d4cbd0bae7e 1462 amsn_0.98.9-1ubuntu1~ubuntu12.04.1.dsc
+ f97cd281a08e80550a155b1a5ccc62c86b1bd20c2ee53d8f435fdb7ef5c9112d 14262466 amsn_0.98.9.orig.tar.gz
+ b2cbebc0e80867585abdcbc339ce09732d095fb15a8edf329b054940473f88fc 24331 amsn_0.98.9-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+
+Package: ansible
+Binary: ansible, ansible-fireball, ansible-node-fireball, ansible-doc
+Version: 1.1+dfsg-1~ubuntu12.04.1
+Priority: optional
+Section: universe/admin
+Maintainer: Janos Guljas <janos@debian.org>
+Build-Depends: debhelper (>= 9), python-all, python-setuptools, python-sphinx, python-yaml
+Architecture: all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/universe/a/ansible
+Files:
+ 8a87e2e7b0230508e823ce5ca371ed58 2105 ansible_1.1+dfsg-1~ubuntu12.04.1.dsc
+ f69eb3658dc5655d21271111d68a4ad8 692990 ansible_1.1+dfsg.orig.tar.gz
+ 5188a314fdb3618a3f898e4070aa8e7e 57838 ansible_1.1+dfsg-1~ubuntu12.04.1.debian.tar.gz
+Homepage: http://ansible.cc
+Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/ansible.git
+Vcs-Git: git://anonscm.debian.org/collab-maint/ansible.git
+Package-List: 
+ ansible deb admin optional
+ ansible-doc deb doc optional
+ ansible-fireball deb admin optional
+ ansible-node-fireball deb admin optional
+Checksums-Sha1:
+ b8d394fd1e1b32877dddd2e4695eb52814531224 2105 ansible_1.1+dfsg-1~ubuntu12.04.1.dsc
+ b02313d5c638e76a2878129c0741c37fb5248a1e 692990 ansible_1.1+dfsg.orig.tar.gz
+ 47872172b35567843f6481f2d5f37dfeba529b02 57838 ansible_1.1+dfsg-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ dd45f49ebc4cf166c49db821202424f032318078c19cd0881c7ba0d7234b88ce 2105 ansible_1.1+dfsg-1~ubuntu12.04.1.dsc
+ a2fd3b563356701e18dcfca33a636f634677b727d9998237a54cd3b47308480d 692990 ansible_1.1+dfsg.orig.tar.gz
+ 0b32b18898f1bc4009fbc14f99817cf753175f222e06c9bd900f454118719b7e 57838 ansible_1.1+dfsg-1~ubuntu12.04.1.debian.tar.gz
+
+Package: apt-cacher-ng
+Binary: apt-cacher-ng
+Version: 0.7.11-1~ubuntu12.04.1
+Priority: optional
+Section: universe/net
+Maintainer: Eduard Bloch <blade@debian.org>
+Build-Depends: debhelper (>= 7.2.3), cmake (>= 2.6.2), libbz2-dev, zlib1g-dev, liblzma-dev, libfuse-dev [!hurd-i386], pkg-config, libwrap0-dev
+Build-Conflicts: binutils-gold
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/a/apt-cacher-ng
+Files:
+ efde2f8126f758481d083f60b6809c47 1961 apt-cacher-ng_0.7.11-1~ubuntu12.04.1.dsc
+ 3886b39534c8d1fdcea7fc712018a509 258920 apt-cacher-ng_0.7.11.orig.tar.xz
+ 0acd9a7be79a0127e16bdf6c5f7c56b5 26160 apt-cacher-ng_0.7.11-1~ubuntu12.04.1.debian.tar.xz
+Homepage: http://www.unix-ag.uni-kl.de/~bloch/acng/
+Package-List: 
+ apt-cacher-ng deb net optional
+Checksums-Sha1:
+ 1cfc61a74de961f37dfe41e147dcd52cb3bed435 1961 apt-cacher-ng_0.7.11-1~ubuntu12.04.1.dsc
+ b1acaf00b0d6ff1c49fe030859f2cacd086ae91d 258920 apt-cacher-ng_0.7.11.orig.tar.xz
+ 705df61f1131cd6689943317a908bc35ae8385ab 26160 apt-cacher-ng_0.7.11-1~ubuntu12.04.1.debian.tar.xz
+Checksums-Sha256:
+ 100f0df7dacf10b082353c7b32e82b005517148b103d0d84c4de9674e877e3fa 1961 apt-cacher-ng_0.7.11-1~ubuntu12.04.1.dsc
+ b5597afda202723f693f9c33a848a383eee2b447e0487fe70fcb623deb38b707 258920 apt-cacher-ng_0.7.11.orig.tar.xz
+ 5cc820917a1edb2baa8f531588e691f7c61f5fe4117abeaab37db94ece4a6a4e 26160 apt-cacher-ng_0.7.11-1~ubuntu12.04.1.debian.tar.xz
+
+Package: arduino
+Binary: arduino, arduino-core
+Version: 1:1.0.1+dfsg-2~ubuntu12.04.1
+Priority: optional
+Section: universe/electronics
+Maintainer: Scott Howard <showard@debian.org>
+Build-Depends: debhelper (>= 8), javahelper, default-jdk, librxtx-java (>= 2.2pre2-3), libjna-java, ant
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/a/arduino
+Files:
+ 95e4c58eba9630734b59101ef7d81cb2 2066 arduino_1.0.1+dfsg-2~ubuntu12.04.1.dsc
+ 4f454015a91498ad43e7da0b79f8cdb2 4131880 arduino_1.0.1+dfsg.orig.tar.gz
+ 2b5864947960160d1f0ff9280e35c613 84279 arduino_1.0.1+dfsg-2~ubuntu12.04.1.debian.tar.gz
+Uploaders: Philip Hands <phil@hands.com>
+Homepage: http://www.arduino.cc
+Vcs-Browser: http://git.debian.org/?p=collab-maint/arduino.git
+Vcs-Git: git://git.debian.org/collab-maint/arduino.git
+Package-List: 
+ arduino deb electronics extra
+ arduino-core deb electronics extra
+Checksums-Sha1:
+ 561f31a4cf5de0c26a2350bd8f39ee5abdcb9940 2066 arduino_1.0.1+dfsg-2~ubuntu12.04.1.dsc
+ 6c10293430e37e9462eaf07a62cc3d69fdf7b996 4131880 arduino_1.0.1+dfsg.orig.tar.gz
+ 01715397416bc72a017688df1ff5b1e17dc27dd4 84279 arduino_1.0.1+dfsg-2~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 50193eb4311a57578e1b23a3dbe573891298c723f10c8fe6e0dfbd17c327abca 2066 arduino_1.0.1+dfsg-2~ubuntu12.04.1.dsc
+ df2bdea8898b0e50ce5702d5166ffd320f48de40bdc1b9489e887fdd427e1033 4131880 arduino_1.0.1+dfsg.orig.tar.gz
+ 5aa8b1b1c3d4764cfaaf3091b7d420d4634df71247a4d87ab074928a0388ceec 84279 arduino_1.0.1+dfsg-2~ubuntu12.04.1.debian.tar.gz
+
+Package: authres
+Binary: python-authres, python3-authres
+Version: 0.501-1~ubuntu12.04.1
+Priority: optional
+Section: universe/python
+Maintainer: Scott Kitterman <scott@kitterman.com>
+Build-Depends: debhelper (>= 7.3.16), python-all (>= 2.6.5-2~), python3-all (>= 3.1.2-10~)
+Architecture: all
+Standards-Version: 3.9.4
+Format: 1.0
+Directory: pool/universe/a/authres
+Files:
+ c185e2c441b1b5c38dd1d4c19fad5146 1467 authres_0.501-1~ubuntu12.04.1.dsc
+ b3f51965d5b1326f7268515457ef4023 27991 authres_0.501.orig.tar.gz
+ c408eac9ab33cd082576b037738da800 2716 authres_0.501-1~ubuntu12.04.1.diff.gz
+Uploaders: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Homepage: https://launchpad.net/authentication-results-python
+Vcs-Browser: http://svn.debian.org/viewsvn/python-modules/packages/authres/trunk/
+Vcs-Svn: svn://svn.debian.org/python-modules/packages/authres/trunk/
+Package-List: 
+ python-authres deb python optional
+ python3-authres deb python optional
+Checksums-Sha1:
+ b8bfbdfc56118480dac155f0d90bc16f04793f4c 1467 authres_0.501-1~ubuntu12.04.1.dsc
+ deb2d10a08fe17d176c0a8b299e11c12c714ac08 27991 authres_0.501.orig.tar.gz
+ 12426c591a70d718edb7cb7307ed0326c4c55b23 2716 authres_0.501-1~ubuntu12.04.1.diff.gz
+Checksums-Sha256:
+ 9fde71ea49f3d9c81f533dca508b26e31da2ef1b9e1a34679e90905d7ae9bc4d 1467 authres_0.501-1~ubuntu12.04.1.dsc
+ 3021e6d0bd9ccacc06731b96e409ae7fbb8d36b153330d8921e8c6168454abac 27991 authres_0.501.orig.tar.gz
+ bb02ff8010e4ff991fc247acbdd56c4c6b22a226ce0b3f70cf31706716e80da4 2716 authres_0.501-1~ubuntu12.04.1.diff.gz
+
+Package: ben
+Binary: libben-ocaml-dev, libben-ocaml, ben
+Version: 0.6.1ubuntu2~ubuntu12.04.1
+Priority: optional
+Section: universe/ocaml
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian OCaml Maintainers <debian-ocaml-maint@lists.debian.org>
+Build-Depends: debhelper (>= 8), dh-ocaml (>= 0.9.6~), docbook-xsl, graphviz, ocaml-findlib, menhir, libpcre-ocaml-dev, libocamlgraph-ocaml-dev, libfileutils-ocaml-dev, libocsigen-xhtml-ocaml-dev, libpostgresql-ocaml-dev, ocaml-nox (>= 3.11.1-3~), asciidoc, docbook-xml, libxml2-utils, xsltproc, source-highlight
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (native)
+Directory: pool/universe/b/ben
+Files:
+ f5fa9df07bb7549ce6cdd88401044fbe 2271 ben_0.6.1ubuntu2~ubuntu12.04.1.dsc
+ d1b3efaf0c78af9513e175f9930358a1 62288 ben_0.6.1ubuntu2~ubuntu12.04.1.tar.gz
+Uploaders:  Stéphane Glondu <glondu@debian.org>, Mehdi Dogguy <mehdi@debian.org>
+Homepage: http://ben.debian.net
+Vcs-Browser: https://code.launchpad.net/~ubuntu-transition-trackers/ubuntu-transition-tracker/precise-backports
+Vcs-Bzr: http://bazaar.launchpad.net/~ubuntu-transition-trackers/ubuntu-transition-tracker/precise-backports
+Package-List: 
+ ben deb ocaml optional
+ libben-ocaml deb ocaml optional
+ libben-ocaml-dev deb ocaml optional
+Checksums-Sha1:
+ 3add4337584065d388a14f37f0d52c5c379d7a6e 2271 ben_0.6.1ubuntu2~ubuntu12.04.1.dsc
+ b037aa89ebfa2228d9eb10c1ced8fb444687f2b6 62288 ben_0.6.1ubuntu2~ubuntu12.04.1.tar.gz
+Checksums-Sha256:
+ 95fd6d4c9093d1da4671ff2ff29059443b22ad12420d06b1e74a24068217af5c 2271 ben_0.6.1ubuntu2~ubuntu12.04.1.dsc
+ 514df34dc98a07c2aa8c4bf995dfdd64553eb04c0e1fc06b6ab63d0cbd8de51e 62288 ben_0.6.1ubuntu2~ubuntu12.04.1.tar.gz
+
+Package: blhc
+Binary: blhc
+Version: 0.03+20120626+git93afe23-1~ubuntu12.04.1
+Priority: optional
+Section: universe/utils
+Maintainer: Jari Aalto <jari.aalto@cante.net>
+Build-Depends: debhelper (>= 9)
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/b/blhc
+Files:
+ a75bd015307c9f61c3d3f45b10f62e06 1973 blhc_0.03+20120626+git93afe23-1~ubuntu12.04.1.dsc
+ b42a2b14576f23a75e4ef34e174d1f14 39405 blhc_0.03+20120626+git93afe23.orig.tar.gz
+ 320edd2977e3b02472e0e30e6bea592a 2173 blhc_0.03+20120626+git93afe23-1~ubuntu12.04.1.debian.tar.gz
+Homepage: http://ruderich.org/simon/blhc
+Vcs-Browser: http://git.debian.org/?p=collab-maint/blhc.git;a=summary
+Vcs-Git: git://git.debian.org/collab-maint/blhc.git
+Package-List: 
+ blhc deb utils optional
+Checksums-Sha1:
+ fcc7df46ab0afef10b337c315b0ad72134678995 1973 blhc_0.03+20120626+git93afe23-1~ubuntu12.04.1.dsc
+ c3edb112fd768b7e539d3835c3dcf3ede56d1316 39405 blhc_0.03+20120626+git93afe23.orig.tar.gz
+ efc418a21f1b2ffea1383e072a8349edf94bbfcf 2173 blhc_0.03+20120626+git93afe23-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ af552c12961ff819b9f2fd3eef32fe9a0364d31da522447bab80ca1b53454a38 1973 blhc_0.03+20120626+git93afe23-1~ubuntu12.04.1.dsc
+ 61bf0e9fe5b2075af145a288646c57873a536ead5bfc23770f25b773a0524db0 39405 blhc_0.03+20120626+git93afe23.orig.tar.gz
+ 803de002206db213b28ec50b850bb7646ccbce9ef7f0849ae3a02b1bbad879f7 2173 blhc_0.03+20120626+git93afe23-1~ubuntu12.04.1.debian.tar.gz
+
+Package: boinc
+Binary: boinc, libboinc7, boinc-nvidia-cuda, boinc-amd-opencl, boinc-client, boinc-manager, boinc-dev, libboinc-app-dev, libboinc-app7, boinc-dbg
+Version: 7.0.65+dfsg-3~ubuntu12.04.1
+Priority: optional
+Section: universe/net
+Maintainer: Debian BOINC Maintainers <pkg-boinc-devel@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 8), po-debconf, pkg-config, dpkg-dev (>= 1.16.1.1), libtool, autoconf, autotools-dev, automake1.9, gettext, docbook2x, docbook-xml, libxml2-utils, zlib1g-dev, libssl-dev, libcurl4-openssl-dev, libsm-dev, libice-dev, libxmu-dev, libxi-dev, libx11-dev, libnotify-dev (>= 0.7.0), freeglut3-dev, libwxgtk2.8-dev, libgtk2.0-dev, libsqlite3-dev, libmysqlclient-dev, python, libfcgi-dev, libjpeg-dev, libxcb-util0-dev, libxcb-dpms0-dev, libxss-dev, libxext-dev
+Architecture: any all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/universe/b/boinc
+Files:
+ f7fd7e3c173b4dedf9370a0a61cf7e0d 3019 boinc_7.0.65+dfsg-3~ubuntu12.04.1.dsc
+ 193a06d84c8cd4893dcb924845357392 32886756 boinc_7.0.65+dfsg.orig.tar.gz
+ 4a1717f7e81ab7f03e52f741fbda8f5a 550351 boinc_7.0.65+dfsg-3~ubuntu12.04.1.debian.tar.gz
+Uploaders: Steffen Moeller <moeller@debian.org>, Guo Yixuan <culu.gyx@gmail.com>, Rene Mayorga <rmayorga@debian.org>, Daniel Hahler <ubuntu@thequod.de>, Gianfranco Costamagna <costamagnagianfranco@yahoo.it>
+Homepage: http://boinc.berkeley.edu/
+Vcs-Browser: http://git.debian.org/?p=pkg-boinc/boinc.git
+Vcs-Git: git://git.debian.org/git/pkg-boinc/boinc.git
+Package-List: 
+ boinc deb net optional
+ boinc-amd-opencl deb contrib/net extra
+ boinc-client deb net optional
+ boinc-dbg deb debug extra
+ boinc-dev deb oldlibs extra
+ boinc-manager deb x11 optional
+ boinc-nvidia-cuda deb contrib/net extra
+ libboinc-app-dev deb libdevel optional
+ libboinc-app7 deb libs optional
+ libboinc7 deb libs optional
+Checksums-Sha1:
+ 60e85d348d54756af25bb24ab9fe4060f6689248 3019 boinc_7.0.65+dfsg-3~ubuntu12.04.1.dsc
+ c75ffaf77a242bdece2706e8c0e6976b180f6bf5 32886756 boinc_7.0.65+dfsg.orig.tar.gz
+ 28f387662d205be1840bbf135d4185f4c354535e 550351 boinc_7.0.65+dfsg-3~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ e600d238af4ca982190a528931b459a47139d98fde250116025a1fb12b8adfb7 3019 boinc_7.0.65+dfsg-3~ubuntu12.04.1.dsc
+ 8d88eb1837f47c74e764d8cb90f75a8a89603bc192df27b3ef16aca9a5ba3add 32886756 boinc_7.0.65+dfsg.orig.tar.gz
+ 9b5d290d4ea5f9f33129230563da47f4231d37837441cc75e7a96ab48bcde767 550351 boinc_7.0.65+dfsg-3~ubuntu12.04.1.debian.tar.gz
+
+Package: concavity
+Binary: concavity, concavity-dbg
+Version: 0.1-2~ubuntu12.04.1
+Priority: extra
+Section: universe/science
+Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 8.0.0)
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/universe/c/concavity
+Files:
+ ec43a750334d70913fd0c16f0acc59fe 2079 concavity_0.1-2~ubuntu12.04.1.dsc
+ 953b08263ec627e9dc5bdd1c2e4cce0e 322152 concavity_0.1.orig.tar.xz
+ 8c2f115c7482ce7775270a2fabca2b99 11076 concavity_0.1-2~ubuntu12.04.1.debian.tar.gz
+Uploaders: Laszlo Kajan <lkajan@rostlab.org>
+Dm-Upload-Allowed: yes
+Homepage: http://compbio.cs.princeton.edu/concavity/
+Vcs-Browser: http://svn.debian.org/wsvn/debian-med/trunk/packages/concavity/trunk/
+Vcs-Svn: svn://svn.debian.org/debian-med/trunk/packages/concavity/trunk/
+Package-List: 
+ concavity deb science extra
+ concavity-dbg deb debug extra
+Checksums-Sha1:
+ f64fdbf0fb7ef1d82eabf431b9e3f3eeeee5d836 2079 concavity_0.1-2~ubuntu12.04.1.dsc
+ 7908d496df3ebcfa25863640a7c66653b32fa5fb 322152 concavity_0.1.orig.tar.xz
+ 22dc4a9b11361ff172f6e13c97806b15618182d1 11076 concavity_0.1-2~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 3c30321f8878b5935a2d312302185544118d96a1843ccddefbefa23a15c4f1ac 2079 concavity_0.1-2~ubuntu12.04.1.dsc
+ d139ad02edfedf5199432e34da1dc2be91004bcad650f30c03a69d21c9ab9f79 322152 concavity_0.1.orig.tar.xz
+ 84ba7f0f76853aaa95c6b7f4ca193d74b6b09a15c9c330fdf31cf5793fd0c6de 11076 concavity_0.1-2~ubuntu12.04.1.debian.tar.gz
+
+Package: config-package-dev
+Binary: config-package-dev
+Version: 5.0~ubuntu12.04.1
+Priority: extra
+Section: universe/devel
+Maintainer: Debathena Project <debathena@mit.edu>
+Build-Depends: debhelper (>= 7.0.50~)
+Architecture: all
+Standards-Version: 3.9.4
+Format: 3.0 (native)
+Directory: pool/universe/c/config-package-dev
+Files:
+ 7fd095934ad2757622afe3223e0ecd02 1155 config-package-dev_5.0~ubuntu12.04.1.dsc
+ 6b54f53d0f346f29444093b04dcf7c60 25607 config-package-dev_5.0~ubuntu12.04.1.tar.gz
+Uploaders: Tim Abbott <tabbott@mit.edu>, Anders Kaseorg <andersk@mit.edu>, Geoffrey Thomas <geofft@mit.edu>
+Homepage: http://debathena.mit.edu/config-package-dev
+Vcs-Browser: http://debathena.mit.edu/trac/browser/config-package-dev/
+Vcs-Git: git://debathena.mit.edu/config-package-dev.git
+Package-List: 
+ config-package-dev deb devel extra
+Checksums-Sha1:
+ 21e49f7e7028b1abed78f93fdd626d25b25d04e9 1155 config-package-dev_5.0~ubuntu12.04.1.dsc
+ 3ddfba511869a5a28e9a832839835477c47d26e1 25607 config-package-dev_5.0~ubuntu12.04.1.tar.gz
+Checksums-Sha256:
+ 13dbd8d72e1385a62acc75450854257e864ebd09f49f0f915f7b22d3ee8121a3 1155 config-package-dev_5.0~ubuntu12.04.1.dsc
+ 5ec7a6c76d2381b2620db3e1a8dfad8c256a92375695a342a0a20911e5bab063 25607 config-package-dev_5.0~ubuntu12.04.1.tar.gz
+
+Package: conky
+Binary: conky, conky-std, conky-cli
+Version: 1.9.0-2~ubuntu12.04.1
+Priority: optional
+Section: universe/utils
+Maintainer: Vincent Cheng <Vincentc1208@gmail.com>
+Build-Depends: audacious-dev, automake1.11 | automake (>= 1:1.11), autotools-dev, debhelper (>= 9), dpkg-dev (>= 1.15.7), libasound2-dev [linux-any], libcairo2-dev, libcurl4-gnutls-dev | libcurl4-dev, libdevstat-dev [kfreebsd-any], libglib2.0-dev, libimlib2-dev, libiw-dev [linux-any], libkvm-dev [kfreebsd-any], liblua5.1-0-dev, libncurses5-dev, libtolua++5.1-dev, libtool, libx11-dev, libxdamage-dev, libxext-dev, libxft-dev, libxml2-dev, libxmmsclient-dev, pkg-config (>= 0.19)
+Architecture: any all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/c/conky
+Files:
+ 357b4d7d1d46cfb109b81d8846d4d955 2421 conky_1.9.0-2~ubuntu12.04.1.dsc
+ d3de615f43aadc98d555e05ad9e902c2 626555 conky_1.9.0.orig.tar.bz2
+ 3a04a70eeb7111f6d3c018e2f254d168 18127 conky_1.9.0-2~ubuntu12.04.1.debian.tar.bz2
+Homepage: http://conky.sourceforge.net/
+Vcs-Browser: http://svn.debian.org/wsvn/collab-maint/deb-maint/conky/trunk
+Vcs-Svn: svn://svn.debian.org/svn/collab-maint/deb-maint/conky/trunk
+Package-List: 
+ conky deb oldlibs extra
+ conky-cli deb utils optional
+ conky-std deb utils optional
+Checksums-Sha1:
+ de837dfc4c22f8130d30db11ee06c26322ccceb3 2421 conky_1.9.0-2~ubuntu12.04.1.dsc
+ 2069cbdb8e7224fcbf3c6b1ddebf64a51634b4cc 626555 conky_1.9.0.orig.tar.bz2
+ 2a1a39bc3e187b171ce1470f26a0ea375519f6ed 18127 conky_1.9.0-2~ubuntu12.04.1.debian.tar.bz2
+Checksums-Sha256:
+ 2ae17b1e25d43b08e70cb30a8bb4fbe767c2bf4d9feb12276e6ea1ec7bfadeb1 2421 conky_1.9.0-2~ubuntu12.04.1.dsc
+ baf1b550f135fbfb53e5e286a33aadc03a667d63bf6c4d52ba7637366295bb6f 626555 conky_1.9.0.orig.tar.bz2
+ 56ae448d3c48ab61e0ef1d533d809b2e8d2800df94a3b7e13d93ded40caf2879 18127 conky_1.9.0-2~ubuntu12.04.1.debian.tar.bz2
+
+Package: conservation-code
+Binary: conservation-code
+Version: 20110309.0-1~ubuntu12.04.1
+Priority: extra
+Section: universe/science
+Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 8.0.0), perl, python (>= 2.6.6-3~)
+Architecture: all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/universe/c/conservation-code
+Files:
+ b99a426b32a58f0ec43020cc40979a68 2172 conservation-code_20110309.0-1~ubuntu12.04.1.dsc
+ 9a202bfba21616c53bb0ea52f7b8b791 19560 conservation-code_20110309.0.orig.tar.xz
+ 97026287a244d351aa4b72ddc1d6b7eb 6802 conservation-code_20110309.0-1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Laszlo Kajan <lkajan@rostlab.org>
+Homepage: http://compbio.cs.princeton.edu/conservation/
+Vcs-Browser: http://svn.debian.org/wsvn/debian-med/trunk/packages/conservation-code/trunk/
+Vcs-Svn: svn://svn.debian.org/debian-med/trunk/packages/conservation-code/trunk/
+Package-List: 
+ conservation-code deb science extra
+Checksums-Sha1:
+ 5e17cd2ad6665182a5f7464f0c68af7051927ac1 2172 conservation-code_20110309.0-1~ubuntu12.04.1.dsc
+ 5252fa94c2390557c01932301ae0bb59c0c16fd6 19560 conservation-code_20110309.0.orig.tar.xz
+ fbc7f197af327073e69dd77293f28559e33f40e4 6802 conservation-code_20110309.0-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ ba19a7e4238fecbed04a685aa75e81723d612b927c12f6378b7613162de712c5 2172 conservation-code_20110309.0-1~ubuntu12.04.1.dsc
+ caef16e54abe983d591721aef34fa5f0fc051d1f2fce9ac5637a3681be37a993 19560 conservation-code_20110309.0.orig.tar.xz
+ 49b1388b119a85a2ff4d3257d2512bedd574a1482a5ffb1eca21257d022f8434 6802 conservation-code_20110309.0-1~ubuntu12.04.1.debian.tar.gz
+
+Package: crtmpserver
+Binary: crtmpserver, crtmpserver-libs, crtmpserver-apps, crtmpserver-dev
+Version: 1.0~dfsg-3~ubuntu12.04.1
+Priority: optional
+Section: universe/video
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Build-Depends: cmake, debhelper (>= 9), liblua5.1-0-dev, libssl-dev, libtinyxml-dev
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/c/crtmpserver
+Files:
+ 6aca7d1ff61644a1055ff76819a2a1d9 1697 crtmpserver_1.0~dfsg-3~ubuntu12.04.1.dsc
+ bd9443979c5a183c09c34627732ee536 312168 crtmpserver_1.0~dfsg.orig.tar.bz2
+ 44156f26cfb82291a01ccfa651f000e5 14448 crtmpserver_1.0~dfsg-3~ubuntu12.04.1.debian.tar.gz
+Uploaders:  Alessio Treglia <alessio@debian.org>, Andriy Beregovenko <jet@jet.kiev.ua>, Andres Mejia <amejia@debian.org>
+Homepage: http://www.rtmpd.com
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-multimedia/crtmpserver.git;a=summary
+Vcs-Git: git://git.debian.org/pkg-multimedia/crtmpserver.git
+Package-List: 
+ crtmpserver deb video optional
+ crtmpserver-apps deb video optional
+ crtmpserver-dev deb video optional
+ crtmpserver-libs deb video optional
+Checksums-Sha1:
+ a3fff78d9a9ff1020be37108f5a45815fe255d8d 1697 crtmpserver_1.0~dfsg-3~ubuntu12.04.1.dsc
+ 68f1851367c7faee6a193faae8f251e5170d9900 312168 crtmpserver_1.0~dfsg.orig.tar.bz2
+ 8cda0446ab76e15be81425c5d615b1e6d430ecf4 14448 crtmpserver_1.0~dfsg-3~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 91bf74a25c715add8b75e8d6c544c28c1629c065fa6dddfc7122d1fb4409e954 1697 crtmpserver_1.0~dfsg-3~ubuntu12.04.1.dsc
+ d8a16dcb7852d8739d1152656a22b0e0bb04ba1bc373e970f1ffbf0ba1481eb9 312168 crtmpserver_1.0~dfsg.orig.tar.bz2
+ c59c5723eabe4c1fd0104b7ba5a74c8d43a51ab9ca845a277b7a9f2b89c33bb2 14448 crtmpserver_1.0~dfsg-3~ubuntu12.04.1.debian.tar.gz
+
+Package: django-openid-auth
+Binary: python-django-auth-openid
+Version: 0.4-1ubuntu1~ubuntu12.04.1
+Priority: optional
+Section: universe/python
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 7.3.7~), python-all (>= 2.6), python-django (>= 1.2), python-openid, python-support
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/d/django-openid-auth
+Files:
+ fb2939c99bf94c54ae9408c91547f9de 2337 django-openid-auth_0.4-1ubuntu1~ubuntu12.04.1.dsc
+ 038883913aa70c7fc49fbfa30f5d1d2c 77703 django-openid-auth_0.4.orig.tar.gz
+ 7a0b4eae8a6c1e86ddfc4f665dbf1d4a 3946 django-openid-auth_0.4-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Michael Fladischer <FladischerMichael@fladi.at>
+Homepage: https://launchpad.net/django-openid-auth
+Vcs-Browser: http://svn.debian.org/viewsvn/python-modules/packages/django-openid-auth/trunk/
+Vcs-Svn: svn://svn.debian.org/python-modules/packages/django-openid-auth/trunk/
+Package-List: 
+ python-django-auth-openid deb python optional
+Checksums-Sha1:
+ eb39c82c13fdccc92342d28a4d04913aa6f79e3d 2337 django-openid-auth_0.4-1ubuntu1~ubuntu12.04.1.dsc
+ 6514607c22e7896881246a7dbbba84f4df9de0a9 77703 django-openid-auth_0.4.orig.tar.gz
+ 23909cc3886a5b0e67121ce242c4bf7d02d45d1a 3946 django-openid-auth_0.4-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ fc313e7f43bc86e36d7306a908520fefe10488ee020174e1976f91eecf725c5c 2337 django-openid-auth_0.4-1ubuntu1~ubuntu12.04.1.dsc
+ 923c2a9652f23bee367a6578f39d0881eaeb7aca2ec8f810f523b16e38679d05 77703 django-openid-auth_0.4.orig.tar.gz
+ 3ed03f6d64783206c6c67025731a1816f391a8a11c035001dcf76a3b61ce3471 3946 django-openid-auth_0.4-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+Python-Version: >= 2.6
+
+Package: django-tables
+Binary: django-tables
+Version: 0.13.0-1~ubuntu12.04.1
+Priority: optional
+Section: universe/python
+Maintainer: Brian May <bam@debian.org>
+Build-Depends: debhelper (>= 7.0.0), python (>= 2.6), python-support (>= 0.6), cdbs (>= 0.4.49), python-setuptools
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/d/django-tables
+Files:
+ 5af2338ea93272cf18a6b893eff96f48 1205 django-tables_0.13.0-1~ubuntu12.04.1.dsc
+ a067cd0840a997ffa88e7094d7bff12f 100661 django-tables_0.13.0.orig.tar.gz
+ 235b16e8a7bbb9f80330a89f3571305a 2340 django-tables_0.13.0-1~ubuntu12.04.1.debian.tar.gz
+Package-List: 
+ django-tables deb python optional
+Checksums-Sha1:
+ 7ca314852dcf9b83f293dc3b410b9befb787d172 1205 django-tables_0.13.0-1~ubuntu12.04.1.dsc
+ 24fb2c43f90143023c330159142db0347518821f 100661 django-tables_0.13.0.orig.tar.gz
+ 267b93f3c986563448483a4ce27e200cc5eb4ae5 2340 django-tables_0.13.0-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ f00d50db1676faf573ff5d10b083eae02a5f456518a27828a5b45710e0b2d4bd 1205 django-tables_0.13.0-1~ubuntu12.04.1.dsc
+ 0d8a6ae632863a0513ce42a7eaf882d6ef062327366bdfdc0d063e7a45c5fa4d 100661 django-tables_0.13.0.orig.tar.gz
+ 263da5f043d2d0f3ee34fab52ee9e5d30949b8c073dc395d2016dfb3cc00a57b 2340 django-tables_0.13.0-1~ubuntu12.04.1.debian.tar.gz
+
+Package: dnspython3
+Binary: python3-dnspython
+Version: 1.10.0-1~precise1
+Priority: optional
+Section: universe/python
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 7.3.16), python3-all (>= 3.2)
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/d/dnspython3
+Files:
+ 53e7d54cf4c2155158f1774d10f01e05 1327 dnspython3_1.10.0-1~precise1.dsc
+ 17d0ec54f83df3e95846fc4e20224a96 123929 dnspython3_1.10.0.orig.tar.gz
+ b040383c126109c22ead43bb0e2c20f2 2301 dnspython3_1.10.0-1~precise1.debian.tar.gz
+Uploaders: Robert S. Edmonds <edmonds@debian.org>, Matthew Grant <matthewgrant5@gmail.com>, Scott Kitterman <scott@kitterman.com>
+Homepage: http://www.dnspython.org
+Package-List: 
+ python3-dnspython deb python optional
+Checksums-Sha1:
+ 2fe1cd25a6f3c9023196ed90eee26b2d44c0f576 1327 dnspython3_1.10.0-1~precise1.dsc
+ 4b68bb3c3b6919d318143e56bfbd7f1897e61733 123929 dnspython3_1.10.0.orig.tar.gz
+ e62fbd2bcacb66dc506781e0a5912c56e87e1d08 2301 dnspython3_1.10.0-1~precise1.debian.tar.gz
+Checksums-Sha256:
+ 97f346a0e3819d2e2785015ba8ce86e7bc760ef12c8d484e3a56aa42bfa46112 1327 dnspython3_1.10.0-1~precise1.dsc
+ 1478051ba0ad24aa33ce4cd504190104ede99ca3c8c907163f4cc820ddfe2e95 123929 dnspython3_1.10.0.orig.tar.gz
+ c20d571a42262082f70da09864302d828800cecd0b70956a2b84d811cc6333a8 2301 dnspython3_1.10.0-1~precise1.debian.tar.gz
+
+Package: dvdbackup
+Binary: dvdbackup, dvdbackup-dbg
+Version: 0.4.2-1~ubuntu12.04.1
+Priority: optional
+Section: universe/utils
+Maintainer: Stephen Gran <sgran@debian.org>
+Build-Depends: debhelper (>= 9), libdvdread-dev (>= 4.1.3-4)
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/d/dvdbackup
+Files:
+ def5d24a87a777fdbf7baa614d048180 2025 dvdbackup_0.4.2-1~ubuntu12.04.1.dsc
+ 28f273b2f27a3afea3a3c965ddbede86 178660 dvdbackup_0.4.2.orig.tar.xz
+ a8ba9a1a719c4ddadd1b58d7b2467c29 4772 dvdbackup_0.4.2-1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Benjamin Drung <bdrung@debian.org>
+Homepage: http://dvdbackup.sourceforge.net
+Vcs-Browser: http://git.debian.org/?p=pkg-dvdbackup/dvdbackup.git;a=summary
+Vcs-Git: git://git.debian.org/git/pkg-dvdbackup/dvdbackup.git
+Package-List: 
+ dvdbackup deb video optional
+ dvdbackup-dbg deb debug extra
+Checksums-Sha1:
+ 51cc354fadcff54c50a19d441f5a5bba8493b4ed 2025 dvdbackup_0.4.2-1~ubuntu12.04.1.dsc
+ cf10f2e2d1d8df23ecda96e867b9a39ce6b6f884 178660 dvdbackup_0.4.2.orig.tar.xz
+ bf7cbbb98efc8ac884f5c412e4a7175a301f376f 4772 dvdbackup_0.4.2-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ f1f61a26af9c02be8a21dd2a1019fc9ea51063e9c7b6efd431fc86d6cc9470f7 2025 dvdbackup_0.4.2-1~ubuntu12.04.1.dsc
+ ef8c56fbb82b15b7eef00d2d3118c8253f9770009ed7bb2a5d4849acf88183e6 178660 dvdbackup_0.4.2.orig.tar.xz
+ 8b68081f40a50e087d8857c4803bb818aec0157e825900f4add96c8fa00c3269 4772 dvdbackup_0.4.2-1~ubuntu12.04.1.debian.tar.gz
+
+Package: fife
+Binary: python-fife
+Version: 0.3.3+r3-1~precise1
+Priority: optional
+Section: universe/libdevel
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 7.0.50~), scons, libsdl1.2-dev, libboost-dev, libsdl-ttf2.0-dev, libsdl-image1.2-dev, libvorbis-dev, libalut-dev, python-all-dev (>= 2.6.6-3~), libboost-regex-dev, libboost-filesystem-dev, libboost-test-dev, swig, chrpath, zlib1g-dev, libxcursor-dev, libopenal-dev, libasound2-dev, libguichan-dev, libtinyxml-dev, libpng-dev, libunittest++-dev
+Architecture: any
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/universe/f/fife
+Files:
+ 0dbf9f68651cc6d2d1e9199c7c3bd240 2254 fife_0.3.3+r3-1~precise1.dsc
+ ee39612009e124263dc79d1f0fa7ca7c 4930412 fife_0.3.3+r3.orig.tar.gz
+ 946b75236851473983cb7e1e26f62209 6200 fife_0.3.3+r3-1~precise1.debian.tar.xz
+Uploaders: Christoph Egger <christoph@debian.org>
+Homepage: http://fifengine.de
+Vcs-Browser: http://git.debian.org/?p=pkg-games/fife.git
+Vcs-Git: git://git.debian.org/git/pkg-games/fife.git
+Package-List: 
+ python-fife deb python optional
+Checksums-Sha1:
+ e253edaaf323aa86b1472f59d532f47e161bd5f8 2254 fife_0.3.3+r3-1~precise1.dsc
+ 8b96345cc874626caa1272f9a1b17d433800e457 4930412 fife_0.3.3+r3.orig.tar.gz
+ 6059ccac92dc29c98a03fc1c7502bb08108a665d 6200 fife_0.3.3+r3-1~precise1.debian.tar.xz
+Checksums-Sha256:
+ 7f569da4154ba5a1a59e981ae1824710cacfa6ff8713a572b7b47888f6fa21b3 2254 fife_0.3.3+r3-1~precise1.dsc
+ 172bd6ececa37c3e98689f5b4b00cb86bcf611bca714cf88aef91ba6d05ea16e 4930412 fife_0.3.3+r3.orig.tar.gz
+ b7d37a1999866ce4a8ee15f84c1d02d683f110e2ddd079af7e7db1903c4bcc7d 6200 fife_0.3.3+r3-1~precise1.debian.tar.xz
+
+Package: freeciv
+Binary: freeciv-server, freeciv-client-xaw3d, freeciv-client-gtk, freeciv-client-sdl, freeciv-client-extras, freeciv-data, freeciv-sound-standard
+Version: 2.3.2-1~ubuntu12.04.1
+Priority: optional
+Section: universe/games
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 7.0.50), dpkg (>= 1.15.7), dh-autoreconf, gettext, libx11-dev, libxaw7-dev, libxext-dev, libxmu-dev, libxt-dev, libgtk2.0-dev, libpng-dev | libpng12-dev, libreadline-dev, libesd0-dev, libsdl-image1.2-dev, libsdl-mixer1.2-dev, x11proto-core-dev, xaw3dg-dev, zlib1g-dev, autotools-dev, liblua5.1-0-dev, libbz2-dev, gnulib, python-minimal
+Architecture: any all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/f/freeciv
+Files:
+ 3cf93c2d12ca0e27ae8230ae4d70b5d5 2724 freeciv_2.3.2-1~ubuntu12.04.1.dsc
+ eee143d8fea4cf3c772a560fee066600 30695128 freeciv_2.3.2.orig.tar.bz2
+ 747b4a1da0d3570a47302edafac6fece 23482 freeciv_2.3.2-1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Jordi Mallach <jordi@debian.org>, Clint Adams <clint@debian.org>, Karl Goetz <karl@kgoetz.id.au>
+Homepage: http://www.freeciv.org/
+Vcs-Browser: http://git.debian.org/?p=pkg-games/freeciv.git;a=summary
+Vcs-Git: git://git.debian.org/git/pkg-games/freeciv.git
+Package-List: 
+ freeciv-client-extras deb games optional
+ freeciv-client-gtk deb games optional
+ freeciv-client-sdl deb games optional
+ freeciv-client-xaw3d deb games optional
+ freeciv-data deb games optional
+ freeciv-server deb games optional
+ freeciv-sound-standard deb games optional
+Checksums-Sha1:
+ 7c0c253b76ce707236c574fa3b938745083bfee2 2724 freeciv_2.3.2-1~ubuntu12.04.1.dsc
+ e6267b5e0483cf9c29d01793d2f9433e73d62191 30695128 freeciv_2.3.2.orig.tar.bz2
+ 9004d0558aeed80aded13a493abfacaf71814712 23482 freeciv_2.3.2-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ e5f183e52f90ad8238b1946bfb52b83210a243e4bc72cf139cdf905ee78fffa9 2724 freeciv_2.3.2-1~ubuntu12.04.1.dsc
+ 95b1c8cb1bc859abc883221e3e89f67a53799071fdb1fea7b8727fbab0cb4c4e 30695128 freeciv_2.3.2.orig.tar.bz2
+ bb758afee5586cbc4f65ad544c63f12068034fadfdb6b91397bf8f9baf29adb6 23482 freeciv_2.3.2-1~ubuntu12.04.1.debian.tar.gz
+
+Package: freecol
+Binary: freecol
+Version: 0.10.5+dfsg-1ubuntu1~ubuntu12.04.1
+Priority: optional
+Section: universe/games
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 5), ant, default-jdk, cdbs
+Build-Depends-Indep: tex4ht, texlive-binaries | texlive-base-bin, ant-optional, texlive-latex-recommended, libcommons-cli-java, libmiglayout-java, libcortado-java, javahelper
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/f/freecol
+Files:
+ 95a74cbf46e529120c0c2160cd389eb5 2319 freecol_0.10.5+dfsg-1ubuntu1~ubuntu12.04.1.dsc
+ 9eaa8f529d7d445e9e79717e35e37323 33145633 freecol_0.10.5+dfsg.orig.tar.bz2
+ 11e55de4cbbd1367fd44d43bb243c915 10152 freecol_0.10.5+dfsg-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Vincent Fourmond <fourmond@debian.org>
+Homepage: http://www.freecol.org
+Vcs-Browser: http://svn.debian.org/viewsvn/pkg-games/packages/trunk/freecol
+Vcs-Svn: svn://svn.debian.org/svn/pkg-games/packages/trunk/freecol
+Package-List: 
+ freecol deb games optional
+Checksums-Sha1:
+ f443918d1ee49aac30c16e27d0dfce2557875787 2319 freecol_0.10.5+dfsg-1ubuntu1~ubuntu12.04.1.dsc
+ e95d46191cbc540cdcf046b5c890fe8dc87778e2 33145633 freecol_0.10.5+dfsg.orig.tar.bz2
+ 46340217ab56a38ba7f36a0b5600e992adcd1d94 10152 freecol_0.10.5+dfsg-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 4f70dfd29912d58d6b5ad18d4cd0b706d9d29c4d9517199ec605e8a0429bae9d 2319 freecol_0.10.5+dfsg-1ubuntu1~ubuntu12.04.1.dsc
+ 0c5b1454afe73d439156176791497a2e91635ca9b172f99ee8f9a08136b4e450 33145633 freecol_0.10.5+dfsg.orig.tar.bz2
+ 2bcc252500b2db1ea2b90fd6f0df02c1f3efa95d3cc159a080141586361aa11e 10152 freecol_0.10.5+dfsg-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+
+Package: fritzing
+Binary: fritzing, fritzing-data
+Version: 0.7.4b+dfsg-1~ubuntu12.04.1
+Priority: optional
+Section: universe/electronics
+Maintainer: Enrique Hernández Bello <ehbello@gmail.com>
+Build-Depends: cdbs, debhelper (>= 7.0.50~), imagemagick, libqt4-dev, zlib1g-dev
+Architecture: any all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/f/fritzing
+Files:
+ f9af4553adea171f214c047b1f969b0b 2111 fritzing_0.7.4b+dfsg-1~ubuntu12.04.1.dsc
+ fb946ad4f39335727a76d0c18ed6cc7b 10277940 fritzing_0.7.4b+dfsg.orig.tar.bz2
+ 21c196d2b6cb1970b5c16406d6320e2c 15489 fritzing_0.7.4b+dfsg-1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Georges Khaznadar <georgesk@ofset.org>
+Homepage: http://fritzing.org
+Vcs-Browser: https://bazaar.launchpad.net/~ehbello/fritzing/debian/changes
+Vcs-Bzr: https://code.launchpad.net/~ehbello/fritzing/debian
+Package-List: 
+ fritzing deb electronics optional
+ fritzing-data deb electronics optional
+Checksums-Sha1:
+ 51197b319381a79f5474e1829d526f4602a9e6d2 2111 fritzing_0.7.4b+dfsg-1~ubuntu12.04.1.dsc
+ 8416258186d9787a19b6bb591a33162727765355 10277940 fritzing_0.7.4b+dfsg.orig.tar.bz2
+ 0858281537a55f4d592a2b5780d1f33ff271dc45 15489 fritzing_0.7.4b+dfsg-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 6f87a4c9a7db3dff137276d10613a0dea240e262656f12e2be4ea8584116c5b1 2111 fritzing_0.7.4b+dfsg-1~ubuntu12.04.1.dsc
+ 840de2a7245e58d08188dc9cd329c3409e29501d2efaab4445c8691a86f4077c 10277940 fritzing_0.7.4b+dfsg.orig.tar.bz2
+ acec7e80c2e208617af01289c5a68a4891f42d3d81a3dc24962c629498a28c80 15489 fritzing_0.7.4b+dfsg-1~ubuntu12.04.1.debian.tar.gz
+
+Package: gnome-do
+Binary: gnome-do
+Version: 0.9-1~precise1
+Priority: optional
+Section: universe/gnome
+Maintainer: Debian CLI Applications Team <pkg-cli-apps-team@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 7.0.50), dh-autoreconf (>= 4), mono-devel (>= 2.4.2.3), intltool, autoconf, autotools-dev, automake, libtool, libndesk-dbus1.0-cil-dev, libndesk-dbus-glib1.0-cil-dev, libmono-cairo2.0-cil, cli-common-dev (>= 0.5.7), pkg-config, libgtk2.0-cil-dev (>= 2.10), libglib2.0-cil-dev, libglade2.0-cil-dev, libgnome2.0-cil-dev, libgnome-vfs2.0-cil-dev, libgconf2.0-cil-dev, libgconf2-dev, libgnomedesktop2.0-cil-dev, libgnome-keyring1.0-cil-dev, libmono-addins-cil-dev, libmono-addins-gui-cil-dev, libnotify-cil-dev, libglib2.0-dev, libgtk2.0-dev, librsvg2-2.0-cil-dev, libwnck1.0-cil-dev
+Architecture: any
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/universe/g/gnome-do
+Files:
+ 03d607706d709435b76b7ff52a7f3343 2566 gnome-do_0.9-1~precise1.dsc
+ d360e56953915d9585c0ee71f433129c 881467 gnome-do_0.9.orig.tar.gz
+ 4e17da460eac657da0161b33677b46c9 11443 gnome-do_0.9-1~precise1.debian.tar.gz
+Uploaders: Christopher James Halse Rogers <raof@ubuntu.com>, Iain Lane <laney@debian.org>
+Homepage: http://do.davebsd.com/
+Vcs-Browser: http://git.debian.org/?p=pkg-cli-apps/packages/gnome-do.git
+Vcs-Git: git://git.debian.org/git/pkg-cli-apps/packages/gnome-do.git
+Package-List: 
+ gnome-do deb gnome optional
+Checksums-Sha1:
+ 2efe0756813c3f7d13fc20bd0d4fcab7806baf10 2566 gnome-do_0.9-1~precise1.dsc
+ f1f631aec573bc2b5aed8c3edb4346becf1bfc80 881467 gnome-do_0.9.orig.tar.gz
+ ebe3f17d132f180600a04ce4fff216193beaaff4 11443 gnome-do_0.9-1~precise1.debian.tar.gz
+Checksums-Sha256:
+ 2ae986b8af62ef3fe60829df32465f79e61e27503962bce85f7a627b1cd32437 2566 gnome-do_0.9-1~precise1.dsc
+ 554b6f7f2b6e8c5fcdaeb41e17e460ac0b7f26bde7d42182cbec08b3abfd5317 881467 gnome-do_0.9.orig.tar.gz
+ ed7c579790c0121b6b5a132addc058cdb64167f3a1afc544bd8f40e2dce48ab3 11443 gnome-do_0.9-1~precise1.debian.tar.gz
+
+Package: hedgewars
+Binary: hedgewars, hedgewars-data
+Version: 0.9.18-0.2ubuntu1.1~ubuntu12.04.1
+Priority: extra
+Section: universe/games
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Dmitry E. Oboukhov <unera@debian.org>
+Build-Depends: debhelper (>= 7), cmake, cdbs, libqt4-dev (>= 4.2), fp-compiler, libsdl1.2-dev, libsdl-ttf2.0-dev, libsdl-mixer1.2-dev, libsdl-image1.2-dev, libsdl-net1.2-dev, bzip2, fp-units-gfx, ghc, libghc-stm-dev, libghc-network-dev, libghc-dataenc-dev, libghc-hslogger-dev, libghc-utf8-string-dev, liblua5.1-dev, imagemagick, libghc-bytestring-show-dev, libghc-deepseq-dev, fpc, libpng12-dev, libavcodec-dev, libavformat-dev, freeglut3-dev, libghc-binary-dev, libghc-mtl-dev, libghc-parsec3-dev, libghc-vector-dev, qt4-qmake, fp-units-misc
+Architecture: any all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/universe/h/hedgewars
+Files:
+ 3918576dc9db0a01a849165b14091b89 2669 hedgewars_0.9.18-0.2ubuntu1.1~ubuntu12.04.1.dsc
+ 02465736fdcf48feea1cacaa0aa5960e 180719233 hedgewars_0.9.18.orig.tar.bz2
+ a68a0a7d13627aa83aa78370b298e1e9 74057 hedgewars_0.9.18-0.2ubuntu1.1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Homepage: http://hedgewars.org
+Vcs-Browser: http://git.debian.org/?p=collab-maint/hedgewars.git;a=summary
+Vcs-Git: git://git.debian.org/collab-maint/hedgewars.git
+Package-List: 
+ hedgewars deb games extra
+ hedgewars-data deb games extra
+Checksums-Sha1:
+ 3cf548e0a87c091ae76e78d356e28c60c8d59190 2669 hedgewars_0.9.18-0.2ubuntu1.1~ubuntu12.04.1.dsc
+ e5a2c4e1e241ed17a83d15a1df43977342fa0c5d 180719233 hedgewars_0.9.18.orig.tar.bz2
+ 009511cec7004974c3e7a89e6d33d61789d87566 74057 hedgewars_0.9.18-0.2ubuntu1.1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 156bfbfe6dfee6339502f86133dd3e1b94ae439b020f65066ba5d14e47d7b7ea 2669 hedgewars_0.9.18-0.2ubuntu1.1~ubuntu12.04.1.dsc
+ 75cb5de74c480eb295d06a4a2db37fcc57560a464870f15989cf6bdf0e937daa 180719233 hedgewars_0.9.18.orig.tar.bz2
+ fd21712c83649b6708f0d86c6f263bed90d92c994dfc41a6ad724f9245ec5174 74057 hedgewars_0.9.18-0.2ubuntu1.1~ubuntu12.04.1.debian.tar.gz
+
+Package: ipmitool
+Binary: ipmitool
+Version: 1.8.12-0ubuntu2~ubuntu12.04.1
+Priority: optional
+Section: universe/utils
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Matthew Johnson <mjj29@debian.org>
+Build-Depends: debhelper (>> 5.0.0), libreadline-dev, libncurses-dev, libssl-dev, quilt, autotools-dev
+Architecture: any
+Standards-Version: 3.8.0
+Format: 1.0
+Directory: pool/universe/i/ipmitool
+Files:
+ 25dd74a22a41515c2e67db9da7688d4f 2056 ipmitool_1.8.12-0ubuntu2~ubuntu12.04.1.dsc
+ 52c1f1ec91cf29dfabd09dc454f47819 850804 ipmitool_1.8.12.orig.tar.gz
+ 233db968b6ba45fee056d41de0da09ce 10628 ipmitool_1.8.12-0ubuntu2~ubuntu12.04.1.diff.gz
+Uploaders: Luk Claes <luk@debian.org>
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/ipmitool.git
+Vcs-Git: git://anonscm.debian.org/git/collab-maint/ipmitool.git
+Package-List: 
+ ipmitool deb utils optional
+Checksums-Sha1:
+ 82b55059d6c5372208020a7526544a2149724b92 2056 ipmitool_1.8.12-0ubuntu2~ubuntu12.04.1.dsc
+ bd1d2a6ea6bd823d4fadefede6282e6a04f270da 850804 ipmitool_1.8.12.orig.tar.gz
+ 5c445c2424a0780c46c0f9d62280c14b370e08a9 10628 ipmitool_1.8.12-0ubuntu2~ubuntu12.04.1.diff.gz
+Checksums-Sha256:
+ 34f1c51630710cb5476e6cd4854cc6766d447c864b322e59d1f5b3ba9dd40337 2056 ipmitool_1.8.12-0ubuntu2~ubuntu12.04.1.dsc
+ 7db317e71a102df6aa42f123263d75e3d67296d68119faa82253e99234d89074 850804 ipmitool_1.8.12.orig.tar.gz
+ 5323314ced2c92380b06f1ba0a0cb494d6312c5671ab5f45a31bb89bde64bf06 10628 ipmitool_1.8.12-0ubuntu2~ubuntu12.04.1.diff.gz
+
+Package: ipython
+Binary: ipython, ipython3, ipython-qtconsole, ipython3-qtconsole, ipython-notebook-common, ipython-notebook, ipython3-notebook, ipython-doc
+Version: 0.13.2-1~ubuntu12.04.1
+Priority: optional
+Section: universe/python
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 7.3.13)
+Build-Depends-Indep: graphviz, libc-bin (>= 2.13-1~), python-all (>= 2.6.6-3~), python-argparse, python-configobj, python-decorator, python-matplotlib, python-nose, python-pexpect, python-pygments, python-qt4, python-simplegeneric, python-sphinx (>= 1.0.7+dfsg-1~), python-tk, python-tornado, python-wxgtk2.8, python-zmq (>= 2.1.4), python3-all, python3-setuptools, xauth, xvfb
+Architecture: all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/universe/i/ipython
+Files:
+ b80b1818e6c60876d146feeca4729272 2796 ipython_0.13.2-1~ubuntu12.04.1.dsc
+ 2d9c0162073f04e494aa68c9afd04f40 6481514 ipython_0.13.2.orig.tar.gz
+ e51292162bf140e879dcf71d284d7807 23025 ipython_0.13.2-1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Julian Taylor <jtaylor.debian@googlemail.com>
+Homepage: http://ipython.org/
+Vcs-Browser: http://anonscm.debian.org/viewvc/python-modules/packages/ipython/trunk/
+Vcs-Svn: svn://anonscm.debian.org/python-modules/packages/ipython/trunk/
+Package-List: 
+ ipython deb python optional
+ ipython-doc deb doc optional
+ ipython-notebook deb python optional
+ ipython-notebook-common deb python optional
+ ipython-qtconsole deb python optional
+ ipython3 deb python optional
+ ipython3-notebook deb python optional
+ ipython3-qtconsole deb python optional
+Checksums-Sha1:
+ 8c1a4a5a09e6168e3b270b1000956470c2a9b98b 2796 ipython_0.13.2-1~ubuntu12.04.1.dsc
+ 1734dc3ed04dca353eeeedbb65eb259d3b53c5c5 6481514 ipython_0.13.2.orig.tar.gz
+ 7ac1ff56e841e099022977913a083626f407c731 23025 ipython_0.13.2-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 5cf7116d90b3db861b75b4e64170cc25e780edac57b41f902a29e3d83da2abf8 2796 ipython_0.13.2-1~ubuntu12.04.1.dsc
+ 2808915daa5333fd2a452b426b17235c7115d62cc38f1f3eee80bf15b9b70a0f 6481514 ipython_0.13.2.orig.tar.gz
+ 9f3059c7d64e95dd3f226601a52bf4d31f3ef3a67cff94b2830379e88d078b60 23025 ipython_0.13.2-1~ubuntu12.04.1.debian.tar.gz
+Testsuite: autopkgtest
+
+Package: kmymoney
+Binary: kmymoney, kmymoney-common, kmymoney-dev, kmymoney-dbg
+Version: 4.6.3-1~precise1
+Priority: optional
+Section: universe/kde
+Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9), cmake, pkg-kde-tools (>= 0.9.0), kdelibs5-dev (>= 4:4.4.4), kdepimlibs5-dev (>= 4:4.4.4), shared-mime-info, libaqbanking34-dev | libaqbanking-dev, libgwenhywfar60-dev | libgwenhywfar-dev, libboost-graph-dev, libfinance-quote-perl, libgpgme11-dev, libalkimia-dev, libical-dev, libjpeg-dev, libofx-dev, libgmp-dev, libpng-dev, libsqlite3-dev, zlib1g-dev, pkg-config
+Architecture: any all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/k/kmymoney
+Files:
+ ef7c4880a917ec82cd9184c109409fa7 1867 kmymoney_4.6.3-1~precise1.dsc
+ 756bc76d182aa7cbac7033f4469b6687 22114966 kmymoney_4.6.3.orig.tar.bz2
+ bcfac3ce764bd43c471548e835bc42bd 10575 kmymoney_4.6.3-1~precise1.debian.tar.gz
+Uploaders: Mark Purcell <msp@debian.org>, Fathi Boudra <fabo@debian.org>
+Homepage: http://kmymoney2.sourceforge.net
+Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-kde/kde-extras/kmymoney2/
+Vcs-Svn: svn://svn.debian.org/pkg-kde/kde-extras/kmymoney2/trunk
+Package-List: 
+ kmymoney deb kde optional
+ kmymoney-common deb kde optional
+ kmymoney-dbg deb debug extra
+ kmymoney-dev deb libdevel optional
+Checksums-Sha1:
+ c5702e1457c2333d821365b39c286ef4743a9c7d 1867 kmymoney_4.6.3-1~precise1.dsc
+ 52faa3938c77b1ef513d1a46f5545ed823595c51 22114966 kmymoney_4.6.3.orig.tar.bz2
+ 699999d0837d92e81ec16b01a58bbfddf97c92e6 10575 kmymoney_4.6.3-1~precise1.debian.tar.gz
+Checksums-Sha256:
+ 000787fa71b3442baf80992b6eb56e771b0d517c4fd05fb674b1d81bfa7eff87 1867 kmymoney_4.6.3-1~precise1.dsc
+ 94e109992b7e9ebb066b608d56c168216b8a944d62538c95176bc36ea4db542e 22114966 kmymoney_4.6.3.orig.tar.bz2
+ facf725d7fb0a6bbb1a6d1ddc17813a1fd6581c424f3c6e543d722bf4c483838 10575 kmymoney_4.6.3-1~precise1.debian.tar.gz
+
+Package: l2tp-ipsec-vpn
+Binary: l2tp-ipsec-vpn
+Version: 1.0.7-1~ubuntu12.04.1
+Priority: optional
+Section: universe/net
+Maintainer: Werner Jaeger <werner_jaeger@web.de>
+Build-Depends: debhelper (>= 8.0), libcppunit-dev (>= 1.12.1), libctemplate-dev (>= 0.96), libengine-pkcs11-openssl (>= 0.1.8-2), libltdl-dev (>= 2.2.6), libqt4-dev (>= 4.6.2), libssl-dev (>= 0.9.8), qt4-qmake (>= 4.6.2)
+Architecture: linux-any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/l/l2tp-ipsec-vpn
+Files:
+ 64739eaf41dc5b8f79df030ca0d80973 1481 l2tp-ipsec-vpn_1.0.7-1~ubuntu12.04.1.dsc
+ f8ebaf00e8d9b392f9b93fe08f6e9f82 196304 l2tp-ipsec-vpn_1.0.7.orig.tar.gz
+ e7f63472232ba09318a2e8c1cf3bf6f5 4544 l2tp-ipsec-vpn_1.0.7-1~ubuntu12.04.1.debian.tar.gz
+Homepage: https://launchpad.net/l2tp-ipsec-vpn
+Vcs-Browser: http://bazaar.launchpad.net/~werner-jaeger/l2tp-ipsec-vpn/gui/files
+Vcs-Bzr: lp:l2tp-ipsec-vpn
+Package-List: 
+ l2tp-ipsec-vpn deb net optional
+Checksums-Sha1:
+ 5e1b34787bf7c159c1db66d802cfa77a593bada7 1481 l2tp-ipsec-vpn_1.0.7-1~ubuntu12.04.1.dsc
+ d10227a35750bf1f10c0ae025be9885552765edf 196304 l2tp-ipsec-vpn_1.0.7.orig.tar.gz
+ e0ac8e442b6c661640218b5df5c7a0f2d1c268f0 4544 l2tp-ipsec-vpn_1.0.7-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 364f0dfa738f2fab9fc2c869c369c0751825e1e4905d60baa6922c6fd06b1886 1481 l2tp-ipsec-vpn_1.0.7-1~ubuntu12.04.1.dsc
+ 82fde193327b5723aad7faf38f969229737d56bbb9576d74e51e14113e219cad 196304 l2tp-ipsec-vpn_1.0.7.orig.tar.gz
+ b28e0ef3e6234e349a6e7b7b8913397673b84367a86ad73d1a85240dec381801 4544 l2tp-ipsec-vpn_1.0.7-1~ubuntu12.04.1.debian.tar.gz
+
+Package: l2tp-ipsec-vpn-daemon
+Binary: l2tp-ipsec-vpn-daemon
+Version: 0.9.9-1~ubuntu12.04.1
+Priority: optional
+Section: universe/net
+Maintainer: Werner Jaeger <werner_jaeger@web.de>
+Build-Depends: debhelper (>= 8.0), libqt4-dev (>= 4.6.2), qt4-qmake (>= 4.6.2)
+Architecture: linux-any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/l/l2tp-ipsec-vpn-daemon
+Files:
+ e44ca7a3977cbf604546a8d648453da1 1291 l2tp-ipsec-vpn-daemon_0.9.9-1~ubuntu12.04.1.dsc
+ caf8728d035d17bc0b3f971f6d4e76eb 23571 l2tp-ipsec-vpn-daemon_0.9.9.orig.tar.gz
+ 8cb07602d654ddebd29e2cda321971a6 2565 l2tp-ipsec-vpn-daemon_0.9.9-1~ubuntu12.04.1.debian.tar.gz
+Homepage: https://launchpad.net/l2tp-ipsec-vpn
+Package-List: 
+ l2tp-ipsec-vpn-daemon deb net optional
+Checksums-Sha1:
+ e47406e690c7e24f8e7344397dae50da767bf1c6 1291 l2tp-ipsec-vpn-daemon_0.9.9-1~ubuntu12.04.1.dsc
+ 33fa6798038383114fd61932d55686385a480c9b 23571 l2tp-ipsec-vpn-daemon_0.9.9.orig.tar.gz
+ fbd422c483298e8ae1ea25ae0b4d3f8db9d1bd18 2565 l2tp-ipsec-vpn-daemon_0.9.9-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ ea219a872312693f96068106204eb0476a6222ba36e963460f8996b7095af75a 1291 l2tp-ipsec-vpn-daemon_0.9.9-1~ubuntu12.04.1.dsc
+ 815072c74329890f89fb5134c76b905e0605b3fef6b6e0b61cd2355e1d58caef 23571 l2tp-ipsec-vpn-daemon_0.9.9.orig.tar.gz
+ f0b163b329ebb1e7104ec287b9eca8e849f691150d00aa57cc25e3c7dafe1b6c 2565 l2tp-ipsec-vpn-daemon_0.9.9-1~ubuntu12.04.1.debian.tar.gz
+
+Package: labyrinth
+Binary: labyrinth
+Version: 0.6-0ubuntu2~ubuntu12.04.1
+Priority: optional
+Section: universe/gnome
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Martin Schaaf <mascha@ma-scha.de>
+Build-Depends: debhelper (>= 8), python (>= 2.6.6-3~)
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/l/labyrinth
+Files:
+ 475bf00435f074e2e55d19733192d3cc 1896 labyrinth_0.6-0ubuntu2~ubuntu12.04.1.dsc
+ e008ebfc1eaeab7f40cff05cb1865c45 168038 labyrinth_0.6.orig.tar.gz
+ 27bd2042da0f8bff15223eaae2613f9c 4178 labyrinth_0.6-0ubuntu2~ubuntu12.04.1.debian.tar.gz
+Homepage: http://www.gnome.org/~dscorgie/labyrinth.html
+Package-List: 
+ labyrinth deb gnome optional
+Checksums-Sha1:
+ dffb3c8c7c4b5a7016ec3ac188bcf2eec0611a89 1896 labyrinth_0.6-0ubuntu2~ubuntu12.04.1.dsc
+ 5bac2327a6290ecd9a9f11ab566f233593f80c8b 168038 labyrinth_0.6.orig.tar.gz
+ 29bfd83db8eebab375f05b2cf04d60bd1a143322 4178 labyrinth_0.6-0ubuntu2~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 9ba5f1d2ee5286d4512e74aec6492ca8597e0aa50d3567b2828aba81cb70bc86 1896 labyrinth_0.6-0ubuntu2~ubuntu12.04.1.dsc
+ c651ad0c6741e91251961107558d915dc7efbb57d84d64173ce0beed2a4aa34a 168038 labyrinth_0.6.orig.tar.gz
+ a4b98cee2e9ad3b168ac5d34bd633b846c60877ca13f037907aae672114eac30 4178 labyrinth_0.6-0ubuntu2~ubuntu12.04.1.debian.tar.gz
+
+Package: ledmon
+Binary: ledmon
+Version: 0.74-1~ubuntu12.04.1
+Priority: extra
+Section: universe/admin
+Maintainer: Daniel Jared Dominguez <Jared_Dominguez@Dell.com>
+Build-Depends: debhelper (>= 9), perl, libsgutils2-dev
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/l/ledmon
+Files:
+ 09adbbb726c7e4196e42160b0435fea8 1768 ledmon_0.74-1~ubuntu12.04.1.dsc
+ a16594d81a0cc8f1d777d80fa4842bc4 59722 ledmon_0.74.orig.tar.gz
+ 069f3a01ec76c415abec515f68306686 2901 ledmon_0.74-1~ubuntu12.04.1.debian.tar.gz
+Homepage: http://ledmon.sourceforge.net/
+Package-List: 
+ ledmon deb admin optional
+Checksums-Sha1:
+ 776c737ad2e6218aef6ba66a90ca073a9da83f9e 1768 ledmon_0.74-1~ubuntu12.04.1.dsc
+ 62ec275a1ccfc65bfe671bbe8f2e76174121ac9d 59722 ledmon_0.74.orig.tar.gz
+ 713b4a8faae14bba6bab0227a3a11e624932a1ba 2901 ledmon_0.74-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 92a44a7ff8d5efc53489f06be55ae83010ba5ff13476e887038a216a94542ae5 1768 ledmon_0.74-1~ubuntu12.04.1.dsc
+ 839c9fbc3929fed4d6fb118d2df74acd2a45e95979e8f90dc268baee014b1c9f 59722 ledmon_0.74.orig.tar.gz
+ b80cf6305388cf4edf9d93f91ca5b3b7e17fba978550b0e518b571f022896cb7 2901 ledmon_0.74-1~ubuntu12.04.1.debian.tar.gz
+
+Package: libopendbx
+Binary: libopendbx1, libopendbx1-dev, libopendbx1-firebird, libopendbx1-mssql, libopendbx1-mysql, libopendbx1-odbc, libopendbx1-pgsql, libopendbx1-sqlite, libopendbx1-sqlite3, libopendbx1-sybase, opendbx-utils, opendbx-doc
+Version: 1.4.6-3~ubuntu12.04.1
+Priority: optional
+Section: universe/libs
+Maintainer: Debian OpenDBX Maintainers <opendbx@kitterman.com>
+Build-Depends: autoconf, automake, autotools-dev, debhelper (>= 9), libtool, libmysqlclient-dev, libpq-dev, libsqlite0-dev, libsqlite3-dev, firebird2.5-dev | firebird2.1-dev | firebird2.0-dev | firebird2-dev | firebird1.5-dev, freetds-dev, unixodbc-dev | libiodbc2-dev, libreadline-dev, libncurses-dev | libncurses5-dev, docbook2x, doxygen, quilt, pkg-kde-tools
+Build-Conflicts: autoconf2.13, automake1.4
+Architecture: any all
+Standards-Version: 3.9.4
+Format: 1.0
+Directory: pool/universe/libo/libopendbx
+Files:
+ d461e1b7ea5b27b3645a126a94a62424 2366 libopendbx_1.4.6-3~ubuntu12.04.1.dsc
+ 3e89d7812ce4a28046bd60d5f969263d 587514 libopendbx_1.4.6.orig.tar.gz
+ 0553d8a3923cfeec02cbe70a2a18a9f2 253151 libopendbx_1.4.6-3~ubuntu12.04.1.diff.gz
+Uploaders: Marc Haber <mh+debian-packages@zugschlus.de>, Scott Kitterman <scott@kitterman.com>
+Homepage: http://www.linuxnetworks.de/doc/index.php/OpenDBX
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/opendbx.git;a=summary
+Vcs-Git: git://git.debian.org/collab-maint/opendbx
+Package-List: 
+ libopendbx1 deb libs optional
+ libopendbx1-dev deb libdevel optional
+ libopendbx1-firebird deb libs optional
+ libopendbx1-mssql deb libs optional
+ libopendbx1-mysql deb libs optional
+ libopendbx1-odbc deb libs optional
+ libopendbx1-pgsql deb libs optional
+ libopendbx1-sqlite deb libs optional
+ libopendbx1-sqlite3 deb libs optional
+ libopendbx1-sybase deb libs optional
+ opendbx-doc deb doc optional
+ opendbx-utils deb libs optional
+Checksums-Sha1:
+ 90333e26d721c190aa1f594e614358bc9c5fcde8 2366 libopendbx_1.4.6-3~ubuntu12.04.1.dsc
+ df6b1cb75165d4510e2ccf64e5515ada4ae3a67c 587514 libopendbx_1.4.6.orig.tar.gz
+ 8daf11e53b22a87f7e7ab1afbea322ec85004f2e 253151 libopendbx_1.4.6-3~ubuntu12.04.1.diff.gz
+Checksums-Sha256:
+ 36b77760e8ebbf903de2ec3acf22a0b527ef92f197647ba2028556fb7073c8d9 2366 libopendbx_1.4.6-3~ubuntu12.04.1.dsc
+ 2246a03812c7d90f10194ad01c2213a7646e383000a800277c6fb8d2bf81497c 587514 libopendbx_1.4.6.orig.tar.gz
+ 4727719c451dd365ec6a6545d2c5b956e6f0cbb85ce4649b8d47f892d7893f9e 253151 libopendbx_1.4.6-3~ubuntu12.04.1.diff.gz
+
+Package: libseccomp
+Binary: libseccomp-dev, libseccomp0
+Version: 0.1.0-1ubuntu1~ubuntu12.04.1
+Priority: optional
+Section: universe/libs
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Kees Cook <kees@debian.org>
+Build-Depends: debhelper (>= 9), linux-libc-dev
+Architecture: i386 amd64
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/libs/libseccomp
+Files:
+ 61f72f1c118ee5c52220b89f32599a36 1325 libseccomp_0.1.0-1ubuntu1~ubuntu12.04.1.dsc
+ 60c1c9b94fa46597800652131f5ebe97 62837 libseccomp_0.1.0.orig.tar.gz
+ dc9ba5931d20db16f9beab868b958239 4965 libseccomp_0.1.0-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+Homepage: https://sourceforge.net/projects/libseccomp/
+Package-List: 
+ libseccomp-dev deb libdevel optional
+ libseccomp0 deb libs optional
+Checksums-Sha1:
+ e5b169d135612493d23793a77959cd1dc97e265a 1325 libseccomp_0.1.0-1ubuntu1~ubuntu12.04.1.dsc
+ d7029ead149cbd322d25b3fc2d234498160d7dd2 62837 libseccomp_0.1.0.orig.tar.gz
+ fea72357eeba1b4e92ba7218bfe675e2f7776356 4965 libseccomp_0.1.0-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ d4723e1e08397a86f037e38d66d9755d06156fe531a565197aaa8ffb97151052 1325 libseccomp_0.1.0-1ubuntu1~ubuntu12.04.1.dsc
+ e940989c093c9c057aca4e1a878be48bdcdb027f876a8d4bdcd9a1405a3d7f6f 62837 libseccomp_0.1.0.orig.tar.gz
+ 669a0b05220f2d79fbc8e9cb6cd0f6f02caf66adbb83734f88edfac545784092 4965 libseccomp_0.1.0-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+
+Package: logisim
+Binary: logisim
+Version: 2.7.1~dfsg-1~ubuntu12.04.1
+Priority: optional
+Section: universe/java
+Maintainer: Vincent Cheng <Vincentc1208@gmail.com>
+Build-Depends: debhelper (>= 9), javahelper (>= 0.25)
+Build-Depends-Indep: default-jdk, javahelp2, libcolorpicker-java, libfontchooser-java
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/l/logisim
+Files:
+ 2378781443a7e7cda58450452ebcfeb9 2056 logisim_2.7.1~dfsg-1~ubuntu12.04.1.dsc
+ b80b6df5720c505455835e80a88c88b6 3517657 logisim_2.7.1~dfsg.orig.tar.gz
+ 741f8b8f063df0c420a0422e9a8d6777 6263 logisim_2.7.1~dfsg-1~ubuntu12.04.1.debian.tar.gz
+Homepage: http://ozark.hendrix.edu/~burch/logisim/
+Vcs-Browser: http://svn.debian.org/wsvn/collab-maint/deb-maint/logisim/trunk
+Vcs-Svn: svn://svn.debian.org/svn/collab-maint/deb-maint/logisim/trunk
+Package-List: 
+ logisim deb java optional
+Checksums-Sha1:
+ e1aad8994e100dda5e39d61113fc1f2c5f56b5e7 2056 logisim_2.7.1~dfsg-1~ubuntu12.04.1.dsc
+ b6ba92c8ad5add24712bb0314a71be093fbbcc1f 3517657 logisim_2.7.1~dfsg.orig.tar.gz
+ 82e84a30c4df5646eeba343a33c247708f03740b 6263 logisim_2.7.1~dfsg-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ e6ba2fd6d1eda6ea3a85fb46d4e77e7e3cfa8d30ec186f08545ddba51fa92892 2056 logisim_2.7.1~dfsg-1~ubuntu12.04.1.dsc
+ f8b8931467cce30f1096af7956e2a36485dc1949be5f6dcef4fc7282fcd72841 3517657 logisim_2.7.1~dfsg.orig.tar.gz
+ f8038beba4aa6e4065a194d6b9a58891bc75538b72a79e526487ed75b1b34274 6263 logisim_2.7.1~dfsg-1~ubuntu12.04.1.debian.tar.gz
+
+Package: lxc
+Binary: lxc, lxc-dbg, lxc-dev, liblxc0, python3-lxc
+Version: 0.8.0~rc1-4ubuntu39.12.10.2~ubuntu12.04.1
+Priority: optional
+Section: universe/admin
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Daniel Baumann <daniel.baumann@progress-technologies.net>
+Build-Depends: debhelper (>= 9), autotools-dev, dh-apparmor, docbook-utils, libcap-dev, linux-libc-dev, libapparmor-dev, libseccomp-dev [i386 amd64], dh-autoreconf, python3-dev (>= 3.2.3)
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/l/lxc
+Files:
+ 1d0e86e8bc5059dccf818bd0f824a71e 1637 lxc_0.8.0~rc1-4ubuntu39.12.10.2~ubuntu12.04.1.dsc
+ 06ceecf4dbe1be988fc903ad8dd34d29 301029 lxc_0.8.0~rc1.orig.tar.gz
+ 48898f49202babe2edf98bc0637cd986 186803 lxc_0.8.0~rc1-4ubuntu39.12.10.2~ubuntu12.04.1.debian.tar.gz
+Uploaders: Jonas Genannt <jonas.genannt@capi2name.de>
+Homepage: http://lxc.sourceforge.net/
+Package-List: 
+ liblxc0 deb admin optional
+ lxc deb admin optional
+ lxc-dbg deb debug extra
+ lxc-dev deb libdevel optional
+ python3-lxc deb python optional
+Checksums-Sha1:
+ 8100f6eea45debffc01a97ebd0e51ccaa380f9a6 1637 lxc_0.8.0~rc1-4ubuntu39.12.10.2~ubuntu12.04.1.dsc
+ 6e9a641b3ca06ad034712ecf437588c4585ff40e 301029 lxc_0.8.0~rc1.orig.tar.gz
+ 45a53a5a654e53ed711d872a6cd35d1a4b10b4a4 186803 lxc_0.8.0~rc1-4ubuntu39.12.10.2~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 5930aa013a904d2936e5c800efe4de1a41eb3d26ba0cea5bbaf23b5febd1b30d 1637 lxc_0.8.0~rc1-4ubuntu39.12.10.2~ubuntu12.04.1.dsc
+ 32bf83902c07387646c55de440d6d12cf61bd54c97417109c2d1ac47d17cb911 301029 lxc_0.8.0~rc1.orig.tar.gz
+ 300781b9f7408c61041ca4d89b480452e654a0d3530895142a74a43cea574a13 186803 lxc_0.8.0~rc1-4ubuntu39.12.10.2~ubuntu12.04.1.debian.tar.gz
+
+Package: mangonel
+Binary: mangonel
+Version: 1.0-0ubuntu1~ubuntu12.04.1
+Priority: extra
+Section: universe/kde
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Build-Depends: debhelper (>= 7.3.16), pkg-kde-tools (>= 0.5.0), cmake, kdelibs5-dev
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/universe/m/mangonel
+Files:
+ b30312a1209c597302d59d847e5b2895 1155 mangonel_1.0-0ubuntu1~ubuntu12.04.1.dsc
+ 724ef07c0c3fadb47f4d9b42a636f06f 19834 mangonel_1.0.orig.tar.bz2
+ ea52a1975101c0924976e7b38a0d090d 1583 mangonel_1.0-0ubuntu1~ubuntu12.04.1.debian.tar.gz
+Package-List: 
+ mangonel deb kde extra
+Checksums-Sha1:
+ 90c8d91445d165b44e21aefa6523f7358f35ed5a 1155 mangonel_1.0-0ubuntu1~ubuntu12.04.1.dsc
+ 7f0aa882c5c3d9804e83c599aa73ffff842df86b 19834 mangonel_1.0.orig.tar.bz2
+ 9b2f20a3881cd7c797c37f7f68de90eb4ac5435a 1583 mangonel_1.0-0ubuntu1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ dddad066ffc9c7e2ef4a903c59fe943121aec3d67c632f2f782bcba8f6ee0d88 1155 mangonel_1.0-0ubuntu1~ubuntu12.04.1.dsc
+ d11a965810c8e04c9b3c88ea80d882fdddda5f5c5fd9ac78723cdb34a64a7431 19834 mangonel_1.0.orig.tar.bz2
+ cd35224919817301b1e21056e8ed0cfc5e8ed38f1b7030a5146a56c5cf38268b 1583 mangonel_1.0-0ubuntu1~ubuntu12.04.1.debian.tar.gz
+
+Package: mininet
+Binary: mininet
+Version: 2.0.0-0ubuntu1~ubuntu12.04.1
+Priority: extra
+Section: universe/net
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Bob Lantz <rlantz@cs.stanford.edu>
+Build-Depends: debhelper (>= 9~), help2man, python-dev, python-pkg-resources, python-setuptools, python-networkx
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/m/mininet
+Files:
+ a21fec6d4a1a14c054346075ed4fcd94 1929 mininet_2.0.0-0ubuntu1~ubuntu12.04.1.dsc
+ c86f2658ec55c29192c28874756b1fd1 125518 mininet_2.0.0.orig.tar.gz
+ eab071aaaeaffe493c4ce952f286ed57 2809 mininet_2.0.0-0ubuntu1~ubuntu12.04.1.debian.tar.gz
+Homepage: http://openflow.org/mininet
+Package-List: 
+ mininet deb net extra
+Checksums-Sha1:
+ e5cb9d1e54677cf6e02b5f386d63bce562573d3d 1929 mininet_2.0.0-0ubuntu1~ubuntu12.04.1.dsc
+ 9e16650b78196de3d3ea1e03175b8d2657b8ee0b 125518 mininet_2.0.0.orig.tar.gz
+ 0146f57500f360496752bf226dc6d9f428db6311 2809 mininet_2.0.0-0ubuntu1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 296d3a0765dd0c693eb75ebffec07628f639101fe72e66f79877dbe13864e9d5 1929 mininet_2.0.0-0ubuntu1~ubuntu12.04.1.dsc
+ 0e2b0f09d2e1fcea3ea80e46d2f1b81a3f5a9007a1c6e7761ee4681f5375ad5c 125518 mininet_2.0.0.orig.tar.gz
+ 9af0594aeaa5dfd8b621776955825c829c8bf9a3d2c8d2ab6538fe605c6ff4b1 2809 mininet_2.0.0-0ubuntu1~ubuntu12.04.1.debian.tar.gz
+
+Package: mosh
+Binary: mosh
+Version: 1.2.2-1~ubuntu12.04.1
+Priority: optional
+Section: universe/net
+Maintainer: Keith Winstein <keithw@mit.edu>
+Build-Depends: debhelper (>= 7.0.50), autotools-dev, protobuf-compiler, libprotobuf-dev, dh-autoreconf, pkg-config, libutempter-dev, zlib1g-dev, libncurses5-dev
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/m/mosh
+Files:
+ b00f6f69ea9e50dc359d7bf7c3583320 1303 mosh_1.2.2-1~ubuntu12.04.1.dsc
+ d8263254ededbca600e4be503656813d 164517 mosh_1.2.2.orig.tar.gz
+ 5e97a32d630f2a316ea45f37bc1c5b57 8000 mosh_1.2.2-1~ubuntu12.04.1.debian.tar.gz
+Dm-Upload-Allowed: yes
+Homepage: http://mosh.mit.edu
+Vcs-Browser: http://github.com/keithw/mosh
+Vcs-Git: git://github.com/keithw/mosh.git
+Package-List: 
+ mosh deb net optional
+Checksums-Sha1:
+ ecae1df637f9d297294a3506a0fb4623275e0acb 1303 mosh_1.2.2-1~ubuntu12.04.1.dsc
+ f1e5bbedd81698c49f49be3bff76440626712231 164517 mosh_1.2.2.orig.tar.gz
+ c6ef2191fe917c2a344814bac31b91ba0232d037 8000 mosh_1.2.2-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ b5c77ff175338aa14fc33c6438e5d2d7cbe56c76a82337b39be71f18cedea9df 1303 mosh_1.2.2-1~ubuntu12.04.1.dsc
+ 4a23144ed4628890807844c6dad58be3fc3f0eba013c93cea85c955e91883f9f 164517 mosh_1.2.2.orig.tar.gz
+ 72ccc279495e8081bea0906312611c7476b9a280244a1da3220c831f25cd9b35 8000 mosh_1.2.2-1~ubuntu12.04.1.debian.tar.gz
+
+Package: myunity
+Binary: myunity
+Version: 3.1.5-0ubuntu1~ubuntu12.04.2
+Priority: optional
+Section: universe/utils
+Maintainer: Andrea Colangelo <warp10@ubuntu.com>
+Build-Depends: debhelper (>= 8.0.0), gambas2-dev, gambas2-gb-gtk, gambas2-gb-form, gambas2-gb-gtk-ext
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/m/myunity
+Files:
+ 8c0df53decb18687572774c4b8311e7d 1848 myunity_3.1.5-0ubuntu1~ubuntu12.04.2.dsc
+ 37af192584f59809153f46ee7ac651ca 333303 myunity_3.1.5.orig.tar.gz
+ f039cee2d5c2c334b357b041be7d34f4 3792 myunity_3.1.5-0ubuntu1~ubuntu12.04.2.debian.tar.gz
+Homepage: https://launchpad.net/myunity
+Package-List: 
+ myunity deb utils optional
+Checksums-Sha1:
+ 3580f49141436cf2013c2a5ceab3aa96f113a5a4 1848 myunity_3.1.5-0ubuntu1~ubuntu12.04.2.dsc
+ 599beaa30bcb60cb978d34fab080f8794fad361e 333303 myunity_3.1.5.orig.tar.gz
+ 2451a2cd91685f7b5c29ba27673daf50191ebff1 3792 myunity_3.1.5-0ubuntu1~ubuntu12.04.2.debian.tar.gz
+Checksums-Sha256:
+ b1c6e4b004bb111cb4f0b6f77bc5cb9dd12a27fe9fee134bc8211ff2eb2bee18 1848 myunity_3.1.5-0ubuntu1~ubuntu12.04.2.dsc
+ 2575fff5b64207c2af49ffeda897377a6b725376493fb7e3cfa7920e0abc53ca 333303 myunity_3.1.5.orig.tar.gz
+ 23584c41b2f79608d6c674217f69b8a800a0cd961bcfb57bdbf803abf1c38a31 3792 myunity_3.1.5-0ubuntu1~ubuntu12.04.2.debian.tar.gz
+
+Package: opendmarc
+Binary: opendmarc, libopendmarc1, libopendmarc-dev, rddmarc
+Version: 1.1.3-1~ubuntu12.04.1
+Priority: extra
+Section: universe/mail
+Maintainer: Scott Kitterman <scott@kitterman.com>
+Build-Depends: debhelper (>= 9), libmilter-dev, pkg-config, opendkim-tools, autotools-dev, automake, dh-autoreconf, quilt
+Architecture: any all
+Standards-Version: 3.9.4
+Format: 1.0
+Directory: pool/universe/o/opendmarc
+Files:
+ ef0f282de6ed3f0497c7492ef9241943 1338 opendmarc_1.1.3-1~ubuntu12.04.1.dsc
+ e5342401033da043fa61507511ca72b9 586574 opendmarc_1.1.3.orig.tar.gz
+ 926c05fbc9f548842d94d3edfeb3c27b 14859 opendmarc_1.1.3-1~ubuntu12.04.1.diff.gz
+Homepage: http://www.trusteddomain.org/opendmarc
+Package-List: 
+ libopendmarc-dev deb libdevel extra
+ libopendmarc1 deb libs extra
+ opendmarc deb mail extra
+ rddmarc deb mail extra
+Checksums-Sha1:
+ 00f43856b787445aedfc635f6204e3cc81dff3b0 1338 opendmarc_1.1.3-1~ubuntu12.04.1.dsc
+ 28d90511fdf6f459cf1d16b50310f91dbb297045 586574 opendmarc_1.1.3.orig.tar.gz
+ ac871e3b49fb13640cedba18d8d75d5ebcc9c729 14859 opendmarc_1.1.3-1~ubuntu12.04.1.diff.gz
+Checksums-Sha256:
+ 3b75d45437573a1baca16681138c8434ea52b78ec0155b82f6f4f7474cb80bab 1338 opendmarc_1.1.3-1~ubuntu12.04.1.dsc
+ 4f9511ebd8cefb6e5a4d836f6285a1b6e4d682daec79fdba9fc7925b5f4fcfca 586574 opendmarc_1.1.3.orig.tar.gz
+ b64844092797f8d0e1bfbdd3f0c3159c07bd9c63d9dd34f6393241c0e8904178 14859 opendmarc_1.1.3-1~ubuntu12.04.1.diff.gz
+
+Package: openerp6.1
+Binary: openerp6.1-core, openerp6.1-full
+Version: 6.1-1+dfsg-0ubuntu2~ubuntu12.04.1
+Priority: optional
+Section: universe/net
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Yolanda Robla <yolanda.robla@canonical.com>
+Build-Depends: debhelper (>= 7.0.50~), python, python-setuptools, python-babel
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/o/openerp6.1
+Files:
+ e33d869ca7d9286063c5e9a4fc8cadb6 1437 openerp6.1_6.1-1+dfsg-0ubuntu2~ubuntu12.04.1.dsc
+ baaa289c7e2389eea03e78c7bfd2e983 59525469 openerp6.1_6.1-1+dfsg.orig.tar.gz
+ b2429dcc3e7d484d8dd832d34b877d57 29386 openerp6.1_6.1-1+dfsg-0ubuntu2~ubuntu12.04.1.debian.tar.gz
+Homepage: http://www.openerp.com/
+Vcs-Bzr: https://launchpad.net/openobject
+Package-List: 
+ openerp6.1-core deb net optional
+ openerp6.1-full deb net optional
+Checksums-Sha1:
+ d4cc8bd61ef4016cc6beba2d75eeec12f2702d67 1437 openerp6.1_6.1-1+dfsg-0ubuntu2~ubuntu12.04.1.dsc
+ 2663be0b8384b5549edd68953cc5a87b1b6df27f 59525469 openerp6.1_6.1-1+dfsg.orig.tar.gz
+ 92eaf438fc3b009ffbb70d66d4cf4ee3e46f4c4d 29386 openerp6.1_6.1-1+dfsg-0ubuntu2~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 9fd8153f003f0a8bc36bb34b6062dec5e1ecbb4a77d3b1828088e0b8715088db 1437 openerp6.1_6.1-1+dfsg-0ubuntu2~ubuntu12.04.1.dsc
+ b58069634be9ad27818cdb2da6f5f510cd30f43837a999cef12c762bf68555b5 59525469 openerp6.1_6.1-1+dfsg.orig.tar.gz
+ ada49809ad950630820d1772718bbb98d17cc26304fc50f4f8774a5ff225946e 29386 openerp6.1_6.1-1+dfsg-0ubuntu2~ubuntu12.04.1.debian.tar.gz
+
+Package: openlp
+Binary: openlp
+Version: 1.9.10-1~ubuntu12.04.1
+Priority: optional
+Section: universe/x11
+Maintainer: Raoul Snyman <raoulsnyman@openlp.org>
+Build-Depends: debhelper (>= 7.0.50~), python (>= 2.6.6-3~), python-setuptools, qt4-linguist-tools
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/o/openlp
+Files:
+ 90277083a9fd902f6aae565c835de9c4 1285 openlp_1.9.10-1~ubuntu12.04.1.dsc
+ cd746f4e38ded52739867cbca2ae14e0 12131910 openlp_1.9.10.orig.tar.gz
+ 3b60a22d6a32c30bdc7e193365d8b327 2976 openlp_1.9.10-1~ubuntu12.04.1.debian.tar.gz
+Homepage: http://openlp.org/
+Vcs-Browser: http://bazaar.launchpad.net/~openlp-core/openlp/debian-package/files
+Vcs-Bzr: lp:openlp/debian-package
+Package-List: 
+ openlp deb x11 optional
+Checksums-Sha1:
+ 1fdd575039ad1d4827021e6661fc28b25c65d155 1285 openlp_1.9.10-1~ubuntu12.04.1.dsc
+ 664f604379c93d548adc3226eeebea56ac9597f0 12131910 openlp_1.9.10.orig.tar.gz
+ 6c9f0877fd2e23d082c891d66b6ee21a6d56b23d 2976 openlp_1.9.10-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 7877258b53d7d835d411f5ce2b22e2d744baee3e448ce25e037dfd6bb37d3191 1285 openlp_1.9.10-1~ubuntu12.04.1.dsc
+ 2e7004ca092a7fa3978c40cfaf6baf779b217cae8aceb586c8f70d60bd6e69c1 12131910 openlp_1.9.10.orig.tar.gz
+ 6f55f264e6a0f26b21aee7c21b915ab8e12c13dfdfe5c7a16a1200282ca45dc5 2976 openlp_1.9.10-1~ubuntu12.04.1.debian.tar.gz
+
+Package: parallel
+Binary: parallel
+Version: 20121122-0ubuntu1~ubuntu12.04.1
+Priority: extra
+Section: universe/utils
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Rogério Brito <rbrito@ime.usp.br>
+Build-Depends: debhelper (>= 8)
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/p/parallel
+Files:
+ 9ef6d903ada553ba81050306f184d48d 2060 parallel_20121122-0ubuntu1~ubuntu12.04.1.dsc
+ c1e93b02057bc93b6da9a60072dc011a 236294 parallel_20121122.orig.tar.bz2
+ 4e39ceb83b9cd59da4464595ecc3ae05 3914 parallel_20121122-0ubuntu1~ubuntu12.04.1.debian.tar.gz
+Uploaders:  Ondřej Surý <ondrej@debian.org>
+Homepage: https://www.gnu.org/software/parallel/
+Vcs-Browser: http://git.debian.org/?p=collab-maint/parallel.git
+Vcs-Git: git://git.debian.org/collab-maint/parallel.git
+Package-List: 
+ parallel deb utils extra
+Checksums-Sha1:
+ 73f99948ffccaec9f1fe247c11fc0e348ec07221 2060 parallel_20121122-0ubuntu1~ubuntu12.04.1.dsc
+ 3bb25bed991ce73f5f302d1051b278e6ebb3c25a 236294 parallel_20121122.orig.tar.bz2
+ 1a8d49c7f5dc4e778dfe6799be6640cde7ecf41d 3914 parallel_20121122-0ubuntu1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 40a42835775bbffeaea82b3f0391e205ce889aa39bbe166321ed949f46bdef7b 2060 parallel_20121122-0ubuntu1~ubuntu12.04.1.dsc
+ 0315336141612ba2ec1f76e6c8c58a72f4531777c96b79b91ef64b3980be584f 236294 parallel_20121122.orig.tar.bz2
+ 96bdf5ffa3ac2b19e412ba4902652ed70acb105330c479bc0ce0b0c18a0cbff1 3914 parallel_20121122-0ubuntu1~ubuntu12.04.1.debian.tar.gz
+
+Package: password-store
+Binary: pass
+Version: 1.4-2~ubuntu12.04.1
+Priority: optional
+Section: universe/admin
+Maintainer: Colin Watson <cjwatson@debian.org>
+Build-Depends: debhelper (>= 7.0.50~)
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/p/password-store
+Files:
+ a3e103c02abbad00b20fa2ed9ffb0ceb 1152 password-store_1.4-2~ubuntu12.04.1.dsc
+ b89c42381c2d612f2b23c4cf57d767b3 17968 password-store_1.4.orig.tar.xz
+ 4b93448da7cb122320e4a67b6277576f 1981 password-store_1.4-2~ubuntu12.04.1.debian.tar.gz
+Homepage: http://zx2c4.com/projects/password-store/
+Package-List: 
+ pass deb admin optional
+Checksums-Sha1:
+ 4a374049539b64a1812f3cdaa261b2c52327398f 1152 password-store_1.4-2~ubuntu12.04.1.dsc
+ 7ce817ac593e3dfa4fbc4ce06fad50b42b2e3480 17968 password-store_1.4.orig.tar.xz
+ 058f46b633c729df93b7aedc5389739806807cc4 1981 password-store_1.4-2~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ de5c9c0530bcb22628d5a3f7ba1827183f619f2c2a9d57202c96ff7534ea6333 1152 password-store_1.4-2~ubuntu12.04.1.dsc
+ 2e94b0078abdf4673f3c22bde048776a3c12776b1bc98c22e8fb6e684b0b4a9e 17968 password-store_1.4.orig.tar.xz
+ 07f182cbf1c9c60eff6137053ce57411f19906e163d1455e1df91b736aa78663 1981 password-store_1.4-2~ubuntu12.04.1.debian.tar.gz
+
+Package: pbuilder-scripts
+Binary: pbuilder-scripts
+Version: 17~ubuntu12.04.1
+Priority: extra
+Section: universe/devel
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 9)
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (native)
+Directory: pool/universe/p/pbuilder-scripts
+Files:
+ 2b8edff61aa6572475b25da6e4915cb0 861 pbuilder-scripts_17~ubuntu12.04.1.dsc
+ 5e0961e7d500117f5ffea7acdcfe8f63 6798 pbuilder-scripts_17~ubuntu12.04.1.tar.gz
+Package-List: 
+ pbuilder-scripts deb devel extra
+Checksums-Sha1:
+ 20ed8a48d8aae7ae5afcab85dabc945a8f4ea756 861 pbuilder-scripts_17~ubuntu12.04.1.dsc
+ 0707d78ac3efce824d6eb3055a2a0b17edbb0df7 6798 pbuilder-scripts_17~ubuntu12.04.1.tar.gz
+Checksums-Sha256:
+ 8608265c1c8359faf03ef5dadb5d913149e9856fd109ba23567680c490982e03 861 pbuilder-scripts_17~ubuntu12.04.1.dsc
+ 9b2252400c1bee53a79b3be306a19503c0d3df3ef2276c3de107e062c4f3d73c 6798 pbuilder-scripts_17~ubuntu12.04.1.tar.gz
+
+Package: pokerth
+Binary: pokerth, pokerth-server, pokerth-data
+Version: 0.9.5-1~ubuntu12.04.1
+Priority: optional
+Section: universe/games
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 7.0.50~), libqt4-dev, libgsasl7-dev, libsdl1.2-dev, libsdl-mixer1.2-dev, libcurl4-gnutls-dev, libgnutls-dev, libsqlite3-dev, libboost-filesystem-dev (>= 1.42.0), libboost-thread-dev (>= 1.42.0), libboost-iostreams-dev (>= 1.42.0), libboost-system-dev (>= 1.42.0), libboost-program-options-dev (>= 1.42.0), libboost-date-time-dev (>= 1.42.0), libboost-regex-dev (>= 1.42.0), libboost-random-dev (>= 1.42.0), libircclient-dev, libtinyxml-dev
+Architecture: any all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/p/pokerth
+Files:
+ 79adb97e2172395271daf10cef32ca79 1864 pokerth_0.9.5-1~ubuntu12.04.1.dsc
+ 4bdea98bfc142a825c64b77feb4667d0 13598803 pokerth_0.9.5.orig.tar.bz2
+ 434acaf1f0e8bf9e46d1e5e963a1db2a 13547 pokerth_0.9.5-1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Evgeni Golov <evgeni@debian.org>
+Homepage: http://www.pokerth.net/
+Vcs-Browser: http://svn.debian.org/wsvn/pkg-games/packages/trunk/pokerth/
+Vcs-Svn: svn://svn.debian.org/svn/pkg-games/packages/trunk/pokerth/
+Package-List: 
+ pokerth deb games optional
+ pokerth-data deb games optional
+ pokerth-server deb games optional
+Checksums-Sha1:
+ 8fd545e37cd437e5ded704c33043853ae8170a70 1864 pokerth_0.9.5-1~ubuntu12.04.1.dsc
+ a25ebbca72515acb21209587a7df8f1296ed7f53 13598803 pokerth_0.9.5.orig.tar.bz2
+ 4a192e867cab2d63946c878434e229d2bcec5e23 13547 pokerth_0.9.5-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 26077ba05d9f1205b2990fbf4e4e5072b3217e0340b6f6e7e490b6ea170f2919 1864 pokerth_0.9.5-1~ubuntu12.04.1.dsc
+ b837bdccbf13c15cb22f255ad0e367c24ac431119cb7c7da48e8a753b81c599f 13598803 pokerth_0.9.5.orig.tar.bz2
+ 449d65aabf019e7298dad9f6edee7547d7d653dbeca5a2099fcf5965d673b4fd 13547 pokerth_0.9.5-1~ubuntu12.04.1.debian.tar.gz
+
+Package: python-concurrent.futures
+Binary: python-concurrent.futures
+Version: 2.1.2-1~ubuntu12.04.1
+Priority: optional
+Section: universe/python
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 8), python-all, python-support (>= 1), python-sphinx (>= 1.0.7+dfsg), python-setuptools
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/p/python-concurrent.futures
+Files:
+ 62dc0c2345d0997c93c685b7fa3f80d2 1656 python-concurrent.futures_2.1.2-1~ubuntu12.04.1.dsc
+ a6fa247e3c5fe3d60d8e12f1b873cc88 25360 python-concurrent.futures_2.1.2.orig.tar.gz
+ ab9579f207fe528fb4912494cee51a5e 2856 python-concurrent.futures_2.1.2-1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Sandro Tosi <morph@debian.org>
+Homepage: http://code.google.com/p/pythonfutures/
+Vcs-Browser: http://svn.debian.org/viewsvn/python-modules/packages/python-concurrent.futures/trunk/
+Vcs-Svn: svn://svn.debian.org/svn/python-modules/packages/python-concurrent.futures/trunk
+Package-List: 
+ python-concurrent.futures deb python optional
+Checksums-Sha1:
+ 45c68bbe440bbbbb469029169abf9682b269eeac 1656 python-concurrent.futures_2.1.2-1~ubuntu12.04.1.dsc
+ 0b18dbf5d081b8cc9364360f2f995fab1a93cc5f 25360 python-concurrent.futures_2.1.2.orig.tar.gz
+ 33a6ac8fb333e282a5f658bbac73900362a60910 2856 python-concurrent.futures_2.1.2-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 46ef6505c240ec117d298db731bfaa1955b1825c26962f1a7f0a6b84ee267abc 1656 python-concurrent.futures_2.1.2-1~ubuntu12.04.1.dsc
+ 129e0c781192d7d680c5868ca602bcd3502a49e9899e5ca658eabc8f1130cb99 25360 python-concurrent.futures_2.1.2.orig.tar.gz
+ 33c6d46857c1418eb947c1d5348a03c0f7a73284fce3203d8e5e8f9a68d196a8 2856 python-concurrent.futures_2.1.2-1~ubuntu12.04.1.debian.tar.gz
+Python-Version: >= 2.6
+
+Package: python-leveldb
+Binary: python-leveldb
+Version: 0~svn44-1~ubuntu12.04.1
+Priority: optional
+Section: universe/database
+Maintainer: Alessio Treglia <alessio@debian.org>
+Build-Depends: debhelper (>= 7.0.8~), libleveldb-dev, libsnappy-dev, python-all-dev
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/p/python-leveldb
+Files:
+ 872fd64464cf9daa09cd99f35d8692b1 2034 python-leveldb_0~svn44-1~ubuntu12.04.1.dsc
+ 5fb8dd5522fe70dfdc1819418974b423 19319 python-leveldb_0~svn44.orig.tar.bz2
+ aebb7540e851160d6ecee9e6e61d19b2 2456 python-leveldb_0~svn44-1~ubuntu12.04.1.debian.tar.gz
+Homepage: http://code.google.com/p/py-leveldb/
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/python-leveldb.git
+Vcs-Git: git://anonscm.debian.org/collab-maint/python-leveldb.git
+Package-List: 
+ python-leveldb deb python optional
+Checksums-Sha1:
+ 5e7fa9af238a51320f7f8292754942299364d64b 2034 python-leveldb_0~svn44-1~ubuntu12.04.1.dsc
+ 63be0e0228126c4770073c916df16a24fe9d9aa1 19319 python-leveldb_0~svn44.orig.tar.bz2
+ 9b0ef3250c88b4f13e3bcd955217f2a465f5a1cb 2456 python-leveldb_0~svn44-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 483dcb7d859cd27d39fb8daf83da20bbb15e835ba2880ac122557b2a9823538c 2034 python-leveldb_0~svn44-1~ubuntu12.04.1.dsc
+ 32634e9345264a9471f6170057a749446722b847ec55a725b9b75fbc259559e2 19319 python-leveldb_0~svn44.orig.tar.bz2
+ 826911b36b820aad566aa7f4691ea043de9354a8a0245382f5123d40a2d9ea0d 2456 python-leveldb_0~svn44-1~ubuntu12.04.1.debian.tar.gz
+
+Package: python-notify2
+Binary: python-notify2, python3-notify2
+Version: 0.3-2~ubuntu12.04.1
+Priority: optional
+Section: universe/python
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 8), python3-all, python3-dbus, python-all, python-dbus, dbus, dbus-x11, notification-daemon, xvfb, xauth, python-gi, python3-gi, gir1.2-gdkpixbuf-2.0
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/p/python-notify2
+Files:
+ 3aeb998d0883d65fad344e4f3d60a290 1614 python-notify2_0.3-2~ubuntu12.04.1.dsc
+ 6b2f6400999956652e4c9bc83d87607b 8798 python-notify2_0.3.orig.tar.gz
+ 5fa4026259fc517163c1b989437beb6f 3241 python-notify2_0.3-2~ubuntu12.04.1.debian.tar.gz
+Uploaders: Thomas Kluyver <thomas@kluyver.me.uk>
+Homepage: http://pypi.python.org/pypi/notify2
+Vcs-Browser: http://anonscm.debian.org/viewvc/python-modules/packages/python-notify2/trunk/
+Vcs-Svn: svn://svn.debian.org/python-modules/packages/python-notify2/trunk/
+Package-List: 
+ python-notify2 deb python optional
+ python3-notify2 deb python optional
+Checksums-Sha1:
+ 670d33bfae6b1d7e6472f2d25003fa4cdaf8a40e 1614 python-notify2_0.3-2~ubuntu12.04.1.dsc
+ 2a91a1a78993981dc972021d06e74177cc2d8b47 8798 python-notify2_0.3.orig.tar.gz
+ 7e601fe5a6700438200fc2968a2b61e64343dfc2 3241 python-notify2_0.3-2~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ d2ba93f5e9957d6dbe653f4d1aaa11d9fa1f7258d54c0abc603c974e1ecbfbca 1614 python-notify2_0.3-2~ubuntu12.04.1.dsc
+ 684281f91c51fc60bc7909a35bd21d043a2a421f4e269de1ed1f13845d1d6321 8798 python-notify2_0.3.orig.tar.gz
+ 3ce4ddbedd02ebf8ec960d69f5a88766e4de10f27241798cb5d6cc2ac7ec9e4d 3241 python-notify2_0.3-2~ubuntu12.04.1.debian.tar.gz
+
+Package: qjackctl
+Binary: qjackctl
+Version: 0.3.9-2~ubuntu12.04.1
+Priority: optional
+Section: universe/sound
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Build-Depends: cdbs, debhelper (>= 7.0.0), libasound2-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386], libjack-dev, libqt4-dev, libx11-dev
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/q/qjackctl
+Files:
+ fdaa352307ac3a56042b795ead5f055e 1551 qjackctl_0.3.9-2~ubuntu12.04.1.dsc
+ f932c916f43ba3251d3a9ed62a448e43 449783 qjackctl_0.3.9.orig.tar.gz
+ c69ea42d98dd95b50290f04a23e4d022 8741 qjackctl_0.3.9-2~ubuntu12.04.1.debian.tar.gz
+Uploaders:  Adrian Knoth <adi@drcomp.erfurt.thur.de>, Alessio Treglia <alessio@debian.org>, Free Ekanayaka <freee@debian.org>
+Dm-Upload-Allowed: yes
+Homepage: http://qjackctl.sourceforge.net
+Vcs-Browser: http://git.debian.org/?p=pkg-multimedia/qjackctl.git
+Vcs-Git: git://git.debian.org/git/pkg-multimedia/qjackctl.git
+Package-List: 
+ qjackctl deb sound optional
+Checksums-Sha1:
+ 5a497841f91a084da09556d2f5d0706c1626c6c0 1551 qjackctl_0.3.9-2~ubuntu12.04.1.dsc
+ 41e7e313f77fb9fd340a293740a399eeb91b9865 449783 qjackctl_0.3.9.orig.tar.gz
+ d55fe71fd7a579df890c29334ac2735731feba67 8741 qjackctl_0.3.9-2~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ ae775ad11897a8eb055d190e20d23d88b294dc20c307891e5d51f3a1825d4f0b 1551 qjackctl_0.3.9-2~ubuntu12.04.1.dsc
+ 5ee8d60675cc65eca8e3aea8ff42770efd6ff84293f9b0f9c2c7acd2383d9a28 449783 qjackctl_0.3.9.orig.tar.gz
+ 3a0ad39d9cf038ad96581c9c22f02a4119aaea05d2fa50a895d0c1eb855e61fc 8741 qjackctl_0.3.9-2~ubuntu12.04.1.debian.tar.gz
+
+Package: qtcreator
+Binary: qtcreator, qtcreator-dbg, qtcreator-doc
+Version: 2.5.2-0ubuntu1~ubuntu12.04.1
+Priority: optional
+Section: universe/devel
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Build-Depends: debhelper (>= 9), libicu-dev, libqt4-dev (>= 4:4.8.1), libqt4-private-dev (>= 4:4.8.1), libqtwebkit-dev (>= 2.1.0~2011week13-2), qt4-dev-tools (>= 4:4.8.1)
+Architecture: any all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/q/qtcreator
+Files:
+ acf5903b90a7bb6fc868ea291b5c16b9 2394 qtcreator_2.5.2-0ubuntu1~ubuntu12.04.1.dsc
+ 4a9c09cdf4609753283c31451c84ceb8 22523588 qtcreator_2.5.2.orig.tar.gz
+ 4f4a4fc6f330b20724b7828b1e605838 25962 qtcreator_2.5.2-0ubuntu1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Adam Majer <adamm@zombino.com>, Fathi Boudra <fabo@debian.org>, Jeremy Lainé <jeremy.laine@m4x.org>
+Homepage: http://qt.nokia.com/products/developer-tools/
+Vcs-Browser: http://git.debian.org/?p=collab-maint/qt-creator.git
+Vcs-Git: git://git.debian.org/collab-maint/qt-creator.git
+Package-List: 
+ qtcreator deb devel optional
+ qtcreator-dbg deb debug extra
+ qtcreator-doc deb doc optional
+Checksums-Sha1:
+ cbee94d30952480e87ce112c1a976e600e9b1e8f 2394 qtcreator_2.5.2-0ubuntu1~ubuntu12.04.1.dsc
+ 703bcb2306abc41c7080726e1bde1c6ae3b74ebb 22523588 qtcreator_2.5.2.orig.tar.gz
+ aeddb3a0e5f38c8ec1410ab8d1629afd7e42bef6 25962 qtcreator_2.5.2-0ubuntu1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ f0754eeeb6cd40dc2f3016b25b420d4023d1b655599b712b6380340d11ce5a83 2394 qtcreator_2.5.2-0ubuntu1~ubuntu12.04.1.dsc
+ 04521c642953fcb7a2d4011a60fdf29dca4ac1fffa8c834a21589fa390db2d4a 22523588 qtcreator_2.5.2.orig.tar.gz
+ 3fa238e7b1b3ef6cdc2bdd3fe6d6e1db57a9a48ddcdf90702596b308f7379780 25962 qtcreator_2.5.2-0ubuntu1~ubuntu12.04.1.debian.tar.gz
+
+Package: scratch
+Binary: scratch
+Version: 1.4.0.6~dfsg1-2~ubuntu12.04.1
+Priority: optional
+Section: universe/education
+Maintainer: Miriam Ruiz <little_miry@yahoo.es>
+Build-Depends: debhelper (>= 7)
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/s/scratch
+Files:
+ ba29a0499b0c82ad1e860f04979a015c 1323 scratch_1.4.0.6~dfsg1-2~ubuntu12.04.1.dsc
+ e62b6864a8acf282ad23afe608272fff 35630133 scratch_1.4.0.6~dfsg1.orig.tar.bz2
+ 36388ca06711ee557af7e2c4b05373b6 11401 scratch_1.4.0.6~dfsg1-2~ubuntu12.04.1.debian.tar.bz2
+Homepage: http://scratch.mit.edu
+Vcs-Browser: http://svn.debian.org/viewsvn/pkg-squeak/packages/scratch/trunk/
+Vcs-Svn: svn://svn.debian.org/svn/pkg-squeak/packages/scratch/trunk/
+Package-List: 
+ scratch deb education optional
+Checksums-Sha1:
+ 9a96282e84940fe22b7ec7470c00032663c2d1cc 1323 scratch_1.4.0.6~dfsg1-2~ubuntu12.04.1.dsc
+ 635f7bdb98cb664e5a23652050bbd8df9391eb5a 35630133 scratch_1.4.0.6~dfsg1.orig.tar.bz2
+ a75a3a842d5249a8536374d19f85fb6ffbbc5c5f 11401 scratch_1.4.0.6~dfsg1-2~ubuntu12.04.1.debian.tar.bz2
+Checksums-Sha256:
+ 143a8a2be7804140db4f480f8d669a973fa63e9edb5595e78fe97b29bf3eaff8 1323 scratch_1.4.0.6~dfsg1-2~ubuntu12.04.1.dsc
+ 09d96133f1b6e89433075d1b00ffb9ff53c1036ec8fb03760ac584dc94ff9fd6 35630133 scratch_1.4.0.6~dfsg1.orig.tar.bz2
+ e7542a64139e76bec0c9feb7b33d3694339b81970cc22fab56fce7def38a77d8 11401 scratch_1.4.0.6~dfsg1-2~ubuntu12.04.1.debian.tar.bz2
+
+Package: simplegeneric
+Binary: python-simplegeneric, python3-simplegeneric
+Version: 0.8.1-1~ubuntu12.04.1
+Priority: optional
+Section: universe/python
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 7.0.50~), python-all (>= 2.6.6-3~), python-setuptools, python3-all, python3-setuptools
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/s/simplegeneric
+Files:
+ 8c311928aef637057a085d5ff395b46b 1583 simplegeneric_0.8.1-1~ubuntu12.04.1.dsc
+ a35dc88528242791cbeb760861f89207 6465 simplegeneric_0.8.1.orig.tar.bz2
+ d296003750432166f5492e027b34a818 3381 simplegeneric_0.8.1-1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Daniele Tricoli <eriol@mornie.org>
+Homepage: http://pypi.python.org/pypi/simplegeneric
+Vcs-Browser: http://svn.debian.org/viewsvn/python-modules/packages/simplegeneric/trunk/
+Vcs-Svn: svn://svn.debian.org/python-modules/packages/simplegeneric/trunk/
+Package-List: 
+ python-simplegeneric deb python optional
+ python3-simplegeneric deb python optional
+Checksums-Sha1:
+ cf5e4a7241b3a7a283230860bbbd889cb25f1845 1583 simplegeneric_0.8.1-1~ubuntu12.04.1.dsc
+ d18f294d2436e5fbbb4b4ee3d33b7a93d49a3fb0 6465 simplegeneric_0.8.1.orig.tar.bz2
+ c8892565252b3e5179b686a122bf9060f8de8cf0 3381 simplegeneric_0.8.1-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ bbd1fc7eec91160244c5a1e1212a12e734252e2c551fcb46c9a302a91a4c7292 1583 simplegeneric_0.8.1-1~ubuntu12.04.1.dsc
+ d8a59ee508474662484d436b5dc938c10c864270cf67dba91caf5ddb40ea3be1 6465 simplegeneric_0.8.1.orig.tar.bz2
+ ea41686661f640a2629370b9ac13197cb815eba6bca4cc46d0700a16eed0315f 3381 simplegeneric_0.8.1-1~ubuntu12.04.1.debian.tar.gz
+
+Package: sks
+Binary: sks
+Version: 1.1.3-1ubuntu2~ubuntu12.04.1
+Priority: optional
+Section: universe/net
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Christoph Martin <christoph.martin@uni-mainz.de>
+Build-Depends: ocaml (>= 3.08), camlp4, libdb-dev, debhelper (>= 7.0.50~), zlib1g-dev, libcryptokit-ocaml-dev (>= 1.2-4), ocaml-nox (>= 1.3-4), perl, perl-doc, dh-ocaml (>= 0.9~)
+Architecture: any
+Standards-Version: 3.9.1
+Format: 3.0 (quilt)
+Directory: pool/universe/s/sks
+Files:
+ a34aaddd33930cb5cd9d7a178b9893a0 1994 sks_1.1.3-1ubuntu2~ubuntu12.04.1.dsc
+ d1820c7c1a1e0d0eb7825db4e8003f03 292558 sks_1.1.3.orig.tar.gz
+ 9a411eb369ca139b09ffcccd4af1384e 19160 sks_1.1.3-1ubuntu2~ubuntu12.04.1.debian.tar.gz
+Uploaders: Fabio M. Di Nitto <fabbione@fabbione.net>
+Package-List: 
+ sks deb net optional
+Checksums-Sha1:
+ c4e97e8764dbce07bde85884dba4a22cf3402ffc 1994 sks_1.1.3-1ubuntu2~ubuntu12.04.1.dsc
+ 8a96c3f1c7b2c71ce05b298cc9d06bdf173dcf0b 292558 sks_1.1.3.orig.tar.gz
+ 49a6ff8d216bc17f369118957ecd173f0132981c 19160 sks_1.1.3-1ubuntu2~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 53a6f9f730e089d172bb2bdde2092641d06faaabadfe1b9598a4ffb775c07f6b 1994 sks_1.1.3-1ubuntu2~ubuntu12.04.1.dsc
+ 1e5493c686101daefb5ff4e6376aa147cee19fb1851f7a7a38b17266d462bf40 292558 sks_1.1.3.orig.tar.gz
+ 81541edb1b2ca856b0d466b98a6d6bbe6bd4742fcab4c0991db82bb5b2acaa3c 19160 sks_1.1.3-1ubuntu2~ubuntu12.04.1.debian.tar.gz
+
+Package: sparkleshare
+Binary: sparkleshare
+Version: 0.9.0-1ubuntu1~ubuntu12.04.1
+Priority: optional
+Section: universe/utils
+Maintainer: Debian CLI Applications Team <pkg-cli-apps-team@lists.alioth.debian.org>
+Build-Depends: cli-common-dev (>= 0.5.7~), debhelper (>= 7.0.50~)
+Build-Depends-Indep: intltool, libappindicator0.1-cil-dev (>= 0.0.7), libglib2.0-cil-dev (>= 2.12.2), libgtk2.0-cil-dev (>= 2.12.2), libnotify-cil-dev, libwebkit-cil-dev, mono-devel (>= 2.4.3), python-nautilus
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/s/sparkleshare
+Files:
+ f5eaff756578480338ad693082411278 2296 sparkleshare_0.9.0-1ubuntu1~ubuntu12.04.1.dsc
+ 58459e77635dd594baeb4a7a67f6333e 685877 sparkleshare_0.9.0.orig.tar.gz
+ f9e23b0a91f43c14c247545014d8cae6 5674 sparkleshare_0.9.0-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Carlos Martín Nieto <carlos@cmartin.tk>
+Homepage: http://sparkleshare.org/
+Vcs-Browser: http://git.debian.org/?p=pkg-cli-apps/packages/sparkleshare.git
+Vcs-Git: git://git.debian.org/pkg-cli-apps/packages/sparkleshare.git
+Package-List: 
+ sparkleshare deb utils optional
+Checksums-Sha1:
+ ea88311662006f3f5aedf8fa9c89e3fd99c40c4c 2296 sparkleshare_0.9.0-1ubuntu1~ubuntu12.04.1.dsc
+ 3f64e4186e3e0a9e6e42759365c915262ff1be20 685877 sparkleshare_0.9.0.orig.tar.gz
+ 7f840a160bece8cbd495e79b31762c2c84909efb 5674 sparkleshare_0.9.0-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 28d396864d39643e0ee771d888cb19c27b2dcaf43da9ab6eb3bfb8f5397dba0d 2296 sparkleshare_0.9.0-1ubuntu1~ubuntu12.04.1.dsc
+ ae4b0fdb9a1dfd882fc359d540210a29fb7d1fa7c8803113940e5656ac95ba4a 685877 sparkleshare_0.9.0.orig.tar.gz
+ bd0bd40fe4e80c197866af4e6d2f94b2bae68c96caa8d6bc2dae526ae4ba84cd 5674 sparkleshare_0.9.0-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+
+Package: supertuxkart
+Binary: supertuxkart, supertuxkart-data, supertuxkart-dbg
+Version: 0.8-1~ubuntu12.04.1
+Priority: optional
+Section: universe/games
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Build-Depends: cmake (>= 2.8.1), debhelper (>= 9), docbook-to-man, libalut-dev, libbz2-dev, libcurl4-gnutls-dev | libcurl4-dev, libenet-dev (>= 1.3.1), libfribidi-dev, libjpeg-dev, libopenal-dev, libpng-dev, libsdl-image1.2-dev, libsdl-ttf2.0-dev, libvorbis-dev, libxxf86vm-dev, mesa-common-dev, zlib1g-dev
+Architecture: any all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/universe/s/supertuxkart
+Files:
+ 15fb168d985aafe978ec26e647c573e5 1886 supertuxkart_0.8-1~ubuntu12.04.1.dsc
+ 0b939ce601374758938119e0b0dd1fec 171184279 supertuxkart_0.8.orig.tar.bz2
+ 721a7a13080d582f7f48190600da0f2d 29113 supertuxkart_0.8-1~ubuntu12.04.1.debian.tar.gz
+Uploaders:  Sam Hocevar <sho@debian.org>, Alexander Reichle-Schmehl <tolimar@debian.org>, Christoph Egger <christoph@debian.org>, Vincent Cheng <Vincentc1208@gmail.com>
+Homepage: http://supertuxkart.sf.net/
+Vcs-Browser: http://svn.debian.org/wsvn/pkg-games/packages/trunk/supertuxkart/
+Vcs-Svn: svn://svn.debian.org/svn/pkg-games/packages/trunk/supertuxkart/
+Package-List: 
+ supertuxkart deb games optional
+ supertuxkart-data deb games optional
+ supertuxkart-dbg deb debug extra
+Checksums-Sha1:
+ f9297b8847d9454f33c9745a9336b893ca4fe57d 1886 supertuxkart_0.8-1~ubuntu12.04.1.dsc
+ 8765a21bcbab8ca7f43643f15eac1e9bad57fba4 171184279 supertuxkart_0.8.orig.tar.bz2
+ d039205121bd12ff89409c309c6b456182554af9 29113 supertuxkart_0.8-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 059a4314520a98328ac5c1fa1afdfb13a2df39f75456e5dff91aeed89951c058 1886 supertuxkart_0.8-1~ubuntu12.04.1.dsc
+ b99f3d2311457a34db3c42ba2195662f2993a48eae4f6b1f175dbcce09ad4b8b 171184279 supertuxkart_0.8.orig.tar.bz2
+ 5dbe4c7b91b4893608cd7a66bad949ffff132d7317273c3420125f8a146c6148 29113 supertuxkart_0.8-1~ubuntu12.04.1.debian.tar.gz
+
+Package: synergy
+Binary: synergy
+Version: 1.4.10-1ubuntu1~ubuntu12.04.1
+Priority: optional
+Section: universe/net
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Jeff Licquia <licquia@debian.org>
+Build-Depends: debhelper (>= 7), libxt-dev, libxtst-dev, libxinerama-dev, cmake, docbook-to-man, libqt4-dev
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/s/synergy
+Files:
+ 17aa708aa099519dab56bbb3c450c292 1407 synergy_1.4.10-1ubuntu1~ubuntu12.04.1.dsc
+ 18aee04a7e232e4d821f46ff24da3364 3598533 synergy_1.4.10.orig.tar.gz
+ ff1b9fd2a2205fcd74b8a6510cec690f 14777 synergy_1.4.10-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+Homepage: http://synergy-foss.org/
+Vcs-Browser: http://bzr.licquia.org/loggerhead/synergy/debian/
+Vcs-Bzr: http://bzr.licquia.org/synergy/debian/
+Package-List: 
+ synergy deb x11 optional
+Checksums-Sha1:
+ 1e935184fd084c84d65e1861250eb552a8ee47d8 1407 synergy_1.4.10-1ubuntu1~ubuntu12.04.1.dsc
+ 95164d7a64f9ceb00c10fdbdba114c7a228be7b4 3598533 synergy_1.4.10.orig.tar.gz
+ 5823d2da9987c7e2f11d5ec1e1d55b14c09c3c98 14777 synergy_1.4.10-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 8b23782f2a2b735fec7b56be5dcf17b17ee1262fe152a304a2f36515538b8b99 1407 synergy_1.4.10-1ubuntu1~ubuntu12.04.1.dsc
+ 06d5a2ceb4cf8808cdab22441897c7b54ec8b4bc8351ac116f9accf54c720fbe 3598533 synergy_1.4.10.orig.tar.gz
+ 6b60b8b8938dc53ea7d8ad66de55e990fbedbbb0f534f66402f4d13bc5ba9f63 14777 synergy_1.4.10-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+
+Package: task
+Binary: task
+Version: 2.1.2-0ubuntu1~ubuntu12.04.1
+Priority: optional
+Section: universe/utils
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Federico Hernandez <ultrafredde@gmail.com>
+Build-Depends: debhelper (>= 7), cmake, quilt
+Architecture: any
+Standards-Version: 3.9.3
+Format: 1.0
+Directory: pool/universe/t/task
+Files:
+ b8bd40afbcf936870c13cb27272cd97d 1820 task_2.1.2-0ubuntu1~ubuntu12.04.1.dsc
+ ff0c712a18a47f79787b971b8d1ff207 4639841 task_2.1.2.orig.tar.gz
+ 9367817acfeef614e8bcc4f7259bfb3c 6318 task_2.1.2-0ubuntu1~ubuntu12.04.1.diff.gz
+Homepage: http://taskwarrior.org
+Package-List: 
+ task deb utils optional
+Checksums-Sha1:
+ 189f4de42365b4ca573c1513acb097b67e842896 1820 task_2.1.2-0ubuntu1~ubuntu12.04.1.dsc
+ 4cd5a5cb562fa407f097e2cd7e7293183773cf5b 4639841 task_2.1.2.orig.tar.gz
+ 73d5f4752e3ed434af6961af0de8846db9880f51 6318 task_2.1.2-0ubuntu1~ubuntu12.04.1.diff.gz
+Checksums-Sha256:
+ 4a41c3f36fcfc1c6057ef3ada383fe356956ef4d948f64ac28e1be79a8da8b37 1820 task_2.1.2-0ubuntu1~ubuntu12.04.1.dsc
+ cf5171b54b6d2d2dcd9c559f437cf8a2cb3836c7631edf96a16efbf8b4383e36 4639841 task_2.1.2.orig.tar.gz
+ 3829be95df22dd6ea7d05b98fe2c07b7286da552ccbdcab038b9814a7f62c5bc 6318 task_2.1.2-0ubuntu1~ubuntu12.04.1.diff.gz
+
+Package: tickr
+Binary: tickr
+Version: 0.6.4-1~ubuntu12.04.1
+Priority: optional
+Section: universe/net
+Maintainer: Emmanuel Thomas-Maurin <manutm007@gmail.com>
+Build-Depends: debhelper (>= 9), autotools-dev, libgtk2.0-dev, libxml2-dev
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/universe/t/tickr
+Files:
+ 0778421072eb339172859fc5ac02eaf2 1780 tickr_0.6.4-1~ubuntu12.04.1.dsc
+ e7e55e46de101ac8308e4e8f4be55f5e 732471 tickr_0.6.4.orig.tar.gz
+ ff77af63ded7bce12e1135de0a7e9043 7697 tickr_0.6.4-1~ubuntu12.04.1.debian.tar.gz
+Homepage: http://www.newsrssticker.com
+Package-List: 
+ tickr deb net optional
+Checksums-Sha1:
+ b33b97a26c2420052c01e9418fda0e7756b84863 1780 tickr_0.6.4-1~ubuntu12.04.1.dsc
+ cd9c2e4b7d545c2df57eeec423170b2dcb904de2 732471 tickr_0.6.4.orig.tar.gz
+ 54fc09b3717195478d8b947fa53bb80a1c307ce5 7697 tickr_0.6.4-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 05cc5aa3b66034662204fcc1a7e115a8a6113e5df35896748b75a14c45ac17b5 1780 tickr_0.6.4-1~ubuntu12.04.1.dsc
+ 07c69909d3d8427c10789dfcbed620d2a0ea7f664356bcaa4f9887315cc0c2cc 732471 tickr_0.6.4.orig.tar.gz
+ 81b6884c02e288e21497ed0a5dc5062fb5475adf9391ce8b6ead2bcf9deebb55 7697 tickr_0.6.4-1~ubuntu12.04.1.debian.tar.gz
+
+Package: tvdb-api
+Binary: python-tvdb-api
+Version: 1.7.1-1~ubuntu12.04.1
+Priority: optional
+Section: universe/python
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 8), python-all, python-support, python-setuptools
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/t/tvdb-api
+Files:
+ 1d406231a145bb54c5bf9e8be490c10c 1918 tvdb-api_1.7.1-1~ubuntu12.04.1.dsc
+ ad5f8f6253583384e325c7a1141ff5e1 32619 tvdb-api_1.7.1.orig.tar.gz
+ ec31619cb70224779f75cfdf4d3dad30 2319 tvdb-api_1.7.1-1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Sandro Tosi <morph@debian.org>
+Homepage: https://github.com/dbr/tvdb_api
+Package-List: 
+ python-tvdb-api deb python optional
+Checksums-Sha1:
+ 3623cb379b1bff3e72895086c5a1d91a9a1f7bf4 1918 tvdb-api_1.7.1-1~ubuntu12.04.1.dsc
+ 44d45f973bd35dd81ef953b4f69e3dbc2d1a09a7 32619 tvdb-api_1.7.1.orig.tar.gz
+ 4a90104a1d78aadeb0e7500c7d3d1293bda7f820 2319 tvdb-api_1.7.1-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ bb21c8eb47722ac680b3891619d7325dea2a573066a44b7712cec763ae00b9f8 1918 tvdb-api_1.7.1-1~ubuntu12.04.1.dsc
+ 6592fd86fd0e338df914c118ae111c460ebda1f26bcd547b28c04b72d67a06b0 32619 tvdb-api_1.7.1.orig.tar.gz
+ 03933028bef07dfbeb2f51aab8b44ef0cb887690bd65d227f4416e9bf10375ce 2319 tvdb-api_1.7.1-1~ubuntu12.04.1.debian.tar.gz
+Python-Version: all
+
+Package: tvnamer
+Binary: tvnamer
+Version: 2.2.1-1~ubuntu12.04.1
+Priority: optional
+Section: universe/video
+Maintainer: Python Applications Packaging Team <python-apps-team@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 8.0.0), python, python-setuptools, python-support
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/t/tvnamer
+Files:
+ b29dd17804ec82ddd1900c01a0dbc340 1878 tvnamer_2.2.1-1~ubuntu12.04.1.dsc
+ e7b3c94e57c534a14be2664239c7455e 40352 tvnamer_2.2.1.orig.tar.gz
+ 20e4a129c283693911f72acb3b8d7b1b 2536 tvnamer_2.2.1-1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Sandro Tosi <morph@debian.org>
+Homepage: https://github.com/dbr/tvnamer
+Package-List: 
+ tvnamer deb video optional
+Checksums-Sha1:
+ 508175fa6aa0de7581d4c6fffe350b44b7abdb86 1878 tvnamer_2.2.1-1~ubuntu12.04.1.dsc
+ 7b0b799f020b9528374006a75be070a05451092c 40352 tvnamer_2.2.1.orig.tar.gz
+ c7a38f275d3366db1f8bea513921e19155384187 2536 tvnamer_2.2.1-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 4c214e9d64695a15860b3faeb26684daa230e2280e60a16cead4ab0a025b3e60 1878 tvnamer_2.2.1-1~ubuntu12.04.1.dsc
+ 601f9cc54bb40ffd05df0c1768879a98ba88bb56e9be62fb7d4008a3d0d11d25 40352 tvnamer_2.2.1.orig.tar.gz
+ 68ec6cc426c70741c94132939abe4f476b521bdb2c0ca8fd551599627254964e 2536 tvnamer_2.2.1-1~ubuntu12.04.1.debian.tar.gz
+
+Package: txaws
+Binary: aws-status, python-txaws
+Version: 0.2.3-1ubuntu1~ubuntu12.04.1
+Priority: optional
+Section: universe/python
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 7.0.50), python (>= 2.6.6-3~), python-twisted, python-dateutil, help2man, ca-certificates
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/t/txaws
+Files:
+ ecd4cb873b934d460de6439f288e15c4 1570 txaws_0.2.3-1ubuntu1~ubuntu12.04.1.dsc
+ 2acb455892064db9e3a3070d969ba6e0 106558 txaws_0.2.3.orig.tar.gz
+ a3b41730cc22a1b2377f1a6c7d802f7d 9302 txaws_0.2.3-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Clint Byrum <spamaps@debian.org>
+Homepage: https://launchpad.net/txaws
+Vcs-Browser: http://svn.debian.org/viewsvn/python-modules/packages/txaws/trunk/
+Vcs-Svn: svn://svn.debian.org/python-modules/packages/txaws/trunk/
+Package-List: 
+ aws-status deb python optional
+ python-txaws deb python optional
+Checksums-Sha1:
+ 0acdf3776df1889e4df91f8487248eb9493a468e 1570 txaws_0.2.3-1ubuntu1~ubuntu12.04.1.dsc
+ 71e90fb6ef2bf2e9a6b1b97b87d61e1cc30845bc 106558 txaws_0.2.3.orig.tar.gz
+ 58ce33c75325da8b6790ff9455c0a609c5ce55fb 9302 txaws_0.2.3-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ c4e067cf8c9b2148266ec60718a5bde0c826e115ac8e98eff422fc41c4a4372c 1570 txaws_0.2.3-1ubuntu1~ubuntu12.04.1.dsc
+ d3c1c631456d18c6ef75346986c88a3976e4842c60f6e8f63052f884fc14dd1a 106558 txaws_0.2.3.orig.tar.gz
+ ca6dea63a3b1c8ab826235fc74b30e83527ad0fef07d7a45d2b45dcef5c50c8e 9302 txaws_0.2.3-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+
+Package: ubuntu-online-tour
+Binary: ubuntu-online-tour
+Version: 0.11-0ubuntu1.1~ubuntu12.04.1
+Priority: optional
+Section: universe/doc
+Maintainer: Timo Jyrinki <timo-jyrinki@ubuntu.com>
+Build-Depends: debhelper (>= 8.0.0), intltool (>= 0.23), python (>= 2.6.6-3~), python-distutils-extra, python-polib
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/u/ubuntu-online-tour
+Files:
+ fe1f911f182cbae8739f3d8cc19866d9 1339 ubuntu-online-tour_0.11-0ubuntu1.1~ubuntu12.04.1.dsc
+ 06d163ac850092ea50a1b53fbfc925b0 7372000 ubuntu-online-tour_0.11.orig.tar.gz
+ 62e40c30d778432de128887578d18512 64708 ubuntu-online-tour_0.11-0ubuntu1.1~ubuntu12.04.1.debian.tar.gz
+Homepage: https://launchpad.net/ubuntu-online-tour
+Package-List: 
+ ubuntu-online-tour deb doc optional
+Checksums-Sha1:
+ 15008ae780e4cb92db67aec357b39878ad3ef443 1339 ubuntu-online-tour_0.11-0ubuntu1.1~ubuntu12.04.1.dsc
+ d3a34321f204c1b5605bbb3fbe9d93843c6edf30 7372000 ubuntu-online-tour_0.11.orig.tar.gz
+ 1d5781c8dbb99fea52f1030eeadf00a0204e682e 64708 ubuntu-online-tour_0.11-0ubuntu1.1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 6560812235e558833149dd1bec422800a698e23976bb4be0e2796174bb295a4e 1339 ubuntu-online-tour_0.11-0ubuntu1.1~ubuntu12.04.1.dsc
+ ff8777adb6862426caffa3e914508c042ce5fc83c1285144081713bf483750c0 7372000 ubuntu-online-tour_0.11.orig.tar.gz
+ 6f9645065160c7bac704825685109bc640bbfca71b3b1ec2804a669779a093a3 64708 ubuntu-online-tour_0.11-0ubuntu1.1~ubuntu12.04.1.debian.tar.gz
+
+Package: ubuntu-packaging-guide
+Binary: ubuntu-packaging-guide, ubuntu-packaging-guide-html, ubuntu-packaging-guide-pdf, ubuntu-packaging-guide-epub
+Version: 0.2.2~ubuntu12.04.1
+Priority: optional
+Section: universe/doc
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 7.0.50~), python-sphinx (>= 1.1~), doc-base, texlive-latex-base, texlive-latex-recommended, texlive-latex-extra, texlive-fonts-recommended, fdupes
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (native)
+Directory: pool/universe/u/ubuntu-packaging-guide
+Files:
+ 988074583bcee1493370ffa947e3b420 1292 ubuntu-packaging-guide_0.2.2~ubuntu12.04.1.dsc
+ b1b19eef2399a82402307aa1cb697983 576344 ubuntu-packaging-guide_0.2.2~ubuntu12.04.1.tar.gz
+Package-List: 
+ ubuntu-packaging-guide deb metapackages optional
+ ubuntu-packaging-guide-epub deb doc optional
+ ubuntu-packaging-guide-html deb doc optional
+ ubuntu-packaging-guide-pdf deb doc optional
+Checksums-Sha1:
+ 2f545937921d13d4502b9251914a77ed08c109e0 1292 ubuntu-packaging-guide_0.2.2~ubuntu12.04.1.dsc
+ ac3d66eec353cfbf424613c5f4b8411904cc798b 576344 ubuntu-packaging-guide_0.2.2~ubuntu12.04.1.tar.gz
+Checksums-Sha256:
+ 45b407efda6d649443df44867fd9a6de670db64fa9e244a784d0b65729015a07 1292 ubuntu-packaging-guide_0.2.2~ubuntu12.04.1.dsc
+ b50fdb37cd1eee2f71dd116b2837236477f66ae6db58a3134c1e524ba73da5b2 576344 ubuntu-packaging-guide_0.2.2~ubuntu12.04.1.tar.gz
+
+Package: udj-desktop-client
+Binary: udj-desktop-client
+Version: 0.5.1-1~ubuntu12.04.1
+Priority: optional
+Section: universe/sound
+Maintainer: Nathan Handler <nhandler@ubuntu.com>
+Build-Depends: debhelper (>= 9.0.0), cmake, libqt4-dev, libphonon-dev, libtag1-dev, imagemagick, librsvg2-bin
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/u/udj-desktop-client
+Files:
+ b6dfbc46e3e9516f131e44d419f1e912 1424 udj-desktop-client_0.5.1-1~ubuntu12.04.1.dsc
+ 7fdbd1a6843d89dd25c58519613b512e 289387 udj-desktop-client_0.5.1.orig.tar.gz
+ 26b5be2f15986290349f6879c2c11f45 3444 udj-desktop-client_0.5.1-1~ubuntu12.04.1.debian.tar.gz
+Homepage: https://www.udjplayer.com/
+Vcs-Browser: http://git.debian.org/?p=collab-maint/udj-desktop-client.git
+Vcs-Git: git://git.debian.org/collab-maint/udj-desktop-client.git
+Package-List: 
+ udj-desktop-client deb sound optional
+Checksums-Sha1:
+ 4afbd642cefb33d2779f39974d6d967960e32345 1424 udj-desktop-client_0.5.1-1~ubuntu12.04.1.dsc
+ ceed493b4c3fce7211fa894d3f007e02a5272f3d 289387 udj-desktop-client_0.5.1.orig.tar.gz
+ f1979ab698b776a49052a99521284bc8ca1b7130 3444 udj-desktop-client_0.5.1-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 76f63bef06467fb8eae1537e2868eca5349a1f85e16f5bf810bd459713878774 1424 udj-desktop-client_0.5.1-1~ubuntu12.04.1.dsc
+ e6215cdd51a580eb8f26637d0426704faba0cc19ea7ef663c628ebdc6696bc43 289387 udj-desktop-client_0.5.1.orig.tar.gz
+ 67cf5ad4e951cb4c0f0f59af2e7031a090bb297c3a3ed79c05072b23d7802e13 3444 udj-desktop-client_0.5.1-1~ubuntu12.04.1.debian.tar.gz
+
+Package: unbound
+Binary: unbound, unbound-anchor, unbound-host, libunbound2, libunbound-dev, python-unbound
+Version: 1.4.18-1~ubuntu12.04.1
+Priority: optional
+Section: universe/net
+Maintainer: Robert S. Edmonds <edmonds@debian.org>
+Build-Depends: dpkg-dev (>= 1.16.1~), debhelper (>= 9~), doxygen, autoconf, automake, autotools-dev, libtool, flex, bison, libldns-dev, libssl-dev, libevent-dev, libexpat1-dev, python-all-dev (>= 2.6.6-3~), python-support, swig
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/u/unbound
+Files:
+ 3326fcad82bb1ad70659d0f339fffa22 1691 unbound_1.4.18-1~ubuntu12.04.1.dsc
+ 2cad65b6a2d08bb6e0210ea92156ca4b 3592485 unbound_1.4.18.orig.tar.gz
+ 0e3e0ec1d5e686d892ed1cfaed8ccc87 12250 unbound_1.4.18-1~ubuntu12.04.1.debian.tar.gz
+Homepage: http://www.unbound.net/
+Vcs-Browser: http://git.debian.org/?p=users/edmonds/unbound.git
+Vcs-Git: git://git.debian.org/~edmonds/unbound.git
+Package-List: 
+ libunbound-dev deb libdevel optional
+ libunbound2 deb net optional
+ python-unbound deb python optional
+ unbound deb net optional
+ unbound-anchor deb net optional
+ unbound-host deb net optional
+Checksums-Sha1:
+ 3ce8dd241505fa11e29c934555b041dd0cb44f95 1691 unbound_1.4.18-1~ubuntu12.04.1.dsc
+ b64b4c9f7981df4e7589ebb770a31352a09db3fb 3592485 unbound_1.4.18.orig.tar.gz
+ a00917aa88f623096604598db056e369873f6111 12250 unbound_1.4.18-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ f072082be379c9432d1129484a434f0c9d66cec538daa50490a578f99628192d 1691 unbound_1.4.18-1~ubuntu12.04.1.dsc
+ b20f45ff90b944f306fc1875084af8ecba68ca0db16895148288d43cec225b8d 3592485 unbound_1.4.18.orig.tar.gz
+ 9e62c5fc6362449a6d3423a9a8052dd15c2063962ce63204402b896b58348d68 12250 unbound_1.4.18-1~ubuntu12.04.1.debian.tar.gz
+Python-Version: all
+
+Package: unknown-horizons
+Binary: unknown-horizons
+Version: 2012.1+dfsg1-1~ubuntu12.04.1
+Priority: optional
+Section: universe/games
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 7.0.50~), python, xsltproc, intltool, docbook-xsl, docbook-xml
+Architecture: all
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/universe/u/unknown-horizons
+Files:
+ 8cc4e2cb76ff4293a2cc27a3ca33a6e7 2217 unknown-horizons_2012.1+dfsg1-1~ubuntu12.04.1.dsc
+ 9e202b19fdb5fd1fb5e6c9cc8c1ba2eb 124969512 unknown-horizons_2012.1+dfsg1.orig.tar.xz
+ b437554f9e11ffdd0e3b3ed4fe649b8f 10386 unknown-horizons_2012.1+dfsg1-1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Christoph Egger <christoph@debian.org>
+Homepage: http://www.unknown-horizons.org
+Vcs-Browser: http://git.debian.org/?p=pkg-games/unknown-horizons.git
+Vcs-Git: git://git.debian.org/git/pkg-games/unknown-horizons.git
+Package-List: 
+ unknown-horizons deb games optional
+Checksums-Sha1:
+ 3f9a53e20b6c65b46d2bd2ecd49903839f66d1aa 2217 unknown-horizons_2012.1+dfsg1-1~ubuntu12.04.1.dsc
+ 6050101fb2ebf55beb6d5dbd7698d91366acefb8 124969512 unknown-horizons_2012.1+dfsg1.orig.tar.xz
+ c7e9080f58549dcbf29329b5c3d0753f635df80c 10386 unknown-horizons_2012.1+dfsg1-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 19442492b71075cd83f33df792c8805cebc4e9b7142d824b576574e506c7b699 2217 unknown-horizons_2012.1+dfsg1-1~ubuntu12.04.1.dsc
+ ab53efb8b0b62af0e8b2bd28a5c96b10e43ec8830327e04e45609d1ab8aef232 124969512 unknown-horizons_2012.1+dfsg1.orig.tar.xz
+ b60cf8ec0abcc96f42e53b9815a3dfab624c8c84b8345fb546aab9e7e8c162e7 10386 unknown-horizons_2012.1+dfsg1-1~ubuntu12.04.1.debian.tar.gz
+
+Package: volti
+Binary: volti
+Version: 0.2.3-5~ubuntu12.04.1
+Priority: optional
+Section: universe/sound
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 7.0.50~), python-all (>= 2.6.6-3)
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/v/volti
+Files:
+ 3d9c95dec48fdf947919a5c303763cc5 1353 volti_0.2.3-5~ubuntu12.04.1.dsc
+ f6e934527a4838058ece4de28433a564 164833 volti_0.2.3.orig.tar.gz
+ fe6df12c86394f891f892a43fc4d9327 3045 volti_0.2.3-5~ubuntu12.04.1.debian.tar.gz
+Uploaders:  Alessio Treglia <alessio@debian.org>
+Homepage: http://code.google.com/p/volti/
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-multimedia/volti.git
+Vcs-Git: git://anonscm.debian.org/pkg-multimedia/volti.git
+Package-List: 
+ volti deb sound optional
+Checksums-Sha1:
+ de6350a48cfc4ee841121af4de57fb3c148dfd46 1353 volti_0.2.3-5~ubuntu12.04.1.dsc
+ ceee1a85682ea5d98826c12143dbb875c656222b 164833 volti_0.2.3.orig.tar.gz
+ 226504e1cfdc6ecb30030f3b043303f2fbcd6067 3045 volti_0.2.3-5~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 556aa4a1b0a69d87141acdd7b2e622171a5f95f86541102bff03a7cb9a932727 1353 volti_0.2.3-5~ubuntu12.04.1.dsc
+ 216ca23cd4e8921ea73922125048e4f23fd3146045c0ef17cc4e10108dbd80dc 164833 volti_0.2.3.orig.tar.gz
+ 2303c0d21a5fe92a74773c93995acf9b7f818f9519f50fc605ee0f9a687f5543 3045 volti_0.2.3-5~ubuntu12.04.1.debian.tar.gz
+
+Package: wesnoth-1.10
+Binary: wesnoth-1.10-data, wesnoth-1.10-core, wesnoth-core, wesnoth-1.10-dbg, wesnoth-1.10, wesnoth, wesnoth-1.10-music, wesnoth-music, wesnoth-1.10-server, wesnoth-1.10-tools, wesnoth-1.10-httt, wesnoth-1.10-tsg, wesnoth-1.10-trow, wesnoth-1.10-ttb, wesnoth-1.10-ei, wesnoth-1.10-utbs, wesnoth-1.10-did, wesnoth-1.10-nr, wesnoth-1.10-sof, wesnoth-1.10-sotbe, wesnoth-1.10-l, wesnoth-1.10-aoi, wesnoth-1.10-thot, wesnoth-1.10-low, wesnoth-1.10-dm, wesnoth-1.10-dw
+Version: 1:1.10.5-1~ubuntu12.04.1
+Section: universe/games
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 7), libsdl-image1.2-dev, libfreetype6-dev, libsdl-mixer1.2-dev, libsdl-net1.2-dev, libfribidi-dev, libsdl1.2-dev, libsdl-ttf2.0-dev (>= 2.0.8), python-support, libdbus-1-dev, libboost-iostreams-dev, libboost-test-dev, libboost-regex-dev, libboost-serialization-dev, libboost-system-dev, libboost-thread-dev, libboost-program-options-dev, libpango1.0-dev, cmake (>= 2.6)
+Architecture: any all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/w/wesnoth-1.10
+Files:
+ 42ea85e2efb53295ae38ca596c18fae5 3427 wesnoth-1.10_1.10.5-1~ubuntu12.04.1.dsc
+ 03d9683cd83d17c6536bdf5c4940bbc8 343638424 wesnoth-1.10_1.10.5.orig.tar.bz2
+ 31f0bfd6897d08e9e638e98ddbf84914 47567 wesnoth-1.10_1.10.5-1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Gerfried Fuchs <rhonda@debian.org>, Vincent Cheng <Vincentc1208@gmail.com>
+Homepage: http://wesnoth.org/
+Vcs-Browser: http://git.debian.org/?p=pkg-games/wesnoth.git;a=summary
+Vcs-Git: git://git.debian.org/git/pkg-games/wesnoth.git
+Package-List: 
+ wesnoth deb games optional
+ wesnoth-1.10 deb games optional
+ wesnoth-1.10-aoi deb games optional
+ wesnoth-1.10-core deb games optional
+ wesnoth-1.10-data deb games optional
+ wesnoth-1.10-dbg deb debug extra
+ wesnoth-1.10-did deb games optional
+ wesnoth-1.10-dm deb games optional
+ wesnoth-1.10-dw deb games optional
+ wesnoth-1.10-ei deb games optional
+ wesnoth-1.10-httt deb games optional
+ wesnoth-1.10-l deb games optional
+ wesnoth-1.10-low deb games optional
+ wesnoth-1.10-music deb games optional
+ wesnoth-1.10-nr deb games optional
+ wesnoth-1.10-server deb games optional
+ wesnoth-1.10-sof deb games optional
+ wesnoth-1.10-sotbe deb games optional
+ wesnoth-1.10-thot deb games optional
+ wesnoth-1.10-tools deb games optional
+ wesnoth-1.10-trow deb games optional
+ wesnoth-1.10-tsg deb games optional
+ wesnoth-1.10-ttb deb games optional
+ wesnoth-1.10-utbs deb games optional
+ wesnoth-core deb games optional
+ wesnoth-music deb games optional
+Checksums-Sha1:
+ fb780e3947d6eb3daafd632009ad6079780b546a 3427 wesnoth-1.10_1.10.5-1~ubuntu12.04.1.dsc
+ 13761982c63ef776fa72044d5391ca4ae970a25a 343638424 wesnoth-1.10_1.10.5.orig.tar.bz2
+ 2468a8d0349a100018897aba2a99c50c00b5c13f 47567 wesnoth-1.10_1.10.5-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ cbfeeedbf9d050aef8d4e2f9103c43ec18b470fa2d72a1c16f36db66efee1560 3427 wesnoth-1.10_1.10.5-1~ubuntu12.04.1.dsc
+ f627d246e473dcbad3b928a37e0783a7191a237430b0bfc7680ffe3d18ca74e7 343638424 wesnoth-1.10_1.10.5.orig.tar.bz2
+ d02781d5716f1371df25fba1c0447520cdda80b65d01f43e7b75d5e3123950df 47567 wesnoth-1.10_1.10.5-1~ubuntu12.04.1.debian.tar.gz
+
+Package: widelands
+Binary: widelands, widelands-data, widelands-dbg
+Version: 1:17-2~ubuntu12.04.1
+Priority: extra
+Section: universe/games
+Maintainer: Martin Quinson <mquinson@debian.org>
+Build-Depends: debhelper (>= 7.0.50~), libsdl1.2-dev, libsdl-image1.2-dev, libsdl-ttf2.0-dev, libsdl-net1.2-dev, libsdl-mixer1.2-dev, libsdl-gfx1.2-dev, python, libboost-dev | libboost1.49-dev, doxygen, cmake, liblua5.1-dev, libglew1.5-dev, libboost-signals-dev | libboost1.49-signals-dev, libpng-dev, zlib1g-dev
+Architecture: any all
+Standards-Version: 3.9.1
+Format: 3.0 (quilt)
+Directory: pool/universe/w/widelands
+Files:
+ 29cbe3be3e9274cca2dc673301b76da6 2332 widelands_17-2~ubuntu12.04.1.dsc
+ bdc9bc0aa631af1aa7fb450507611a58 175547379 widelands_17.orig.tar.bz2
+ 39a2f9980461cd033482fc61ad368981 13808 widelands_17-2~ubuntu12.04.1.debian.tar.gz
+Uploaders: Enrico Tassi <gareuselesinge@debian.org>
+Homepage: http://www.widelands.org
+Vcs-Browser: http://svn.debian.org/viewsvn/collab-maint/deb-maint/widelands/
+Vcs-Svn: svn://svn.debian.org/svn/collab-maint/deb-maint/widelands/
+Package-List: 
+ widelands deb games extra
+ widelands-data deb games extra
+ widelands-dbg deb debug extra
+Checksums-Sha1:
+ 9ecc4e94d4e812a1cd3b141cede94d103c59efd0 2332 widelands_17-2~ubuntu12.04.1.dsc
+ 0ac6e1a1e6a5ba8cdd01c3f70e4c391ae9186ff1 175547379 widelands_17.orig.tar.bz2
+ 052fdca83289dcb4e4f3206c966fd8c4283bec15 13808 widelands_17-2~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ cffa46fc657b44327ccca51e089f33ae9a0c6de127d5ad25d0108a1f60e0c139 2332 widelands_17-2~ubuntu12.04.1.dsc
+ be48b3b8f342a537b39a3aec2f7702250a6a47e427188ba3bece67d7d90f3cc5 175547379 widelands_17.orig.tar.bz2
+ 3e75a9c0707253a21d486d21520d9d8438aa1bb0fa357c16be1d8fd71bbcf5b1 13808 widelands_17-2~ubuntu12.04.1.debian.tar.gz
+
+Package: wsl
+Binary: wsl
+Version: 0.2.1-1~ubuntu12.04.1
+Priority: optional
+Section: universe/admin
+Maintainer: Daniel Jared Dominguez <Jared_Dominguez@Dell.com>
+Build-Depends: debhelper (>= 8.0.0)
+Architecture: all
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/universe/w/wsl
+Files:
+ 66236495fe6604db6b1196716b8b3f9a 1731 wsl_0.2.1-1~ubuntu12.04.1.dsc
+ b48dd06820f3a0999fecdb2e53da4f9b 16973 wsl_0.2.1.orig.tar.gz
+ 2931175c6d79f97c26abce76d59f3d9d 4070 wsl_0.2.1-1~ubuntu12.04.1.debian.tar.gz
+Homepage: http://linux.dell.com/files/wsl/
+Package-List: 
+ wsl deb admin optional
+Checksums-Sha1:
+ 55ff49ddb9da90cb9908abb1741b07d8786606e2 1731 wsl_0.2.1-1~ubuntu12.04.1.dsc
+ 922f0f3a106f802c3be5faeec376459afa403583 16973 wsl_0.2.1.orig.tar.gz
+ e6bdfe9321cde61bf48d3748b65e140ad609ae1e 4070 wsl_0.2.1-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ cd4dddff4ec87253d7d93d8af16ea1b821105b4a5a88670a7774b64050867d16 1731 wsl_0.2.1-1~ubuntu12.04.1.dsc
+ 45fc8f9fde277508eab3cf0d1270abdb08e45b4f517c5fb40bb86a93433518a5 16973 wsl_0.2.1.orig.tar.gz
+ b306f3d5751d2ba381ec0c5c86d3028b716c66e2b2e294bcb23bbc40541ccbaf 4070 wsl_0.2.1-1~ubuntu12.04.1.debian.tar.gz
+
+Package: yubikey-personalization-gui
+Binary: yubikey-personalization-gui
+Version: 3.0.6-1~ubuntu12.04.1
+Priority: extra
+Section: universe/utils
+Maintainer: Yubico Open Source Maintainers <ossmaint@yubico.com>
+Build-Depends: debhelper (>= 7.0.50~), pkg-config, qt4-qmake, libqt4-dev, libyubikey-dev, libykpers-1-dev
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/universe/y/yubikey-personalization-gui
+Files:
+ 975bd235bd5c05f11702040ae9273d88 2325 yubikey-personalization-gui_3.0.6-1~ubuntu12.04.1.dsc
+ f829818b59aa060ba9f6cd4a38efe934 147870 yubikey-personalization-gui_3.0.6.orig.tar.gz
+ a1c3e75236046c5a5b29a83c80555a5b 4530 yubikey-personalization-gui_3.0.6-1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Fredrik Thulin <fredrik@yubico.com>, Simon Josefsson <simon@josefsson.org>, Klas Lindfors <klas@yubico.com>
+Dm-Upload-Allowed: yes
+Homepage: https://github.com/Yubico/yubikey-personalization-gui
+Vcs-Browser: https://github.com/Yubico/yubikey-personalization-gui-dpkg
+Vcs-Git: git://github.com/Yubico/yubikey-personalization-gui-dpkg.git
+Package-List: 
+ yubikey-personalization-gui deb utils extra
+Checksums-Sha1:
+ ec7950b87c79c0a15d2e43574d142dbd0aadffd0 2325 yubikey-personalization-gui_3.0.6-1~ubuntu12.04.1.dsc
+ 2e5e17bbf7e2fd3269c091f6a8fa7add4d5f6de2 147870 yubikey-personalization-gui_3.0.6.orig.tar.gz
+ ad7cc8e5a85ec2fea2d991b37b0b42e6f1857c64 4530 yubikey-personalization-gui_3.0.6-1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 5466522fe205542d61717d0fa231129018ce65d80d3adc266f8befbb09ba62c8 2325 yubikey-personalization-gui_3.0.6-1~ubuntu12.04.1.dsc
+ 7202d1cf1abb940f2c317d4a31334a81daacef7485afe6920ea72425c2f7c8ee 147870 yubikey-personalization-gui_3.0.6.orig.tar.gz
+ 0ab8d929094ec902ea833810678d6ec6305e2304f2e0280a0fbce18a356ba0ba 4530 yubikey-personalization-gui_3.0.6-1~ubuntu12.04.1.debian.tar.gz
+
+Package: znc
+Binary: znc, znc-extra, znc-dbg, znc-dev, znc-perl, znc-python, znc-tcl
+Version: 1.0-2~ubuntu12.04.1
+Priority: optional
+Section: universe/net
+Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+Build-Depends: debhelper (>= 7), libssl-dev, libperl-dev, pkg-config, tcl8.5-dev, libsasl2-dev, swig, swig2.0, python3-dev, hardening-wrapper
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/universe/z/znc
+Files:
+ 7e878876591d124cc41469e66cc8892a 1396 znc_1.0-2~ubuntu12.04.1.dsc
+ 23807ca830c27392cccb6774f542df6e 1222361 znc_1.0.orig.tar.gz
+ 2e48512e889554fbf15cccabd7e2c194 13359 znc_1.0-2~ubuntu12.04.1.debian.tar.gz
+Homepage: http://znc.sourceforge.net/
+Package-List: 
+ znc deb net optional
+ znc-dbg deb debug extra
+ znc-dev deb net optional
+ znc-extra deb net optional
+ znc-perl deb net optional
+ znc-python deb net optional
+ znc-tcl deb net optional
+Checksums-Sha1:
+ bf60fba8e13a24536fec1428ed106c50b1502db2 1396 znc_1.0-2~ubuntu12.04.1.dsc
+ 50e6e3aacb67cf0a63d77f5031d4b75264cee294 1222361 znc_1.0.orig.tar.gz
+ 5ce2926226b08a99f50b45fc18b88c16755d338e 13359 znc_1.0-2~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 135d4541c32874a47fc1c815ea5a9ab6ecef84f8c79bcc9cca809590b9d6bdaa 1396 znc_1.0-2~ubuntu12.04.1.dsc
+ a85539da42697b26e4d46205def36bb799f83d6aeef401d53c49ee674142062a 1222361 znc_1.0.orig.tar.gz
+ 3cf1fc8f88175d64eef33e01df94766636a9d9264b6c807eca1b8d2155620ca0 13359 znc_1.0-2~ubuntu12.04.1.debian.tar.gz
+

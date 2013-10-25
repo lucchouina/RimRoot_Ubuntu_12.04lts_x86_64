@@ -1,0 +1,13 @@
+d64a26073b6677f618e2259491b57aa5  sbin/coldreboot
+1fb6688217caa93d273e386f527a3ba7  sbin/kdump
+bee756bcc05cc883e5f48735d6513928  sbin/kexec
+b93ff634100c7613900db4d39b6b3e39  usr/lib/kexec-tools/kexec_test.static
+ce7ce7d1f75b6083688128bc22967b23  usr/share/doc/kexec-tools/News
+ece888b07a5773d7903a6a4aaf15a41d  usr/share/doc/kexec-tools/TODO
+ad8a63166a2945948c07e81f21118796  usr/share/doc/kexec-tools/changelog.Debian.gz
+37092999586ac63f577fbc6c12a0dbb4  usr/share/doc/kexec-tools/copyright
+4d9412ea91a21798bf1a6331c17750a1  usr/share/initramfs-tools/scripts/init-bottom/0_kdump
+40c4fc361a36b7663f883003d54f281b  usr/share/lintian/overrides/kexec-tools
+afd0c63391ee8605c72323f0ee226bb8  usr/share/man/man8/coldreboot.8.gz
+08a24fb9af57b5d378ca13a78982aef1  usr/share/man/man8/kdump.8.gz
+a2234a54ee346098038b916d87fe2307  usr/share/man/man8/kexec.8.gz

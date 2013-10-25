@@ -1,0 +1,9 @@
+7a7ea54ccb4797962e4ef5cd99277d29  usr/lib/libIPMIlanserv.so.0.0.1
+5422a0d943042de1c156a35acfec60fa  usr/lib/libOpenIPMI.so.0.0.5
+f35db63181f7cde0c60ff5cbd719c040  usr/lib/libOpenIPMIcmdlang.so.0.0.5
+bbcdebeeb72a9cb1f2438f994577d3df  usr/lib/libOpenIPMIposix.so.0.0.1
+06667aa55f95dac678a28139c5ac6336  usr/lib/libOpenIPMIpthread.so.0.0.1
+fb4570303817ae0f55934509bc8f58e1  usr/lib/libOpenIPMIui.so.1.0.1
+b812d4417c4a8769f7730836bce490b6  usr/lib/libOpenIPMIutils.so.0.0.1
+4b62f4561e2c72a7f34af874991c8911  usr/share/doc/libopenipmi0/changelog.Debian.gz
+3e45c829a38846916a8c471e71c3e2ae  usr/share/doc/libopenipmi0/copyright

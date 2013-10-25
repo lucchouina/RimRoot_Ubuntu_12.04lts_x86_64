@@ -1,0 +1,123 @@
+<!-- Creator     : groff version 1.21 -->
+<!-- CreationDate: Mon Dec 12 13:48:48 2011 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>COROSYNC-KEYGEN</title>
+
+</head>
+<body>
+
+<h1 align="center">COROSYNC-KEYGEN</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#EXAMPLES">EXAMPLES</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+<a href="#AUTHOR">AUTHOR</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em">corosync-keygen
+&minus; Generate an authentication key for Corosync.</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>corosync-keygen</b></p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">If you want to
+configure corosync to use cryptographic techniques to ensure
+authenticity <br>
+and privacy of the messages, you will need to generate a
+private key.</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>corosync-keygen</b>
+creates this key and writes it to /etc/corosync/authkey.</p>
+
+<p style="margin-left:11%; margin-top: 1em">This private
+key must be copied to every processor in the cluster. If the
+<br>
+private key isn&rsquo;t the same for every node, those nodes
+with nonmatching private <br>
+keys will not be able to join the same configuration.</p>
+
+<p style="margin-left:11%; margin-top: 1em">Copy the key to
+some security transportable storage or use ssh to transmit
+the <br>
+key from node to node. Then install the key with the
+command:</p>
+
+<p style="margin-left:11%; margin-top: 1em">unix#: install
+-D --group=0 --owner=0 --mode=0400 /path_to_authkey/authkey
+/etc/corosync/authkey</p>
+
+<p style="margin-left:11%; margin-top: 1em">If a message
+&quot;Invalid digest&quot; appears from the corosync
+executive, the keys <br>
+are not consistent between processors.</p>
+
+<p style="margin-left:11%; margin-top: 1em"><b>Note:
+corosync-keygen</b> will ask for user input to assist in
+generating entropy.</p>
+
+<h2>EXAMPLES
+<a name="EXAMPLES"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Generate the
+key.</p>
+
+<p style="margin-left:11%; margin-top: 1em">$
+corosync-keygen <br>
+Corosync Cluster Engine Authentication key generator. <br>
+Gathering 1024 bits for key from /dev/random. <br>
+Press keys on your keyboard to generate entropy.</p>
+
+<h2>SEE ALSO
+<a name="SEE ALSO"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>corosync_overview</b>(8),
+<b>corosync.conf</b>(5),</p>
+
+<h2>AUTHOR
+<a name="AUTHOR"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Angus
+Salkeld</p>
+<hr>
+</body>
+</html>

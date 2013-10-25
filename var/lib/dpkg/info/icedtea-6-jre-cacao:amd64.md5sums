@@ -1,0 +1,6 @@
+d41d8cd98f00b204e9800998ecf8427e  usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/cacao/Xusage.txt
+d41d8cd98f00b204e9800998ecf8427e  usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/cacao/libjsig.so
+529f86bd41375ac339c8199b172b51ba  usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/cacao/libjvm.so
+9389e127f7089714ad14143589c629c7  usr/share/doc/icedtea-6-jre-cacao/README.Debian
+237a727f46d29d01d9416aee09ddd529  usr/share/doc/icedtea-6-jre-cacao/copyright
+386cc4b793b7ff5989092c12e902d018  usr/share/lintian/overrides/icedtea-6-jre-cacao

@@ -1,0 +1,12 @@
+0.110:failsafe
+0.110:network-interface
+0.110:plymouth-splash
+0.127:tty4
+0.127:tty5
+0.127:tty2
+0.127:tty3
+0.127:tty6
+0.129:cron
+0.129:atd
+0.991:vmware-tools
+1.000:tty1

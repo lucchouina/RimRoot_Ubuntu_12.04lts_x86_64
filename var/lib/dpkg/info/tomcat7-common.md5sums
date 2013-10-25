@@ -1,0 +1,15 @@
+172db09827bbdcc467650984a8aef858  usr/share/doc/tomcat7-common/README.Debian
+da77a88cf9e0fa7be3470323c1386ef9  usr/share/doc/tomcat7-common/RELEASE-NOTES.gz
+a81c874d01f2f52c174c0fb50d37f1eb  usr/share/doc/tomcat7-common/RUNNING.txt.gz
+e29d81de58a16b57e8f4f08693cca6f3  usr/share/doc/tomcat7-common/copyright
+a02742b65919610f0807bafaa61f1735  usr/share/tomcat7/bin/bootstrap.jar
+b8f5d3dc3c8432e57a52deead265beaf  usr/share/tomcat7/bin/catalina-tasks.xml
+d071090b747011d2d2edf6ac6711d954  usr/share/tomcat7/bin/catalina.sh
+a9c6e714d876614143c4629f93e249ba  usr/share/tomcat7/bin/configtest.sh
+db6410f06cb4444d1197c5bf5a3c2e66  usr/share/tomcat7/bin/daemon.sh
+6794c2ab0f5fa8d754a3c98496153a26  usr/share/tomcat7/bin/digest.sh
+2c590d29f35f9fbd70d9f9eecd6620af  usr/share/tomcat7/bin/setclasspath.sh
+5b6c82bd5593bdf293473e6577ad8eff  usr/share/tomcat7/bin/shutdown.sh
+9c6412b15a86c14121c3cf4aded770f4  usr/share/tomcat7/bin/startup.sh
+3320d1f4203d1bea293662b7dbfea352  usr/share/tomcat7/bin/tool-wrapper.sh
+8a5e0d651babf1205b98884886e681a4  usr/share/tomcat7/bin/version.sh

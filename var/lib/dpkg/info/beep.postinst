@@ -1,0 +1,56 @@
+#!/bin/sh
+# postinst for beep
+# copyright 2002-2011 by Gerfried Fuchs <rhonda@debian.org>
+# Licenced under WTFPLv2
+
+set -e
+
+# Source debconf library.
+if [ -e /usr/share/debconf/confmodule ]; then
+	. /usr/share/debconf/confmodule
+fi
+
+if [ "$1" != configure ]; then
+	exit 0
+fi
+
+suid=false
+if [ -e /usr/share/debconf/confmodule ]; then
+	db_get beep/suid_option
+	suid="$RET"
+fi
+
+# option changes as suggested by #492724
+if [ "$suid" = "suid root for all" ] ; then
+	db_set beep/suid_option "usable for all"
+	suid="usable for all"
+fi
+if [ "$suid" = "suid root with only group audio executable" ] ; then
+	db_set beep/suid_option "usable for group audio"
+	suid="usable for group audio"
+fi
+if [ "$suid" = "not suid at all" ] ; then
+	db_set beep/suid_option "usable only for root"
+	suid="usable only for root"
+fi
+
+
+if [ -x /usr/sbin/dpkg-statoverride ] ; then
+	if ! dpkg-statoverride --list /usr/bin/beep >/dev/null ; then
+		if [ "$suid" = "usable for all" ] ; then
+			chmod 4755 /usr/bin/beep
+		elif [ "$suid" = "usable for group audio" ] ; then
+			chmod 4754 /usr/bin/beep
+		elif [ "$suid" = "usable only for root" ] ; then
+			chmod 0755 /usr/bin/beep
+		fi
+	fi
+else
+	if [ "$suid" = "usable for all" ] ; then
+		chmod 4755 /usr/bin/beep
+	elif [ "$suid" = "usable for group audio" ] ; then
+		chmod 4754 /usr/bin/beep
+	elif [ "$suid" = "usable only for root" ] ; then
+		chmod 0755 /usr/bin/beep
+	fi
+fi

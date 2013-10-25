@@ -1,0 +1,2 @@
+pacemaker binary: package-name-doesnt-match-sonames
+pacemaker binary: shlib-without-versioned-soname

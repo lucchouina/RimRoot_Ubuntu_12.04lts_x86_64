@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/libnet.so.1.5.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libnet1
+/usr/share/doc/libnet1/README
+/usr/share/doc/libnet1/BUGS
+/usr/share/doc/libnet1/CONTRIB
+/usr/share/doc/libnet1/TODO
+/usr/share/doc/libnet1/copyright
+/usr/share/doc/libnet1/changelog.Debian.gz
+/usr/lib/libnet.so.1

@@ -1,0 +1,6 @@
+#!/bin/sh -e
+
+/usr/lib/rabbitmq/bin/rabbitmq-plugins enable amqp_client
+invoke-rc.d rabbitmq-server restart
+
+

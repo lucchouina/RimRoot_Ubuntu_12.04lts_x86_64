@@ -1,0 +1,168 @@
+<!-- Creator     : groff version 1.21 -->
+<!-- CreationDate: Mon Dec 12 13:48:48 2011 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>COROSYNC-CPGTOOL</title>
+
+</head>
+<body>
+
+<h1 align="center">COROSYNC-CPGTOOL</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#OPTIONS">OPTIONS</a><br>
+<a href="#EXAMPLES">EXAMPLES</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+<a href="#AUTHOR">AUTHOR</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em">corosync-cpgtool
+&minus; A tool for displaying cpg groups and members.</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>corosync-cpgtool
+[&minus;d delimiter] [&minus;e] [&minus;n]
+[&minus;h]</b></p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>corosync-cpgtool</b>
+A tool for displaying cpg groups and members.</p>
+
+<h2>OPTIONS
+<a name="OPTIONS"></a>
+</h2>
+
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p style="margin-top: 1em"><b>-h</b></p></td>
+<td width="8%"></td>
+<td width="75%">
+
+
+<p style="margin-top: 1em">Display this help.</p></td>
+<td width="3%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>-d</b></p></td>
+<td width="8%"></td>
+<td width="75%">
+
+
+<p>Delimiter between fields.</p></td>
+<td width="3%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>-e</b></p></td>
+<td width="8%"></td>
+<td width="75%">
+
+
+<p>Don&rsquo;t escape unprintable characters in group
+name</p> </td>
+<td width="3%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>-n</b></p></td>
+<td width="8%"></td>
+<td width="75%">
+
+
+<p>Display only all existing group names.</p></td>
+<td width="3%">
+</td></tr>
+</table>
+
+<h2>EXAMPLES
+<a name="EXAMPLES"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Display the
+groups and process that belong to those cpg groups.</p>
+
+<p style="margin-left:22%;">$ corosync-cpgtool <br>
+Group Name PID Node ID <br>
+example-group <br>
+2515 191146176 (192.168.100.11) <br>
+2471 207923392 (192.168.100.12)</p>
+
+<p style="margin-left:11%;">Get a comma-delimited list.</p>
+
+<p style="margin-left:22%;">$ corosync-cpgtool -d
+&quot;,&quot; <br>
+GRP_NAME,PID,NODEID <br>
+example-group,2515,191146176 <br>
+example-group,2471,207923392</p>
+
+<p style="margin-left:11%;">Just get the group names</p>
+
+<p style="margin-left:22%;">$ corosync-cpgtool -n <br>
+example-group</p>
+
+<h2>SEE ALSO
+<a name="SEE ALSO"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>corosync_overview</b>(8),</p>
+
+<h2>AUTHOR
+<a name="AUTHOR"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Angus
+Salkeld</p>
+<hr>
+</body>
+</html>

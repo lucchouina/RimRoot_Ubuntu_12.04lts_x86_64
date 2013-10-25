@@ -1,0 +1,16 @@
+/.
+/etc
+/etc/init.d
+/etc/init.d/openhpid
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/openhpid
+/usr/share/doc/openhpid/copyright
+/usr/share/man
+/usr/share/man/man8
+/usr/share/man/man8/openhpid.8.gz
+/usr/sbin
+/usr/sbin/openhpid
+/usr/share/doc/openhpid/changelog.Debian.gz
+/usr/share/doc/openhpid/README.Debian

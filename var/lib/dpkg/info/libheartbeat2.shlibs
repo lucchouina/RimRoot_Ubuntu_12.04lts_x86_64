@@ -1,0 +1,4 @@
+libhbclient 1 libheartbeat2 (>= 1:3.0.5)
+libccmclient 1 libheartbeat2 (>= 1:3.0.5)
+libapphb 2 libheartbeat2 (>= 1:3.0.5)
+libclm 1 libheartbeat2 (>= 1:3.0.5)

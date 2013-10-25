@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/bin
+/usr/bin/crash
+/usr/share
+/usr/share/man
+/usr/share/man/man8
+/usr/share/man/man8/crash.8.gz
+/usr/share/doc
+/usr/share/doc/crash
+/usr/share/doc/crash/copyright
+/usr/share/doc/crash/README.gz
+/usr/share/doc/crash/changelog.Debian.gz

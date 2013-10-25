@@ -1,0 +1,120 @@
+Package: flashplugin-installer
+Priority: optional
+Section: multiverse/web
+Installed-Size: 136
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Bart Martens <bartm@knars.be>
+Architecture: amd64
+Source: flashplugin-nonfree
+Version: 11.2.202.285ubuntu0.12.04.1
+Replaces: flashplugin (<< 6), flashplugin-downloader (<< 11.1.102.55ubuntu3), flashplugin-nonfree (<< 11.0.1.152ubuntu1)
+Provides: flashplugin-nonfree
+Depends: debconf (>= 0.5) | debconf-2.0, wget, libgtk2.0-0, fontconfig, libxt6, libxext6, libatk1.0-0, libc6, libcairo2, libexpat1, libfontconfig1, libfreetype6, libglib2.0-0, libice6, libpango1.0-0, libpng12-0, libsm6, libx11-6, libxau6, libxcursor1, libxdmcp6, libxfixes3, libxi6, libxinerama1, libxrandr2, libxrender1, zlib1g, libnss3-1d, libnspr4-0d, libcurl3 | libcurl3-gnutls, libasound2, update-notifier-common (>= 0.119ubuntu2)
+Recommends: libasound2-plugins (>= 1.0.16)
+Suggests: firefox, x-ttcidfont-conf, ttf-mscorefonts-installer, ttf-bitstream-vera | ttf-dejavu, ttf-xfree86-nonfree, xfs
+Conflicts: flashplayer-mozilla, flashplugin (<< 6), flashplugin-nonfree (<< 11.0.1.152ubuntu1), libflashsupport
+Breaks: flashplugin-downloader (<< 11.1.102.55ubuntu3)
+Filename: pool/multiverse/f/flashplugin-nonfree/flashplugin-installer_11.2.202.285ubuntu0.12.04.1_amd64.deb
+Size: 6920
+MD5sum: 089220d9cae36419046d9b6386cc2e04
+SHA1: a930629516be07aa31d7528aab5dc732a79ee315
+SHA256: aaf07cdba5e6a3f0684dfb73ba4bf55409035b3bea0b6a1766f85d02976730c6
+Description: Adobe Flash Player plugin installer
+Multi-Arch: foreign
+Homepage: http://www.adobe.com/products/flashplayer.html
+Npp-Applications: ec8030f7-c20a-464f-9b0e-13a3a9e97384, 92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a, aa5ca914-c309-495d-91cf-3141bbb04115
+Npp-Description: Adobe Flash SWF Player (http://www.adobe.com)
+Npp-File: libflashplayer.so
+Npp-Mimetype: application/x-shockwave-flash
+Npp-Name: Adobe Flash Player (installer)
+Description-md5: a03e9ebc20ce82c05567d088e79bf750
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: redeclipse
+Priority: optional
+Section: multiverse/games
+Installed-Size: 4202
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.2-2ubuntu0.1
+Depends: redeclipse-data (>= 1.2), libc6 (>= 2.15), libenet1a, libgl1-mesa-glx | libgl1, libsdl-image1.2 (>= 1.2.10), libsdl-mixer1.2, libsdl1.2debian (>= 1.2.10-1), libstdc++6 (>= 4.1.1), libx11-6, zlib1g (>= 1:1.2.0)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/multiverse/r/redeclipse/redeclipse_1.2-2ubuntu0.1_amd64.deb
+Size: 1477736
+MD5sum: 96a5d404779fbbb6bed4930ee878fb2e
+SHA1: a46eaac5ac70c79f4374df36cd203efaf302a645
+SHA256: 547464949731c1465d14682be0738dd72b3228ad91fbc842363beebdddfaf325
+Description: single-player and multi-player first-person ego-shooter
+Homepage: http://www.redeclipse.net
+Description-md5: 5c2008bbe98e70a350dc2e5ff41c2edb
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: redeclipse-dbg
+Priority: extra
+Section: multiverse/debug
+Installed-Size: 17994
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: amd64
+Source: redeclipse
+Version: 1.2-2ubuntu0.1
+Depends: redeclipse (= 1.2-2ubuntu0.1)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/multiverse/r/redeclipse/redeclipse-dbg_1.2-2ubuntu0.1_amd64.deb
+Size: 3795634
+MD5sum: a5f66affb529c1600e1e71a42db547cf
+SHA1: 61f4fcdda9745d0f811f707e4732db13446a4299
+SHA256: 3d4a626c475a8e1117bfecef2802feb3efcdf20c84998fc6a76f039255fb4747
+Description: debug symbols for the Red Eclipse FPS game
+Homepage: http://www.redeclipse.net
+Description-md5: 472a3994437308850b2d85085b11423f
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: redeclipse-server
+Priority: optional
+Section: multiverse/games
+Installed-Size: 800
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: amd64
+Source: redeclipse
+Version: 1.2-2ubuntu0.1
+Depends: libc6 (>= 2.15), libenet1a, libstdc++6 (>= 4.1.1), zlib1g (>= 1:1.1.4)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/multiverse/r/redeclipse/redeclipse-server_1.2-2ubuntu0.1_amd64.deb
+Size: 262922
+MD5sum: 423ff13f35e7f9cc9dd1e3f015692e37
+SHA1: b15510cf344a47b4702bba8eaa10aef043c9cec2
+SHA256: 0d134c6036e4d0b816726f071e00ed85bbd92e10b01e98616f21a450bdf595ea
+Description: server for the Red Eclipse FPS game
+Homepage: http://www.redeclipse.net
+Description-md5: 315338a2439def5a06eb51a250e84e31
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: redeclipse-server-dbg
+Priority: extra
+Section: multiverse/debug
+Installed-Size: 2525
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: amd64
+Source: redeclipse
+Version: 1.2-2ubuntu0.1
+Depends: redeclipse-server (= 1.2-2ubuntu0.1)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/multiverse/r/redeclipse/redeclipse-server-dbg_1.2-2ubuntu0.1_amd64.deb
+Size: 551948
+MD5sum: 08fda7b4ecf5eb168d4c2f249e4249f7
+SHA1: 863c5f033d2bc671cda9c134089e08b0eb5586b8
+SHA256: 5a573e6e88687cc25180a4136114ed05900adef57a4004b6cd47bc07858094b7
+Description: debug symbols for the Red Eclipse dedicated server
+Homepage: http://www.redeclipse.net
+Description-md5: 845a03d775cde2c92ef0a0d918bdbf50
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+

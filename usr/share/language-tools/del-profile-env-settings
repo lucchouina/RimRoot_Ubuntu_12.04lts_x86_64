@@ -1,0 +1,13 @@
+#!/bin/sh -e
+
+homedir=$1
+
+test -n "$homedir" || exit 1
+
+test -f "$homedir/.profile" && {
+    cd "$homedir"
+    for var in 'LANGUAGE' 'LANG' 'LC_MESSAGES' 'LC_CTYPE' 'LC_COLLATE'; do
+        sed -i "/^export $var=\"[^[:space:]]*\"$/d" .profile
+    done
+}
+

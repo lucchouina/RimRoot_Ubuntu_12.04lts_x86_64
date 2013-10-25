@@ -1,0 +1,8 @@
+13b3a2137a695047ae6087f3a2dda3d8  usr/lib/erlang/lib/crypto-2.0.4/ebin/crypto.app
+2c623cac1f05bbfb4a9efa8fa49547f4  usr/lib/erlang/lib/crypto-2.0.4/ebin/crypto.appup
+5128af38f0ada346021c7c7b9d3c48eb  usr/lib/erlang/lib/crypto-2.0.4/ebin/crypto.beam
+01a613eba3585c12f58cd731672cc363  usr/lib/erlang/lib/crypto-2.0.4/ebin/crypto_app.beam
+df63e2581232be6be47a06860b3ce2b0  usr/lib/erlang/lib/crypto-2.0.4/ebin/crypto_server.beam
+b4bf2c0c1689ba1a881eb3806343aee1  usr/lib/erlang/lib/crypto-2.0.4/ebin/crypto_sup.beam
+feef0a52d7fc05f3c83cd0bf39ce406c  usr/lib/erlang/lib/crypto-2.0.4/priv/lib/crypto.so
+588c39c282e1da3de1fcd0f40c685f25  usr/share/doc/erlang-crypto/copyright

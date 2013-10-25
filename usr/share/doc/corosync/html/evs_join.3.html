@@ -1,0 +1,123 @@
+<!-- Creator     : groff version 1.21 -->
+<!-- CreationDate: Mon Dec 12 13:48:51 2011 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>EVS_JOIN</title>
+
+</head>
+<body>
+
+<h1 align="center">EVS_JOIN</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#RETURN VALUE">RETURN VALUE</a><br>
+<a href="#ERRORS">ERRORS</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">evs_join
+&minus; Joins one or more groups in the EVS library</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>#include
+&lt;corosync/evs.h&gt;</b></p>
+
+<p style="margin-left:11%; margin-top: 1em"><b>int
+evs_join(evs_handle_t</b> <i>handle</i><b>, evs_group_t
+*</b><i>groups</i><b>, int</b>
+<i>group_entries</i><b>);</b></p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The
+<b>evs_join</b> function is used to join one or more groups.
+When a group is joined, using the <b>evs_mcast_joined(3)</b>
+function will multicast to the groups joined in the argument
+<i>handle.</i> Messages that are sent to any of the groups
+joined to the parameter <i>handle</i> will be delivered by
+<b>evs_dispatch(3).</b></p>
+
+<p style="margin-left:11%; margin-top: 1em">This call may
+be used more then once on a handle, in which case the joined
+groups will be all of the groups passed to the
+<b>evs_join(3)</b> function during the lifecycle of the
+parameter <i>handle.</i></p>
+
+<p style="margin-left:11%; margin-top: 1em">The argument
+<i>groups</i> is used to specify the groups to join. A group
+is a 32 byte key. The key is not a string, hence, the entire
+key is used when joining the channel. For that reason the
+entire group should be initialized.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The argument
+<i>group_entries</i> specifies how many entries are located
+in the groups argument.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The
+<i>groups</i> argument is of the type evs_group_t which is
+defined by the structure:</p>
+
+<p style="margin-left:22%; margin-top: 1em">typedef struct
+{ <br>
+char key[32]; <br>
+} evs_groups_t;</p>
+
+<h2>RETURN VALUE
+<a name="RETURN VALUE"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">This call
+returns the EVS_OK value if successful, otherwise an error
+is returned.</p>
+
+<h2>ERRORS
+<a name="ERRORS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The errors are
+undocumented.</p>
+
+<h2>SEE ALSO
+<a name="SEE ALSO"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>evs_overview</b>(8),
+<b>evs_initialize</b>(3), <b>evs_finalize</b>(3),
+<b>evs_fd_get</b>(3), <b>evs_dispatch</b>(3),
+<b>evs_leave</b>(3), <b>evs_mcast_joined</b>(3),
+<b>evs_mcast_groups</b>(3), <b>evs_mmembership_get</b>(3)
+<b>evs_context_get</b>(3) <b>evs_context_set</b>(3)</p>
+<hr>
+</body>
+</html>

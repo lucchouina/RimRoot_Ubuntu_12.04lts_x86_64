@@ -1,0 +1,303 @@
+<!-- Creator     : groff version 1.21 -->
+<!-- CreationDate: Mon Dec 12 13:48:49 2011 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>EVS_OVERVIEW</title>
+
+</head>
+<body>
+
+<h1 align="center">EVS_OVERVIEW</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#OVERVIEW">OVERVIEW</a><br>
+<a href="#DEFINITIONS">DEFINITIONS</a><br>
+<a href="#USING VIRTUAL SYNCHRONY">USING VIRTUAL SYNCHRONY</a><br>
+<a href="#ARCHITECTURE AND ALGORITHM">ARCHITECTURE AND ALGORITHM</a><br>
+<a href="#PERFORMANCE">PERFORMANCE</a><br>
+<a href="#SECURITY">SECURITY</a><br>
+<a href="#BUGS">BUGS</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">evs_overview
+&minus; EvS Library Overview</p>
+
+<h2>OVERVIEW
+<a name="OVERVIEW"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The EVS library
+is delivered with the corosync project. This library is used
+to create distributed applications that operate properly
+during partitions, merges, and faults.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The library
+provides a mechanism to: * handle abstraction for multiple
+instances of an EVS library in one application * Deliver
+messages * Deliver configuration changes * join one or more
+groups * leave one or more groups * send messages to one or
+more groups * send messages to currently joined groups</p>
+
+<p style="margin-left:11%; margin-top: 1em">The EVS library
+implements a messaging model known as Extended Virtual
+Synchrony. This model allows one sender to transmit to many
+receivers using standard UDP/IP. UDP/IP is unreliable and
+unordered, so the EVS library applies ordering and
+reliability to messages. Hardware multicast is used to avoid
+duplicated packets with two or more receivers. Erroneous
+messages are corrected automatically by the library.</p>
+
+<p style="margin-left:11%; margin-top: 1em">Certain
+guarantees are provided by the EVS library. These guarantees
+are related to message delivery and configuration change
+delivery.</p>
+
+<h2>DEFINITIONS
+<a name="DEFINITIONS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>multicast</b></p>
+
+<p style="margin-left:22%;">A multicast occurs when a
+network interface card sends a UDP packet to multiple
+receivers simulatenously.</p>
+
+<p style="margin-left:11%;"><b>processor</b></p>
+
+<p style="margin-left:22%;">A processor is the entity that
+executes the extended virtual synchrony algorithms.</p>
+
+<p style="margin-left:11%;"><b>configuration</b></p>
+
+<p style="margin-left:22%;">A configuration is the current
+description of the processors executing the extended virtual
+syncrhony algorithm.</p>
+
+<p style="margin-left:11%;"><b>configuration change</b></p>
+
+<p style="margin-left:22%;">A configuration change occurs
+when a new configuration is delivered.</p>
+
+<p style="margin-left:11%;"><b>partition</b></p>
+
+<p style="margin-left:22%;">A partition occurs when a
+configuration splits into two or more configurations, or a
+processor fails or is stopped and leaves the
+configuration.</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="7%">
+
+
+<p><b>merge</b></p></td>
+<td width="4%"></td>
+<td width="78%">
+
+
+<p>A merge occurs when two or more configurations join into
+a larger new configuration. When a new processor starts up,
+it is treated as a configuration with only one processor and
+a merge occurs.</p></td></tr>
+</table>
+
+<p style="margin-left:11%;"><b>fifo ordering</b></p>
+
+<p style="margin-left:22%;">A message is FIFO ordered when
+one sender and one receiver agree on the order of the
+messages sent.</p>
+
+<p style="margin-left:11%;"><b>agreed ordering</b></p>
+
+<p style="margin-left:22%;">A message is AGREED ordered
+when all processors agree on the order of the messages
+sent.</p>
+
+<p style="margin-left:11%;"><b>safe ordering</b></p>
+
+<p style="margin-left:22%;">A message is SAFE ordered when
+all processors agree on the order of messages sent and those
+messages are not delivered until all processors have a copy
+of the message to deliver.</p>
+
+<p style="margin-left:11%;"><b>virtual syncrhony</b></p>
+
+<p style="margin-left:22%;">Virtual syncrhony is obtained
+when all processors agree on the order of messages sent and
+configuration changes sent for each new configuration.</p>
+
+<h2>USING VIRTUAL SYNCHRONY
+<a name="USING VIRTUAL SYNCHRONY"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The virtual
+synchrony messaging model has many benefits for developing
+distributed applications. Applications designed using
+replication have the most benefits. Applications that must
+be able to partition and merge also benefit from the virtual
+synchrony messaging model.</p>
+
+<p style="margin-left:11%; margin-top: 1em">All
+applications receive a copy of transmitted messages even if
+there are errors on the transmission media. This allows
+optimiziations when every processor must receive a copy of
+the message for replication.</p>
+
+<p style="margin-left:11%; margin-top: 1em">All messages
+are ordered according to agreed ordering. This mechanism
+allows the avoidance of race conditions. Consider a lock
+service implemented over several processors. Two requests
+occur at the same time on two seperate processors. The
+requests are ordered for every processor in the same order
+and delivered to the processors. Then all processors will
+get request A before request B and can reject request B. Any
+type of creation or deletion of a shared data structure can
+benefit from this mechanism.</p>
+
+<p style="margin-left:11%; margin-top: 1em">Self delivery
+ensures that messages that are sent by a processor are also
+delivered back to that processor. This allows the processor
+sending the message to execute logic when the message is
+self delivered according to agreed ordering and the virtual
+synchrony rules. It also permits all logic to be placed in
+one message handler instead of two seperate places.</p>
+
+<p style="margin-left:11%; margin-top: 1em">Virtual
+Synchrony allows the current configuration to be used to
+make decisions in partitions and merges. Since the
+configuration is sent in the stream of messages to the
+application, the application can alter its behavior based
+upon the configuration changes.</p>
+
+<h2>ARCHITECTURE AND ALGORITHM
+<a name="ARCHITECTURE AND ALGORITHM"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The EVS library
+is a thin IPC interface to the corosync executive. The
+corosync executive provides services for the SA Forum AIS
+libraries as well as the EVS library.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The corosync
+executive uses a ring protocol and membership protocol to
+send messages according to the semantics required by
+extended virtual synchrony. The ring protocol creates a
+virtual ring of processors. A token is rotated around the
+ring of processors. When the token is possessed by a
+processor, that processor may multicast messages to other
+processors in the system.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The token is
+called the ORF token (for ordering, reliability, flow
+control). The ORF token orders all messages by increasing a
+sequence number every time a message is multicasted. In this
+way, an ordering is placed on all messages that all
+processors agree to. The token also contains a
+retransmission list. If a token is received by a processor
+that has not yet received a message it should have, a
+message sequence number is added to the retransmission list.
+A processor that has a copy of the message then retransmits
+the message. The ORF token provides configuration-wide flow
+control by tracking the number of messages sent and limiting
+the number of messages that may be sent by one processor on
+each posession of the token.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The membership
+protocol is responsible for ring formation and detecting
+when a processor within a ring has failed. If the token
+fails to make a rotation within a timeout period known as
+the token rotation timeout, the membership protocol will
+form a new ring. If a new processor starts, it will also
+form a new ring. Two or more configurations may be used to
+form a new ring, allowing many partitions to merge together
+into one new configuration.</p>
+
+<h2>PERFORMANCE
+<a name="PERFORMANCE"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The EVS library
+obtains 8.5MB/sec throughput on 100 mbit network links with
+many processors. Larger messages obtain better throughput
+results because the time to access Ethernet is about the
+same for a small message as it is for a larger message.
+Smaller messages obtain better messages per second, because
+the time to send a message is not exactly the same.</p>
+
+<p style="margin-left:11%; margin-top: 1em">80% of CPU
+utilization occurs because of encryption and authentication.
+The corosync can be built without encryption and
+authentication for those with no security requirements and
+low CPU utilization requirements. Even without encryption or
+authentication, under heavy load, processor utilization can
+reach 25% on 1.5 GHZ CPU processors.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The current
+corosync executive supports 16 processors, however, support
+for more processors is possible by changing defines in the
+corosync executive. This is untested, however.</p>
+
+<h2>SECURITY
+<a name="SECURITY"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The EVS library
+encrypts all messages sent over the network using the
+SOBER-128 stream cipher. The EVS library uses HMAC and SHA1
+to authenticate all messages. The EVS library uses SOBER-128
+as a pseudo random number generator. The EVS library feeds
+the PRNG using the /dev/random Linux device.</p>
+
+<h2>BUGS
+<a name="BUGS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">This software
+is not yet production, so there may still be some bugs. But
+it appears there are very few since nobody reports any
+unknown bugs at this point.</p>
+
+<h2>SEE ALSO
+<a name="SEE ALSO"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>evs_initialize</b>(3),
+<b>evs_finalize</b>(3), <b>evs_fd_get</b>(3),
+<b>evs_dispatch</b>(3), <b>evs_join</b>(3),
+<b>evs_leave</b>(3), <b>evs_mcast_joined</b>(3),
+<b>evs_mcast_groups</b>(3), <b>evs_mmembership_get</b>(3)
+<b>evs_context_get</b>(3) <b>evs_context_set</b>(3)</p>
+<hr>
+</body>
+</html>

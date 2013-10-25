@@ -1,0 +1,10 @@
+/.
+/usr
+/usr/lib
+/usr/lib/libecpg.so.6.3
+/usr/share
+/usr/share/doc
+/usr/share/doc/libecpg6
+/usr/share/doc/libecpg6/copyright
+/usr/lib/libecpg.so.6
+/usr/share/doc/libecpg6/changelog.Debian.gz

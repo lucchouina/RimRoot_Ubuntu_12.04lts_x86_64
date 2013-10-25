@@ -1,0 +1,7 @@
+#!/bin/sh
+# $Id: postrm,v 1.1 1998/08/30 02:35:22 ian Exp $
+set -e
+if test "$1" = purge
+then
+	rm -rf /etc/authbind
+fi

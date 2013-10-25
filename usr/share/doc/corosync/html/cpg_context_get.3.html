@@ -1,0 +1,97 @@
+<!-- Creator     : groff version 1.21 -->
+<!-- CreationDate: Mon Dec 12 13:48:50 2011 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>CPG_CONTEXT_GET</title>
+
+</head>
+<body>
+
+<h1 align="center">CPG_CONTEXT_GET</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#RETURN VALUE">RETURN VALUE</a><br>
+<a href="#ERRORS">ERRORS</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em">cpg_context_get
+&minus; Gets the context variable for a CPG instance</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>#include
+&lt;corosync/cpg.h&gt;</b></p>
+
+<p style="margin-left:11%; margin-top: 1em"><b>int
+cpg_context_get(cpg_handle_t</b> <i>handle</i><b>, void
+**</b><i>context</i><b>);</b></p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The
+<b>cpg_context_get</b> function is used to retrieve the
+context variable previously stored using
+<b>cpg_context_set(3)</b></p>
+
+<h2>RETURN VALUE
+<a name="RETURN VALUE"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">This call
+returns the CPG_OK value if successful, otherwise an error
+is returned.</p>
+
+<h2>ERRORS
+<a name="ERRORS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The errors are
+undocumented.</p>
+
+<h2>SEE ALSO
+<a name="SEE ALSO"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>cpg_overview</b>(8),
+<b>cpg_initialize</b>(3), <b>cpg_finalize</b>(3),
+<b>cpg_fd_get</b>(3), <b>cpg_dispatch</b>(3),
+<b>cpg_join</b>(3), <b>cpg_leave</b>(3),
+<b>cpg_mcast_joined</b>(3), <b>cpg_membership_get</b>(3)
+<b>cpg_zcb_alloc</b>(3) <b>cpg_zcb_free</b>(3)
+<b>cpg_zcb_mcast_joined</b>(3) <b>cpg_context_get</b>(3)
+<b>cpg_context_set</b>(3) <b>cpg_local_get</b>(3)</p>
+<hr>
+</body>
+</html>

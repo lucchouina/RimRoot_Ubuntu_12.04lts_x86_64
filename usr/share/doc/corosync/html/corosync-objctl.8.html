@@ -1,0 +1,250 @@
+<!-- Creator     : groff version 1.21 -->
+<!-- CreationDate: Mon Dec 12 13:48:48 2011 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>COROSYNC-OBJCTL</title>
+
+</head>
+<body>
+
+<h1 align="center">COROSYNC-OBJCTL</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#OBJECT-SPEC">OBJECT-SPEC</a><br>
+<a href="#OPTIONS">OPTIONS</a><br>
+<a href="#EXAMPLES">EXAMPLES</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+<a href="#AUTHOR">AUTHOR</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em">corosync-objctl
+&minus; Configure objects in the Object Database</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>corosync-objctl
+[&minus;b]
+[&minus;c|&minus;w|&minus;d|&minus;a|&minus;t&minus;h]
+&lt;OBJECT-SPEC&gt;...</b></p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>corosync-objctl</b>
+is used to configure objects within the object database at
+runtime.</p>
+
+<h2>OBJECT-SPEC
+<a name="OBJECT-SPEC"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">There are two
+types of entities</p>
+
+<p style="margin-left:22%;"><b>Objects</b> and <b>Key=Value
+pairs</b></p>
+
+<p style="margin-left:11%;"><b>Objects</b></p>
+
+<p style="margin-left:22%;">Objects are container like
+entities that can hold other entities. They are specified as
+&quot;objectA&quot;.&quot;objectB&quot;. An example is
+logging.logger.</p>
+
+<p style="margin-left:11%;"><b>Key=Value pairs</b></p>
+
+<p style="margin-left:22%;">These are the entities that
+actually hold values (read database &quot;fields&quot;).
+They are specified as object.key=value or just object.key if
+you are reading.</p>
+
+<h2>OPTIONS
+<a name="OPTIONS"></a>
+</h2>
+
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p style="margin-top: 1em"><b>-c</b></p></td>
+<td width="8%"></td>
+<td width="78%">
+
+
+<p style="margin-top: 1em">Create a new object.</p></td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>-d</b></p></td>
+<td width="8%"></td>
+<td width="78%">
+
+
+<p>Delete an existing object.</p></td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>-w</b></p></td>
+<td width="8%"></td>
+<td width="78%">
+
+
+<p>Use this option when you want to write a new value to a
+key.</p> </td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>-a</b></p></td>
+<td width="8%"></td>
+<td width="78%">
+
+
+<p>Display all values currently available.</p></td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>-t</b></p></td>
+<td width="8%"></td>
+<td width="78%">
+
+
+<p>Track changes to an object and it&rsquo;s children. As
+changes are made to the object they are printed out. this is
+kind of like a &quot;tail -f&quot; for the object
+database.</p> </td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>-h</b></p></td>
+<td width="8%"></td>
+<td width="78%">
+
+
+<p>Print basic usage.</p></td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>-b</b></p></td>
+<td width="8%"></td>
+<td width="78%">
+
+
+<p>Display binary values in BASH backslash escape sequences
+format.</p> </td></tr>
+</table>
+
+<h2>EXAMPLES
+<a name="EXAMPLES"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Print the
+objOne object (shouldn&rsquo;t exist yet).</p>
+
+<p style="margin-left:22%;">$ corosync-objctl objOne</p>
+
+<p style="margin-left:11%;">Create the objOne object.</p>
+
+<p style="margin-left:22%;">$ corosync-objctl -c objOne</p>
+
+<p style="margin-left:11%;">Print the objOne object
+(empty).</p>
+
+<p style="margin-left:22%;">$ corosync-objctl objOne <br>
+objOne</p>
+
+<p style="margin-left:11%;">Write two new keys to the
+objOne object.</p>
+
+<p style="margin-left:22%;">$ corosync-objctl -w
+objOne.max=3000 objOne.min=100</p>
+
+<p style="margin-left:11%;">Print the objOne object (with
+the two new keys).</p>
+
+<p style="margin-left:22%;">$ corosync-objctl objOne <br>
+objOne.min=100 <br>
+objOne.max=3000</p>
+
+<p style="margin-left:11%;">Delete the objOne.min key</p>
+
+<p style="margin-left:22%;">$ corosync-objctl -d
+objOne.min=100</p>
+
+<p style="margin-left:11%;">Prove that is gone.</p>
+
+<p style="margin-left:22%;">$ corosync-objctl objOne <br>
+objOne.max=3000</p>
+
+<p style="margin-left:11%;">Delete the whole objOne
+object.</p>
+
+<p style="margin-left:22%;">$ corosync-objctl -d objOne</p>
+
+<p style="margin-left:11%;">Prove that is gone.</p>
+
+<p style="margin-left:22%;">$ corosync-objctl objOne</p>
+
+<h2>SEE ALSO
+<a name="SEE ALSO"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>confdb_initialize</b>(3),</p>
+
+<h2>AUTHOR
+<a name="AUTHOR"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Angus
+Salkeld</p>
+<hr>
+</body>
+</html>

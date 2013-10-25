@@ -1,0 +1,239 @@
+Package: boinc-amd-opencl
+Description-md5: 6e0625247955d16f5c815fea6934b5fa
+Description-en: metapackage for AMD/ATI OpenCL-savvy BOINC client and manager
+ The Berkeley Open Infrastructure for Network Computing (BOINC) is a
+ software platform for distributed computing: several initiatives of
+ various scientific disciplines all compete for the idle time of
+ desktop computers. The developers' web site at the University of
+ Berkeley serves as a common portal to the otherwise independently run
+ projects.
+ .
+ Regular users (righteously) often find it an unbearable nuisance to
+ care for the configuration of BOINC for the OpenCL-savvy AMD/ATI
+ graphics cards.  This package adds a series of dependencies from the
+ non-free section to the regular boinc package. This also meant this
+ binary package to be redistributed in the contrib section of Debian.
+ .
+ This package is not perfect, yet. A major problem for the moment
+ is the availability of the OpenCL driver for 32bit binaries for
+ amd64. If this is planned, install the amd-app package provided
+ through the AMD developer forum.
+
+Package: boinc-nvidia-cuda
+Description-md5: 9384e2173f2ed43c0d057c1770da614c
+Description-en: metapackage for CUDA-savvy BOINC client and manager
+ The Berkeley Open Infrastructure for Network Computing (BOINC) is a
+ software platform for distributed computing: several initiatives of
+ various scientific disciplines all compete for the idle time of
+ desktop computers. The developers' web site at the University of
+ Berkeley serves as a common portal to the otherwise independently run
+ projects.
+ .
+ Regular users (righteously) often find it an unbearable nuisance to
+ care for the exact configuration of BOINC for CUDA-savvy graphics
+ cards. This package adds a series of dependencies from the non-free
+ section to the regular boinc package. This also meant this binary
+ package to be redistributed in the contrib section of Debian.
+
+Package: fonts-cns11643-kai
+Description-md5: ae44427964b489279afed6333a0de52a
+Description-en: Chinese TrueType font, TW-Kai (non-free)
+ The CNS 11643 character set (Chinese National Standard 11643),
+ also officially known as the "Chinese Standard Interchange Code",
+ is officially the standard character set of the Republic of China.
+ (In practice, variants of Big5 are de facto standard.)
+ .
+ TW-Kai is released by RDEC, Executive Yuan, ROC.
+ It covers the characters plane 1 to 9 defined by CNS11643.
+
+Package: fonts-cns11643-sung
+Description-md5: a372238d9237841464c1a530ff2162cd
+Description-en: Chinese TrueType font, TW-Sung (non-free)
+ The CNS 11643 character set (Chinese National Standard 11643),
+ also officially known as the "Chinese Standard Interchange Code",
+ is officially the standard character set of the Republic of China.
+ .
+ TW-Sung is released by RDEC, Executive Yuan, ROC.
+ It covers the characters plane 1 to 9 defined by CNS11643.
+
+Package: frogatto
+Description-md5: 53484fcad72c00cc156b54442e976787
+Description-en: 2D platformer game starring a quixotic frog
+ Frogatto is a platformer in the style of old arcade, Sega and
+ Nintendo games. The world is viewed as a cross-section seen from the
+ side, and your character walks and jumps between solid platforms
+ whilst fighting monsters.
+ .
+ This package contains game engine.
+
+Package: frogatto-data
+Description-md5: b2cb4af4d50d386414c848e79033a030
+Description-en: 2D platformer game starring a quixotic frog
+ Frogatto is a platformer in the style of old arcade, Sega and
+ Nintendo games. The world is viewed as a cross-section seen from the
+ side, and your character walks and jumps between solid platforms
+ whilst fighting monsters.
+ .
+ This package contains game data and music files.
+
+Package: java-package
+Description-md5: 2421ac690bde04f56e34ab771ed1767c
+Description-en: Utility for creating Java Debian packages
+ This package provides the capability to build a Debian package from
+ a Java binary distribution by running make-jpkg <java binary archive file>.
+ (with archive files downloaded from providers listed below)
+ .
+ Supported java binary distributions currently include:
+   * Oracle (http://www.oracle.com/technetwork/java/javase/downloads) :
+     - The J2SE Development Kit (JDK), version 6 (update >= 10), 7
+     - The J2SE Runtime Environment (JRE), version 6 (update >= 10), 7
+     - The J2SE API Javadoc, version 6 (update >= 10), 7
+ (Choose tar.gz archives or self-extracting archives, do _not_ choose the RPM!)
+ .
+ Please note that Debian recommends the use of openjdk-6-jdk/openjdk-6-jre
+ or openjdk-7-jdk/openjdk-7-jre. java-package will install non-free packages.
+
+Package: lgc-pg
+Description-md5: 2a89246b627451616fc3d4d7401e476e
+Description-en: LGeneral converter for Panzer General game data
+ LGeneral is a turn-based strategy game heavily inspired by Panzer General.
+ .
+ This package provides lgc-pg a tool to convert the original game data of
+ Panzer General to LGeneral's native file format.
+
+Package: lgeneral
+Description-md5: 1fbf9fae841ca4db79f72e16abe36057
+Description-en: strategy game in the tradition of Panzer General
+ LGeneral is a turn-based strategy game heavily inspired by Panzer General.
+ You play single scenarios or whole campaigns turn by turn against a human
+ player or the AI.
+ .
+ Entrenchment, rugged defense, defensive fire, surprise contacts, surrender,
+ unit supply, weather influence, reinforcements and other implementations
+ contribute to the tactical and strategic depth of the game.
+ .
+ This is the game engine only. LGeneral requires lgc-pg, which converts the
+ game data of the original Panzer General game, to function properly.
+
+Package: python-pycuda
+Description-md5: 999e10331c8e1f852d56bf92b2010d4b
+Description-en: Python module to access Nvidia‘s CUDA parallel computation API
+ PyCUDA lets you access Nvidia‘s CUDA parallel computation API from Python.
+ Several wrappers of the CUDA API already exist–so what’s so special about
+ PyCUDA?
+  * Object cleanup tied to lifetime of objects. This idiom, often called
+    RAII in C++, makes it much easier to write correct, leak- and crash-free
+    code.  PyCUDA knows about dependencies, too, so (for example) it won’t
+    detach from a context before all memory allocated in it is also freed.
+  * Convenience. Abstractions like pycuda.driver.SourceModule and
+    pycuda.gpuarray.GPUArray make CUDA programming even more convenient than
+    with Nvidia’s C-based runtime.
+  * Completeness. PyCUDA puts the full power of CUDA’s driver API at your
+    disposal, if you wish.
+  * Automatic Error Checking. All CUDA errors are automatically translated
+    into Python exceptions.
+  * Speed. PyCUDA’s base layer is written in C++, so all the niceties
+    above are virtually free.
+  * Helpful Documentation.
+
+Package: python-pycuda-doc
+Description-md5: 84b605056aff156bd9240ab28abde6ff
+Description-en: module to access Nvidia‘s CUDA parallel computation API (documentation)
+ PyCUDA lets you access Nvidia‘s CUDA parallel computation API from Python.
+ Several wrappers of the CUDA API already exist–so what’s so special about
+ PyCUDA?
+  * Object cleanup tied to lifetime of objects. This idiom, often called
+    RAII in C++, makes it much easier to write correct, leak- and crash-free
+    code.  PyCUDA knows about dependencies, too, so (for example) it won’t
+    detach from a context before all memory allocated in it is also freed.
+  * Convenience. Abstractions like pycuda.driver.SourceModule and
+    pycuda.gpuarray.GPUArray make CUDA programming even more convenient than
+    with Nvidia’s C-based runtime.
+  * Completeness. PyCUDA puts the full power of CUDA’s driver API at your
+    disposal, if you wish.
+  * Automatic Error Checking. All CUDA errors are automatically translated
+    into Python exceptions.
+  * Speed. PyCUDA’s base layer is written in C++, so all the niceties
+    above are virtually free.
+  * Helpful Documentation.
+ .
+ This package contains HTML documentation and example scripts.
+
+Package: python-pycuda-headers
+Description-md5: dca8b65d1017572ca991858bebee0ff3
+Description-en: headers for Python module to access Nvidia‘s CUDA parallel computation API
+ PyCUDA lets you access Nvidia‘s CUDA parallel computation API from Python.
+ Several wrappers of the CUDA API already exist–so what’s so special about
+ PyCUDA?
+  * Object cleanup tied to lifetime of objects. This idiom, often called
+    RAII in C++, makes it much easier to write correct, leak- and crash-free
+    code.  PyCUDA knows about dependencies, too, so (for example) it won’t
+    detach from a context before all memory allocated in it is also freed.
+  * Convenience. Abstractions like pycuda.driver.SourceModule and
+    pycuda.gpuarray.GPUArray make CUDA programming even more convenient than
+    with Nvidia’s C-based runtime.
+  * Completeness. PyCUDA puts the full power of CUDA’s driver API at your
+    disposal, if you wish.
+  * Automatic Error Checking. All CUDA errors are automatically translated
+    into Python exceptions.
+  * Speed. PyCUDA’s base layer is written in C++, so all the niceties
+    above are virtually free.
+  * Helpful Documentation.
+ .
+ This package contains header files used by PyOpenCL modules.
+
+Package: redeclipse
+Description-md5: 66f3f18253fa5179aee393c47a78544a
+Description-en: multiplayer FPS game based on Cube2
+ A single-player and multi-player first-person ego-shooter, built on Cube
+ Engine 2, which lends itself toward a balanced gameplay, completely at the
+ control of map makers, while maintaining a general theme of agility in a
+ variety of environments.
+ .
+ Features:
+  * Balanced gameplay, with a general theme of agility in a variety of
+    environments
+  * Parkour, impulse boosts, dashing, sliding, and other tricks
+  * Favourite gamemodes with tons of mutators and variables
+  * Available for Windows, Linux/BSD and Mac OSX
+  * Builtin editor lets you create your own maps cooperatively online
+
+Package: redeclipse-data
+Description-md5: caa768fd43b5f3008c12364205a75427
+Description-en: data for the Red Eclipse FPS game
+ This package contains the data content, e.g. maps, models, textures, sounds,
+ etc. for the Red Eclipse FPS game.
+
+Package: redeclipse-dbg
+Description-md5: 472a3994437308850b2d85085b11423f
+Description-en: debug symbols for the Red Eclipse FPS game
+ This package contains the debugging symbols for the Red Eclipse FPS game.
+
+Package: redeclipse-server
+Description-md5: 315338a2439def5a06eb51a250e84e31
+Description-en: server for the Red Eclipse FPS game
+ This package contains the dedicated server for the Red Eclipse FPS game, it
+ also includes some example scripts for configuring the server. It contains no
+ init integration.
+
+Package: redeclipse-server-dbg
+Description-md5: 845a03d775cde2c92ef0a0d918bdbf50
+Description-en: debug symbols for the Red Eclipse dedicated server
+ This package contains the debugging symbols for the dedicated server of the
+ Red Eclipse FPS game.
+
+Package: ttytter
+Description-md5: 9a146e473033d9d280ab16d4f003c589
+Description-en: console Twitter client
+ A client for the microblogging service Twitter. The difference with other
+ clients is that this is a 100% text-based command line, yet fully
+ functional application.
+ .
+ In interactive mode, it is a fully interactive client with asynchronous
+ background updates and commands. It supports ANSI colour, hashtags and
+ Twitter Search.
+ .
+ From the command line, use it to update your Twitter in shell scripts, from
+ cron, and so on. TTYtter is extensible and you can run it in daemon mode
+ to make your own Twitter bot.
+

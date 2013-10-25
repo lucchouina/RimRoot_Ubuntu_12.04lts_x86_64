@@ -1,0 +1,363 @@
+Package: cedarview-drm-drivers
+Binary: cedarview-drm
+Version: 20120717-0ubuntu1
+Priority: optional
+Section: multiverse/kernel
+Maintainer: Alberto Milone <alberto.milone@canonical.com>
+Build-Depends: debhelper (>= 7.0.50~), dkms (>= 1.95), quilt, dh-modaliases
+Architecture: i386
+Standards-Version: 3.9.1
+Format: 3.0 (quilt)
+Directory: pool/multiverse/c/cedarview-drm-drivers
+Files:
+ 8ce2af755a5e8fab7840ae909340e633 1237 cedarview-drm-drivers_20120717-0ubuntu1.dsc
+ 4bc9e0ee367b6a013a230efe1c6f46fd 1955317 cedarview-drm-drivers_20120717.orig.tar.gz
+ 8276c73f1f28a620dd1c5f46f95604b8 596623 cedarview-drm-drivers_20120717-0ubuntu1.debian.tar.gz
+Package-List: 
+ cedarview-drm deb kernel optional
+Checksums-Sha1:
+ 54a3a821f2d563d7b03ad056e6835a94a77cbff6 1237 cedarview-drm-drivers_20120717-0ubuntu1.dsc
+ 53d4c76003a55836f7a1aed2b50cb155181672d3 1955317 cedarview-drm-drivers_20120717.orig.tar.gz
+ cda74bcc3b7c977e12c1106418e55e17a137324d 596623 cedarview-drm-drivers_20120717-0ubuntu1.debian.tar.gz
+Checksums-Sha256:
+ fe887c32bb2ea62aa5e7ea1e6a51f95cb7a045ecc01f177dbb2db71d9c2bec94 1237 cedarview-drm-drivers_20120717-0ubuntu1.dsc
+ 200b2f6348a8965a1528088f9c9fe249df09d709a401d941e1853be5d99a1a69 1955317 cedarview-drm-drivers_20120717.orig.tar.gz
+ 4565b6cf2de71e555dd072ad87618e4e9070e340281dc08a079919a96a643fb3 596623 cedarview-drm-drivers_20120717-0ubuntu1.debian.tar.gz
+
+Package: cedarview-graphics-drivers
+Binary: cedarview-graphics-drivers
+Version: 20120717-0ubuntu1
+Priority: optional
+Section: multiverse/x11
+Maintainer: Jani Monoses <jani@ubuntu.com>
+Build-Depends: debhelper (>= 8.0.0), xserver-xorg-dev, bzip2, libwsbm1, libxfixes3, libxext6
+Architecture: i386
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/multiverse/c/cedarview-graphics-drivers
+Files:
+ d353163bc889f94cfd67923d9af300a7 1294 cedarview-graphics-drivers_20120717-0ubuntu1.dsc
+ fb6a42bb5e5786a3d35d691ff70595c1 3243217 cedarview-graphics-drivers_20120717.orig.tar.gz
+ 445e264a54c617e7ef9a238af4b18177 14107 cedarview-graphics-drivers_20120717-0ubuntu1.debian.tar.gz
+Package-List: 
+ cedarview-graphics-drivers deb x11 optional
+Checksums-Sha1:
+ 8a2505cdce18509be257ea8e32a11910a8ceec0b 1294 cedarview-graphics-drivers_20120717-0ubuntu1.dsc
+ 637841ad39135216338e4bfb6834fe82e821a260 3243217 cedarview-graphics-drivers_20120717.orig.tar.gz
+ 4039be130d86f4f6ff8644dd4a1dca1e5ace995b 14107 cedarview-graphics-drivers_20120717-0ubuntu1.debian.tar.gz
+Checksums-Sha256:
+ c702f530533123e22f6c6e3b1fe5a50fa73db5adf377ae988fb91a2c90d111e3 1294 cedarview-graphics-drivers_20120717-0ubuntu1.dsc
+ c23e7261631860f3bc132c294e269ea982e34e37b5e838fafea0e7070da8fd83 3243217 cedarview-graphics-drivers_20120717.orig.tar.gz
+ 2ca40c2f5e0c65bb6c45ce4198a040a5c4a660348afc72db27ccba1c75b89121 14107 cedarview-graphics-drivers_20120717-0ubuntu1.debian.tar.gz
+
+Package: cedarview-vaapi-driver
+Binary: libva-cedarview-vaapi-driver
+Version: 20120608-0ubuntu1
+Priority: extra
+Section: multiverse/libs
+Maintainer: Jani Monoses <jani@ubuntu.com>
+Build-Depends: debhelper (>= 8.0.0), libx11-dev, libxv-dev, libxrandr-dev, libxext-dev, libwsbm-dev, libva-dev (>> 1.0.15~)
+Architecture: i386
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/multiverse/c/cedarview-vaapi-driver
+Files:
+ 835a5558daba5e519f64c48911c522cf 1296 cedarview-vaapi-driver_20120608-0ubuntu1.dsc
+ 183b5d8289366b98c4219ca805fcfb61 332975 cedarview-vaapi-driver_20120608.orig.tar.bz2
+ ec96b4e8aaffe40c63c32e4c440a25d5 7409 cedarview-vaapi-driver_20120608-0ubuntu1.debian.tar.gz
+Package-List: 
+ libva-cedarview-vaapi-driver deb libs extra
+Checksums-Sha1:
+ 439c54836896181f18e8580d008e72ec58a34ba3 1296 cedarview-vaapi-driver_20120608-0ubuntu1.dsc
+ ed901a30ac7cf806dcba7695c4c78ac768c86f3a 332975 cedarview-vaapi-driver_20120608.orig.tar.bz2
+ a0a80c36b13961bba2234828836a0b8edc56c252 7409 cedarview-vaapi-driver_20120608-0ubuntu1.debian.tar.gz
+Checksums-Sha256:
+ e57f4143340ae44bb7be332c341987fe494bfef099413d0f0247c865c96c8203 1296 cedarview-vaapi-driver_20120608-0ubuntu1.dsc
+ 56e9eafa49072ba301e5293d73ef629e16653512846040316e48c810413e060a 332975 cedarview-vaapi-driver_20120608.orig.tar.bz2
+ 5722ad046a91f8590c73507d426612dae0357b17ff1baabe6da6def922c43de2 7409 cedarview-vaapi-driver_20120608-0ubuntu1.debian.tar.gz
+
+Package: flashplugin-nonfree
+Binary: flashplugin-installer, flashplugin-downloader
+Version: 11.2.202.285ubuntu0.12.04.1
+Priority: optional
+Section: multiverse/web
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Bart Martens <bartm@knars.be>
+Build-Depends: debhelper (>= 9)
+Architecture: i386 amd64
+Standards-Version: 3.8.0
+Format: 1.0
+Directory: pool/multiverse/f/flashplugin-nonfree
+Files:
+ 6a72c0509ceef62df4431374dc416054 1410 flashplugin-nonfree_11.2.202.285ubuntu0.12.04.1.dsc
+ 4005da216312e39e697df529280ed99f 45701 flashplugin-nonfree_11.2.202.285ubuntu0.12.04.1.tar.gz
+Homepage: http://www.adobe.com/products/flashplayer.html
+Package-List: 
+ flashplugin-downloader deb contrib/web optional
+ flashplugin-installer deb contrib/web optional
+Checksums-Sha1:
+ 588285032d0272c4fdcef14e4e1b5575237ef02b 1410 flashplugin-nonfree_11.2.202.285ubuntu0.12.04.1.dsc
+ 176ee66b6a752527e1b2dea63bf193dfe6a0489d 45701 flashplugin-nonfree_11.2.202.285ubuntu0.12.04.1.tar.gz
+Checksums-Sha256:
+ dd62d0b169b3e4c22e0f0d78a5f47dee3b0d459390b582f9d0ce7c531673e6a6 1410 flashplugin-nonfree_11.2.202.285ubuntu0.12.04.1.dsc
+ 3e598b8f7d5aad0c9870beaf9a1f0d9bd401a66befe9c856756a4ee4c7821987 45701 flashplugin-nonfree_11.2.202.285ubuntu0.12.04.1.tar.gz
+
+Package: linux-firmware-nonfree
+Binary: linux-firmware-nonfree
+Version: 1.11ubuntu2
+Priority: optional
+Section: multiverse/kernel
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Build-Depends: debhelper (>= 7)
+Architecture: all
+Standards-Version: 3.8.4
+Format: 3.0 (native)
+Directory: pool/multiverse/l/linux-firmware-nonfree
+Files:
+ a3aab7295024af32b4d85d847c03c84b 882 linux-firmware-nonfree_1.11ubuntu2.dsc
+ 19c9702e277aee788cea8f78bb3b4e9a 3952989 linux-firmware-nonfree_1.11ubuntu2.tar.gz
+Package-List: 
+ linux-firmware-nonfree deb kernel optional
+Checksums-Sha1:
+ f5d48766ee3699865b670fb0c5f1f496ed19302d 882 linux-firmware-nonfree_1.11ubuntu2.dsc
+ a6ebbc459a520dd4e04aaea4a537563f199e025a 3952989 linux-firmware-nonfree_1.11ubuntu2.tar.gz
+Checksums-Sha256:
+ a283c4b871a3553ae4e292d223e64bd89f380f5eddb38789829c5f3ce29a71ed 882 linux-firmware-nonfree_1.11ubuntu2.dsc
+ 36efecf7449f7336ee8f069f647ef1b005cfd3e2e56c2abb0031c1a5928c8c54 3952989 linux-firmware-nonfree_1.11ubuntu2.tar.gz
+
+Package: mythtv
+Binary: mythtv, mythtv-common, mythtv-doc, mythtv-database, mythtv-backend, mythtv-transcode-utils, mythtv-frontend, libmyth-0.25-0, libmyth-dev, php-mythtv, libmythtv-perl, libmyth-python, mythtv-backend-master, mythtv-dbg, mythplugins, mythgallery, mythgame, mythmusic, mythnews, mythweather, mythweb, mytharchive, mythzoneminder, mythbrowser, mythnetvision, mythtv-theme-mythbuntu
+Version: 2:0.25.2+fixes.20120802.46cab93-0ubuntu1
+Priority: optional
+Section: multiverse/graphics
+Maintainer: MythTV Ubuntu Maintainers <ubuntu-mythtv@lists.ubuntu.com>
+Build-Depends: debhelper (>= 7.0.50~), quilt, ccache, yasm, libqt4-dev, libqtwebkit-dev | libqt4-webkit-dev | libqt4-dev (<< 4:4.7.0~beta1), libqt4-opengl-dev, libdvb-dev, po-debconf, texi2html, python-central, linux-kernel-headers, libdvdnav-dev, libfreetype6-dev, libavc1394-dev, libiec61883-dev (>= 1.0.0), liblircclient-dev, libxinerama-dev | xlibs-static-dev (<< 6.8.1-1), libxxf86vm-dev | xlibs-static-dev (<< 6.8.1-1), libcrystalhd-dev [i386 amd64], libxvmc-dev | xlibs-static-dev (<< 6.8.1-1), libxext-dev | xlibs-static-dev (<< 6.8.1-1), libimlib2-dev, libasound2-dev, libmp3lame-dev | liblame-dev, libvorbis-dev, libdts-dev, lsb-release, libpulse-dev, libxrandr-dev, libfftw3-dev, libva-dev, libvdpau-dev [i386 amd64 armel] | nvidia-190-libvdpau-dev [i386 amd64] | nvidia-185-libvdpau-dev [i386 amd64] | nvidia-180-libvdpau-dev [i386 amd64], libudev-dev, libclass-dbi-perl, libnet-upnp-perl, libio-socket-inet6-perl, libdbd-mysql-perl, libjson-perl, libwww-perl, python-oauth, python-lxml, python-mysqldb, python-pycurl, python-urlgrabber, libgl1-mesa-dev | xlibmesa-gl-dev | xlibmesa-dev | libgl-dev, libdvdread-dev | libdvdread3-dev, fftw-dev, libflac-dev, libmad0-dev, libcdaudio-dev, libcdio-dev, libcdparanoia-dev | libcdparanoia0-dev, libsdl1.2-dev, libfaad-dev | libfaad2-dev, libexif-dev (>= 0.6.9-6), libfaac-dev, libxvidcore-dev, libtiff5-dev | libtiff4-dev | libtiff-dev, libxv-dev, libtag1-dev, libvisual-0.4-dev, libmysqlclient-dev, libdate-manip-perl, libxml-simple-perl, libimage-size-perl, libdatetime-format-iso8601-perl, libsoap-lite-perl, libx264-dev, libvpx-dev, libavahi-compat-libdnssd-dev, libssl-dev, libcdio-cdda-dev, libcdio-paranoia-dev, libxml2-dev, libass-dev, libcec-dev, libxml-xpath-perl
+Build-Conflicts: libqt3-mt-dev
+Architecture: any all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/multiverse/m/mythtv
+Files:
+ 6e16105b17f8fa35226f0be36f11fbd9 4406 mythtv_0.25.2+fixes.20120802.46cab93-0ubuntu1.dsc
+ 64a2660fc1ecbb88389792b8a432bcd5 85592348 mythtv_0.25.2+fixes.20120802.46cab93.orig.tar.gz
+ 1da791c3098271102b72a6c81fbfdc16 219102 mythtv_0.25.2+fixes.20120802.46cab93-0ubuntu1.debian.tar.gz
+Uploaders: Mario Limonciello <superm1@ubuntu.com>, Andres Mejia <amejia@debian.org>,
+Homepage: http://www.mythtv.org
+Vcs-Git: git://github.com/MythTV/packaging.git
+Package-List: 
+ libmyth-0.25-0 deb libs optional
+ libmyth-dev deb libdevel optional
+ libmyth-python deb libs optional
+ libmythtv-perl deb perl optional
+ mytharchive deb graphics optional
+ mythbrowser deb graphics optional
+ mythgallery deb graphics optional
+ mythgame deb graphics optional
+ mythmusic deb graphics optional
+ mythnetvision deb graphics optional
+ mythnews deb graphics optional
+ mythplugins deb graphics optional
+ mythtv deb graphics optional
+ mythtv-backend deb graphics optional
+ mythtv-backend-master deb metapackages optional
+ mythtv-common deb graphics optional
+ mythtv-database deb graphics optional
+ mythtv-dbg deb debug extra
+ mythtv-doc deb doc optional
+ mythtv-frontend deb graphics optional
+ mythtv-theme-mythbuntu deb graphics optional
+ mythtv-transcode-utils deb graphics optional
+ mythweather deb graphics optional
+ mythweb deb graphics optional
+ mythzoneminder deb graphics optional
+ php-mythtv deb graphics optional
+Checksums-Sha1:
+ 728a5638eab4112571cb27934e166dbed9e16d41 4406 mythtv_0.25.2+fixes.20120802.46cab93-0ubuntu1.dsc
+ a7cd2793887b9b12263e625f70f095f58847040c 85592348 mythtv_0.25.2+fixes.20120802.46cab93.orig.tar.gz
+ 68812f2ac8854f3fea2ad652008c0e2b8129203f 219102 mythtv_0.25.2+fixes.20120802.46cab93-0ubuntu1.debian.tar.gz
+Checksums-Sha256:
+ 0640741f486a02952ff3ece399ebcd3578c2010b39f04f9f22d6dceceafaa987 4406 mythtv_0.25.2+fixes.20120802.46cab93-0ubuntu1.dsc
+ 235dafb2e1dd01e491284a9d472aec61484ad616e002ca944d0e1f3837d5f726 85592348 mythtv_0.25.2+fixes.20120802.46cab93.orig.tar.gz
+ 11d4f7b0deb7dac65e7e43a18b23b9f285954a2e0f74ae2c820be5b00ed4761f 219102 mythtv_0.25.2+fixes.20120802.46cab93-0ubuntu1.debian.tar.gz
+
+Package: nvidia-cuda-toolkit
+Binary: nvidia-cuda-toolkit, nvidia-cuda-doc, nvidia-cuda-gdb, nvidia-compute-profiler, nvidia-cuda-dev, nvidia-opencl-dev, libcudart4, lib32cudart4, libcublas4, lib32cublas4, libcufft4, lib32cufft4, libcusparse4, lib32cusparse4, libcurand4, lib32curand4, libnpp4, lib32npp4
+Version: 4.0.17-3ubuntu0.1
+Priority: extra
+Section: multiverse/devel
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 8.1.3), libc6-i386 (>= 2.9-18) [amd64], lib32stdc++6 [amd64], libqt4-assistant, libqt4-xml, libqtgui4, libcuda1 | nvidia-current | nvidia-current-updates | nvidia-experimental-304 | nvidia-experimental-310
+Architecture: i386 amd64 all
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/multiverse/n/nvidia-cuda-toolkit
+Files:
+ b4856e106b9c0bf8753b0181270045b5 3295 nvidia-cuda-toolkit_4.0.17-3ubuntu0.1.dsc
+ 2a8ade51ae98f7d7e0622ea683d3cfcf 346568260 nvidia-cuda-toolkit_4.0.17.orig.tar.gz
+ 27acf11a18cbfcad93d29c7a7b7456ea 22714 nvidia-cuda-toolkit_4.0.17-3ubuntu0.1.debian.tar.gz
+Uploaders:  Andreas Beckmann <debian@abeckmann.de>, Russ Allbery <rra@debian.org>,
+Dm-Upload-Allowed: yes
+Homepage: http://www.nvidia.com/CUDA
+Vcs-Browser: http://svn.debian.org/wsvn/pkg-nvidia/packages/nvidia-cuda-toolkit/
+Vcs-Svn: svn://svn.debian.org/pkg-nvidia/packages/nvidia-cuda-toolkit/trunk
+Package-List: 
+ lib32cublas4 deb non-free/libs extra
+ lib32cudart4 deb non-free/libs extra
+ lib32cufft4 deb non-free/libs extra
+ lib32curand4 deb non-free/libs extra
+ lib32cusparse4 deb non-free/libs extra
+ lib32npp4 deb non-free/libs extra
+ libcublas4 deb non-free/libs extra
+ libcudart4 deb non-free/libs extra
+ libcufft4 deb non-free/libs extra
+ libcurand4 deb non-free/libs extra
+ libcusparse4 deb non-free/libs extra
+ libnpp4 deb non-free/libs extra
+ nvidia-compute-profiler deb non-free/devel extra
+ nvidia-cuda-dev deb non-free/libdevel extra
+ nvidia-cuda-doc deb non-free/doc extra
+ nvidia-cuda-gdb deb non-free/devel extra
+ nvidia-cuda-toolkit deb non-free/devel extra
+ nvidia-opencl-dev deb non-free/libdevel extra
+Checksums-Sha1:
+ 100b1dbb9c30e87e9731a519653503ee83f4ded8 3295 nvidia-cuda-toolkit_4.0.17-3ubuntu0.1.dsc
+ 763d45babd815fee028d66f8ad820821b9d1e540 346568260 nvidia-cuda-toolkit_4.0.17.orig.tar.gz
+ b7de404170a60bdb46bd4856eff07134ca6b8273 22714 nvidia-cuda-toolkit_4.0.17-3ubuntu0.1.debian.tar.gz
+Checksums-Sha256:
+ 680122b9d75198c901a53226d716384f38819df59a488793afb33bc4466dee04 3295 nvidia-cuda-toolkit_4.0.17-3ubuntu0.1.dsc
+ 70ad25c5bec505895d1fb641857e66b2b29ace5c393381872520495a398492d1 346568260 nvidia-cuda-toolkit_4.0.17.orig.tar.gz
+ 09de64f0aa63bba49f2f606e5c5aa50226ca2670cb8b3384d6200fddb12c3ea9 22714 nvidia-cuda-toolkit_4.0.17-3ubuntu0.1.debian.tar.gz
+Autobuild: yes
+
+Package: openmotif
+Binary: libmotif4, libmotif4-dbg, libmotif-dev, motif-clients
+Version: 2.3.3-5ubuntu1.12.04.1
+Priority: extra
+Section: multiverse/misc
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Stefan Bauer <stefan.bauer@cubewerk.de>
+Build-Depends: debhelper (>= 6.0.7), libxaw7-dev, byacc, flex, libsm-dev, libx11-dev, libxext-dev, libxmu-dev, libxp-dev, libxt-dev, xbitmaps, libxft-dev, autotools-dev, quilt
+Architecture: any
+Standards-Version: 3.9.1.0
+Format: 1.0
+Directory: pool/multiverse/o/openmotif
+Files:
+ 7a3c2655ed8aca821b306fc01b83157b 2160 openmotif_2.3.3-5ubuntu1.12.04.1.dsc
+ fd27cd3369d6c7d5ef79eccba524f7be 6051202 openmotif_2.3.3.orig.tar.gz
+ c324e52c02061f7d23f5b2271d6f3865 16841 openmotif_2.3.3-5ubuntu1.12.04.1.diff.gz
+Homepage: http://www.motifzone.net/
+Package-List: 
+ libmotif-dev deb non-free/libdevel extra
+ libmotif4 deb non-free/libs extra
+ libmotif4-dbg deb non-free/debug extra
+ motif-clients deb non-free/x11 extra
+Checksums-Sha1:
+ 8070be6baa18a0e7f1b1eae6ca1ead0b0fd3af51 2160 openmotif_2.3.3-5ubuntu1.12.04.1.dsc
+ 2a51e2f28078c4db7ff0c8517eb257001716b699 6051202 openmotif_2.3.3.orig.tar.gz
+ e5c3b26692203353246e5acd304c93b78bca0324 16841 openmotif_2.3.3-5ubuntu1.12.04.1.diff.gz
+Checksums-Sha256:
+ 02ea2b92ad38ad57161b46620cd60ae76616b6be345dbc4197c3fc5ebf5fbd00 2160 openmotif_2.3.3-5ubuntu1.12.04.1.dsc
+ c85f5545e218fa0c59a3789192132d472fc5a33e914a221a568eee4fc10cd103 6051202 openmotif_2.3.3.orig.tar.gz
+ 66651426ef1716ac1d13fa1ef363861d0965811b69a863fe0edebe1013f08255 16841 openmotif_2.3.3-5ubuntu1.12.04.1.diff.gz
+Autobuild: yes
+
+Package: redeclipse
+Binary: redeclipse, redeclipse-dbg, redeclipse-server, redeclipse-server-dbg
+Version: 1.2-2ubuntu0.1
+Priority: optional
+Section: multiverse/games
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 8), imagemagick, libenet-dev, libgl1-mesa-dev, libsdl-image1.2-dev, libsdl-mixer1.2-dev, libsdl1.2-dev, libx11-dev, zlib1g-dev
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/multiverse/r/redeclipse
+Files:
+ 9e81f3f242dea2714bd7b03a5461a693 2357 redeclipse_1.2-2ubuntu0.1.dsc
+ d0568f7dbf9d8337220dae36a74a80bd 954965 redeclipse_1.2.orig.tar.bz2
+ 370321861ba5ce3b430f2b01ed8c2163 18308 redeclipse_1.2-2ubuntu0.1.debian.tar.gz
+Uploaders: Martin Erik Werner <martinerikwerner@gmail.com>
+Homepage: http://www.redeclipse.net
+Vcs-Browser: http://git.debian.org/?p=pkg-games/redeclipse.git;a=summary
+Vcs-Git: git://git.debian.org/pkg-games/redeclipse.git
+Package-List: 
+ redeclipse deb contrib/games optional
+ redeclipse-dbg deb contrib/debug extra
+ redeclipse-server deb contrib/games optional
+ redeclipse-server-dbg deb contrib/debug extra
+Checksums-Sha1:
+ e23c3e6cd3f761c4d2c8631d440885ace96e6ae6 2357 redeclipse_1.2-2ubuntu0.1.dsc
+ 654a59338305e137cffd128f005e02e5dbd22e30 954965 redeclipse_1.2.orig.tar.bz2
+ cf6d8931b25f5d72f5fb3b6620fc09964faa4f26 18308 redeclipse_1.2-2ubuntu0.1.debian.tar.gz
+Checksums-Sha256:
+ 4782871bfe62718e4ab8cc2537d9ffabb392b2439fcf58751832f833087d21b1 2357 redeclipse_1.2-2ubuntu0.1.dsc
+ 049edb85f7b0c65218c7c361336a9934534adeb4130de3717eede7dec2a09466 954965 redeclipse_1.2.orig.tar.bz2
+ 02323ae3326512c0e357be0ba87647840f034feb7a457c96dfc8ec0d478607d8 18308 redeclipse_1.2-2ubuntu0.1.debian.tar.gz
+
+Package: starpu-contrib
+Binary: libstarpu-contrib-dev, libstarpu-contrib0, libstarpu-contribfft0, libstarpu-contribmpi0, starpu-contrib-tools, starpu-contrib-examples
+Version: 0.9.1-3ubuntu0.1
+Priority: extra
+Section: multiverse/libs
+Maintainer: Samuel Thibault <sthibault@debian.org>
+Build-Depends: debhelper (>= 7.0.50~), autotools-dev, dh-autoreconf, pkg-config, libnuma-dev [amd64 i386 ia64 mips mipsel powerpc], libglpk-dev, mpi-default-dev, libgl1-mesa-dev | libgl-dev, libglu1-mesa-dev | libglu-dev, freeglut3-dev, libx11-dev, libblas-dev, libfftw3-dev, libhwloc-dev, libcnf-dev, gfortran, nvidia-cuda-toolkit, nvidia-current | nvidia-current-updates | nvidia-experimental-304 | nvidia-experimental-310
+Architecture: amd64 i386
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/multiverse/s/starpu-contrib
+Files:
+ e79c0eb08d711eecd86fabbf5ae18430 2709 starpu-contrib_0.9.1-3ubuntu0.1.dsc
+ a7c63fb2d8144d70936ee8e039600a44 1599581 starpu-contrib_0.9.1.orig.tar.gz
+ 6bd487067e82a9a6b53a493f8cbe0fd6 5625 starpu-contrib_0.9.1-3ubuntu0.1.debian.tar.gz
+Homepage: http://starpu.gforge.inria.fr/
+Vcs-Browser: https://gforge.inria.fr/scm/viewvc.php/debian/unstable/?root=starpu
+Vcs-Svn: svn://scm.gforge.inria.fr/svn/starpu/debian/unstable
+Package-List: 
+ libstarpu-contrib-dev deb contrib/libdevel extra
+ libstarpu-contrib0 deb contrib/libs extra
+ libstarpu-contribfft0 deb contrib/libs extra
+ libstarpu-contribmpi0 deb contrib/libs extra
+ starpu-contrib-examples deb contrib/science extra
+ starpu-contrib-tools deb contrib/utils extra
+Checksums-Sha1:
+ 0cf8256f9b359438d9808a598a5092ac9d868a38 2709 starpu-contrib_0.9.1-3ubuntu0.1.dsc
+ 60a613568361695af93ee2bd802e82c30ef1a052 1599581 starpu-contrib_0.9.1.orig.tar.gz
+ b07e2c48125615fc83416b40d1bd6df0634b2985 5625 starpu-contrib_0.9.1-3ubuntu0.1.debian.tar.gz
+Checksums-Sha256:
+ 56a0e0ea671156ec60fb36ec9efa2e11ed24c0751d593eae318dc6ff739e52e7 2709 starpu-contrib_0.9.1-3ubuntu0.1.dsc
+ dceb7f9a415f7e9db818b09c5db32a0bbd3709f4574b748a7eae94d071205c1e 1599581 starpu-contrib_0.9.1.orig.tar.gz
+ 500d29c4d4032738e90ea27d540d96fdd1f8953b027941ca889f8b1ea5e26c31 5625 starpu-contrib_0.9.1-3ubuntu0.1.debian.tar.gz
+
+Package: viennacl
+Binary: libviennacl-dev, libviennacl-doc
+Version: 1.1.2-6ubuntu0.1
+Priority: extra
+Section: multiverse/science
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 7.0.50~), poppler-utils, asciidoc, lynx, cmake (>= 2.6), libboost-filesystem-dev, texlive-latex-extra, texlive-latex-recommended, texlive-fonts-recommended, texlive-pstricks, ghostscript, doxygen, opencl-headers, nvidia-current | libopencl1
+Architecture: all
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/multiverse/v/viennacl
+Files:
+ 20a937d8de0486813ee01a579effaad8 2328 viennacl_1.1.2-6ubuntu0.1.dsc
+ 5ceb73185830a3e1405e7c052e666c74 3638512 viennacl_1.1.2.orig.tar.gz
+ 87b8943dff00ef46e3ffd6950f234ca3 4965 viennacl_1.1.2-6ubuntu0.1.debian.tar.gz
+Uploaders: Michael Wild <themiwi@users.sourceforge.net>
+Dm-Upload-Allowed: yes
+Homepage: http://viennacl.sourceforge.net
+Vcs-Browser: http://git.debian.org/?p=debian-science/packages/viennacl.git
+Vcs-Git: git://git.debian.org/git/debian-science/packages/viennacl.git
+Package-List: 
+ libviennacl-dev deb contrib/libdevel extra
+ libviennacl-doc deb contrib/doc extra
+Checksums-Sha1:
+ 9b1d052b3ee7c885c9f05efea92aa3a40d743f78 2328 viennacl_1.1.2-6ubuntu0.1.dsc
+ 6e25d2e16dfbfb10810faa700a4c1e8b4b447dce 3638512 viennacl_1.1.2.orig.tar.gz
+ 6a48fa9804c200e7e4da69071de55e767f851e32 4965 viennacl_1.1.2-6ubuntu0.1.debian.tar.gz
+Checksums-Sha256:
+ 96cae38f66da12268fd0ed22a71e18f646277dea02059e2d6c18cc5843b54315 2328 viennacl_1.1.2-6ubuntu0.1.dsc
+ 5277933453a2acf9a3d904c44e8708273c7c6064783badd6ea587d5397b78f16 3638512 viennacl_1.1.2.orig.tar.gz
+ bd55c010daff51a27ce9b10343ac5ca618bd3e42319bb30ac6f6e644eafeaa05 4965 viennacl_1.1.2-6ubuntu0.1.debian.tar.gz
+

@@ -1,0 +1,13 @@
+7c021c418cc522c257932496fcff80c9  lib/apparmor/functions
+95be32796e3817a9ecd136c981289e10  sbin/apparmor_parser
+ed9efec36ff2d88e53bf001d9063d7f7  usr/sbin/aa-status
+1f285bc85b16a34524185113ddaaec4c  usr/share/apport/package-hooks/source_apparmor.py
+fea32c9b86d6a6ee35f5cff316f8162e  usr/share/doc/apparmor/changelog.Debian.gz
+ac5b0ee124f72a4c1622f6aca084d16f  usr/share/doc/apparmor/copyright
+fa70d897fff3ad24a9a397be94c88cd5  usr/share/man/man5/apparmor.d.5.gz
+f42367e8db8a8ec2a694ffb09a94f23b  usr/share/man/man5/apparmor.vim.5.gz
+48edc1c3187091f39282b06f31a93feb  usr/share/man/man5/subdomain.conf.5.gz
+f3668a984355af09757af5ef0e038f54  usr/share/man/man7/apparmor.7.gz
+c37f709e97831fcb58da22f203430ef5  usr/share/man/man8/aa-status.8.gz
+97717d33d0cbb231bf7cc639e2c09e36  usr/share/man/man8/apparmor_parser.8.gz
+c37f709e97831fcb58da22f203430ef5  usr/share/man/man8/apparmor_status.8.gz

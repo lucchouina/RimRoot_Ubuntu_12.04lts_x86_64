@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libpython3.2
+/usr/lib
+/usr/lib/python3.2
+/usr/lib/python3.2/config-3.2mu
+/usr/lib/libpython3.2mu.so.1.0
+/usr/share/doc/libpython3.2
+/usr/lib/libpython3.2mu.so.1
+/usr/lib/python3.2/config-3.2mu/libpython3.2mu.so
+/usr/lib/python3.2/config-3.2mu/libpython3.2.so

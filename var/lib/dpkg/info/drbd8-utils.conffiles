@@ -1,0 +1,8 @@
+/etc/drbd.d/global_common.conf
+/etc/bash_completion.d/drbdadm
+/etc/ha.d/resource.d/drbddisk
+/etc/ha.d/resource.d/drbdupper
+/etc/udev/rules.d/65-drbd.rules
+/etc/init.d/drbd
+/etc/drbd.conf
+/etc/xen/scripts/block-drbd

@@ -1,0 +1,9 @@
+832d2274907cc0b81f146006e678420e  usr/bin/ipmitool
+05d80fa2da4853cf21ef133def128ad6  usr/sbin/ipmievd
+da39825d625551a155553f7e778a7af8  usr/share/doc/ipmitool/AUTHORS
+38e4b75e8aff86346a1a284007480647  usr/share/doc/ipmitool/README.gz
+0437fe759616ed507552620a76adfb6f  usr/share/doc/ipmitool/changelog.Debian.gz
+422f62d7298f8613847da0537a40a520  usr/share/doc/ipmitool/copyright
+20f94f37dd16c4a771cdbd49332eaf87  usr/share/ipmitool/oem_ibm_sel_map
+8b3343cb70be7dfd185b2b3754e7f309  usr/share/man/man1/ipmitool.1.gz
+19b1aa880b566259d22bca1fa1afa30e  usr/share/man/man8/ipmievd.8.gz

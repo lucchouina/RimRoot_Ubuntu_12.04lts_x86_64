@@ -1,0 +1,60 @@
+Package: flashplugin-nonfree
+Binary: flashplugin-installer, flashplugin-downloader
+Version: 11.2.202.285ubuntu0.12.04.1
+Priority: optional
+Section: multiverse/web
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Bart Martens <bartm@knars.be>
+Build-Depends: debhelper (>= 9)
+Architecture: i386 amd64
+Standards-Version: 3.8.0
+Format: 1.0
+Directory: pool/multiverse/f/flashplugin-nonfree
+Files:
+ 6a72c0509ceef62df4431374dc416054 1410 flashplugin-nonfree_11.2.202.285ubuntu0.12.04.1.dsc
+ 4005da216312e39e697df529280ed99f 45701 flashplugin-nonfree_11.2.202.285ubuntu0.12.04.1.tar.gz
+Homepage: http://www.adobe.com/products/flashplayer.html
+Package-List: 
+ flashplugin-downloader deb contrib/web optional
+ flashplugin-installer deb contrib/web optional
+Checksums-Sha1:
+ 588285032d0272c4fdcef14e4e1b5575237ef02b 1410 flashplugin-nonfree_11.2.202.285ubuntu0.12.04.1.dsc
+ 176ee66b6a752527e1b2dea63bf193dfe6a0489d 45701 flashplugin-nonfree_11.2.202.285ubuntu0.12.04.1.tar.gz
+Checksums-Sha256:
+ dd62d0b169b3e4c22e0f0d78a5f47dee3b0d459390b582f9d0ce7c531673e6a6 1410 flashplugin-nonfree_11.2.202.285ubuntu0.12.04.1.dsc
+ 3e598b8f7d5aad0c9870beaf9a1f0d9bd401a66befe9c856756a4ee4c7821987 45701 flashplugin-nonfree_11.2.202.285ubuntu0.12.04.1.tar.gz
+
+Package: redeclipse
+Binary: redeclipse, redeclipse-dbg, redeclipse-server, redeclipse-server-dbg
+Version: 1.2-2ubuntu0.1
+Priority: optional
+Section: multiverse/games
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 8), imagemagick, libenet-dev, libgl1-mesa-dev, libsdl-image1.2-dev, libsdl-mixer1.2-dev, libsdl1.2-dev, libx11-dev, zlib1g-dev
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/multiverse/r/redeclipse
+Files:
+ 9e81f3f242dea2714bd7b03a5461a693 2357 redeclipse_1.2-2ubuntu0.1.dsc
+ d0568f7dbf9d8337220dae36a74a80bd 954965 redeclipse_1.2.orig.tar.bz2
+ 370321861ba5ce3b430f2b01ed8c2163 18308 redeclipse_1.2-2ubuntu0.1.debian.tar.gz
+Uploaders: Martin Erik Werner <martinerikwerner@gmail.com>
+Homepage: http://www.redeclipse.net
+Vcs-Browser: http://git.debian.org/?p=pkg-games/redeclipse.git;a=summary
+Vcs-Git: git://git.debian.org/pkg-games/redeclipse.git
+Package-List: 
+ redeclipse deb contrib/games optional
+ redeclipse-dbg deb contrib/debug extra
+ redeclipse-server deb contrib/games optional
+ redeclipse-server-dbg deb contrib/debug extra
+Checksums-Sha1:
+ e23c3e6cd3f761c4d2c8631d440885ace96e6ae6 2357 redeclipse_1.2-2ubuntu0.1.dsc
+ 654a59338305e137cffd128f005e02e5dbd22e30 954965 redeclipse_1.2.orig.tar.bz2
+ cf6d8931b25f5d72f5fb3b6620fc09964faa4f26 18308 redeclipse_1.2-2ubuntu0.1.debian.tar.gz
+Checksums-Sha256:
+ 4782871bfe62718e4ab8cc2537d9ffabb392b2439fcf58751832f833087d21b1 2357 redeclipse_1.2-2ubuntu0.1.dsc
+ 049edb85f7b0c65218c7c361336a9934534adeb4130de3717eede7dec2a09466 954965 redeclipse_1.2.orig.tar.bz2
+ 02323ae3326512c0e357be0ba87647840f034feb7a457c96dfc8ec0d478607d8 18308 redeclipse_1.2-2ubuntu0.1.debian.tar.gz
+

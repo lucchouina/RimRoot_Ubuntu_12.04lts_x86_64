@@ -1,0 +1,8 @@
+12328676bc35f230c29ca0f3f83ad096  usr/lib/x86_64-linux-gnu/libgtrtst.so.1.0.0
+d13f307f4ac38df23a69b37acca0d83b  usr/lib/x86_64-linux-gnu/libodbc.so.1.0.0
+71ec1c8efa9ac424fc3ce1636da228cf  usr/lib/x86_64-linux-gnu/libodbccr.so.1.0.0
+d89abaee9ff9fa434cb7580701e84841  usr/lib/x86_64-linux-gnu/odbc/libnn.so
+43e76193181110295d78b8d40c7a1077  usr/share/doc/libodbc1/NEWS.Debian.gz
+0d5785c62e79bb4753d73fd4570711f8  usr/share/doc/libodbc1/changelog.Debian.gz
+a41a84e564fd9781e7dd465e1693c775  usr/share/doc/libodbc1/copyright
+afca17b6e2d3386cee997a95866a7dd3  usr/share/lintian/overrides/libodbc1

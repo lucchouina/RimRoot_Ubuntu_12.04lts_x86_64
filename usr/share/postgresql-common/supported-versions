@@ -1,0 +1,195 @@
+#!/bin/sh
+
+# print a list of PostgreSQL versions that are supported for the platform this
+# script runs on.
+# Note: Newer installed versions than the highest one listed here are always
+# considered supported, so that backports will not cause an "obsolete" warning.
+#
+# /usr/share/postgresql-common/supported-versions decides which PostgreSQL
+# server versions are supported. This information is used
+# 1) for notifying users of obsolete versions, suggesting to upgrade, and
+# 2) by the pg_buildext tool to decide which server versions to build extension
+#    modules for.
+#
+# The environment variable PG_SUPPORTED_VERSIONS, and the files
+# ~/.pg_supported_versions and /etc/postgresql-common/supported_versions (in
+# that order) can be used to override the defaults. (Tokens separated by
+# newlines.)
+#
+# Recognized tokens:
+# default: use the appropiate defaults for the current distribution and release
+#          (as determined by os-release or lsb_release)
+# debian [release]: use Debian defaults
+# debian-backports [release]: use Debian Backports defaults
+# ubuntu [release]: use Ubuntu defaults
+# pgdg [release]: use defaults for apt.postgresql.org
+# installed: consider all installed versions supported (determined by
+#            postgresql-server-dev-X.Y packages)
+# X.Y: consider this version supported
+#
+# (C) 2005-2013 Martin Pitt <mpitt@debian.org>
+# (C) 2012-2013 Christoph Berg <myon@debian.org>
+
+set -eu
+
+DEFAULT="9.1"
+
+# functions
+
+get_release() {
+    # If we have /etc/os-release, use it
+    if [ -r /etc/os-release ]; then
+        . /etc/os-release
+        DISTRO="${ID:-unknown}" # "unknown" will throw an error in default()
+        RELEASE="${VERSION_ID:-unstable}" # this field is not necessarily always there, assume testing/unstable
+    # fall back to lsb_release
+    elif type lsb_release >/dev/null 2>/dev/null; then
+        DISTRO="`lsb_release -is`"
+        RELEASE="`lsb_release -rs`"
+    else
+        echo "supported_versions: WARNING: /etc/os-release and lsb_release not present, unknown distribution" >&2
+        exit 1
+    fi
+}
+
+default() {
+    case "$DISTRO" in
+        [uU]buntu)
+            ubuntu "$RELEASE"
+            ;;
+        [dD]ebian)
+            debian "$RELEASE"
+            ;;
+        *)
+            echo "supported_versions: WARNING! Unknown distribution: $DISTRO" >&2
+            echo "Please submit this as a bug report to your distribution." >&2
+            /bin/echo -e "$DEFAULT"
+            ;;
+    esac
+}
+
+ubuntu() {
+    case "$1" in
+        8.04 | 8.10 | 9.04)
+            /bin/echo -e "8.3\n8.4"
+            ;;
+        9.10|10.04|10.10|11.04)
+            /bin/echo -e "8.4"
+            ;;
+        11.10|12.04|12.10|13.04)
+            /bin/echo -e "9.1"
+            ;;
+        *)
+            echo "supported_versions: WARNING: Unknown Ubuntu release: $1" >&2
+            /bin/echo -e "$DEFAULT"
+            ;;
+    esac
+}
+
+debian() {
+    case "$1" in
+        5.0*) # Lenny
+            /bin/echo -e "8.3"
+            ;;
+        6.0*) # Squeeze
+            /bin/echo -e "8.4"
+            ;;
+        7.0*) # Wheezy
+            /bin/echo -e "9.1"
+            ;;
+        testing | unstable)
+            /bin/echo -e "9.1"
+            ;;
+        *)
+            echo "supported_versions: WARNING: Unknown Debian release: $1" >&2
+            /bin/echo -e "$DEFAULT"
+            ;;
+    esac
+}
+
+debian_backports() {
+    case "$1" in
+        5.0*) # Lenny
+            /bin/echo -e "8.3"
+            ;;
+        6.0*) # Squeeze
+            /bin/echo -e "8.4\n9.1"
+            ;;
+        7.0*) # Wheezy
+            /bin/echo -e "9.1\n9.2"
+            ;;
+        testing | unstable)
+            /bin/echo -e "9.1"
+            ;;
+        *)
+            echo "supported_versions: WARNING: Unknown Debian release: $1" >&2
+            /bin/echo -e "$DEFAULT"
+            ;;
+    esac
+}
+
+pgdg() {
+    case "$1" in
+        testing | unstable)
+            # including beta versions
+            /bin/echo -e "8.3\n8.4\n9.0\n9.1\n9.2"
+            ;;
+        *)
+            # no beta versions here
+            /bin/echo -e "8.3\n8.4\n9.0\n9.1\n9.2"
+            ;;
+    esac
+}
+
+installed() {
+    dpkg -l 'postgresql-server-dev-[1-9].*' | \
+        sed -ne 's/^ii *postgresql-server-dev-\([^ ]*\).*/\1/p'
+}
+
+# main
+
+if [ "${PG_SUPPORTED_VERSIONS:-}" ] ; then
+    SUPPORTED_VERSIONS="$PG_SUPPORTED_VERSIONS"
+elif [ -f ${HOME:-}/.pg_supported_versions ] ; then
+    SUPPORTED_VERSIONS="$(cat ${HOME:-}/.pg_supported_versions)"
+elif [ -f ${PGSYSCONFDIR:-/etc/postgresql-common}/supported_versions ] ; then
+    SUPPORTED_VERSIONS="$(cat ${PGSYSCONFDIR:-/etc/postgresql-common}/supported_versions)"
+else
+    SUPPORTED_VERSIONS="default"
+fi
+
+echo "$SUPPORTED_VERSIONS" | while read version release; do
+    COMMENT="#"
+    case $version in
+        "") ;;
+        $COMMENT*) ;;
+        default)
+            get_release
+            default
+            ;;
+        debian)
+            get_release
+            debian "${release:-$RELEASE}"
+            ;;
+        debian-backports)
+            get_release
+            debian_backports "${release:-$RELEASE}"
+            ;;
+        ubuntu)
+            get_release
+            ubuntu "${release:-$RELEASE}"
+            ;;
+        pgdg) # apt.postgresql.org
+            get_release
+            pgdg "${release:-$RELEASE}"
+            ;;
+        installed)
+            installed
+            ;;
+        *)
+            /bin/echo -e "$version"
+            ;;
+    esac
+done
+
+exit 0

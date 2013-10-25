@@ -1,0 +1,1 @@
+../../../../../share/pyshared/psycopg2/tests/test_lobject.py

@@ -1,0 +1,3 @@
+/etc/init.d/open-iscsi
+/etc/iscsi/iscsid.conf
+/etc/init/iscsi-network-interface.conf

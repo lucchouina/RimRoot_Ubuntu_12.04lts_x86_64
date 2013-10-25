@@ -1,0 +1,10 @@
+   Checking acpi hot plug[71G done
+Starting VMware Tools services in the virtual machine:
+   Switching to guest configuration:[71G done
+   VM communication interface:[71G done
+   VM communication interface socket family:[71G done
+   Guest filesystem driver:[71G done
+   Mounting HGFS shares:[71Gfailed
+   Blocking file system:[71G done
+   Guest operating system daemon:[71G done
+   Virtual Printing daemon:[71G done

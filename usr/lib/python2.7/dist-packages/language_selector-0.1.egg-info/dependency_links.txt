@@ -1,0 +1,1 @@
+../../../../share/pyshared/language_selector-0.1.egg-info/dependency_links.txt

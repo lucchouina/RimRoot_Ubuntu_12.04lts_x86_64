@@ -1,0 +1,3 @@
+/etc/init.d/postgresql
+/etc/sysctl.d/30-postgresql-shm.conf
+/etc/logrotate.d/postgresql-common

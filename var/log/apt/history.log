@@ -1,0 +1,432 @@
+
+Start-Date: 2013-01-07  12:41:17
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove install linux-generic
+Install: libnl-3-200:amd64 (3.2.3-2ubuntu2, automatic), wireless-regdb:amd64 (2011.04.28-1ubuntu3, automatic), linux-generic:amd64 (3.2.0.23.25), linux-firmware:amd64 (1.79), libnl-genl-3-200:amd64 (3.2.3-2ubuntu2, automatic), crda:amd64 (1.1.2-1ubuntu1, automatic), linux-image-generic:amd64 (3.2.0.23.25), linux-image-3.2.0-23-generic:amd64 (3.2.0-23.36)
+End-Date: 2013-01-07  12:41:45
+
+Start-Date: 2013-01-07  12:41:46
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove install pciutils
+Install: libpci3:amd64 (3.1.8-2ubuntu5, automatic), pciutils:amd64 (3.1.8-2ubuntu5)
+End-Date: 2013-01-07  12:41:46
+
+Start-Date: 2013-01-07  12:41:47
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove install usbutils
+Install: usbutils:amd64 (005-1), libusb-1.0-0:amd64 (1.0.9~rc3-2ubuntu1, automatic)
+End-Date: 2013-01-07  12:41:47
+
+Start-Date: 2013-01-07  12:41:53
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y install tasksel
+Install: python-debian:amd64 (0.1.21ubuntu1, automatic), tasksel-data:amd64 (2.88ubuntu9, automatic), laptop-detect:amd64 (0.13.7ubuntu2, automatic), xz-lzma:amd64 (5.1.1alpha+20110809-3, automatic), iso-codes:amd64 (3.31-1, automatic), perl:amd64 (5.14.2-6ubuntu2, automatic), libsub-name-perl:amd64 (0.05-1build2, automatic), libparse-debianchangelog-perl:amd64 (1.2.0-1ubuntu1, automatic), aptitude:amd64 (0.6.6-1ubuntu1, automatic), python-apt:amd64 (0.8.3ubuntu7, automatic), libtimedate-perl:amd64 (1.2000-1, automatic), perl-modules:amd64 (5.14.2-6ubuntu2, automatic), python-apt-common:amd64 (0.8.3ubuntu7, automatic), libsigc++-2.0-0c2a:amd64 (2.2.10-0ubuntu2, automatic), libcwidget3:amd64 (0.5.16-3.1ubuntu1, automatic), libboost-iostreams1.46.1:amd64 (1.46.1-7ubuntu3, automatic), libclass-isa-perl:amd64 (0.36-3, automatic), libgdbm3:amd64 (1.8.3-10, automatic), python-xapian:amd64 (1.2.8-1, automatic), apt-xapian-index:amd64 (0.44ubuntu5, automatic), libxapian22:amd64 (1.2.8-1, automatic), python-chardet:amd64 (2.0.1-2build1, automatic), libio-string-perl:amd64 (1.08-2, automatic), libswitch-perl:amd64 (2.16-2, automatic), tasksel:amd64 (2.88ubuntu9), libept1.4.12:amd64 (1.0.6~exp1ubuntu1, automatic), libclass-accessor-perl:amd64 (0.34-1, automatic), dmidecode:amd64 (2.11-4, automatic)
+End-Date: 2013-01-07  12:42:01
+
+Start-Date: 2013-01-07  12:42:04
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove -o APT::Install-Recommends=false install installation-report
+Install: installation-report:amd64 (2.46ubuntu1)
+End-Date: 2013-01-07  12:42:04
+
+Start-Date: 2013-01-07  12:42:05
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove install language-selector-common
+Install: accountsservice:amd64 (0.6.15-2ubuntu9, automatic), libdbus-glib-1-2:amd64 (0.98-1ubuntu1, automatic), libpolkit-gobject-1-0:amd64 (0.104-1, automatic), language-selector-common:amd64 (0.79), libgirepository-1.0-1:amd64 (1.32.0-1, automatic), libaccountsservice0:amd64 (0.6.15-2ubuntu9, automatic), python-gi:amd64 (3.2.0-3, automatic), dbus:amd64 (1.4.18-1ubuntu1, automatic), python-dbus-dev:amd64 (1.0.0-1ubuntu1, automatic), python-dbus:amd64 (1.0.0-1ubuntu1, automatic), gir1.2-glib-2.0:amd64 (1.32.0-1, automatic)
+End-Date: 2013-01-07  12:42:07
+
+Start-Date: 2013-01-07  12:42:10
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y install minimal^ standard^
+Install: libedit2:amd64 (2.11-20080614-3ubuntu2), libkrb5-3:amd64 (1.10+dfsg~beta1-2), libk5crypto3:amd64 (1.10+dfsg~beta1-2), apt-transport-https:amd64 (0.8.16~exp12ubuntu10), nano:amd64 (2.2.6-1), hdparm:amd64 (9.37-0ubuntu3), ubuntu-standard:amd64 (1.267), iputils-tracepath:amd64 (20101006-1ubuntu1), mlocate:amd64 (0.23.1-1ubuntu2), uuid-runtime:amd64 (2.20.1-1ubuntu3), libldap-2.4-2:amd64 (2.4.28-1.1ubuntu4), libroken18-heimdal:amd64 (1.6~git20120311.dfsg.1-2), bind9-host:amd64 (9.8.1.dfsg.P1-4), irqbalance:amd64 (0.56-1ubuntu4), libidn11:amd64 (1.23-2), telnet:amd64 (0.17-36build1), lshw:amd64 (02.15-2), lsof:amd64 (4.81.dfsg.1-1build1), memtest86+:amd64 (4.20-1.1ubuntu1), libx11-data:amd64 (1.4.99.1-0ubuntu2), dnsutils:amd64 (9.8.1.dfsg.P1-4), libparted0debian1:amd64 (2.3-8ubuntu5), libpipeline1:amd64 (1.2.1-1), libasn1-8-heimdal:amd64 (1.6~git20120311.dfsg.1-2), bsdmainutils:amd64 (8.2.3ubuntu1), libpcap0.8:amd64 (1.1.1-10), libdns81:amd64 (9.8.1.dfsg.P1-4), at:amd64 (3.1.13-1ubuntu1), strace:amd64 (4.5.20-2.3ubuntu1), dosfstools:amd64 (3.0.12-1ubuntu1), ed:amd64 (1.5-3), xauth:amd64 (1.0.6-1), groff-base:amd64 (1.21-7), gettext-base:amd64 (0.18.1.1-5ubuntu3), libgnutls26:amd64 (2.12.14-5ubuntu3), libgssapi3-heimdal:amd64 (1.6~git20120311.dfsg.1-2), psmisc:amd64 (22.15-2ubuntu1), xml-core:amd64 (0.13), libbsd0:amd64 (0.3.0-2), libxmuu1:amd64 (1.1.0-3), libtasn1-3:amd64 (2.10-1ubuntu1), parted:amd64 (2.3-8ubuntu5), command-not-found:amd64 (0.2.46ubuntu6), libisccc80:amd64 (9.8.1.dfsg.P1-4), libfuse2:amd64 (2.8.6-2ubuntu2), pppconfig:amd64 (2.3.18+nmu3ubuntu1), tcpdump:amd64 (4.2.1-1ubuntu2), mtr-tiny:amd64 (0.80-1ubuntu1), friendly-recovery:amd64 (0.2.25), update-manager-core:amd64 (0.156.14), libxcb1:amd64 (1.8.1-1), libp11-kit0:amd64 (0.12-2ubuntu1), time:amd64 (1.7-23.1), command-not-found-data:amd64 (0.2.46ubuntu6), libwind0-heimdal:amd64 (1.6~git20120311.dfsg.1-2), libxau6:amd64 (1.0.6-4), liblwres80:amd64 (9.8.1.dfsg.P1-4), libkrb5support0:amd64 (1.10+dfsg~beta1-2), libnfnetlink0:amd64 (1.0.0-1), openssh-client:amd64 (5.9p1-5ubuntu1), ftp:amd64 (0.17-25), libxdmcp6:amd64 (1.1.0-4), libgcrypt11:amd64 (1.5.0-3), rsync:amd64 (3.0.9-1ubuntu1), powermgmt-base:amd64 (1.31), manpages:amd64 (3.35-0.1ubuntu1), libxml2:amd64 (2.7.8.dfsg-5.1ubuntu4), libbind9-80:amd64 (9.8.1.dfsg.P1-4), wget:amd64 (1.13.4-2ubuntu1), libkeyutils1:amd64 (1.5.2-2), ppp:amd64 (2.4.5-5ubuntu1), geoip-database:amd64 (20111220-1), libhcrypto4-heimdal:amd64 (1.6~git20120311.dfsg.1-2), sgml-base:amd64 (1.26+nmu1ubuntu1), libhx509-5-heimdal:amd64 (1.6~git20120311.dfsg.1-2), python-gnupginterface:amd64 (0.3.2-9.1ubuntu3), ufw:amd64 (0.31.1-1), libheimbase1-heimdal:amd64 (1.6~git20120311.dfsg.1-2), libcap-ng0:amd64 (0.6.6-1ubuntu1), libgeoip1:amd64 (1.4.8+dfsg-2), bash-completion:amd64 (1.3-1ubuntu8), libisccfg82:amd64 (9.8.1.dfsg.P1-4), python-gdbm:amd64 (2.7.3-1ubuntu1), apparmor:amd64 (2.7.102-0ubuntu3), plymouth-theme-ubuntu-text:amd64 (0.8.2-2ubuntu30), pppoeconf:amd64 (1.20ubuntu1), busybox-static:amd64 (1.18.5-1ubuntu4), krb5-locales:amd64 (1.10+dfsg~beta1-2), libx11-6:amd64 (1.4.99.1-0ubuntu2), fuse:amd64 (2.8.6-2ubuntu2), libsasl2-2:amd64 (2.1.25.dfsg1-3), man-db:amd64 (2.6.1-2), install-info:amd64 (4.13a.dfsg.1-8ubuntu2), openssl:amd64 (1.0.1-4ubuntu3), libheimntlm0-heimdal:amd64 (1.6~git20120311.dfsg.1-2), libcurl3-gnutls:amd64 (7.22.0-3ubuntu4), popularity-contest:amd64 (1.53ubuntu1), ltrace:amd64 (0.5.3-2.1ubuntu2), info:amd64 (4.13a.dfsg.1-8ubuntu2), librtmp0:amd64 (2.4~20110711.gitc28f1bab-1), libgssapi-krb5-2:amd64 (1.10+dfsg~beta1-2), libisc83:amd64 (9.8.1.dfsg.P1-4), libxext6:amd64 (1.3.0-3build1), libsasl2-modules:amd64 (2.1.25.dfsg1-3), iptables:amd64 (1.4.12-1ubuntu4), ca-certificates:amd64 (20111211), ntfs-3g:amd64 (2012.1.15AR.1-1ubuntu1), libkrb5-26-heimdal:amd64 (1.6~git20120311.dfsg.1-2), libgpg-error0:amd64 (1.10-2ubuntu1)
+End-Date: 2013-01-07  12:42:38
+
+Start-Date: 2013-01-07  12:42:47
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove install grub-common
+Install: libfreetype6:amd64 (2.4.8-1ubuntu2, automatic), os-prober:amd64 (1.51ubuntu3, automatic), grub-common:amd64 (1.99-21ubuntu3)
+End-Date: 2013-01-07  12:42:48
+
+Start-Date: 2013-01-07  12:42:50
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove install grub-pc
+Install: grub-pc:amd64 (1.99-21ubuntu3), grub-gfxpayload-lists:amd64 (0.6, automatic), grub-pc-bin:amd64 (1.99-21ubuntu3, automatic), grub2-common:amd64 (1.99-21ubuntu3, automatic)
+End-Date: 2013-01-07  12:42:52
+
+Start-Date: 2013-01-07  17:52:11
+Commandline: apt-get upgrade
+Upgrade: dmsetup:amd64 (1.02.48-4ubuntu7, 1.02.48-4ubuntu7.1), libkrb5-3:amd64 (1.10+dfsg~beta1-2, 1.10+dfsg~beta1-2ubuntu0.3), libk5crypto3:amd64 (1.10+dfsg~beta1-2, 1.10+dfsg~beta1-2ubuntu0.3), apt-transport-https:amd64 (0.8.16~exp12ubuntu10, 0.8.16~exp12ubuntu10.7), hdparm:amd64 (9.37-0ubuntu3, 9.37-0ubuntu3.1), libc-bin:amd64 (2.15-0ubuntu10, 2.15-0ubuntu10.3), vim-common:amd64 (7.3.429-2ubuntu2, 7.3.429-2ubuntu2.1), libldap-2.4-2:amd64 (2.4.28-1.1ubuntu4, 2.4.28-1.1ubuntu4.2), base-files:amd64 (6.5ubuntu6, 6.5ubuntu6.4), sysvinit-utils:amd64 (2.88dsf-13.10ubuntu11, 2.88dsf-13.10ubuntu11.1), bind9-host:amd64 (9.8.1.dfsg.P1-4, 9.8.1.dfsg.P1-4ubuntu0.5), dnsutils:amd64 (9.8.1.dfsg.P1-4, 9.8.1.dfsg.P1-4ubuntu0.5), libparted0debian1:amd64 (2.3-8ubuntu5, 2.3-8ubuntu5.1), libdbus-1-3:amd64 (1.4.18-1ubuntu1, 1.4.18-1ubuntu1.3), perl:amd64 (5.14.2-6ubuntu2, 5.14.2-6ubuntu2.2), accountsservice:amd64 (0.6.15-2ubuntu9, 0.6.15-2ubuntu9.4), libdevmapper1.02.1:amd64 (1.02.48-4ubuntu7, 1.02.48-4ubuntu7.1), ubuntu-keyring:amd64 (2011.11.21, 2011.11.21.1), libpolkit-gobject-1-0:amd64 (0.104-1, 0.104-1ubuntu1), libdns81:amd64 (9.8.1.dfsg.P1-4, 9.8.1.dfsg.P1-4ubuntu0.5), perl-base:amd64 (5.14.2-6ubuntu2, 5.14.2-6ubuntu2.2), aptitude:amd64 (0.6.6-1ubuntu1, 0.6.6-1ubuntu1.1), libgnutls26:amd64 (2.12.14-5ubuntu3, 2.12.14-5ubuntu3.1), perl-modules:amd64 (5.14.2-6ubuntu2, 5.14.2-6ubuntu2.2), libapt-inst1.4:amd64 (0.8.16~exp12ubuntu10, 0.8.16~exp12ubuntu10.7), psmisc:amd64 (22.15-2ubuntu1, 22.15-2ubuntu1.1), login:amd64 (4.1.4.2+svn3283-3ubuntu5, 4.1.4.2+svn3283-3ubuntu5.1), python2.7:amd64 (2.7.3-0ubuntu3, 2.7.3-0ubuntu3.1), libtasn1-3:amd64 (2.10-1ubuntu1, 2.10-1ubuntu1.1), parted:amd64 (2.3-8ubuntu5, 2.3-8ubuntu5.1), grub-pc:amd64 (1.99-21ubuntu3, 1.99-21ubuntu3.7), libglib2.0-0:amd64 (2.32.1-0ubuntu2, 2.32.3-0ubuntu1), libexpat1:amd64 (2.0.1-7.2ubuntu1, 2.0.1-7.2ubuntu1.1), libisccc80:amd64 (9.8.1.dfsg.P1-4, 9.8.1.dfsg.P1-4ubuntu0.5), libaccountsservice0:amd64 (0.6.15-2ubuntu9, 0.6.15-2ubuntu9.4), apt-utils:amd64 (0.8.16~exp12ubuntu10, 0.8.16~exp12ubuntu10.7), vim-tiny:amd64 (7.3.429-2ubuntu2, 7.3.429-2ubuntu2.1), update-manager-core:amd64 (0.156.14, 0.156.14.11), xkb-data:amd64 (2.5-1ubuntu1, 2.5-1ubuntu1.3), linux-firmware:amd64 (1.79, 1.79.1), coreutils:amd64 (8.13-3ubuntu3, 8.13-3ubuntu3.2), python-gi:amd64 (3.2.0-3, 3.2.2-1~precise), dbus:amd64 (1.4.18-1ubuntu1, 1.4.18-1ubuntu1.3), udev:amd64 (175-0ubuntu9, 175-0ubuntu9.2), libxcb1:amd64 (1.8.1-1, 1.8.1-1ubuntu0.1), passwd:amd64 (4.1.4.2+svn3283-3ubuntu5, 4.1.4.2+svn3283-3ubuntu5.1), apt:amd64 (0.8.16~exp12ubuntu10, 0.8.16~exp12ubuntu10.7), liblwres80:amd64 (9.8.1.dfsg.P1-4, 9.8.1.dfsg.P1-4ubuntu0.5), libkrb5support0:amd64 (1.10+dfsg~beta1-2, 1.10+dfsg~beta1-2ubuntu0.3), sudo:amd64 (1.8.3p1-1ubuntu3, 1.8.3p1-1ubuntu3.3), multiarch-support:amd64 (2.15-0ubuntu10, 2.15-0ubuntu10.3), cron:amd64 (3.0pl1-120ubuntu3, 3.0pl1-120ubuntu4), libgcrypt11:amd64 (1.5.0-3, 1.5.0-3ubuntu0.1), libxml2:amd64 (2.7.8.dfsg-5.1ubuntu4, 2.7.8.dfsg-5.1ubuntu4.3), libbind9-80:amd64 (9.8.1.dfsg.P1-4, 9.8.1.dfsg.P1-4ubuntu0.5), libapt-pkg4.12:amd64 (0.8.16~exp12ubuntu10, 0.8.16~exp12ubuntu10.7), isc-dhcp-client:amd64 (4.1.ESV-R4-0ubuntu5, 4.1.ESV-R4-0ubuntu5.5), lsb-base:amd64 (4.0-0ubuntu20, 4.0-0ubuntu20.2), grub-pc-bin:amd64 (1.99-21ubuntu3, 1.99-21ubuntu3.7), libudev0:amd64 (175-0ubuntu9, 175-0ubuntu9.2), libisccfg82:amd64 (9.8.1.dfsg.P1-4, 9.8.1.dfsg.P1-4ubuntu0.5), apparmor:amd64 (2.7.102-0ubuntu3, 2.7.102-0ubuntu3.7), tzdata:amd64 (2012b-1, 2012e-0ubuntu0.12.04.1), gpgv:amd64 (1.4.11-3ubuntu2, 1.4.11-3ubuntu2.1), busybox-static:amd64 (1.18.5-1ubuntu4, 1.18.5-1ubuntu4.1), krb5-locales:amd64 (1.10+dfsg~beta1-2, 1.10+dfsg~beta1-2ubuntu0.3), python2.7-minimal:amd64 (2.7.3-0ubuntu3, 2.7.3-0ubuntu3.1), libsasl2-2:amd64 (2.1.25.dfsg1-3, 2.1.25.dfsg1-3ubuntu0.1), ntpdate:amd64 (4.2.6.p3+dfsg-1ubuntu3, 4.2.6.p3+dfsg-1ubuntu3.1), man-db:amd64 (2.6.1-2, 2.6.1-2ubuntu1), openssl:amd64 (1.0.1-4ubuntu3, 1.0.1-4ubuntu5.5), busybox-initramfs:amd64 (1.18.5-1ubuntu4, 1.18.5-1ubuntu4.1), resolvconf:amd64 (1.63ubuntu11, 1.63ubuntu16), grub-common:amd64 (1.99-21ubuntu3, 1.99-21ubuntu3.7), grub2-common:amd64 (1.99-21ubuntu3, 1.99-21ubuntu3.7), upstart:amd64 (1.5-0ubuntu5, 1.5-0ubuntu7), sysv-rc:amd64 (2.88dsf-13.10ubuntu11, 2.88dsf-13.10ubuntu11.1), libgssapi-krb5-2:amd64 (1.10+dfsg~beta1-2, 1.10+dfsg~beta1-2ubuntu0.3), isc-dhcp-common:amd64 (4.1.ESV-R4-0ubuntu5, 4.1.ESV-R4-0ubuntu5.5), libisc83:amd64 (9.8.1.dfsg.P1-4, 9.8.1.dfsg.P1-4ubuntu0.5), mountall:amd64 (2.36, 2.36.3), libc6:amd64 (2.15-0ubuntu10, 2.15-0ubuntu10.3), libsasl2-modules:amd64 (2.1.25.dfsg1-3, 2.1.25.dfsg1-3ubuntu0.1), initscripts:amd64 (2.88dsf-13.10ubuntu11, 2.88dsf-13.10ubuntu11.1), ntfs-3g:amd64 (2012.1.15AR.1-1ubuntu1, 2012.1.15AR.1-1ubuntu1.2), lsb-release:amd64 (4.0-0ubuntu20, 4.0-0ubuntu20.2), libsqlite3-0:amd64 (3.7.9-2ubuntu1, 3.7.9-2ubuntu1.1), libssl1.0.0:amd64 (1.0.1-4ubuntu3, 1.0.1-4ubuntu5.5), gnupg:amd64 (1.4.11-3ubuntu2, 1.4.11-3ubuntu2.1)
+End-Date: 2013-01-07  17:53:50
+
+Start-Date: 2013-01-07  17:56:30
+Commandline: apt-get install openssh-server
+Install: openssh-server:amd64 (5.9p1-5ubuntu1), libwrap0:amd64 (7.6.q-21, automatic), ssh-import-id:amd64 (2.10-0ubuntu1, automatic), tcpd:amd64 (7.6.q-21, automatic)
+End-Date: 2013-01-07  17:56:33
+
+Start-Date: 2013-01-07  17:58:08
+Commandline: apt-get install tomcat7
+Install: libtomcat7-java:amd64 (7.0.26-1ubuntu1.1, automatic), libpcsclite1:amd64 (1.7.4-2ubuntu2, automatic), libcommons-pool-java:amd64 (1.5.6-1, automatic), tomcat7-common:amd64 (7.0.26-1ubuntu1.1, automatic), libecj-java:amd64 (3.5.1-3, automatic), authbind:amd64 (1.2.0build3, automatic), tomcat7:amd64 (7.0.26-1ubuntu1.1), libnss3:amd64 (3.13.1.with.ckbi.1.88-1ubuntu6.1, automatic), libjpeg-turbo8:amd64 (1.1.90+svn733-0ubuntu4.1, automatic), libjpeg8:amd64 (8c-2ubuntu7, automatic), java-common:amd64 (0.43ubuntu2, automatic), icedtea-6-jre-cacao:amd64 (6b24-1.11.5-0ubuntu1~12.04.1, automatic), default-jre-headless:amd64 (1.6-43ubuntu2, automatic), openjdk-6-jre-lib:amd64 (6b24-1.11.5-0ubuntu1~12.04.1, automatic), openjdk-6-jre-headless:amd64 (6b24-1.11.5-0ubuntu1~12.04.1, automatic), libavahi-common-data:amd64 (0.6.30-5ubuntu2, automatic), libservlet3.0-java:amd64 (7.0.26-1ubuntu1.1, automatic), libcups2:amd64 (1.5.3-0ubuntu6, automatic), icedtea-6-jre-jamvm:amd64 (6b24-1.11.5-0ubuntu1~12.04.1, automatic), tzdata-java:amd64 (2012e-0ubuntu0.12.04.1, automatic), libcommons-dbcp-java:amd64 (1.4-1ubuntu1, automatic), libnspr4:amd64 (4.8.9-1ubuntu2.3, automatic), libavahi-client3:amd64 (0.6.30-5ubuntu2, automatic), ca-certificates-java:amd64 (20110912ubuntu6, automatic), libcommons-collections3-java:amd64 (3.2.1-5, automatic), libavahi-common3:amd64 (0.6.30-5ubuntu2, automatic), libnss3-1d:amd64 (3.13.1.with.ckbi.1.88-1ubuntu6.1, automatic)
+End-Date: 2013-01-07  17:58:22
+
+Start-Date: 2013-01-07  18:03:43
+Commandline: apt-get install libpq5 libecpg6 libecpg-compat3 postgresql-contrib-9.1 postgresql-pltcl-9.1 postgresql-plpython3-9.1 postgresql-plpython-9.1 postgresql-plperl-9.1 postgresql-client-common postgresql-common postgresql-9.1
+Install: postgresql-plperl-9.1:amd64 (9.1.7-0ubuntu12.04), postgresql-pltcl-9.1:amd64 (9.1.7-0ubuntu12.04), libecpg6:amd64 (9.1.7-0ubuntu12.04), postgresql-9.1:amd64 (9.1.7-0ubuntu12.04), python3.2-minimal:amd64 (3.2.3-0ubuntu3.2, automatic), libpython2.7:amd64 (2.7.3-0ubuntu3.1, automatic), libpython3.2:amd64 (3.2.3-0ubuntu3.2, automatic), libxslt1.1:amd64 (1.1.26-8ubuntu1.2, automatic), python3.2:amd64 (3.2.3-0ubuntu3.2, automatic), postgresql-contrib-9.1:amd64 (9.1.7-0ubuntu12.04), postgresql-plpython-9.1:amd64 (9.1.7-0ubuntu12.04), postgresql-plpython3-9.1:amd64 (9.1.7-0ubuntu12.04), ssl-cert:amd64 (1.0.28ubuntu0.1, automatic), postgresql-common:amd64 (129ubuntu1), postgresql-client-9.1:amd64 (9.1.7-0ubuntu12.04, automatic), tcl8.5:amd64 (8.5.11-1ubuntu1, automatic), libperl5.14:amd64 (5.14.2-6ubuntu2.2, automatic), postgresql-client-common:amd64 (129ubuntu1), libpq5:amd64 (9.1.7-0ubuntu12.04), libpgtypes3:amd64 (9.1.7-0ubuntu12.04, automatic), libossp-uuid16:amd64 (1.6.2-1.1build3, automatic), libecpg-compat3:amd64 (9.1.7-0ubuntu12.04)
+End-Date: 2013-01-07  18:03:57
+
+Start-Date: 2013-01-07  18:06:14
+Commandline: apt-get install rabbitmq-server
+Install: erlang-eunit:amd64 (14.b.4-dfsg-1ubuntu1, automatic), erlang-crypto:amd64 (14.b.4-dfsg-1ubuntu1, automatic), erlang-corba:amd64 (14.b.4-dfsg-1ubuntu1, automatic), erlang-asn1:amd64 (14.b.4-dfsg-1ubuntu1, automatic), erlang-xmerl:amd64 (14.b.4-dfsg-1ubuntu1, automatic), erlang-snmp:amd64 (14.b.4-dfsg-1ubuntu1, automatic), erlang-tools:amd64 (14.b.4-dfsg-1ubuntu1, automatic), erlang-edoc:amd64 (14.b.4-dfsg-1ubuntu1, automatic), erlang-syntax-tools:amd64 (14.b.4-dfsg-1ubuntu1, automatic), libsctp1:amd64 (1.0.11+dfsg-2, automatic), lksctp-tools:amd64 (1.0.11+dfsg-2, automatic), erlang-webtool:amd64 (14.b.4-dfsg-1ubuntu1, automatic), erlang-diameter:amd64 (14.b.4-dfsg-1ubuntu1, automatic), erlang-runtime-tools:amd64 (14.b.4-dfsg-1ubuntu1, automatic), erlang-docbuilder:amd64 (14.b.4-dfsg-1ubuntu1, automatic), erlang-inviso:amd64 (14.b.4-dfsg-1ubuntu1, automatic), rabbitmq-server:amd64 (2.7.1-0ubuntu4), erlang-mnesia:amd64 (14.b.4-dfsg-1ubuntu1, automatic), erlang-public-key:amd64 (14.b.4-dfsg-1ubuntu1, automatic), erlang-dev:amd64 (14.b.4-dfsg-1ubuntu1, automatic), erlang-os-mon:amd64 (14.b.4-dfsg-1ubuntu1, automatic), erlang-erl-docgen:amd64 (14.b.4-dfsg-1ubuntu1, automatic), erlang-inets:amd64 (14.b.4-dfsg-1ubuntu1, automatic), erlang-ic:amd64 (14.b.4-dfsg-1ubuntu1, automatic), erlang-odbc:amd64 (14.b.4-dfsg-1ubuntu1, automatic), erlang-nox:amd64 (14.b.4-dfsg-1ubuntu1, automatic), erlang-ssh:amd64 (14.b.4-dfsg-1ubuntu1, automatic), erlang-percept:amd64 (14.b.4-dfsg-1ubuntu1, automatic), erlang-ssl:amd64 (14.b.4-dfsg-1ubuntu1, automatic), libodbc1:amd64 (2.2.14p2-5ubuntu3, automatic), erlang-parsetools:amd64 (14.b.4-dfsg-1ubuntu1, automatic), libltdl7:amd64 (2.4.2-1ubuntu1, automatic), erlang-base:amd64 (14.b.4-dfsg-1ubuntu1, automatic)
+End-Date: 2013-01-07  18:06:20
+
+Start-Date: 2013-01-07  18:08:34
+Commandline: apt-get install rabbitmq-erlang-client
+Install: rabbitmq-erlang-client:amd64 (2.7.1-0ubuntu4)
+End-Date: 2013-01-07  18:08:36
+
+Start-Date: 2013-01-07  18:09:18
+Commandline: apt-get install avahi-autoipd
+Install: libdaemon0:amd64 (0.14-2, automatic), avahi-autoipd:amd64 (0.6.30-5ubuntu2)
+End-Date: 2013-01-07  18:09:20
+
+Start-Date: 2013-01-07  18:09:28
+Commandline: apt-get install avahi-daemon
+Install: libcap2:amd64 (2.22-1ubuntu3, automatic), libnss-mdns:amd64 (0.10-3.2, automatic), libavahi-core7:amd64 (0.6.30-5ubuntu2, automatic), avahi-daemon:amd64 (0.6.30-5ubuntu2)
+End-Date: 2013-01-07  18:09:30
+
+Start-Date: 2013-01-07  18:16:52
+Commandline: apt-get install drbd8-utils drbdlinks
+Install: drbd8-utils:amd64 (8.3.11-0ubuntu1), drbdlinks:amd64 (1.19-1)
+End-Date: 2013-01-07  18:16:54
+
+Start-Date: 2013-01-07  18:29:39
+Commandline: apt-get install heartbeat
+Install: pacemaker:amd64 (1.1.6-2ubuntu3, automatic), libfence4:amd64 (3.1.7-0ubuntu2.1, automatic), libsensors4:amd64 (3.3.1-2ubuntu1, automatic), libsnmp15:amd64 (5.4.3~dfsg-2.4ubuntu1.1, automatic), libcrmcluster1:amd64 (1.1.6-2ubuntu3, automatic), libheartbeat2:amd64 (3.0.5-3ubuntu2, automatic), libplumbgpl2:amd64 (1.0.8-2ubuntu6, automatic), libxml2-utils:amd64 (2.7.8.dfsg-5.1ubuntu4.3, automatic), libccs3:amd64 (3.1.7-0ubuntu2.1, automatic), libcfg4:amd64 (1.4.2-2, automatic), libpengine3:amd64 (1.1.6-2ubuntu3, automatic), libconfdb4:amd64 (1.4.2-2, automatic), libcib1:amd64 (1.1.6-2ubuntu3, automatic), libcoroipcc4:amd64 (1.4.2-2, automatic), libcpg4:amd64 (1.4.2-2, automatic), libsnmp-base:amd64 (5.4.3~dfsg-2.4ubuntu1.1, automatic), cluster-glue:amd64 (1.0.8-2ubuntu6, automatic), resource-agents:amd64 (3.9.2-5ubuntu4.1, automatic), openhpid:amd64 (2.14.1-1.1, automatic), libcurl3:amd64 (7.22.0-3ubuntu4, automatic), libstonith1:amd64 (1.0.8-2ubuntu6, automatic), libplumb2:amd64 (1.0.8-2ubuntu6, automatic), libpils2:amd64 (1.0.8-2ubuntu6, automatic), gawk:amd64 (3.1.8+dfsg-0.1ubuntu1, automatic), libopenhpi2:amd64 (2.14.1-1.1, automatic), libcrmcommon2:amd64 (1.1.6-2ubuntu3, automatic), libopenipmi0:amd64 (2.0.18-0ubuntu3, automatic), libtransitioner1:amd64 (1.1.6-2ubuntu3, automatic), heartbeat:amd64 (3.0.5-3ubuntu2), libsigsegv2:amd64 (2.9-4ubuntu2, automatic), libpe-rules2:amd64 (1.1.6-2ubuntu3, automatic), libquorum4:amd64 (1.4.2-2, automatic), libcman3:amd64 (3.1.7-0ubuntu2.1, automatic), libpe-status3:amd64 (1.1.6-2ubuntu3, automatic), libesmtp6:amd64 (1.0.6-1build2, automatic), libnet1:amd64 (1.1.4-2.1, automatic), liblrm2:amd64 (1.0.8-2ubuntu6, automatic), libstonithd1:amd64 (1.1.6-2ubuntu3, automatic)
+End-Date: 2013-01-07  18:29:47
+
+Start-Date: 2013-01-10  10:04:47
+Commandline: apt-get install unzip
+Install: unzip:amd64 (6.0-4ubuntu1)
+Error: Sub-process /usr/bin/dpkg returned an error code (2)
+End-Date: 2013-01-10  10:04:47
+
+Start-Date: 2013-01-10  10:06:44
+Commandline: apt-get install unzip
+Install: unzip:amd64 (6.0-4ubuntu1)
+End-Date: 2013-01-10  10:06:45
+
+Start-Date: 2013-01-10  10:12:59
+Commandline: apt-get install beep
+Install: beep:amd64 (1.3-2)
+End-Date: 2013-01-10  10:13:00
+
+Start-Date: 2013-01-10  10:14:39
+Commandline: apt-get install git
+Install: git-man:amd64 (1.7.9.5-1, automatic), git:amd64 (1.7.9.5-1), liberror-perl:amd64 (0.17-1, automatic), patch:amd64 (2.6.1-3, automatic)
+End-Date: 2013-01-10  10:14:40
+
+Start-Date: 2013-01-10  10:17:06
+Commandline: apt-get install snmp
+Install: snmp:amd64 (5.4.3~dfsg-2.4ubuntu1.1)
+End-Date: 2013-01-10  10:17:07
+
+Start-Date: 2013-01-10  10:20:12
+Commandline: apt-get install ssmtp
+Install: libgnutls-openssl27:amd64 (2.12.14-5ubuntu3.1, automatic), ssmtp:amd64 (2.64-5build1)
+End-Date: 2013-01-10  10:20:14
+
+Start-Date: 2013-01-10  10:48:01
+Commandline: apt-get install consolekit
+Install: libpam-ck-connector:amd64 (0.4.5-2, automatic), libck-connector0:amd64 (0.4.5-2, automatic), consolekit:amd64 (0.4.5-2)
+End-Date: 2013-01-10  10:48:02
+
+Start-Date: 2013-01-10  11:04:08
+Commandline: apt-get install gdb
+Install: gdb:amd64 (7.4-2012.04-0ubuntu2.1)
+End-Date: 2013-01-10  11:04:08
+
+Start-Date: 2013-01-10  11:04:54
+Commandline: apt-get install gdbserver
+Install: gdbserver:amd64 (7.4-2012.04-0ubuntu2.1)
+End-Date: 2013-01-10  11:04:54
+
+Start-Date: 2013-01-10  11:17:17
+Commandline: apt-get install kdump-tools
+Install: makedumpfile:amd64 (1.3.7-2, automatic), kexec-tools:amd64 (2.0.2-3ubuntu4.1, automatic), kdump-tools:amd64 (1.3.7-2), libdw1:amd64 (0.152-1ubuntu3, automatic), crash:amd64 (5.1.6-1ubuntu1, automatic)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  11:17:18
+
+Start-Date: 2013-01-10  11:19:51
+Commandline: apt-get install mdadm
+Install: mdadm:amd64 (3.2.5-1ubuntu0.2)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  11:19:53
+
+Start-Date: 2013-01-10  11:20:48
+Commandline: apt-get install tftp
+Install: tftp:amd64 (0.17-18ubuntu2)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  11:20:48
+
+Start-Date: 2013-01-10  11:21:47
+Commandline: apt-get install ipmitool
+Install: ipmitool:amd64 (1.8.11-5ubuntu1), openipmi:amd64 (2.0.18-0ubuntu3, automatic)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  11:21:48
+
+Start-Date: 2013-01-10  11:23:48
+Commandline: apt-get install grub
+Install: grub:amd64 (0.97-29ubuntu66)
+Remove: grub-pc:amd64 (1.99-21ubuntu3.7), grub-gfxpayload-lists:amd64 (0.6), grub2-common:amd64 (1.99-21ubuntu3.7)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  11:23:50
+
+Start-Date: 2013-01-10  11:52:37
+Commandline: apt-get install rabbitmq-server
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  11:52:37
+
+Start-Date: 2013-01-10  11:53:00
+Commandline: apt-get autoremove
+Remove: grub-pc-bin:amd64 (1.99-21ubuntu3.7)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  11:53:00
+
+Start-Date: 2013-01-10  11:53:06
+Commandline: apt-get install rabbitmq-server
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  11:53:06
+
+Start-Date: 2013-01-10  11:53:17
+Commandline: apt-get install rabbitmq-server
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  11:53:18
+
+Start-Date: 2013-01-10  11:53:47
+Commandline: apt-get install rabbitmq-server
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  11:53:48
+
+Start-Date: 2013-01-10  12:04:46
+Commandline: apt-get install ethtool
+Install: ethtool:amd64 (3.1-1)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  12:04:47
+
+Start-Date: 2013-01-10  12:07:38
+Commandline: apt-get install ethtool
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  12:07:39
+
+Start-Date: 2013-01-10  12:09:57
+Commandline: apt-get install insserv
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  12:09:57
+
+Start-Date: 2013-01-10  12:10:54
+Commandline: apt-get install ipcalc
+Install: ipcalc:amd64 (0.41-2)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  12:10:54
+
+Start-Date: 2013-01-10  12:14:01
+Commandline: apt-get install magic
+Install: libxfixes3:amd64 (5.0-4ubuntu4, automatic), libxcomposite1:amd64 (0.4.3-2build1, automatic), libxxf86dga1:amd64 (1.1.2-1, automatic), x11-utils:amd64 (7.6+4ubuntu0.1, automatic), ttf-dejavu-core:amd64 (2.33-2ubuntu1, automatic), libxxf86vm1:amd64 (1.1.1-2build1, automatic), xterm:amd64 (271-1ubuntu2.1, automatic), libgl1-mesa-dri:amd64 (8.0.4-0ubuntu0.2, automatic), libxcb-glx0:amd64 (1.8.1-1ubuntu0.1, automatic), libgl1-mesa-glx:amd64 (8.0.4-0ubuntu0.2, automatic), libx11-xcb1:amd64 (1.4.99.1-0ubuntu2, automatic), libglapi-mesa:amd64 (8.0.4-0ubuntu0.2, automatic), xbitmaps:amd64 (1.1.1-1, automatic), libxaw7:amd64 (1.0.9-3ubuntu1, automatic), libxinerama1:amd64 (1.1.1-3build1, automatic), libxft2:amd64 (2.2.0-3ubuntu2, automatic), fontconfig-config:amd64 (2.8.0-3ubuntu9.1, automatic), libice6:amd64 (1.0.7-2build1, automatic), libxmu6:amd64 (1.1.0-3, automatic), libxpm4:amd64 (3.5.9-4, automatic), libxrender1:amd64 (0.9.6-2build1, automatic), libxss1:amd64 (1.2.1-2, automatic), libfontenc1:amd64 (1.1.0-1, automatic), libxtst6:amd64 (1.2.0-4, automatic), libutempter0:amd64 (1.1.5-4, automatic), tk8.5:amd64 (8.5.11-1, automatic), x11-common:amd64 (7.6+12ubuntu1, automatic), magic:amd64 (7.5.214-1), libfontconfig1:amd64 (2.8.0-3ubuntu9.1, automatic), libsm6:amd64 (1.2.0-2build1, automatic), libxdamage1:amd64 (1.1.3-2build1, automatic), libxi6:amd64 (1.6.0-0ubuntu2, automatic), libxcb-shape0:amd64 (1.8.1-1ubuntu0.1, automatic), libxt6:amd64 (1.1.1-2build1, automatic), libxv1:amd64 (1.0.6-2build1, automatic), libllvm3.0:amd64 (3.0-4ubuntu1, automatic)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  12:14:07
+
+Start-Date: 2013-01-10  12:17:45
+Commandline: apt-get install file
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  12:17:46
+
+Start-Date: 2013-01-10  12:54:16
+Commandline: apt-get install netmask
+Install: netmask:amd64 (2.3.12)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  12:54:17
+
+Start-Date: 2013-01-10  12:58:13
+Commandline: apt-get install binutils
+Install: binutils:amd64 (2.22-6ubuntu1)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  12:58:14
+
+Start-Date: 2013-01-10  13:01:42
+Commandline: apt-get install ntp
+Install: libopts25:amd64 (5.12-0.1ubuntu1, automatic), ntp:amd64 (4.2.6.p3+dfsg-1ubuntu3.1)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  13:01:43
+
+Start-Date: 2013-01-10  13:04:24
+Commandline: apt-get install traceroute
+Install: traceroute:amd64 (2.0.18-1)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  13:04:26
+
+Start-Date: 2013-01-10  13:09:00
+Commandline: apt-get install libnss-mdns
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  13:09:00
+
+Start-Date: 2013-01-10  13:10:12
+Commandline: apt-get install libnss-mdns
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  13:10:12
+
+Start-Date: 2013-01-10  13:12:46
+Commandline: apt-get install libnss-mdns
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  13:12:47
+
+Start-Date: 2013-01-10  13:19:34
+Commandline: apt-get install watchdog
+Install: watchdog:amd64 (5.11-1)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  13:19:35
+
+Start-Date: 2013-01-10  13:24:50
+Commandline: apt-get install avahi-autoipd
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  13:24:52
+
+Start-Date: 2013-01-10  13:25:23
+Commandline: apt-get install avahi-daemon
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  13:25:23
+
+Start-Date: 2013-01-10  13:26:05
+Commandline: apt-get install avahi-utils
+Install: avahi-utils:amd64 (0.6.30-5ubuntu2)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  13:26:07
+
+Start-Date: 2013-01-10  13:31:22
+Commandline: apt-get remove isc-dhcp-client isc-dhcp-common
+Remove: ubuntu-minimal:amd64 (1.267), isc-dhcp-client:amd64 (4.1.ESV-R4-0ubuntu5.5), isc-dhcp-common:amd64 (4.1.ESV-R4-0ubuntu5.5)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  13:31:24
+
+Start-Date: 2013-01-10  13:31:56
+Commandline: apt-get install dhcp3-client dhcp3-common
+Install: isc-dhcp-client:amd64 (4.1.ESV-R4-0ubuntu5.5, automatic), dhcp3-client:amd64 (4.1.ESV-R4-0ubuntu5.5), isc-dhcp-common:amd64 (4.1.ESV-R4-0ubuntu5.5, automatic), dhcp3-common:amd64 (4.1.ESV-R4-0ubuntu5.5)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  13:31:58
+
+Start-Date: 2013-01-10  13:39:29
+Commandline: apt-get install acpi
+Install: acpi:amd64 (1.6-1)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  13:39:30
+
+Start-Date: 2013-01-10  13:39:34
+Commandline: apt-get install acpid
+Install: acpid:amd64 (2.0.10-1ubuntu3)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-10  13:39:36
+
+Start-Date: 2013-01-11  11:27:46
+Commandline: apt-get install python-simplejson
+Install: python-simplejson:amd64 (2.3.2-1), libjs-jquery:amd64 (1.7.1-1ubuntu1, automatic)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-11  11:27:48
+
+Start-Date: 2013-01-11  11:41:03
+Commandline: apt-get install python-paramiko
+Install: libgmp10:amd64 (5.0.2+dfsg-2ubuntu1, automatic), python-paramiko:amd64 (1.7.7.1-2), python-crypto:amd64 (2.4.1-1ubuntu0.1, automatic)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-11  11:41:05
+
+Start-Date: 2013-01-15  13:57:43
+Commandline: apt-get install python-simpleparse
+Install: python-simpleparse:amd64 (2.1.0a1-6build1), python-simpleparse-mxtexttools:amd64 (2.1.0a1-6build1, automatic), python-support:amd64 (1.0.14ubuntu2, automatic)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-15  13:57:45
+
+Start-Date: 2013-01-24  18:25:06
+Commandline: apt-get install corosync
+Install: libpload4:amd64 (1.4.2-2, automatic), libvotequorum4:amd64 (1.4.2-2, automatic), libsam4:amd64 (1.4.2-2, automatic), corosync:amd64 (1.4.2-2), libcoroipcs4:amd64 (1.4.2-2, automatic), liblogsys4:amd64 (1.4.2-2, automatic), libevs4:amd64 (1.4.2-2, automatic), libtotem-pg4:amd64 (1.4.2-2, automatic)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-01-24  18:25:12
+
+Start-Date: 2013-04-09  08:18:54
+Commandline: apt-get install pgdg-keyring
+Install: pgdg-keyring:amd64 (2012.1)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-04-09  08:19:12
+
+Start-Date: 2013-04-09  08:19:39
+Commandline: apt-get install postgresql-9.2
+Install: postgresql-9.2:amd64 (9.2.4-1.pgdg12.4+1), postgresql-client-9.2:amd64 (9.2.4-1.pgdg12.4+1, automatic)
+Upgrade: postgresql-common:amd64 (129ubuntu1, 140.pgdg12.4+1), postgresql-client-common:amd64 (129ubuntu1, 140.pgdg12.4+1), libpq5:amd64 (9.1.7-0ubuntu12.04, 9.2.4-1.pgdg12.4+1)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-04-09  08:19:52
+
+Start-Date: 2013-04-09  08:54:13
+Commandline: apt-get install postgresql-plperl-9.2
+Install: postgresql-plperl-9.2:amd64 (9.2.4-1.pgdg12.4+1)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-04-09  08:54:25
+
+Start-Date: 2013-04-09  08:54:40
+Commandline: apt-get install postgresql-plpython-9.1
+Upgrade: postgresql-plperl-9.1:amd64 (9.1.7-0ubuntu12.04, 9.1.9-1.pgdg12.4+1), postgresql-pltcl-9.1:amd64 (9.1.7-0ubuntu12.04, 9.1.9-1.pgdg12.4+1), postgresql-9.1:amd64 (9.1.7-0ubuntu12.04, 9.1.9-1.pgdg12.4+1), postgresql-contrib-9.1:amd64 (9.1.7-0ubuntu12.04, 9.1.9-1.pgdg12.4+1), postgresql-plpython-9.1:amd64 (9.1.7-0ubuntu12.04, 9.1.9-1.pgdg12.4+1), postgresql-plpython3-9.1:amd64 (9.1.7-0ubuntu12.04, 9.1.9-1.pgdg12.4+1)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-04-09  08:54:59
+
+Start-Date: 2013-04-09  08:55:08
+Commandline: apt-get install postgresql-plpython-9.2
+Install: postgresql-plpython-9.2:amd64 (9.2.4-1.pgdg12.4+1)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-04-09  08:55:16
+
+Start-Date: 2013-04-09  08:55:30
+Commandline: apt-get install postgresql-contrib-9.2
+Install: postgresql-contrib-9.2:amd64 (9.2.4-1.pgdg12.4+1)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-04-09  08:55:40
+
+Start-Date: 2013-04-09  08:55:49
+Commandline: apt-get install postgresql-pltcl-9.2
+Install: postgresql-pltcl-9.2:amd64 (9.2.4-1.pgdg12.4+1)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-04-09  08:55:57
+
+Start-Date: 2013-05-13  07:57:00
+Commandline: apt-get install smbfs
+Install: libtalloc2:amd64 (2.0.7-3, automatic), libtdb1:amd64 (1.2.9-4, automatic), smbfs:amd64 (5.1-1ubuntu1), libwbclient0:amd64 (3.6.3-2ubuntu2.6, automatic), samba-common:amd64 (3.6.3-2ubuntu2.6, automatic), cifs-utils:amd64 (5.1-1ubuntu1, automatic), samba-common-bin:amd64 (3.6.3-2ubuntu2.6, automatic), keyutils:amd64 (1.5.2-2, automatic)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-05-13  07:57:12
+
+Start-Date: 2013-05-15  08:19:59
+Commandline: apt-get install open-iscsi-utils open-iscsi
+Install: open-iscsi:amd64 (2.0.871-0ubuntu9.12.04.1), open-iscsi-utils:amd64 (2.0.871-0ubuntu9.12.04.1)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-05-15  08:20:10
+
+Start-Date: 2013-05-15  12:29:29
+Commandline: apt-get install nfs-common
+Install: libtirpc1:amd64 (0.2.2-5, automatic), libnfsidmap2:amd64 (0.25-1ubuntu2, automatic), rpcbind:amd64 (0.2.0-7ubuntu1.2, automatic), libevent-2.0-5:amd64 (2.0.16-stable-1, automatic), libgssglue1:amd64 (0.3-4ubuntu0.1, automatic), nfs-common:amd64 (1.2.5-3ubuntu3.1)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-05-15  12:29:39
+
+Start-Date: 2013-06-07  05:40:06
+Commandline: apt-get install libc6-dev
+Install: libmpfr4:amd64 (3.1.0-3ubuntu2, automatic), libgomp1:amd64 (4.6.3-1ubuntu5, automatic), gcc-4.6:amd64 (4.6.3-1ubuntu5, automatic), libquadmath0:amd64 (4.6.3-1ubuntu5, automatic), cpp:amd64 (4.6.3-1ubuntu5, automatic), gcc:amd64 (4.6.3-1ubuntu5, automatic), libc6-dev:amd64 (2.15-0ubuntu10.4), cpp-4.6:amd64 (4.6.3-1ubuntu5, automatic), linux-libc-dev:amd64 (3.2.0-45.70, automatic), manpages-dev:amd64 (3.35-0.1ubuntu1, automatic), libc-dev-bin:amd64 (2.15-0ubuntu10.4, automatic), libmpc2:amd64 (0.9-4, automatic)
+Upgrade: libc-bin:amd64 (2.15-0ubuntu10.3, 2.15-0ubuntu10.4), libc6:amd64 (2.15-0ubuntu10.3, 2.15-0ubuntu10.4)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-06-07  05:40:20
+
+Start-Date: 2013-06-21  10:52:32
+Commandline: apt-get install bridge-utils
+Install: bridge-utils:amd64 (1.5-2ubuntu7)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-06-21  10:52:45
+
+Start-Date: 2013-06-27  06:19:14
+Commandline: apt-get install python-psycopg2
+Install: python-egenix-mxtools:amd64 (3.2.1-1ubuntu1, automatic), python-psycopg2:amd64 (2.4.5-1), python-egenix-mxdatetime:amd64 (3.2.1-1ubuntu1, automatic)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-06-27  06:19:25
+
+Start-Date: 2013-06-27  11:45:03
+Commandline: apt-get install python-tz
+Install: python-tz:amd64 (2011k-0ubuntu5)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-06-27  11:45:12
+
+Start-Date: 2013-08-20  11:24:57
+Commandline: apt-get install ncurses-dev
+Install: libncurses5-dev:amd64 (5.9-4), libtinfo-dev:amd64 (5.9-4, automatic)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2013-08-20  11:25:08

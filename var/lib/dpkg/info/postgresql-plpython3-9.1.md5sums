@@ -1,0 +1,7 @@
+38ca6935588073363f5761cc155c812c  usr/lib/postgresql/9.1/lib/plpython3.so
+b61715f64ada1ccc39d0df8ed092a997  usr/share/doc/postgresql-plpython3-9.1/changelog.Debian.gz
+7229581746f077a9ff2d039aa3de64c3  usr/share/doc/postgresql-plpython3-9.1/changelog.gz
+e50499182ce53b98876534837e740f98  usr/share/doc/postgresql-plpython3-9.1/copyright
+d3fd4d82f5008ffc7c5edb7fc0f9ab52  usr/share/postgresql/9.1/extension/plpython3u--1.0.sql
+b859962ba4477fdd8f67fc3e1dfecb11  usr/share/postgresql/9.1/extension/plpython3u--unpackaged--1.0.sql
+abd175224284e40c5bfd5b528a07356e  usr/share/postgresql/9.1/extension/plpython3u.control

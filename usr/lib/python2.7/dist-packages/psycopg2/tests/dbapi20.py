@@ -1,0 +1,1 @@
+../../../../../share/pyshared/psycopg2/tests/dbapi20.py

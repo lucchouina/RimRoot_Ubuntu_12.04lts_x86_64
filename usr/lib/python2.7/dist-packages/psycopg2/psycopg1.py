@@ -1,0 +1,1 @@
+../../../../share/pyshared/psycopg2/psycopg1.py

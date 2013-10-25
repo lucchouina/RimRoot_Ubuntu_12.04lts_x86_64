@@ -1,0 +1,92 @@
+Format: http://dep.debian.net/deps/dep5
+Upstream-Name: resource-agents
+Source: https://github.com/ClusterLabs/resource-agents
+
+Files: debian/*
+Copyright: 2011 Andres Rodriguez <andreserl@ubuntu.com>
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+Files: *
+Copyright: 1998-2010, Akamatsu Hiroshi <akamatsu.hiroshi@yes.nttcom.ne.jp>
+           1998-2010, Alan Robertson <alanr@unix.sh>
+           1998-2010, Andrew Beekhof <andrew@beekhof.net>
+           1998-2010, Christian Rishoj <christian@rishoj.net>
+           1998-2010, Daiki Matsuda <d.matuda@gmail.com>
+           1998-2010, David Lee <t.d.lee@durham.ac.uk>
+           1998-2010, Dejan Muhamedagic <dejan@hello-penguin.com>
+           1998-2010, Dominik Klein <dk@in-telegence.net>
+           1998-2010, Florian Haas <florian@linbit.com>
+           1998-2010, Hideo Yamauchi <renayama19661014@ybb.ne.jp>
+           1998-2010, Huang Zhen <zhen.huang@gmail.com>
+           1998-2010, Jean-Francois Larvoire <jf.larvoire@hp.com>
+           1998-2010, Keisuke MORI <kskmori@intellilink.co.jp>
+           1998-2010, Lars Marowsky-Bree <lmb@suse.de>
+           1998-2010, Matthew Soffen
+           1998-2010, Michael Schwartzkopff <misch@multinet.de>
+           1998-2010, Nakahira Kazutomo <nakahira@intellilink.co.jp>
+           1998-2010, Philipp Kolmann <philipp@kolmann.at>
+           1998-2010, Raoul Bhatia <r.bhatia@ipax.at>
+           1998-2010, Ron Terry <rterry@novell.com>
+           1998-2010, Sebastian Reitenbach <itlistuser@rapideye.de>
+           1998-2010, Serge Dubrouski <sergeyfd@gmail.com>
+           1998-2010, Simon Horman <horms@verge.net.au>
+           1998-2010, Stephan Berlet <SBerlet@sysdesign-edv.de>
+License: GPL
+
+Files: heartbeat/shellfuncs.in
+Copyright: Alan Robertson
+License: LGPL
+
+Files: heartbeat/ocf-shellfuncs.in
+Copyright: Copyright (c) 2004 SUSE LINUX AG, Lars Marowsky-Brée
+License: LGPL
+
+Files: heartbeat/ocf-returncodes.in
+Copyright: Copyright (c) 2004 SUSE LINUX AG, Andrew Beekhof
+License: LGPL
+
+Files: heartbeat/scsi2reservation
+Copyright: hxinwei@gmail.com
+License: GPL-2
+
+Files: rgmanager/src/resources/*
+Copyright: Copyright (C) 1997-2003 Sistina Software, Inc.  All rights reserved.
+           Copyright (C) 2004-2011 Red Hat, Inc.  All rights reserved.
+License: GPL-2+
+
+Files: rgmanager/src/resources/ASEHAagent.sh:
+Copyright: Copyright 2007 Jian-ping Hui <jphui at sybase.com>
+           Copyright (C) - 2007, Sybase, Inc.
+License: GPL-2
+
+Files: rgmanager/src/resources/clusterfs.sh:
+Copyright: Copyright (C) 2000 Mission Critical Linux
+           Copyright (C) 2002-2008 Red Hat, Inc.  All rights reserved.
+License: GPL-2+
+
+Files: rgmanager/src/resources/ocf-shellfuncs:
+Copyright: Copyright (C) 2004 SUSE LINUX AG, Lars Marowsky-Bree. All Rights Reserved.
+License: GPL
+
+Files: rgmanager/src/resources/SAPDatabase:
+Copyright: Copyright (C) 2006, 2007 Alexander Krauth
+License: GPL
+
+Files: rgmanager/src/resources/SAPInstance:
+Copyright: Copyright (C) 2006, 2007 Alexander Krauth
+License: GPL

@@ -1,0 +1,1 @@
+../../../../share/pyshared/python_debian-0.1.21ubuntu1.egg-info/top_level.txt

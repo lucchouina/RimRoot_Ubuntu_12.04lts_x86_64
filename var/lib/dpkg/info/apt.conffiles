@@ -1,0 +1,4 @@
+/etc/apt/apt.conf.d/20changelog
+/etc/apt/apt.conf.d/01autoremove
+/etc/logrotate.d/apt
+/etc/cron.daily/apt

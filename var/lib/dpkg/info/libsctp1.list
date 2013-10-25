@@ -1,0 +1,10 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libsctp1
+/usr/share/doc/libsctp1/copyright
+/usr/share/doc/libsctp1/changelog.Debian.gz
+/usr/lib
+/usr/lib/libsctp.so.1.0.11
+/usr/lib/libsctp.so.1

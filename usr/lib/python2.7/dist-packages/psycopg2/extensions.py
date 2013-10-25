@@ -1,0 +1,1 @@
+../../../../share/pyshared/psycopg2/extensions.py

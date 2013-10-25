@@ -1,0 +1,23 @@
+#!/bin/sh
+
+set -e
+
+# we need ais user
+
+if [ "$1" = "configure" ]; then
+	adduser --quiet --group --system --no-create-home ais
+
+	# Touch an empty file so the log dir stays around after package removal
+	# so logrotate doesn't choke
+	touch /var/log/corosync/.empty
+fi
+
+# Automatically added by dh_installinit
+if [ -x "/etc/init.d/corosync" ]; then
+	if [ ! -e "/etc/init/corosync.conf" ]; then
+		update-rc.d corosync defaults 19 1 >/dev/null
+	fi
+	invoke-rc.d corosync start || exit $?
+fi
+# End automatically added section
+

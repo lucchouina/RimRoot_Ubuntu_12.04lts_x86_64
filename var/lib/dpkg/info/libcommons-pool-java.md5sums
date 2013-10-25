@@ -1,0 +1,7 @@
+85e6fbb9698a76a5ee8db43deb8efa29  usr/share/doc/libcommons-pool-java/README.txt
+22d32ad52f3093804ca7ce1c4e88bb99  usr/share/doc/libcommons-pool-java/RELEASE-NOTES.txt
+f2fde816d8d526ef182ba1daf9cc63c6  usr/share/doc/libcommons-pool-java/changelog.Debian.gz
+08b06e338df2b9983ad012269004c5c7  usr/share/doc/libcommons-pool-java/copyright
+215a18f73b8b68b841a846911f2f19b4  usr/share/java/commons-pool-1.5.6.jar
+75634d1f557700f457e125a045b2524f  usr/share/maven-repo/commons-pool/commons-pool/1.5.6/commons-pool-1.5.6.pom
+e68c9dbf476a5d1d42a7d2d80ac140ad  usr/share/maven-repo/commons-pool/commons-pool/debian/commons-pool-debian.pom

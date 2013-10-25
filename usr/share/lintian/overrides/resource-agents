@@ -1,0 +1,3 @@
+resource-agents: binary-without-manpage usr/sbin/ocft
+resource-agents: binary-without-manpage usr/sbin/sfex_init
+resource-agents: binary-without-manpage usr/sbin/sfex_stat

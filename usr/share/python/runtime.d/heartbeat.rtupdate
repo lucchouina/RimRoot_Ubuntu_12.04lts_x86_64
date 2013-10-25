@@ -1,0 +1,6 @@
+#! /bin/sh
+set -e
+if [ "$1" = rtupdate ]; then
+	pyclean -p heartbeat /usr/share/heartbeat
+	pycompile -p heartbeat -V 2.6- /usr/share/heartbeat
+fi

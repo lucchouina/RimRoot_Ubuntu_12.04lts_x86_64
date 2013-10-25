@@ -1,0 +1,6 @@
+/etc/corosync/corosync.conf.example.udpu
+/etc/corosync/corosync.conf.example
+/etc/corosync/corosync.conf
+/etc/logrotate.d/corosync
+/etc/default/corosync
+/etc/init.d/corosync

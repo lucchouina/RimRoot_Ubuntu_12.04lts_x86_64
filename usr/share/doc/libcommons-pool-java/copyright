@@ -1,0 +1,22 @@
+Format: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?op=file&rev=166
+Upstream-Name: Commons Pool
+Upstream-Contact: Apache Commons: <http://commons.apache.org/pool/>
+Source: http://www.apache.org/dist/commons/pool/
+
+Files: *
+Copyright: Copyright (C) 1999-2011 The Apache Software Foundation
+License: Apache-2.0
+ On Debian systems the full text of the Apache License can be found
+ in `/usr/share/common-licenses/Apache-2.0'.
+Comment:
+ Upstream authors: Craig McClanahan, David Weinrich, Dirk Verbeeck,
+ Geir Magnusson, Morgan Delagrange, Robert Burrell Donkin, Rodney
+ Waldhoff, Sandy McArthur, Todd Carmichael.
+
+Files: debian/*
+Copyright: Copyright (C) 2002 Adam Heath <doogie@brainfood.com>
+Copyright: Copyright (C) 2006 Marcus Better <marcus@better.se>
+Copyright: Copyright (C) 2010-2011 Damien Raude-Morvan <drazzib@debian.org>
+License: Apache-2.0
+  On Debian systems the full text of the Apache License can be found
+  in `/usr/share/common-licenses/Apache-2.0'.

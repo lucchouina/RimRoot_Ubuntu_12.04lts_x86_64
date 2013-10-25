@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installinit
+if [ -x "/etc/init.d/openhpid" ]; then
+	update-rc.d openhpid defaults >/dev/null
+	invoke-rc.d openhpid start || exit $?
+fi
+# End automatically added section

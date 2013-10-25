@@ -1,0 +1,1 @@
+update-rc.d heartbeat start 75 2 3 4 5 . stop 05 0 1 6 .

@@ -1,0 +1,9 @@
+7885951ceb884c04f8bafc482ce3bf30  usr/lib/esmtp/sasl-cram-md5.so
+06c1cf8dc76667fe0fac6b1922f5e966  usr/lib/esmtp/sasl-login.so
+4310245e2bd09b82864f5fe25b934fc9  usr/lib/esmtp/sasl-plain.so
+f468e2cf14877ea834fcc65cb4651211  usr/lib/libesmtp.so.6.1.6
+7e19e61e02f071bd76d093b3e845942a  usr/share/doc/libesmtp6/changelog.Debian.gz
+b9cc4d53336a0992d161923cec0215dc  usr/share/doc/libesmtp6/copyright
+0f989c9326ff295d7e050a403f0ea3f0  usr/share/doc/libesmtp6/examples/Makefile
+a3feb087b75ab5e6a64d9b65d206190f  usr/share/doc/libesmtp6/examples/mail-file.c.gz
+a72d62be6a818708499d2dc5e0ee2c11  usr/share/doc/libesmtp6/examples/test-mail

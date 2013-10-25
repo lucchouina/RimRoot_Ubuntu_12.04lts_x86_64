@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/beep
+/usr/share/doc/beep/README.gz
+/usr/share/doc/beep/CREDITS
+/usr/share/doc/beep/copyright
+/usr/share/doc/beep/changelog.Debian.gz
+/usr/share/doc/beep/README.Debian
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/beep.1.gz
+/usr/bin
+/usr/bin/beep

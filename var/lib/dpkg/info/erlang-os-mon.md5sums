@@ -1,0 +1,17 @@
+c3491ad444f8d74a545ddb1d8bba43d8  usr/lib/erlang/lib/os_mon-2.2.7/ebin/cpu_sup.beam
+33c35ef9de9b66f30ccbc9a401bbba00  usr/lib/erlang/lib/os_mon-2.2.7/ebin/disksup.beam
+415dd4af6ec358523544a41976c60c08  usr/lib/erlang/lib/os_mon-2.2.7/ebin/memsup.beam
+e8f06322f1daf590ea41607ac86b473f  usr/lib/erlang/lib/os_mon-2.2.7/ebin/nteventlog.beam
+2ccbd917a2ed7a7a0b7aba05ff393930  usr/lib/erlang/lib/os_mon-2.2.7/ebin/os_mon.app
+e412425f3b3787b8e12f109d3c70b723  usr/lib/erlang/lib/os_mon-2.2.7/ebin/os_mon.appup
+19a268474ef716bfca4abaca4b7fe7ef  usr/lib/erlang/lib/os_mon-2.2.7/ebin/os_mon.beam
+9507215399ec63a7866bbe5c981dc73c  usr/lib/erlang/lib/os_mon-2.2.7/ebin/os_mon_mib.beam
+5c9d654d949b7754a522e3b0fa9ddc16  usr/lib/erlang/lib/os_mon-2.2.7/ebin/os_mon_sysinfo.beam
+65326ce35b3e6ebe2726640590984b57  usr/lib/erlang/lib/os_mon-2.2.7/ebin/os_sup.beam
+1eef0dd2cd6ae3d90975aaffcb1cf37f  usr/lib/erlang/lib/os_mon-2.2.7/mibs/OTP-OS-MON-MIB.funcs
+8e1ca8720dd8324df1bc8706de62c5c8  usr/lib/erlang/lib/os_mon-2.2.7/mibs/OTP-OS-MON-MIB.mib
+8a41f33fd56c2a74aa12b6be33f63ea9  usr/lib/erlang/lib/os_mon-2.2.7/mibs/v1/OTP-OS-MON-MIB.mib.v1
+5f68d16a19a69175d29d2fc97dc1cd3e  usr/lib/erlang/lib/os_mon-2.2.7/priv/bin/cpu_sup
+871aad7846b39226942b51cecdd457c1  usr/lib/erlang/lib/os_mon-2.2.7/priv/bin/memsup
+48fdea1056f3724900863c1ac4d5ac82  usr/lib/erlang/lib/os_mon-2.2.7/priv/mibs/OTP-OS-MON-MIB.bin
+588c39c282e1da3de1fcd0f40c685f25  usr/share/doc/erlang-os-mon/copyright

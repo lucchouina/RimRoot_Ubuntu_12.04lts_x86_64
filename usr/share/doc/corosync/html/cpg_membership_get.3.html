@@ -1,0 +1,98 @@
+<!-- Creator     : groff version 1.21 -->
+<!-- CreationDate: Mon Dec 12 13:48:51 2011 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>CPG_MEMBERSHIP_GET</title>
+
+</head>
+<body>
+
+<h1 align="center">CPG_MEMBERSHIP_GET</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#ERRORS">ERRORS</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em">cpg_membership_get
+&minus; Returns a list of members of a CPG group</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>#include
+&lt;corosync/cpg.h&gt;</b></p>
+
+<p style="margin-left:11%; margin-top: 1em"><b>int
+cpg_membership_get(cpg_handle_t</b> <i>handle</i><b>, struct
+cpg_name *</b><i>groupName</i><b>, struct cpg_address
+*</b><i>member_list</i><b>, int
+*</b><i>member_list_entries</i><b>);</b></p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The
+<b>cpg_membership_get</b> function is used to determine the
+current processes in the configuration. You probably will
+not need to call this function much as one of the first
+confchg callbacks you will get will be from the cpg_join()
+function containing your process. The argument <i>handle</i>
+is used to reference the cpg instantiation. The argument
+<i>groupName</i> will return the name of the group The
+argument <i>member_list</i> will return the list of
+processors in the current membership. The argument
+<i>member_list_entries</i> should be set with the size of
+member_list and will return the size of the member_list
+after return from the function.</p>
+
+<h2>ERRORS
+<a name="ERRORS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The errors are
+undocumented.</p>
+
+<h2>SEE ALSO
+<a name="SEE ALSO"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>cpg_overview</b>(8),
+<b>cpg_initialize</b>(3), <b>cpg_finalize</b>(3),
+<b>cpg_fd_get</b>(3), <b>cpg_dispatch</b>(3),
+<b>cpg_join</b>(3), <b>cpg_leave</b>(3),
+<b>cpg_mcast_joined</b>(3), <b>cpg_membership_get</b>(3)
+<b>cpg_zcb_alloc</b>(3) <b>cpg_zcb_free</b>(3)
+<b>cpg_zcb_mcast_joined</b>(3) <b>cpg_context_get</b>(3)
+<b>cpg_context_set</b>(3) <b>cpg_local_get</b>(3)</p>
+<hr>
+</body>
+</html>

@@ -1,0 +1,69 @@
+Package: debootstrap
+Description-md5: 883a8efb3ed16248b0d2091d9c0b60c9
+Description-en: Bootstrap a basic Debian system
+ debootstrap is used to create a Debian base system from scratch,
+ without requiring the availability of dpkg or apt. It does this by
+ downloading .deb files from a mirror site, and carefully unpacking them
+ into a directory which can eventually be chrooted into.
+
+Package: libjs-jquery
+Description-md5: 7962611d0963445869229c974a815cea
+Description-en: JavaScript library for dynamic web applications
+ jQuery is a fast, concise, JavaScript Library that simplifies how you
+ traverse HTML documents, handle events, perform animations, and add Ajax
+ interactions to your web pages. jQuery is designed to change the way
+ that you write JavaScript.
+
+Package: libjs-underscore
+Description-md5: a77ac32abf4789aa283df7d50866a802
+Description-en: JavaScript's functional programming helper library
+ Underscore is a utility-belt library for JavaScript that provides a lot
+ of the functional programming support that you would expect in
+ Prototype.js (or Ruby), but without extending any of the built-in
+ JavaScript objects.  It's the tie to go along with jQuery's tux.
+ .
+ Underscore provides 60-odd functions that support both the usual
+ functional suspects: map, select, invoke - as well as more specialized
+ helpers: function binding, javascript templating, deep equality
+ testing, and so on.  It delegates to built-in functions, if present, so
+ modern browsers will use the native implementations of forEach, map,
+ reduce, filter, every, some and indexOf.
+
+Package: oxygen-cursor-theme
+Description-md5: 4c5002a4e592e5cc90c51c07857a8cde
+Description-en: Oxygen mouse cursor theme
+ This package contains the Oxygen cursor theme,
+ originally created for KDE 4.
+ .
+ The cursors are available in numerous colors to
+ match the style of any desktop.
+
+Package: oxygen-cursor-theme-extra
+Description-md5: 7bf7b82f1ad312760833c12442716fa0
+Description-en: Oxygen mouse cursor theme - extra colors
+ This package contains the Oxygen cursor theme,  originally created for KDE 4.
+ .
+ This package contains extra cursor colors: black, blue, brown,
+ emerald, green, grey, hot_orange, navy, red, red-argentina, purple
+ sea_blue, violet, viorange and yellow.
+
+Package: rekonq
+Description-md5: 4f2befe2b341d275e963f610c34515e9
+Description-en: KDE web browser based on Webkit
+ rekonq is a web browser based on WebKit and the KDE technologies.
+ Its aim is to integrate nicely in the KDE desktop while providing
+ a lightweight experience.
+ .
+ Non-exhaustive list of features :
+  - shares bookmarks and network settings with konqueror
+  - uses the kwallet password manager
+  - integrates with the kget download manager
+  - anonymous browsing mode
+
+Package: rekonq-dbg
+Description-md5: d54591f3e5bb4e156f58c25982294590
+Description-en: debugging symbols for rekonq
+ This package contains the debugging symbols associated with rekonq.
+ They will automatically be used by gdb for debugging rekonq-related
+ issues.
+

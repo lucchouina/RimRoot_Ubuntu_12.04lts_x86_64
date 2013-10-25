@@ -1,0 +1,1 @@
+update-rc.d rabbitmq-server defaults

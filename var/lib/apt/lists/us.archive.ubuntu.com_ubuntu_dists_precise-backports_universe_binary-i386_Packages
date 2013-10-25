@@ -1,0 +1,3455 @@
+Package: 0ad
+Priority: optional
+Section: universe/games
+Installed-Size: 8277
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: i386
+Version: 0.0.11-1~ubuntu12.04.1
+Depends: 0ad-data (>= 0.0.11), 0ad-data (<= 0.0.11-1~ubuntu12.04.1), libboost-filesystem1.46.1 (>= 1.46.1-1), libboost-signals1.46.1 (>= 1.46.1-1), libc6 (>= 2.15), libcurl3-gnutls (>= 7.16.2-1), libenet1a, libgcc1 (>= 1:4.1.1), libgl1-mesa-glx | libgl1, libjpeg8 (>= 8c), libmozjs185-1.0 (>= 1.8.5-1.0.0), libnvtt2, libopenal1 (>= 1:1.13), libpng12-0 (>= 1.2.13-4), libsdl1.2debian (>= 1.2.10-1), libstdc++6 (>= 4.6), libvorbisfile3 (>= 1.1.2), libwxbase2.8-0 (>= 2.8.12.1), libwxgtk2.8-0 (>= 2.8.12.1), libx11-6, libxcursor1 (>> 1.1.2), libxml2 (>= 2.7.4), zlib1g (>= 1:1.2.0)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/universe/0/0ad/0ad_0.0.11-1~ubuntu12.04.1_i386.deb
+Size: 2392866
+MD5sum: 94f12be9bb0a2f17f6255e479835c14d
+SHA1: 234949e188915e1874b8f684bcca79844c986779
+SHA256: df3d1199b9d44ec880904e5d65d84b4fffde54d82c740451606cdb212eb90235
+Description: Real-time strategy game of ancient warfare
+Homepage: http://www.wildfiregames.com/0ad/
+Description-md5: d943033bedada21853d2ae54a2578a7b
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: 0ad-data
+Priority: optional
+Section: universe/games
+Installed-Size: 865058
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 0.0.11-1~ubuntu12.04.1
+Depends: tex-gyre, ttf-dejavu-core
+Pre-Depends: dpkg (>= 1.15.6~)
+Suggests: 0ad
+Filename: pool/universe/0/0ad-data/0ad-data_0.0.11-1~ubuntu12.04.1_all.deb
+Size: 356585694
+MD5sum: d8303959349ec4723d212ac5bb6abb26
+SHA1: 934135dc73880ed577884d87a458f18cb4ed5f13
+SHA256: b17f50d8a851a6f78ca6a302dfb354c58579bb7d4b6271d2ca2d49d036726d3f
+Description: Real-time strategy game of ancient warfare (data)
+Homepage: http://wildfiregames.com/0ad/
+Description-md5: df27feb8d9352e2909a3e6cd62916daa
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: 0ad-dbg
+Priority: extra
+Section: universe/debug
+Installed-Size: 45468
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: i386
+Source: 0ad
+Version: 0.0.11-1~ubuntu12.04.1
+Depends: 0ad (= 0.0.11-1~ubuntu12.04.1)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/universe/0/0ad/0ad-dbg_0.0.11-1~ubuntu12.04.1_i386.deb
+Size: 44745514
+MD5sum: b02a7beabe10b19050df2b325a346c8c
+SHA1: 0462f9ab4d5b428c576ad161354812c85181155b
+SHA256: a523e702729e99a817e39f05bbc8239dc4f094a8181d6041c868ba5f0c7365a0
+Description: Real-time strategy game of ancient warfare (debug)
+Homepage: http://www.wildfiregames.com/0ad/
+Description-md5: a858b67397d1d84d8b4cac9d0deae0d7
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: amsn
+Priority: optional
+Section: universe/x11
+Installed-Size: 1107
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Vivia Nikolaidou <n.vivia@gmail.com>
+Architecture: i386
+Version: 0.98.9-1ubuntu1~ubuntu12.04.1
+Replaces: amsn-data (<< 0.98.9-1)
+Depends: libc6 (>= 2.15), libgcc1 (>= 1:4.1.1), libglib2.0-0 (>= 2.12.0), libgupnp-igd-1.0-4 (>= 0.2.1), libjpeg8 (>= 8c), libpng12-0 (>= 1.2.13-4), libstdc++6 (>= 4.6), libx11-6, amsn-data (= 0.98.9-1ubuntu1~ubuntu12.04.1), libfarstream-0.1-0, tcl8.5, tk8.5, tcl-tls, xdg-utils
+Recommends: libsnack2-alsa | libsnack2
+Suggests: www-browser
+Conflicts: amsn-data (<< 0.98.9-1)
+Filename: pool/universe/a/amsn/amsn_0.98.9-1ubuntu1~ubuntu12.04.1_i386.deb
+Size: 409392
+MD5sum: 309797cb21335d17c4232bea508cdb3a
+SHA1: e08c484ad7ba5be722caf1ed1f4eae1eb41986fb
+SHA256: d8cf289c82c724e29f12c63d0d432896dfacf670a9ebb7a5ef754247d3b3f1b5
+Description: MSN messenger application written in Tcl
+Homepage: http://amsn.sourceforge.net/
+Description-md5: 0028bb6f77772d094412f479297fa3d4
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: amsn-data
+Priority: optional
+Section: universe/x11
+Installed-Size: 22838
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Vivia Nikolaidou <n.vivia@gmail.com>
+Architecture: all
+Source: amsn
+Version: 0.98.9-1ubuntu1~ubuntu12.04.1
+Replaces: amsn (<< 0.98.9-1)
+Depends: tk8.5
+Recommends: python
+Conflicts: amsn (<< 0.98.9-1)
+Filename: pool/universe/a/amsn/amsn-data_0.98.9-1ubuntu1~ubuntu12.04.1_all.deb
+Size: 12544562
+MD5sum: 1bf61f91212f0a8b222326a624d22b71
+SHA1: b5809f374b63a900c0ac8a94c5af8f19f408c866
+SHA256: 032ffad00696a1f8c5a38cd79b5911814b3297dfa6bfbe3f4f57ef1b4ca71872
+Description: Data files for aMSN
+Homepage: http://amsn.sourceforge.net/
+Description-md5: 26b1a34f40178b87262be4ecc09a4422
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: ansible
+Priority: optional
+Section: universe/admin
+Installed-Size: 1190
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Janos Guljas <janos@debian.org>
+Architecture: all
+Version: 1.1+dfsg-1~ubuntu12.04.1
+Depends: python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8), python-yaml, python-paramiko, python-jinja2
+Filename: pool/universe/a/ansible/ansible_1.1+dfsg-1~ubuntu12.04.1_all.deb
+Size: 245280
+MD5sum: ed1a044df57dad304e51ffbdcc6071fa
+SHA1: 8960d3195b0036ae6f702d116f7f7f9f40eecf90
+SHA256: 5f5438894686c8d1de7db496a4076d902f4084b836e1d8145955b3e8754fde67
+Description: Configuration management, deployment, and task execution system
+Homepage: http://ansible.cc
+Description-md5: db2b21b0d2286fccc4401d5982361488
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: ansible-doc
+Priority: optional
+Section: universe/doc
+Installed-Size: 1248
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Janos Guljas <janos@debian.org>
+Architecture: all
+Source: ansible
+Version: 1.1+dfsg-1~ubuntu12.04.1
+Depends: libjs-jquery, libjs-underscore
+Filename: pool/universe/a/ansible/ansible-doc_1.1+dfsg-1~ubuntu12.04.1_all.deb
+Size: 588498
+MD5sum: c468f795133ccbd5697b3dc000bb7c2d
+SHA1: 3cbf41ee47aee9cae6602704a1dcd14cc9f9f489
+SHA256: 084facac8fa4ba2b95e389a1eb66c378ad9c9e1bd6ea77ddacece9ce3e4a0506
+Description: Ansible documentation and examples
+Homepage: http://ansible.cc
+Description-md5: b4f36330179cb3fdb9f9d31dcd85daf0
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: ansible-fireball
+Priority: optional
+Section: universe/admin
+Installed-Size: 42
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Janos Guljas <janos@debian.org>
+Architecture: all
+Source: ansible
+Version: 1.1+dfsg-1~ubuntu12.04.1
+Depends: ansible, python-keyczar, python-zmq
+Filename: pool/universe/a/ansible/ansible-fireball_1.1+dfsg-1~ubuntu12.04.1_all.deb
+Size: 2980
+MD5sum: d08cfc72df5f2b63943560de93edfb90
+SHA1: 7080429135840c6d42cd5688c58130e6e857d502
+SHA256: a7b4947f389c39a8f8012cef7f8f3269a644ea4e92c4f80552b08d89568edcc2
+Description: Ansible fireball transport support
+Homepage: http://ansible.cc
+Description-md5: efce1d8806104f92be6bdb77fb800621
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: ansible-node-fireball
+Priority: optional
+Section: universe/admin
+Installed-Size: 42
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Janos Guljas <janos@debian.org>
+Architecture: all
+Source: ansible
+Version: 1.1+dfsg-1~ubuntu12.04.1
+Depends: python-keyczar, python-zmq
+Filename: pool/universe/a/ansible/ansible-node-fireball_1.1+dfsg-1~ubuntu12.04.1_all.deb
+Size: 3670
+MD5sum: e224cd405c83a755d667b605d5c807b6
+SHA1: eee312fc6f43832a1a7e31462e0ce766533b543a
+SHA256: 19a5147f1703bfdd98608358acd64f043974ab7d41ce75633e63845347e2cd10
+Description: Ansible fireball transport support for nodes
+Homepage: http://ansible.cc
+Description-md5: 3765823451b25d1f45b97cc95330751d
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: apt-cacher-ng
+Priority: optional
+Section: universe/net
+Installed-Size: 1145
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Eduard Bloch <blade@debian.org>
+Architecture: i386
+Version: 0.7.11-1~ubuntu12.04.1
+Depends: libbz2-1.0, libc6 (>= 2.15), libgcc1 (>= 1:4.1.1), liblzma5 (>= 5.1.1alpha+20110809), libstdc++6 (>= 4.6), libwrap0 (>= 7.6-4~), zlib1g (>= 1:1.1.4), debconf (>= 0.5) | debconf-2.0, adduser
+Pre-Depends: dpkg (>= 1.15.6)
+Recommends: perl (>> 5.8), ed
+Suggests: doc-base, libfuse2 (>= 2.5)
+Filename: pool/universe/a/apt-cacher-ng/apt-cacher-ng_0.7.11-1~ubuntu12.04.1_i386.deb
+Size: 400822
+MD5sum: b49fc4b356640fb972b225ccd70c0e61
+SHA1: 44967b6beadf6e82e7326a6e5e2200fe9d84242f
+SHA256: 784ae3aeca497ce96f0327bfd578179eb9567dec11359126459c26d5d90597e3
+Description: caching proxy server for software repositories
+Homepage: http://www.unix-ag.uni-kl.de/~bloch/acng/
+Description-md5: b88e5e2d04c76e8d4500fb60880c7d76
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: arduino
+Priority: optional
+Section: universe/electronics
+Installed-Size: 1292
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Scott Howard <showard@debian.org>
+Architecture: all
+Version: 1:1.0.1+dfsg-2~ubuntu12.04.1
+Depends: default-jre | java6-runtime, libjna-java, librxtx-java (>= 2.2pre2-3), arduino-core (= 1:1.0.1+dfsg-2~ubuntu12.04.1)
+Recommends: extra-xdg-menus, policykit-1
+Filename: pool/universe/a/arduino/arduino_1.0.1+dfsg-2~ubuntu12.04.1_all.deb
+Size: 1100536
+MD5sum: 65f10946170ec41750a82fa9adfeb9f4
+SHA1: b84fc6765922518776766ad46105055bb8f3d7bc
+SHA256: 52b2737e06ce59ef43bdc405497889d6dbf2d6cc24eabd1dcb1b195adbbdbe3e
+Description: AVR development board IDE and built-in libraries
+Homepage: http://www.arduino.cc
+Description-md5: 60f8f72e8783c6b5a72254120b680cdb
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: arduino-core
+Priority: optional
+Section: universe/electronics
+Installed-Size: 4422
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Scott Howard <showard@debian.org>
+Architecture: all
+Source: arduino
+Version: 1:1.0.1+dfsg-2~ubuntu12.04.1
+Depends: gcc-avr, avrdude, gcc, avr-libc
+Suggests: arduino-mk
+Filename: pool/universe/a/arduino/arduino-core_1.0.1+dfsg-2~ubuntu12.04.1_all.deb
+Size: 700028
+MD5sum: 354bc56851b8d552f1a1d96d754d2319
+SHA1: 637738419ba245582374e049f75d447617a570a2
+SHA256: 3df7856090cc97e3464d27456436a8473352e3fe64891c26584187dd52e8c6de
+Description: Code, examples, and libraries for the Arduino platform
+Homepage: http://www.arduino.cc
+Description-md5: 29d99d7e25c829f76de6144309cd8ebb
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: aws-status
+Priority: optional
+Section: universe/python
+Installed-Size: 44
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Architecture: all
+Source: txaws
+Version: 0.2.3-1ubuntu1~ubuntu12.04.1
+Depends: python, python-txaws (>= 0.2.3-1ubuntu1~ubuntu12.04.1), python-twisted, python-gtk2, python-gobject, python-gnomekeyring, python-appindicator
+Filename: pool/universe/t/txaws/aws-status_0.2.3-1ubuntu1~ubuntu12.04.1_all.deb
+Size: 3134
+MD5sum: d0a5ec130f34866c9a4f12cb81205861
+SHA1: 40942953c2adc74afb6d63eb49104afaaacfb2df
+SHA256: 373a49c84642085a8dfd69d51b1946ac3aa96043347f07c310b37e9a23703199
+Description: txaws based graphical application for monitoring AWS service
+Homepage: https://launchpad.net/txaws
+Description-md5: 9614def6b1b1391ae7ac5d8e645735ef
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: ben
+Priority: optional
+Section: universe/ocaml
+Installed-Size: 1651
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian OCaml Maintainers <debian-ocaml-maint@lists.debian.org>
+Architecture: i386
+Version: 0.6.1ubuntu2~ubuntu12.04.1
+Depends: libc6 (>= 2.11), libpcre3 (>= 8.10), libpq5, bzip2
+Recommends: libjs-jquery, edos-debcheck
+Filename: pool/universe/b/ben/ben_0.6.1ubuntu2~ubuntu12.04.1_i386.deb
+Size: 605846
+MD5sum: 4f70c1416d48be724a75486189e083e8
+SHA1: a76abd1d3121a3884e167aab976c0c912acb645f
+SHA256: bc589f6499838b04f5adde2aad82457df84554e9d64df8acd515c84fe897e2db
+Description: toolbox for Debian maintainers
+Enhances: devscripts
+Homepage: http://ben.debian.net
+Description-md5: 26c1756a0c66374600005f242c6151a7
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: blhc
+Priority: optional
+Section: universe/utils
+Installed-Size: 89
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Jari Aalto <jari.aalto@cante.net>
+Architecture: all
+Version: 0.03+20120626+git93afe23-1~ubuntu12.04.1
+Depends: libdpkg-perl
+Filename: pool/universe/b/blhc/blhc_0.03+20120626+git93afe23-1~ubuntu12.04.1_all.deb
+Size: 23326
+MD5sum: f65c0a1878bc562aef016c0b0a1d920b
+SHA1: 781d32ea20cc834d97b28f850613da7ea1343d93
+SHA256: a32606981bd34145c0cc54c87c71d7cdb47062dc93148859153819ae5afe903b
+Description: build log hardening check
+Homepage: http://ruderich.org/simon/blhc
+Description-md5: 677f2a00e31e316c282b8bf13f2fbe19
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: boinc
+Priority: optional
+Section: universe/net
+Installed-Size: 87
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian BOINC Maintainers <pkg-boinc-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 7.0.65+dfsg-3~ubuntu12.04.1
+Depends: boinc-client (>= 7.0.65+dfsg-3~ubuntu12.04.1), boinc-manager (>= 7.0.65+dfsg-3~ubuntu12.04.1)
+Filename: pool/universe/b/boinc/boinc_7.0.65+dfsg-3~ubuntu12.04.1_all.deb
+Size: 13212
+MD5sum: 2e2d6bb6fb0434ec7519c9a907371e70
+SHA1: d7cbd937180b9a9bc5caff1bd972e2a30622257e
+SHA256: c4041468ef0d9d68c14be0910aedca980ef461f3fa24ce319f8123d25575296f
+Description: metapackage for the BOINC client and the manager
+Homepage: http://boinc.berkeley.edu/
+Description-md5: 79307295fad5fe1f0172f7d981ebfbac
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: boinc-client
+Priority: optional
+Section: universe/net
+Installed-Size: 1309
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian BOINC Maintainers <pkg-boinc-devel@lists.alioth.debian.org>
+Architecture: i386
+Source: boinc
+Version: 7.0.65+dfsg-3~ubuntu12.04.1
+Depends: libboinc7 (= 7.0.65+dfsg-3~ubuntu12.04.1), libc6 (>= 2.15), libcurl3 (>= 7.16.2-1), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1), libx11-6, libxss1, zlib1g (>= 1:1.1.4), debconf (>= 0.5) | debconf-2.0, python, adduser, ca-certificates
+Suggests: boinc-manager, x11-xserver-utils, libcuda1
+Filename: pool/universe/b/boinc/boinc-client_7.0.65+dfsg-3~ubuntu12.04.1_i386.deb
+Size: 424888
+MD5sum: 81433dd70504918a7a8804d42386ebf8
+SHA1: ee5db3c00f2f5bd6f68efc8a74e15909b14adf25
+SHA256: 739fcbedfffb12c23e90cd690c7cb09b1afbcb5892d501a47f95696167563bd5
+Description: core client for the BOINC distributed computing infrastructure
+Homepage: http://boinc.berkeley.edu/
+Description-md5: 9bd4f63a5f0f805b9edce1e36fefff24
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: boinc-dbg
+Priority: extra
+Section: universe/devel
+Installed-Size: 27505
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian BOINC Maintainers <pkg-boinc-devel@lists.alioth.debian.org>
+Architecture: i386
+Source: boinc
+Version: 7.0.65+dfsg-3~ubuntu12.04.1
+Depends: boinc-client (= 7.0.65+dfsg-3~ubuntu12.04.1) | boinc-manager (= 7.0.65+dfsg-3~ubuntu12.04.1) | libboinc7 (= 7.0.65+dfsg-3~ubuntu12.04.1) | libboinc-app7 (= 7.0.65+dfsg-3~ubuntu12.04.1)
+Suggests: libcurl3-dbg, libssl1.0.0-dbg, libwxgtk2.8-dbg
+Filename: pool/universe/b/boinc/boinc-dbg_7.0.65+dfsg-3~ubuntu12.04.1_i386.deb
+Size: 11421984
+MD5sum: e8ec93994b1e353991c35b45b1f152fb
+SHA1: 923ea234172a9f42a831281393195b6622d028e2
+SHA256: 54d3a99d5aa461625f73db2764d4fcafcdede6be6c1a4f011dd57d1ab98f1b7e
+Description: debugging symbols for BOINC binaries
+Homepage: http://boinc.berkeley.edu/
+Description-md5: 3e9b28636550c34ee92c3ca7bf7d88a1
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: boinc-dev
+Priority: optional
+Section: universe/devel
+Installed-Size: 86
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian BOINC Maintainers <pkg-boinc-devel@lists.alioth.debian.org>
+Architecture: all
+Source: boinc
+Version: 7.0.65+dfsg-3~ubuntu12.04.1
+Depends: libboinc-app-dev (= 7.0.65+dfsg-3~ubuntu12.04.1)
+Filename: pool/universe/b/boinc/boinc-dev_7.0.65+dfsg-3~ubuntu12.04.1_all.deb
+Size: 12858
+MD5sum: 94664dddace6d64fa6b9ac81b250290f
+SHA1: b8d7aa5d6d220d3e7ca5d08dfa891e11fad638c8
+SHA256: 94f24eacb1422b3910c6c6d0549313fdbf854b9319af2f73794d76e78c94096f
+Description: development files to build applications for BOINC projects
+Homepage: http://boinc.berkeley.edu/
+Description-md5: e4972735285fcfbe74ebb87ad01d2e97
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: boinc-manager
+Priority: optional
+Section: universe/x11
+Installed-Size: 4503
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian BOINC Maintainers <pkg-boinc-devel@lists.alioth.debian.org>
+Architecture: i386
+Source: boinc
+Version: 7.0.65+dfsg-3~ubuntu12.04.1
+Depends: libboinc7, libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libglib2.0-0 (>= 2.12.0), libgtk2.0-0 (>= 2.10.0), libnotify4 (>= 0.7.0), libsqlite3-0 (>= 3.5.9), libstdc++6 (>= 4.1.1), libwxbase2.8-0 (>= 2.8.12.1), libwxgtk2.8-0 (>= 2.8.12.1), libx11-6
+Recommends: boinc-client
+Suggests: libgl1-mesa-glx, libxt6
+Filename: pool/universe/b/boinc/boinc-manager_7.0.65+dfsg-3~ubuntu12.04.1_i386.deb
+Size: 1705778
+MD5sum: db190dc6ce4f94d8dfcf41db93287471
+SHA1: 9d3d26e97dcbcf1f2dc14f877da1287b64e1f4f1
+SHA256: d7f0559f087b7f410ae95c72f2ccc1d19c16ae0fb729ebf90738cf905df6d939
+Description: GUI to control and monitor the BOINC core client
+Homepage: http://boinc.berkeley.edu/
+Description-md5: 18cdf3bcfd01c25a71225cc0291571cd
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: concavity
+Priority: extra
+Section: universe/science
+Installed-Size: 578
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+Architecture: i386
+Version: 0.1-2~ubuntu12.04.1
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1)
+Suggests: conservation-code, pymol
+Filename: pool/universe/c/concavity/concavity_0.1-2~ubuntu12.04.1_i386.deb
+Size: 314202
+MD5sum: abca40ee4b4004c2d660b97b2b434775
+SHA1: 5beba2ae872a8cac38dda591f4c6a58daa4891de
+SHA256: 86c89b57463a5cab5d7cd74732b4abcb21c40c56a5bdb914b5cc43d3907b7eda
+Description: predictor of protein ligand binding sites from structure and conservation
+Homepage: http://compbio.cs.princeton.edu/concavity/
+Description-md5: a68db1460f6eec4a61a30e82a6efbe0d
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: concavity-dbg
+Priority: extra
+Section: universe/debug
+Installed-Size: 2087
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+Architecture: i386
+Source: concavity
+Version: 0.1-2~ubuntu12.04.1
+Depends: concavity (= 0.1-2~ubuntu12.04.1)
+Filename: pool/universe/c/concavity/concavity-dbg_0.1-2~ubuntu12.04.1_i386.deb
+Size: 769974
+MD5sum: ef54e2a352a3e3170558a49c67d91c29
+SHA1: 98380fe6a40a9d5545241e4ce3cd7b6487bd6c2b
+SHA256: 59b7f0fe95318c4ff35b116859a9524eb7a9466dd73d5e2230bfd5069de682b7
+Description: predictor of protein ligand binding sites (debug)
+Homepage: http://compbio.cs.princeton.edu/concavity/
+Description-md5: 881cd6bf782a31542b26aad13ac242fc
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: config-package-dev
+Priority: extra
+Section: universe/devel
+Installed-Size: 328
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debathena Project <debathena@mit.edu>
+Architecture: all
+Version: 5.0~ubuntu12.04.1
+Filename: pool/universe/c/config-package-dev/config-package-dev_5.0~ubuntu12.04.1_all.deb
+Size: 36072
+MD5sum: 79e48e5ffdb4b1c571240299d5bd0cc0
+SHA1: 8ed981f08cbb9be2e5376b4d5bb1421918bfe9e5
+SHA256: 48ce5348318d60e2026b76260a1fa348b83709aeef8d432e9cb32f189c486216
+Description: Debhelper (and CDBS) modules for building configuration packages
+Homepage: http://debathena.mit.edu/config-package-dev
+Description-md5: f541c22453a6697f725a13e1ca22dd39
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: conky
+Priority: optional
+Section: universe/utils
+Installed-Size: 42
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Vincent Cheng <Vincentc1208@gmail.com>
+Architecture: all
+Version: 1.9.0-2~ubuntu12.04.1
+Depends: conky-std | conky-cli | conky-all
+Filename: pool/universe/c/conky/conky_1.9.0-2~ubuntu12.04.1_all.deb
+Size: 3344
+MD5sum: e82527791f137e62f322ee32ce05d522
+SHA1: 6818ce613823951e164504c1e8d4e7c83a33aafd
+SHA256: e50dfb2d2651fab7eb51815b7654e409247d21fb84aa0c2fdead8d53636cbb01
+Description: highly configurable system monitor (transitional package)
+Homepage: http://conky.sourceforge.net/
+Description-md5: 5e4e3cda9c6e03277267cd8bdfea648a
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: conky-cli
+Priority: optional
+Section: universe/utils
+Installed-Size: 701
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Vincent Cheng <Vincentc1208@gmail.com>
+Architecture: i386
+Source: conky
+Version: 1.9.0-2~ubuntu12.04.1
+Replaces: conky-all, conky-std
+Depends: libc6 (>= 2.15), libncurses5 (>= 5.5-5~), libtinfo5
+Suggests: apcupsd, moc, mpd
+Conflicts: conky-all, conky-std
+Filename: pool/universe/c/conky/conky-cli_1.9.0-2~ubuntu12.04.1_i386.deb
+Size: 230888
+MD5sum: f271716675ba0302c39ea2afb3c69415
+SHA1: 7c8d9b82829ed5e34df0b8abe361f7b60459c9e6
+SHA256: fe97dce617bacb0b90e0f0aa3dc523613ecc7d369658486ea1be938b4abc7f1a
+Description: highly configurable system monitor (basic version)
+Homepage: http://conky.sourceforge.net/
+Description-md5: bd7f330cb72b7488a0e2e3a9ed1d5681
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: conky-std
+Priority: optional
+Section: universe/utils
+Installed-Size: 1200
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Vincent Cheng <Vincentc1208@gmail.com>
+Architecture: i386
+Source: conky
+Version: 1.9.0-2~ubuntu12.04.1
+Replaces: conky-all, conky-cli
+Depends: libaudclient2 (>= 2.3), libc6 (>= 2.15), libcairo2 (>= 1.8.0), libcurl3-gnutls (>= 7.16.2-1), libdbus-glib-1-2 (>= 0.78), libglib2.0-0 (>= 2.12.0), libimlib2, libiw30 (>= 30~pre1), liblua5.1-0, libncurses5 (>= 5.5-5~), libtinfo5, libx11-6, libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxft2 (>> 2.1.1), libxml2 (>= 2.7.4), libxmmsclient6 (>= 0.7DrNo)
+Suggests: apcupsd, audacious, moc, mpd, xmms2
+Conflicts: conky-all, conky-cli
+Filename: pool/universe/c/conky/conky-std_1.9.0-2~ubuntu12.04.1_i386.deb
+Size: 380448
+MD5sum: f17faf3b0550b675ef0a5bee5b76e5c9
+SHA1: 35ac00ef00a8e8326b1178df7843ca35c229634f
+SHA256: 3f696ba5b786aaf243df58453722cfa48c776830adb344c031eddf1f5df5623e
+Description: highly configurable system monitor (default version)
+Homepage: http://conky.sourceforge.net/
+Description-md5: 5619738a896b490cb513d89304af94f8
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: conservation-code
+Priority: extra
+Section: universe/science
+Installed-Size: 123
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+Architecture: all
+Version: 20110309.0-1~ubuntu12.04.1
+Depends: python, python-numpy
+Filename: pool/universe/c/conservation-code/conservation-code_20110309.0-1~ubuntu12.04.1_all.deb
+Size: 25428
+MD5sum: 7a651d89058d0830e7d495ac8f808375
+SHA1: 41f34aa823620ed016397afcdbc46339032a81c0
+SHA256: 6fef4bc2a6a53435006f8e973faf8bfbf5de77f84b590f4964dad48ff1d9fee8
+Description: protein sequence conservation scoring tool
+Enhances: concavity
+Homepage: http://compbio.cs.princeton.edu/conservation/
+Description-md5: 35f238c6a81ce482741e5d5359932062
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: crtmpserver
+Priority: optional
+Section: universe/video
+Installed-Size: 132
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 1.0~dfsg-3~ubuntu12.04.1
+Depends: crtmpserver-apps, crtmpserver-libs, libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.4.0)
+Filename: pool/universe/c/crtmpserver/crtmpserver_1.0~dfsg-3~ubuntu12.04.1_i386.deb
+Size: 28560
+MD5sum: bac93a7fa82519537531b7d76069af90
+SHA1: 7230b2c5411121652b0bf18cddf9bcd5e0e2cf13
+SHA256: 59013a93a1ec55f8c80d551138004d50e49d5a91d749da101e0939ce91cfefd4
+Description: High performance RTMP/RTSP streaming server
+Homepage: http://www.rtmpd.com
+Description-md5: 9657af23259dc91ceceff6fa43b99ab9
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: crtmpserver-apps
+Priority: optional
+Section: universe/video
+Installed-Size: 636
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Source: crtmpserver
+Version: 1.0~dfsg-3~ubuntu12.04.1
+Replaces: crtmpserver (<< 0.0~dfsg+svn611.1-1)
+Depends: crtmpserver-libs (>= 1.0~dfsg-3~ubuntu12.04.1), libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libssl1.0.0 (>= 1.0.0), libstdc++6 (>= 4.1.1)
+Breaks: crtmpserver (<< 0.0~dfsg+svn611.1-1)
+Filename: pool/universe/c/crtmpserver/crtmpserver-apps_1.0~dfsg-3~ubuntu12.04.1_i386.deb
+Size: 197218
+MD5sum: d4769556a50c326f8f7f9b6aa0098977
+SHA1: 47d5b4f1c87aa587cffe5ab663513e8c046fd219
+SHA256: 03e73891123117f7180318e110ac9ef78a56e35dfb042e6da20458b431cc02c4
+Description: base applications for the crtmpserver platform
+Homepage: http://www.rtmpd.com
+Description-md5: 96f1f41489cb04d359a55fb0ebd36d1c
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: crtmpserver-dev
+Priority: optional
+Section: universe/video
+Installed-Size: 812
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Source: crtmpserver
+Version: 1.0~dfsg-3~ubuntu12.04.1
+Depends: crtmpserver-libs (= 1.0~dfsg-3~ubuntu12.04.1), liblua5.1-0-dev, libssl-dev, libtinyxml-dev
+Filename: pool/universe/c/crtmpserver/crtmpserver-dev_1.0~dfsg-3~ubuntu12.04.1_i386.deb
+Size: 90360
+MD5sum: 63ed2087d763f74d8783eacf7f57551e
+SHA1: f7b47920d3e8086e449493cb88c290054e14d12c
+SHA256: e2a9b6aa3f4fd056a04bc4f1d96d1795f17864714cd79c7d681d6cb5507dd8fd
+Description: Development files for the crtmpserver platform
+Homepage: http://www.rtmpd.com
+Description-md5: 0bf6725e40119b91cb4bc82c57618c68
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: crtmpserver-libs
+Priority: optional
+Section: universe/video
+Installed-Size: 2596
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Source: crtmpserver
+Version: 1.0~dfsg-3~ubuntu12.04.1
+Replaces: crtmpserver (<< 0.0~dfsg+svn611.1-1)
+Depends: liblua5.1-0, libtinyxml2.6.2, openssl, libc6 (>= 2.8), libgcc1 (>= 1:4.1.1), libssl1.0.0 (>= 1.0.0), libstdc++6 (>= 4.4.0)
+Breaks: crtmpserver (<< 0.0~dfsg+svn611.1-1)
+Filename: pool/universe/c/crtmpserver/crtmpserver-libs_1.0~dfsg-3~ubuntu12.04.1_i386.deb
+Size: 1036058
+MD5sum: b8ca8dd364d0907478310f714ce508c0
+SHA1: 5f29821c0566575a3c45ae7f46c855f344eb8c0e
+SHA256: 4659b55bcdad4b636ffa41634b9d6112308ee7e9d3298601133bd3966f049fd9
+Description: shared libraries for the crtmpserver platform
+Homepage: http://www.rtmpd.com
+Description-md5: a7ec3bbef1eda98ec385abe895f4d602
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: django-tables
+Priority: optional
+Section: universe/python
+Installed-Size: 215
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Brian May <bam@debian.org>
+Architecture: all
+Version: 0.13.0-1~ubuntu12.04.1
+Depends: python, python-support (>= 0.90.0), python-django (>= 1.2)
+Recommends: python-django (>= 1.3.0)
+Filename: pool/universe/d/django-tables/django-tables_0.13.0-1~ubuntu12.04.1_all.deb
+Size: 36928
+MD5sum: 6f2f89704ea69f8cbd168d28d43235ab
+SHA1: a963cb1d413f74056c8b25a614d811c1b83871d0
+SHA256: aa16d00fe21fff5a4238abf14caa1e9b001149d8ad0288d675397e799178f8e9
+Description: Django library for rendering Django QuerySets
+Homepage: http://github.com/miracle2k/django-tables
+Description-md5: 1155586fd08067bc873c809ef1f318aa
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: dvdbackup
+Priority: optional
+Section: universe/utils
+Installed-Size: 342
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Stephen Gran <sgran@debian.org>
+Architecture: i386
+Version: 0.4.2-1~ubuntu12.04.1
+Depends: libc6 (>= 2.4), libdvdread4
+Suggests: libdvdcss2
+Filename: pool/universe/d/dvdbackup/dvdbackup_0.4.2-1~ubuntu12.04.1_i386.deb
+Size: 48786
+MD5sum: 02498b937bf3217049c1c6da6e9250d7
+SHA1: 71aaabab124a0f455405d59163f9409ade5ef110
+SHA256: e563087cf0a43ba6c2e5a6369ddaa6dde14ce5e6d8e1a63124012a1130ce5c22
+Description: tool to rip DVD's from the command line
+Homepage: http://dvdbackup.sourceforge.net
+Description-md5: b4879cb8d0f49e81b7b69c9613032cb1
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: dvdbackup-dbg
+Priority: extra
+Section: universe/utils
+Installed-Size: 77
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Stephen Gran <sgran@debian.org>
+Architecture: i386
+Source: dvdbackup
+Version: 0.4.2-1~ubuntu12.04.1
+Depends: dvdbackup (= 0.4.2-1~ubuntu12.04.1)
+Filename: pool/universe/d/dvdbackup/dvdbackup-dbg_0.4.2-1~ubuntu12.04.1_i386.deb
+Size: 31258
+MD5sum: 575d91c81daadd5159d8ccc4f157da08
+SHA1: 2904156dbac7306132565d4b3e44350dfd484274
+SHA256: e90f73c844cecbe619debdd64b5dbc29ceb0f9e5cc97617926edd146a84d579a
+Description: debug files for dvdbackup
+Homepage: http://dvdbackup.sourceforge.net
+Description-md5: 491f3ef60b97db56d593abdca1aafe89
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: freeciv-client-extras
+Priority: optional
+Section: universe/games
+Installed-Size: 3735
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: i386
+Source: freeciv
+Version: 2.3.2-1~ubuntu12.04.1
+Depends: libbz2-1.0, libc6 (>= 2.15), libglib2.0-0 (>= 2.31.8), libgtk2.0-0 (>= 2.8.0), liblua5.1-0, libreadline6 (>= 6.0), libsdl-mixer1.2, libsdl1.2debian (>= 1.2.10-1), zlib1g (>= 1:1.1.4), freeciv-data
+Filename: pool/universe/f/freeciv/freeciv-client-extras_2.3.2-1~ubuntu12.04.1_i386.deb
+Size: 1410566
+MD5sum: 4adda732a4d3acd5041f734445e7d47a
+SHA1: 4de9a58df229626c85f218b2081aa4b8710b04fa
+SHA256: 10858f2f7941db7ab2bd8bf5302e05c2a44e3bdea2011494c944f0d9a714daf6
+Description: Civilization turn based strategy game (miscellaneous extras)
+Homepage: http://www.freeciv.org/
+Description-md5: 7cc655408eada54f0feaf2cf2304d64f
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: freeciv-client-gtk
+Priority: optional
+Section: universe/games
+Installed-Size: 1972
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: i386
+Source: freeciv
+Version: 2.3.2-1~ubuntu12.04.1
+Provides: freeciv, freeciv-client
+Depends: libbz2-1.0, libc6 (>= 2.15), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.12.0), libgtk2.0-0 (>= 2.8.0), libpango1.0-0 (>= 1.14.0), libsdl-mixer1.2, libsdl1.2debian (>= 1.2.10-1), zlib1g (>= 1:1.1.4), freeciv-data
+Recommends: freeciv-server (>= 2.3.0)
+Suggests: freeciv-sound, freeciv-client-extras
+Filename: pool/universe/f/freeciv/freeciv-client-gtk_2.3.2-1~ubuntu12.04.1_i386.deb
+Size: 734028
+MD5sum: 0803858ad088f57567a7170a6ec74184
+SHA1: 5d5b09c6c8893b2f80aa30990444e29da73f6d36
+SHA256: 4042c6f8b25b6f309d2a0909e007e90102ea592e1451b5d04bf959d62928e250
+Description: Civilization turn based strategy game (GTK+ client)
+Homepage: http://www.freeciv.org/
+Description-md5: 7341ab84e3e270e1db3bb99693f96347
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: freeciv-client-sdl
+Priority: optional
+Section: universe/games
+Installed-Size: 1978
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: i386
+Source: freeciv
+Version: 2.3.2-1~ubuntu12.04.1
+Provides: freeciv, freeciv-client
+Depends: libbz2-1.0, libc6 (>= 2.15), libfreetype6 (>= 2.2.1), libsdl-image1.2 (>= 1.2.10), libsdl-mixer1.2, libsdl1.2debian (>= 1.2.10-1), zlib1g (>= 1:1.1.4), freeciv-data, ttf-dejavu-core, fonts-ipafont-gothic | fonts-japanese-gothic | ttf-sazanami-gothic, ttf-unfonts-core, ttf-arphic-uming
+Recommends: freeciv-server (>= 2.3.0)
+Suggests: freeciv-sound
+Filename: pool/universe/f/freeciv/freeciv-client-sdl_2.3.2-1~ubuntu12.04.1_i386.deb
+Size: 748882
+MD5sum: 4f2103986dd47fbb511f017ff0eb0c7c
+SHA1: df7ce63ba4ac4bea8471b4d0347e471989a25cfa
+SHA256: 029c47bb5353395561d3326de7df70939970213adc264500fa569cbaf7b7106a
+Description: Civilization turn based strategy game (SDL client)
+Homepage: http://www.freeciv.org/
+Description-md5: 4f1e35f2ac2cdd6eda4ffb11dc39b93b
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: freeciv-client-xaw3d
+Priority: optional
+Section: universe/games
+Installed-Size: 1863
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: i386
+Source: freeciv
+Version: 2.3.2-1~ubuntu12.04.1
+Provides: freeciv-client
+Depends: libbz2-1.0, libc6 (>= 2.15), libpng12-0 (>= 1.2.13-4), libsdl-mixer1.2, libsdl1.2debian (>= 1.2.10-1), libx11-6, libxaw7, libxt6, zlib1g (>= 1:1.1.4), freeciv-data
+Recommends: freeciv-server (>= 2.3.0)
+Suggests: freeciv-sound
+Filename: pool/universe/f/freeciv/freeciv-client-xaw3d_2.3.2-1~ubuntu12.04.1_i386.deb
+Size: 641886
+MD5sum: a4304e7fa628445664722be30a34dbf2
+SHA1: 8b73bb8dfb5308cd87932ed4cab1a43d0d748c83
+SHA256: 198adc733b8ceaafdbdce3bcd88bf79dddc8f01ce147bf7c52d0a60f1621e9d2
+Description: Civilization turn based strategy game (Xaw3D client)
+Homepage: http://www.freeciv.org/
+Description-md5: c017f5933d05d22eaa6f9e103d98d659
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: freeciv-data
+Priority: optional
+Section: universe/games
+Installed-Size: 27522
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: all
+Source: freeciv
+Version: 2.3.2-1~ubuntu12.04.1
+Filename: pool/universe/f/freeciv/freeciv-data_2.3.2-1~ubuntu12.04.1_all.deb
+Size: 15563460
+MD5sum: c8cccb4372b8cd9d2b71dfeee6d0fabc
+SHA1: 090542a3b8e20e9374e00bf4d1215f6595c55adb
+SHA256: f4baf044eb2573a4b370b62ffa95be7e3f5a1415fd7c77e18626b6676c325e7c
+Description: Civilization turn based strategy game (game data)
+Homepage: http://www.freeciv.org/
+Description-md5: cee5d1e0219a7891698b8f0cdf6fbcf6
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: freeciv-server
+Priority: optional
+Section: universe/games
+Installed-Size: 2147
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: i386
+Source: freeciv
+Version: 2.3.2-1~ubuntu12.04.1
+Depends: libbz2-1.0, libc6 (>= 2.15), liblua5.1-0, libreadline6 (>= 6.0), zlib1g (>= 1:1.1.4), freeciv-data
+Suggests: freeciv-client
+Filename: pool/universe/f/freeciv/freeciv-server_2.3.2-1~ubuntu12.04.1_i386.deb
+Size: 821718
+MD5sum: 45708393d7f145380f5e02b56fa8fa6b
+SHA1: 53998746300f3fb40f81fac63c681949f85e4504
+SHA256: 036b15c63fe2380d1311d206b19f2c6138aca7c2ec07dbb0406d3397c5c7b78d
+Description: Civilization turn based strategy game (server files)
+Homepage: http://www.freeciv.org/
+Description-md5: 05034be0e9f586e565ca1fa01f7dd762
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: freeciv-sound-standard
+Priority: optional
+Section: universe/games
+Installed-Size: 213
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: all
+Source: freeciv
+Version: 2.3.2-1~ubuntu12.04.1
+Provides: freeciv-sound
+Filename: pool/universe/f/freeciv/freeciv-sound-standard_2.3.2-1~ubuntu12.04.1_all.deb
+Size: 128446
+MD5sum: e41d1be412a4c4864114f15bd47bea87
+SHA1: 279ac2698a118a1c6ea67225e5a231ccc53d31b3
+SHA256: fc172ae1aaf2758c9f56f0aeb1a4ad4ee2044c135292c57e42f48d57b93538e4
+Description: Civilization turn based strategy game (standard sound pack)
+Homepage: http://www.freeciv.org/
+Description-md5: 3db6002d0393bff8b3403d51f8f5f7f1
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: freecol
+Priority: optional
+Section: universe/games
+Installed-Size: 41039
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 0.10.5+dfsg-1ubuntu1~ubuntu12.04.1
+Depends: default-jre | java6-runtime, java-wrappers (>= 0.1.13), libcommons-cli-java, libcortado-java, libmiglayout-java, fonts-liberation (>= 1.07.0-2~)
+Filename: pool/universe/f/freecol/freecol_0.10.5+dfsg-1ubuntu1~ubuntu12.04.1_all.deb
+Size: 34603982
+MD5sum: 718c897d719995661f635b14399f5bdf
+SHA1: 9133a80db006d543d33143285db81e35f844e9b7
+SHA256: 72d404dde112350d1a70361b9ecb7cdd57745c37047266c284d96476e44c6eca
+Description: open source remake of the old Colonization
+Homepage: http://www.freecol.org
+Description-md5: d51c76a89cad0a469d4b6b64a01d7361
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: fritzing
+Priority: optional
+Section: universe/electronics
+Installed-Size: 7077
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Enrique Hernández Bello <ehbello@gmail.com>
+Architecture: i386
+Version: 0.7.4b+dfsg-1~ubuntu12.04.1
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libqt4-network (>= 4:4.5.3), libqt4-sql (>= 4:4.5.3), libqt4-svg (>= 4:4.5.3), libqt4-xml (>= 4:4.5.3), libqtcore4 (>= 4:4.8.0), libqtgui4 (>= 4:4.8.0), libstdc++6 (>= 4.6), zlib1g (>= 1:1.1.4), fritzing-data (= 0.7.4b+dfsg-1~ubuntu12.04.1), libqt4-dbus, libqt4-help, libqt4-opengl, libqt4-webkit, libqt4-xmlpatterns
+Filename: pool/universe/f/fritzing/fritzing_0.7.4b+dfsg-1~ubuntu12.04.1_i386.deb
+Size: 3851956
+MD5sum: 8c26cc08c51974037ae2540d638bc3ec
+SHA1: 15433d19671f1e071c79ab944cdcdf93c96451a2
+SHA256: 1c0ba37fe611d975d0adea9773706d9c1926455dc27f0eea8e12d130e66c7f40
+Description: Easy-to-use electronic design software
+Homepage: http://fritzing.org
+Description-md5: 7f056a3679631d4272496446763b4bd9
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: fritzing-data
+Priority: optional
+Section: universe/electronics
+Installed-Size: 53600
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Enrique Hernández Bello <ehbello@gmail.com>
+Architecture: all
+Source: fritzing
+Version: 0.7.4b+dfsg-1~ubuntu12.04.1
+Filename: pool/universe/f/fritzing/fritzing-data_0.7.4b+dfsg-1~ubuntu12.04.1_all.deb
+Size: 7340042
+MD5sum: a5c311aefb988d80686b39167acad35d
+SHA1: 29a7df2478b90407f334e20339d7351ef53b36e8
+SHA256: 52b9a875bf5756f9d09c5babeb7f0f80ad89bea6cef7ab4c7ec858e30cb78880
+Description: Easy-to-use electronic design software (data files)
+Homepage: http://fritzing.org
+Description-md5: e785ce98bf5abb0260ab40b4807583ac
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: gnome-do
+Priority: optional
+Section: universe/gnome
+Installed-Size: 2405
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian CLI Applications Team <pkg-cli-apps-team@lists.alioth.debian.org>
+Architecture: i386
+Version: 0.9-1~precise1
+Depends: mono-runtime (>= 2.10.1), libc6 (>= 2.15) | libc6.1 (>= 2.15) | libc0.1 (>= 2.15), libgconf2.0-cil (>= 2.24.0), libglib2.0-cil (>= 2.12.10-1ubuntu1), libgnome-keyring1.0-cil (>= 1.0.0), libgnome-vfs2.0-cil (>= 2.24.0), libgnome2.24-cil (>= 2.24.0), libgnomedesktop2.20-cil (>= 2.26.0), libgtk2.0-cil (>= 2.12.10-1ubuntu1), libmono-addins0.2-cil (>= 0.6), libmono-cairo4.0-cil (>= 2.10.1), libmono-corlib4.0-cil (>= 2.10.1), libmono-posix4.0-cil (>= 2.10.1), libmono-system-core4.0-cil (>= 2.10.3), libmono-system-xml4.0-cil (>= 1.0), libmono-system4.0-cil (>= 2.10.7), libndesk-dbus-glib1.0-cil (>= 0.4.0), libndesk-dbus1.0-cil (>= 0.6.0), libnotify0.4-cil (>= 0.4.0~r2998), libnunit2.5-cil, libc6 (>= 2.3.6-6~), libglib2.0-0 (>= 2.12.0), libgtk2.0-0 (>= 2.24.0), libx11-6, gconf2 (>= 2.28.1-2), librsvg2-common, xdg-utils, dbus, procps
+Recommends: gnome-do-plugins (>= 0.8.3)
+Breaks: gnome-do-plugins (<< 0.8.3)
+Filename: pool/universe/g/gnome-do/gnome-do_0.9-1~precise1_i386.deb
+Size: 479662
+MD5sum: b826a8ce36e96f0ec25a5456c71caff5
+SHA1: 3988a776793f6a1b7cedaaf8901fc9803eaf2b7f
+SHA256: e5d10169fb44225d29c6e51a18806d2a5d91c7ba709628b956c058676f384d8a
+Description: Quickly perform actions on your desktop
+Homepage: http://do.davebsd.com/
+Description-md5: d2e64a545884c377087ffc395f1dd41d
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: hedgewars
+Priority: extra
+Section: universe/games
+Installed-Size: 8040
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Dmitry E. Oboukhov <unera@debian.org>
+Architecture: i386
+Version: 0.9.18-0.2ubuntu1.1~ubuntu12.04.1
+Depends: libavcodec53 (>= 4:0.8-1~) | libavcodec-extra-53 (>= 4:0.8-1~), libavformat53 (>= 4:0.8-1~) | libavformat-extra-53 (>= 4:0.8-1~), libavutil51 (>= 4:0.8-1~) | libavutil-extra-51 (>= 4:0.8-1~), libc6 (>= 2.15), libffi6 (>= 3.0.4), libgcc1 (>= 1:4.1.1), libgmp10, liblua5.1-0, libpng12-0 (>= 1.2.13-4), libqt4-network (>= 4:4.5.3), libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.6.2), libsdl-image1.2 (>= 1.2.10), libsdl-mixer1.2, libsdl-net1.2, libsdl-ttf2.0-0, libsdl1.2debian (>= 1.2.10-1), libstdc++6 (>= 4.1.1), zlib1g (>= 1:1.2.0), ttf-dejavu-core, ttf-wqy-zenhei, freeglut3, hedgewars-data (>= 0.9.18)
+Filename: pool/universe/h/hedgewars/hedgewars_0.9.18-0.2ubuntu1.1~ubuntu12.04.1_i386.deb
+Size: 3639026
+MD5sum: cc610b77dbcdbee342dce7e836cfd09f
+SHA1: 01c563218c7f2de07c25bb9ae88df5737a96ec7f
+SHA256: 75a917594cf3563d331d14ae739f2525a46d943fa2729b727912cbfaa0c2530e
+Description: Worms style game
+Homepage: http://hedgewars.org
+Description-md5: 318a323582f36b363618a66d35f8beb4
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: hedgewars-data
+Priority: extra
+Section: universe/games
+Installed-Size: 123376
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Dmitry E. Oboukhov <unera@debian.org>
+Architecture: all
+Source: hedgewars
+Version: 0.9.18-0.2ubuntu1.1~ubuntu12.04.1
+Replaces: hedgewars (<= 0.8.1-10)
+Recommends: hedgewars
+Conflicts: hedgewars (<= 0.8.1-10)
+Filename: pool/universe/h/hedgewars/hedgewars-data_0.9.18-0.2ubuntu1.1~ubuntu12.04.1_all.deb
+Size: 118643952
+MD5sum: 43d6017758ca7ebda6eea5cb378d6387
+SHA1: 83b96ef876e0037d5fa2298dbaf184dfe728ba2d
+SHA256: c3d1c54a74fab07234067c119443feddccd7b1ee5d5a448b6ebaeae9b167eee0
+Description: Data files for hedgewars
+Homepage: http://hedgewars.org
+Description-md5: f3d5a1825cddc6488f63ee95dab636b1
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: ipmitool
+Priority: optional
+Section: universe/utils
+Installed-Size: 1141
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Matthew Johnson <mjj29@debian.org>
+Architecture: i386
+Version: 1.8.12-0ubuntu2~ubuntu12.04.1
+Depends: libc6 (>= 2.15), libreadline6 (>= 6.0), libssl1.0.0 (>= 1.0.0), lsb-base
+Recommends: openipmi
+Filename: pool/universe/i/ipmitool/ipmitool_1.8.12-0ubuntu2~ubuntu12.04.1_i386.deb
+Size: 460086
+MD5sum: 418912f7d6ec1e918adf6a4f4551ee09
+SHA1: d933f59104145fcbbe869f94af85cae5a0787f82
+SHA256: 9f8307fc48e7c3c0025cb4b57664dd6f53a96666c966d5945cd67600d19b7878
+Description: utility for IPMI control with kernel driver or LAN interface
+Description-md5: ddcdf9070612e9885f41dd0384fb9f2c
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: ipython
+Priority: optional
+Section: universe/python
+Installed-Size: 2837
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Architecture: all
+Version: 0.13.2-1~ubuntu12.04.1
+Depends: python-configobj, python-decorator, python-pexpect, python-simplegeneric, python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8)
+Suggests: ipython-doc, ipython-notebook, ipython-qtconsole, python-argparse, python-matplotlib, python-numpy, python-profiler, python-zmq (>= 2.0.10.1)
+Filename: pool/universe/i/ipython/ipython_0.13.2-1~ubuntu12.04.1_all.deb
+Size: 664362
+MD5sum: b6b2426aa9e732c06aa0e3e1fd671713
+SHA1: 3507a759eb9356ea59dab46d13d33389141cfdfd
+SHA256: c5cc8812dc82aaea2557b0b976e5b033efb005a44d18405dd829e813c7ea8845
+Description: enhanced interactive Python shell
+Homepage: http://ipython.org/
+Description-md5: 2b28f078a5ca3afc48380ee4b507967d
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: ipython-doc
+Priority: optional
+Section: universe/doc
+Installed-Size: 15726
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Architecture: all
+Source: ipython
+Version: 0.13.2-1~ubuntu12.04.1
+Replaces: ipython (<< 0.11-2), ipython-notebook (<< 0.12.1-1)
+Depends: libjs-sphinxdoc (>= 1.0)
+Breaks: ipython (<< 0.11-2), ipython-notebook (<< 0.12.1-1)
+Filename: pool/universe/i/ipython/ipython-doc_0.13.2-1~ubuntu12.04.1_all.deb
+Size: 5818178
+MD5sum: eca0152f39c069029b5c59c9b8907e23
+SHA1: ebad02200b09f12f9534cf59438e1525277fa87e
+SHA256: 449c8bf5ddb8128b0d12cb79825874655756f83a0aee9577991ed380f2f0d2d4
+Description: enhanced interactive Python shell - Documentation
+Homepage: http://ipython.org/
+Description-md5: 7cd0d552457eeacc3c5cf652a94d3ea7
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: ipython-notebook
+Priority: optional
+Section: universe/python
+Installed-Size: 179
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Architecture: all
+Source: ipython
+Version: 0.13.2-1~ubuntu12.04.1
+Depends: ipython (= 0.13.2-1~ubuntu12.04.1), ipython-notebook-common (= 0.13.2-1~ubuntu12.04.1), python-tornado (>= 2.1.0), python-zmq (>= 2.1.4), python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8)
+Filename: pool/universe/i/ipython/ipython-notebook_0.13.2-1~ubuntu12.04.1_all.deb
+Size: 25382
+MD5sum: 35ffe0059d0d13613571d712457aeead
+SHA1: b569eee820a659f12acc7957e26da571e4d34f37
+SHA256: 5c987e2c844543db82d04404f39d292937936774f24832af2a37cfaff530e6df
+Description: interactive Python html notebook
+Homepage: http://ipython.org/
+Description-md5: c5800a45a90dccf5a53395dd25deff82
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: ipython-notebook-common
+Priority: optional
+Section: universe/python
+Installed-Size: 1491
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Architecture: all
+Source: ipython
+Version: 0.13.2-1~ubuntu12.04.1
+Replaces: ipython-notebook (<< 0.12.1-2)
+Depends: libjs-jquery (>= 1.7), libjs-mathjax
+Breaks: ipython-notebook (<< 0.12.1-2)
+Filename: pool/universe/i/ipython/ipython-notebook-common_0.13.2-1~ubuntu12.04.1_all.deb
+Size: 360466
+MD5sum: bfd3f09a82dd65ae127dd223c6fe25b0
+SHA1: 5c0f98a932b8f57d52054dc8c8ed9d3617e1f336
+SHA256: c24147148a87e7c99f76cadc7c734704e2d7a76b9dfc6d948874b9dc2eddfeb0
+Description: interactive Python html notebook data package
+Homepage: http://ipython.org/
+Description-md5: eff741100190ac362ae32856b4ec1b67
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: ipython-qtconsole
+Priority: optional
+Section: universe/python
+Installed-Size: 426
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Architecture: all
+Source: ipython
+Version: 0.13.2-1~ubuntu12.04.1
+Depends: ipython (= 0.13.2-1~ubuntu12.04.1), python-pygments, python-qt4 | python-pyside.qtcore, python-qt4 | python-pyside.qtgui, python-qt4 | python-pyside.qtsvg, python-zmq (>= 2.0.10.1), python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8)
+Filename: pool/universe/i/ipython/ipython-qtconsole_0.13.2-1~ubuntu12.04.1_all.deb
+Size: 78156
+MD5sum: c954df7ae6e6011d9e5016dfb5c0a8a8
+SHA1: 33a679f22b733231263a6fd6545b4dd227310651
+SHA256: 6280adfa6e9b95756c50a71677b0b82f8a953a3949fc29f75a230f4b9fc69d15
+Description: enhanced interactive Python shell - Qt console
+Homepage: http://ipython.org/
+Description-md5: 5fa2bb91e1c915776c2df5ba5f7ef241
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: ipython3
+Priority: optional
+Section: universe/python
+Installed-Size: 2727
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Architecture: all
+Source: ipython
+Version: 0.13.2-1~ubuntu12.04.1
+Depends: python3-decorator, python3-pkg-resources, python3-simplegeneric, python3 (>= 3.2)
+Suggests: ipython3-notebook, ipython3-qtconsole, python3-zmq (>= 2.0.10.1)
+Filename: pool/universe/i/ipython/ipython3_0.13.2-1~ubuntu12.04.1_all.deb
+Size: 664626
+MD5sum: c726fd07e2d2413762743ce1c3282882
+SHA1: 97c93dfbdea5554e74711b11154c41fec0d542b0
+SHA256: 5717663dbcd52a462cf418f6bfea85b056c4e960cc26411178901d635f737cfe
+Description: enhanced interactive Python 3 shell
+Homepage: http://ipython.org/
+Description-md5: a59865837dc42b4b4704a8cc8908835a
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: ipython3-notebook
+Priority: optional
+Section: universe/python
+Installed-Size: 153
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Architecture: all
+Source: ipython
+Version: 0.13.2-1~ubuntu12.04.1
+Depends: ipython-notebook-common (= 0.13.2-1~ubuntu12.04.1), ipython3 (= 0.13.2-1~ubuntu12.04.1), python3-tornado (>= 2.1.0), python3-zmq (>= 2.1.4), python3 (>= 3.2)
+Filename: pool/universe/i/ipython/ipython3-notebook_0.13.2-1~ubuntu12.04.1_all.deb
+Size: 24872
+MD5sum: 18fec4071e9858d1eed93cd4e0ae7a3c
+SHA1: 2e2cd1d21df6a9d105b78a8fa639a62a4680f36e
+SHA256: 33e8178608f0a6f7f3085b10f9f3f2a9eedc63fd42c437fbe64d3b3a1f4d3f1f
+Description: interactive Python 3 html notebook
+Homepage: http://ipython.org/
+Description-md5: 66a588319e63cb7d2bb877d0ee2150d0
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: ipython3-qtconsole
+Priority: optional
+Section: universe/python
+Installed-Size: 396
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Architecture: all
+Source: ipython
+Version: 0.13.2-1~ubuntu12.04.1
+Depends: ipython3 (= 0.13.2-1~ubuntu12.04.1), python3-pkg-resources, python3-pygments, python3-pyqt4 | python3-pyside.qtcore, python3-pyqt4 | python3-pyside.qtgui, python3-pyqt4 | python3-pyside.qtsvg, python3-zmq (>= 2.0.10.1), python3 (>= 3.2)
+Filename: pool/universe/i/ipython/ipython3-qtconsole_0.13.2-1~ubuntu12.04.1_all.deb
+Size: 77318
+MD5sum: 437bdbf70f754f79d9d6deb4727e6aec
+SHA1: 7a98007d88029d604ace304860b98876c02cd1fb
+SHA256: d0243f1ec1891795fd63a26388905fa9eba5103b274a0caa19b108b448245756
+Description: enhanced interactive Python 3 shell - Qt console
+Homepage: http://ipython.org/
+Description-md5: caf1a8fc73bdb6187b75b10b63cb0ecb
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: kmymoney
+Priority: optional
+Section: universe/kde
+Installed-Size: 9295
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
+Architecture: i386
+Version: 4.6.3-1~precise1
+Depends: kde-runtime, kdepim-runtime, libalkimia4, libaqbanking33 (>= 4.99.2), libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libgmp10, libgpgme++2 (>= 4:4.4.4), libgwengui-qt4-0, libgwenhywfar60 (>= 3.11.6), libical0 (>= 0.30), libkabc4 (>= 4:4.4.4), libkcmutils4 (>= 4:4.4.95), libkdecore5 (>= 4:4.4.4-2~), libkdeui5 (>= 4:4.4.4), libkfile4 (>= 4:4.4.4), libkholidays4 (>= 4:4.5.0), libkhtml5 (>= 4:4.4.4), libkio5 (>= 4:4.4.4), libofx4, libqt4-dbus (>= 4:4.5.3), libqt4-network (>= 4:4.5.3), libqt4-sql (>= 4:4.5.3), libqt4-svg (>= 4:4.5.3), libqt4-xml (>= 4:4.5.3), libqtcore4 (>= 4:4.8.0), libqtgui4 (>= 4:4.8.0), libstdc++6 (>= 4.6), kmymoney-common (= 4.6.3-1~precise1)
+Recommends: gpg-agent, pinentry-qt4
+Filename: pool/universe/k/kmymoney/kmymoney_4.6.3-1~precise1_i386.deb
+Size: 2752746
+MD5sum: 8f3644e2263834d6973f336f85fd54eb
+SHA1: 5e705c26ceba446ccb084f1dc4966effaad4b623
+SHA256: 56cc8ceb290fb4e201bbb6f107e37bd648d616bc0496f761e7ca773a5de16eb8
+Description: personal finance manager for KDE
+Homepage: http://kmymoney2.sourceforge.net
+Description-md5: 49de8a9f7525de7bb25a7171b3e764a1
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: kmymoney-common
+Priority: optional
+Section: universe/kde
+Installed-Size: 31156
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
+Architecture: all
+Source: kmymoney
+Version: 4.6.3-1~precise1
+Recommends: kmymoney
+Filename: pool/universe/k/kmymoney/kmymoney-common_4.6.3-1~precise1_all.deb
+Size: 16040894
+MD5sum: ba6b5fc1ca78730f52ecad73155c9b50
+SHA1: b23e7a37cce02994607dbdd310b35491328f4204
+SHA256: 01384b8c7fcec4b104b3f514e9f9371836377c92921ef126cd88012a0d372a31
+Description: KMyMoney architecture independent files
+Homepage: http://kmymoney2.sourceforge.net
+Description-md5: 31bd7293497ef7f025bc3697e844770a
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: kmymoney-dbg
+Priority: extra
+Section: universe/debug
+Installed-Size: 33059
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
+Architecture: i386
+Source: kmymoney
+Version: 4.6.3-1~precise1
+Depends: kmymoney (= 4.6.3-1~precise1)
+Filename: pool/universe/k/kmymoney/kmymoney-dbg_4.6.3-1~precise1_i386.deb
+Size: 32260992
+MD5sum: 91bc072215e941990c9930606c0d2512
+SHA1: 608ee5f0efb35fda0b26fdc4980d3f944f300306
+SHA256: 4ed5b0539d117caa456e2e2bb7a83c27d47ce4f35ea624a3b93fb7a61b848803
+Description: KMymoney debugging symbols
+Homepage: http://kmymoney2.sourceforge.net
+Description-md5: 3769a8fd8b9dae5b966a6751c4fe6feb
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: kmymoney-dev
+Priority: optional
+Section: universe/libdevel
+Installed-Size: 615
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
+Architecture: i386
+Source: kmymoney
+Version: 4.6.3-1~precise1
+Depends: kmymoney (= 4.6.3-1~precise1)
+Filename: pool/universe/k/kmymoney/kmymoney-dev_4.6.3-1~precise1_i386.deb
+Size: 89366
+MD5sum: 84fa79e7082a3ce245bf6601bcc74bfd
+SHA1: 7dcaff1329a859aece6eec1ec61d4a4f486706ee
+SHA256: e15f6d0d96904326b1e40b50d83615121c35676746d51a530c16793d5afa34da
+Description: KMyMoney development files
+Homepage: http://kmymoney2.sourceforge.net
+Description-md5: 9099c697a5a944ba412ddc174099c717
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: l2tp-ipsec-vpn
+Priority: optional
+Section: universe/net
+Installed-Size: 663
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Werner Jaeger <werner_jaeger@web.de>
+Architecture: i386
+Version: 1.0.7-1~ubuntu12.04.1
+Depends: gksu (>= 2.0), l2tp-ipsec-vpn-daemon (>= 0.9.8), libc6 (>= 2.4), libctemplate0, libgcc1 (>= 1:4.1.1), libltdl7 (>= 2.4.2), libqt4-network (>= 4:4.5.3), libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.5.3), libssl1.0.0 (>= 1.0.0), libstdc++6 (>= 4.4.0)
+Recommends: libengine-pkcs11-openssl (>= 0.1.8-2)
+Filename: pool/universe/l/l2tp-ipsec-vpn/l2tp-ipsec-vpn_1.0.7-1~ubuntu12.04.1_i386.deb
+Size: 260676
+MD5sum: 7f639eceb72697d3bcd858e571fafce6
+SHA1: c1b3b2d8927b7e3181f97b81583b8a67ffebc03b
+SHA256: 841795ffde01247a9621f2af3f9297a881e4ee02f89d706e23fba08d5b9e8eac
+Description: control your L2TP IPsec VPN connections
+Homepage: https://launchpad.net/l2tp-ipsec-vpn
+Description-md5: be4aefe32b4e78983cd529b6346954ac
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: l2tp-ipsec-vpn-daemon
+Priority: optional
+Section: universe/net
+Installed-Size: 89
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Werner Jaeger <werner_jaeger@web.de>
+Architecture: i386
+Version: 0.9.9-1~ubuntu12.04.1
+Depends: openswan (>= 2.6.23), xl2tpd (>= 1.2.5), libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libqt4-network (>= 4:4.5.3), libqtcore4 (>= 4:4.8.0), libstdc++6 (>= 4.1.1)
+Filename: pool/universe/l/l2tp-ipsec-vpn-daemon/l2tp-ipsec-vpn-daemon_0.9.9-1~ubuntu12.04.1_i386.deb
+Size: 20522
+MD5sum: 6e928419819b8ebd9129a8175d28e057
+SHA1: 0ba2d9bdbf0c75893ac8bb14099280ee3afa4abd
+SHA256: 9edce7c9d1aa1730b46fb13a74ffead092384c40d7da07db1e9af6bb868d2310
+Description: daemon for L2tpIPsecVpn GUI
+Homepage: https://launchpad.net/l2tp-ipsec-vpn
+Description-md5: f574f31045dfdf30916f9a82025e1ddc
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: labyrinth
+Priority: optional
+Section: universe/gnome
+Installed-Size: 605
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Martin Schaaf <mascha@ma-scha.de>
+Architecture: all
+Version: 0.6-0ubuntu2~ubuntu12.04.1
+Depends: python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8), python-glade2, python-gtk2 (>= 2.8), python-gobject (>= 2.10), python-cairo (>= 1.0), python-gconf, python-xdg
+Filename: pool/universe/l/labyrinth/labyrinth_0.6-0ubuntu2~ubuntu12.04.1_all.deb
+Size: 86638
+MD5sum: 6472e590c0f0e14bb905e2c5e91580b4
+SHA1: 2da68426fe171065cf58bd527006b1a32cd27dcf
+SHA256: 5c990ddcc3f9e344107ed6fc4bf225a2307db045c9b3cd0afe4ebb1e55922c6b
+Description: lightweight mind-mapping tool
+Homepage: http://www.gnome.org/~dscorgie/labyrinth.html
+Description-md5: 1232325d4aff46a0baa2d89a9af527e6
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: ledmon
+Priority: extra
+Section: universe/admin
+Installed-Size: 173
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Daniel Jared Dominguez <Jared_Dominguez@Dell.com>
+Architecture: i386
+Version: 0.74-1~ubuntu12.04.1
+Depends: libc6 (>= 2.4), libsgutils2-2 (>= 1.27), openipmi
+Filename: pool/universe/l/ledmon/ledmon_0.74-1~ubuntu12.04.1_i386.deb
+Size: 62604
+MD5sum: b0b37f45e1e8ad5ecdc151c8b22227af
+SHA1: bb3838ba4acab8154cac13f3ba4844073d2869bc
+SHA256: 500bfd6d913d600af7d84b26397f8a5a7ffed38bd6b02817de87883053c76e2f
+Description: Enclosure LED Utilities
+Homepage: http://ledmon.sourceforge.net/
+Description-md5: 007af04ef82b824ecd544a9e11d5cc0b
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libben-ocaml
+Priority: optional
+Section: universe/ocaml
+Installed-Size: 260
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian OCaml Maintainers <debian-ocaml-maint@lists.debian.org>
+Architecture: i386
+Source: ben
+Version: 0.6.1ubuntu2~ubuntu12.04.1
+Provides: libben-ocaml-tgkk0
+Depends: libpcre-ocaml-t3rk4, ocaml-base-nox-3.12.1, libc6 (>= 2.1.3)
+Filename: pool/universe/b/ben/libben-ocaml_0.6.1ubuntu2~ubuntu12.04.1_i386.deb
+Size: 91534
+MD5sum: a455f73e881865ba0f24320ccc118421
+SHA1: 72521ecd9a23c71dccbe47e8349d80065c2a2a84
+SHA256: 2f35f7313de932b5db714535dbe8404b8595ef20b1d0121ada67d398cfbeb1de
+Description: OCaml libraries for Debian maintainers (runtime package)
+Homepage: http://ben.debian.net
+Description-md5: 3b0d493e6c0a2a3a4820db20159a9fc9
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libben-ocaml-dev
+Priority: optional
+Section: universe/ocaml
+Installed-Size: 559
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian OCaml Maintainers <debian-ocaml-maint@lists.debian.org>
+Architecture: i386
+Source: ben
+Version: 0.6.1ubuntu2~ubuntu12.04.1
+Provides: libben-ocaml-dev-tgkk0
+Depends: libben-ocaml-tgkk0, libocamlgraph-ocaml-dev-2cph0, libpcre-ocaml-dev-t3rk4, ocaml-nox-3.12.1
+Recommends: ocaml-findlib
+Filename: pool/universe/b/ben/libben-ocaml-dev_0.6.1ubuntu2~ubuntu12.04.1_i386.deb
+Size: 88110
+MD5sum: 80a79b61547856b899cbeb7229acfbf8
+SHA1: 101f8b23cbc993c5054f58fc74d8dc7e82667d70
+SHA256: e39d55c3ae756ff01fdeb8e570400bffc0b171f731e449c6b7bf224f67753e15
+Description: OCaml libraries for Debian maintainers (development package)
+Homepage: http://ben.debian.net
+Description-md5: 70dbf7e34af8aa0784c8e49a298bfc8e
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libboinc-app-dev
+Priority: optional
+Section: universe/libdevel
+Installed-Size: 645
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian BOINC Maintainers <pkg-boinc-devel@lists.alioth.debian.org>
+Architecture: all
+Source: boinc
+Version: 7.0.65+dfsg-3~ubuntu12.04.1
+Replaces: boinc-dev (<= 7.0.28+dfsg-2)
+Depends: libboinc7 (>= 7.0.65+dfsg-3~ubuntu12.04.1), libboinc7 (<< 7.0.65+dfsg-3~ubuntu12.04.1+1~), libboinc-app7 (>= 7.0.65+dfsg-3~ubuntu12.04.1), libboinc-app7 (<< 7.0.65+dfsg-3~ubuntu12.04.1+1~), libc6-dev | libc-dev, libstdc++6-4.7-dev | libstdc++-dev, libssl-dev, libmysqlclient-dev
+Breaks: boinc-dev (<= 7.0.28+dfsg-2)
+Filename: pool/universe/b/boinc/libboinc-app-dev_7.0.65+dfsg-3~ubuntu12.04.1_all.deb
+Size: 147044
+MD5sum: 9b4959157a35ed1334612c2416a48d00
+SHA1: d43290d4685b73679d1ab92cb16a8bddeaf1ce4a
+SHA256: f4dc5d79d2ecf1fae7d782a0e11886ddb4e9a0c39d81a98e6fd8ae1117c83232
+Description: development files to build applications for BOINC projects
+Homepage: http://boinc.berkeley.edu/
+Description-md5: 14bf791641e7ac0e849dc1dede8fcd86
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libboinc-app7
+Priority: optional
+Section: universe/libs
+Installed-Size: 203
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian BOINC Maintainers <pkg-boinc-devel@lists.alioth.debian.org>
+Architecture: i386
+Source: boinc
+Version: 7.0.65+dfsg-3~ubuntu12.04.1
+Replaces: boinc-dev (<= 7.0.28+dfsg-2), libboinc-app (<= 7.0.34+dfsg-1)
+Provides: libboinc-app
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1)
+Breaks: boinc-dev (<= 7.0.28+dfsg-2), libboinc-app (<= 7.0.34+dfsg-1)
+Filename: pool/universe/b/boinc/libboinc-app7_7.0.65+dfsg-3~ubuntu12.04.1_i386.deb
+Size: 56896
+MD5sum: 07dc0b089ae1da424b1aa3908fc08e24
+SHA1: 33f9fccfa6879b1f1fd53104acfb6aee43b26055
+SHA256: 401657249806beb21edd2f1aa96fe0ec279f862b2208260ef7d45ce10f6eef28
+Description: libraries for BOINC's scientific applications
+Homepage: http://boinc.berkeley.edu/
+Description-md5: c61445098356f24f852e0a3c9ef219e7
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libboinc7
+Priority: optional
+Section: universe/libs
+Installed-Size: 449
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian BOINC Maintainers <pkg-boinc-devel@lists.alioth.debian.org>
+Architecture: i386
+Source: boinc
+Version: 7.0.65+dfsg-3~ubuntu12.04.1
+Replaces: libboinc (<= 7.0.34+dfsg-1)
+Provides: libboinc
+Depends: libc6 (>= 2.15), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1)
+Breaks: libboinc (<= 7.0.34+dfsg-1)
+Filename: pool/universe/b/boinc/libboinc7_7.0.65+dfsg-3~ubuntu12.04.1_i386.deb
+Size: 165314
+MD5sum: 2bb6985b17cd260cc87c54ea3d4b9d1a
+SHA1: bc2d3d25a4d8bc5bdad0a27a9318539f6854cb82
+SHA256: d2a2a9f4312fab9dbd0b187458e3fb9b537e29da1be68ac5628338864b29be9e
+Description: libraries of BOINC the client depends on
+Homepage: http://boinc.berkeley.edu/
+Description-md5: 11081d0d4ad203dafbfd2b8fc5e1425b
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: liblxc0
+Priority: optional
+Section: universe/admin
+Installed-Size: 256
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Daniel Baumann <daniel.baumann@progress-technologies.net>
+Architecture: i386
+Source: lxc
+Version: 0.8.0~rc1-4ubuntu39.12.10.2~ubuntu12.04.1
+Depends: libapparmor1 (>= 2.6~devel), libc6 (>= 2.15), libcap2 (>= 2.10), libseccomp0 (>= 0.0.0~20120605)
+Pre-Depends: multiarch-support
+Filename: pool/universe/l/lxc/liblxc0_0.8.0~rc1-4ubuntu39.12.10.2~ubuntu12.04.1_i386.deb
+Size: 87270
+MD5sum: 56a7dd78d94030f1a1909e217d913958
+SHA1: 24ed8388ecba672506454e7431d4ec217dc189b9
+SHA256: 2def8aa50833ea9cc2f665043f170512f1e2e63621fe16254670a1fe65e9acc3
+Description: Linux Containers userspace tools (library)
+Homepage: http://lxc.sourceforge.net/
+Description-md5: d757397b1a93a5bea5c72032f3ef485d
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libopendbx1
+Priority: optional
+Section: universe/libs
+Installed-Size: 133
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian OpenDBX Maintainers <opendbx@kitterman.com>
+Architecture: i386
+Source: libopendbx
+Version: 1.4.6-3~ubuntu12.04.1
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1)
+Recommends: libopendbx1-sqlite3 | libopendbx1-backend
+Filename: pool/universe/libo/libopendbx/libopendbx1_1.4.6-3~ubuntu12.04.1_i386.deb
+Size: 30580
+MD5sum: 6c5674c0bef20d92e19ec7d920d58abb
+SHA1: 66dc0b2855199de81dd9624b42dc989de2873af9
+SHA256: 51bd61f4ae396c7f58b401adf47c323e416ec741e821a0c1e4f848b35d8709e6
+Description: Lightweight database access abstraction layer
+Homepage: http://www.linuxnetworks.de/doc/index.php/OpenDBX
+Description-md5: b7770d4a1f746e6eb3e952f1de74860a
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libopendbx1-dev
+Priority: optional
+Section: universe/libdevel
+Installed-Size: 231
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian OpenDBX Maintainers <opendbx@kitterman.com>
+Architecture: i386
+Source: libopendbx
+Version: 1.4.6-3~ubuntu12.04.1
+Provides: libopendbx-dev
+Depends: libopendbx1 (= 1.4.6-3~ubuntu12.04.1)
+Conflicts: libopendbx-dev
+Filename: pool/universe/libo/libopendbx/libopendbx1-dev_1.4.6-3~ubuntu12.04.1_i386.deb
+Size: 88448
+MD5sum: e924352db3fcc0081487e3480d89ede2
+SHA1: 4230bc63a63105bce7a8f2332691653649e45419
+SHA256: 0b8a066f3f4d9c54b5bf4e19922c00d0e5b2c47de5660f5fde078f7b62231f74
+Description: Lightweight database access abstraction layer (dev)
+Homepage: http://www.linuxnetworks.de/doc/index.php/OpenDBX
+Description-md5: faa464e753df5c1d3fd7281c38c69353
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libopendbx1-firebird
+Priority: optional
+Section: universe/libs
+Installed-Size: 42
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian OpenDBX Maintainers <opendbx@kitterman.com>
+Architecture: i386
+Source: libopendbx
+Version: 1.4.6-3~ubuntu12.04.1
+Provides: libopendbx1-backend
+Depends: libopendbx1 (= 1.4.6-3~ubuntu12.04.1), libc6 (>= 2.4), libfbclient2 (>= 2.5.0.25784~ReleaseCandidate1.ds2)
+Filename: pool/universe/libo/libopendbx/libopendbx1-firebird_1.4.6-3~ubuntu12.04.1_i386.deb
+Size: 8134
+MD5sum: 2ad4add7521451fc58d7b7cf7e8eb12b
+SHA1: 467ca13dd6e9db07d500f9807e8b8741810b4d11
+SHA256: 2db21dc6a9ca12614b6e46d334c504af9f5869a32458b0901b07955827336744
+Description: Firebird backend for OpenDBX
+Homepage: http://www.linuxnetworks.de/doc/index.php/OpenDBX
+Description-md5: 0f8bb25c8946b4bf468ddd1e3bdffc46
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libopendbx1-mssql
+Priority: optional
+Section: universe/libs
+Installed-Size: 42
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian OpenDBX Maintainers <opendbx@kitterman.com>
+Architecture: i386
+Source: libopendbx
+Version: 1.4.6-3~ubuntu12.04.1
+Provides: libopendbx1-backend
+Depends: libopendbx1 (= 1.4.6-3~ubuntu12.04.1), libc6 (>= 2.3.4), libsybdb5 (>= 0.63)
+Filename: pool/universe/libo/libopendbx/libopendbx1-mssql_1.4.6-3~ubuntu12.04.1_i386.deb
+Size: 6928
+MD5sum: 72ebef322d97ae5b944bff4d143448d4
+SHA1: ed7b51c1646f4827660d0cd468a0d606b245e76a
+SHA256: 75c11324cb1d753b726dfb95fc631f6fd9b6ad8b26d3ea54b192c088801afc61
+Description: MSSQL backend for OpenDBX
+Homepage: http://www.linuxnetworks.de/doc/index.php/OpenDBX
+Description-md5: b40b59006d0986f857eff25955633efa
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libopendbx1-mysql
+Priority: optional
+Section: universe/libs
+Installed-Size: 38
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian OpenDBX Maintainers <opendbx@kitterman.com>
+Architecture: i386
+Source: libopendbx
+Version: 1.4.6-3~ubuntu12.04.1
+Provides: libopendbx1-backend
+Depends: libopendbx1 (= 1.4.6-3~ubuntu12.04.1), libc6 (>= 2.1.3), libmysqlclient18 (>= 5.5.13-1)
+Filename: pool/universe/libo/libopendbx/libopendbx1-mysql_1.4.6-3~ubuntu12.04.1_i386.deb
+Size: 5958
+MD5sum: dfa47ba2aab1d61969ac6b58a3fd8bf1
+SHA1: 702a87b33bb00d94eeba87866ad1d1ff58a9f0a9
+SHA256: 2bfb99510deb091cd5cf151d3a4f78efde88c4f622c77fa6010696025c950a9c
+Description: MySQL backend for OpenDBX
+Homepage: http://www.linuxnetworks.de/doc/index.php/OpenDBX
+Description-md5: b323633ef284576959a44e5ac082f4ca
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libopendbx1-odbc
+Priority: optional
+Section: universe/libs
+Installed-Size: 42
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian OpenDBX Maintainers <opendbx@kitterman.com>
+Architecture: i386
+Source: libopendbx
+Version: 1.4.6-3~ubuntu12.04.1
+Provides: libopendbx1-backend
+Depends: libopendbx1 (= 1.4.6-3~ubuntu12.04.1), libc6 (>= 2.4), libodbc1 (>= 2.2.11) | unixodbc (>= 2.2.11)
+Filename: pool/universe/libo/libopendbx/libopendbx1-odbc_1.4.6-3~ubuntu12.04.1_i386.deb
+Size: 6724
+MD5sum: d549644d78e362f8e7ac7a836e1a6760
+SHA1: bba012084bde9df693791fe44617362ff9846532
+SHA256: 2c5af0224eb6753eb2f1de57241c31aae833c9aa08312b689030e24000213225
+Description: ODBC backend for OpenDBX
+Homepage: http://www.linuxnetworks.de/doc/index.php/OpenDBX
+Description-md5: 8c66f30fa8734bf75466d8a4bd1e36df
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libopendbx1-pgsql
+Priority: optional
+Section: universe/libs
+Installed-Size: 38
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian OpenDBX Maintainers <opendbx@kitterman.com>
+Architecture: i386
+Source: libopendbx
+Version: 1.4.6-3~ubuntu12.04.1
+Provides: libopendbx1-backend
+Depends: libopendbx1 (= 1.4.6-3~ubuntu12.04.1), libc6 (>= 2.15), libpq5
+Filename: pool/universe/libo/libopendbx/libopendbx1-pgsql_1.4.6-3~ubuntu12.04.1_i386.deb
+Size: 5842
+MD5sum: 7eeea08ce24cfd5d99074620453b49a9
+SHA1: 1aaee4047bc9015e373832244744e513d1681f3b
+SHA256: 9a2c6a33f29302f3d907b5912fb9c962c15639e92a7298379186f21708454c53
+Description: PostgreSQL backend for OpenDBX
+Homepage: http://www.linuxnetworks.de/doc/index.php/OpenDBX
+Description-md5: c0e2d86f4caf23f7173c3ba4791d0060
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libopendbx1-sqlite
+Priority: optional
+Section: universe/libs
+Installed-Size: 38
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian OpenDBX Maintainers <opendbx@kitterman.com>
+Architecture: i386
+Source: libopendbx
+Version: 1.4.6-3~ubuntu12.04.1
+Provides: libopendbx1-backend
+Depends: libopendbx1 (= 1.4.6-3~ubuntu12.04.1), libc6 (>= 2.1.3), libsqlite0 (>= 2.8.17)
+Filename: pool/universe/libo/libopendbx/libopendbx1-sqlite_1.4.6-3~ubuntu12.04.1_i386.deb
+Size: 5094
+MD5sum: 8517a5d88f9f961887315dec417125a7
+SHA1: 3381ed4e8bbd02cb3006a6c5ba31bbfa1f605b56
+SHA256: 23fd356ed048b3738208bfa693828f8048b1cf6bd151cae543a0163d86087250
+Description: SQLite backend for OpenDBX
+Homepage: http://www.linuxnetworks.de/doc/index.php/OpenDBX
+Description-md5: c4f652e841f9349b554ae02f0594151e
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libopendbx1-sqlite3
+Priority: optional
+Section: universe/libs
+Installed-Size: 38
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian OpenDBX Maintainers <opendbx@kitterman.com>
+Architecture: i386
+Source: libopendbx
+Version: 1.4.6-3~ubuntu12.04.1
+Provides: libopendbx1-backend
+Depends: libopendbx1 (= 1.4.6-3~ubuntu12.04.1), libc6 (>= 2.1.3), libsqlite3-0 (>= 3.5.9)
+Filename: pool/universe/libo/libopendbx/libopendbx1-sqlite3_1.4.6-3~ubuntu12.04.1_i386.deb
+Size: 5722
+MD5sum: 33d1506b872b8b7f04c8741af13de046
+SHA1: c70db480d5b1d25af0cccc700e4dd944c9a18e54
+SHA256: 38e5caba563574522afe84c768547a7c978a36a071de97e698ccee12b3a17634
+Description: SQLite3 backend for OpenDBX
+Homepage: http://www.linuxnetworks.de/doc/index.php/OpenDBX
+Description-md5: 81ba0d87765952c0e44387e44b017475
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libopendbx1-sybase
+Priority: optional
+Section: universe/libs
+Installed-Size: 42
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian OpenDBX Maintainers <opendbx@kitterman.com>
+Architecture: i386
+Source: libopendbx
+Version: 1.4.6-3~ubuntu12.04.1
+Provides: libopendbx1-backend
+Depends: libopendbx1 (= 1.4.6-3~ubuntu12.04.1), libc6 (>= 2.4), libct4 (>= 0.64)
+Filename: pool/universe/libo/libopendbx/libopendbx1-sybase_1.4.6-3~ubuntu12.04.1_i386.deb
+Size: 7484
+MD5sum: d4693ef91545371e067eab2f25a2a2bd
+SHA1: 6d0d5bfc740186d2ff9a03fe9c0f6e08e3300bd5
+SHA256: 1bbb45959a3c033053b3c5bca7c6261fed193d28cf5b1a2c5f8946404f1740f4
+Description: Sybase ctlib backend for OpenDBX
+Homepage: http://www.linuxnetworks.de/doc/index.php/OpenDBX
+Description-md5: 2f5f814a64af9199d3757c1996b41e0c
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libopendmarc-dev
+Priority: extra
+Section: universe/libdevel
+Installed-Size: 229
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Scott Kitterman <scott@kitterman.com>
+Architecture: i386
+Source: opendmarc
+Version: 1.1.3-1~ubuntu12.04.1
+Depends: libopendmarc1 (= 1.1.3-1~ubuntu12.04.1)
+Filename: pool/universe/o/opendmarc/libopendmarc-dev_1.1.3-1~ubuntu12.04.1_i386.deb
+Size: 53880
+MD5sum: c86fb829cdb94038fd6cc04722a26fd0
+SHA1: 6e208889a0f5810884dcd891e2d46c3e2a8b7905
+SHA256: 46c9360c171aa79e739491928618b3b2dcc0d4c3be6e4379e308ec6875e5145e
+Description: Headers and development libraries for the OpenDMARC library
+Homepage: http://www.trusteddomain.org/opendmarc
+Description-md5: 6738e49405f629656d0c2e887c895829
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libopendmarc0
+Priority: extra
+Section: universe/libs
+Installed-Size: 88
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Scott Kitterman <scott@kitterman.com>
+Architecture: i386
+Source: opendmarc
+Version: 1.0.1+dfsg-3~ubuntu12.04.1
+Depends: libc6 (>= 2.4)
+Filename: pool/universe/o/opendmarc/libopendmarc0_1.0.1+dfsg-3~ubuntu12.04.1_i386.deb
+Size: 26724
+MD5sum: 85c919d48c5d238c737576f0b9b58cb0
+SHA1: ffcfb45471a5f3b77dc0e307ce6ed0febfbce973
+SHA256: 8e0f437249bddcc5af52e9a80e3e0607c6e99000bbf00f3cb9c9ee59081fe04c
+Description: Library for DMARC validation and reporting
+Homepage: http://www.trusteddomain.org/opendmarc
+Description-md5: 71bbf52de43abedcb507d8bbad49846a
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libopendmarc1
+Priority: extra
+Section: universe/libs
+Installed-Size: 96
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Scott Kitterman <scott@kitterman.com>
+Architecture: i386
+Source: opendmarc
+Version: 1.1.3-1~ubuntu12.04.1
+Depends: libc6 (>= 2.4)
+Filename: pool/universe/o/opendmarc/libopendmarc1_1.1.3-1~ubuntu12.04.1_i386.deb
+Size: 28602
+MD5sum: c73461cc80315c43d8f9b286143522c1
+SHA1: a401aaf6cd804657b99c716538276f71921dc2e1
+SHA256: 3646989b56a3a55bcc2281baa5f4f9348045b63d1638d2e57be524da2d73b010
+Description: Library for DMARC validation and reporting
+Homepage: http://www.trusteddomain.org/opendmarc
+Description-md5: 71bbf52de43abedcb507d8bbad49846a
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libseccomp-dev
+Priority: optional
+Section: universe/libdevel
+Installed-Size: 56
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Kees Cook <kees@debian.org>
+Architecture: i386
+Source: libseccomp
+Version: 0.1.0-1ubuntu1~ubuntu12.04.1
+Depends: libseccomp0 (= 0.1.0-1ubuntu1~ubuntu12.04.1)
+Filename: pool/universe/libs/libseccomp/libseccomp-dev_0.1.0-1ubuntu1~ubuntu12.04.1_i386.deb
+Size: 5732
+MD5sum: bcfef483f30631c951ee7169608160d1
+SHA1: 3c8ac129c2e8c665639eee0df924fa4b3696c7c6
+SHA256: d4166cc50bd553d09fa37e28820efef3f83db4b8a7561377cc1e60187db8799f
+Description: high level interface to Linux seccomp filter (development files)
+Multi-Arch: same
+Homepage: https://sourceforge.net/projects/libseccomp/
+Description-md5: e5fdb6fdd319bc8b5c43a1e29c7d62d5
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libseccomp0
+Priority: optional
+Section: universe/libs
+Installed-Size: 65
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Kees Cook <kees@debian.org>
+Architecture: i386
+Source: libseccomp
+Version: 0.1.0-1ubuntu1~ubuntu12.04.1
+Depends: libc6 (>= 2.3.4)
+Pre-Depends: multiarch-support
+Filename: pool/universe/libs/libseccomp/libseccomp0_0.1.0-1ubuntu1~ubuntu12.04.1_i386.deb
+Size: 18594
+MD5sum: 36ea1979b20948385f3f1be6bafb4fac
+SHA1: 92f9dd32a5faa4146b22f2c9cab212cb86d62b2d
+SHA256: d1240efe2617d3b512f72fdfb3591d4e9f695f327e983b692522adce8c404d0d
+Description: high level interface to Linux seccomp filter
+Multi-Arch: same
+Homepage: https://sourceforge.net/projects/libseccomp/
+Description-md5: 7ee97a8161e83bfebc75870eb92bde51
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libunbound-dev
+Priority: optional
+Section: universe/net
+Installed-Size: 5112
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Robert S. Edmonds <edmonds@debian.org>
+Architecture: i386
+Source: unbound
+Version: 1.4.18-1~ubuntu12.04.1
+Depends: libunbound2 (= 1.4.18-1~ubuntu12.04.1)
+Filename: pool/universe/u/unbound/libunbound-dev_1.4.18-1~ubuntu12.04.1_i386.deb
+Size: 4421768
+MD5sum: 5c27acb763867d07dcb09f29f38d8405
+SHA1: 8426d74586d67557f210b8e4f830a75f77773f28
+SHA256: 2b6f34af0183829a3fc914ca63bfbe919220fa44367452c08af769d3030d89e0
+Description: static library, header files, and docs for libunbound
+Multi-Arch: same
+Homepage: http://www.unbound.net/
+Description-md5: ed3009c5a462f3287f75c961064034a6
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: libunbound2
+Priority: optional
+Section: universe/net
+Installed-Size: 529
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Robert S. Edmonds <edmonds@debian.org>
+Architecture: i386
+Source: unbound
+Version: 1.4.18-1~ubuntu12.04.1
+Depends: libc6 (>= 2.15), libgcc1 (>= 1:4.1.1), libldns1 (>= 1.6.10), libssl1.0.0 (>= 1.0.0)
+Pre-Depends: multiarch-support
+Filename: pool/universe/u/unbound/libunbound2_1.4.18-1~ubuntu12.04.1_i386.deb
+Size: 238340
+MD5sum: a1a5111dcd3d475820c7d27c751dea42
+SHA1: c363606e1e04d3ecc129eda4d2981e8fffeb6026
+SHA256: 72d4672a5f2426a9292715ca2c28c4ed0e78438bb160255dfdb3b3ead32f3292
+Description: library implementing DNS resolution and validation
+Multi-Arch: same
+Homepage: http://www.unbound.net/
+Description-md5: 2be0d2578ccb5656d253e8013682ad4a
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: logisim
+Priority: optional
+Section: universe/java
+Installed-Size: 5306
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Vincent Cheng <Vincentc1208@gmail.com>
+Architecture: all
+Version: 2.7.1~dfsg-1~ubuntu12.04.1
+Depends: default-jre | java6-runtime, jarwrapper (>= 0.5), javahelp2, libcolorpicker-java, libfontchooser-java
+Filename: pool/universe/l/logisim/logisim_2.7.1~dfsg-1~ubuntu12.04.1_all.deb
+Size: 4928132
+MD5sum: 20c2bed9fbe19122208e34741c2765d9
+SHA1: bf8f8dcb7b280f5f4562c736477692cbe07a6b5f
+SHA256: f4452158263eae341b6d25465ba6e1dd035439ab5f5ad32486cdf7019cd0972f
+Description: graphical tool for designing and simulating logic circuits
+Homepage: http://ozark.hendrix.edu/~burch/logisim/
+Description-md5: 2a120a09165f3d56086cc57d2ad5d510
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: lxc
+Priority: optional
+Section: universe/admin
+Installed-Size: 625
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Daniel Baumann <daniel.baumann@progress-technologies.net>
+Architecture: i386
+Version: 0.8.0~rc1-4ubuntu39.12.10.2~ubuntu12.04.1
+Depends: debconf (>= 0.5) | debconf-2.0, upstart-job, libc6 (>= 2.8), liblxc0 (= 0.8.0~rc1-4ubuntu39.12.10.2~ubuntu12.04.1), apparmor, bridge-utils, dnsmasq-base, iptables, rsync, adduser
+Pre-Depends: multiarch-support, dpkg (>= 1.15.7.2)
+Recommends: debootstrap | cdebootstrap, cloud-utils, libcap2-bin, cgroup-lite | cgroup-bin, openssl
+Suggests: lxctl, btrfs-tools, lvm2, qemu-user-static
+Filename: pool/universe/l/lxc/lxc_0.8.0~rc1-4ubuntu39.12.10.2~ubuntu12.04.1_i386.deb
+Size: 148624
+MD5sum: 8bcf148d83ed62241d1bf1524fee175a
+SHA1: 31c5c96d3fa052736e230d9c6d2d0deb1965fa29
+SHA256: d58bf3a15cd84c7a5e7132e5b5f1164d8b604288403b9b78fe0415fc0afe93b4
+Description: Linux Containers userspace tools
+Homepage: http://lxc.sourceforge.net/
+Description-md5: 4ece0dffd153c29e95ffdb89f8238dfc
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: edubuntu-desktop-gnome
+
+Package: lxc-dbg
+Priority: extra
+Section: universe/debug
+Installed-Size: 543
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Daniel Baumann <daniel.baumann@progress-technologies.net>
+Architecture: i386
+Source: lxc
+Version: 0.8.0~rc1-4ubuntu39.12.10.2~ubuntu12.04.1
+Depends: lxc (= 0.8.0~rc1-4ubuntu39.12.10.2~ubuntu12.04.1), lxc-dev (= 0.8.0~rc1-4ubuntu39.12.10.2~ubuntu12.04.1)
+Filename: pool/universe/l/lxc/lxc-dbg_0.8.0~rc1-4ubuntu39.12.10.2~ubuntu12.04.1_i386.deb
+Size: 282556
+MD5sum: 96c78bd2f0655b2c54b287171136ea29
+SHA1: bd4d8cbc5229e9e9d26b130179d97c2db89939eb
+SHA256: 1f54e8419d14eac28c109e52611d6e8cd1cf4568446e0a3aa68625f8faf0b3bd
+Description: Linux Containers userspace tools (debug)
+Homepage: http://lxc.sourceforge.net/
+Description-md5: 9ec9c23e26368a478bce79545cfbb782
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: lxc-dev
+Priority: optional
+Section: universe/libdevel
+Installed-Size: 116
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Daniel Baumann <daniel.baumann@progress-technologies.net>
+Architecture: i386
+Source: lxc
+Version: 0.8.0~rc1-4ubuntu39.12.10.2~ubuntu12.04.1
+Depends: lxc (= 0.8.0~rc1-4ubuntu39.12.10.2~ubuntu12.04.1)
+Filename: pool/universe/l/lxc/lxc-dev_0.8.0~rc1-4ubuntu39.12.10.2~ubuntu12.04.1_i386.deb
+Size: 11920
+MD5sum: 7423ff25b9ff511125f54867045d26ee
+SHA1: 423937145a4ce6edf5f016499d5d07aed4d996fe
+SHA256: 4d9b77e55cba52e24a9b53ff0108d27a01a86b0dc1ff509db4f1072ee21d3a34
+Description: Linux Containers userspace tools (development)
+Homepage: http://lxc.sourceforge.net/
+Description-md5: c719178b7e79ce1ed39519707c589961
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: mangonel
+Priority: extra
+Section: universe/kde
+Installed-Size: 323
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Architecture: i386
+Version: 1.0-0ubuntu1~ubuntu12.04.1
+Depends: kde-runtime, libc6 (>= 2.1.3), libkdecore5 (>= 4:4.3.4), libkdeui5 (>= 4:4.3.4), libkio5 (>= 4:4.3.4), libkunitconversion4 (>= 4:4.4.0), libplasma3 (>= 4:4.4.4-2~), libqt4-dbus (>= 4:4.5.3), libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.6.1), libstdc++6 (>= 4.1.1)
+Filename: pool/universe/m/mangonel/mangonel_1.0-0ubuntu1~ubuntu12.04.1_i386.deb
+Size: 44288
+MD5sum: aa970bc8b33e3819277721e94c22bafd
+SHA1: b6e4dbeb0487dc46ca97c3db8126c1674063522d
+SHA256: 15e243eab4f839370941525d898829a8212707c1596679eaff462e1afddc56e8
+Description: Simple application launcher for the Plasma workspace
+Description-md5: 0803a306e05191cb6bc921b79cd0e713
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: mininet
+Priority: extra
+Section: universe/net
+Installed-Size: 274
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Bob Lantz <rlantz@cs.stanford.edu>
+Architecture: i386
+Version: 2.0.0-0ubuntu1~ubuntu12.04.1
+Depends: openvswitch-switch, python-networkx, telnet, python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8), python-pkg-resources, libc6 (>= 2.4)
+Recommends: iperf, openvswitch-controller
+Filename: pool/universe/m/mininet/mininet_2.0.0-0ubuntu1~ubuntu12.04.1_i386.deb
+Size: 76918
+MD5sum: 93b289c899ca1d9625212b1a4850ea62
+SHA1: 6ed7e4405b63bf7a7c1c06dc2d020c71035e78a0
+SHA256: 2a59c0c6e830bddd10f390eb764b3d14ec9dea00aaa86469026b418e1f888848
+Description: Process-based network emulator
+Homepage: http://openflow.org/mininet
+Description-md5: 25cb98c7d0877aad7740c2dbb5449ade
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: mosh
+Priority: optional
+Section: universe/net
+Installed-Size: 823
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Keith Winstein <keithw@mit.edu>
+Architecture: i386
+Version: 1.2.2-1~ubuntu12.04.1
+Depends: libc6 (>= 2.15), libgcc1 (>= 1:4.1.1), libprotobuf7, libstdc++6 (>= 4.6), libtinfo5, libutempter0 (>= 1.1.5), zlib1g (>= 1:1.1.4), libio-pty-perl, openssh-client
+Filename: pool/universe/m/mosh/mosh_1.2.2-1~ubuntu12.04.1_i386.deb
+Size: 353352
+MD5sum: bf1ae30c905c4db49b1044ab7d054343
+SHA1: b0519f100cf3b95cf43410c404f53a409f609b36
+SHA256: 38a940e92ca5f8bf8c33832f5d054ff1018a5f82c095388acc2614651c87d14f
+Description: Mobile shell that supports roaming and intelligent local echo
+Homepage: http://mosh.mit.edu
+Description-md5: 4eb9a4712a90a06683cd9f2c223953b4
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: myunity
+Priority: optional
+Section: universe/utils
+Installed-Size: 1224
+Maintainer: Andrea Colangelo <warp10@ubuntu.com>
+Architecture: all
+Version: 3.1.5-0ubuntu1~ubuntu12.04.2
+Depends: gambas2-runtime, gambas2-gb-gtk, gambas2-gb-form, gambas2-gb-gtk-ext
+Recommends: unity
+Filename: pool/universe/m/myunity/myunity_3.1.5-0ubuntu1~ubuntu12.04.2_all.deb
+Size: 564864
+MD5sum: ee145de3cf78c4363d6a6cff7178bb6c
+SHA1: ed5bf14f8c1360c7d5641459d1a521b13a702956
+SHA256: 6785cc7f601960d68f289038b4f9fdf17582e39c4ecbedc38bda5c5ec13028f8
+Description: Unity configurator
+Homepage: https://launchpad.net/myunity
+Description-md5: 24aa67e17f299eeb2babd31706947952
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: node-underscore
+Priority: optional
+Section: universe/web
+Installed-Size: 118
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Architecture: all
+Source: underscore
+Version: 1.3.3-1ubuntu1~ubuntu12.04.1
+Depends: nodejs, libjs-underscore
+Filename: pool/universe/u/underscore/node-underscore_1.3.3-1ubuntu1~ubuntu12.04.1_all.deb
+Size: 2932
+MD5sum: c197d4dc7021d0dbe4842d83e3792641
+SHA1: 8ef4d82c41254d7af77f6402918f1d052addc985
+SHA256: 9ee0dccf6670c0e243d28c00dec643621de6b3fc49c9b4049ef7cdf834ce9eb9
+Description: JavaScript's functional programming helper library - NodeJS
+Homepage: http://documentcloud.github.com/underscore/
+Description-md5: 398861d20e6c0b871219d43e35746ad1
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: opendbx-doc
+Priority: optional
+Section: universe/doc
+Installed-Size: 277
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian OpenDBX Maintainers <opendbx@kitterman.com>
+Architecture: all
+Source: libopendbx
+Version: 1.4.6-3~ubuntu12.04.1
+Filename: pool/universe/libo/libopendbx/opendbx-doc_1.4.6-3~ubuntu12.04.1_all.deb
+Size: 48914
+MD5sum: f23767b5c906155b896a805a663b789c
+SHA1: 8a775c1c7443c9dbde55a1cc3370f910e21e40d1
+SHA256: 4a201c7adfd02dd3bfd908082168d93e5724e3ca953f0a3a1fc1d7b7d196095b
+Description: Opendbx documentation
+Built-Using: doxygen (= 1.7.6.1-2ubuntu1)
+Homepage: http://www.linuxnetworks.de/doc/index.php/OpenDBX
+Description-md5: b1c4ffbc2595f49aa5c498bc71bda14a
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: opendbx-utils
+Priority: optional
+Section: universe/libs
+Installed-Size: 232
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian OpenDBX Maintainers <opendbx@kitterman.com>
+Architecture: i386
+Source: libopendbx
+Version: 1.4.6-3~ubuntu12.04.1
+Provides: opendbx-utils
+Depends: libopendbx1 (>= 1.4.6-3~ubuntu12.04.1), libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libreadline6 (>= 6.0), libstdc++6 (>= 4.4.0)
+Filename: pool/universe/libo/libopendbx/opendbx-utils_1.4.6-3~ubuntu12.04.1_i386.deb
+Size: 69790
+MD5sum: 6abda25f2532295d5eba94db190a34cf
+SHA1: c3f2eccab8959c31caee72aea2537e7fc16e1f73
+SHA256: 72b643a0994d3fe59e73f35486bffd002182a2f2c46f20d45d7b20a6ae168a05
+Description: Utility applications using libopendbx
+Homepage: http://www.linuxnetworks.de/doc/index.php/OpenDBX
+Description-md5: bf06b8a5213770edc5e3a4d23a8951cb
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: opendmarc
+Priority: extra
+Section: universe/mail
+Installed-Size: 278
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Scott Kitterman <scott@kitterman.com>
+Architecture: i386
+Version: 1.1.3-1~ubuntu12.04.1
+Depends: libc6 (>= 2.4), libmilter1.0.1, libopendmarc1 (>= 1.1.0~beta2), adduser, lsb-base
+Recommends: libopendbx1, libopendbx1-mysql, perl, libswitch-perl, libdbi-perl, libdbd-mysql-perl, libhttp-message-perl
+Filename: pool/universe/o/opendmarc/opendmarc_1.1.3-1~ubuntu12.04.1_i386.deb
+Size: 124952
+MD5sum: 681f69d349a504a98af800c7aa1dbe5c
+SHA1: 747f4f540aaf0d14d7afda8df65b6b3962264f3c
+SHA256: 76a74aada1596d3f7a155374deda37112a16c3004a79021c229ef641f4218ae3
+Description: Milter implementation of DMARC
+Homepage: http://www.trusteddomain.org/opendmarc
+Description-md5: 19a5d74cb9664470eaeeaf7a57a18873
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: openerp6.1-core
+Priority: optional
+Section: universe/net
+Installed-Size: 218978
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Yolanda Robla <yolanda.robla@canonical.com>
+Architecture: all
+Source: openerp6.1
+Version: 6.1-1+dfsg-0ubuntu2~ubuntu12.04.1
+Replaces: openerp-server, tinyerp-server
+Depends: adduser, python, python-dateutil, python-feedparser, python-gdata, python-ldap, python-libxslt1, python-lxml, python-mako, python-openid, python-psycopg2, python-pybabel, python-pychart, python-pydot, python-pyparsing, python-reportlab, python-simplejson, python-tz, python-vatnumber, python-vobject, python-webdav, python-werkzeug, python-xlwt, python-yaml, python-zsi, libjs-jquery-form, libjs-underscore (>= 1.3.3)
+Recommends: graphviz, ghostscript, openerp6.1-full, python-imaging, python-matplotlib
+Conflicts: openerp-server, tinyerp-server
+Filename: pool/universe/o/openerp6.1/openerp6.1-core_6.1-1+dfsg-0ubuntu2~ubuntu12.04.1_all.deb
+Size: 61200086
+MD5sum: 20b8fbd79db628505280e430bc208d3c
+SHA1: 23928c28f564cefa14911150d851905bdae64246
+SHA256: 15ef37c925dc006570c1b1144349c2302becd1785436c0d84f3086bb582cfa7e
+Description: OpenERP Enterprise Resource Management
+Homepage: http://www.openerp.com/
+Description-md5: 03463f7bea514168a3e1252f24bf4874
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: openerp6.1-full
+Priority: optional
+Section: universe/net
+Installed-Size: 196
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Yolanda Robla <yolanda.robla@canonical.com>
+Architecture: all
+Source: openerp6.1
+Version: 6.1-1+dfsg-0ubuntu2~ubuntu12.04.1
+Replaces: openerp-web
+Depends: debconf (>= 0.5) | debconf-2.0, pwgen, debconf, openerp6.1-core, postgresql
+Recommends: postgresql-client
+Conflicts: openerp-web
+Filename: pool/universe/o/openerp6.1/openerp6.1-full_6.1-1+dfsg-0ubuntu2~ubuntu12.04.1_all.deb
+Size: 24672
+MD5sum: f5441bc4c9d8951029dc5ce85065b0cf
+SHA1: f530ed3aaefba127b5860e7bbee01b4c5fc0639d
+SHA256: c1a9bc3489adbc3f44abc8c552bad387b78fc663969d901540ec58bd4644c853
+Description: OpenERP Enterprise Resource Management - metapackage
+Homepage: http://www.openerp.com/
+Description-md5: 49222b2241366cc406bdc4893345dc0b
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: openlp
+Priority: optional
+Section: universe/x11
+Installed-Size: 11649
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Raoul Snyman <raoulsnyman@openlp.org>
+Architecture: all
+Version: 1.9.10-1~ubuntu12.04.1
+Depends: libjs-jquery, python-beautifulsoup, python-chardet, python-enchant, python-lxml, python-mako, python-migrate, python-qt4, python-qt4-gl, python-qt4-phonon, python-sqlalchemy, python-sqlite, python (>= 2.7.1-0ubuntu2)
+Filename: pool/universe/o/openlp/openlp_1.9.10-1~ubuntu12.04.1_all.deb
+Size: 2990476
+MD5sum: 01f2b3a5ad83d7e02957eceda48e8436
+SHA1: 85aa89b773a75f16464b22b9b00180cbb01e6cb9
+SHA256: 2dcea9c42cfcfb3702b706c20ac34a3490bfb0de788066ae8f8bbebf464b4151
+Description: Church lyrics projection application
+Homepage: http://openlp.org/
+Description-md5: e1bb0aaa265da68d7f9e7aefb0baba27
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: parallel
+Priority: extra
+Section: universe/utils
+Installed-Size: 527
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Rogério Brito <rbrito@ime.usp.br>
+Architecture: all
+Version: 20121122-0ubuntu1~ubuntu12.04.1
+Depends: perl-modules, perl
+Filename: pool/universe/p/parallel/parallel_20121122-0ubuntu1~ubuntu12.04.1_all.deb
+Size: 160982
+MD5sum: 4f03539df51ba040ba3449476efd65f7
+SHA1: 73b5d9c16343755c841ffd631afd13c4b7d545cf
+SHA256: 769770c659e58541410d46ad7fb0d4385ff710558529aa2ed192538bb37f7e35
+Description: build and execute command lines from standard input in parallel
+Homepage: https://www.gnu.org/software/parallel/
+Description-md5: 8a851a81a172dd16a4bcbeb1f8f3c4ab
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: pass
+Priority: optional
+Section: universe/admin
+Installed-Size: 67
+Maintainer: Colin Watson <cjwatson@debian.org>
+Architecture: all
+Source: password-store
+Version: 1.4-2~ubuntu12.04.1
+Depends: pwgen, gnupg, tree
+Recommends: git, xclip
+Filename: pool/universe/p/password-store/pass_1.4-2~ubuntu12.04.1_all.deb
+Size: 11182
+MD5sum: b8611b028e2b0fad2cd2c20e8aa1835f
+SHA1: 1bdbcaa9617cdeaacc097108ecf821e205ca514c
+SHA256: 2674d693d8dac702d850856289306d87a3bbf1a40ba0b9cce7ef5a4168e0f327
+Description: lightweight directory-based password manager
+Homepage: http://zx2c4.com/projects/password-store/
+Description-md5: c8b6e9cd595a9090411da3f085c057fa
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: pbuilder-scripts
+Priority: extra
+Section: universe/devel
+Installed-Size: 61
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 17~ubuntu12.04.1
+Depends: pbuilder
+Conflicts: pacemaker, parmetis-test
+Filename: pool/universe/p/pbuilder-scripts/pbuilder-scripts_17~ubuntu12.04.1_all.deb
+Size: 7096
+MD5sum: 29c271e9cec65ed8032979787bdc834d
+SHA1: abde64a51d22502e52b8321d4904eb0dad1c5d96
+SHA256: 9e63c2f2decbf1370295d3f6b33bf63b93cfb3842beba32548b8182568496976
+Description: Wrapper scripts for pbuilder
+Description-md5: dd89527f637d20ab7a8ef9f0b01d16fb
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: pokerth
+Priority: optional
+Section: universe/games
+Installed-Size: 3528
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: i386
+Version: 0.9.5-1~ubuntu12.04.1
+Depends: libboost-filesystem1.46.1 (>= 1.46.1-1), libboost-iostreams1.46.1 (>= 1.46.1-1), libboost-random1.46.1 (>= 1.46.1-1), libboost-regex1.46.1 (>= 1.46.1-1), libboost-system1.46.1 (>= 1.46.1-1), libboost-thread1.46.1 (>= 1.46.1-1), libc6 (>= 2.8), libcurl3-gnutls (>= 7.16.2-1), libgcc1 (>= 1:4.1.1), libgcrypt11 (>= 1.4.5), libgsasl7 (>= 1.1), libqt4-network (>= 4:4.5.3), libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.8.0), libsdl-mixer1.2, libsdl1.2debian (>= 1.2.10-1), libsqlite3-0 (>= 3.5.9), libstdc++6 (>= 4.6), libtinyxml2.6.2, pokerth-data (= 0.9.5-1~ubuntu12.04.1), gsfonts-x11, ttf-dejavu-core
+Filename: pool/universe/p/pokerth/pokerth_0.9.5-1~ubuntu12.04.1_i386.deb
+Size: 1489066
+MD5sum: f08a573b0f252a4b326fbef7f7bb38c8
+SHA1: d2e49ecf9cee3bd3dc0beddc911f8cc14c89a006
+SHA256: 18728a7f351aaeec06b38789d7f5f9d41d82933c377bb0107fcd5849fb8545f7
+Description: Texas hold'em game
+Homepage: http://www.pokerth.net/
+Description-md5: b9120a1a42426cbec7afb2f62bdb8780
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: pokerth-data
+Priority: optional
+Section: universe/games
+Installed-Size: 18922
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: all
+Source: pokerth
+Version: 0.9.5-1~ubuntu12.04.1
+Filename: pool/universe/p/pokerth/pokerth-data_0.9.5-1~ubuntu12.04.1_all.deb
+Size: 11651388
+MD5sum: 9e2f547d8ac41f5dce7b5f82f3948214
+SHA1: 6fb9d448c1726346a3fcc5b3a56581284b619bb0
+SHA256: 1301d437a4b2245f4ab25aac0ef7520a584abe33cd5ecaf6d13ae70264839e00
+Description: Texas hold'em game - common data files
+Homepage: http://www.pokerth.net/
+Description-md5: b19f8df925241c90b1a938776b4e54bd
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: pokerth-server
+Priority: optional
+Section: universe/games
+Installed-Size: 1846
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: i386
+Source: pokerth
+Version: 0.9.5-1~ubuntu12.04.1
+Depends: libboost-filesystem1.46.1 (>= 1.46.1-1), libboost-iostreams1.46.1 (>= 1.46.1-1), libboost-program-options1.46.1 (>= 1.46.1-1), libboost-random1.46.1 (>= 1.46.1-1), libboost-regex1.46.1 (>= 1.46.1-1), libboost-system1.46.1 (>= 1.46.1-1), libboost-thread1.46.1 (>= 1.46.1-1), libc6 (>= 2.8), libcurl3-gnutls (>= 7.16.2-1), libgcc1 (>= 1:4.1.1), libgcrypt11 (>= 1.4.5), libgsasl7 (>= 1.1), libircclient1, libsqlite3-0 (>= 3.5.9), libstdc++6 (>= 4.6), libtinyxml2.6.2
+Filename: pool/universe/p/pokerth/pokerth-server_0.9.5-1~ubuntu12.04.1_i386.deb
+Size: 715432
+MD5sum: c5eb5fd22986a7bf91419666fcb0b56e
+SHA1: 1c86ac783767fa0492e3b695a19417748f660162
+SHA256: 9f923ac1048bd83aab5049411f79930cbb97f8420435c4967e8932c31f9f5846
+Description: Texas hold'em game - server
+Homepage: http://www.pokerth.net/
+Description-md5: a108584468dc6296850ef0a2bf4b2e25
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: python-authres
+Priority: optional
+Section: universe/python
+Installed-Size: 114
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Scott Kitterman <scott@kitterman.com>
+Architecture: all
+Source: authres
+Version: 0.501-1~ubuntu12.04.1
+Depends: python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8)
+Filename: pool/universe/a/authres/python-authres_0.501-1~ubuntu12.04.1_all.deb
+Size: 14478
+MD5sum: 0d85b7e00888892bde874ebc5658b2ad
+SHA1: dba183eef0180ae4172e3439319e49b0141eed80
+SHA256: 18105770eadf4394c298d1151a441a3069f9b59299577abdaf6814f9ccbdec63
+Description: RFC 5451 Authentication Results Header manipulation for Python
+Homepage: https://launchpad.net/authentication-results-python
+Description-md5: a7b9f5c65f5fac3a0c39fb561519b9d0
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: python-concurrent.futures
+Priority: optional
+Section: universe/python
+Installed-Size: 211
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Architecture: all
+Version: 2.1.2-1~ubuntu12.04.1
+Depends: python (>= 2.6), python-support (>= 0.90.0)
+Filename: pool/universe/p/python-concurrent.futures/python-concurrent.futures_2.1.2-1~ubuntu12.04.1_all.deb
+Size: 36946
+MD5sum: fd79d6fbc2a0fec91b390c27ccc5c9bc
+SHA1: a7eb104c31be53a49eba299b4d71612aa09f6af6
+SHA256: 0a8f474c5efdc51a9f856695a890f73d7ea7d807120b990a23cc594a9388d8fd
+Description: backport of concurrent.futures package from Python 3.2
+Homepage: http://code.google.com/p/pythonfutures/
+Description-md5: cb9ad20cdd73d1557a337a8086cff30f
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: python-django-auth-openid
+Priority: optional
+Section: universe/python
+Installed-Size: 208
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Architecture: all
+Source: django-openid-auth
+Version: 0.4-1ubuntu1~ubuntu12.04.1
+Replaces: python-django-openid-auth (<< 0.2+empty)
+Depends: python-django (>= 1.1.2), python-openid, python (>= 2.6), python-support (>= 0.90.0)
+Filename: pool/universe/d/django-openid-auth/python-django-auth-openid_0.4-1ubuntu1~ubuntu12.04.1_all.deb
+Size: 35466
+MD5sum: 3a5372442c42348c9d68f7155a015f05
+SHA1: 454b287a200496f00a22a023a51928ec77df065e
+SHA256: be1a816162af16e19a8ea6e78c7fa73d117ab520b1dd7aa73030f272dd86e2ac
+Description: provides optional OpenID integration for Django
+Homepage: https://launchpad.net/django-openid-auth
+Description-md5: f100ef49765fa42783794b4a8dcd6505
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: python-fife
+Priority: optional
+Section: universe/python
+Installed-Size: 8022
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: i386
+Source: fife
+Version: 0.3.3+r3-1~precise1
+Depends: libboost-filesystem1.46.1 (>= 1.46.1-1), libboost-regex1.46.1 (>= 1.46.1-1), libboost-system1.46.1 (>= 1.46.1-1), libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libgl1-mesa-glx | libgl1, libguichan-0.8.1-1, libguichan-opengl-0.8.1-1, libguichan-sdl-0.8.1-1, libopenal1 (>= 1:1.13), libpng12-0 (>= 1.2.13-4), libpython2.7 (>= 2.7), libsdl-image1.2 (>= 1.2.10), libsdl-ttf2.0-0, libsdl1.2debian (>= 1.2.10-1), libstdc++6 (>= 4.6), libtinyxml2.6.2, libvorbisfile3 (>= 1.1.2), libxcursor1 (>> 1.1.2), python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8)
+Filename: pool/universe/f/fife/python-fife_0.3.3+r3-1~precise1_i386.deb
+Size: 2280408
+MD5sum: ab8a943f4c9077c787c559c8771261c2
+SHA1: d7508dd5272f9d9e5a47180d417a055032ea821b
+SHA256: d3ee6c6660d7e9834cbd35d0fb51daa2b3a098600e1f0ddb7681fefe0c648bc7
+Description: FIFE is a multi-platform isometric game engine
+Homepage: http://fifengine.de
+Description-md5: e0baa100ef078b23019808e5d303ed95
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: python-leveldb
+Priority: optional
+Section: universe/python
+Installed-Size: 345
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Alessio Treglia <alessio@debian.org>
+Architecture: i386
+Version: 0~svn44-1~ubuntu12.04.1
+Provides: python2.7-leveldb
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libsnappy1, libstdc++6 (>= 4.1.1), python2.7, python (>= 2.7), python (<< 2.8)
+Filename: pool/universe/p/python-leveldb/python-leveldb_0~svn44-1~ubuntu12.04.1_i386.deb
+Size: 142234
+MD5sum: 3c181c9a9cff779634f66203922fa5ad
+SHA1: 668049715c594202931c1c8d457e807845971f57
+SHA256: a19b702925940fb2e574c9029a2bf51c7489e59c1b92a440d55ed4797b5054c9
+Description: Python wrapper for LevelDB
+Homepage: http://code.google.com/p/py-leveldb/
+Description-md5: c3a7263c3e26a38348572a70b75bebf6
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: python-notify2
+Priority: optional
+Section: universe/python
+Installed-Size: 69
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Architecture: all
+Version: 0.3-2~ubuntu12.04.1
+Depends: python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8), python-dbus
+Recommends: notification-daemon
+Filename: pool/universe/p/python-notify2/python-notify2_0.3-2~ubuntu12.04.1_all.deb
+Size: 11102
+MD5sum: 1ad52e6fef09433da7690ce07570139f
+SHA1: 61269f41cb31b756eb0a39f8eec4207c2f32573f
+SHA256: bcd9b686a98f7e3d8dc3821c91b4fcdce0d1962323da38453257dfbbb5d04a57
+Description: desktop notifications API for Python
+Homepage: http://pypi.python.org/pypi/notify2
+Description-md5: 2829c839545a2c8a3d2d1f12672b3481
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: python-simplegeneric
+Priority: extra
+Section: universe/python
+Installed-Size: 69
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Architecture: all
+Source: simplegeneric
+Version: 0.8.1-1~ubuntu12.04.1
+Depends: python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8)
+Filename: pool/universe/s/simplegeneric/python-simplegeneric_0.8.1-1~ubuntu12.04.1_all.deb
+Size: 11774
+MD5sum: 0a276fb1d45958b124e36de2409fe33a
+SHA1: 24bde2df21e58fe211cdb546bcd7cf7ef713141a
+SHA256: 8df60accd341847881a53025770c05259764b94710ea7ece2d6a9eb13b95f908
+Description: simple generic functions for Python
+Homepage: http://pypi.python.org/pypi/simplegeneric
+Description-md5: 7c11e5fff1d97237836650aae1493ff0
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: python-tvdb-api
+Priority: optional
+Section: universe/python
+Installed-Size: 83
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Architecture: all
+Source: tvdb-api
+Version: 1.7.1-1~ubuntu12.04.1
+Depends: python, python-support (>= 0.90.0)
+Filename: pool/universe/t/tvdb-api/python-tvdb-api_1.7.1-1~ubuntu12.04.1_all.deb
+Size: 18626
+MD5sum: ab271d416827d3df1af0b1a9eeb361e1
+SHA1: 8fb8d26db2b38e44c68cbee11c190c9a6a3cc3c1
+SHA256: f4a7fc21ef507f0cba9147d2cbbc7bcc066ac90485c8f28a429d74839f273fa3
+Description: API interface to TheTVDB.com
+Homepage: https://github.com/dbr/tvdb_api
+Description-md5: 0d08a8a10af05601dd788dd5df8e01e3
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: python-txaws
+Priority: optional
+Section: universe/python
+Installed-Size: 716
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Architecture: all
+Source: txaws
+Version: 0.2.3-1ubuntu1~ubuntu12.04.1
+Provides: python2.7-txaws
+Depends: python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8), python-twisted, python-dateutil, ca-certificates
+Filename: pool/universe/t/txaws/python-txaws_0.2.3-1ubuntu1~ubuntu12.04.1_all.deb
+Size: 101782
+MD5sum: 8b5d9f3dfc360dd3a061b7a4f4d22c44
+SHA1: fc9eb6384cd95c3154e5fe10904f425e8aa1c206
+SHA256: dc5adf26239061a48ffdde4206a17b61a05be343fab687e7448aa8793ada9ccd
+Description: Twisted-based Asynchronous Libraries for Amazon Web Services
+Homepage: https://launchpad.net/txaws
+Description-md5: f67ad146776b5eaf32732f6e03e8f533
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: python-unbound
+Priority: optional
+Section: universe/python
+Installed-Size: 225
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Robert S. Edmonds <edmonds@debian.org>
+Architecture: i386
+Source: unbound
+Version: 1.4.18-1~ubuntu12.04.1
+Depends: libc6 (>= 2.3.6-6~), libgcc1 (>= 1:4.1.1), libunbound2 (>= 1.4.16), python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8)
+Filename: pool/universe/u/unbound/python-unbound_1.4.18-1~ubuntu12.04.1_i386.deb
+Size: 43342
+MD5sum: 897cec8a270ea5da5ac0c2e01bb6edcb
+SHA1: 7eaaa3d1478a704395200deda8ce828786b72f1d
+SHA256: 9a45c87ec0a0353a2393e2b1fdb3ca1b031fdb3092d856dbf0f35b0ff4d8e5c6
+Description: library implementing DNS resolution and validation (Python bindings)
+Homepage: http://www.unbound.net/
+Description-md5: 103cd64b79e42ad710e19fe727ffce50
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: python3-authres
+Priority: optional
+Section: universe/python
+Installed-Size: 106
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Scott Kitterman <scott@kitterman.com>
+Architecture: all
+Source: authres
+Version: 0.501-1~ubuntu12.04.1
+Depends: python3 (>= 3.1.3-13~)
+Filename: pool/universe/a/authres/python3-authres_0.501-1~ubuntu12.04.1_all.deb
+Size: 14198
+MD5sum: 5a4c596b95bdc8953e17799093a54c87
+SHA1: 96a77af7796b964e3054ee7039280df1cb23bbd9
+SHA256: e9e3912128218058de07e3fa6184f9b00a9dc7a8bd5287d9dc1b881f26978e9f
+Description: RFC 5451 Authentication Results Header manipulation for Python3
+Homepage: https://launchpad.net/authentication-results-python
+Description-md5: ac2547354f3cd3c1a90be05d24ea84c4
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: python3-dnspython
+Priority: optional
+Section: universe/python
+Installed-Size: 516
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Architecture: all
+Source: dnspython3
+Version: 1.10.0-1~precise1
+Depends: python3 (>= 3.2)
+Filename: pool/universe/d/dnspython3/python3-dnspython_1.10.0-1~precise1_all.deb
+Size: 100442
+MD5sum: fcc494f6bce7d8252a9650baa879745a
+SHA1: 19dc53b735b9716988f960572fc6fad80d9bbf56
+SHA256: bd443c61f564a7650c114f2f469d3137fa5a5f58229b35c95ca9dabc9ef568f7
+Description: DNS toolkit for Python (Python 3)
+Homepage: http://www.dnspython.org
+Description-md5: 3a66e4f347b27b4c6b98a76b89695962
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: python3-lxc
+Priority: optional
+Section: universe/python
+Installed-Size: 100
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Daniel Baumann <daniel.baumann@progress-technologies.net>
+Architecture: i386
+Source: lxc
+Version: 0.8.0~rc1-4ubuntu39.12.10.2~ubuntu12.04.1
+Depends: liblxc0 (= 0.8.0~rc1-4ubuntu39.12.10.2~ubuntu12.04.1), python3, libc6 (>= 2.3.6-6~)
+Filename: pool/universe/l/lxc/python3-lxc_0.8.0~rc1-4ubuntu39.12.10.2~ubuntu12.04.1_i386.deb
+Size: 11516
+MD5sum: d809cb4cdfba81873fc9d5a6016db526
+SHA1: aeefc9ffdbde450d36c06c0e78e12a77fa466a08
+SHA256: 7a70ff4c61777ca99c643eae6e6ba7c1461c92419091fd017bf3fc5de37cfcc1
+Description: Linux Containers userspace tools (Python 3.x bindings)
+Homepage: http://lxc.sourceforge.net/
+Description-md5: ee623a31db200104a7207d9de42b8f04
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: python3-notify2
+Priority: optional
+Section: universe/python
+Installed-Size: 65
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Architecture: all
+Source: python-notify2
+Version: 0.3-2~ubuntu12.04.1
+Depends: python3 (>= 3.1.3-13~), python3-dbus
+Recommends: notification-daemon
+Filename: pool/universe/p/python-notify2/python3-notify2_0.3-2~ubuntu12.04.1_all.deb
+Size: 10962
+MD5sum: 071caba8debf3ba762ecfbb9c233cfb3
+SHA1: b505058dacd851b351c082dcbd8f42ff42d6bd79
+SHA256: b8b03d2051143ee697aba1d76c6a364a94c94cd5408ea591246c5e685fa5075c
+Description: desktop notifications API for Python 3
+Homepage: http://pypi.python.org/pypi/notify2
+Description-md5: 73b582537fd3d142468d06ce460d786b
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: python3-simplegeneric
+Priority: optional
+Section: universe/python
+Installed-Size: 61
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Architecture: all
+Source: simplegeneric
+Version: 0.8.1-1~ubuntu12.04.1
+Depends: python3 (>= 3.1.3-13~)
+Filename: pool/universe/s/simplegeneric/python3-simplegeneric_0.8.1-1~ubuntu12.04.1_all.deb
+Size: 11608
+MD5sum: d515e328ca4229872d680eed02dfdbcf
+SHA1: 5bb79c24f33da9911d10a3a37fcacc0f0e88d227
+SHA256: 6db0cbbfc93c5d0383d6247274436d6e6456710e090881e80b63778b7571fd5d
+Description: simple generic functions for Python3
+Homepage: http://pypi.python.org/pypi/simplegeneric
+Description-md5: 1aa3e4db49ded29787a5532d32398159
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: qjackctl
+Priority: optional
+Section: universe/sound
+Installed-Size: 1702
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 0.3.9-2~ubuntu12.04.1
+Depends: jackd, libasound2 (>= 1.0.23), libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libjack-jackd2-0 (>= 1.9.5~dfsg-14) | libjack-0.116, libqt4-dbus (>= 4:4.5.3), libqt4-xml (>= 4:4.5.3), libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.5.3), libstdc++6 (>= 4.1.1), libx11-6
+Recommends: pulseaudio-utils
+Filename: pool/universe/q/qjackctl/qjackctl_0.3.9-2~ubuntu12.04.1_i386.deb
+Size: 569862
+MD5sum: 3faeef77eeeac854201cc4b96f7a5a57
+SHA1: 1b01da174e00420fac87e7c25fa3bbd9fc2edce1
+SHA256: 9fd6050a2bbcc8a7c6d9222e41bf3358872266910ca76b84e697f795ebf9ce08
+Description: User interface for controlling the JACK sound server
+Homepage: http://qjackctl.sourceforge.net
+Description-md5: e4eff5b412e02d2dab4dcd699f0351f6
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Task: ubuntustudio-generation, ubuntustudio-audio-plugins, ubuntustudio-recording
+
+Package: qtcreator
+Priority: optional
+Section: universe/devel
+Installed-Size: 47829
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Architecture: i386
+Version: 2.5.2-0ubuntu1~ubuntu12.04.1
+Depends: libqt4-help (>= 4:4.8.1), libqt4-sql-sqlite, libc6 (>= 2.15), libgcc1 (>= 1:4.1.1), libqt4-declarative (>= 4:4.8.1), libqt4-designer (>= 4:4.8.1), libqt4-network (>= 4:4.8.1), libqt4-script (>= 4:4.8.1), libqt4-sql (>= 4:4.8.1), libqt4-svg (>= 4:4.8.1), libqt4-xml (>= 4:4.8.1), libqtcore4 (>= 4:4.8.1), libqtgui4 (>= 4:4.8.1), libqtwebkit4 (>= 2.2~2011week36), libstdc++6 (>= 4.4.0)
+Pre-Depends: dpkg (>= 1.15.6)
+Recommends: gdb, make, g++, qt4-demos, qt4-dev-tools, qt4-doc, qt4-qmlviewer, qtcreator-doc, xterm | x-terminal-emulator
+Suggests: cmake, git, kdelibs5-data, subversion
+Filename: pool/universe/q/qtcreator/qtcreator_2.5.2-0ubuntu1~ubuntu12.04.1_i386.deb
+Size: 11918238
+MD5sum: 2f658a5759112406a5b9862821457dfe
+SHA1: 3ae38341547ba549a823ac5e92f6bf114cd7586b
+SHA256: 3b76868b83ff0f3956757f15a28198b22c267e970e33d9e59d0a23cd7c75c6ab
+Description: lightweight integrated development environment (IDE) for Qt
+Homepage: http://qt.nokia.com/products/developer-tools/
+Description-md5: 7885cd3da2a1e224d06682f5f2a70d2e
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: qtcreator-dbg
+Priority: extra
+Section: universe/debug
+Installed-Size: 181633
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Architecture: i386
+Source: qtcreator
+Version: 2.5.2-0ubuntu1~ubuntu12.04.1
+Depends: qtcreator (= 2.5.2-0ubuntu1~ubuntu12.04.1)
+Pre-Depends: dpkg (>= 1.15.6)
+Filename: pool/universe/q/qtcreator/qtcreator-dbg_2.5.2-0ubuntu1~ubuntu12.04.1_i386.deb
+Size: 176207892
+MD5sum: 2589aa546ce99b2f1d3b8cf02aca0d31
+SHA1: 711554f9d10b8cc43f34ca2231d1dfc26063cf0a
+SHA256: 9056296421e5de0b8aae865426e881f0fa56d4e83e2421885e6c6ac06ea79284
+Description: debugging symbols for Qt Creator IDE
+Homepage: http://qt.nokia.com/products/developer-tools/
+Description-md5: 629e09dcc2d3e8b586610af7dda13220
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: qtcreator-doc
+Priority: optional
+Section: universe/doc
+Installed-Size: 4087
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Architecture: all
+Source: qtcreator
+Version: 2.5.2-0ubuntu1~ubuntu12.04.1
+Pre-Depends: dpkg (>= 1.15.6)
+Suggests: qt4-dev-tools, qt4-doc
+Filename: pool/universe/q/qtcreator/qtcreator-doc_2.5.2-0ubuntu1~ubuntu12.04.1_all.deb
+Size: 4027908
+MD5sum: 3bf6a1420b012f1748b5642d226a04f7
+SHA1: c62b652ef534f02d48ae2077b61e57f35f6a342e
+SHA256: 395c1c214033bccb4861b66dfd74c4c76456b46444c29a0502780d59e8b81e67
+Description: documentation for Qt Creator IDE
+Homepage: http://qt.nokia.com/products/developer-tools/
+Description-md5: 3222826a78bdc18828e17359c62a98cd
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: rddmarc
+Priority: extra
+Section: universe/mail
+Installed-Size: 63
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Scott Kitterman <scott@kitterman.com>
+Architecture: all
+Source: opendmarc
+Version: 1.0.1+dfsg-3~ubuntu12.04.1
+Depends: python, python-mysqldb, perl, libdbi-perl, libxml-simple-perl, libmime-tools-perl
+Filename: pool/universe/o/opendmarc/rddmarc_1.0.1+dfsg-3~ubuntu12.04.1_all.deb
+Size: 12290
+MD5sum: 7f6a9177feb183147298ec7a6b71b74f
+SHA1: c86a2448695a2c6b330b61c51388e4c03759c950
+SHA256: 753667ec04349c1b8b6d51eecdb7d031e3325b706b8606e9af5a459fa42e53d4
+Description: DMARC report processing scripts collection
+Homepage: http://www.trusteddomain.org/opendmarc
+Description-md5: 9626f4163f1a21a3952d6c99c7003cab
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: rddmarc
+Priority: extra
+Section: universe/mail
+Installed-Size: 67
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Scott Kitterman <scott@kitterman.com>
+Architecture: all
+Source: opendmarc
+Version: 1.1.3-1~ubuntu12.04.1
+Depends: python, python-mysqldb, perl, libdbi-perl, libxml-simple-perl, libmime-tools-perl
+Filename: pool/universe/o/opendmarc/rddmarc_1.1.3-1~ubuntu12.04.1_all.deb
+Size: 13770
+MD5sum: 92b2579f00df99aa6d14619640c8739e
+SHA1: 41ebfbafcb74048ba13a3a831b4fed591c36b763
+SHA256: ceaac6ac7e3736f80e820ece005ad0e7368a7d45fd41b6301f99c57661ddc47d
+Description: DMARC report processing scripts collection
+Homepage: http://www.trusteddomain.org/opendmarc
+Description-md5: 9626f4163f1a21a3952d6c99c7003cab
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: scratch
+Priority: optional
+Section: universe/education
+Installed-Size: 45630
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Miriam Ruiz <little_miry@yahoo.es>
+Architecture: all
+Version: 1.4.0.6~dfsg1-2~ubuntu12.04.1
+Depends: squeak-vm, squeak-plugins-scratch, libgtk2.0-bin, shared-mime-info
+Suggests: pulseaudio (>= 1.0.9)
+Filename: pool/universe/s/scratch/scratch_1.4.0.6~dfsg1-2~ubuntu12.04.1_all.deb
+Size: 29892612
+MD5sum: 0af751b0915aeabdeffeee9fe9189415
+SHA1: 3c5ad6a4b0a4c64f8a7aadf03cb05a19e44ebec5
+SHA256: 76ef35a6af04c4ff3c0f89e06c1d351c59149109ce302dd05caea07b4c06f1ab
+Description: easy to use programming environment for ages 8 and up - data
+Homepage: http://scratch.mit.edu
+Description-md5: b9ed04d52b57e23fe16ed824a639461e
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: sks
+Priority: optional
+Section: universe/net
+Installed-Size: 1783
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Christoph Martin <christoph.martin@uni-mainz.de>
+Architecture: i386
+Version: 1.1.3-1ubuntu2~ubuntu12.04.1
+Depends: libc6 (>= 2.7), libdb5.1, zlib1g (>= 1:1.1.4), db-util, adduser, logrotate
+Suggests: postfix | mail-transport-agent, procmail
+Filename: pool/universe/s/sks/sks_1.1.3-1ubuntu2~ubuntu12.04.1_i386.deb
+Size: 688688
+MD5sum: 83d3a634a78944fc3f8744b69a90fc30
+SHA1: dd157b19357090b05e5e8200e5c9ef8dc2c95d73
+SHA256: 6824d556d47a5fb540e07f4dab6d16fb72c70b0fe0c3bc5c8232efe851499258
+Description: Synchronizing OpenPGP Key Server
+Description-md5: 77734b608b7371c79747806d29321135
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: sparkleshare
+Priority: optional
+Section: universe/utils
+Installed-Size: 814
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian CLI Applications Team <pkg-cli-apps-team@lists.alioth.debian.org>
+Architecture: all
+Version: 0.9.0-1ubuntu1~ubuntu12.04.1
+Depends: gnome-icon-theme, git (>= 1.7.1), gvfs (>= 1.3), libjs-jquery, mono-runtime (>= 2.10.1), libappindicator0.1-cil (>= 0.4.92), libc6 (>= 2.15) | libc6.1 (>= 2.15) | libc0.1 (>= 2.15), libglib2.0-cil (>= 2.12.10-1ubuntu1), libgtk2.0-cil (>= 2.12.10-1ubuntu1), libmono-corlib4.0-cil (>= 2.10.1), libmono-posix4.0-cil (>= 2.10.1), libmono-system-core4.0-cil (>= 2.10.3), libmono-system-xml4.0-cil (>= 1.0), libmono-system4.0-cil (>= 2.10.7), libnotify0.4-cil (>= 0.4.0~r2998), libwebkit1.1-cil (>= 0.3)
+Recommends: python, python-nautilus
+Filename: pool/universe/s/sparkleshare/sparkleshare_0.9.0-1ubuntu1~ubuntu12.04.1_all.deb
+Size: 426722
+MD5sum: d30d6a575f6743cd3e4b4124d4c7f8e4
+SHA1: 769e4fbff99238d56e794f6483d137e7267790e5
+SHA256: b988ab679714bab3a255beb3a43832b2cbd5e27394c732fb5e9e387a940abb30
+Description: distributed collaboration and sharing tool
+Homepage: http://sparkleshare.org/
+Description-md5: 0f55c782a211bb376383ca7b386633a6
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: supertuxkart
+Priority: optional
+Section: universe/games
+Installed-Size: 8830
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: i386
+Version: 0.8-1~ubuntu12.04.1
+Depends: supertuxkart-data (= 0.8-1~ubuntu12.04.1), libbz2-1.0, libc6 (>= 2.11), libcurl3-gnutls (>= 7.16.2-1), libenet1a, libfribidi0 (>= 0.19.2), libgcc1 (>= 1:4.1.1), libgl1-mesa-glx | libgl1, libjpeg8 (>= 8c), libopenal1 (>= 1:1.13), libpng12-0 (>= 1.2.13-4), libstdc++6 (>= 4.6), libvorbisfile3 (>= 1.1.2), libx11-6, libxxf86vm1, zlib1g (>= 1:1.1.4)
+Filename: pool/universe/s/supertuxkart/supertuxkart_0.8-1~ubuntu12.04.1_i386.deb
+Size: 3473000
+MD5sum: 0d4554a6d9e15995f2c0582f76b7b5fc
+SHA1: 42f2753b2156bc55c0d26fa5382b594b084d8672
+SHA256: dd3d6ec74b7797cbcb9da510eb9479e4a0ad0eee732e1c3807c11c70cbd2f141
+Description: 3D kart racing game
+Homepage: http://supertuxkart.sf.net/
+Description-md5: b7e47b2f0e78418e322e23357b24c7db
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: supertuxkart-data
+Priority: optional
+Section: universe/games
+Installed-Size: 208383
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: all
+Source: supertuxkart
+Version: 0.8-1~ubuntu12.04.1
+Suggests: supertuxkart
+Filename: pool/universe/s/supertuxkart/supertuxkart-data_0.8-1~ubuntu12.04.1_all.deb
+Size: 158377382
+MD5sum: 713b539eee9ecb89d6f75010ffae062e
+SHA1: cd9b02c0e5e55e326de3663db5a554fa42353765
+SHA256: 65ddf5b5a68e9a98a51874e7a7f93fb02d91b5825103323aaa6dd1703bc451ed
+Description: 3D kart racing game (data)
+Homepage: http://supertuxkart.sf.net/
+Description-md5: 7c000895a1ef142194c997b00f60d8b2
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: supertuxkart-dbg
+Priority: extra
+Section: universe/debug
+Installed-Size: 36058
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: i386
+Source: supertuxkart
+Version: 0.8-1~ubuntu12.04.1
+Depends: supertuxkart (= 0.8-1~ubuntu12.04.1)
+Filename: pool/universe/s/supertuxkart/supertuxkart-dbg_0.8-1~ubuntu12.04.1_i386.deb
+Size: 35725326
+MD5sum: bb41dbcca99097836d286a9ff6b85cdd
+SHA1: a203948d06b8427a4d815f98802a5d5fcbe438fa
+SHA256: 4a78e7fafb1aac28e3b035a73d47cdabb3c7958df9627b1ac45f4c40d752e304
+Description: 3D kart racing game (debug)
+Homepage: http://supertuxkart.sf.net/
+Description-md5: 1fd65650ef6fd5bddb32be234a6b1252
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: synergy
+Priority: optional
+Section: universe/net
+Installed-Size: 2320
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Jeff Licquia <licquia@debian.org>
+Architecture: i386
+Version: 1.4.10-1ubuntu1~ubuntu12.04.1
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libqt4-network (>= 4:4.5.3), libqtcore4 (>= 4:4.8.0), libqtgui4 (>= 4:4.8.0), libstdc++6 (>= 4.6), libx11-6 (>= 2:1.2.99.901), libxext6, libxi6 (>= 2:1.2.99.4), libxinerama1, libxtst6
+Filename: pool/universe/s/synergy/synergy_1.4.10-1ubuntu1~ubuntu12.04.1_i386.deb
+Size: 906936
+MD5sum: 59e138ff2eb90841b3a25eb11c341502
+SHA1: 2150900695cccbc4b31ec05357897dd1d105df46
+SHA256: ae982987757cf4148938e4ed65a5c56f01ee132889fa331420f94bb19b66416d
+Description: Share mouse, keyboard and clipboard over the network
+Homepage: http://synergy-foss.org/
+Description-md5: 5fade0f66a7ce7fd1077db2409b0fd30
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: task
+Priority: optional
+Section: universe/utils
+Installed-Size: 1963
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Federico Hernandez <ultrafredde@gmail.com>
+Architecture: i386
+Version: 2.1.2-0ubuntu1~ubuntu12.04.1
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.6)
+Filename: pool/universe/t/task/task_2.1.2-0ubuntu1~ubuntu12.04.1_i386.deb
+Size: 865888
+MD5sum: 58a7c5c05bd361afbac677c7618a255a
+SHA1: 95467b643f4b5d7c049a032355699eb26c7e0d5f
+SHA256: 8b4d4e600fff0075c227b154bbe9048aea5eb5a4f6bb2fa45870e37291d4ac6b
+Description: feature-rich console based todo list manager
+Homepage: http://taskwarrior.org
+Description-md5: 0d098dac3c1ebd03ad036f5c28ef384f
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: tickr
+Priority: optional
+Section: universe/net
+Installed-Size: 310
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Emmanuel Thomas-Maurin <manutm007@gmail.com>
+Architecture: i386
+Version: 0.6.4-1~ubuntu12.04.1
+Depends: libc6 (>= 2.15), libcairo2 (>= 1.2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.20.0), libpango1.0-0 (>= 1.14.0), libxml2 (>= 2.7.4)
+Filename: pool/universe/t/tickr/tickr_0.6.4-1~ubuntu12.04.1_i386.deb
+Size: 131542
+MD5sum: bcb44cf7a1cebb912dd3e0045b78efc2
+SHA1: 6a05aa431efb6d1ddf1335f142d4898522dabdc3
+SHA256: c222a0b8bbf3b70c10442160737729161e0912d9da65c82a9c6c3f7343ec221c
+Description: GTK-based highly graphically-customizable Feed Ticker
+Homepage: http://www.newsrssticker.com
+Description-md5: 1d60fd79d3e1e74ad7fe09a3106360fa
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: tvnamer
+Priority: optional
+Section: universe/video
+Installed-Size: 119
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Python Applications Packaging Team <python-apps-team@lists.alioth.debian.org>
+Architecture: all
+Version: 2.2.1-1~ubuntu12.04.1
+Depends: python, python-support (>= 0.90.0), python-tvdb-api (>= 1.5), python-pkg-resources
+Filename: pool/universe/t/tvnamer/tvnamer_2.2.1-1~ubuntu12.04.1_all.deb
+Size: 27938
+MD5sum: f79796dde1bc72467b0f35c74fcd2138
+SHA1: 62e52859d5779e475236b59e6b90334de51ae9e7
+SHA256: ce288607388973a76f47ba4f3993c94e0d34d11008bdbc7e3069cd4c142e3653
+Description: utility to rename TV-show episodes files
+Homepage: https://github.com/dbr/tvnamer
+Description-md5: 9f99a131196fe8058d4f3d8a6f0a5f02
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: ubuntu-online-tour
+Priority: optional
+Section: universe/doc
+Installed-Size: 9931
+Maintainer: Timo Jyrinki <timo-jyrinki@ubuntu.com>
+Architecture: all
+Version: 0.11-0ubuntu1.1~ubuntu12.04.1
+Depends: firefox, libjs-jquery, libjs-jquery-ui
+Recommends: xdg-utils
+Filename: pool/universe/u/ubuntu-online-tour/ubuntu-online-tour_0.11-0ubuntu1.1~ubuntu12.04.1_all.deb
+Size: 7163352
+MD5sum: f1b97dfb3c1889926ffc5c610ea4f3e4
+SHA1: 2cd2df9efa102b3419e1ad9b86140db338b05c7b
+SHA256: 93ddd14e401077738ea76ebce25af7950ddb80e8970649fc20dcb0c487d2575f
+Description: Experience Ubuntu in your web browser
+Homepage: https://launchpad.net/ubuntu-online-tour
+Description-md5: f71fcd466bd00e63d40972e0017fc88c
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: ubuntu-packaging-guide
+Priority: optional
+Section: universe/metapackages
+Installed-Size: 54
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.2.2~ubuntu12.04.1
+Depends: ubuntu-packaging-guide-html
+Filename: pool/universe/u/ubuntu-packaging-guide/ubuntu-packaging-guide_0.2.2~ubuntu12.04.1_all.deb
+Size: 10336
+MD5sum: 05fd95e741ede7235c1427d7014959a8
+SHA1: 8c7098207efce233e5e8b8d8a42a0b694d613cca
+SHA256: e9e4d27c3e40f1658678f4a34e2ea7f22d6f633aa8256a8df0f195a45efd47cd
+Description: Ubuntu Packaging Guide - metapackage
+Description-md5: e068ad6953d0f5ba85233ab3fec614fb
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: ubuntu-packaging-guide-epub
+Priority: optional
+Section: universe/doc
+Installed-Size: 1289
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: ubuntu-packaging-guide
+Version: 0.2.2~ubuntu12.04.1
+Depends: libjs-underscore, libjs-jquery (>= 1.6.1)
+Filename: pool/universe/u/ubuntu-packaging-guide/ubuntu-packaging-guide-epub_0.2.2~ubuntu12.04.1_all.deb
+Size: 1277452
+MD5sum: 46c774107282fa66d104352004f49229
+SHA1: 27202b23ea0a11b5000f7bd8171c85ad7aa01cc9
+SHA256: d952fbf58cc945c613fbbe8ca6438c17cdf3ecd339cadf975a48dbdae0558ac1
+Description: Ubuntu Packaging Guide - EPUB guide
+Description-md5: a52b9156e84a71a3f811252a12c8e0c6
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: ubuntu-packaging-guide-html
+Priority: optional
+Section: universe/doc
+Installed-Size: 1162
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: ubuntu-packaging-guide
+Version: 0.2.2~ubuntu12.04.1
+Depends: libjs-underscore, libjs-jquery (>= 1.6.1)
+Filename: pool/universe/u/ubuntu-packaging-guide/ubuntu-packaging-guide-html_0.2.2~ubuntu12.04.1_all.deb
+Size: 474924
+MD5sum: 61574716f564e52c26e124391bc8e565
+SHA1: 689e4c37872d1dd5a9ed597bdb35fb3fbacf06ec
+SHA256: 37c6688f5a918ffd1ada500177625119da781fe165cc7c6df07b5bef993ab68a
+Description: Ubuntu Packaging Guide - HTML guide
+Description-md5: aead54fe3b939ff64b94c8fb1b2ad858
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: ubuntu-packaging-guide-pdf
+Priority: optional
+Section: universe/doc
+Installed-Size: 560
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Source: ubuntu-packaging-guide
+Version: 0.2.2~ubuntu12.04.1
+Filename: pool/universe/u/ubuntu-packaging-guide/ubuntu-packaging-guide-pdf_0.2.2~ubuntu12.04.1_all.deb
+Size: 526278
+MD5sum: ecb9f885bb30e46c9cddf8732947bb6b
+SHA1: 6614a6d5a9412cd2c4448d817b36979ebba34995
+SHA256: dd306422b5dea7b22858bbecc9003f26caed18e8647ae0937e501ccd89b2447b
+Description: Ubuntu Packaging Guide - PDF guide
+Description-md5: 83defabd310e3bbbe0a4b055b2b6f127
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: udj-desktop-client
+Priority: optional
+Section: universe/sound
+Installed-Size: 606
+Maintainer: Nathan Handler <nhandler@ubuntu.com>
+Architecture: i386
+Version: 0.5.1-1~ubuntu12.04.1
+Depends: libc6 (>= 2.3.6-6~), libgcc1 (>= 1:4.1.1), libphonon4 (>= 4:4.3.0), libqt4-network (>= 4:4.7.0~beta1), libqt4-sql (>= 4:4.5.3), libqt4-xml (>= 4:4.5.3), libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.8.0), libstdc++6 (>= 4.4.0), libtag1c2a (>= 1.5), phonon
+Filename: pool/universe/u/udj-desktop-client/udj-desktop-client_0.5.1-1~ubuntu12.04.1_i386.deb
+Size: 209910
+MD5sum: 92398b2d7a72e04e6c82085019918771
+SHA1: 7ea1c71cd059476dbc4c330dd1d496b5f1a2cda3
+SHA256: e0194217daa0137ec148ec8f46eb952257f35bcc021dcbfe069eeafa82a8d343
+Description: social music player
+Homepage: https://www.udjplayer.com/
+Description-md5: 53613ecf29a8887e86df9f04e69cabd4
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: unbound
+Priority: optional
+Section: universe/net
+Installed-Size: 1381
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Robert S. Edmonds <edmonds@debian.org>
+Architecture: i386
+Version: 1.4.18-1~ubuntu12.04.1
+Depends: libc6 (>= 2.15), libevent-2.0-5 (>= 2.0.16-stable), libgcc1 (>= 1:4.1.1), libldns1 (>= 1.6.10), libpython2.7 (>= 2.7), libssl1.0.0 (>= 1.0.0), unbound-anchor, adduser, openssl
+Filename: pool/universe/u/unbound/unbound_1.4.18-1~ubuntu12.04.1_i386.deb
+Size: 599864
+MD5sum: 55912eb47c6eeb41714cdcae2cf488c1
+SHA1: ca1df42c47b47c9fb4c55fa5838d1395b6f5c4bc
+SHA256: 316aa720c66ba08562f747815bd6ecf1cbe9d288458011339313df8177bfbcd7
+Description: validating, recursive, caching DNS resolver
+Homepage: http://www.unbound.net/
+Description-md5: fbeecad8349f6b3042087b256bc69b68
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: unbound-anchor
+Priority: optional
+Section: universe/net
+Installed-Size: 86
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Robert S. Edmonds <edmonds@debian.org>
+Architecture: i386
+Source: unbound
+Version: 1.4.18-1~ubuntu12.04.1
+Replaces: unbound (<< 1.4.13-1)
+Depends: libc6 (>= 2.4), libexpat1 (>= 1.95.8), libgcc1 (>= 1:4.1.1), libldns1 (>= 1.6.5), libssl1.0.0 (>= 1.0.0), libunbound2 (>= 1.4.1)
+Breaks: unbound (<< 1.4.13-1)
+Filename: pool/universe/u/unbound/unbound-anchor_1.4.18-1~ubuntu12.04.1_i386.deb
+Size: 24102
+MD5sum: 54eef3323cf48625ddea288128d17061
+SHA1: 5f03f93dca76ccd6cff51f25ab3c2057d886c661
+SHA256: 9f03b4b5407b43fe657f6a5c0c5ed030f6850723e4feaa5393ec70c703e12d9d
+Description: utility to securely fetch the root DNS trust anchor
+Homepage: http://www.unbound.net/
+Description-md5: f49fb3435120bde9cd4af959aeac719c
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: unbound-host
+Priority: optional
+Section: universe/net
+Installed-Size: 65
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Robert S. Edmonds <edmonds@debian.org>
+Architecture: i386
+Source: unbound
+Version: 1.4.18-1~ubuntu12.04.1
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libldns1 (>= 1.4.0), libunbound2 (>= 1.4.2)
+Filename: pool/universe/u/unbound/unbound-host_1.4.18-1~ubuntu12.04.1_i386.deb
+Size: 12502
+MD5sum: 1789074fa702dcb80e483063fdc50535
+SHA1: 4d61cff59a31086d4ca5ab64906d70ab21315d7b
+SHA256: 32e791d9891fcd6eb0dd9059ce08f5180ab157a31e828cb7e6bdc257479e5e87
+Description: reimplementation of the 'host' command
+Homepage: http://www.unbound.net/
+Description-md5: 287e113772f55d3575bb8577560cb3eb
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: unknown-horizons
+Priority: optional
+Section: universe/games
+Installed-Size: 120329
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 2012.1+dfsg1-1~ubuntu12.04.1
+Depends: python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8), python-fife (>= 0.3.3+r3), python-enet, python-yaml
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/universe/u/unknown-horizons/unknown-horizons_2012.1+dfsg1-1~ubuntu12.04.1_all.deb
+Size: 94737836
+MD5sum: e5ed87cd55f15638d3a8d7650dcdf3b1
+SHA1: f273f0ad865d1e223d56c5ef36f3f4f47ebcec92
+SHA256: 6d7674df3a4a4d9f92bf06463be2552a576ad8169924c050434fabc00608ca10
+Description: 2D realtime strategy simulation
+Homepage: http://www.unknown-horizons.org
+Description-md5: 0f7f05bccb8cdb029e520b2897cdaf42
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: volti
+Priority: optional
+Section: universe/sound
+Installed-Size: 514
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: all
+Version: 0.2.3-5~ubuntu12.04.1
+Depends: python-alsaaudio, python-dbus, python-gobject, python-gtk2, python-xlib, python (>= 2.7.1-0ubuntu2)
+Filename: pool/universe/v/volti/volti_0.2.3-5~ubuntu12.04.1_all.deb
+Size: 141240
+MD5sum: 8b12fc1fe976ba979742273aa87c6050
+SHA1: 8ad948c47bff1781c1a88fe805dc8bd1228bca57
+SHA256: 241f373639884bcdad5180a97c850537285abf10fe306b9b27e521a632defeea
+Description: control audio volume from system tray/notification area
+Homepage: http://code.google.com/p/volti/
+Description-md5: 97a31bacd21024a8cbdc6167b72bca22
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: widelands
+Priority: extra
+Section: universe/games
+Installed-Size: 5451
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Martin Quinson <mquinson@debian.org>
+Architecture: i386
+Version: 1:17-2~ubuntu12.04.1
+Depends: widelands-data (= 1:17-2~ubuntu12.04.1), libc6 (>= 2.15), libgcc1 (>= 1:4.1.1), libgl1-mesa-glx | libgl1, libglew1.5 (>= 1.5.7.is.1.5.2), liblua5.1-0, libpng12-0 (>= 1.2.13-4), libsdl-gfx1.2-4 (>= 2.0.22), libsdl-image1.2 (>= 1.2.10), libsdl-mixer1.2, libsdl-net1.2, libsdl-ttf2.0-0, libsdl1.2debian (>= 1.2.10-1), libstdc++6 (>= 4.6), zlib1g (>= 1:1.1.4), ttf-freefont
+Filename: pool/universe/w/widelands/widelands_17-2~ubuntu12.04.1_i386.deb
+Size: 2218910
+MD5sum: 324d915b8232a83a12ece34d19da30ce
+SHA1: f9c30ffbdafd7911c32c67e88a3a4da843e610d6
+SHA256: 61a47ee6ef6f783be5bc15a2fda7196ba7dec90e3e6718b5ce9e5088b170f95d
+Description: fantasy real-time strategy game
+Homepage: http://www.widelands.org
+Description-md5: 2aa8687bbb83b4fb4eff245b46d1c3eb
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: widelands-data
+Priority: extra
+Section: universe/games
+Installed-Size: 200716
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Martin Quinson <mquinson@debian.org>
+Architecture: all
+Source: widelands
+Version: 1:17-2~ubuntu12.04.1
+Depends: ttf-freefont
+Filename: pool/universe/w/widelands/widelands-data_17-2~ubuntu12.04.1_all.deb
+Size: 176347312
+MD5sum: d8d74f9fffc0eccff3023884cf31ba72
+SHA1: 4121c1f15af3a877671a879aedd7e6ab1f408720
+SHA256: 5260474103f4d6b0af44aa9bd08f9ce3964721c879d029d2f3ee743971d8d99f
+Description: fantasy real-time strategy game (data files)
+Homepage: http://www.widelands.org
+Description-md5: 83a9c23053626f0f7c374fe1069eca20
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: widelands-dbg
+Priority: extra
+Section: universe/games
+Installed-Size: 77484
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Martin Quinson <mquinson@debian.org>
+Architecture: i386
+Source: widelands
+Version: 1:17-2~ubuntu12.04.1
+Depends: widelands (= 1:17-2~ubuntu12.04.1)
+Filename: pool/universe/w/widelands/widelands-dbg_17-2~ubuntu12.04.1_i386.deb
+Size: 30069548
+MD5sum: 4470e77134d21c750465e1ed6d82b373
+SHA1: 92ff3de717509c09e76a73140c8da5dcdcfd253c
+SHA256: 25af33d725f844ad9a1da357c203bfba7f988366a9436d4beb3a210a88b8dc14
+Description: fantasy real-time strategy game (debug cruft)
+Homepage: http://www.widelands.org
+Description-md5: 7a7974a308676170cabc5e640b89b142
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: wsl
+Priority: optional
+Section: universe/admin
+Installed-Size: 120
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Daniel Jared Dominguez <Jared_Dominguez@Dell.com>
+Architecture: all
+Version: 0.2.1-1~ubuntu12.04.1
+Depends: wget (>= 1.13) | curl, libxml2-utils
+Recommends: xsltproc, gnupg, curl
+Filename: pool/universe/w/wsl/wsl_0.2.1-1~ubuntu12.04.1_all.deb
+Size: 19910
+MD5sum: a98cb17c183f5c3c0dcb2bfe82ef6405
+SHA1: b5d4065fa48010ae89f1555a88e4648b0999a4cf
+SHA256: 355abf0dc83ae09ee3e8c8560a6313bf6b45766f9820003588b1a42d7d036492
+Description: Wsman Shell Command Line "whistle"
+Homepage: http://linux.dell.com/files/wsl/
+Description-md5: 9b0a82cf07de44ae3fa1380f1b14f273
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: yubikey-personalization-gui
+Priority: extra
+Section: universe/utils
+Installed-Size: 634
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Yubico Open Source Maintainers <ossmaint@yubico.com>
+Architecture: i386
+Version: 3.0.6-1~ubuntu12.04.1
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.5.3), libstdc++6 (>= 4.1.1), libykpers-1-1 (>= 1.5.0), libyubikey0 (>= 1.5)
+Filename: pool/universe/y/yubikey-personalization-gui/yubikey-personalization-gui_3.0.6-1~ubuntu12.04.1_i386.deb
+Size: 230722
+MD5sum: 9dacc0cffcd3aef683ca2b9dcb29df90
+SHA1: 7085c9f90af64363efa3af64965aeb1e9777d206
+SHA256: 04385960b8cc99c5393c21f34b407f02a60e8735aea3a1b404679f8d4e91a49f
+Description: Graphical personalization tool for YubiKey tokens
+Homepage: https://github.com/Yubico/yubikey-personalization-gui
+Description-md5: ead8aea67c068c6ea35aca4fae2014de
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: znc
+Priority: optional
+Section: universe/net
+Installed-Size: 3406
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+Architecture: i386
+Version: 1.0-2~ubuntu12.04.1
+Replaces: znc-webadmin
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libssl1.0.0 (>= 1.0.0), libstdc++6 (>= 4.6)
+Pre-Depends: dpkg (>= 1.15.6~)
+Recommends: znc-tcl, znc-perl, znc-extra, znc-python
+Conflicts: znc-webadmin
+Breaks: znc-extra (<< 1.0-2~ubuntu12.04.1)
+Filename: pool/universe/z/znc/znc_1.0-2~ubuntu12.04.1_i386.deb
+Size: 1037162
+MD5sum: 9a28a399f5acd02bcac9f9ffb6d6b25c
+SHA1: f78af3f9ef3080cf8e50d7bfd7d1c051484cb7fe
+SHA256: 96798e1b80e1115888b3c68a41e5525ef27a7073971a247a20836d72429030cf
+Description: advanced modular IRC bouncer
+Homepage: http://znc.sourceforge.net/
+Description-md5: 9b4612c45a69774bb76ba3e438f750c7
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: znc-dbg
+Priority: extra
+Section: universe/net
+Installed-Size: 47379
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+Architecture: i386
+Source: znc
+Version: 1.0-2~ubuntu12.04.1
+Depends: znc (= 1.0-2~ubuntu12.04.1) | znc-perl (= 1.0-2~ubuntu12.04.1) | znc-webadmin (= 1.0-2~ubuntu12.04.1) | znc-extra (= 1.0-2~ubuntu12.04.1) | znc-python (= 1.0-2~ubuntu12.04.1)
+Pre-Depends: dpkg (>= 1.15.6~)
+Breaks: znc-extra-dbg (<= 0.074)
+Filename: pool/universe/z/znc/znc-dbg_1.0-2~ubuntu12.04.1_i386.deb
+Size: 10167752
+MD5sum: 7c0fdfc50bc14973ddf4516139d14380
+SHA1: 80046b3772d4053af5bdaa96e1cd02e79c8237e6
+SHA256: 1cfe3678eb292706cfd49352bdb46c3e2199d89754fb4ba61f2eb777e3c280ac
+Description: advanced modular IRC bouncer (debugging symbols)
+Homepage: http://znc.sourceforge.net/
+Description-md5: 48f0ac40a29af5ebb9e8c9ef6844f643
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: znc-dev
+Priority: optional
+Section: universe/net
+Installed-Size: 298
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+Architecture: i386
+Source: znc
+Version: 1.0-2~ubuntu12.04.1
+Depends: znc (>= 1.0-2~ubuntu12.04.1), libssl-dev
+Pre-Depends: dpkg (>= 1.15.6~)
+Recommends: g++
+Filename: pool/universe/z/znc/znc-dev_1.0-2~ubuntu12.04.1_i386.deb
+Size: 53798
+MD5sum: 83258a3f15ca147bfe6d6ca6e3695e55
+SHA1: e0264513accb5d4c085caebd7f966bcf9e693ee3
+SHA256: 46c980c4605e0a3bc4c1185813efe186b60ae9f8eaf3c1c59126e9e5e5b2ba86
+Description: advanced modular IRC bouncer (development headers)
+Homepage: http://znc.sourceforge.net/
+Description-md5: 52f474b711dc1ef1b5080ac619e4daa2
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: znc-extra
+Priority: optional
+Section: universe/net
+Installed-Size: 956
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+Architecture: i386
+Source: znc
+Version: 1.0-2~ubuntu12.04.1
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libsasl2-2 (>= 2.1.24), libstdc++6 (>= 4.4.0), znc (= 1.0-2~ubuntu12.04.1)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/universe/z/znc/znc-extra_1.0-2~ubuntu12.04.1_i386.deb
+Size: 188616
+MD5sum: 5434337e5fff3ffa4d0fbc84cc237eac
+SHA1: 3aed7c83ea6bbfc12495037127b762e7a0d41aa6
+SHA256: e57aca3a7a096864dc7558ee6f3f4189a3efb07f7f2517e5f76b6b0d2d800295
+Description: extra modules for znc
+Homepage: http://znc.sourceforge.net/
+Description-md5: b217b89d16cff1f603dbcf9df8981310
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: znc-perl
+Priority: optional
+Section: universe/net
+Installed-Size: 2830
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+Architecture: i386
+Source: znc
+Version: 1.0-2~ubuntu12.04.1
+Depends: libc6 (>= 2.15), libgcc1 (>= 1:4.1.1), libperl5.14 (>= 5.14.2), libstdc++6 (>= 4.6), znc (= 1.0-2~ubuntu12.04.1)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/universe/z/znc/znc-perl_1.0-2~ubuntu12.04.1_i386.deb
+Size: 487096
+MD5sum: df8e64aa4395c8c5c4ea6ce0267560bf
+SHA1: d56dd303d1a57be01f87f5fe0e723edb9e6edb66
+SHA256: acd48c027bbd4a497b0f9d61ded2ef6768a2c1bcdd56921d4027faadfe842939
+Description: advanced modular IRC bouncer (Perl extension)
+Homepage: http://znc.sourceforge.net/
+Description-md5: 3b9cef928cf90174b5c7358eb9faff82
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: znc-python
+Priority: optional
+Section: universe/net
+Installed-Size: 2911
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+Architecture: i386
+Source: znc
+Version: 1.0-2~ubuntu12.04.1
+Depends: libc6 (>= 2.15), libgcc1 (>= 1:4.1.1), libpython3.2 (>= 3.2~a4), libstdc++6 (>= 4.6), znc (= 1.0-2~ubuntu12.04.1)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/universe/z/znc/znc-python_1.0-2~ubuntu12.04.1_i386.deb
+Size: 528310
+MD5sum: 953c4c3b34d158bdb1834dcf940ce0e4
+SHA1: 45211f66f2a82015ab4775fb65695c46e7ca0c68
+SHA256: a39befa78061338a4e42063cb9bca34ad178afff69a3460505c721e8e930aa2f
+Description: advanced modular IRC bouncer (Python extension)
+Homepage: http://znc.sourceforge.net/
+Description-md5: 7850724d985b344f626787e4324ee8e1
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: znc-tcl
+Priority: optional
+Section: universe/net
+Installed-Size: 152
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Patrick Matthäi <pmatthaei@debian.org>
+Architecture: i386
+Source: znc
+Version: 1.0-2~ubuntu12.04.1
+Depends: libc6 (>= 2.3.6-6~), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1), tcl8.5 (>= 8.5.0), znc (= 1.0-2~ubuntu12.04.1)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/universe/z/znc/znc-tcl_1.0-2~ubuntu12.04.1_i386.deb
+Size: 31080
+MD5sum: bd3a16c2f14d3cb0f747b44f50f47b4b
+SHA1: 7a1a17bc0e4c7504d4d1d03288561193698d207a
+SHA256: fae648ced39f4df642c57eac0b380fd1d7557da9fe5f82525c01d54452b11944
+Description: advanced modular IRC bouncer (Tcl extension)
+Homepage: http://znc.sourceforge.net/
+Description-md5: a9d7945551f2c91a0a26d0284e01f934
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+

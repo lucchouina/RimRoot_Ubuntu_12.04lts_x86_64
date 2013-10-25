@@ -1,0 +1,13 @@
+195d90d27462534448d533850b0da16e  sbin/iscsi-iname
+20d053f11c5153abe831d92717c016af  sbin/iscsi_discovery
+9d6df1edb144de30fb605df495e1c479  sbin/iscsid
+ec319da4b7251d5dab45ae382e62e91a  sbin/iscsistart
+609e6198feebe99e8545c0ebb41b2d62  usr/share/doc/open-iscsi/README.Debian
+454a9ee079898279660d96c2d3eb516c  usr/share/doc/open-iscsi/README.gz
+0344e00add4fffbef94a4e26352ca810  usr/share/doc/open-iscsi/copyright
+7eaaa982f8962df93c9e5d12e5b07e65  usr/share/initramfs-tools/hooks/iscsi
+23500e51421dd61a58687689cef97661  usr/share/initramfs-tools/scripts/local-top/iscsi
+5d2a2e39c8965ba0e977308a883164b2  usr/share/man/man8/iscsi-iname.8.gz
+8e34c7bd2fe3d022bf814d80d3e67bdb  usr/share/man/man8/iscsi_discovery.8.gz
+ca40bcd80af0f4487878e0265825e4ce  usr/share/man/man8/iscsid.8.gz
+3787adef159b7dc90ded2fb139531964  usr/share/man/man8/iscsistart.8.gz

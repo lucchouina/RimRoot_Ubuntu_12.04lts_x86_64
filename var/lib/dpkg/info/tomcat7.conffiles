@@ -1,0 +1,14 @@
+/etc/init.d/tomcat7
+/etc/tomcat7/logging.properties
+/etc/tomcat7/server.xml
+/etc/tomcat7/web.xml
+/etc/tomcat7/catalina.properties
+/etc/tomcat7/context.xml
+/etc/tomcat7/tomcat-users.xml
+/etc/tomcat7/policy.d/01system.policy
+/etc/tomcat7/policy.d/02debian.policy
+/etc/tomcat7/policy.d/03catalina.policy
+/etc/tomcat7/policy.d/04webapps.policy
+/etc/tomcat7/policy.d/50local.policy
+/etc/logrotate.d/tomcat7
+/etc/cron.daily/tomcat7

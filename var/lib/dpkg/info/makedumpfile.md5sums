@@ -1,0 +1,5 @@
+517967123fc742351ceeb1d2825f5fea  usr/bin/makedumpfile
+7234bdbc3d27fdaf9314aee2603b04d9  usr/bin/makedumpfile-R.pl
+93c73e2867230a03004d25e0944ea4cf  usr/share/doc/makedumpfile/changelog.Debian.gz
+18284b66e661af3f1a27039b49a552a9  usr/share/doc/makedumpfile/copyright
+3bf56ea9da9107d722116b1b4ee6bd05  usr/share/man/man8/makedumpfile.8.gz

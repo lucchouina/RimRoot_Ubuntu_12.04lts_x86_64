@@ -1,0 +1,148 @@
+Package: debootstrap
+Binary: debootstrap, debootstrap-udeb
+Version: 1.0.40~precise1
+Priority: extra
+Section: admin
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Build-Depends: debhelper (>= 7.0.50), makedev (>= 2.3.1-69) [linux-any]
+Architecture: all
+Standards-Version: 3.9.2
+Format: 1.0
+Directory: pool/main/d/debootstrap
+Files:
+ 53bad6e71ac91e80348fb4427fcb4d88 841 debootstrap_1.0.40~precise1.dsc
+ 2423b9551fbab1790bb8c51eaae09169 56757 debootstrap_1.0.40~precise1.tar.gz
+Uploaders: Anthony Towns <ajt@debian.org>, Joey Hess <joeyh@debian.org>, Junichi Uekawa <dancer@debian.org>, Colin Watson <cjwatson@debian.org>
+Vcs-Browser: http://git.debian.org/?p=d-i/debootstrap.git
+Vcs-Git: git://git.debian.org/d-i/debootstrap.git
+Checksums-Sha1:
+ eee47ff420c58d060d21c254422c5328fc25a9ef 841 debootstrap_1.0.40~precise1.dsc
+ 4fef9ddecf038dea38aecd54497db117b6d4369d 56757 debootstrap_1.0.40~precise1.tar.gz
+Checksums-Sha256:
+ 8ec081346c4538f5092408117a3c5129160198cd15d4da7137524a63988d6cee 841 debootstrap_1.0.40~precise1.dsc
+ ac06287d86fd841c565a97d430cabc598b558a719d40bcbb38758736b5dea40d 56757 debootstrap_1.0.40~precise1.tar.gz
+
+Package: jquery
+Binary: libjs-jquery
+Version: 1.7.2+debian-1ubuntu1~ubuntu12.04.1
+Priority: optional
+Section: web
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 7.0.50~), yui-compressor
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/main/j/jquery
+Files:
+ abbc3189d40b9c2ebe3d5a349fe85c69 1530 jquery_1.7.2+debian-1ubuntu1~ubuntu12.04.1.dsc
+ cd39ef69e2b0e2aaaac2e1fed17f3d91 176210 jquery_1.7.2+debian.orig.tar.gz
+ a8c53736b28fcaee1c6c72ebae875fd9 6336 jquery_1.7.2+debian-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Marcelo Jorge Vieira (metal) <metal@debian.org>, Steve Kemp <skx@debian.org>
+Homepage: http://jquery.com/
+Vcs-Browser: http://git.debian.org/?p=pkg-javascript/jquery.git
+Vcs-Git: git://git.debian.org/git/pkg-javascript/jquery.git
+Package-List: 
+ libjs-jquery deb web optional
+Checksums-Sha1:
+ 15b0af27496c402c81883acbaa72b87ed74acec8 1530 jquery_1.7.2+debian-1ubuntu1~ubuntu12.04.1.dsc
+ 952666e56bb815c2ae6be07faf9f736835ae7ae5 176210 jquery_1.7.2+debian.orig.tar.gz
+ 0776c31b1ea6a99f11fedfcdabcd25b9ab0dd8f7 6336 jquery_1.7.2+debian-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ ab236bd992591635758dcfdb329aedf525a164d04971b02d7e8db6e876104749 1530 jquery_1.7.2+debian-1ubuntu1~ubuntu12.04.1.dsc
+ 7350c3389849d911f7413bb0ec81b62b159755d7bbbb5775b7d2b0c843d32d9f 176210 jquery_1.7.2+debian.orig.tar.gz
+ 1132cc8712df2bba20a595085a0fab545211a0a39da4bcd59e3d0572700562a7 6336 jquery_1.7.2+debian-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+
+Package: oxygencursors
+Binary: oxygen-cursor-theme, oxygen-cursor-theme-extra
+Version: 0.0.2012-06-kde4.8-2ubuntu2~ubuntu12.04.1
+Priority: optional
+Section: x11
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Original-Maintainer: Sune Vuorela <sune@debian.org>
+Build-Depends: debhelper (>= 5.0.0), inkscape, x11-apps, quilt, cmake
+Architecture: all
+Standards-Version: 3.9.3
+Format: 1.0
+Directory: pool/main/o/oxygencursors
+Files:
+ 8c05b6702b7f327776395739f96bcafe 2114 oxygencursors_0.0.2012-06-kde4.8-2ubuntu2~ubuntu12.04.1.dsc
+ 7dc0f45aacd225e93d70857c17cf4d66 103088 oxygencursors_0.0.2012-06-kde4.8.orig.tar.gz
+ 608f17536d29b9d9e1b40434e34ed34d 5374 oxygencursors_0.0.2012-06-kde4.8-2ubuntu2~ubuntu12.04.1.diff.gz
+Uploaders: Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
+Package-List: 
+ oxygen-cursor-theme deb x11 optional
+ oxygen-cursor-theme-extra deb x11 optional
+Checksums-Sha1:
+ 8529abd05eeb3805e29bae07e2a067fe73377356 2114 oxygencursors_0.0.2012-06-kde4.8-2ubuntu2~ubuntu12.04.1.dsc
+ fdf671afccee9f6c254a873f3b9fcef2f3f484f9 103088 oxygencursors_0.0.2012-06-kde4.8.orig.tar.gz
+ d9297e2cf5351c6c82cc0b03c4070e2893aa5870 5374 oxygencursors_0.0.2012-06-kde4.8-2ubuntu2~ubuntu12.04.1.diff.gz
+Checksums-Sha256:
+ 80796faf6238b0b2aef1d4dbcabc737ae613158da7d911a702aaed147382bc3d 2114 oxygencursors_0.0.2012-06-kde4.8-2ubuntu2~ubuntu12.04.1.dsc
+ 4d8f115cc3bf0a6d13b5129706299708a511dcd2bb4545eb637e4fb116c9cb1a 103088 oxygencursors_0.0.2012-06-kde4.8.orig.tar.gz
+ 6f04ccd007263f1bc11f478f6a22cc059ba0ca0ceb5cc25469192a2cc86af8d7 5374 oxygencursors_0.0.2012-06-kde4.8-2ubuntu2~ubuntu12.04.1.diff.gz
+
+Package: rekonq
+Binary: rekonq, rekonq-dbg
+Version: 1.0-0ubuntu1~ubuntu12.04.1
+Priority: optional
+Section: kde
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Original-Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9), pkg-kde-tools (>= 0.5.0~), cmake, kdelibs5-dev (>= 4:4.7), libqtwebkit-dev (>= 2.2.0), pkg-config
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/main/r/rekonq
+Files:
+ 9b72bb7fe9ceec1765dae14c99cd447a 1598 rekonq_1.0-0ubuntu1~ubuntu12.04.1.dsc
+ ca7b86ad4a778cbba52a14192865c7b0 3848577 rekonq_1.0.orig.tar.bz2
+ 2885e1a815a3e738af1eed4c081ebae0 8674 rekonq_1.0-0ubuntu1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Felix Geyer <debfx-pkg@fobos.de>, José Manuel Santamaría Lema <panfaust@gmail.com>
+Dm-Upload-Allowed: yes
+Homepage: http://rekonq.kde.org/
+Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-extras/rekonq.git
+Vcs-Git: git://git.debian.org/pkg-kde/kde-extras/rekonq.git
+Package-List: 
+ rekonq deb web optional
+ rekonq-dbg deb debug extra
+Checksums-Sha1:
+ a4bb725a5b2fa2a735bad76d6db56f406046db44 1598 rekonq_1.0-0ubuntu1~ubuntu12.04.1.dsc
+ b5f20c59dc21d57a0557104999d2a0e0423a7611 3848577 rekonq_1.0.orig.tar.bz2
+ c8aa16c1ab2aa5aa2e96f3e9d284a1253268f91d 8674 rekonq_1.0-0ubuntu1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ 38e9948fadb8931c68717d9de440b7de53a5f71e31b4560e8b0fe87a410fcccd 1598 rekonq_1.0-0ubuntu1~ubuntu12.04.1.dsc
+ 5970acebc9f2a35eb49152eb0d015c1cb8d85929ee6ae3f8a11869cf5391659e 3848577 rekonq_1.0.orig.tar.bz2
+ 52acbd88fbaf07601b559777b633ae45cd6fb8d20027330a980c022cacddd145 8674 rekonq_1.0-0ubuntu1~ubuntu12.04.1.debian.tar.gz
+
+Package: underscore
+Binary: libjs-underscore, node-underscore
+Version: 1.3.3-1ubuntu1~ubuntu12.04.1
+Priority: optional
+Section: web
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Build-Depends: cdbs, debhelper, dh-buildinfo, yui-compressor
+Architecture: all
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/main/u/underscore
+Files:
+ ed63bc50819afff5701e3437df260237 2161 underscore_1.3.3-1ubuntu1~ubuntu12.04.1.dsc
+ ad54c26e22c3b6a5f85ed8c805a13b7f 119288 underscore_1.3.3.orig.tar.gz
+ 22973ba2adf706036d1708b7fb8deb6c 5352 underscore_1.3.3-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+Uploaders: Jonas Smedegaard <dr@jones.dk> , David Paleino <dapal@debian.org>
+Homepage: http://documentcloud.github.com/underscore/
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/underscore.git
+Vcs-Git: git://git.debian.org/git/collab-maint/underscore
+Package-List: 
+ libjs-underscore deb web optional
+ node-underscore deb web optional
+Checksums-Sha1:
+ c301603676794ebc2f1cba05ec1a1acb126d373b 2161 underscore_1.3.3-1ubuntu1~ubuntu12.04.1.dsc
+ 91e3010ca2b610c06635451299fa8f1f9c3e4248 119288 underscore_1.3.3.orig.tar.gz
+ b7098fbdb1acd6245905ebdcc4c6be488d075a5c 5352 underscore_1.3.3-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+Checksums-Sha256:
+ d2cd3557eb133d43916711c7391fead0a156f2f183afeeb016f6873b4512cb13 2161 underscore_1.3.3-1ubuntu1~ubuntu12.04.1.dsc
+ 9de06715525260a669fc5172b4e92347a7e145fd10bac3f089fcce1e8f8422fb 119288 underscore_1.3.3.orig.tar.gz
+ b8dc6de0c1566e269733c821c9f4e267945bdfcc7453d6616c0c1acda67d409c 5352 underscore_1.3.3-1ubuntu1~ubuntu12.04.1.debian.tar.gz
+

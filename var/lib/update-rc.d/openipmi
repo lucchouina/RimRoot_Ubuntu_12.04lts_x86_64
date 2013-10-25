@@ -1,0 +1,1 @@
+update-rc.d openipmi defaults 21 20

@@ -1,0 +1,162 @@
+Package: debootstrap
+Priority: extra
+Section: admin
+Installed-Size: 225
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Architecture: all
+Version: 1.0.40~precise1
+Depends: wget
+Recommends: gnupg, ubuntu-keyring
+Filename: pool/main/d/debootstrap/debootstrap_1.0.40~precise1_all.deb
+Size: 35308
+MD5sum: 4e00ed5f069aba860389f9167f2d5db4
+SHA1: 2f1d865f2cbc28dc842eab60f799b2817d7d42fe
+SHA256: 966ab532a6f1e414aa6b5668f6e0a3f0bbfd32d4118316466627e408734cefa0
+Description: Bootstrap a basic Debian system
+Description-md5: 883a8efb3ed16248b0d2091d9c0b60c9
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+Task: edubuntu-desktop-gnome
+
+Package: libjs-jquery
+Priority: optional
+Section: web
+Installed-Size: 390
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Architecture: all
+Source: jquery
+Version: 1.7.2+debian-1ubuntu1~ubuntu12.04.1
+Replaces: jquery
+Suggests: javascript-common
+Conflicts: jquery
+Filename: pool/main/j/jquery/libjs-jquery_1.7.2+debian-1ubuntu1~ubuntu12.04.1_all.deb
+Size: 115076
+MD5sum: fa511ab67f6e960c5b6d39a4d665e47f
+SHA1: 0a0ff462140aedbb0e7c5900637cb60aab1d29cd
+SHA256: 190ca18a71e35c8ab2ba73fe5be3c7cc601fe20b45709d801110818f1b602cc1
+Description: JavaScript library for dynamic web applications
+Homepage: http://jquery.com/
+Description-md5: 7962611d0963445869229c974a815cea
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+Task: ubuntu-desktop, cloud-image, ubuntu-usb, server, kubuntu-desktop, kubuntu-active-desktop, kubuntu-active, edubuntu-desktop, edubuntu-usb, xubuntu-desktop, mythbuntu-frontend, mythbuntu-desktop, mythbuntu-backend-slave, mythbuntu-backend-master, mythbuntu-backend-master, lubuntu-core, ubuntustudio-desktop
+
+Package: libjs-underscore
+Priority: optional
+Section: web
+Installed-Size: 167
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Architecture: all
+Source: underscore
+Version: 1.3.3-1ubuntu1~ubuntu12.04.1
+Recommends: libjs-jquery
+Suggests: javascript-common
+Filename: pool/main/u/underscore/libjs-underscore_1.3.3-1ubuntu1~ubuntu12.04.1_all.deb
+Size: 39990
+MD5sum: af9bedb02bcd3b0c9920a2fd0ab7b9b1
+SHA1: 7bb493d326da9415566c2d5ee7e341b53613ea20
+SHA256: e59a85f4136d5159cdc7139e476a20ef6f1d91346ec9ba816aedc1645c112ac8
+Description: JavaScript's functional programming helper library
+Homepage: http://documentcloud.github.com/underscore/
+Description-md5: a77ac32abf4789aa283df7d50866a802
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+
+Package: oxygen-cursor-theme
+Priority: optional
+Section: x11
+Installed-Size: 5117
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Original-Maintainer: Sune Vuorela <sune@debian.org>
+Architecture: all
+Source: oxygencursors
+Version: 0.0.2012-06-kde4.8-2ubuntu2~ubuntu12.04.1
+Replaces: oxygen-cursor-theme-extra (<< 0.0.2012-06-kde4.8)
+Suggests: oxygen-cursor-theme-extra
+Breaks: oxygen-cursor-theme-extra (<< 0.0.2012-06-kde4.8)
+Filename: pool/main/o/oxygencursors/oxygen-cursor-theme_0.0.2012-06-kde4.8-2ubuntu2~ubuntu12.04.1_all.deb
+Size: 362168
+MD5sum: aea983e5fa9edee7b3fdcb42d3cc1291
+SHA1: 3cc4ae7705e44eed4d1625ed25fca1a4442e1462
+SHA256: 660fb3f5a28121b7a22f4c70d772fc9f6843ded2e2c6332aeeae9596075de565
+Description: Oxygen mouse cursor theme
+Description-md5: 4c5002a4e592e5cc90c51c07857a8cde
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+Task: kubuntu-desktop, kubuntu-full, kubuntu-active-desktop, kubuntu-active-full, kubuntu-active, edubuntu-desktop-kde
+
+Package: oxygen-cursor-theme-extra
+Priority: optional
+Section: x11
+Installed-Size: 32477
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Original-Maintainer: Sune Vuorela <sune@debian.org>
+Architecture: all
+Source: oxygencursors
+Version: 0.0.2012-06-kde4.8-2ubuntu2~ubuntu12.04.1
+Depends: oxygen-cursor-theme
+Filename: pool/main/o/oxygencursors/oxygen-cursor-theme-extra_0.0.2012-06-kde4.8-2ubuntu2~ubuntu12.04.1_all.deb
+Size: 2725212
+MD5sum: 66d78771cc1f13142add718827197b6a
+SHA1: d82c388525ac031e7dc278b046b0ee7f9f4f2834
+SHA256: aa33011263e878b2a1621fc3f9c23960e042367647a9eb0fa8ce8f099c50cd74
+Description: Oxygen mouse cursor theme - extra colors
+Description-md5: 7bf7b82f1ad312760833c12442716fa0
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 18m
+
+Package: rekonq
+Priority: optional
+Section: kde
+Installed-Size: 7552
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Original-Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
+Architecture: i386
+Version: 1.0-0ubuntu1~ubuntu12.04.1
+Provides: www-browser
+Depends: kde-runtime, libc6 (>= 2.4), libkcmutils4 (>= 4:4.7), libkdecore5 (>= 4:4.7), libkdeui5 (>= 4:4.8.4), libkdewebkit5 (>= 4:4.7), libkio5 (>= 4:4.7), libkparts4 (>= 4:4.7), libqt4-dbus (>= 4:4.5.3), libqt4-network (>= 4:4.6.1), libqt4-script (>= 4:4.5.3), libqt4-xml (>= 4:4.5.3), libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.8.0), libqtwebkit4 (>= 2.2.0), libstdc++6 (>= 4.1.1), kde-baseapps-bin
+Suggests: kget
+Filename: pool/main/r/rekonq/rekonq_1.0-0ubuntu1~ubuntu12.04.1_i386.deb
+Size: 3891690
+MD5sum: e3f54d118d63e0a59d4e24324a026b62
+SHA1: 97a8993c8dc62331948072a30bfd47ed953f6f18
+SHA256: 9132e5243f10fbaf785f4398724aba6e34ed5d05acb4125d77ec1870451085ad
+Description: KDE web browser based on Webkit
+Homepage: http://rekonq.kde.org/
+Description-md5: 4f2befe2b341d275e963f610c34515e9
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 5y
+Task: kubuntu-desktop, kubuntu-full, kubuntu-active-desktop, kubuntu-active-full, edubuntu-desktop-kde
+
+Package: rekonq-dbg
+Priority: extra
+Section: debug
+Installed-Size: 8292
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Original-Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
+Architecture: i386
+Source: rekonq
+Version: 1.0-0ubuntu1~ubuntu12.04.1
+Depends: rekonq (= 1.0-0ubuntu1~ubuntu12.04.1)
+Recommends: kdelibs5-dbg, libqtwebkit4-dbg
+Filename: pool/main/r/rekonq/rekonq-dbg_1.0-0ubuntu1~ubuntu12.04.1_i386.deb
+Size: 8105252
+MD5sum: 74e633b6cd2464a30b3e5363a8f0b44d
+SHA1: 3f0a4bb5d8d747fdc9f988ec15e65155f23563ad
+SHA256: 3dcab6b41a6f04d74c5a29df028f292c2336ca007298013e65bec692ec229249
+Description: debugging symbols for rekonq
+Homepage: http://rekonq.kde.org/
+Description-md5: d54591f3e5bb4e156f58c25982294590
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+Supported: 18m
+

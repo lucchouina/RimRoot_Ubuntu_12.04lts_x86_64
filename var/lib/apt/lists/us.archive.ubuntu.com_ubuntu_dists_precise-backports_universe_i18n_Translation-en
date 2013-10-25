@@ -1,0 +1,1904 @@
+Package: 0ad
+Description-md5: d943033bedada21853d2ae54a2578a7b
+Description-en: Real-time strategy game of ancient warfare
+ 0 A.D. (pronounced "zero ey-dee") is a free, open-source, cross-platform
+ real-time strategy (RTS) game of ancient warfare. In short, it is a
+ historically-based war/economy game that allows players to relive or rewrite
+ the history of Western civilizations, focusing on the years between 500 B.C.
+ and 500 A.D. The project is highly ambitious, involving state-of-the-art 3D
+ graphics, detailed artwork, sound, and a flexible and powerful custom-built
+ game engine.
+
+Package: 0ad-data
+Description-md5: df27feb8d9352e2909a3e6cd62916daa
+Description-en: Real-time strategy game of ancient warfare (data)
+ 0 A.D. (pronounced "zero ey-dee") is a free, open-source, cross-platform
+ real-time strategy (RTS) game of ancient warfare. In short, it is a
+ historically-based war/economy game that allows players to relive or rewrite
+ the history of Western civilizations, focusing on the years between 500 B.C.
+ and 500 A.D. The project is highly ambitious, involving state-of-the-art 3D
+ graphics, detailed artwork, sound, and a flexible and powerful custom-built
+ game engine.
+ .
+ This package contains the data files required by 0 A.D.
+
+Package: 0ad-dbg
+Description-md5: a858b67397d1d84d8b4cac9d0deae0d7
+Description-en: Real-time strategy game of ancient warfare (debug)
+ 0 A.D. (pronounced "zero ey-dee") is a free, open-source, cross-platform
+ real-time strategy (RTS) game of ancient warfare. In short, it is a
+ historically-based war/economy game that allows players to relive or rewrite
+ the history of Western civilizations, focusing on the years between 500 B.C.
+ and 500 A.D. The project is highly ambitious, involving state-of-the-art 3D
+ graphics, detailed artwork, sound, and a flexible and powerful custom-built
+ game engine.
+ .
+ This package contains the debugging symbols.
+
+Package: amsn
+Description-md5: 0028bb6f77772d094412f479297fa3d4
+Description-en: MSN messenger application written in Tcl
+ A very nice MSN compatible messenger application. Works pretty much like its
+ Windows based counterpart. Perfect for keeping in touch with those friends
+ who have not yet seen the light.
+
+Package: amsn-data
+Description-md5: 26b1a34f40178b87262be4ecc09a4422
+Description-en: Data files for aMSN
+ This package contains architecture-independent supporting data files required
+ for use with aMSN such as documentation, icons, translations, plugins, skins
+ and sounds.
+
+Package: ansible
+Description-md5: db2b21b0d2286fccc4401d5982361488
+Description-en: Configuration management, deployment, and task execution system
+ Ansible is a radically simple model-driven configuration management,
+ multi-node deployment, and remote task execution system. Ansible works
+ over SSH and does not require any software or daemons to be installed
+ on remote nodes. Extension modules can be written in any language and
+ are transferred to managed machines automatically.
+
+Package: ansible-doc
+Description-md5: b4f36330179cb3fdb9f9d31dcd85daf0
+Description-en: Ansible documentation and examples
+ Ansible is a radically simple model-driven configuration management,
+ multi-node deployment, and remote task execution system. Ansible works
+ over SSH and does not require any software or daemons to be installed
+ on remote nodes. Extension modules can be written in any language and
+ are transferred to managed machines automatically.
+ .
+ This package contains HTML documentation and examples.
+
+Package: ansible-fireball
+Description-md5: efce1d8806104f92be6bdb77fb800621
+Description-en: Ansible fireball transport support
+ Ansible is a radically simple model-driven configuration management,
+ multi-node deployment, and remote task execution system. Ansible works
+ over SSH and does not require any software or daemons to be installed
+ on remote nodes. Extension modules can be written in any language and
+ are transferred to managed machines automatically.
+ .
+ Ansible can optionally use a 0MQ based transport mechanism, which is
+ considerably faster than the standard ssh mechanism when there are
+ multiple actions, but requires additional supporting packages.
+ .
+ This package is a dependency package, which depends on ansible and Python
+ modules for keyczar and ZeroMQ.
+
+Package: ansible-node-fireball
+Description-md5: 3765823451b25d1f45b97cc95330751d
+Description-en: Ansible fireball transport support for nodes
+ Ansible is a radically simple model-driven configuration management,
+ multi-node deployment, and remote task execution system. Ansible works
+ over SSH and does not require any software or daemons to be installed
+ on remote nodes. Extension modules can be written in any language and
+ are transferred to managed machines automatically.
+ .
+ Ansible can optionally use a 0MQ based transport mechanism, which has
+ additional requirements for nodes to use. This package includes those
+ requirements.
+ .
+ This package is a dependency package, which depends on Python modules for
+ keyczar and ZeroMQ.
+
+Package: apt-cacher-ng
+Description-md5: b88e5e2d04c76e8d4500fb60880c7d76
+Description-en: caching proxy server for software repositories
+ Apt-Cacher NG is a caching proxy for downloading packages from Debian-style
+ software repositories (or possibly from other types).
+ .
+ The main principle is that a central machine hosts the proxy for a local
+ network, and clients configure their APT setup to download through it.
+ Apt-Cacher NG keeps a copy of all useful data that passes through it, and when
+ a similar request is made, the cached copy of the data is delivered without
+ being re-downloaded.
+ .
+ Apt-Cacher NG has been designed from scratch as a replacement for
+ apt-cacher, but with a focus on maximizing throughput with low system
+ resource requirements. It can also be used as replacement for apt-proxy and
+ approx with no need to modify clients' sources.list files.
+
+Package: arduino
+Description-md5: 60f8f72e8783c6b5a72254120b680cdb
+Description-en: AVR development board IDE and built-in libraries
+ Arduino is an open-source electronics prototyping platform based on
+ flexible, easy-to-use hardware and software. It's intended for artists,
+ designers, hobbyists, and anyone interested in creating interactive
+ objects or environments.
+ .
+ This package will install the integrated development environment that
+ allows for program writing, code verfication, compiling, and uploading
+ to the Arduino development board. Libraries and example code will also
+ be installed.
+
+Package: arduino-core
+Description-md5: 29d99d7e25c829f76de6144309cd8ebb
+Description-en: Code, examples, and libraries for the Arduino platform
+ Arduino is an open hardware microcontroller platform.  This package contains
+ the minimal set of tools to allow one to program an Arduino.  It also contains
+ examples and libraries. For a CLI, see the 'arduino-mk' package.
+ .
+ This package does not include the Java based Integrated Development
+ Environment, which can be found in the 'arduino' package.
+
+Package: aws-status
+Description-md5: 9614def6b1b1391ae7ac5d8e645735ef
+Description-en: txaws based graphical application for monitoring AWS service
+ Twisted-based Asynchronous Libraries for Amazon Web Services and Eucalyptus
+ private clouds This project's goal is to have a complete Twisted API
+ representing the spectrum of Amazon's web services as well as support for
+ Eucalyptus clouds.
+ .
+ This package provides a GUI application utilizing python-txaws
+
+Package: ben
+Description-md5: 26c1756a0c66374600005f242c6151a7
+Description-en: toolbox for Debian maintainers
+ This is a collection of useful tools that Debian maintainers can use
+ to make their packaging work easier. They all work with regular
+ Debian package list files, and should be useful for Debian
+ derivatives as well. This package ships a single executable, "ben",
+ with the following subcommands:
+  * download: download a set of package list files from a mirror
+  * monitor: monitor the status of a set of packages across several
+    architectures (useful for transitions)
+  * query: query packages using their metadata (similar to grep-dctrl,
+    but uses a dedicated query language)
+  * tracker: frontend to multiple monitors
+
+Package: blhc
+Description-md5: 677f2a00e31e316c282b8bf13f2fbe19
+Description-en: build log hardening check
+ Perl tool which checks build logs for missing hardening
+ flags. Hardening flags enable additional security features in the
+ compiler to prevent e.g. stack overflows, format string
+ vulnerabilities, GOT overwrites, etc. See e.g.
+ <http://wiki.debian.org/ReleaseGoals/SecurityHardeningBuildFlags>.
+ .
+ Because most build systems are quite complicated there are many
+ places where compiler flags from the environment might be ignored.
+ The parser verifies that all compiler commands use the correct
+ hardening flags and thus all hardening features are correctly used.
+ .
+ It's designed to check build logs generated by Debian's
+ dpkg-buildpackage (or tools using dpkg-buildpackage like pbuilder or
+ the official buildd build logs) to help maintainers detect missing
+ hardening flags in their packages.
+
+Package: boinc
+Description-md5: 79307295fad5fe1f0172f7d981ebfbac
+Description-en: metapackage for the BOINC client and the manager
+ The Berkeley Open Infrastructure for Network Computing (BOINC) is a
+ software platform for distributed computing: several initiatives of
+ various scientific disciplines all compete for the idle time of
+ desktop computers. The developers' web site at the University of
+ Berkeley serves as a common portal to the otherwise independently run
+ projects.
+ .
+ This package depends both on the BOINC core client program that is
+ required to participate in any project that uses BOINC, and the
+ BOINC Manager, a graphical monitor and control utility for the
+ BOINC core client.
+
+Package: boinc-client
+Description-md5: 9bd4f63a5f0f805b9edce1e36fefff24
+Description-en: core client for the BOINC distributed computing infrastructure
+ The Berkeley Open Infrastructure for Network Computing (BOINC) is a
+ software platform for distributed computing: several initiatives of
+ various scientific disciplines all compete for the idle time of
+ desktop computers. The developers' web site at the University of
+ Berkeley serves as a common portal to the otherwise independently run
+ projects.
+ .
+ This package contains the BOINC core client program that is required
+ to participate in any project that uses BOINC. A central server
+ distributes work units and collects results via this client. When
+ attaching a local machine to a project, this client will also
+ dynamically download the scientific data and executables to be then
+ wrapped by the BOINC core client.
+
+Package: boinc-dbg
+Description-md5: 3e9b28636550c34ee92c3ca7bf7d88a1
+Description-en: debugging symbols for BOINC binaries
+ The Berkeley Open Infrastructure for Network Computing (BOINC) is a
+ software platform for distributed computing using volunteered computer
+ resources.
+ .
+ This package contains unstripped versions of all binaries included in
+ the BOINC packages. It is provided primarily to provide a backtrace
+ with names in a debugger, this makes it somewhat easier to interpret
+ core dumps.
+
+Package: boinc-dev
+Description-md5: e4972735285fcfbe74ebb87ad01d2e97
+Description-en: development files to build applications for BOINC projects
+ Dummy transitional package helping the transition of a split of
+ architecture-independent development files and the architecture-dependent
+ dynamic libraries.  Static libraries are no longer redistributed.
+
+Package: boinc-manager
+Description-md5: 18cdf3bcfd01c25a71225cc0291571cd
+Description-en: GUI to control and monitor the BOINC core client
+ The Berkeley Open Infrastructure for Network Computing (BOINC) is a
+ software platform for distributed computing using volunteered computer
+ resources.
+ .
+ This package contains the BOINC Manager, a graphical monitor and
+ control utility for the BOINC core client. It gives a detailed
+ overview of the state of the client it is monitoring, as there are
+  * attached projects
+  * running tasks
+  * file transfers between the client and project servers
+  * statistics about granted credits and disk usage for every project
+  * constraints on CPU usage
+ The BOINC Manager has two modes of operation, the "Simple View" in which
+ it only displays the most important information and the "Advanced View"
+ in which all information and all control elements are available.
+ .
+ For active participation in any BOINC project the recommended
+ boinc-client package, not the boinc-manager, is required for every
+ machine contributing.
+
+Package: concavity
+Description-md5: a68db1460f6eec4a61a30e82a6efbe0d
+Description-en: predictor of protein ligand binding sites from structure and conservation
+ ConCavity predicts protein ligand binding sites by combining evolutionary
+ sequence conservation and 3D structure.
+ .
+ ConCavity takes as input a PDB format protein structure and optionally
+ files that characterize the evolutionary sequence conservation of the chains
+ in the structure file.
+ .
+ The following result files are produced by default:
+  * Residue ligand binding predictions for each chain (*.scores).
+  * Residue ligand binding predictions in a PDB format file (residue
+    scores placed in the temp. factor field, *_residue.pdb).
+  * Pocket prediction locations in a DX format file (*.dx).
+  * PyMOL script to visualize the predictions (*.pml).
+ .
+ ConCavity has many features.  The default run of concavity is equivalent to
+ ConCavity^L in the paper:
+ 'Capra JA, Laskowski RA, Thornton JM, Singh M, and Funkhouser TA(2009)
+ Predicting Protein Ligand Binding Sites by Combining Evolutionary Sequence
+ Conservation and 3D Structure. PLoS Comput Biol, 5(12).'.
+ .
+ score_conservation(1) from the conservation-code package can be used to
+ calculate evolutionary sequence conservation for concavity.
+
+Package: concavity-dbg
+Description-md5: 881cd6bf782a31542b26aad13ac242fc
+Description-en: predictor of protein ligand binding sites (debug)
+ ConCavity predicts protein ligand binding sites by combining evolutionary
+ sequence conservation and 3D structure.
+ .
+ This package contains the debugging symbols.
+
+Package: config-package-dev
+Description-md5: f541c22453a6697f725a13e1ca22dd39
+Description-en: Debhelper (and CDBS) modules for building configuration packages
+ This package contains a system of modules for creating Debian
+ configuration packages: packages that configure an existing Debian
+ system by using dpkg-divert on configuration files.  These modules
+ attempt to make the process of creating configuration packages
+ efficient by checking the md5sums of upstream configuration files
+ that are to be modified and automatically generating the relevant
+ postinst code to perform the diversions using the standard debhelper
+ mechanism.  In addition to a debhelper command and sequencer extension
+ module, CDBS modules are also included, but future development will
+ focus on the debhelper interface.
+ .
+ The config-package-dev modules are optimized for site defaults (i.e.
+ configuration for a university or a company), though they are useful
+ for other applications as well.
+
+Package: conky
+Description-md5: 5e4e3cda9c6e03277267cd8bdfea648a
+Description-en: highly configurable system monitor (transitional package)
+ Conky is a system monitor that can display just about anything,
+ either on your root desktop or in its own window.
+ Conky has many built-in objects, as well as the ability to execute
+ external programs or scripts (either external or through built-in
+ lua support).
+ .
+ This is a dummy package to ease transition to the new packaging scheme.
+ It may be safely removed after upgrade/installation.
+
+Package: conky-cli
+Description-md5: bd7f330cb72b7488a0e2e3a9ed1d5681
+Description-en: highly configurable system monitor (basic version)
+ Conky is a system monitor that can display just about anything,
+ either on your root desktop or in its own window.
+ Conky has many built-in objects, as well as the ability to execute
+ external programs or scripts (either external or through built-in
+ lua support).
+ .
+ This is a basic package that can be useful in servers or piped with dzen2.
+ It includes the following support:
+ .
+ MPD, MOC, math, apcupsd, ncurses and I/O stats.
+
+Package: conky-std
+Description-md5: 5619738a896b490cb513d89304af94f8
+Description-en: highly configurable system monitor (default version)
+ Conky is a system monitor that can display just about anything,
+ either on your root desktop or in its own window.
+ Conky has many built-in objects, as well as the ability to execute
+ external programs or scripts (either external or through built-in
+ lua support).
+ .
+ This package should be a good compromise for most users that do not
+ need special features.
+ It includes the following support:
+ .
+ X11, XDamage, XDBE, Xft, MPD, MOC, math, hddtemp, portmon, RSS,
+ Weather, wireless, Imlib2, ALSA mixer, apcupsd, I/O stats, argb, Lua
+ and the cairo and imlib2 lua bindings, Audacious, and XMMS2.
+
+Package: conservation-code
+Description-md5: 35f238c6a81ce482741e5d5359932062
+Description-en: protein sequence conservation scoring tool
+ This package provides score_conservation(1), a tool to score protein sequence
+ conservation.
+ .
+ The following conservation scoring methods are implemented:
+  * sum of pairs
+  * weighted sum of pairs
+  * Shannon entropy
+  * Shannon entropy with property groupings (Mirny and Shakhnovich 1995,
+    Valdar and Thornton 2001)
+  * relative entropy with property groupings (Williamson 1995)
+  * von Neumann entropy (Caffrey et al 2004)
+  * relative entropy (Samudrala and Wang 2006)
+  * Jensen-Shannon divergence (Capra and Singh 2007)
+ .
+ A window-based extension that incorporates the estimated conservation of
+ sequentially adjacent residues into the score for each column is also given.
+ This window approach can be applied to any of the conservation scoring
+ methods.
+ .
+ The program accepts alignments in the CLUSTAL and FASTA formats.
+ .
+ The sequence-specific output can be used as the conservation input for
+ concavity.
+ .
+ Conservation is highly predictive in identifying catalytic sites and
+ residues near bound ligands.
+
+Package: crtmpserver
+Description-md5: 9657af23259dc91ceceff6fa43b99ab9
+Description-en: High performance RTMP/RTSP streaming server
+ crtmpserver is a high performance streaming server able to stream
+ (live or recorded) in the following technologies:
+  - To and from Flash (RTMP,RTMPE, RTMPS, RTMPT, RTMPTE)
+  - To and from embedded devices: iPhone, Android
+  - From surveillance cameras
+  - IP-TV using MPEG-TS and RTSP/RTCP/RTP protocols
+ .
+ Also, crtmpserver can be used as a high performance rendes-vous server.
+ For example, it enables you to do:
+  - Audio/Video conferencing
+  - Online gaming
+  - Online collaboration
+  - Simple/complex chat applications
+
+Package: crtmpserver-apps
+Description-md5: 96f1f41489cb04d359a55fb0ebd36d1c
+Description-en: base applications for the crtmpserver platform
+ crtmpserver is a high performance streaming server able to stream
+ (live or recorded) in the following technologies:
+  - To and from Flash (RTMP,RTMPE, RTMPS, RTMPT, RTMPTE)
+  - To and from embedded devices: iPhone, Android
+  - From surveillance cameras
+  - IP-TV using MPEG-TS and RTSP/RTCP/RTP protocols
+ .
+ This package contains the set of basic applications that provide
+ most frequently used feature like VOD, live streaming and proxying
+ rtmp/rtsp/mpeg-ts streams.
+
+Package: crtmpserver-dev
+Description-md5: 0bf6725e40119b91cb4bc82c57618c68
+Description-en: Development files for the crtmpserver platform
+ crtmpserver is a high performance streaming server able to stream
+ (live or recorded) in the following technologies:
+  - To and from Flash (RTMP,RTMPE, RTMPS, RTMPT, RTMPTE)
+  - To and from embedded devices: iPhone, Android
+  - From surveillance cameras
+  - IP-TV using MPEG-TS and RTSP/RTCP/RTP protocols
+ .
+ This package contains header files for base crtmpserver libraries
+ 'common' and 'thelib'.
+
+Package: crtmpserver-libs
+Description-md5: a7ec3bbef1eda98ec385abe895f4d602
+Description-en: shared libraries for the crtmpserver platform
+ crtmpserver is a high performance streaming server able to stream
+ (live or recorded) in the following technologies:
+  - To and from Flash (RTMP,RTMPE, RTMPS, RTMPT, RTMPTE)
+  - To and from embedded devices: iPhone, Android
+  - From surveillance cameras
+  - IP-TV using MPEG-TS and RTSP/RTCP/RTP protocols
+ .
+ This package contains shared libraries('thelib' and 'common')
+ for the crtmpserver platform and its applications.
+
+Package: django-tables
+Description-md5: 1155586fd08067bc873c809ef1f318aa
+Description-en: Django library for rendering Django QuerySets
+ This package helps programmers present data while allowing them to apply
+ common tabular transformations on it.
+
+Package: dvdbackup
+Description-md5: b4879cb8d0f49e81b7b69c9613032cb1
+Description-en: tool to rip DVD's from the command line
+ dvdbackup will extract all (or optionally only selected) titles as found
+ on the dvd.  It will structure the extracted files in a format suitable for
+ burning at a later time with genisoimage and dvdrecord.  Has the advantage of
+ being very easy to use, small, and fast.
+
+Package: dvdbackup-dbg
+Description-md5: 491f3ef60b97db56d593abdca1aafe89
+Description-en: debug files for dvdbackup
+ dvdbackup will extract all (or optionally only selected) titles as found
+ on the dvd.  It will structure the extracted files in a format suitable for
+ burning at a later time with genisoimage and dvdrecord.  Has the advantage of
+ being very easy to use, small, and fast.
+ .
+ This package contains the stripped debugging symbols from dvdbackup.
+
+Package: freeciv-client-extras
+Description-md5: 7cc655408eada54f0feaf2cf2304d64f
+Description-en: Civilization turn based strategy game (miscellaneous extras)
+ Freeciv is a free clone of the turn based strategy game Civilization.
+ In this game, each player becomes leader of a civilisation, fighting to
+ obtain the ultimate goal: the extinction of all other civilisations.
+ .
+ This is a collection of supporting scripts and tools which may be
+ useful to a Freeciv player. These include:
+  * freeciv-manual: Generate an HTML manual for freeciv-server
+  * freeciv-modpack: GTK+ modpack, ruleset and tileset downloader
+
+Package: freeciv-client-gtk
+Description-md5: 7341ab84e3e270e1db3bb99693f96347
+Description-en: Civilization turn based strategy game (GTK+ client)
+ Freeciv is a free clone of the turn based strategy game Civilization.
+ In this game, each player becomes leader of a civilisation, fighting to
+ obtain the ultimate goal: the extinction of all other civilisations.
+ .
+ This is the GTK+ version of the Freeciv client.
+
+Package: freeciv-client-sdl
+Description-md5: 4f1e35f2ac2cdd6eda4ffb11dc39b93b
+Description-en: Civilization turn based strategy game (SDL client)
+ Freeciv is a free clone of the turn based strategy game Civilization.
+ In this game, each player becomes leader of a civilisation, fighting to
+ obtain the ultimate goal: the extinction of all other civilisations.
+ .
+ This is the SDL version of the Freeciv client.
+
+Package: freeciv-client-xaw3d
+Description-md5: c017f5933d05d22eaa6f9e103d98d659
+Description-en: Civilization turn based strategy game (Xaw3D client)
+ Freeciv is a free clone of the turn based strategy game Civilization.
+ In this game, each player becomes leader of a civilisation, fighting to
+ obtain the ultimate goal: the extinction of all other civilisations.
+ .
+ This is the Xaw3D version of the Freeciv client.
+
+Package: freeciv-data
+Description-md5: cee5d1e0219a7891698b8f0cdf6fbcf6
+Description-en: Civilization turn based strategy game (game data)
+ Freeciv is a free clone of the turn based strategy game Civilization.
+ In this game, each player becomes leader of a civilisation, fighting to
+ obtain the ultimate goal: the extinction of all other civilisations.
+ .
+ These are the common data files for Freeciv.
+
+Package: freeciv-server
+Description-md5: 05034be0e9f586e565ca1fa01f7dd762
+Description-en: Civilization turn based strategy game (server files)
+ Freeciv is a free clone of the turn based strategy game Civilization.
+ In this game, each player becomes leader of a civilisation, fighting to
+ obtain the ultimate goal: the extinction of all other civilisations.
+ .
+ This is the Freeciv game server.
+
+Package: freeciv-sound-standard
+Description-md5: 3db6002d0393bff8b3403d51f8f5f7f1
+Description-en: Civilization turn based strategy game (standard sound pack)
+ Freeciv is a free clone of the turn based strategy game Civilization.
+ In this game, each player becomes leader of a civilisation, fighting to
+ obtain the ultimate goal: the extinction of all other civilisations.
+ .
+ This is the standard sound pack for Freeciv. It provides Freeciv clients
+ with a set of sounds for different events and actions in the game.
+
+Package: freecol
+Description-md5: d51c76a89cad0a469d4b6b64a01d7361
+Description-en: open source remake of the old Colonization
+ freecol is a game in the spirit of Civilization but taking place in a
+ colonial background. Colonize the new world, build towns, trade or
+ fight with natives and other European civilizations, trade with your
+ homeland until you're ready to fight for your independance !
+
+Package: fritzing
+Description-md5: 7f056a3679631d4272496446763b4bd9
+Description-en: Easy-to-use electronic design software
+ Fritzing is an open source project designed to help one transition from a
+ prototype to a finished project. Aimed at users who want to produce or document
+ circuits and experiments, one starts by building a physical prototype, then
+ recreating it with Fritzing’s graphical editor. From there one can generate a
+ schematic, PCB artwork, and PCB production files.
+
+Package: fritzing-data
+Description-md5: e785ce98bf5abb0260ab40b4807583ac
+Description-en: Easy-to-use electronic design software (data files)
+ Fritzing is an open source project designed to help one transition from a
+ prototype to a finished project. Aimed at users who want to produce or document
+ circuits and experiments, one starts by building a physical prototype, then
+ recreating it with Fritzing’s graphical editor. From there one can generate a
+ schematic, PCB artwork, and PCB production files.
+ .
+ This package contains the architecture independent data files for Fritzing.
+
+Package: gnome-do
+Description-md5: d2e64a545884c377087ffc395f1dd41d
+Description-en: Quickly perform actions on your desktop
+ Allows you to quickly search for many items present in your
+ GNOME desktop environment (applications, Firefox bookmarks, files,
+ artists and albums in Rhythmbox, Pidgin buddies,  etc.) and perform
+ commonly used actions on those items (Run, Open, Email, Chat, Play, etc.).
+ .
+ GNOME Do is plugin based, allowing it to be easily extended to handle
+ new items and actions.  This package contains a core set of items and
+ actions.
+ .
+ Although GNOME Do primarily targets the GNOME desktop, it also works
+ under other desktop environments.
+ .
+ GNOME Do is inspired by Quicksilver and GNOME Launch Box.
+
+Package: hedgewars
+Description-md5: 318a323582f36b363618a66d35f8beb4
+Description-en: Worms style game
+ Each player controls a team of several hedgehogs. During the
+ course of the game, players take turns with one of their
+ hedgehogs. They then use whatever tools and weapons are
+ available to attack and kill the opponents' hedgehogs, thereby
+ winning the game. Hedgehogs may move around the terrain in a
+ variety of ways, normally by walking and jumping but also by
+ using particular tools such as the "Rope" or "Parachute", to
+ move to otherwise inaccessible areas. Each turn is time-limited
+ to ensure that players do not hold up the game with excessive
+ thinking or moving.
+ .
+ A large variety of tools and weapons are available for players
+ during the game: Grenade, Cluster Bomb, Bazooka, UFO, Homing Bee,
+ Shotgun, Desert Eagle, Fire Punch, Baseball Bat, Dynamite, Mine,
+ Rope, Pneumatic pick, Parachute. Most weapons, when used, cause
+ explosions that deform the terrain, removing circular chunks.
+ The landscape is an island floating on a body of water, or a
+ restricted cave with water at the bottom. A hedgehog dies when
+ it enters the water (either by falling off the island, or
+ through a hole in the bottom of it), it is thrown off either
+ side of the arena or when its health is reduced, typically from
+ contact with explosions, to zero (the damage dealt to the
+ attacked hedgehog or hedgehogs after a player's or CPU turn is
+ shown only when all movement on the battlefield has ceased).
+
+Package: hedgewars-data
+Description-md5: f3d5a1825cddc6488f63ee95dab636b1
+Description-en: Data files for hedgewars
+ This package contains data files (images, sounds, levels data)
+ for the hedgewars package.
+
+Package: ipmitool
+Description-md5: ddcdf9070612e9885f41dd0384fb9f2c
+Description-en: utility for IPMI control with kernel driver or LAN interface
+ A utility for managing and configuring devices that support the
+ Intelligent Platform Management Interface.  IPMI is an open standard
+ for monitoring, logging, recovery, inventory, and control of hardware
+ that is implemented independent of the main CPU, BIOS, and OS.  The
+ service processor (or Baseboard Management Controller, BMC) is the
+ brain behind platform management and its primary purpose is to handle
+ the autonomous sensor monitoring and event logging features.
+ .
+ The ipmitool program provides a simple command-line interface to this
+ BMC.  It features the ability to read the sensor data repository
+ (SDR) and print sensor values, display the contents of the System
+ Event Log (SEL), print Field Replaceable Unit (FRU) inventory
+ information, read and set LAN configuration parameters, and perform
+ remote chassis power control.
+
+Package: ipython
+Description-md5: 2b28f078a5ca3afc48380ee4b507967d
+Description-en: enhanced interactive Python shell
+ IPython can be used as a replacement for the standard Python shell,
+ or it can be used as a complete working environment for scientific
+ computing (like Matlab or Mathematica) when paired with the standard
+ Python scientific and numerical tools. It supports dynamic object
+ introspections, numbered input/output prompts, a macro system,
+ session logging, session restoring, complete system shell access,
+ verbose and colored traceback reports, auto-parentheses, auto-quoting,
+ and is embeddable in other Python programs.
+ .
+ This package contains the basic terminal shell. For the qt console
+ install ipython-qtconsole and for the html notebook install
+ ipython-notebook.
+
+Package: ipython-doc
+Description-md5: 7cd0d552457eeacc3c5cf652a94d3ea7
+Description-en: enhanced interactive Python shell - Documentation
+ IPython can be used as a replacement for the standard Python shell,
+ or it can be used as a complete working environment for scientific
+ computing (like Matlab or Mathematica) when paired with the standard
+ Python scientific and numerical tools. It supports dynamic object
+ introspections, numbered input/output prompts, a macro system,
+ session logging, session restoring, complete system shell access,
+ verbose and colored traceback reports, auto-parentheses, auto-quoting,
+ and is embeddable in other Python programs.
+ .
+ This package contains the documentation.
+
+Package: ipython-notebook
+Description-md5: c5800a45a90dccf5a53395dd25deff82
+Description-en: interactive Python html notebook
+ IPython can be used as a replacement for the standard Python shell,
+ or it can be used as a complete working environment for scientific
+ computing (like Matlab or Mathematica) when paired with the standard
+ Python scientific and numerical tools. It supports dynamic object
+ introspections, numbered input/output prompts, a macro system,
+ session logging, session restoring, complete system shell access,
+ verbose and colored traceback reports, auto-parentheses, auto-quoting,
+ and is embeddable in other Python programs.
+ .
+ This package contains the html notebook providing a Mathematica-like
+ webinterface to Python.
+
+Package: ipython-notebook-common
+Description-md5: eff741100190ac362ae32856b4ec1b67
+Description-en: interactive Python html notebook data package
+ IPython can be used as a replacement for the standard Python shell,
+ or it can be used as a complete working environment for scientific
+ computing (like Matlab or Mathematica) when paired with the standard
+ Python scientific and numerical tools. It supports dynamic object
+ introspections, numbered input/output prompts, a macro system,
+ session logging, session restoring, complete system shell access,
+ verbose and colored traceback reports, auto-parentheses, auto-quoting,
+ and is embeddable in other Python programs.
+ .
+ This package contains the data for html notebook.
+
+Package: ipython-qtconsole
+Description-md5: 5fa2bb91e1c915776c2df5ba5f7ef241
+Description-en: enhanced interactive Python shell - Qt console
+ IPython can be used as a replacement for the standard Python shell,
+ or it can be used as a complete working environment for scientific
+ computing (like Matlab or Mathematica) when paired with the standard
+ Python scientific and numerical tools. It supports dynamic object
+ introspections, numbered input/output prompts, a macro system,
+ session logging, session restoring, complete system shell access,
+ verbose and colored traceback reports, auto-parentheses, auto-quoting,
+ and is embeddable in other Python programs.
+ .
+ This package contains the qt console.
+
+Package: ipython3
+Description-md5: a59865837dc42b4b4704a8cc8908835a
+Description-en: enhanced interactive Python 3 shell
+ IPython can be used as a replacement for the standard Python shell,
+ or it can be used as a complete working environment for scientific
+ computing (like Matlab or Mathematica) when paired with the standard
+ Python scientific and numerical tools. It supports dynamic object
+ introspections, numbered input/output prompts, a macro system,
+ session logging, session restoring, complete system shell access,
+ verbose and colored traceback reports, auto-parentheses, auto-quoting,
+ and is embeddable in other Python programs.
+ .
+ This package contains the Python 3 variant of ipython terminal shell.
+ For the qt console install ipython3-qtconsole and for the html notebook
+ install ipython3-notebook.
+
+Package: ipython3-notebook
+Description-md5: 66a588319e63cb7d2bb877d0ee2150d0
+Description-en: interactive Python 3 html notebook
+ IPython can be used as a replacement for the standard Python shell,
+ or it can be used as a complete working environment for scientific
+ computing (like Matlab or Mathematica) when paired with the standard
+ Python scientific and numerical tools. It supports dynamic object
+ introspections, numbered input/output prompts, a macro system,
+ session logging, session restoring, complete system shell access,
+ verbose and colored traceback reports, auto-parentheses, auto-quoting,
+ and is embeddable in other Python programs.
+ .
+ This package contains the html notebook providing a Mathematica-like
+ webinterface to Python 3.
+
+Package: ipython3-qtconsole
+Description-md5: caf1a8fc73bdb6187b75b10b63cb0ecb
+Description-en: enhanced interactive Python 3 shell - Qt console
+ IPython can be used as a replacement for the standard Python shell,
+ or it can be used as a complete working environment for scientific
+ computing (like Matlab or Mathematica) when paired with the standard
+ Python scientific and numerical tools. It supports dynamic object
+ introspections, numbered input/output prompts, a macro system,
+ session logging, session restoring, complete system shell access,
+ verbose and colored traceback reports, auto-parentheses, auto-quoting,
+ and is embeddable in other Python programs.
+ .
+ This package contains the Python3 variant of the qt console.
+
+Package: kmymoney
+Description-md5: 49de8a9f7525de7bb25a7171b3e764a1
+Description-en: personal finance manager for KDE
+ KMyMoney is the Personal Finance Manager for KDE. It operates similar to
+ MS-Money and Quicken, supports different account types, categorisation of
+ expenses, QIF import/export, multiple currencies and initial online banking
+ support.
+
+Package: kmymoney-common
+Description-md5: 31bd7293497ef7f025bc3697e844770a
+Description-en: KMyMoney architecture independent files
+ KMyMoney is the Personal Finance Manager for KDE. It operates similar to
+ MS-Money and Quicken, supports different account types, categorisation of
+ expenses, QIF import/export, multiple currencies and initial online banking
+ support.
+ .
+ This package contains architecture independent files needed for KMyMoney to
+ run properly. It also provides KMyMoney documentation. Therefore, unless you
+ have 'kmymoney' package installed, you will hardly find this package useful.
+
+Package: kmymoney-dbg
+Description-md5: 3769a8fd8b9dae5b966a6751c4fe6feb
+Description-en: KMymoney debugging symbols
+ KMyMoney is the Personal Finance Manager for KDE. It operates similar to
+ MS-Money and Quicken, supports different account types, categorisation of
+ expenses, QIF import/export, multiple currencies and initial online banking
+ support.
+ .
+ This package contains the debugging symbols associated with kmymoney.
+ They will automatically be used by gdb for debugging kmymoney-related issues.
+
+Package: kmymoney-dev
+Description-md5: 9099c697a5a944ba412ddc174099c717
+Description-en: KMyMoney development files
+ KMyMoney is the Personal Finance Manager for KDE. It operates similar to
+ MS-Money and Quicken, supports different account types, categorisation of
+ expenses, QIF import/export, multiple currencies and initial online banking
+ support.
+ .
+ This package contains development files needed for KMyMoney plugins.
+
+Package: l2tp-ipsec-vpn
+Description-md5: be4aefe32b4e78983cd529b6346954ac
+Description-en: control your L2TP IPsec VPN connections
+ This GUI provides a system tray icon in the notification area from which a non
+ privileged user can establish and bring down L2TP over IPsec VPN connections.
+ .
+ There is also a configuration editor that allows configuring various options
+ for IPsec, L2TP and PPP.
+
+Package: l2tp-ipsec-vpn-daemon
+Description-md5: f574f31045dfdf30916f9a82025e1ddc
+Description-en: daemon for L2tpIPsecVpn GUI
+ This daemon is exclusively used by the L2TP over IPsec Manager GUI
+ application in order to execute openswan and xl2tp commands as root
+ on behalf of the GUI client.
+ .
+ This daemon is only useful in combination with the GUI client
+ installed with the l2tp-ipsec-vpn package.
+
+Package: labyrinth
+Description-md5: 1232325d4aff46a0baa2d89a9af527e6
+Description-en: lightweight mind-mapping tool
+ Labyrinth is a lightweight mind-mapping tool, written in Python using Gtk
+ and Cairo to do the drawing. It is intended to be as light and intuitive as
+ possible, but still provide a wide range of powerful features.
+ .
+ A mind-map is a diagram used to represent words, ideas, tasks or other items
+ linked to and arranged radially around a central key word or idea. It is
+ used to generate, visualise, structure and classify ideas, and as an aid in
+ study, organisation, problem solving, and decision making
+
+Package: ledmon
+Description-md5: 007af04ef82b824ecd544a9e11d5cc0b
+Description-en: Enclosure LED Utilities
+ ledmon and ledctl are userspace tools designed to control storage
+ enclosure LEDs. The user must have root privileges to use these tools.
+ .
+ These tools use the SGPIO and SES-2 protocols to monitor and control LEDs.
+ They been verified to work with Intel(R) storage controllers (i.e. the
+ Intel(R) AHCI controller) and have not been tested with storage controllers of
+ other vendors (especially SAS/SCSI controllers).
+ .
+ For backplane enclosures attached to ISCI controllers, support is limited to
+ Intel(R) Intelligent Backplanes.
+
+Package: libben-ocaml
+Description-md5: 3b0d493e6c0a2a3a4820db20159a9fc9
+Description-en: OCaml libraries for Debian maintainers (runtime package)
+ This package contains miscellaneous OCaml libraries to make the life
+ of an OCaml-aware Debian package maintainer easier.
+ .
+ This package contains the shared runtime stub libraries.
+
+Package: libben-ocaml-dev
+Description-md5: 70dbf7e34af8aa0784c8e49a298bfc8e
+Description-en: OCaml libraries for Debian maintainers (development package)
+ This package contains miscellaneous OCaml libraries to make the life
+ of an OCaml-aware Debian package maintainer easier.
+ .
+ This package contains development files of the library.
+
+Package: libboinc-app-dev
+Description-md5: 14bf791641e7ac0e849dc1dede8fcd86
+Description-en: development files to build applications for BOINC projects
+ The Berkeley Open Infrastructure for Network Computing (BOINC) is a
+ software platform for distributed computing using volunteered computer
+ resources.
+ .
+ This package contains header files that are needed to develop and
+ compile applications which utilizes the BOINC infrastructure.
+
+Package: libboinc-app7
+Description-md5: c61445098356f24f852e0a3c9ef219e7
+Description-en: libraries for BOINC's scientific applications
+ The Berkeley Open Infrastructure for Network Computing (BOINC) is a
+ software platform for distributed computing using volunteered computer
+ resources.
+ .
+ This package contains dynamic libraries that are needed for applications
+ which utilizes the BOINC infrastructure and the boinc-client itself.
+
+Package: libboinc7
+Description-md5: 11081d0d4ad203dafbfd2b8fc5e1425b
+Description-en: libraries of BOINC the client depends on
+ The Berkeley Open Infrastructure for Network Computing (BOINC) is a
+ software platform for distributed computing using volunteered computer
+ resources.
+ .
+ The environment offers a series of libraries that both the user-run
+ client and the client-invoked scientific applications depend on. With
+ the number of cores per machine growing, and with scientific apps
+ commonly started for every core, it is essential to have memory
+ shared as much as possible between binaries of all projects.
+
+Package: liblxc0
+Description-md5: d757397b1a93a5bea5c72032f3ef485d
+Description-en: Linux Containers userspace tools (library)
+ Containers are insulated areas inside a system, which have their own namespace
+ for filesystem, network, PID, IPC, CPU and memory allocation and which can be
+ created using the Control Group and Namespace features included in the Linux
+ kernel.
+ .
+ This package contains the libraries.
+
+Package: libopendbx1
+Description-md5: b7770d4a1f746e6eb3e952f1de74860a
+Description-en: Lightweight database access abstraction layer
+ OpenDBX provides a simple and lightweight API for interfacing native
+ relational database APIs in a consistent way. By using the OpenDBX API you
+ don't have to adapt your program to the different database APIs by yourself.
+ .
+ The sqlite3 backend is recommended by default if no other backend is
+ installed with libopendbx1
+
+Package: libopendbx1-dev
+Description-md5: faa464e753df5c1d3fd7281c38c69353
+Description-en: Lightweight database access abstraction layer (dev)
+ OpenDBX provides a simple and lightweight API for interfacing native
+ relational database APIs in a consistent way. By using the OpenDBX API you
+ don't have to adapt your program to the different database APIs by yourself.
+ .
+ This package contains the header file to develop backends for libopendbx
+
+Package: libopendbx1-firebird
+Description-md5: 0f8bb25c8946b4bf468ddd1e3bdffc46
+Description-en: Firebird backend for OpenDBX
+ OpenDBX provides a simple and lightweight API for interfacing native
+ relational database APIs in a consistent way. By using the OpenDBX API you
+ don't have to adapt your program to the different database APIs by yourself.
+ .
+ This package contains the Firebird backend.
+
+Package: libopendbx1-mssql
+Description-md5: b40b59006d0986f857eff25955633efa
+Description-en: MSSQL backend for OpenDBX
+ OpenDBX provides a simple and lightweight API for interfacing native
+ relational database APIs in a consistent way. By using the OpenDBX API you
+ don't have to adapt your program to the different database APIs by yourself.
+ .
+ This package contains the MSSQL backend.
+
+Package: libopendbx1-mysql
+Description-md5: b323633ef284576959a44e5ac082f4ca
+Description-en: MySQL backend for OpenDBX
+ OpenDBX provides a simple and lightweight API for interfacing native
+ relational database APIs in a consistent way. By using the OpenDBX API you
+ don't have to adapt your program to the different database APIs by yourself.
+ .
+ This package contains the MySQL backend.
+
+Package: libopendbx1-odbc
+Description-md5: 8c66f30fa8734bf75466d8a4bd1e36df
+Description-en: ODBC backend for OpenDBX
+ OpenDBX provides a simple and lightweight API for interfacing native
+ relational database APIs in a consistent way. By using the OpenDBX API you
+ don't have to adapt your program to the different database APIs by yourself.
+ .
+ This package contains the ODBC backend.
+
+Package: libopendbx1-pgsql
+Description-md5: c0e2d86f4caf23f7173c3ba4791d0060
+Description-en: PostgreSQL backend for OpenDBX
+ OpenDBX provides a simple and lightweight API for interfacing native
+ relational database APIs in a consistent way. By using the OpenDBX API you
+ don't have to adapt your program to the different database APIs by yourself.
+ .
+ This package contains the PostgreSQL backend.
+
+Package: libopendbx1-sqlite
+Description-md5: c4f652e841f9349b554ae02f0594151e
+Description-en: SQLite backend for OpenDBX
+ OpenDBX provides a simple and lightweight API for interfacing native
+ relational database APIs in a consistent way. By using the OpenDBX API you
+ don't have to adapt your program to the different database APIs by yourself.
+ .
+ This package contains the SQLite backend.
+
+Package: libopendbx1-sqlite3
+Description-md5: 81ba0d87765952c0e44387e44b017475
+Description-en: SQLite3 backend for OpenDBX
+ OpenDBX provides a simple and lightweight API for interfacing native
+ relational database APIs in a consistent way. By using the OpenDBX API you
+ don't have to adapt your program to the different database APIs by yourself.
+ .
+ This package contains the SQLite3 backend.
+
+Package: libopendbx1-sybase
+Description-md5: 2f5f814a64af9199d3757c1996b41e0c
+Description-en: Sybase ctlib backend for OpenDBX
+ OpenDBX provides a simple and lightweight API for interfacing native
+ relational database APIs in a consistent way. By using the OpenDBX API you
+ don't have to adapt your program to the different database APIs by yourself.
+ .
+ This package contains the Sybase backend.
+
+Package: libopendmarc-dev
+Description-md5: 6738e49405f629656d0c2e887c895829
+Description-en: Headers and development libraries for the OpenDMARC library
+ Domain-based Message Authentication, Reporting and Conformance (DMARC),
+ builds on the successes of technologies such as DomainKeys Identified Mail
+ (DKIM) and the Sender Policy Framework (SPF) to create an infrastructure that
+ enforces policy on domain names that are visible to end users, and creates a
+ feedback framework for identifying and tracking fraudulent use of domain
+ names in email.
+ .
+ This package provides the required header files and development libraries for
+ developing against the OpenDMARC library.
+
+Package: libopendmarc0
+Description-md5: 71bbf52de43abedcb507d8bbad49846a
+Description-en: Library for DMARC validation and reporting
+ Domain-based Message Authentication, Reporting and Conformance (DMARC),
+ builds on the successes of technologies such as DomainKeys Identified Mail
+ (DKIM) and the Sender Policy Framework (SPF) to create an infrastructure that
+ enforces policy on domain names that are visible to end users, and creates a
+ feedback framework for identifying and tracking fraudulent use of domain
+ names in email.
+ .
+ This package provides library for implementing mail validation and reporting
+ for the experimental DMARC standard.
+
+Package: libopendmarc1
+Description-md5: 71bbf52de43abedcb507d8bbad49846a
+Description-en: Library for DMARC validation and reporting
+ Domain-based Message Authentication, Reporting and Conformance (DMARC),
+ builds on the successes of technologies such as DomainKeys Identified Mail
+ (DKIM) and the Sender Policy Framework (SPF) to create an infrastructure that
+ enforces policy on domain names that are visible to end users, and creates a
+ feedback framework for identifying and tracking fraudulent use of domain
+ names in email.
+ .
+ This package provides library for implementing mail validation and reporting
+ for the experimental DMARC standard.
+
+Package: libseccomp-dev
+Description-md5: e5fdb6fdd319bc8b5c43a1e29c7d62d5
+Description-en: high level interface to Linux seccomp filter (development files)
+ This library provides a high level interface to constructing, analyzing
+ and installing seccomp filters via a BPF passed to the Linux Kernel's
+ prctl() syscall.
+ .
+ This package contains the development files.
+
+Package: libseccomp0
+Description-md5: 7ee97a8161e83bfebc75870eb92bde51
+Description-en: high level interface to Linux seccomp filter
+ This library provides a high level interface to constructing, analyzing
+ and installing seccomp filters via a BPF passed to the Linux Kernel's
+ prctl() syscall.
+
+Package: libunbound-dev
+Description-md5: ed3009c5a462f3287f75c961064034a6
+Description-en: static library, header files, and docs for libunbound
+ Static library, header files, and documentation for libunbound.
+ .
+ libunbound performs and validates DNS lookups; it can be used to convert
+ hostnames to IP addresses and back and obtain other information from the
+ DNS. Cryptographic validation of results is performed with DNSSEC.
+
+Package: libunbound2
+Description-md5: 2be0d2578ccb5656d253e8013682ad4a
+Description-en: library implementing DNS resolution and validation
+ libunbound performs and validates DNS lookups; it can be used to convert
+ hostnames to IP addresses and back and obtain other information from the
+ DNS. Cryptographic validation of results is performed with DNSSEC.
+
+Package: logisim
+Description-md5: 2a120a09165f3d56086cc57d2ad5d510
+Description-en: graphical tool for designing and simulating logic circuits
+ Logisim is an educational tool for designing and simulating digital logic
+ circuits. With its simple toolbar interface and simulation of circuits as
+ you build them, it is simple enough to facilitate learning the most basic
+ concepts related to logic circuits. With the capacity to build larger circuits
+ from smaller subcircuits, and to draw bundles of wires with a single mouse
+ drag, Logisim can be used (and is used) to design and simulate entire CPUs
+ for educational purposes.
+
+Package: lxc
+Description-md5: 4ece0dffd153c29e95ffdb89f8238dfc
+Description-en: Linux Containers userspace tools
+ Containers are insulated areas inside a system, which have their own namespace
+ for filesystem, network, PID, IPC, CPU and memory allocation and which can be
+ created using the Control Group and Namespace features included in the Linux
+ kernel.
+ .
+ This package provides the lxc-* tools, which can be used to start a single
+ daemon in a container, or to boot an entire "containerized" system, and to
+ manage and debug your containers.
+
+Package: lxc-dbg
+Description-md5: 9ec9c23e26368a478bce79545cfbb782
+Description-en: Linux Containers userspace tools (debug)
+ Containers are insulated areas inside a system, which have their own namespace
+ for filesystem, network, PID, IPC, CPU and memory allocation and which can be
+ created using the Control Group and Namespace features included in the Linux
+ kernel.
+ .
+ This package contains the debugging symbols.
+
+Package: lxc-dev
+Description-md5: c719178b7e79ce1ed39519707c589961
+Description-en: Linux Containers userspace tools (development)
+ Containers are insulated areas inside a system, which have their own namespace
+ for filesystem, network, PID, IPC, CPU and memory allocation and which can be
+ created using the Control Group and Namespace features included in the Linux
+ kernel.
+ .
+ This package contains the development files.
+
+Package: mangonel
+Description-md5: 0803a306e05191cb6bc921b79cd0e713
+Description-en: Simple application launcher for the Plasma workspace
+ A launcher which analyses text-based queries to launch items, such
+ as programs and folders.
+
+Package: mininet
+Description-md5: 25cb98c7d0877aad7740c2dbb5449ade
+Description-en: Process-based network emulator
+ Mininet is a network emulator which uses lightweight
+ virtualization to create virtual networks for rapid
+ prototyping of Software-Defined Network (SDN) designs
+ using OpenFlow.
+
+Package: mosh
+Description-md5: 4eb9a4712a90a06683cd9f2c223953b4
+Description-en: Mobile shell that supports roaming and intelligent local echo
+ Mosh is a remote terminal application that supports:
+   - intermittent network connectivity,
+   - roaming to different IP address without dropping the connection, and
+   - intelligent local echo and line editing to reduce the effects
+     of "network lag" on high-latency connections.
+
+Package: myunity
+Description-md5: 24aa67e17f299eeb2babd31706947952
+Description-en: Unity configurator
+ This program allows one to configure and tune Unity with a pleasant and
+ comfortable graphical interface.
+ .
+ MyUnity is a third-party application, not official part of the Unity project.
+
+Package: node-underscore
+Description-md5: 398861d20e6c0b871219d43e35746ad1
+Description-en: JavaScript's functional programming helper library - NodeJS
+ Underscore is a utility-belt library for JavaScript that provides a lot
+ of the functional programming support that you would expect in
+ Prototype.js (or Ruby), but without extending any of the built-in
+ JavaScript objects.  It's the tie to go along with jQuery's tux.
+ .
+ Underscore provides 60-odd functions that support both the usual
+ functional suspects: map, select, invoke - as well as more specialized
+ helpers: function binding, javascript templating, deep equality
+ testing, and so on.  It delegates to built-in functions, if present, so
+ modern browsers will use the native implementations of forEach, map,
+ reduce, filter, every, some and indexOf.
+ .
+ This package contains the NodeJS module.
+
+Package: opendbx-doc
+Description-md5: b1c4ffbc2595f49aa5c498bc71bda14a
+Description-en: Opendbx documentation
+ OpenDBX provides a simple and lightweight API for interfacing native
+ relational database APIs in a consistent way. By using the OpenDBX API you
+ don't have to adapt your program to the different database APIs by yourself.
+ .
+ This package provides html documentation for OpenDBX
+
+Package: opendbx-utils
+Description-md5: bf06b8a5213770edc5e3a4d23a8951cb
+Description-en: Utility applications using libopendbx
+ OpenDBX provides a simple and lightweight API for interfacing native
+ relational database APIs in a consistent way. By using the OpenDBX API you
+ don't have to adapt your program to the different database APIs by yourself.
+ .
+ This package provides the odbx-sql utility application for accessing database
+ content directly via libopendbx and the opendbx test suite for verifying that
+ various backends are working
+
+Package: opendmarc
+Description-md5: 19a5d74cb9664470eaeeaf7a57a18873
+Description-en: Milter implementation of DMARC
+ Domain-based Message Authentication, Reporting and Conformance (DMARC),
+ builds on the successes of technologies such as DomainKeys Identified Mail
+ (DKIM) and the Sender Policy Framework (SPF) to create an infrastructure that
+ enforces policy on domain names that are visible to end users, and creates a
+ feedback framework for identifying and tracking fraudulent use of domain
+ names in email.  It uses OpenDBX as an interface layer to various SQL back
+ ends.
+ .
+ It provides the following new capabilities:
+ .
+ A binding between the domain name seen in the From: field of a message and
+ one or both of the domain names verified by DKIM and SPF;
+ .
+ The capability to request that receivers enforce strict message
+ authentication policy published by the author; and Comprehensive reporting,
+ both forensic and aggregate, regarding suspect messages.
+ .
+ This package contains the OpenDMARC mail filter (Milter) for plugging into
+ Milter-aware MTAs. It implements support for both message reject and DMARC
+ failure reporting.
+
+Package: openerp6.1-core
+Description-md5: 03463f7bea514168a3e1252f24bf4874
+Description-en: OpenERP Enterprise Resource Management
+ OpenERP, previously known as TinyERP, is a complete ERP and CRM. The main
+ features are accounting (analytic and financial), stock management, sales and
+ purchases management, tasks automation, marketing campaigns, help desk, POS,
+ etc. Technical features include a distributed server, flexible workflows, an
+ object database, a dynamic GUI, customizable reports, and NET-RPC and XML-RPC
+ interfaces. ** CORE PACKAGE WITHOUT DB DEPENDENCIES **
+
+Package: openerp6.1-full
+Description-md5: 49222b2241366cc406bdc4893345dc0b
+Description-en: OpenERP Enterprise Resource Management - metapackage
+ OpenERP, previously known as TinyERP, is a complete ERP and CRM. The main
+ features are accounting (analytic and financial), stock management, sales and
+ purchases management, tasks automation, marketing campaigns, help desk, POS,
+ etc. Technical features include a distributed server, flexible workflows, an
+ object database, a dynamic GUI, customizable reports, and NET-RPC and XML-RPC
+ interfaces. *** VERSION THAT INSTALLS DATABASE AND LEAVES OPENERP UP TO
+ DATE ***
+
+Package: openlp
+Description-md5: e1bb0aaa265da68d7f9e7aefb0baba27
+Description-en: Church lyrics projection application
+ OpenLP is free church presentation software, or lyrics projection software,
+ used to display slides of songs, Bible verses, videos, images, and even
+ presentations for church worship using a computer and a data projector.
+
+Package: parallel
+Description-md5: 8a851a81a172dd16a4bcbeb1f8f3c4ab
+Description-en: build and execute command lines from standard input in parallel
+ GNU Parallel is a shell tool for executing jobs in parallel using one
+ or more machines. A job is typically a single command or a small
+ script that has to be run for each of the lines in the input. The
+ typical input is a list of files, a list of hosts, a list of users, or
+ a list of tables.
+ .
+ If you use xargs today you will find GNU Parallel very easy to use. If
+ you write loops in shell, you will find GNU Parallel may be able to
+ replace most of the loops and make them run faster by running jobs in
+ parallel. If you use ppss or pexec you will find GNU Parallel will
+ often make the command easier to read.
+ .
+ GNU Parallel also makes sure output from the commands is the same
+ output as you would get had you run the commands sequentially. This
+ makes it possible to use output from GNU Parallel as input for other
+ programs.
+
+Package: pass
+Description-md5: c8b6e9cd595a9090411da3f085c057fa
+Description-en: lightweight directory-based password manager
+ Stores, retrieves, generates, and synchronizes passwords securely using
+ gpg, pwgen, and git.
+
+Package: pbuilder-scripts
+Description-md5: dd89527f637d20ab7a8ef9f0b01d16fb
+Description-en: Wrapper scripts for pbuilder
+ pbuilder-scripts are a collection of wrapper scripts to make working with
+ many simultaneous pbuilder projects easier.
+
+Package: pokerth
+Description-md5: b9120a1a42426cbec7afb2f62bdb8780
+Description-en: Texas hold'em game
+ pokerth is a free implementation of the Texas hold'em poker game which is
+ mostly played in casinos and has a growing popularity worldwide. Texas hold'em
+ is easy to learn but needs a good strategy to win and a lot of luck. This
+ package helps you when practicing or just playing for fun.
+
+Package: pokerth-data
+Description-md5: b19f8df925241c90b1a938776b4e54bd
+Description-en: Texas hold'em game - common data files
+ pokerth is a free implementation of the Texas hold'em poker game which is
+ mostly played in casinos and has a growing popularity worldwide. Texas hold'em
+ is easy to learn but needs a good strategy to win and a lot of luck. This
+ package helps you when practicing or just playing for fun.
+ .
+ This package contains arch-independent data files for pokerth (card images,
+ sounds, translations, etc).
+
+Package: pokerth-server
+Description-md5: a108584468dc6296850ef0a2bf4b2e25
+Description-en: Texas hold'em game - server
+ pokerth is a free implementation of the Texas hold'em poker game which is
+ mostly played in casinos and has a growing popularity worldwide. Texas hold'em
+ is easy to learn but needs a good strategy to win and a lot of luck. This
+ package helps you when practicing or just playing for fun.
+ .
+ This package contains the server, which is needed for hosting an own multi-
+ player, multigame server. You don't need this package if you want to play a
+ multiplayer game with one table over LAN or Internet.
+
+Package: python-authres
+Description-md5: a7b9f5c65f5fac3a0c39fb561519b9d0
+Description-en: RFC 5451 Authentication Results Header manipulation for Python
+ Python module to create and parse RFC 5451 Authentication Results headers.
+ .
+ The module provides a class for creating and parsing RFC compliant headers
+ for use in Python applications. It supports all currently registered
+ extensions in addition to the core RFC 5451 types.
+ .
+ http://tools.ietf.org/rfc/rfc5451.txt
+
+Package: python-concurrent.futures
+Description-md5: cb9ad20cdd73d1557a337a8086cff30f
+Description-en: backport of concurrent.futures package from Python 3.2
+ The concurrent.futures module provides a high-level interface for
+ asynchronously executing callables.
+ .
+ This is a backport for concurrent.futures as of PEP-3148 and included in
+ Python 3.2
+
+Package: python-django-auth-openid
+Description-md5: f100ef49765fa42783794b4a8dcd6505
+Description-en: provides optional OpenID integration for Django
+ The django-auth-openid library can be used to add OpenID support
+ to Django applications.
+ It integrates with Django's built in authentication system, so most
+ applications require minimal changes to support OpenID login. The
+ library also includes the following features:
+  * Basic user details are transferred from the OpenID server via the
+    simple Registration extension.
+  * It can be configured to use a fixed OpenID server URL, for use in SSO.
+  * It supports the launchpad.net teams extension to get team membership
+    info.
+
+Package: python-fife
+Description-md5: e0baa100ef078b23019808e5d303ed95
+Description-en: FIFE is a multi-platform isometric game engine
+ FIFE stands for Flexible Isometric Free Engine and is a cross
+ platform game creation framework written in C++. It provides you with
+ the ability to create a game using Python interfaces. FIFE also comes
+ as a DLL or static library so you can use C++ as well.
+
+Package: python-leveldb
+Description-md5: c3a7263c3e26a38348572a70b75bebf6
+Description-en: Python wrapper for LevelDB
+ LevelDB is a fast key-value storage library written at Google that
+ provides an ordered mapping from string keys to string values.
+ .
+ This package provides a Python wrapper for LevelDB.
+
+Package: python-notify2
+Description-md5: 2829c839545a2c8a3d2d1f12672b3481
+Description-en: desktop notifications API for Python
+ notify2 provides a Python interface to the Freedesktop notifications system,
+ which allows programs to display information to the user in an unobtrusive way.
+ Notifications are sent over DBus to a notification daemon, which is responsible
+ for presenting them to the user.
+ .
+ notify2 is intended as a replacement for pynotify (package python-notify), and
+ its interface is largely copied from there, although it isn't a complete clone.
+ .
+ This is the Python 2 version of the package.
+
+Package: python-simplegeneric
+Description-md5: 7c11e5fff1d97237836650aae1493ff0
+Description-en: simple generic functions for Python
+ The simplegeneric module lets you define simple single-dispatch generic
+ functions, akin to Python's built-in generic functions like len(), iter() and
+ so on. However, instead of using specially-named methods, these generic
+ functions use simple lookup tables, akin to those used by e.g. pickle.dump()
+ and other generic functions found in the Python standard library.
+
+Package: python-tvdb-api
+Description-md5: 0d08a8a10af05601dd788dd5df8e01e3
+Description-en: API interface to TheTVDB.com
+ An easy to use API interface to TheTVDB.com .
+
+Package: python-txaws
+Description-md5: f67ad146776b5eaf32732f6e03e8f533
+Description-en: Twisted-based Asynchronous Libraries for Amazon Web Services
+ Twisted-based Asynchronous Libraries for Amazon Web Services and Eucalyptus
+ private clouds This project's goal is to have a complete Twisted API
+ representing the spectrum of Amazon's web services as well as support for
+ Eucalyptus clouds.
+
+Package: python-unbound
+Description-md5: 103cd64b79e42ad710e19fe727ffce50
+Description-en: library implementing DNS resolution and validation (Python bindings)
+ Python extension module for libunbound.
+ .
+ libunbound performs and validates DNS lookups; it can be used to convert
+ hostnames to IP addresses and back and obtain other information from the
+ DNS. Cryptographic validation of results is performed with DNSSEC.
+
+Package: python3-authres
+Description-md5: ac2547354f3cd3c1a90be05d24ea84c4
+Description-en: RFC 5451 Authentication Results Header manipulation for Python3
+ Python3 module to create and parse RFC 5451 Authentication Results headers.
+ .
+ The module provides a class for creating and parsing RFC compliant headers
+ for use in Python3 applications. It supports all currently registered
+ extensions in addition to the core RFC 5451 types.
+ .
+ http://tools.ietf.org/rfc/rfc5451.txt
+
+Package: python3-dnspython
+Description-md5: 3a66e4f347b27b4c6b98a76b89695962
+Description-en: DNS toolkit for Python (Python 3)
+ dnspython is a DNS toolkit for Python. It supports almost all record types. It
+ can be used for queries, zone transfers, and dynamic updates. It supports TSIG
+ authenticated messages and EDNS0.
+ .
+ dnspython provides both high and low level access to DNS. The high level
+ classes perform queries for data of a given name, type, and class, and return
+ an answer set. The low level classes allow direct manipulation of DNS zones,
+ messages, names, and records.
+ .
+ This is the Python 3 version.
+
+Package: python3-lxc
+Description-md5: ee623a31db200104a7207d9de42b8f04
+Description-en: Linux Containers userspace tools (Python 3.x bindings)
+ Containers are insulated areas inside a system, which have their own namespace
+ for filesystem, network, PID, IPC, CPU and memory allocation and which can be
+ created using the Control Group and Namespace features included in the Linux
+ kernel.
+ .
+ This package contains the Python 3.x bindings.
+
+Package: python3-notify2
+Description-md5: 73b582537fd3d142468d06ce460d786b
+Description-en: desktop notifications API for Python 3
+ notify2 provides a Python interface to the Freedesktop notifications system,
+ which allows programs to display information to the user in an unobtrusive way.
+ Notifications are sent over DBus to a notification daemon, which is responsible
+ for presenting them to the user.
+ .
+ notify2 is intended as a replacement for pynotify (package python-notify), and
+ its interface is largely copied from there, although it isn't a complete clone.
+ .
+ This is the Python 3 version of the package.
+
+Package: python3-simplegeneric
+Description-md5: 1aa3e4db49ded29787a5532d32398159
+Description-en: simple generic functions for Python3
+ The simplegeneric module lets you define simple single-dispatch generic
+ functions, akin to Python's built-in generic functions like len(), iter() and
+ so on. However, instead of using specially-named methods, these generic
+ functions use simple lookup tables, akin to those used by e.g. pickle.dump()
+ and other generic functions found in the Python standard library.
+ .
+ This package contains the Python 3 version of the library.
+
+Package: qjackctl
+Description-md5: e4eff5b412e02d2dab4dcd699f0351f6
+Description-en: User interface for controlling the JACK sound server
+ Qjackctl offers a user interface for controlling the JACK sound server
+ daemon. At the same time it figures as a JACK patch bay and monitoring
+ tool.
+
+Package: qtcreator
+Description-md5: 7885cd3da2a1e224d06682f5f2a70d2e
+Description-en: lightweight integrated development environment (IDE) for Qt
+ Qt Creator is a new, lightweight, cross-platform integrated development
+ environment (IDE) designed to make development with the Qt application
+ framework even faster and easier.
+ .
+ It includes:
+  * An advanced C++ code editor
+  * Integrated GUI layout and forms designer
+  * Project and build management tools
+  * Integrated, context-sensitive help system
+  * Visual debugger
+  * Rapid code navigation tools
+  * Supports multiple platforms
+
+Package: qtcreator-dbg
+Description-md5: 629e09dcc2d3e8b586610af7dda13220
+Description-en: debugging symbols for Qt Creator IDE
+ Qt Creator is a new, lightweight, cross-platform integrated development
+ environment (IDE) designed to make development with the Qt application
+ framework even faster and easier.
+ .
+ This package contains the debugging symbols for Qt Creator IDE.
+
+Package: qtcreator-doc
+Description-md5: 3222826a78bdc18828e17359c62a98cd
+Description-en: documentation for Qt Creator IDE
+ Qt Creator is a new, lightweight, cross-platform integrated development
+ environment (IDE) designed to make development with the Qt application
+ framework even faster and easier.
+ .
+ This package contains the documentation for Qt Creator IDE.
+
+Package: rddmarc
+Description-md5: 9626f4163f1a21a3952d6c99c7003cab
+Description-en: DMARC report processing scripts collection
+ There are currently three relevant files provided:
+ .
+   - rddmarc: Perl the script to parse DMARC summary reports
+   - mkdmarc - SQL to create the tables
+   - dmarcfail: Parses DMARC forensic reports from Netease (currently the only
+     known provider of this report type) and adds them to a MySQL database to
+     assist in further analysis.
+
+Package: scratch
+Description-md5: b9ed04d52b57e23fe16ed824a639461e
+Description-en: easy to use programming environment for ages 8 and up - data
+ Scratch is an easy, interactive, collaborative programming
+ environment designed for creation of interactive stories, animations,
+ games, music, and art -- and sharing these on the web.
+ Scratch is designed to help young people (ages 8 and up) develop 21st
+ century learning skills. As they create Scratch projects, young people
+ learn important mathematical and computational ideas, while also
+ gaining a deeper understanding of the process of design.
+
+Package: sks
+Description-md5: 77734b608b7371c79747806d29321135
+Description-en: Synchronizing OpenPGP Key Server
+ SKS is an OpenPGP key server that correctly handles all OpenPGP features
+ defined in RFC2440 and RFC2440bis, including photoID packages and multiple
+ subkeys.
+ .
+ This key server implementation uses an efficient and reliable reconciliation
+ algorithm to keep the database in sync with other SKS servers.  Additionally
+ it can both send and receive PKS style sync emails.
+
+Package: sparkleshare
+Description-md5: 0f55c782a211bb376383ca7b386633a6
+Description-en: distributed collaboration and sharing tool
+ SparkleShare is a collaboration and sharing tool that is designed to keep
+ things simple and to stay out of your way. It allows you to instantly sync
+ with any Git repository you have access to.
+ .
+ SparkleShare can be used as a rough alternative to web services such as
+ Dropbox or Ubuntu One.
+ .
+ Though SparkleShare is not made to be a graphical frontend for git or a backup
+ tool, it may be useful for other kinds of purposes as well, like backing up
+ small files or monitoring your favourite project.
+
+Package: supertuxkart
+Description-md5: b7e47b2f0e78418e322e23357b24c7db
+Description-en: 3D kart racing game
+ SuperTuxKart is a free 3D kart racing game, with a focus on having fun over
+ realism. You can play with up to 4 friends on one PC, racing against each
+ other or just trying to beat the computer; single-player mode is also
+ available.
+ .
+ See the great lighthouse or drive through the sand and visit the pyramids.
+ Race underground or in space, watching the stars pass by. Or rest under the
+ palm trees on the beach, watching the other karts overtake you. But don't eat
+ the bananas! Watch for bowling balls, plungers, bubble gum and cakes thrown by
+ your opponents.
+ .
+ You can do a single race against other karts, compete in one of several Grand
+ Prix, try to beat the high score in time trials on your own, play battle mode
+ against your friends, and more!
+
+Package: supertuxkart-data
+Description-md5: 7c000895a1ef142194c997b00f60d8b2
+Description-en: 3D kart racing game (data)
+ SuperTuxKart is a free 3D kart racing game, with a focus on having fun over
+ realism. You can play with up to 4 friends on one PC, racing against each
+ other or just trying to beat the computer; single-player mode is also
+ available.
+ .
+ See the great lighthouse or drive through the sand and visit the pyramids.
+ Race underground or in space, watching the stars pass by. Or rest under the
+ palm trees on the beach, watching the other karts overtake you. But don't eat
+ the bananas! Watch for bowling balls, plungers, bubble gum and cakes thrown by
+ your opponents.
+ .
+ You can do a single race against other karts, compete in one of several Grand
+ Prix, try to beat the high score in time trials on your own, play battle mode
+ against your friends, and more!
+ .
+ This package contains data files for the game supertuxkart.
+
+Package: supertuxkart-dbg
+Description-md5: 1fd65650ef6fd5bddb32be234a6b1252
+Description-en: 3D kart racing game (debug)
+ SuperTuxKart is a free 3D kart racing game, with a focus on having fun over
+ realism. You can play with up to 4 friends on one PC, racing against each
+ other or just trying to beat the computer; single-player mode is also
+ available.
+ .
+ See the great lighthouse or drive through the sand and visit the pyramids.
+ Race underground or in space, watching the stars pass by. Or rest under the
+ palm trees on the beach, watching the other karts overtake you. But don't eat
+ the bananas! Watch for bowling balls, plungers, bubble gum and cakes thrown by
+ your opponents.
+ .
+ You can do a single race against other karts, compete in one of several Grand
+ Prix, try to beat the high score in time trials on your own, play battle mode
+ against your friends, and more!
+ .
+ This package contains debugging symbols for the game supertuxkart.
+
+Package: synergy
+Description-md5: 5fade0f66a7ce7fd1077db2409b0fd30
+Description-en: Share mouse, keyboard and clipboard over the network
+ Synergy lets you easily share a single mouse and keyboard between
+ multiple computers with different operating systems, each with its
+ own display, without special hardware.  It's intended for users
+ with multiple computers on their desk since each system uses its
+ own display.
+ .
+ Redirecting the mouse and keyboard is as simple as moving the mouse
+ off the edge of your screen.  Synergy also merges the clipboards of
+ all the systems into one, allowing cut-and-paste between systems.
+ Furthermore, it synchronizes screen savers so they all start and stop
+ together and, if screen locking is enabled, only one screen requires
+ a password to unlock them all.
+ .
+ Packages for Windows/MacOS/RPM and Sources can be found at
+ http://sourceforge.net/project/showfiles.php?group_id=59275
+
+Package: task
+Description-md5: 0d098dac3c1ebd03ad036f5c28ef384f
+Description-en: feature-rich console based todo list manager
+ Taskwarrior is a sophisticated command line todo list and task
+ manager with a lot of features:
+ .
+  * colorful tabbed output
+  * feature rich search function
+  * tags
+  * statistics
+  * Getting Things Done compatible
+  * interactive editing of items in text editor
+
+Package: tickr
+Description-md5: 1d60fd79d3e1e74ad7fe09a3106360fa
+Description-en: GTK-based highly graphically-customizable Feed Ticker
+ Tickr is a GTK-based RSS/Atom Reader that displays feeds as a smooth
+ scrolling line on your Desktop, as known from TV stations. Open feed
+ links in your favourite Browser. Graphics are highly customizable.
+
+Package: tvnamer
+Description-md5: 9f99a131196fe8058d4f3d8a6f0a5f02
+Description-en: utility to rename TV-show episodes files
+ Automatically names downloaded/recorded TV-episodes, by parsing filenames and
+ retrieving show-names from www.thetvdb.com
+
+Package: ubuntu-online-tour
+Description-md5: f71fcd466bd00e63d40972e0017fc88c
+Description-en: Experience Ubuntu in your web browser
+ Ubuntu Tour is a demonstration of Ubuntu's Unity user interface and
+ various Ubuntu features, running in Firefox wb browser. Other modern
+ HTML5/CSS3 browsers may also be used to view the tour.
+
+Package: ubuntu-packaging-guide
+Description-md5: e068ad6953d0f5ba85233ab3fec614fb
+Description-en: Ubuntu Packaging Guide - metapackage
+ The Ubuntu Packaging Guide is a set of articles that should help you to get
+ involved with packaging and development of Ubuntu. It's not meant to replace
+ other great documentation like the Debian New Maintainer's Guide or the
+ Debian policy, but serve as a starting point with easy and simple to
+ understand articles.
+ .
+ This is a metapackage, depending only on
+ ubuntu-packaging-guide-html.
+
+Package: ubuntu-packaging-guide-epub
+Description-md5: a52b9156e84a71a3f811252a12c8e0c6
+Description-en: Ubuntu Packaging Guide - EPUB guide
+ The Ubuntu Packaging Guide is a set of articles that should help you to get
+ involved with packaging and development of Ubuntu. It's not meant to replace
+ other great documentation like the Debian New Maintainer's Guide or the
+ Debian policy, but serve as a starting point with easy and simple to
+ understand articles.
+ .
+ This package contains the EPUB version of the guide.
+
+Package: ubuntu-packaging-guide-html
+Description-md5: aead54fe3b939ff64b94c8fb1b2ad858
+Description-en: Ubuntu Packaging Guide - HTML guide
+ The Ubuntu Packaging Guide is a set of articles that should help you to get
+ involved with packaging and development of Ubuntu. It's not meant to replace
+ other great documentation like the Debian New Maintainer's Guide or the
+ Debian policy, but serve as a starting point with easy and simple to
+ understand articles.
+ .
+ This package contains the HTML version of the guide.
+
+Package: ubuntu-packaging-guide-pdf
+Description-md5: 83defabd310e3bbbe0a4b055b2b6f127
+Description-en: Ubuntu Packaging Guide - PDF guide
+ The Ubuntu Packaging Guide is a set of articles that should help you to get
+ involved with packaging and development of Ubuntu. It's not meant to replace
+ other great documentation like the Debian New Maintainer's Guide or the
+ Debian policy, but serve as a starting point with easy and simple to
+ understand articles.
+ .
+ This package contains the PDF version of the guide.
+
+Package: udj-desktop-client
+Description-md5: 53613ecf29a8887e86df9f04e69cabd4
+Description-en: social music player
+ UDJ allows you and your friends to collaboratively select which music is
+ playing, in real time. Guests are able to view your playlist from their
+ smartphones. They can also search your music library from their phones and add
+ songs to the playlist. If they see a song added by someone else that they like,
+ they can choose to vote it up. The song will then move up in the queue and be
+ played sooner. Alternatively, if they see a song they don't like they can vote
+ it down and it will move down in the queue.
+
+Package: unbound
+Description-md5: fbeecad8349f6b3042087b256bc69b68
+Description-en: validating, recursive, caching DNS resolver
+ Unbound is a recursive-only caching DNS server which can perform DNSSEC
+ validation of results. It implements only a minimal amount of authoritative
+ service to prevent leakage to the root nameservers: forward lookups for
+ localhost, reverse for 127.0.0.1 and ::1, and NXDOMAIN for zones served by
+ AS112. Stub and forward zones are supported.
+ .
+ This package contains the unbound daemon.
+
+Package: unbound-anchor
+Description-md5: f49fb3435120bde9cd4af959aeac719c
+Description-en: utility to securely fetch the root DNS trust anchor
+ unbound-anchor is a utility which securely fetches or updates the root DNS
+ zone trust anchor. A copy of the current root anchor and root update
+ certificate is embedded in unbound-anchor. RFC 5011 trust anchor tracking is
+ performed, with fallback to an SSL fetch if this fails.
+
+Package: unbound-host
+Description-md5: 287e113772f55d3575bb8577560cb3eb
+Description-en: reimplementation of the 'host' command
+ This package provides the 'unbound-host' program that is bundled with the
+ Unbound domain name server. This version differs from the one provided in the
+ package called host, which is from NIKHEF, and bind9-host, which is from ISC,
+ and has a similar but different set of features and options.
+
+Package: unknown-horizons
+Description-md5: 0f7f05bccb8cdb029e520b2897cdaf42
+Description-en: 2D realtime strategy simulation
+ Unknown Horizons is a 2D realtime strategy simulation with an
+ emphasis on economy and city building. Expand your small settlement
+ to a strong and wealthy colony, collect taxes and supply your
+ inhabitants with valuable goods. Increase your power with a well
+ balanced economy and with strategic trade and diplomacy.
+
+Package: volti
+Description-md5: 97a31bacd21024a8cbdc6167b72bca22
+Description-en: control audio volume from system tray/notification area
+ Volti is a lightweight GTK+ application for controlling audio
+ volume from system tray/notification area.
+ .
+ Features:
+  * no PulseAudio, GStreamer, Phonon etc. only ALSA is needed
+  * internal mixer application, either choosing any mixer app
+    is possible
+  * left click opens volume scale (slider)
+  * scroll wheel on tray icon changes volume, increment in
+    percents is configurable
+  * configurable middle click to toggle 'mute' or 'show mixer'
+  * nice tooltip with card and volume info
+  * support for multimedia keys
+  * support desktop notifications on keys events
+
+Package: widelands
+Description-md5: 2aa8687bbb83b4fb4eff245b46d1c3eb
+Description-en: fantasy real-time strategy game
+ Widelands is a strategy game aiming for gameplay similar to Settlers II by
+ BlueByte.
+ .
+ In this game, you start out on a small piece of land with nothing more than
+ a few of useful resources. Using those, you can build yourself an empire
+ with many thousands of inhabitants. On your way towards this goal, you will
+ have to build up an economic infrastructure, explore the lands around you
+ and face enemies who are trying to rule the world just like you do.
+
+Package: widelands-data
+Description-md5: 83a9c23053626f0f7c374fe1069eca20
+Description-en: fantasy real-time strategy game (data files)
+ This package contains the graphics and levels for Widelands.
+ .
+ Widelands is a strategy game aiming for gameplay similar to Settlers II by
+ BlueByte.
+ .
+ In this game, you start out on a small piece of land with nothing more than
+ a few of useful resources. Using those, you can build yourself an empire
+ with many thousands of inhabitants. On your way towards this goal, you will
+ have to build up an economic infrastructure, explore the lands around you
+ and face enemies who are trying to rule the world just like you do.
+
+Package: widelands-dbg
+Description-md5: 7a7974a308676170cabc5e640b89b142
+Description-en: fantasy real-time strategy game (debug cruft)
+ This package contains the debugging symbols associated to widelands.
+ .
+ If you don't want to debug widelands (nor report bugs against it), you
+ don't need it.
+
+Package: wsl
+Description-md5: 9b0a82cf07de44ae3fa1380f1b14f273
+Description-en: Wsman Shell Command Line "whistle"
+ WSL (aka "whistle") contains various scripts that serve as a client interface
+ to WSMAN or Web Services for Management protocol base on DMTF standard
+ specification. WSMAN provides standards based messaging for systems management
+ CIM-style objects.
+
+Package: yubikey-personalization-gui
+Description-md5: ead8aea67c068c6ea35aca4fae2014de
+Description-en: Graphical personalization tool for YubiKey tokens
+ YubiKeys are USB tokens that act like keyboards and generate one-time
+ passwords, static passwords or work in challenge-response mode.
+ .
+ This is a graphical tool to customize the token with your own
+ cryptographic key and options.
+
+Package: znc
+Description-md5: 9b4612c45a69774bb76ba3e438f750c7
+Description-en: advanced modular IRC bouncer
+ znc is an IRC proxy. It runs as a daemon and connects to IRC server,
+ then allows you to connect from a workstation and work as the user that
+ is logged in to the IRC server. After you disconnect, it maintains the
+ connection to the server. It acts like any normal IRC server, so you can
+ use any IRC client to connect to it.
+ .
+ Some of its features include support for multiple users, multiple clients,
+ and multiple IRC servers; playback buffers to catch up with what happened
+ while you were detached, SSL encryption, DCC proxying, and a plugin
+ interface with many plugins supporting other features.
+
+Package: znc-dbg
+Description-md5: 48f0ac40a29af5ebb9e8c9ef6844f643
+Description-en: advanced modular IRC bouncer (debugging symbols)
+ znc is an IRC proxy. It runs as a daemon and connects to IRC server,
+ then allows you to connect from a workstation and work as the user that
+ is logged in to the IRC server. After you disconnect, it maintains the
+ connection to the server. It acts like any normal IRC server, so you can
+ use any IRC client to connect to it.
+ .
+ Some of its features include support for multiple users, multiple clients,
+ and multiple IRC servers; playback buffers to catch up with what happened
+ while you were detached, SSL encryption, DCC proxying, and a plugin
+ interface with many plugins supporting other features.
+ .
+ This package contains the debugging symbols of the znc package and his modules.
+
+Package: znc-dev
+Description-md5: 52f474b711dc1ef1b5080ac619e4daa2
+Description-en: advanced modular IRC bouncer (development headers)
+ znc is an IRC proxy. It runs as a daemon and connects to IRC server,
+ then allows you to connect from a workstation and work as the user that
+ is logged in to the IRC server. After you disconnect, it maintains the
+ connection to the server. It acts like any normal IRC server, so you can
+ use any IRC client to connect to it.
+ .
+ Some of its features include support for multiple users, multiple clients,
+ and multiple IRC servers; playback buffers to catch up with what happened
+ while you were detached, SSL encryption, DCC proxying, and a plugin
+ interface with many plugins supporting other features.
+ .
+ This package contains the znc development headers for developing modules.
+
+Package: znc-extra
+Description-md5: b217b89d16cff1f603dbcf9df8981310
+Description-en: extra modules for znc
+ znc is an IRC proxy. It runs as a daemon and connects to IRC server,
+ then allows you to connect from a workstation and work as the user that
+ is logged in to the IRC server. After you disconnect, it maintains the
+ connection to the server. It acts like any normal IRC server, so you can
+ use any IRC client to connect to it.
+ .
+ Some of its features include support for multiple users, multiple clients,
+ and multiple IRC servers; playback buffers to catch up with what happened
+ while you were detached, SSL encryption, DCC proxying, and a plugin
+ interface with many plugins supporting other features.
+ .
+ This package contains extra modules for znc, some of them may not be stable.
+
+Package: znc-perl
+Description-md5: 3b9cef928cf90174b5c7358eb9faff82
+Description-en: advanced modular IRC bouncer (Perl extension)
+ znc is an IRC proxy. It runs as a daemon and connects to IRC server,
+ then allows you to connect from a workstation and work as the user that
+ is logged in to the IRC server. After you disconnect, it maintains the
+ connection to the server. It acts like any normal IRC server, so you can
+ use any IRC client to connect to it.
+ .
+ Some of its features include support for multiple users, multiple clients,
+ and multiple IRC servers; playback buffers to catch up with what happened
+ while you were detached, SSL encryption, DCC proxying, and a plugin
+ interface with many plugins supporting other features.
+ .
+ This package contains the znc Perl extension.
+
+Package: znc-python
+Description-md5: 7850724d985b344f626787e4324ee8e1
+Description-en: advanced modular IRC bouncer (Python extension)
+ znc is an IRC proxy. It runs as a daemon and connects to IRC server,
+ then allows you to connect from a workstation and work as the user that
+ is logged in to the IRC server. After you disconnect, it maintains the
+ connection to the server. It acts like any normal IRC server, so you can
+ use any IRC client to connect to it.
+ .
+ Some of its features include support for multiple users, multiple clients,
+ and multiple IRC servers; playback buffers to catch up with what happened
+ while you were detached, SSL encryption, DCC proxying, and a plugin
+ interface with many plugins supporting other features.
+ .
+ This package contains the znc Python extension.
+
+Package: znc-tcl
+Description-md5: a9d7945551f2c91a0a26d0284e01f934
+Description-en: advanced modular IRC bouncer (Tcl extension)
+ znc is an IRC proxy. It runs as a daemon and connects to IRC server,
+ then allows you to connect from a workstation and work as the user that
+ is logged in to the IRC server. After you disconnect, it maintains the
+ connection to the server. It acts like any normal IRC server, so you can
+ use any IRC client to connect to it.
+ .
+ Some of its features include support for multiple users, multiple clients,
+ and multiple IRC servers; playback buffers to catch up with what happened
+ while you were detached, SSL encryption, DCC proxying, and a plugin
+ interface with many plugins supporting other features.
+ .
+ This package contains the znc Tcl extension.
+

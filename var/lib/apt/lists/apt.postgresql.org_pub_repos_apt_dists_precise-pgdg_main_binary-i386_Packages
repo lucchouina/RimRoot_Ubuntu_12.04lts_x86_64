@@ -1,0 +1,4182 @@
+Package: apgdiff
+Version: 2.4-1.pgdg12.4+1
+Architecture: all
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 138
+Depends: default-jre-headless | java2-runtime-headless
+Homepage: http://apgdiff.startnet.biz/
+Priority: extra
+Section: database
+Filename: pool/main/a/apgdiff/apgdiff_2.4-1.pgdg12.4+1_all.deb
+Size: 93818
+SHA256: 765886f255d1dc139aa4c1ba92859e0363498140dac343a4491b805d5af8a7fd
+SHA1: 8a402e5dae7515946e6c9f69a598f98a3fa34b7f
+MD5sum: 4b9a111d1171ee7597fd127afc102180
+Description: Another PostgreSQL Diff Tool
+ Another PostgreSQL Diff Tool is a simple PostgreSQL diff tool that is useful
+ for schema upgrades. The tool compares two schema dump files and creates
+ an SQL output file that is (after some hand-made modifications) suitable for
+ upgrades of old schemata.
+
+Package: barman
+Version: 1.2.0-1.pgdg12.4+1
+Architecture: all
+Maintainer: Marco Nenciarini <mnencia@debian.org>
+Installed-Size: 263
+Depends: python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8), python-psycopg2, python-argh, python-dateutil, python-argcomplete, adduser, rsync (>= 3.0.4~)
+Recommends: openssh-server, openssh-client
+Homepage: http://www.pgbarman.org
+Priority: extra
+Section: database
+Filename: pool/main/b/barman/barman_1.2.0-1.pgdg12.4+1_all.deb
+Size: 50970
+SHA256: ebe78765f6fc0295376cbe9d6abbdaa63f2471f15060588223b50c1004ffffda
+SHA1: 3b334fcdc8acac5d688010fbf59f115fe11a8308
+MD5sum: 0a4e0efa4ee16b6faada9234b67de624
+Description: Backup and Recovery Manager for PostgreSQL
+ Barman (backup and recovery manager) is an administration tool for
+ disaster recovery of PostgreSQL servers written in Python.
+ .
+ It allows one to perform remote backups of multiple servers in business
+ critical environments and help DBAs during the recovery phase.
+ .
+ Barman's most wanted features include backup catalogs, retention policies,
+ remote recovery, archiving and compression of WAL files and backups.
+ .
+ Barman is written and maintained by PostgreSQL professionals 2ndQuadrant.
+
+Package: check-postgres
+Version: 2.20.0-1.pgdg12.4+1
+Architecture: all
+Maintainer: Peter Eisentraut <petere@debian.org>
+Installed-Size: 583
+Depends: perl, postgresql-client
+Enhances: postgresql
+Homepage: http://bucardo.org/wiki/Check_postgres
+Priority: optional
+Section: database
+Filename: pool/main/c/check-postgres/check-postgres_2.20.0-1.pgdg12.4+1_all.deb
+Size: 175456
+SHA256: b4d86de198626d9b5216fa9705f17e918d27326933b19cbc62658ff76a2254ce
+SHA1: f712deda8e7a9726bac7423594b60ce3fc602010
+MD5sum: 8763f5eef77602335af434851cf9cfc8
+Description: script for monitoring PostgreSQL databases
+ check_postgres is a Perl script that runs many different tests
+ against one or more Postgres databases.  It uses the psql program to
+ gather the information, and outputs the results in one of three
+ formats: Nagios, MRTG, or simple.
+
+Package: libecpg-compat3
+Source: postgresql-9.2
+Version: 9.2.4-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 469
+Depends: libc6 (>= 2.3.6-6~), libecpg6 (>= 9.0~), libpgtypes3
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: libs
+Filename: pool/main/p/postgresql-9.2/libecpg-compat3_9.2.4-1.pgdg12.4+1_i386.deb
+Size: 433040
+SHA256: 49f4f3e79076c51bb82f9f0f05e538537faf44c0b244846b2fae8ac9abbe62e7
+SHA1: fb10ce8919ef2c28e18e283245cfb43422c0057a
+MD5sum: da75bc89031e65cf8645492354ae9062
+Description: older version of run-time library for ECPG programs
+ The libecpg_compat shared library is used by programs built with ecpg.
+ (Embedded PostgreSQL for C).
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: libecpg-dev
+Source: postgresql-9.2
+Version: 9.2.4-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 1437
+Depends: libc6 (>= 2.4), libpq-dev, libecpg6 (= 9.2.4-1.pgdg12.4+1), libecpg-compat3 (= 9.2.4-1.pgdg12.4+1), libpgtypes3 (= 9.2.4-1.pgdg12.4+1)
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/p/postgresql-9.2/libecpg-dev_9.2.4-1.pgdg12.4+1_i386.deb
+Size: 624820
+SHA256: 6b16c417f78398389c0e6fc6bc3ff892de0742bec0ba803eaf852750d8fdbd5d
+SHA1: 72e24134ea7e37548237c019531bbd5c994dd8f1
+MD5sum: 1f31f06de743ce4d5abd94593fedbfcb
+Description: development files for ECPG (Embedded PostgreSQL for C)
+ This package contains the necessary files to build ECPG (Embedded
+ PostgreSQL for C) programs.  It includes the development libraries
+ and the preprocessor program ecpg.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+ .
+ Install this package if you want to write C programs with SQL statements
+ embedded in them (rather than run by an external process).
+
+Package: libecpg6
+Source: postgresql-9.2
+Version: 9.2.4-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 860
+Depends: libc6 (>= 2.4), libpgtypes3, libpq5 (>= 9.0~)
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: libs
+Filename: pool/main/p/postgresql-9.2/libecpg6_9.2.4-1.pgdg12.4+1_i386.deb
+Size: 495518
+SHA256: e4cb0319313abfff4766b8ef124c9742f0d105be8889fc5050f438d2facc6efe
+SHA1: 8afe3571feb9dfb629dfef95a6ee99a288337c79
+MD5sum: 1448984f02304abd5dea1f803f5fd8c8
+Description: run-time library for ECPG programs
+ The libecpg shared library is used by programs built with ECPG
+ (Embedded PostgreSQL for C).
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: libpgpool-dev
+Source: pgpool2
+Version: 3.2.3-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 94
+Depends: libpgpool0 (= 3.2.3-1.pgdg12.4+1)
+Conflicts: libpcp3-dev
+Homepage: http://www.pgpool.net/mediawiki/index.php/Main_Page
+Priority: optional
+Section: libdevel
+Filename: pool/main/p/pgpool2/libpgpool-dev_3.2.3-1.pgdg12.4+1_i386.deb
+Size: 23234
+SHA256: 054f57259a75179b39a4984dff1ce065d03f6bac36269385b87e2c9aa0d14930
+SHA1: acd57a71596579b1182ed9d57658bc4e2f42acb9
+MD5sum: 7728ef6c82676d2f462c04436f44d8fe
+Description: pgpool control protocol library - headers
+ pgpool-II is a middleware that works between PostgreSQL servers and a
+ PostgreSQL database client.  This package contains headers for the pgpool
+ control protocol library (libpcp).
+
+Package: libpgpool0
+Source: pgpool2
+Version: 3.2.3-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 76
+Depends: libc6 (>= 2.15)
+Breaks: pgpool2 (<< 3.1.1)
+Homepage: http://www.pgpool.net/mediawiki/index.php/Main_Page
+Priority: optional
+Section: libs
+Filename: pool/main/p/pgpool2/libpgpool0_3.2.3-1.pgdg12.4+1_i386.deb
+Size: 19070
+SHA256: ce4d9c43406682c4dc4a21a50dc172dbf9e7edf9a22806cfb5845ce005730156
+SHA1: 15d4ef46dacce792ffdca85fed5a00b7bbc6e87e
+MD5sum: 2e26d3f19220506e5d8489f1fd69cb39
+Description: pgpool control protocol library
+ pgpool-II is a middleware that works between PostgreSQL servers and a
+ PostgreSQL database client.  This package contains the pgpool control
+ protocol library (libpcp).
+
+Package: libpgtypes3
+Source: postgresql-9.2
+Version: 9.2.4-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 518
+Depends: libc6 (>= 2.4)
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: libs
+Filename: pool/main/p/postgresql-9.2/libpgtypes3_9.2.4-1.pgdg12.4+1_i386.deb
+Size: 455556
+SHA256: 959e3320a6e9471e293a174f1619bddfae733c22821aa435dd84c8c6ed699b4e
+SHA1: 09cf8f326518447706160c675de31de030f80d33
+MD5sum: f6de186308650a6be17d6b3ff0c16d2d
+Description: shared library libpgtypes for PostgreSQL 9.2
+ The libpgtypes shared library is used by programs built with ecpg.
+ (Embedded PostgreSQL for C).
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: libpq-dev
+Source: postgresql-9.2
+Version: 9.2.4-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 1384
+Depends: libc6 (>= 2.4), libpq5 (= 9.2.4-1.pgdg12.4+1), libssl-dev, krb5-multidev, comerr-dev
+Suggests: postgresql-doc-9.2
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/p/postgresql-9.2/libpq-dev_9.2.4-1.pgdg12.4+1_i386.deb
+Size: 600446
+SHA256: a85dbbe653ff6dbc2fcf254a1ed6da3ea21d2dbe064a8f89ff080878f7573927
+SHA1: 7a930aa517e216edf8b2efd0fb3602ae9b8474f1
+MD5sum: 2d8d8883c2e8aae30ebbaa08c1aff132
+Description: header files for libpq5 (PostgreSQL library)
+ Header files and static library for compiling C programs to link
+ with the libpq library in order to communicate with a PostgreSQL
+ database backend.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: libpq5
+Source: postgresql-9.2
+Version: 9.2.4-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 987
+Depends: libc6 (>= 2.4), libcomerr2 (>= 1.01), libgssapi-krb5-2 (>= 1.10+dfsg~), libkrb5-3 (>= 1.6.dfsg.2), libldap-2.4-2 (>= 2.4.7), libssl1.0.0 (>= 1.0.0)
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: libs
+Filename: pool/main/p/postgresql-9.2/libpq5_9.2.4-1.pgdg12.4+1_i386.deb
+Size: 536128
+SHA256: 28f9d3a0e0e0cd6a1fb4e9eef442b3441d32c46755b1f6f9294a7fea57e501b9
+SHA1: cfb65129c9df725aa7c1fd7b8e13e19eb6bde40b
+MD5sum: 421fa109e378b58f2602c267f06992ad
+Description: PostgreSQL C client library
+ libpq is a C library that enables user programs to communicate with
+ the PostgreSQL database server.  The server can be on another machine
+ and accessed through TCP/IP.  This version of libpq is compatible
+ with servers from PostgreSQL 8.2 or later.
+ .
+ This package contains the run-time library, needed by packages using
+ libpq.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: newpid
+Version: 1~7.git3cc00a4.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 35
+Depends: libc6 (>= 2.4)
+Priority: optional
+Section: utils
+Filename: pool/main/n/newpid/newpid_1~7.git3cc00a4.pgdg12.4+1_i386.deb
+Size: 4398
+SHA256: aa92b2c291b8d59791cd4e1a3c7f13385ba8a51be41d6ce30f114fafbd32f6fe
+SHA1: df1013c5797b57b29018dc9281a09c5b89d41f16
+MD5sum: f488326050769f2326a47dd5970f6670
+Description: run a command in a new PID namespace
+ newpid is a very simple wrapper around clone(CLONE_NEWPID) that launches a
+ command in a new PID namespace. /proc is also remounted so it sees the new
+ process space. Needs root to run.
+
+Package: odbc-postgresql
+Source: psqlodbc
+Version: 1:09.01.0200-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 1243
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.7), libltdl7 (>= 2.4.2), libpq5 (>= 9.0~), libssl1.0.0 (>= 1.0.0), odbcinst1debian2 (>= 2.2.11-3)
+Suggests: unixodbc-bin
+Enhances: unixodbc
+Breaks: libiodbc2, odbcinst1debian2 (<< 2.2.14p2-3), unixodbc (<< 2.2.14p2-3)
+Multi-Arch: same
+Homepage: http://psqlodbc.projects.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/psqlodbc/odbc-postgresql_09.01.0200-1.pgdg12.4+1_i386.deb
+Size: 538270
+SHA256: 9b46561e86b3d511b2f72536d16fc43cfe87792bf6694c63b52504dfb5b2cba4
+SHA1: 9839810beb3fa0a8a5b9dc8e02bb8502470e72fe
+MD5sum: b95f2ab01f76d586db6b9c4b5775d54f
+Description: ODBC driver for PostgreSQL
+ This package provides a driver that allows ODBC-enabled applications to
+ access PostgreSQL databases.  ODBC is an abstraction layer that allows
+ applications written for that layer to access databases in a manner
+ that is relatively independent of the particular database management
+ system.
+ .
+ You need to install this package if you want to use an application that
+ provides database access through ODBC and you want that application to
+ access a PostgreSQL database.  This package would need to be installed
+ on the same machine as that client application; the PostgreSQL database
+ server can be on a different machine and does not need any additional
+ software to accept ODBC clients.
+ .
+ If you want to write software that can access a database through the
+ ODBC abstraction layer, you need to install the unixODBC driver manager
+ development package unixodbc-dev, and possibly additional packages for
+ language bindings.  This driver package is only used at run time.
+
+Package: odbc-postgresql-dbg
+Source: psqlodbc
+Version: 1:09.01.0200-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 1757
+Depends: odbc-postgresql
+Multi-Arch: same
+Homepage: http://psqlodbc.projects.postgresql.org/
+Priority: extra
+Section: debug
+Filename: pool/main/p/psqlodbc/odbc-postgresql-dbg_09.01.0200-1.pgdg12.4+1_i386.deb
+Size: 741204
+SHA256: 8e0fdf21b38a5b4c7b97c50ac7819ca35d043d6d93d5af78cea0c304ef824e68
+SHA1: 4d5b15479ae1cb8388c02fccbbc540e742d7b6b6
+MD5sum: 011e69cbc4e66429c5312247968f9ca7
+Description: ODBC driver for PostgreSQL - debug symbols
+ odbc-postgresql provides a driver that allows ODBC-enabled applications
+ to access PostgreSQL databases.  ODBC is an abstraction layer that
+ allows applications written for that layer to access databases in a
+ manner that is relatively independent of the particular database
+ management system.
+ .
+ This package contains the debug symbols for odbc-postgresql.
+
+Package: ora2pg
+Version: 8.11-1.pgdg12.4+1
+Architecture: all
+Maintainer: Julián Moreno Patiño <darkjunix@gmail.com>
+Installed-Size: 301
+Depends: libdbd-oracle-perl, libdbd-pg-perl, libdbi-perl, libio-compress-perl, perl
+Recommends: postgresql-client
+Homepage: http://ora2pg.darold.net/
+Priority: extra
+Section: contrib/misc
+Filename: pool/main/o/ora2pg/ora2pg_8.11-1.pgdg12.4+1_all.deb
+Size: 97620
+SHA256: 4478e7c2e98b022a11e3fa4da38d6023c035c7a7a68233658797daaaae9553f3
+SHA1: a8854d4485958d7da2017d91088d2eb7a73e6f60
+MD5sum: c556649af75b15b5dfd145602a636c29
+Description: Oracle to PostgreSQL database schema converter
+ This package contains a Perl module and a companion script to convert an
+ Oracle database schema to PostgreSQL and to migrate the data from an
+ Oracle database to a PostgreSQL database.
+
+Package: pgadmin3
+Version: 1.16.1-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Gerfried Fuchs <rhonda@debian.org>
+Installed-Size: 8163
+Depends: pgadmin3-data (= 1.16.1-1.pgdg12.4+1), libc6 (>= 2.7), libgcc1 (>= 1:4.1.1), libpq5 (>= 8.4~), libstdc++6 (>= 4.4.0), libwxbase2.8-0 (>= 2.8.12.1), libwxgtk2.8-0 (>= 2.8.12.1), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25)
+Recommends: pgagent, postgresql-client
+Suggests: postgresql-contrib
+Homepage: http://www.pgadmin.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/pgadmin3/pgadmin3_1.16.1-1.pgdg12.4+1_i386.deb
+Size: 2743394
+SHA256: 85e49bf5c003f62281c998e6f0c054c712d18740730785c27ddd70ba64e0c249
+SHA1: 6a1cae7fd71829eb318a1b283977a08e9bfdc6df
+MD5sum: ef4f3bd78ea0a76845126e7746e953b8
+Description: graphical administration tool for PostgreSQL
+ pgAdmin III is a database design and management application for use with
+ PostgreSQL. The application can be used to manage PostgreSQL 7.3 and above
+ running on any platform.
+ .
+ pgAdmin III is designed to answer the needs of all users, from writing
+ simple SQL queries to developing complex databases. The graphical
+ interface supports all PostgreSQL features and makes administration
+ easy. The application also includes a syntax highlighting SQL editor, a
+ server-side code editor, an SQL/batch/shell job scheduling agent,
+ support for the Slony-I replication engine and much more. Server
+ connection may be made using TCP/IP or Unix Domain Sockets (on *nix
+ platforms), and may be SSL encrypted for security. No additional
+ drivers are required to communicate with the database server.
+
+Package: pgadmin3-data
+Source: pgadmin3
+Version: 1.16.1-1.pgdg12.4+1
+Architecture: all
+Maintainer: Gerfried Fuchs <rhonda@debian.org>
+Installed-Size: 6042
+Enhances: pgadmin3 (>= 1.16.1-1.pgdg12.4+1)
+Homepage: http://www.pgadmin.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/pgadmin3/pgadmin3-data_1.16.1-1.pgdg12.4+1_all.deb
+Size: 1960792
+SHA256: 7b61ed7e7d9ea383f15da333a528d9731fcda407cbc3663c2ecf96a693ac5bab
+SHA1: f421c994eea30e7359d989fa74d6a85714a2d9f8
+MD5sum: 5ccc43eef2455ad94bb1c260c46526c0
+Description: graphical administration tool for PostgreSQL - documentation
+ pgAdmin III is a database design and management application for use with
+ PostgreSQL.
+ .
+ This package contains the documentation for pgAdmin III in English language.
+ This package is mandatory to get the pgAdmin III help system to run smoothly.
+
+Package: pgadmin3-dbg
+Source: pgadmin3
+Version: 1.16.1-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Gerfried Fuchs <rhonda@debian.org>
+Installed-Size: 72938
+Depends: pgadmin3 (= 1.16.1-1.pgdg12.4+1), pgadmin3-data (= 1.16.1-1.pgdg12.4+1)
+Recommends: pgagent, postgresql-client
+Suggests: postgresql-contrib
+Homepage: http://www.pgadmin.org/
+Priority: extra
+Section: debug
+Filename: pool/main/p/pgadmin3/pgadmin3-dbg_1.16.1-1.pgdg12.4+1_i386.deb
+Size: 30852834
+SHA256: 604385713538b4b81651dec6424e8484da4a754067a7ef11368ae37ca18cd522
+SHA1: ab488e5f8657db6bc8ad66ccd898fc08a3c25e47
+MD5sum: cc38faf2d7f59662e04aca6485cba115
+Description: graphical administration tool for PostgreSQL (debugging symbols)
+ This package contains the debugging symbols for pgadmin3.
+ .
+ pgAdmin III is a database design and management application for use with
+ PostgreSQL. The application can be used to manage PostgreSQL 7.3 and above
+ running on any platform.
+
+Package: pgbouncer
+Version: 1.5.4-3.pgdg12.4+1
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 407
+Depends: lsb-base (>= 3.1), postgresql-common (>= 26), libc6 (>= 2.7), libevent-2.0-5 (>= 2.0.16-stable)
+Enhances: postgresql (>= 7.4)
+Homepage: http://pgfoundry.org/projects/pgbouncer/
+Priority: optional
+Section: database
+Filename: pool/main/p/pgbouncer/pgbouncer_1.5.4-3.pgdg12.4+1_i386.deb
+Size: 152874
+SHA256: 03b13ecad813b89f8a6413b8a6666163f203d1630aedf1c9202f2bce114849a5
+SHA1: 20cfa729bcf2c91093f1063ae66b353a780588fa
+MD5sum: 913108599206c2e5787124f74f8837bd
+Description: lightweight connection pooler for PostgreSQL
+ PgBouncer is a lightweight connection pooler for PostgreSQL providing the
+ following features:
+ .
+  * Several levels of brutality when rotating connections: session pooling,
+    transaction pooling, statement pooling.
+  * Low memory requirements.
+  * It is not tied to one backend server, the destination databases
+    can reside on different hosts.
+  * Supports online reconfiguration for most of the settings.
+  * Supports online restart/upgrade.
+
+Package: pgdg-keyring
+Version: 2012.1
+Architecture: all
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 40
+Homepage: http://apt.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/pgdg-keyring/pgdg-keyring_2012.1_all.deb
+Size: 4102
+SHA256: 677864eb478f4141f62681795d99ffecb80a8a0810d060f19ec32adcf19d0437
+SHA1: 2adb329b3b166423283624b9d41f56800a4a0944
+MD5sum: cc98d0d5f3b0ee4b7700f66cc4ed2663
+Description: keyring for apt.postgresql.org
+ The PostgreSQL Global Development Group (PGDG) provides an archive of
+ PostgreSQL server and extension modules packages for various Debian and Ubuntu
+ releases at http://apt.postgresql.org/pub/repos/apt/. It complements the
+ packages in those distributions by offering all PostgreSQL server versions
+ supported by the PGDG compiled for all releases, as well as server extension
+ modules for a broad range of server version/distribution combinations.
+ .
+ This package contains the public key used for signing the repository. It
+ should be installed on all hosts using the repository.
+
+Package: pgpool2
+Version: 3.2.3-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 2363
+Depends: lsb-base (>= 3.0-3), postgresql-common (>= 26), ucf, libc6 (>= 2.15), libpgpool0 (= 3.2.3-1.pgdg12.4+1), libpq5
+Enhances: postgresql
+Conflicts: pgpool
+Replaces: pgpool
+Homepage: http://www.pgpool.net/mediawiki/index.php/Main_Page
+Priority: optional
+Section: database
+Filename: pool/main/p/pgpool2/pgpool2_3.2.3-1.pgdg12.4+1_i386.deb
+Size: 858106
+SHA256: ce863685d79c7a877ef60d8ff541f50593f56a5f17cec0913c9b1cf0404f8bbd
+SHA1: 3d5e9cc87b93e03b7d743c77be1c843f0c6a47c3
+MD5sum: 05e15c79ddd36ffde697e85d660a75f0
+Description: connection pool server and replication proxy for PostgreSQL
+ pgpool-II is a middleware that works between PostgreSQL servers and a
+ PostgreSQL database client. It provides the following features:
+ .
+  * Connection Pooling
+  * Replication
+  * Load Balance
+  * Limiting Exceeding Connections
+  * Parallel Query
+ .
+ pgpool-II talks PostgreSQL's backend and frontend protocol, and relays a
+ connection between them. Therefore, a database application (frontend) thinks
+ that pgpool-II is the actual PostgreSQL server, and the server (backend) sees
+ pgpool-II as one of its clients. Because pgpool-II is transparent to both the
+ server and the client, an existing database application can be used with
+ pgpool-II almost without a change to its sources.
+ .
+ This is version 3 of pgpool-II, the second generation of pgpool.
+
+Package: phppgadmin
+Version: 5.1-1.pgdg12.4+1
+Architecture: all
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 3057
+Depends: libapache2-mod-php5 | php5-cgi, php5-pgsql, apache2 | httpd, libjs-jquery
+Recommends: postgresql-doc
+Suggests: postgresql, slony1-bin
+Homepage: http://phppgadmin.sourceforge.net/
+Priority: extra
+Section: web
+Filename: pool/main/p/phppgadmin/phppgadmin_5.1-1.pgdg12.4+1_all.deb
+Size: 708962
+SHA256: de37f01231ab0bf18de7f76650e32013edf0c3dc35537142b19362d4bffbc291
+SHA1: 52975ab62443f124fd80031e76ce01ee59d3f046
+MD5sum: fc7e8a32be7b3fa8b70386888f5e589c
+Description: web-based administration tool for PostgreSQL
+ phpPgAdmin is a web-based administration tool for PostgreSQL. It is perfect
+ for PostgreSQL DBAs, newbies and hosting services.
+ .
+ Features:
+  * Administer multiple servers
+  * Support for PostgreSQL 7.4.x, 8.0.x, 8.1.x, 8.2.x, 8.3.x, 8.4.x, 9.0.x
+  * Manage all aspects of:
+    * Users & groups
+    * Databases
+    * Schemas
+    * Tables, indexes, constraints, triggers, rules & privileges
+    * Views, sequences & functions
+    * Advanced objects
+    * Reports
+  * Easy data manipulation:
+    * Browse tables, views & reports
+    * Execute arbitrary SQL
+    * Select, insert, update and delete
+  * Dump table data in a variety of formats: SQL, COPY, XML, XHTML, CSV, Tabbed,
+    pg_dump
+  * Import SQL scripts, COPY data, XML, CSV and Tabbed
+  * Supports the Slony master-slave replication engine
+  * Excellent language support:
+    * Available in 27 languages
+    * No encoding conflicts. Edit Russian data using a Japanese interface!
+  * Easy to install and configure
+
+Package: postgresql
+Source: postgresql-common (144.pgdg12.4+1)
+Version: 9.3+142really9.2+144.pgdg12.4+1
+Architecture: all
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 69
+Depends: postgresql-9.2
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-common/postgresql_9.3+142really9.2+144.pgdg12.4+1_all.deb
+Size: 46294
+SHA256: 0acc52d95c6421fc681810edaea56963324bf05ae3d0f92834c52d04e6192342
+SHA1: 799af3ac661eba15d0cadb8ff93f94072b430e31
+MD5sum: 58e3344ce970b385e8b2a2684469a6ae
+Description: object-relational SQL database (supported version)
+ This metapackage always depends on the currently supported PostgreSQL
+ database server version.
+ .
+ PostgreSQL is a fully featured object-relational database management
+ system.  It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects.  Some of the features are:
+ ACID transactions, foreign keys, views, sequences, subqueries,
+ triggers, user-defined types and functions, outer joins, multiversion
+ concurrency control.  Graphical user interfaces and bindings for many
+ programming languages are available as well.
+
+Package: postgresql-8.2
+Version: 8.2.23-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Martin Pitt <mpitt@debian.org>
+Installed-Size: 11952
+Depends: libc6 (>= 2.15), libcomerr2 (>= 1.01), libkrb5-3 (>= 1.6.dfsg.2), libldap-2.4-2 (>= 2.4.7), libpam0g (>= 0.99.7.1), libpq5, libssl1.0.0 (>= 1.0.0), postgresql-client-8.2, postgresql-common (>= 115~), tzdata, ssl-cert, locales
+Suggests: oidentd | ident-server, locales-all
+Conflicts: postgresql (<< 7.5)
+Replaces: postgresql-contrib-8.2 (<< 9.1~beta1-3~)
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-8.2/postgresql-8.2_8.2.23-1.pgdg12.4+1_i386.deb
+Size: 2579726
+SHA256: 13f10c85b6155d01271b95ebe0de40d0ab7ea2acef6c0a4102bebc23ce03bcc0
+SHA1: afc362b2e7d29bd63798ab56674cff2d2764b4b3
+MD5sum: 89acfe5b482c73f915725d521915fd12
+Description: object-relational SQL database, version 8.2 server
+ PostgreSQL is a fully featured object-relational database management
+ system.  It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects.  Some of the features are:
+ ACID transactions, foreign keys, views, sequences, subqueries,
+ triggers, user-defined types and functions, outer joins, multiversion
+ concurrency control.  Graphical user interfaces and bindings for many
+ programming languages are available as well.
+ .
+ This package provides the database server for PostgreSQL 8.2. Servers
+ for other major release versions can be installed simultaneously and
+ are coordinated by the postgresql-common package. A package providing
+ ident-server is needed if you want to authenticate remote connections
+ with identd.
+
+Package: postgresql-8.2-dbg
+Source: postgresql-8.2
+Version: 8.2.23-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Martin Pitt <mpitt@debian.org>
+Installed-Size: 14143
+Depends: postgresql-8.2 (= 8.2.23-1.pgdg12.4+1)
+Replaces: postgresql-9.0-dbg
+Homepage: http://www.postgresql.org/
+Priority: extra
+Section: debug
+Filename: pool/main/p/postgresql-8.2/postgresql-8.2-dbg_8.2.23-1.pgdg12.4+1_i386.deb
+Size: 3707030
+SHA256: 32ef86181ff5b25a38cb1480907d4ebad969b38901bbfe7d83349566551d4147
+SHA1: df4838378f37d4e2db4758b061a42b02d9980b6b
+MD5sum: e519b8816695a70987d2c1faf38647ed
+Description: debug symbols for postgresql-8.2
+ PostgreSQL is a fully featured object-relational database management
+ system.  It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects.  Some of the features are:
+ ACID transactions, foreign keys, views, sequences, subqueries,
+ triggers, user-defined types and functions, outer joins, multiversion
+ concurrency control.  Graphical user interfaces and bindings for many
+ programming languages are available as well.
+ .
+ This package provides detached debugging symbols for PostgreSQL 8.2.
+
+Package: postgresql-8.3
+Version: 8.3.23-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 14411
+Depends: libc6 (>= 2.15), libcomerr2 (>= 1.01), libgssapi-krb5-2 (>= 1.8+dfsg), libkrb5-3 (>= 1.6.dfsg.2), libldap-2.4-2 (>= 2.4.7), libpam0g (>= 0.99.7.1), libpq5 (>= 8.3~rc1-1~), libssl1.0.0 (>= 1.0.0), libxml2 (>= 2.7.4), postgresql-client-8.3, postgresql-common (>= 130~), tzdata, ssl-cert, locales
+Suggests: oidentd | ident-server, locales-all
+Breaks: postgresql-plpython-8.3 (<< 8.3.23-1.pgdg12.4+1)
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-8.3/postgresql-8.3_8.3.23-1.pgdg12.4+1_i386.deb
+Size: 5660784
+SHA256: 6384d124b9945377ec9b4313016faf289067c7bc458c341944d98938c75c4805
+SHA1: 9983a5bfbb8704332cfef6b876258e66edc97f9e
+MD5sum: 5e7656d084fcf2d68c52db863453531e
+Description: object-relational SQL database, version 8.3 server
+ PostgreSQL is a fully featured object-relational database management
+ system.  It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects.  Some of the features are:
+ ACID transactions, foreign keys, views, sequences, subqueries,
+ triggers, user-defined types and functions, outer joins, multiversion
+ concurrency control.  Graphical user interfaces and bindings for many
+ programming languages are available as well.
+ .
+ This package provides the database server for PostgreSQL 8.3. Servers
+ for other major release versions can be installed simultaneously and
+ are coordinated by the postgresql-common package. A package providing
+ ident-server is needed if you want to authenticate remote connections
+ with identd.
+
+Package: postgresql-8.3-dbg
+Source: postgresql-8.3
+Version: 8.3.23-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 16239
+Depends: postgresql-8.3 (= 8.3.23-1.pgdg12.4+1)
+Conflicts: postgresql-9.1-dbg, postgresql-dbg
+Provides: postgresql-dbg
+Homepage: http://www.postgresql.org/
+Priority: extra
+Section: debug
+Filename: pool/main/p/postgresql-8.3/postgresql-8.3-dbg_8.3.23-1.pgdg12.4+1_i386.deb
+Size: 6857910
+SHA256: 2fe110de0e8f7810639b6352c7a27ec93c0d1ef1433184c19b090ec087f923ef
+SHA1: a735754a4ec3449642bb85adb6d4f017a7cf3e03
+MD5sum: 4e9b0d52432e2585022b196bc20e8a69
+Description: debug symbols for postgresql-8.3
+ PostgreSQL is a fully featured object-relational database management
+ system.  It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects.  Some of the features are:
+ ACID transactions, foreign keys, views, sequences, subqueries,
+ triggers, user-defined types and functions, outer joins, multiversion
+ concurrency control.  Graphical user interfaces and bindings for many
+ programming languages are available as well.
+ .
+ This package provides detached debugging symbols for PostgreSQL 8.3.
+
+Package: postgresql-8.3-orafce
+Source: orafce
+Version: 3.0.4-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Peter Eisentraut <petere@debian.org>
+Installed-Size: 402
+Depends: libc6 (>= 2.4), postgresql-8.3
+Homepage: http://orafce.projects.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/o/orafce/postgresql-8.3-orafce_3.0.4-1.pgdg12.4+1_i386.deb
+Size: 106494
+SHA256: e5976dd184c4c15df1b26dc6af14024c7cc4370520d30e02a1f24b5137155880
+SHA1: 6d586b1e5ba5f898ac7a71db8b459b08971350f4
+MD5sum: 15015498499ac04d04afb339b0d4afe6
+Description: Oracle support functions for PostgreSQL 8.3
+ This project implements some functions for compatibility with Oracle.
+ The functionality was verified on Oracle 10g, and the module is
+ useful for production work.
+
+Package: postgresql-8.3-pgpool2
+Source: pgpool2
+Version: 3.2.2-2.pgdg12.4+1
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 73
+Depends: postgresql-8.3, libc6 (>= 2.4), libpgpool0 (= 3.2.2-2.pgdg12.4+1)
+Homepage: http://www.pgpool.net/mediawiki/index.php/Main_Page
+Priority: optional
+Section: database
+Filename: pool/main/p/pgpool2/postgresql-8.3-pgpool2_3.2.2-2.pgdg12.4+1_i386.deb
+Size: 11004
+SHA256: ced1a0709886e8e01c99858682a74d5c0d6b0b0261d3fcee41ede3ee85fb5832
+SHA1: 3d0dbb08ebfc2a66eec22f4f956da78d387655f1
+MD5sum: 59da9dedb896b475113cabf2966ac307
+Description: connection pool server and replication proxy for PostgreSQL - modules
+ pgpool-II is a middleware that works between PostgreSQL servers and a
+ PostgreSQL database client.  This package contains support modules for
+ the PostgreSQL 8.3 server:
+ .
+  * pgpool_adm
+  * pgpool-recovery
+  * pgpool-regclass
+  * pgpool-walrecrunning (PostgreSQL 9.0 and later)
+
+Package: postgresql-8.3-pgq3
+Source: skytools3
+Version: 3.1.3-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Dimitri Fontaine <dim@tapoueh.org>
+Installed-Size: 691
+Depends: libc6 (>= 2.4), postgresql-8.3
+Conflicts: skytools-modules-8.3
+Replaces: skytools-modules-8.3
+Provides: skytools-modules
+Homepage: http://wiki.postgresql.org/wiki/Skytools
+Priority: extra
+Section: database
+Filename: pool/main/s/skytools3/postgresql-8.3-pgq3_3.1.3-1.pgdg12.4+1_i386.deb
+Size: 121216
+SHA256: 1f7cb81049be544dd426493deacad5d92f5f3ebbfc2e1aea191e5c5aa658e407
+SHA1: 3463cecedd0c916f7abe06c261a466799428d165
+MD5sum: 9059cade326455fcca6c437a9ecf22c4
+Description: Skype tools for PostgreSQL replication, londiste and PGQ
+ This is the PGQ extension used by Skype replication, londiste. It consists
+ of PL/pgsql, and C code in database.
+
+Package: postgresql-8.3-plproxy
+Source: postgresql-plproxy
+Version: 2.5-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 262
+Depends: postgresql-8.3, libc6 (>= 2.4), libpq5
+Homepage: http://pgfoundry.org/projects/plproxy/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-plproxy/postgresql-8.3-plproxy_2.5-1.pgdg12.4+1_i386.deb
+Size: 72186
+SHA256: 5eff8f5e91e7c69ca11197613cab018a0b5e1a4c00f576bd36d42135d128fcc2
+SHA1: 94da53fcbc27b1aeb5ea1410393bf3ae5671b4fc
+MD5sum: 7902db3a63e323c5ff6785e624e4ab05
+Description: database partitioning system for PostgreSQL 8.3
+ PL/Proxy is a database partitioning system implemented as a PL language. Main
+ idea is that proxy functions are created with same signature as the remote
+ functions to be called, so only destination info needs to be specified inside
+ proxy function bodies.
+
+Package: postgresql-8.3-plsh
+Source: postgresql-plsh
+Version: 1.3-6.pgdg12.4+1~1355238615.svn760.7
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 62
+Depends: libc6 (>= 2.4), postgresql-8.3
+Homepage: http://plsh.projects.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-plsh/postgresql-8.3-plsh_1.3-6.pgdg12.4+1~1355238615.svn760.7_i386.deb
+Size: 10464
+SHA256: 631ec50a397086760de0b7d4a43f21379fe42ca0a15a0cdd18a6951a418dd0eb
+SHA1: ee1bce29ddd84ff61ea2cfd67e0a5ecb0bdba68d
+MD5sum: a75d1959f0c0c9ec80c6d1256d6cd62f
+Description: PL/sh procedural language for PostgreSQL 8.3
+ PL/sh enables an SQL developer to write procedural language functions
+ for PostgreSQL 8.3 in a shell of his choice.  You need this package
+ if you have any PostgreSQL 8.3 functions that use the language plsh.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-8.3-preprepare
+Source: preprepare
+Version: 0.5-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Dimitri Fontaine <dim@tapoueh.org>
+Installed-Size: 68
+Depends: libc6 (>= 2.3.4), postgresql-8.3
+Priority: extra
+Section: database
+Filename: pool/main/p/preprepare/postgresql-8.3-preprepare_0.5-1.pgdg12.4+1_i386.deb
+Size: 8414
+SHA256: 87e6786f0dc0c41516f36f7916d98d9eb73d716da6c2ce05303b835f5c534cd5
+SHA1: 9332634b4dafa48bcce77fa55136216261cc10e3
+MD5sum: 3af679106e174bc1f14e289242ece90f
+Description: Pre Prepare your Statement server side
+ The +pre_prepare+ module aims to prepare all your statements as soon as
+ possible and in a way that allows client queries not to bother at all and
+ just call EXECUTE.
+
+Package: postgresql-8.4
+Version: 8.4.17-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 15861
+Depends: libc6 (>= 2.15), libcomerr2 (>= 1.01), libgssapi-krb5-2 (>= 1.8+dfsg), libkrb5-3 (>= 1.6.dfsg.2), libldap-2.4-2 (>= 2.4.7), libpam0g (>= 0.99.7.1), libpq5 (>= 8.3~rc1-1~), libssl1.0.0 (>= 1.0.0), libxml2 (>= 2.7.4), postgresql-client-8.4, postgresql-common (>= 130~), tzdata, ssl-cert, locales
+Suggests: oidentd | ident-server, locales-all
+Breaks: postgresql-plpython-8.4 (<< 8.4.17-1.pgdg12.4+1)
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-8.4/postgresql-8.4_8.4.17-1.pgdg12.4+1_i386.deb
+Size: 6048630
+SHA256: dba19dfad09310ae4ad5f38c675da3f1c8532e966526b813bd5788a70e4daefb
+SHA1: 09b6f17f0e40925c8244c6ca98bffa4ef6507361
+MD5sum: c59a81e1d6451edfd1d99c651dd857b7
+Description: object-relational SQL database, version 8.4 server
+ PostgreSQL is a fully featured object-relational database management
+ system.  It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects.  Some of the features are:
+ ACID transactions, foreign keys, views, sequences, subqueries,
+ triggers, user-defined types and functions, outer joins, multiversion
+ concurrency control.  Graphical user interfaces and bindings for many
+ programming languages are available as well.
+ .
+ This package provides the database server for PostgreSQL 8.4. Servers
+ for other major release versions can be installed simultaneously and
+ are coordinated by the postgresql-common package. A package providing
+ ident-server is needed if you want to authenticate remote connections
+ with identd.
+
+Package: postgresql-8.4-dbg
+Source: postgresql-8.4
+Version: 8.4.17-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 17581
+Depends: postgresql-8.4 (= 8.4.17-1.pgdg12.4+1)
+Conflicts: postgresql-9.1-dbg, postgresql-dbg
+Provides: postgresql-dbg
+Homepage: http://www.postgresql.org/
+Priority: extra
+Section: debug
+Filename: pool/main/p/postgresql-8.4/postgresql-8.4-dbg_8.4.17-1.pgdg12.4+1_i386.deb
+Size: 7501328
+SHA256: 5ae077a8b48597fc9c56164d2e0b3f35cbee29a5fadb7af7b8db2806e09ac435
+SHA1: 70d4f24ad88fff9ed5a1334f1ac3b555cc9256e8
+MD5sum: 9a0fa81272beff8b1590fdb5e24fdc58
+Description: debug symbols for postgresql-8.4
+ PostgreSQL is a fully featured object-relational database management
+ system.  It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects.  Some of the features are:
+ ACID transactions, foreign keys, views, sequences, subqueries,
+ triggers, user-defined types and functions, outer joins, multiversion
+ concurrency control.  Graphical user interfaces and bindings for many
+ programming languages are available as well.
+ .
+ This package provides detached debugging symbols for PostgreSQL 8.4.
+
+Package: postgresql-8.4-orafce
+Source: orafce
+Version: 3.0.4-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Peter Eisentraut <petere@debian.org>
+Installed-Size: 416
+Depends: libc6 (>= 2.4), postgresql-8.4
+Homepage: http://orafce.projects.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/o/orafce/postgresql-8.4-orafce_3.0.4-1.pgdg12.4+1_i386.deb
+Size: 107546
+SHA256: 11b6ea8f7829de5cf50b067aac7edb49c366aaa4ded11480d79596c2efdf8d79
+SHA1: dac790829b056cc6658e732e18fb483e2d537468
+MD5sum: 22463d3558b01774a4f5c41cfeff4447
+Description: Oracle support functions for PostgreSQL 8.4
+ This project implements some functions for compatibility with Oracle.
+ The functionality was verified on Oracle 10g, and the module is
+ useful for production work.
+
+Package: postgresql-8.4-pgmp
+Source: postgresql-pgmp
+Version: 1.0.1-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 190
+Depends: libc6 (>= 2.1.3), libgmp10, postgresql-8.4
+Homepage: https://github.com/dvarrazzo/pgmp
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-pgmp/postgresql-8.4-pgmp_1.0.1-1.pgdg12.4+1_i386.deb
+Size: 50318
+SHA256: be8da463be8d0022be393b501c58274a0fe4d531cd5f97d5b6179441bc598829
+SHA1: 6060f10a5ececa9d26eb280385f220ccf7566c1c
+MD5sum: d550459667b6db239bb9e9f1271eda22
+Description: arbitrary precision integers and rationals for PostgreSQL 8.4
+ pgmp is a PostgreSQL extension to add the GMP data types and functions
+ directly into the database.
+ .
+ The extension adds the types mpz (arbitrary size integers) and mpq (arbitrary
+ precision rationals) to PostgreSQL and exposes to the database all the
+ functions available in the GMP library for these data types, allowing:
+ .
+  * higher performance arithmetic on integers respect to the numeric data type
+  * a rational data type for absolute precision storage and arithmetic
+  * using specialized functions to deal with prime numbers, random numbers,
+    factorization directly into the database.
+
+Package: postgresql-8.4-pgpool2
+Source: pgpool2
+Version: 3.2.3-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 89
+Depends: postgresql-8.4, libc6 (>= 2.4), libpgpool0 (= 3.2.3-1.pgdg12.4+1)
+Homepage: http://www.pgpool.net/mediawiki/index.php/Main_Page
+Priority: optional
+Section: database
+Filename: pool/main/p/pgpool2/postgresql-8.4-pgpool2_3.2.3-1.pgdg12.4+1_i386.deb
+Size: 16434
+SHA256: a3ca421de50d180d259c58bb861fbe358a278e68cc946cc0dfbef717c575bf5d
+SHA1: b0b7a6726ba18bab90395c7e21cddfd2bb0b655a
+MD5sum: bed00780c703fd0348ce860bd39a3916
+Description: connection pool server and replication proxy for PostgreSQL - modules
+ pgpool-II is a middleware that works between PostgreSQL servers and a
+ PostgreSQL database client.  This package contains support modules for
+ the PostgreSQL 8.4 server:
+ .
+  * pgpool_adm
+  * pgpool-recovery
+  * pgpool-regclass
+  * pgpool-walrecrunning (PostgreSQL 9.0 and later)
+
+Package: postgresql-8.4-pgq3
+Source: skytools3
+Version: 3.1.3-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Dimitri Fontaine <dim@tapoueh.org>
+Installed-Size: 691
+Depends: libc6 (>= 2.4), postgresql-8.4
+Conflicts: skytools-modules-8.4
+Replaces: skytools-modules-8.4
+Provides: skytools-modules
+Homepage: http://wiki.postgresql.org/wiki/Skytools
+Priority: extra
+Section: database
+Filename: pool/main/s/skytools3/postgresql-8.4-pgq3_3.1.3-1.pgdg12.4+1_i386.deb
+Size: 121082
+SHA256: d79563373e2f2ca32db638bbeae970b31f416fda8af9d5bfa60790777f92a01a
+SHA1: 110b3464d333436f4681045369acc99b816918d5
+MD5sum: d859ad7afe07812a2f359992e7c87201
+Description: Skype tools for PostgreSQL replication, londiste and PGQ
+ This is the PGQ extension used by Skype replication, londiste. It consists
+ of PL/pgsql, and C code in database.
+
+Package: postgresql-8.4-plproxy
+Source: postgresql-plproxy
+Version: 2.5-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 271
+Depends: postgresql-8.4, libc6 (>= 2.4), libpq5
+Homepage: http://pgfoundry.org/projects/plproxy/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-plproxy/postgresql-8.4-plproxy_2.5-1.pgdg12.4+1_i386.deb
+Size: 75154
+SHA256: 7577dde4d8bc312300c287f724da5f213b47a7db6e36126c841fd97d8b29fa88
+SHA1: 681b021f540b73acb13a71db103d6f14c77d06b7
+MD5sum: 59ca08e20e641d51f327a02b773c49ca
+Description: database partitioning system for PostgreSQL 8.4
+ PL/Proxy is a database partitioning system implemented as a PL language. Main
+ idea is that proxy functions are created with same signature as the remote
+ functions to be called, so only destination info needs to be specified inside
+ proxy function bodies.
+
+Package: postgresql-8.4-plr
+Source: plr
+Version: 1:8.3.0.13.1-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 253
+Depends: r-base-core (>= 2.10), postgresql-8.4, libc6 (>= 2.4)
+Suggests: r-recommended
+Provides: postgresql-plr
+Homepage: http://www.joeconway.com/plr/
+Priority: optional
+Section: database
+Filename: pool/main/p/plr/postgresql-8.4-plr_8.3.0.13.1-1.pgdg12.4+1_i386.deb
+Size: 61468
+SHA256: ad11b38f384a562836711b0947b203d6e8d9efa76339d340cdb6b03e8a946cf0
+SHA1: dbd91e21fe43c8b81adfa8f09573af38763c9ec1
+MD5sum: ff3335248c1a2e0cb32a1c97b4c2966f
+Description: Procedural language interface between PostgreSQL and R
+ R is a language and environment for statistical computing and graphics,
+ providing a wide variety of statistical and graphical techniques (linear and
+ nonlinear modelling, statistical tests, time series analysis, classification,
+ clustering, and so on).
+ .
+ PostgreSQL is an open source SQL database server.
+ .
+ This package provides a procedural language interface to R from
+ PostgreSQL. Procedural languages are used to write functions
+ which can be called in database queries.
+
+Package: postgresql-8.4-plsh
+Source: postgresql-plsh
+Version: 1.3-6.pgdg12.4+1~1355238615.svn760.7
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 62
+Depends: libc6 (>= 2.4), postgresql-8.4
+Homepage: http://plsh.projects.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-plsh/postgresql-8.4-plsh_1.3-6.pgdg12.4+1~1355238615.svn760.7_i386.deb
+Size: 10690
+SHA256: 19b7e2effca4f7793ef9e9ccedb23efeab702002f653291486a7a01a8a473a61
+SHA1: 3c1e4bf716988cad074be577edd456b1588bd74e
+MD5sum: 5a5e253da03c534b39d1fe318015f945
+Description: PL/sh procedural language for PostgreSQL 8.4
+ PL/sh enables an SQL developer to write procedural language functions
+ for PostgreSQL 8.4 in a shell of his choice.  You need this package
+ if you have any PostgreSQL 8.4 functions that use the language plsh.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-8.4-preprepare
+Source: preprepare
+Version: 0.5-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Dimitri Fontaine <dim@tapoueh.org>
+Installed-Size: 68
+Depends: libc6 (>= 2.3.4), postgresql-8.4
+Priority: extra
+Section: database
+Filename: pool/main/p/preprepare/postgresql-8.4-preprepare_0.5-1.pgdg12.4+1_i386.deb
+Size: 9164
+SHA256: 81dad1103f76661807453e24c8296326c1ee2b653bb707cb01705e8d9163a661
+SHA1: eda3dc941ec641bebf96847b18461b1e5d4d7f65
+MD5sum: a6cfc6cec3cd7ac8ff825e576e8a96f4
+Description: Pre Prepare your Statement server side
+ The +pre_prepare+ module aims to prepare all your statements as soon as
+ possible and in a way that allows client queries not to bother at all and
+ just call EXECUTE.
+
+Package: postgresql-9.0
+Version: 9.0.13-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 16823
+Depends: libc6 (>= 2.15), libcomerr2 (>= 1.01), libgssapi-krb5-2 (>= 1.8+dfsg), libkrb5-3 (>= 1.6.dfsg.2), libldap-2.4-2 (>= 2.4.7), libpam0g (>= 0.99.7.1), libpq5 (>= 8.3~rc1-1~), libssl1.0.0 (>= 1.0.0), libxml2 (>= 2.7.4), postgresql-client-9.0, postgresql-common (>= 115~), tzdata, ssl-cert, locales
+Suggests: oidentd | ident-server, locales-all
+Conflicts: postgresql (<< 7.5)
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-9.0/postgresql-9.0_9.0.13-1.pgdg12.4+1_i386.deb
+Size: 6405006
+SHA256: 9c4a384611545aba56f766af46a5cfb8f1a06a339d8c28f02713e31e4adb3a2f
+SHA1: a216c35986657cf52ee71de529d4668079510d25
+MD5sum: bce48797493b6037799e23adceda1ba7
+Description: object-relational SQL database, version 9.0 server
+ PostgreSQL is a fully featured object-relational database management
+ system.  It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects.  Some of the features are:
+ ACID transactions, foreign keys, views, sequences, subqueries,
+ triggers, user-defined types and functions, outer joins, multiversion
+ concurrency control.  Graphical user interfaces and bindings for many
+ programming languages are available as well.
+ .
+ This package provides the database server for PostgreSQL 9.0. Servers
+ for other major release versions can be installed simultaneously and
+ are coordinated by the postgresql-common package. A package providing
+ ident-server is needed if you want to authenticate remote connections
+ with identd.
+
+Package: postgresql-9.0-dbg
+Source: postgresql-9.0
+Version: 9.0.13-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 18794
+Depends: postgresql-9.0 (= 9.0.13-1.pgdg12.4+1)
+Homepage: http://www.postgresql.org/
+Priority: extra
+Section: debug
+Filename: pool/main/p/postgresql-9.0/postgresql-9.0-dbg_9.0.13-1.pgdg12.4+1_i386.deb
+Size: 8047540
+SHA256: de46063fca984c201a82864c3b6e7f3f99f6c9b91b6d085acc24802314973b9c
+SHA1: 3869204a4d912b7e31952c7f378aa8444e96c9a4
+MD5sum: 26e093d649fbf3952e8131f97e305990
+Description: debug symbols for postgresql-9.0
+ PostgreSQL is a fully featured object-relational database management
+ system.  It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects.  Some of the features are:
+ ACID transactions, foreign keys, views, sequences, subqueries,
+ triggers, user-defined types and functions, outer joins, multiversion
+ concurrency control.  Graphical user interfaces and bindings for many
+ programming languages are available as well.
+ .
+ This package provides detached debugging symbols for PostgreSQL 9.0.
+
+Package: postgresql-9.0-orafce
+Source: orafce
+Version: 3.0.4-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Peter Eisentraut <petere@debian.org>
+Installed-Size: 407
+Depends: libc6 (>= 2.4), postgresql-9.0
+Homepage: http://orafce.projects.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/o/orafce/postgresql-9.0-orafce_3.0.4-1.pgdg12.4+1_i386.deb
+Size: 106686
+SHA256: 78512352efe68f99b0ca1038693a9b9ec53d8093466743cc63131f4d279d370a
+SHA1: 035f1e4d70a6ed082ff6e81151c0ece9ad58df9a
+MD5sum: 4c4f68896e286bec28454a5f41c42056
+Description: Oracle support functions for PostgreSQL 9.0
+ This project implements some functions for compatibility with Oracle.
+ The functionality was verified on Oracle 10g, and the module is
+ useful for production work.
+
+Package: postgresql-9.0-pgmp
+Source: postgresql-pgmp
+Version: 1.0.1-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 181
+Depends: libc6 (>= 2.1.3), libgmp10, postgresql-9.0
+Homepage: https://github.com/dvarrazzo/pgmp
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-pgmp/postgresql-9.0-pgmp_1.0.1-1.pgdg12.4+1_i386.deb
+Size: 50054
+SHA256: 00e1df4ee77beebd2f7073685451522819f180449b759565f9914e0bee3c254a
+SHA1: eb64f71bfe6e82fcac7b530df64cfd7377588b74
+MD5sum: ca8bc214bcb19fb345ba83f3c229b6ba
+Description: arbitrary precision integers and rationals for PostgreSQL 9.0
+ pgmp is a PostgreSQL extension to add the GMP data types and functions
+ directly into the database.
+ .
+ The extension adds the types mpz (arbitrary size integers) and mpq (arbitrary
+ precision rationals) to PostgreSQL and exposes to the database all the
+ functions available in the GMP library for these data types, allowing:
+ .
+  * higher performance arithmetic on integers respect to the numeric data type
+  * a rational data type for absolute precision storage and arithmetic
+  * using specialized functions to deal with prime numbers, random numbers,
+    factorization directly into the database.
+
+Package: postgresql-9.0-pgpool2
+Source: pgpool2
+Version: 3.2.3-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 94
+Depends: postgresql-9.0, libc6 (>= 2.4), libpgpool0 (= 3.2.3-1.pgdg12.4+1)
+Homepage: http://www.pgpool.net/mediawiki/index.php/Main_Page
+Priority: optional
+Section: database
+Filename: pool/main/p/pgpool2/postgresql-9.0-pgpool2_3.2.3-1.pgdg12.4+1_i386.deb
+Size: 17218
+SHA256: e62efbba6c907b0eac3018a43288eef640c474395efbd4934f8cff5e67a986d1
+SHA1: 574b6a2e76b6180feb9c1f8fc1dbe2a1afa9ebde
+MD5sum: 3a060e60128ae30c30a308c231ff3635
+Description: connection pool server and replication proxy for PostgreSQL - modules
+ pgpool-II is a middleware that works between PostgreSQL servers and a
+ PostgreSQL database client.  This package contains support modules for
+ the PostgreSQL 9.0 server:
+ .
+  * pgpool_adm
+  * pgpool-recovery
+  * pgpool-regclass
+  * pgpool-walrecrunning (PostgreSQL 9.0 and later)
+
+Package: postgresql-9.0-pgq3
+Source: skytools3
+Version: 3.1.3-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Dimitri Fontaine <dim@tapoueh.org>
+Installed-Size: 690
+Depends: libc6 (>= 2.4), postgresql-9.0
+Conflicts: skytools-modules-9.0
+Replaces: skytools-modules-9.0
+Provides: skytools-modules
+Homepage: http://wiki.postgresql.org/wiki/Skytools
+Priority: extra
+Section: database
+Filename: pool/main/s/skytools3/postgresql-9.0-pgq3_3.1.3-1.pgdg12.4+1_i386.deb
+Size: 120850
+SHA256: a7cc3c636fca84d6c29ca79ee473d22b2cc11d6b65d12ae5cfbaedd43bb5c4ce
+SHA1: cac8c98510bec6b99225b4205e6bbd1c62194176
+MD5sum: 33406584fc3ce0aac2ff4225e6709193
+Description: Skype tools for PostgreSQL replication, londiste and PGQ
+ This is the PGQ extension used by Skype replication, londiste. It consists
+ of PL/pgsql, and C code in database.
+
+Package: postgresql-9.0-plproxy
+Source: postgresql-plproxy
+Version: 2.5-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 266
+Depends: postgresql-9.0, libc6 (>= 2.4), libpq5
+Homepage: http://pgfoundry.org/projects/plproxy/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-plproxy/postgresql-9.0-plproxy_2.5-1.pgdg12.4+1_i386.deb
+Size: 74350
+SHA256: 212e055426f1094d9e66af36f4bf7e414def4e90f923a8b7f3477c99f3fbd07e
+SHA1: 189f66234b78c69021cc9a938f4b818d26041a88
+MD5sum: e3166e1d84bcb375615749ba76a151a5
+Description: database partitioning system for PostgreSQL 9.0
+ PL/Proxy is a database partitioning system implemented as a PL language. Main
+ idea is that proxy functions are created with same signature as the remote
+ functions to be called, so only destination info needs to be specified inside
+ proxy function bodies.
+
+Package: postgresql-9.0-plr
+Source: plr
+Version: 1:8.3.0.13.1-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 243
+Depends: r-base-core (>= 2.10), postgresql-9.0, libc6 (>= 2.4)
+Suggests: r-recommended
+Provides: postgresql-plr
+Homepage: http://www.joeconway.com/plr/
+Priority: optional
+Section: database
+Filename: pool/main/p/plr/postgresql-9.0-plr_8.3.0.13.1-1.pgdg12.4+1_i386.deb
+Size: 60084
+SHA256: 60ecfaa01e89291aaaa9645344a4815f49d1cdfc33c557112c206d6e56af6ccb
+SHA1: 104f984385bb086a1eb5c1e16a5303f95d13d2f6
+MD5sum: 2deab4b0dec74e3ef690c8f382c31de7
+Description: Procedural language interface between PostgreSQL and R
+ R is a language and environment for statistical computing and graphics,
+ providing a wide variety of statistical and graphical techniques (linear and
+ nonlinear modelling, statistical tests, time series analysis, classification,
+ clustering, and so on).
+ .
+ PostgreSQL is an open source SQL database server.
+ .
+ This package provides a procedural language interface to R from
+ PostgreSQL. Procedural languages are used to write functions
+ which can be called in database queries.
+
+Package: postgresql-9.0-plsh
+Source: postgresql-plsh
+Version: 1.3-6.pgdg12.4+1~1355238615.svn760.7
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 62
+Depends: libc6 (>= 2.4), postgresql-9.0
+Homepage: http://plsh.projects.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-plsh/postgresql-9.0-plsh_1.3-6.pgdg12.4+1~1355238615.svn760.7_i386.deb
+Size: 10688
+SHA256: 13ea9057d58c74749a1ab4f166cc07fe3a90fcb2ffed281796bda30ef17a29b2
+SHA1: 28f58b20a5d4da545bbfcb1ec92c4eb3d73ea16c
+MD5sum: c507b5c61406ea35efab497fc14ec1b0
+Description: PL/sh procedural language for PostgreSQL 9.0
+ PL/sh enables an SQL developer to write procedural language functions
+ for PostgreSQL 9.0 in a shell of his choice.  You need this package
+ if you have any PostgreSQL 9.0 functions that use the language plsh.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-9.0-preprepare
+Source: preprepare
+Version: 0.5-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Dimitri Fontaine <dim@tapoueh.org>
+Installed-Size: 68
+Depends: libc6 (>= 2.3.4), postgresql-9.0
+Priority: extra
+Section: database
+Filename: pool/main/p/preprepare/postgresql-9.0-preprepare_0.5-1.pgdg12.4+1_i386.deb
+Size: 9084
+SHA256: e980d7ba7aaaa4ea0bac59a47557ee6dff6edae720a0bd601058685100c2f847
+SHA1: a7825d202e7f7368bb0d58d0fb2e6e4d844d2526
+MD5sum: 994e2b45762bb70c3889a8aad7b2e3d2
+Description: Pre Prepare your Statement server side
+ The +pre_prepare+ module aims to prepare all your statements as soon as
+ possible and in a way that allows client queries not to bother at all and
+ just call EXECUTE.
+
+Package: postgresql-9.0-repmgr
+Source: repmgr
+Version: 2.0~beta1-2.pgdg12.4+1
+Architecture: i386
+Maintainer: Marco Nenciarini <mnencia@debian.org>
+Installed-Size: 62
+Depends: postgresql-9.0, libc6 (>= 2.4)
+Homepage: http://www.repmgr.org/
+Priority: extra
+Section: database
+Filename: pool/main/r/repmgr/postgresql-9.0-repmgr_2.0~beta1-2.pgdg12.4+1_i386.deb
+Size: 6278
+SHA256: 9855bf13c6c32128db94442e8cc2b8a085692a28153039a7b1862fceb4ceae5f
+SHA1: c9c23a613497d2283a3f34e43083280778e130d7
+MD5sum: e149d0c8d6aba612ac85a20ebf9c8f66
+Description: replication manager support modules for PostgreSQL 9.0
+ Since version 9.0, PostgreSQL allow you to have replicated hot
+ standby servers which you can query and/or use for high availability.
+ While the main components of the feature are included with
+ PostgreSQL, the user is expected to manage the high availability
+ parts.
+ .
+ repmgr allows you to monitor and manage your replicated PostgreSQL
+ databases as a single cluster.
+ .
+ This package contains the repmgr support module for PostgreSQL 9.0.
+
+Package: postgresql-9.1
+Version: 9.1.9-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 16906
+Depends: libc6 (>= 2.15), libcomerr2 (>= 1.01), libgssapi-krb5-2 (>= 1.8+dfsg), libkrb5-3 (>= 1.6.dfsg.2), libldap-2.4-2 (>= 2.4.7), libpam0g (>= 0.99.7.1), libpq5 (>= 9.1~), libssl1.0.0 (>= 1.0.0), libxml2 (>= 2.7.4), postgresql-client-9.1, postgresql-common (>= 115~), tzdata, ssl-cert, locales
+Suggests: oidentd | ident-server, locales-all
+Conflicts: postgresql (<< 7.5)
+Breaks: postgresql-plpython-9.1 (<< 9.1.9-1.pgdg12.4+1)
+Replaces: postgresql-contrib-9.1 (<< 9.1~beta1-3~), postgresql-plpython-9.1 (<< 9.1.9-1.pgdg12.4+1)
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-9.1/postgresql-9.1_9.1.9-1.pgdg12.4+1_i386.deb
+Size: 3587654
+SHA256: c97c387a73f6af6d5a194a14f35e1f47dfd17366efb5cd1a709ebadd89e3297e
+SHA1: 20847318b9860ecc030c3594f5278b70c393e5ab
+MD5sum: a6baed79c0ad5e0badb518859b6cacbd
+Description: object-relational SQL database, version 9.1 server
+ PostgreSQL is a fully featured object-relational database management
+ system.  It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects.  Some of the features are:
+ ACID transactions, foreign keys, views, sequences, subqueries,
+ triggers, user-defined types and functions, outer joins, multiversion
+ concurrency control.  Graphical user interfaces and bindings for many
+ programming languages are available as well.
+ .
+ This package provides the database server for PostgreSQL 9.1. Servers
+ for other major release versions can be installed simultaneously and
+ are coordinated by the postgresql-common package. A package providing
+ ident-server is needed if you want to authenticate remote connections
+ with identd.
+
+Package: postgresql-9.1-dbg
+Source: postgresql-9.1
+Version: 9.1.9-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 20255
+Depends: postgresql-9.1 (= 9.1.9-1.pgdg12.4+1)
+Replaces: postgresql-9.0-dbg
+Homepage: http://www.postgresql.org/
+Priority: extra
+Section: debug
+Filename: pool/main/p/postgresql-9.1/postgresql-9.1-dbg_9.1.9-1.pgdg12.4+1_i386.deb
+Size: 5297016
+SHA256: 36a6d63d76152d62a06d9d9159cc240a0b833316ae1625ba88347989fe8be6d8
+SHA1: 0af9a56b4b5b2d01d1cfc6e7fc6498c8e1453ad1
+MD5sum: 86737f7b13ecc756bd054a0837b75f1e
+Description: debug symbols for postgresql-9.1
+ PostgreSQL is a fully featured object-relational database management
+ system.  It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects.  Some of the features are:
+ ACID transactions, foreign keys, views, sequences, subqueries,
+ triggers, user-defined types and functions, outer joins, multiversion
+ concurrency control.  Graphical user interfaces and bindings for many
+ programming languages are available as well.
+ .
+ This package provides detached debugging symbols for PostgreSQL 9.1.
+
+Package: postgresql-9.1-debversion
+Source: postgresql-debversion
+Version: 1.0.7-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian buildd-tools Developers <buildd-tools-devel@lists.alioth.debian.org>
+Installed-Size: 89
+Depends: libapt-pkg4.12 (>= 0.8.0), libc6 (>= 2.1.3), libstdc++6 (>= 4.1.1), postgresql-9.1
+Priority: extra
+Section: database
+Filename: pool/main/p/postgresql-debversion/postgresql-9.1-debversion_1.0.7-1.pgdg12.4+1_i386.deb
+Size: 15222
+SHA256: afad536e9ae96bcd75cf89632cfc584ae85244640f2f4d111b40b87fc9082399
+SHA1: cbf842faf26c91c8c131640921d61eaae7004b57
+MD5sum: 5204728ae35bd1085901daf7ef0ac1b8
+Description: Debian version number type for PostgreSQL
+ Debian version numbers, used to version Debian binary and source
+ packages, have a defined format, including specifications for how
+ versions should be compared in order to sort them.  This package
+ implements a "debversion" type to represent Debian version numbers
+ within the PostgreSQL database.  This also includes operators for
+ version comparison and index operator classes for creating indexes on
+ the debversion type.
+ .
+ Version comparison uses the algorithm used by the Debian package
+ manager, dpkg, using the implementation from libapt-pkg.  This means
+ that columns in tables using the debversion type may be sorted and
+ compared correctly using the same logic as "dpkg --compare-versions".
+ It is also possible to create indexes on these columns.
+ .
+ postgresql-debversion implements the following features:
+ .
+  * The "debversion" type (internally derived from the "text" type)
+  * A full set of operators for version comparison (< <= = <> >= >)
+    including commutator and negator optimisation hints
+  * Operator classes for btree and hash indexes
+  * The aggregate functions min() and max()
+
+Package: postgresql-9.1-ip4r
+Source: ip4r
+Version: 2.0-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 330
+Depends: libc6 (>= 2.4), postgresql-9.1
+Homepage: http://pgfoundry.org/projects/ip4r/
+Priority: extra
+Section: misc
+Filename: pool/main/i/ip4r/postgresql-9.1-ip4r_2.0-1.pgdg12.4+1_i386.deb
+Size: 85590
+SHA256: 87cd30b064e961925f85db6bde75c04c29d1cee6819d35cc5592dbfd312c236d
+SHA1: 8ad091e43349ec3a8d07c9b8813567dac64c8853
+MD5sum: aa1cafe9f0b2a3b521c6f42828fc69be
+Description: IPv4 and IPv6 types for PostgreSQL 9.1
+ This PostgreSQL module provides several data types which can contain
+ single IPv4 or IPv6 addresses or a range of such addresses.
+ .
+ ip4r supports these data types:
+ .
+  ip4:       IPv4 address '#.#.#.#'
+  ip4r:      IPv4 range '#.#.#.#-#.#.#.#' or '#.#.#.#/#' or '#.#.#.#'
+  ip6:       IPv6 address 'xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx'
+  ip6r:      IPv6 range '#-#' or '#/#' or '#'
+  ipaddress: IPv4 or IPv6 address
+  iprange:   IPv4 or IPv6 range
+ .
+ While PostgreSQL already has built-in types 'inet' and 'cidr', the
+ authors of this module found that they had a number of requirements
+ that were not addressed by the built-in types.
+
+Package: postgresql-9.1-orafce
+Source: orafce
+Version: 3.0.4-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Peter Eisentraut <petere@debian.org>
+Installed-Size: 406
+Depends: libc6 (>= 2.4), postgresql-9.1
+Homepage: http://orafce.projects.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/o/orafce/postgresql-9.1-orafce_3.0.4-1.pgdg12.4+1_i386.deb
+Size: 106878
+SHA256: d25ac22a7e295db7ae6e9f7999f988efc24039401d981da5e78370718622acdd
+SHA1: 94461c280f0e0b3d4769066a2f5a851ef22c6298
+MD5sum: 2f82733c8691fa28404d0dd54a3d0bdd
+Description: Oracle support functions for PostgreSQL 9.1
+ This project implements some functions for compatibility with Oracle.
+ The functionality was verified on Oracle 10g, and the module is
+ useful for production work.
+
+Package: postgresql-9.1-pgmp
+Source: postgresql-pgmp
+Version: 1.0.1-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 197
+Depends: libc6 (>= 2.1.3), libgmp10, postgresql-9.1
+Homepage: https://github.com/dvarrazzo/pgmp
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-pgmp/postgresql-9.1-pgmp_1.0.1-1.pgdg12.4+1_i386.deb
+Size: 51636
+SHA256: 02a595904d8247e042a525e39f3d1398d12decf0ba83238918121a8c9caaa20b
+SHA1: eb2da13aee9ac7a53333ac0d466c315c1caccff5
+MD5sum: ec06829ccf9510549e5894c2625504b1
+Description: arbitrary precision integers and rationals for PostgreSQL 9.1
+ pgmp is a PostgreSQL extension to add the GMP data types and functions
+ directly into the database.
+ .
+ The extension adds the types mpz (arbitrary size integers) and mpq (arbitrary
+ precision rationals) to PostgreSQL and exposes to the database all the
+ functions available in the GMP library for these data types, allowing:
+ .
+  * higher performance arithmetic on integers respect to the numeric data type
+  * a rational data type for absolute precision storage and arithmetic
+  * using specialized functions to deal with prime numbers, random numbers,
+    factorization directly into the database.
+
+Package: postgresql-9.1-pgpool2
+Source: pgpool2
+Version: 3.2.3-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 99
+Depends: postgresql-9.1, libc6 (>= 2.4), libpgpool0 (= 3.2.3-1.pgdg12.4+1)
+Homepage: http://www.pgpool.net/mediawiki/index.php/Main_Page
+Priority: optional
+Section: database
+Filename: pool/main/p/pgpool2/postgresql-9.1-pgpool2_3.2.3-1.pgdg12.4+1_i386.deb
+Size: 17424
+SHA256: 5477bb1837ffaf78582149180486bd84a0005e4fe5051365d5f2d6e06f29f618
+SHA1: 430edf2950b497eb1e1b7ef1cefc63007f9e9598
+MD5sum: a37316d31c798060a15455317427538d
+Description: connection pool server and replication proxy for PostgreSQL - modules
+ pgpool-II is a middleware that works between PostgreSQL servers and a
+ PostgreSQL database client.  This package contains support modules for
+ the PostgreSQL 9.1 server:
+ .
+  * pgpool_adm
+  * pgpool-recovery
+  * pgpool-regclass
+  * pgpool-walrecrunning (PostgreSQL 9.0 and later)
+
+Package: postgresql-9.1-pgq3
+Source: skytools3
+Version: 3.1.3-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Dimitri Fontaine <dim@tapoueh.org>
+Installed-Size: 1752
+Depends: libc6 (>= 2.4), postgresql-9.1
+Conflicts: skytools-modules-9.1
+Replaces: skytools-modules-9.1
+Provides: skytools-modules
+Homepage: http://wiki.postgresql.org/wiki/Skytools
+Priority: extra
+Section: database
+Filename: pool/main/s/skytools3/postgresql-9.1-pgq3_3.1.3-1.pgdg12.4+1_i386.deb
+Size: 308900
+SHA256: 307a75073bdff2df974bf9cee5866f839c0f2090fef1919feb0f9d16fbc4a4ee
+SHA1: 0117870505337a96379beddac1a8518f8599f180
+MD5sum: 5cc3d54b605bfe14c5a7836d24e34d12
+Description: Skype tools for PostgreSQL replication, londiste and PGQ
+ This is the PGQ extension used by Skype replication, londiste. It consists
+ of PL/pgsql, and C code in database.
+
+Package: postgresql-9.1-plproxy
+Source: postgresql-plproxy
+Version: 2.5-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 266
+Depends: postgresql-9.1, libc6 (>= 2.4), libpq5
+Homepage: http://pgfoundry.org/projects/plproxy/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-plproxy/postgresql-9.1-plproxy_2.5-1.pgdg12.4+1_i386.deb
+Size: 74730
+SHA256: b8e00167ceddd336245ba6f20c4aea0dec3d2ba229efed93ecd574f894d4386e
+SHA1: e43cc9e14aa6e07c6f69239605aeed6d40dd4d5a
+MD5sum: c9e7d3dccdff4bcd653ca27331857d6b
+Description: database partitioning system for PostgreSQL 9.1
+ PL/Proxy is a database partitioning system implemented as a PL language. Main
+ idea is that proxy functions are created with same signature as the remote
+ functions to be called, so only destination info needs to be specified inside
+ proxy function bodies.
+
+Package: postgresql-9.1-plr
+Source: plr
+Version: 1:8.3.0.13.1-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 243
+Depends: r-base-core (>= 2.10), postgresql-9.1, libc6 (>= 2.4)
+Suggests: r-recommended
+Provides: postgresql-plr
+Homepage: http://www.joeconway.com/plr/
+Priority: optional
+Section: database
+Filename: pool/main/p/plr/postgresql-9.1-plr_8.3.0.13.1-1.pgdg12.4+1_i386.deb
+Size: 60574
+SHA256: 148f9e341b71f1c13b372fa609e58ccc51ceaeb3c6302b574c9cf35fef66b92a
+SHA1: 18ebed8ca2d4a2618be8e08487d81d30be8b79ef
+MD5sum: 6bf463f59b99ac58cc6be7d45de4572e
+Description: Procedural language interface between PostgreSQL and R
+ R is a language and environment for statistical computing and graphics,
+ providing a wide variety of statistical and graphical techniques (linear and
+ nonlinear modelling, statistical tests, time series analysis, classification,
+ clustering, and so on).
+ .
+ PostgreSQL is an open source SQL database server.
+ .
+ This package provides a procedural language interface to R from
+ PostgreSQL. Procedural languages are used to write functions
+ which can be called in database queries.
+
+Package: postgresql-9.1-plsh
+Source: postgresql-plsh
+Version: 1.3-6.pgdg12.4+1~1355238615.svn760.7
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 62
+Depends: libc6 (>= 2.4), postgresql-9.1
+Homepage: http://plsh.projects.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-plsh/postgresql-9.1-plsh_1.3-6.pgdg12.4+1~1355238615.svn760.7_i386.deb
+Size: 10482
+SHA256: a420dd7e51ec2700e3d435dff683b56be816455799ec8c760da49d689f46dff3
+SHA1: 509e80a3f6b707f50ddb79f828fe6e1d6d6785d7
+MD5sum: b0831a305aac5b19a50e727afd93450e
+Description: PL/sh procedural language for PostgreSQL 9.1
+ PL/sh enables an SQL developer to write procedural language functions
+ for PostgreSQL 9.1 in a shell of his choice.  You need this package
+ if you have any PostgreSQL 9.1 functions that use the language plsh.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-9.1-preprepare
+Source: preprepare
+Version: 0.5-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Dimitri Fontaine <dim@tapoueh.org>
+Installed-Size: 68
+Depends: libc6 (>= 2.3.4), postgresql-9.1
+Priority: extra
+Section: database
+Filename: pool/main/p/preprepare/postgresql-9.1-preprepare_0.5-1.pgdg12.4+1_i386.deb
+Size: 9364
+SHA256: 370294af042019d5230e82e7a0f933b6ab8bfb977448305326f3d926a2a63c0f
+SHA1: 6266aabcd60d482786fe499cfcd0e380a1569bbc
+MD5sum: a7905117bcdaceb7f175f45bcea4646b
+Description: Pre Prepare your Statement server side
+ The +pre_prepare+ module aims to prepare all your statements as soon as
+ possible and in a way that allows client queries not to bother at all and
+ just call EXECUTE.
+
+Package: postgresql-9.1-repmgr
+Source: repmgr
+Version: 2.0~beta1-2.pgdg12.4+1
+Architecture: i386
+Maintainer: Marco Nenciarini <mnencia@debian.org>
+Installed-Size: 62
+Depends: postgresql-9.1, libc6 (>= 2.4)
+Homepage: http://www.repmgr.org/
+Priority: extra
+Section: database
+Filename: pool/main/r/repmgr/postgresql-9.1-repmgr_2.0~beta1-2.pgdg12.4+1_i386.deb
+Size: 6272
+SHA256: 0df1356e92cf9611e434c35dacf2da047fb1537dfce3d12647e7accc093dd6f0
+SHA1: bdc75327a191f94c5a4a072cfa21b9d246084c8a
+MD5sum: 6ae5db7be4b2c7c533da5ef97144e942
+Description: replication manager support modules for PostgreSQL 9.1
+ Since version 9.0, PostgreSQL allow you to have replicated hot
+ standby servers which you can query and/or use for high availability.
+ While the main components of the feature are included with
+ PostgreSQL, the user is expected to manage the high availability
+ parts.
+ .
+ repmgr allows you to monitor and manage your replicated PostgreSQL
+ databases as a single cluster.
+ .
+ This package contains the repmgr support module for PostgreSQL 9.1.
+
+Package: postgresql-9.2
+Version: 9.2.4-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 17422
+Depends: libc6 (>= 2.15), libcomerr2 (>= 1.01), libgssapi-krb5-2 (>= 1.8+dfsg), libkrb5-3 (>= 1.6.dfsg.2), libldap-2.4-2 (>= 2.4.7), libpam0g (>= 0.99.7.1), libpq5 (>= 9.1~), libssl1.0.0 (>= 1.0.0), libxml2 (>= 2.7.4), postgresql-client-9.2, postgresql-common (>= 135~), tzdata, ssl-cert, locales
+Suggests: oidentd | ident-server, locales-all
+Breaks: postgresql-plpython-9.2 (<< 9.2.4-1.pgdg12.4+1)
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-9.2/postgresql-9.2_9.2.4-1.pgdg12.4+1_i386.deb
+Size: 3740366
+SHA256: d2bba9f982607466a2498478dd45fd4bdec4cbabb9864ef9594afd2f511af8ad
+SHA1: 0ceae0219dc377d6314588fdda6b59ba6f553e8e
+MD5sum: 6bd8b1d77604f5cf426d3461bd8e3a12
+Description: object-relational SQL database, version 9.2 server
+ PostgreSQL is a fully featured object-relational database management
+ system.  It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects.  Some of the features are:
+ ACID transactions, foreign keys, views, sequences, subqueries,
+ triggers, user-defined types and functions, outer joins, multiversion
+ concurrency control.  Graphical user interfaces and bindings for many
+ programming languages are available as well.
+ .
+ This package provides the database server for PostgreSQL 9.2. Servers
+ for other major release versions can be installed simultaneously and
+ are coordinated by the postgresql-common package. A package providing
+ ident-server is needed if you want to authenticate remote connections
+ with identd.
+
+Package: postgresql-9.2-dbg
+Source: postgresql-9.2
+Version: 9.2.4-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 21194
+Depends: postgresql-9.2 (= 9.2.4-1.pgdg12.4+1)
+Conflicts: postgresql-9.1-dbg, postgresql-dbg
+Provides: postgresql-dbg
+Homepage: http://www.postgresql.org/
+Priority: extra
+Section: debug
+Filename: pool/main/p/postgresql-9.2/postgresql-9.2-dbg_9.2.4-1.pgdg12.4+1_i386.deb
+Size: 5571582
+SHA256: 4da01795af7fa73a8a1d231afec8c9bde3d9cc28c81e3ea62bb36ab3b60ba872
+SHA1: c50abe39910544d0810648624ceb21a199b8f800
+MD5sum: b62325ee0c5b5aa4e344902b4465998e
+Description: debug symbols for postgresql-9.2
+ PostgreSQL is a fully featured object-relational database management
+ system.  It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects.  Some of the features are:
+ ACID transactions, foreign keys, views, sequences, subqueries,
+ triggers, user-defined types and functions, outer joins, multiversion
+ concurrency control.  Graphical user interfaces and bindings for many
+ programming languages are available as well.
+ .
+ This package provides detached debugging symbols for PostgreSQL 9.2.
+
+Package: postgresql-9.2-debversion
+Source: postgresql-debversion
+Version: 1.0.7-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian buildd-tools Developers <buildd-tools-devel@lists.alioth.debian.org>
+Installed-Size: 89
+Depends: libapt-pkg4.12 (>= 0.8.0), libc6 (>= 2.1.3), libstdc++6 (>= 4.1.1), postgresql-9.2
+Priority: extra
+Section: database
+Filename: pool/main/p/postgresql-debversion/postgresql-9.2-debversion_1.0.7-1.pgdg12.4+1_i386.deb
+Size: 15224
+SHA256: 35441448557fe5e83b4dcba34c73a41fa7f1f14ca394cf1c42c2a6b80ba732a6
+SHA1: c504aaed609ec9c0a068c580d8cd3d69c920e62a
+MD5sum: e3a68439ad7bf8e33d07d3b350b2243d
+Description: Debian version number type for PostgreSQL
+ Debian version numbers, used to version Debian binary and source
+ packages, have a defined format, including specifications for how
+ versions should be compared in order to sort them.  This package
+ implements a "debversion" type to represent Debian version numbers
+ within the PostgreSQL database.  This also includes operators for
+ version comparison and index operator classes for creating indexes on
+ the debversion type.
+ .
+ Version comparison uses the algorithm used by the Debian package
+ manager, dpkg, using the implementation from libapt-pkg.  This means
+ that columns in tables using the debversion type may be sorted and
+ compared correctly using the same logic as "dpkg --compare-versions".
+ It is also possible to create indexes on these columns.
+ .
+ postgresql-debversion implements the following features:
+ .
+  * The "debversion" type (internally derived from the "text" type)
+  * A full set of operators for version comparison (< <= = <> >= >)
+    including commutator and negator optimisation hints
+  * Operator classes for btree and hash indexes
+  * The aggregate functions min() and max()
+
+Package: postgresql-9.2-ip4r
+Source: ip4r
+Version: 2.0-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 330
+Depends: libc6 (>= 2.4), postgresql-9.2
+Homepage: http://pgfoundry.org/projects/ip4r/
+Priority: extra
+Section: misc
+Filename: pool/main/i/ip4r/postgresql-9.2-ip4r_2.0-1.pgdg12.4+1_i386.deb
+Size: 85590
+SHA256: 80ed5b60134bac10097c82cf63a24c12a07606c944322fc70078685c52f0dc2b
+SHA1: 84343fd7684848736f0b26477c57ceb21659e91d
+MD5sum: 8d9b34e4ccfae55c636d7e51bdbe0dce
+Description: IPv4 and IPv6 types for PostgreSQL 9.2
+ This PostgreSQL module provides several data types which can contain
+ single IPv4 or IPv6 addresses or a range of such addresses.
+ .
+ ip4r supports these data types:
+ .
+  ip4:       IPv4 address '#.#.#.#'
+  ip4r:      IPv4 range '#.#.#.#-#.#.#.#' or '#.#.#.#/#' or '#.#.#.#'
+  ip6:       IPv6 address 'xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx'
+  ip6r:      IPv6 range '#-#' or '#/#' or '#'
+  ipaddress: IPv4 or IPv6 address
+  iprange:   IPv4 or IPv6 range
+ .
+ While PostgreSQL already has built-in types 'inet' and 'cidr', the
+ authors of this module found that they had a number of requirements
+ that were not addressed by the built-in types.
+
+Package: postgresql-9.2-pgmp
+Source: postgresql-pgmp
+Version: 1.0.1-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 197
+Depends: libc6 (>= 2.1.3), libgmp10, postgresql-9.2
+Homepage: https://github.com/dvarrazzo/pgmp
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-pgmp/postgresql-9.2-pgmp_1.0.1-1.pgdg12.4+1_i386.deb
+Size: 51628
+SHA256: 8c246a7933349c74d76a5413287c17fa5c71d8971aa8fc05d7371de16d36b3a4
+SHA1: a7f7973c489fc9a4de6a537e609f183aaf3b8055
+MD5sum: c9ef31d70bf0e317e5c41b1529a9ad9d
+Description: arbitrary precision integers and rationals for PostgreSQL 9.2
+ pgmp is a PostgreSQL extension to add the GMP data types and functions
+ directly into the database.
+ .
+ The extension adds the types mpz (arbitrary size integers) and mpq (arbitrary
+ precision rationals) to PostgreSQL and exposes to the database all the
+ functions available in the GMP library for these data types, allowing:
+ .
+  * higher performance arithmetic on integers respect to the numeric data type
+  * a rational data type for absolute precision storage and arithmetic
+  * using specialized functions to deal with prime numbers, random numbers,
+    factorization directly into the database.
+
+Package: postgresql-9.2-pgpool2
+Source: pgpool2
+Version: 3.2.3-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 99
+Depends: postgresql-9.2, libc6 (>= 2.4), libpgpool0 (= 3.2.3-1.pgdg12.4+1)
+Homepage: http://www.pgpool.net/mediawiki/index.php/Main_Page
+Priority: optional
+Section: database
+Filename: pool/main/p/pgpool2/postgresql-9.2-pgpool2_3.2.3-1.pgdg12.4+1_i386.deb
+Size: 17424
+SHA256: 4ca5ea215c0ffa232dc5c99f9a1aa8485371d436c8e8cd266ee339017cb69065
+SHA1: 3499aa934eb61a3b46cbc703faffd954709131d5
+MD5sum: cee3b722489b444b68985ea2a9d553d8
+Description: connection pool server and replication proxy for PostgreSQL - modules
+ pgpool-II is a middleware that works between PostgreSQL servers and a
+ PostgreSQL database client.  This package contains support modules for
+ the PostgreSQL 9.2 server:
+ .
+  * pgpool_adm
+  * pgpool-recovery
+  * pgpool-regclass
+  * pgpool-walrecrunning (PostgreSQL 9.0 and later)
+
+Package: postgresql-9.2-pgq3
+Source: skytools3
+Version: 3.1.3-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Dimitri Fontaine <dim@tapoueh.org>
+Installed-Size: 1752
+Depends: libc6 (>= 2.4), postgresql-9.2
+Conflicts: skytools-modules-9.2
+Replaces: skytools-modules-9.2
+Provides: skytools-modules
+Homepage: http://wiki.postgresql.org/wiki/Skytools
+Priority: extra
+Section: database
+Filename: pool/main/s/skytools3/postgresql-9.2-pgq3_3.1.3-1.pgdg12.4+1_i386.deb
+Size: 308916
+SHA256: e93c8fe3ce2c71214579b45a4872a7f5d4ecb7c9e898098c93f66e9513b369e1
+SHA1: 3485ed093badda1537c0d93ce7584d2c79fc9a62
+MD5sum: 2ee78fdbe807067be2912550b4a4c098
+Description: Skype tools for PostgreSQL replication, londiste and PGQ
+ This is the PGQ extension used by Skype replication, londiste. It consists
+ of PL/pgsql, and C code in database.
+
+Package: postgresql-9.2-plproxy
+Source: postgresql-plproxy
+Version: 2.5-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 270
+Depends: postgresql-9.2, libc6 (>= 2.4), libpq5
+Homepage: http://pgfoundry.org/projects/plproxy/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-plproxy/postgresql-9.2-plproxy_2.5-1.pgdg12.4+1_i386.deb
+Size: 74904
+SHA256: 09ffd025530856fe6102b1ce81a3525014f05dfad4f49e2c1f897fa1a15486d2
+SHA1: 6ac73acd08025fbc533301e9cd56ec9f67004ef8
+MD5sum: 19b3f067152bb725567e08bfb3ec4f7c
+Description: database partitioning system for PostgreSQL 9.2
+ PL/Proxy is a database partitioning system implemented as a PL language. Main
+ idea is that proxy functions are created with same signature as the remote
+ functions to be called, so only destination info needs to be specified inside
+ proxy function bodies.
+
+Package: postgresql-9.2-plr
+Source: plr
+Version: 1:8.3.0.13.1-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 243
+Depends: r-base-core (>= 2.10), postgresql-9.2, libc6 (>= 2.4)
+Suggests: r-recommended
+Provides: postgresql-plr
+Homepage: http://www.joeconway.com/plr/
+Priority: optional
+Section: database
+Filename: pool/main/p/plr/postgresql-9.2-plr_8.3.0.13.1-1.pgdg12.4+1_i386.deb
+Size: 60556
+SHA256: eaae58e40ae073f5cfb2a534bb53341fe61555001b8a641e008cb0973687e200
+SHA1: 7825c577ffc2c9c3e637c911bd2d974768a92c8d
+MD5sum: 9bbb4c716e8e9ffdfa6b81413d0532bf
+Description: Procedural language interface between PostgreSQL and R
+ R is a language and environment for statistical computing and graphics,
+ providing a wide variety of statistical and graphical techniques (linear and
+ nonlinear modelling, statistical tests, time series analysis, classification,
+ clustering, and so on).
+ .
+ PostgreSQL is an open source SQL database server.
+ .
+ This package provides a procedural language interface to R from
+ PostgreSQL. Procedural languages are used to write functions
+ which can be called in database queries.
+
+Package: postgresql-9.2-plsh
+Source: postgresql-plsh
+Version: 1.3-6.pgdg12.4+1~1355238615.svn760.7
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 62
+Depends: libc6 (>= 2.4), postgresql-9.2
+Homepage: http://plsh.projects.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-plsh/postgresql-9.2-plsh_1.3-6.pgdg12.4+1~1355238615.svn760.7_i386.deb
+Size: 10426
+SHA256: 501cb57a0ffae8cc67bfcb89bee46d01fb617c2c30e4ca8da0bf56587f05c0fe
+SHA1: fd265f2c854957e236eb99a89cccf3276fe60e29
+MD5sum: c837ed03fabbb716af69e51e3641a227
+Description: PL/sh procedural language for PostgreSQL 9.2
+ PL/sh enables an SQL developer to write procedural language functions
+ for PostgreSQL 9.2 in a shell of his choice.  You need this package
+ if you have any PostgreSQL 9.2 functions that use the language plsh.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-9.2-repmgr
+Source: repmgr
+Version: 2.0~beta1-2.pgdg12.4+1
+Architecture: i386
+Maintainer: Marco Nenciarini <mnencia@debian.org>
+Installed-Size: 62
+Depends: postgresql-9.2, libc6 (>= 2.4)
+Homepage: http://www.repmgr.org/
+Priority: extra
+Section: database
+Filename: pool/main/r/repmgr/postgresql-9.2-repmgr_2.0~beta1-2.pgdg12.4+1_i386.deb
+Size: 6268
+SHA256: ce831b5a9504af4d9fcd60945dc05b8d8bb225573769c008d768c322df4ad893
+SHA1: bfca9ca48b79db8a09cee48ff45933fe154c3432
+MD5sum: 28b913adc211ca629a263c569ce2d4d2
+Description: replication manager support modules for PostgreSQL 9.2
+ Since version 9.0, PostgreSQL allow you to have replicated hot
+ standby servers which you can query and/or use for high availability.
+ While the main components of the feature are included with
+ PostgreSQL, the user is expected to manage the high availability
+ parts.
+ .
+ repmgr allows you to monitor and manage your replicated PostgreSQL
+ databases as a single cluster.
+ .
+ This package contains the repmgr support module for PostgreSQL 9.2.
+
+Package: postgresql-9.3
+Version: 9.3~beta1-1.pgdg12.4+2
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 17888
+Depends: libc6 (>= 2.15), libcomerr2 (>= 1.01), libgssapi-krb5-2 (>= 1.8+dfsg), libkrb5-3 (>= 1.6.dfsg.2), libldap-2.4-2 (>= 2.4.7), libpam0g (>= 0.99.7.1), libpq5 (>= 9.1~), libssl1.0.0 (>= 1.0.0), libxml2 (>= 2.7.4), postgresql-client-9.3, postgresql-common (>= 142~), tzdata, ssl-cert, locales
+Suggests: oidentd | ident-server, locales-all
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-9.3/postgresql-9.3_9.3~beta1-1.pgdg12.4+2_i386.deb
+Size: 3910344
+SHA256: e196439936ef8222aee65f7effa619ae37dd28be6c3b98eb1353c632fb3ec550
+SHA1: 21f881bc41e7c27be4ab01fbf7cfbb21ff3cb7f6
+MD5sum: 4b00f6cbeadf874747ac2c6b21007990
+Description: object-relational SQL database, version 9.3 server
+ PostgreSQL is a fully featured object-relational database management
+ system.  It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects.  Some of the features are:
+ ACID transactions, foreign keys, views, sequences, subqueries,
+ triggers, user-defined types and functions, outer joins, multiversion
+ concurrency control.  Graphical user interfaces and bindings for many
+ programming languages are available as well.
+ .
+ This package provides the database server for PostgreSQL 9.3. Servers
+ for other major release versions can be installed simultaneously and
+ are coordinated by the postgresql-common package. A package providing
+ ident-server is needed if you want to authenticate remote connections
+ with identd.
+
+Package: postgresql-9.3-dbg
+Source: postgresql-9.3
+Version: 9.3~beta1-1.pgdg12.4+2
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 22535
+Depends: postgresql-9.3 (= 9.3~beta1-1.pgdg12.4+2)
+Conflicts: postgresql-dbg
+Provides: postgresql-dbg
+Homepage: http://www.postgresql.org/
+Priority: extra
+Section: debug
+Filename: pool/main/p/postgresql-9.3/postgresql-9.3-dbg_9.3~beta1-1.pgdg12.4+2_i386.deb
+Size: 5888760
+SHA256: e3b70ce56a1adfd0be9057522f90483988c687677de03786a9b3e7ebfaf45017
+SHA1: 2b40207ddd78afee33482323b79e79d1f6343af2
+MD5sum: 56568033205a03fbf6cadf4aeebe9eea
+Description: debug symbols for postgresql-9.3
+ PostgreSQL is a fully featured object-relational database management
+ system.  It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects.  Some of the features are:
+ ACID transactions, foreign keys, views, sequences, subqueries,
+ triggers, user-defined types and functions, outer joins, multiversion
+ concurrency control.  Graphical user interfaces and bindings for many
+ programming languages are available as well.
+ .
+ This package provides detached debugging symbols for PostgreSQL 9.3.
+
+Package: postgresql-client
+Source: postgresql-common (144.pgdg12.4+1)
+Version: 9.3+142really9.2+144.pgdg12.4+1
+Architecture: all
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 69
+Depends: postgresql-client-9.2
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-common/postgresql-client_9.3+142really9.2+144.pgdg12.4+1_all.deb
+Size: 46308
+SHA256: 20dd6e508290279ac30aac9843c8a6a478f3aab503b1d47faa5cb5a687b6588c
+SHA1: 4d0280d61265e1a20e0f77d929d2f38beb427b9f
+MD5sum: cc44b7027542f22a0d77fd866e3297c5
+Description: front-end programs for PostgreSQL (supported version)
+ This metapackage always depends on the currently supported database
+ client package for PostgreSQL.
+ .
+ PostgreSQL is a fully featured object-relational database management
+ system.  It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects.  Some of the features are:
+ ACID transactions, foreign keys, views, sequences, subqueries,
+ triggers, user-defined types and functions, outer joins, multiversion
+ concurrency control.  Graphical user interfaces and bindings for many
+ programming languages are available as well.
+
+Package: postgresql-client-8.2
+Source: postgresql-8.2
+Version: 8.2.23-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Martin Pitt <mpitt@debian.org>
+Installed-Size: 3849
+Depends: libc6 (>= 2.11), libedit2 (>= 2.11-20080614-1), libpq5, libssl1.0.0 (>= 1.0.0), zlib1g (>= 1:1.2.3.3.dfsg), postgresql-client-common (>= 115~)
+Suggests: postgresql-8.2, postgresql-doc-8.2
+Conflicts: postgresql (<< 7.5)
+Provides: postgresql-client
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-8.2/postgresql-client-8.2_8.2.23-1.pgdg12.4+1_i386.deb
+Size: 950008
+SHA256: 7492175849fa6af511daa2cd290fe5c3d8320f39db8ddd312052f1e8ec9e6d40
+SHA1: a580ac6764fbc9ef6e9aadfe5cf17696b0ca03a4
+MD5sum: 04fc61c5696cde11c6739ffca249caba
+Description: front-end programs for PostgreSQL 8.2
+ This package contains client and administrative programs for
+ PostgreSQL: these are the interactive terminal client psql and
+ programs for creating and removing users and databases.
+ .
+ This is the client package for PostgreSQL 8.2. If you install
+ PostgreSQL 8.2 on a standalone machine, you need the server package
+ postgresql-8.2, too. On a network, you can install this package on
+ many client machines, while the server package may be installed on
+ only one machine.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-client-8.3
+Source: postgresql-8.3
+Version: 8.3.23-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 4259
+Depends: libc6 (>= 2.11), libedit2 (>= 2.11-20080614-1), libpq5 (>= 8.3~rc1-1~), libssl1.0.0 (>= 1.0.0), zlib1g (>= 1:1.2.3.3.dfsg), postgresql-client-common (>= 115~)
+Suggests: postgresql-8.3, postgresql-doc-8.3
+Provides: postgresql-client
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-8.3/postgresql-client-8.3_8.3.23-1.pgdg12.4+1_i386.deb
+Size: 1788560
+SHA256: aff5e1a93c41554a3da3ea0695c8e79708e82fd5d8497db944304081879366a0
+SHA1: 3500bcf3f31276c04736d6c054fab2ae9e108e3e
+MD5sum: 62d4456b7922efe906293d833676f88b
+Description: front-end programs for PostgreSQL 8.3
+ This package contains client and administrative programs for
+ PostgreSQL: these are the interactive terminal client psql and
+ programs for creating and removing users and databases.
+ .
+ This is the client package for PostgreSQL 8.3. If you install
+ PostgreSQL 8.3 on a standalone machine, you need the server package
+ postgresql-8.3, too. On a network, you can install this package on
+ many client machines, while the server package may be installed on
+ only one machine.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-client-8.4
+Source: postgresql-8.4
+Version: 8.4.17-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 4519
+Depends: libc6 (>= 2.11), libedit2 (>= 2.11-20080614-1), libpq5 (>= 8.3~rc1-1~), libssl1.0.0 (>= 1.0.0), zlib1g (>= 1:1.2.3.3.dfsg), postgresql-client-common (>= 115~)
+Suggests: postgresql-8.4, postgresql-doc-8.4
+Breaks: postgresql-8.4 (<< 8.4.17-1.pgdg12.4+1)
+Provides: postgresql-client
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-8.4/postgresql-client-8.4_8.4.17-1.pgdg12.4+1_i386.deb
+Size: 1884784
+SHA256: 0bd0e09c4dc91ec6f2804c8735c61064711e046ea9684eee82e836fbfe7c823d
+SHA1: d0429cd6a6b1bb74e016e3dd04f2376801754240
+MD5sum: de2015820c9da74cf18b5560038179fb
+Description: front-end programs for PostgreSQL 8.4
+ This package contains client and administrative programs for
+ PostgreSQL: these are the interactive terminal client psql and
+ programs for creating and removing users and databases.
+ .
+ This is the client package for PostgreSQL 8.4. If you install
+ PostgreSQL 8.4 on a standalone machine, you need the server package
+ postgresql-8.4, too. On a network, you can install this package on
+ many client machines, while the server package may be installed on
+ only one machine.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-client-9.0
+Source: postgresql-9.0
+Version: 9.0.13-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 4130
+Depends: libc6 (>= 2.11), libedit2 (>= 2.11-20080614-1), libpq5 (>= 9.0~), libssl1.0.0 (>= 1.0.0), zlib1g (>= 1:1.2.3.3.dfsg), postgresql-client-common (>= 115~)
+Suggests: postgresql-9.0, postgresql-doc-9.0
+Conflicts: postgresql (<< 7.5)
+Breaks: postgresql-9.0 (<< 9.0.13-1.pgdg12.4+1)
+Replaces: postgresql-9.0 (<< 9.0.13-1.pgdg12.4+1)
+Provides: postgresql-client
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-9.0/postgresql-client-9.0_9.0.13-1.pgdg12.4+1_i386.deb
+Size: 1909704
+SHA256: 3eef3ed9bdb7a5aa892413bebc542c14fb9f55d98623a8812023628888e66438
+SHA1: f39560c9a0c63166e3da198aa6df86082b2330ce
+MD5sum: 9284788d399ed68c0704275472ed0f03
+Description: front-end programs for PostgreSQL 9.0
+ This package contains client and administrative programs for
+ PostgreSQL: these are the interactive terminal client psql and
+ programs for creating and removing users and databases.
+ .
+ This is the client package for PostgreSQL 9.0. If you install
+ PostgreSQL 9.0 on a standalone machine, you need the server package
+ postgresql-9.0, too. On a network, you can install this package on
+ many client machines, while the server package may be installed on
+ only one machine.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-client-9.1
+Source: postgresql-9.1
+Version: 9.1.9-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 4402
+Depends: libc6 (>= 2.11), libedit2 (>= 2.11-20080614-1), libpq5 (>= 9.0~), libssl1.0.0 (>= 1.0.0), zlib1g (>= 1:1.2.3.3.dfsg), postgresql-client-common (>= 115~)
+Suggests: postgresql-9.1, postgresql-doc-9.1
+Conflicts: postgresql (<< 7.5)
+Breaks: postgresql-9.1 (<< 9.1.9-1.pgdg12.4+1)
+Replaces: postgresql-9.1 (<< 9.1.9-1.pgdg12.4+1)
+Provides: postgresql-client
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-9.1/postgresql-client-9.1_9.1.9-1.pgdg12.4+1_i386.deb
+Size: 1366712
+SHA256: b68b24415bde7f24e5b08fb3d6035b7b6020fc0cf1e87c3144b61ae4d1c1d3a5
+SHA1: bbf3bdfa4675ef6a031c19cd10773ee6e0bce710
+MD5sum: a5b161e42055e79a117740f0379716d8
+Description: front-end programs for PostgreSQL 9.1
+ This package contains client and administrative programs for
+ PostgreSQL: these are the interactive terminal client psql and
+ programs for creating and removing users and databases.
+ .
+ This is the client package for PostgreSQL 9.1. If you install
+ PostgreSQL 9.1 on a standalone machine, you need the server package
+ postgresql-9.1, too. On a network, you can install this package on
+ many client machines, while the server package may be installed on
+ only one machine.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-client-9.2
+Source: postgresql-9.2
+Version: 9.2.4-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 4371
+Depends: libc6 (>= 2.15), libedit2 (>= 2.11-20080614-1), libpq5 (>= 9.2.4), libssl1.0.0 (>= 1.0.0), zlib1g (>= 1:1.2.3.3.dfsg), postgresql-client-common (>= 115~)
+Suggests: postgresql-9.2, postgresql-doc-9.2
+Breaks: postgresql-9.2 (<< 9.2.4-1.pgdg12.4+1)
+Replaces: postgresql-9.2 (<< 9.2~beta1-2)
+Provides: postgresql-client
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-9.2/postgresql-client-9.2_9.2.4-1.pgdg12.4+1_i386.deb
+Size: 1380890
+SHA256: 2d9e75d0a03602c30226d679b91f8d71b08ced5c66e62d17e0e6473266857126
+SHA1: 2b1e7fac6a898fe4dfcfa859b562692420ac1615
+MD5sum: 8e6d7e0fc1551375e15f9dc6fa219fa5
+Description: front-end programs for PostgreSQL 9.2
+ This package contains client and administrative programs for
+ PostgreSQL: these are the interactive terminal client psql and
+ programs for creating and removing users and databases.
+ .
+ This is the client package for PostgreSQL 9.2. If you install
+ PostgreSQL 9.2 on a standalone machine, you need the server package
+ postgresql-9.2, too. On a network, you can install this package on
+ many client machines, while the server package may be installed on
+ only one machine.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-client-9.3
+Source: postgresql-9.3
+Version: 9.3~beta1-1.pgdg12.4+2
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 4941
+Depends: libc6 (>= 2.15), libedit2 (>= 2.11-20080614-1), libpq5 (>= 9.3~beta1), libssl1.0.0 (>= 1.0.0), zlib1g (>= 1:1.2.3.3.dfsg), postgresql-client-common (>= 142~)
+Suggests: postgresql-9.3, postgresql-doc-9.3
+Provides: postgresql-client
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-9.3/postgresql-client-9.3_9.3~beta1-1.pgdg12.4+2_i386.deb
+Size: 1507660
+SHA256: cc6bb66d5a5d2f0a16f24a4c37066ab8be5a00481e115c84a1f744c0a4c63043
+SHA1: bb3bc4f7fbe682df21fdb2650c5f3467ed61ec9b
+MD5sum: 4c007b758000a9f51a01a3c7859f906c
+Description: front-end programs for PostgreSQL 9.3
+ This package contains client and administrative programs for
+ PostgreSQL: these are the interactive terminal client psql and
+ programs for creating and removing users and databases.
+ .
+ This is the client package for PostgreSQL 9.3. If you install
+ PostgreSQL 9.3 on a standalone machine, you need the server package
+ postgresql-9.3, too. On a network, you can install this package on
+ many client machines, while the server package may be installed on
+ only one machine.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-client-common
+Source: postgresql-common
+Version: 144.pgdg12.4+1
+Architecture: all
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 164
+Depends: pgdg-keyring, netbase
+Recommends: lsb-release, libreadline6
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-common/postgresql-client-common_144.pgdg12.4+1_all.deb
+Size: 68760
+SHA256: 52ea081b53d099831656c1f97af1e4b247ee90b3abb96c906b577c275f48b648
+SHA1: 41854ccfa9a3f7c579d3353148933d8fb67c1f80
+MD5sum: 056561a19f6fec65f6a5d2463492825d
+Description: manager for multiple PostgreSQL client versions
+ The postgresql-client-common package provides a structure under which
+ multiple versions of PostgreSQL client programs may be installed at
+ the same time. It provides a wrapper which selects the right version
+ for the particular cluster you want to access (with a command line
+ option, an environment variable, /etc/postgresql-common/user_clusters,
+ or ~/.postgresqlrc).
+ .
+ PostgreSQL is a fully featured object-relational database management
+ system. It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects. Its features include ACID
+ transactions, foreign keys, views, sequences, subqueries, triggers,
+ outer joins, multiversion concurrency control, and user-defined types
+ and functions.
+
+Package: postgresql-common
+Version: 144.pgdg12.4+1
+Architecture: all
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 478
+Depends: postgresql-client-common (>= 144.pgdg12.4+1), procps, adduser, debconf (>= 0.5.00) | debconf-2.0, lsb-base (>= 3.0-3), ssl-cert (>= 1.0.11), logrotate
+Conflicts: postgresql-7.4, postgresql-8.0
+Breaks: logrotate (>= 3.8), postgresql-9.1 (<< 9.1.1-3~)
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-common/postgresql-common_144.pgdg12.4+1_all.deb
+Size: 154896
+SHA256: 4851384ca9623b8ec4403783f21e82a0a628bf95f45eea6827f581939c4f7f11
+SHA1: 02fb38b8a2cf86b8c4f0edc7af019dfaaaadaaff
+MD5sum: 0dbe15a8b0a156af06299d070ffd9a90
+Description: PostgreSQL database-cluster manager
+ The postgresql-common package provides a structure under which
+ multiple versions of PostgreSQL may be installed and/or multiple
+ clusters maintained at one time.
+ .
+ This package will automatically create a (self-signed) certificate so
+ that SSL connections are supported.
+ .
+ PostgreSQL is a fully featured object-relational database management
+ system. It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects. Its features include ACID
+ transactions, foreign keys, views, sequences, subqueries, triggers,
+ outer joins, multiversion concurrency control, and user-defined types
+ and functions.
+
+Package: postgresql-contrib
+Source: postgresql-common (144.pgdg12.4+1)
+Version: 9.3+142really9.2+144.pgdg12.4+1
+Architecture: all
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 69
+Depends: postgresql-contrib-9.2
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-common/postgresql-contrib_9.3+142really9.2+144.pgdg12.4+1_all.deb
+Size: 46310
+SHA256: 0bcc5bfd77e7fa83df799d85ff1abb548d864c565a17161f74bea192b90a5487
+SHA1: 85c39a4bf8cf8df42b4fbda0993ab5dd86dea311
+MD5sum: a20d3f894cb1cf8e98ac17f448db1dc3
+Description: additional facilities for PostgreSQL (supported version)
+ This metapackage always depends on the currently supported PostgreSQL
+ database contrib package.
+ .
+ PostgreSQL is a fully featured object-relational database management
+ system.  It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects.  Some of the features are:
+ ACID transactions, foreign keys, views, sequences, subqueries,
+ triggers, user-defined types and functions, outer joins, multiversion
+ concurrency control.  Graphical user interfaces and bindings for many
+ programming languages are available as well.
+
+Package: postgresql-contrib-8.2
+Source: postgresql-8.2
+Version: 8.2.23-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Martin Pitt <mpitt@debian.org>
+Installed-Size: 1601
+Depends: postgresql-8.2 (= 8.2.23-1.pgdg12.4+1), libc6 (>= 2.15), libpq5, libssl1.0.0 (>= 1.0.0), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), zlib1g (>= 1:1.1.4), postgresql-common (>= 115~)
+Suggests: libdbd-pg-perl
+Conflicts: postgresql-contrib (<< 7.5)
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-8.2/postgresql-contrib-8.2_8.2.23-1.pgdg12.4+1_i386.deb
+Size: 628210
+SHA256: 38faa1767bab08c4710c96a6fe0cfcccfc64d08e61ec0c46adcb108f43c23eea
+SHA1: 13ff9ab7a570338b51a76c69734a4546c4792310
+MD5sum: a4c8a0867f022ef5ddd9dbaeb4592b90
+Description: additional facilities for PostgreSQL
+ The PostgreSQL contrib package provides several additional features
+ for the PostgreSQL database. This version is built to work with the
+ server package postgresql-8.2.  contrib often serves as a testbed for
+ features before they are adopted into PostgreSQL proper:
+ .
+  adminpack      - File and log manipulation routines, used by pgAdmin
+  btree_gist     - B-Tree indexing using GiST (Generalised Search Tree)
+  chkpass        - An auto-encrypted password datatype
+  cube           - Multidimensional-cube datatype (GiST indexing example)
+  dblink         - Functions to return results from a remote database
+  earthdistance  - Operator for computing the distance (in miles) between
+                   two points on the earth's surface
+  fuzzystrmatch  - Levenshtein, metaphone, and soundex fuzzy string matching
+  intagg         - Integer aggregator/enumerator
+  intarray       - Index support for arrays of int4, using GiST
+  isn            - type extensions for ISBN, ISSN, ISMN, EAN13 product numbers
+  lo             - Large Object maintenance
+  ltree          - Tree-like data structures
+  oid2name       - Maps OIDs to table names
+  pg_buffercache - Real time queries on the shared buffer cache
+  pg_freespacemap- Displays the contents of the free space map (FSM)
+  pg_trgm        - Determine the similarity of text based on trigram matching
+  pgbench        - TPC-B like benchmark
+  pgcrypto       - Cryptographic functions
+  pgrowlocks     - A function to return row locking information
+  pgstattuple    - Returns the percentage of dead tuples in a table; this
+                   indicates whether a vacuum is required.
+  seg            - Confidence-interval datatype (GiST indexing example)
+  spi            - PostgreSQL Server Programming Interface; 4 examples of
+                   its use:
+                   autoinc    - A function for implementing AUTOINCREMENT/
+                                IDENTITY
+                   insert_username - function for inserting user names
+                   moddatetime - Update modification timestamps
+                   refint     - Functions for implementing referential
+                                integrity (foreign keys).  Note that this is
+                                now superseded by built-in referential
+                                integrity.
+                   timetravel - Re-implements in user code the time travel
+                                feature that was removed in 6.3.
+  tsearch2       - Full-text-index support using GiST
+  vacuumlo       - Remove orphaned large objects
+  xml2           - Manipulate XML documents in the database
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-contrib-8.3
+Source: postgresql-8.3
+Version: 8.3.23-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 1426
+Depends: postgresql-8.3 (= 8.3.23-1.pgdg12.4+1), libc6 (>= 2.15), libossp-uuid16, libpq5 (>= 8.3~rc1-1~), libssl1.0.0 (>= 1.0.0), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), zlib1g (>= 1:1.1.4), postgresql-common (>= 130~)
+Suggests: libdbd-pg-perl
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-8.3/postgresql-contrib-8.3_8.3.23-1.pgdg12.4+1_i386.deb
+Size: 666906
+SHA256: 518b64b3fc02fde1f98723a5d9f01ed0f69e20be81530920f4d3b2a973c18ee2
+SHA1: 722cc9a76a79a727fdfa0e4625365fb19b1a46e1
+MD5sum: 5b0661cf72777f00a1e64541d9c0b1fd
+Description: additional facilities for PostgreSQL
+ The PostgreSQL contrib package provides several additional features
+ for the PostgreSQL database. This version is built to work with the
+ server package postgresql-8.3.  contrib often serves as a testbed for
+ features before they are adopted into PostgreSQL proper:
+ .
+  adminpack      - File and log manipulation routines, used by pgAdmin
+  btree_gist     - B-Tree indexing using GiST (Generalised Search Tree)
+  chkpass        - An auto-encrypted password datatype
+  cube           - Multidimensional-cube datatype (GiST indexing example)
+  dblink         - Functions to return results from a remote database
+  earthdistance  - Operator for computing the distance (in miles) between
+                   two points on the earth's surface
+  fuzzystrmatch  - Levenshtein, metaphone, and soundex fuzzy string matching
+  hstore         - Store (key, value) pairs
+  intagg         - Integer aggregator/enumerator
+  _int           - Index support for arrays of int4, using GiST (benchmark
+                   needs the libdbd-pg-perl package)
+  isn            - type extensions for ISBN, ISSN, ISMN, EAN13 product numbers
+  lo             - Large Object maintenance
+  ltree          - Tree-like data structures
+  oid2name       - Maps OIDs to table names
+  pageinspect    - Inspection of database pages
+  passwordcheck  - Simple password strength checker
+  pg_buffercache - Real time queries on the shared buffer cache
+  pg_freespacemap- Displays the contents of the free space map (FSM)
+  pg_trgm        - Determine the similarity of text based on trigram matching
+  pg_standby     - Create a warm stand-by server
+  pgbench        - TPC-B like benchmark
+  pgcrypto       - Cryptographic functions
+  pgrowlocks     - A function to return row locking information
+  pgstattuple    - Returns the percentage of dead tuples in a table; this
+                   indicates whether a vacuum is required.
+  seg            - Confidence-interval datatype (GiST indexing example)
+  spi            - PostgreSQL Server Programming Interface; 4 examples of
+                   its use:
+                   autoinc    - A function for implementing AUTOINCREMENT/
+                                IDENTITY
+                   insert_username - function for inserting user names
+                   moddatetime - Update modification timestamps
+                   refint     - Functions for implementing referential
+                                integrity (foreign keys).  Note that this is
+                                now superseded by built-in referential
+                                integrity.
+                   timetravel - Re-implements in user code the time travel
+                                feature that was removed in 6.3.
+  tablefunc      - examples of functions returning tables
+  uuid-ossp      - UUID generation functions
+  vacuumlo       - Remove orphaned large objects
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-contrib-8.4
+Source: postgresql-8.4
+Version: 8.4.17-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 1604
+Depends: postgresql-8.4 (= 8.4.17-1.pgdg12.4+1), libc6 (>= 2.15), libossp-uuid16, libpq5 (>= 8.4~), libssl1.0.0 (>= 1.0.0), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), zlib1g (>= 1:1.1.4), postgresql-common (>= 130~)
+Suggests: libdbd-pg-perl
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-8.4/postgresql-contrib-8.4_8.4.17-1.pgdg12.4+1_i386.deb
+Size: 740164
+SHA256: b6cd9f4a74bc0bb78dfb2ff25e3e3db451d0538b666844e479fdbef3f5856aac
+SHA1: f28c2b9cd2669c7e81a10dd82a506bad96d0756c
+MD5sum: b29f042bdd299c78db8a2976bae0e5ce
+Description: additional facilities for PostgreSQL
+ The PostgreSQL contrib package provides several additional features
+ for the PostgreSQL database. This version is built to work with the
+ server package postgresql-8.4.  contrib often serves as a testbed for
+ features before they are adopted into PostgreSQL proper:
+ .
+  adminpack      - File and log manipulation routines, used by pgAdmin
+  btree_gist     - B-Tree indexing using GiST (Generalised Search Tree)
+  chkpass        - An auto-encrypted password datatype
+  cube           - Multidimensional-cube datatype (GiST indexing example)
+  dblink         - Functions to return results from a remote database
+  earthdistance  - Operator for computing the distance (in miles) between
+                   two points on the earth's surface
+  fuzzystrmatch  - Levenshtein, metaphone, and soundex fuzzy string matching
+  hstore         - Store (key, value) pairs
+  intagg         - Integer aggregator/enumerator
+  _int           - Index support for arrays of int4, using GiST (benchmark
+                   needs the libdbd-pg-perl package)
+  isn            - type extensions for ISBN, ISSN, ISMN, EAN13 product numbers
+  lo             - Large Object maintenance
+  ltree          - Tree-like data structures
+  oid2name       - Maps OIDs to table names
+  pageinspect    - Inspection of database pages
+  pg_buffercache - Real time queries on the shared buffer cache
+  pg_freespacemap- Displays the contents of the free space map (FSM)
+  pg_trgm        - Determine the similarity of text based on trigram matching
+  pg_standby     - Create a warm stand-by server
+  pgbench        - TPC-B like benchmark
+  pgcrypto       - Cryptographic functions
+  pgrowlocks     - A function to return row locking information
+  pgstattuple    - Returns the percentage of dead tuples in a table; this
+                   indicates whether a vacuum is required.
+  seg            - Confidence-interval datatype (GiST indexing example)
+  spi            - PostgreSQL Server Programming Interface; 4 examples of
+                   its use:
+                   autoinc    - A function for implementing AUTOINCREMENT/
+                                IDENTITY
+                   insert_username - function for inserting user names
+                   moddatetime - Update modification timestamps
+                   refint     - Functions for implementing referential
+                                integrity (foreign keys).  Note that this is
+                                now superseded by built-in referential
+                                integrity.
+                   timetravel - Re-implements in user code the time travel
+                                feature that was removed in 6.3.
+  tablefunc      - examples of functions returning tables
+  uuid-ossp      - UUID generation functions
+  vacuumlo       - Remove orphaned large objects
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-contrib-9.0
+Source: postgresql-9.0
+Version: 9.0.13-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 1715
+Depends: postgresql-9.0 (= 9.0.13-1.pgdg12.4+1), libc6 (>= 2.15), libossp-uuid16, libpq5 (>= 9.0~), libssl1.0.0 (>= 1.0.0), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), zlib1g (>= 1:1.1.4), postgresql-common (>= 115~)
+Suggests: libdbd-pg-perl
+Conflicts: postgresql-contrib (<< 7.5)
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-9.0/postgresql-contrib-9.0_9.0.13-1.pgdg12.4+1_i386.deb
+Size: 807408
+SHA256: 9918338735f3a527762664e9b754245dc19cb86e0cf8ee7ad45ede26e382cb84
+SHA1: bb20489b13ed179b47340068d5b3ff6ac2e89ae9
+MD5sum: bbdae48e2ce796268cbe96fdb5959089
+Description: additional facilities for PostgreSQL
+ The PostgreSQL contrib package provides several additional features
+ for the PostgreSQL database. This version is built to work with the
+ server package postgresql-9.0.  contrib often serves as a testbed for
+ features before they are adopted into PostgreSQL proper:
+ .
+  adminpack      - File and log manipulation routines, used by pgAdmin
+  btree_gist     - B-Tree indexing using GiST (Generalised Search Tree)
+  chkpass        - An auto-encrypted password datatype
+  cube           - Multidimensional-cube datatype (GiST indexing example)
+  dblink         - Functions to return results from a remote database
+  earthdistance  - Operator for computing the distance (in miles) between
+                   two points on the earth's surface
+  fuzzystrmatch  - Levenshtein, metaphone, and soundex fuzzy string matching
+  hstore         - Store (key, value) pairs
+  intagg         - Integer aggregator/enumerator
+  _int           - Index support for arrays of int4, using GiST (benchmark
+                   needs the libdbd-pg-perl package)
+  isn            - type extensions for ISBN, ISSN, ISMN, EAN13 product numbers
+  lo             - Large Object maintenance
+  ltree          - Tree-like data structures
+  oid2name       - Maps OIDs to table names
+  pageinspect    - Inspection of database pages
+  passwordcheck  - Simple password strength checker
+  pg_buffercache - Real time queries on the shared buffer cache
+  pg_freespacemap- Displays the contents of the free space map (FSM)
+  pg_trgm        - Determine the similarity of text based on trigram matching
+  pg_standby     - Create a warm stand-by server
+  pgbench        - TPC-B like benchmark
+  pgcrypto       - Cryptographic functions
+  pgrowlocks     - A function to return row locking information
+  pgstattuple    - Returns the percentage of dead tuples in a table; this
+                   indicates whether a vacuum is required.
+  seg            - Confidence-interval datatype (GiST indexing example)
+  spi            - PostgreSQL Server Programming Interface; 4 examples of
+                   its use:
+                   autoinc    - A function for implementing AUTOINCREMENT/
+                                IDENTITY
+                   insert_username - function for inserting user names
+                   moddatetime - Update modification timestamps
+                   refint     - Functions for implementing referential
+                                integrity (foreign keys).  Note that this is
+                                now superseded by built-in referential
+                                integrity.
+                   timetravel - Re-implements in user code the time travel
+                                feature that was removed in 6.3.
+  tablefunc      - examples of functions returning tables
+  uuid-ossp      - UUID generation functions
+  vacuumlo       - Remove orphaned large objects
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-contrib-9.1
+Source: postgresql-9.1
+Version: 9.1.9-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 1872
+Depends: postgresql-9.1 (= 9.1.9-1.pgdg12.4+1), libc6 (>= 2.15), libossp-uuid16, libpq5 (>= 9.0~), libssl1.0.0 (>= 1.0.0), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), zlib1g (>= 1:1.1.4), postgresql-common (>= 115~)
+Suggests: libdbd-pg-perl
+Conflicts: postgresql-contrib (<< 7.5)
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-9.1/postgresql-contrib-9.1_9.1.9-1.pgdg12.4+1_i386.deb
+Size: 740764
+SHA256: 73ba4d662b57e50360f995a13ab29258ace36cc1b09eea0989138a6d0ef06056
+SHA1: c4009f57b56a6b6c5d06cbc8440c601f4bbb656a
+MD5sum: 4847026a3c1d221156bf5ba82945e863
+Description: additional facilities for PostgreSQL
+ The PostgreSQL contrib package provides several additional features
+ for the PostgreSQL database. This version is built to work with the
+ server package postgresql-9.1.  contrib often serves as a testbed for
+ features before they are adopted into PostgreSQL proper:
+ .
+  adminpack      - File and log manipulation routines, used by pgAdmin
+  btree_gist     - B-Tree indexing using GiST (Generalised Search Tree)
+  chkpass        - An auto-encrypted password datatype
+  cube           - Multidimensional-cube datatype (GiST indexing example)
+  dblink         - Functions to return results from a remote database
+  earthdistance  - Operator for computing the distance (in miles) between
+                   two points on the earth's surface
+  fuzzystrmatch  - Levenshtein, metaphone, and soundex fuzzy string matching
+  hstore         - Store (key, value) pairs
+  intagg         - Integer aggregator/enumerator
+  _int           - Index support for arrays of int4, using GiST (benchmark
+                   needs the libdbd-pg-perl package)
+  isn            - type extensions for ISBN, ISSN, ISMN, EAN13 product numbers
+  lo             - Large Object maintenance
+  ltree          - Tree-like data structures
+  oid2name       - Maps OIDs to table names
+  pageinspect    - Inspection of database pages
+  passwordcheck  - Simple password strength checker
+  pg_buffercache - Real time queries on the shared buffer cache
+  pg_freespacemap- Displays the contents of the free space map (FSM)
+  pg_trgm        - Determine the similarity of text based on trigram matching
+  pg_standby     - Create a warm stand-by server
+  pgbench        - TPC-B like benchmark
+  pgcrypto       - Cryptographic functions
+  pgrowlocks     - A function to return row locking information
+  pgstattuple    - Returns the percentage of dead tuples in a table; this
+                   indicates whether a vacuum is required.
+  seg            - Confidence-interval datatype (GiST indexing example)
+  spi            - PostgreSQL Server Programming Interface; 4 examples of
+                   its use:
+                   autoinc    - A function for implementing AUTOINCREMENT/
+                                IDENTITY
+                   insert_username - function for inserting user names
+                   moddatetime - Update modification timestamps
+                   refint     - Functions for implementing referential
+                                integrity (foreign keys).  Note that this is
+                                now superseded by built-in referential
+                                integrity.
+                   timetravel - Re-implements in user code the time travel
+                                feature that was removed in 6.3.
+  tablefunc      - examples of functions returning tables
+  uuid-ossp      - UUID generation functions
+  vacuumlo       - Remove orphaned large objects
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-contrib-9.2
+Source: postgresql-9.2
+Version: 9.2.4-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 1976
+Depends: postgresql-9.2 (= 9.2.4-1.pgdg12.4+1), libc6 (>= 2.15), libossp-uuid16, libpq5 (>= 9.2~beta3), libssl1.0.0 (>= 1.0.0), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), zlib1g (>= 1:1.1.4)
+Suggests: libdbd-pg-perl
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-9.2/postgresql-contrib-9.2_9.2.4-1.pgdg12.4+1_i386.deb
+Size: 790068
+SHA256: 4fa4be2ef260efea3ec7c15423c0ae16319db9da2c4af8b09ca309615dba143c
+SHA1: ee1aa251e9e0ba8d7aab24262e2d2f172857f5d7
+MD5sum: 2449fd10c4f0c11b4e770878a6892d1e
+Description: additional facilities for PostgreSQL
+ The PostgreSQL contrib package provides several additional features
+ for the PostgreSQL database. This version is built to work with the
+ server package postgresql-9.2.  contrib often serves as a testbed for
+ features before they are adopted into PostgreSQL proper:
+ .
+  adminpack      - File and log manipulation routines, used by pgAdmin
+  btree_gist     - B-Tree indexing using GiST (Generalised Search Tree)
+  chkpass        - An auto-encrypted password datatype
+  cube           - Multidimensional-cube datatype (GiST indexing example)
+  dblink         - Functions to return results from a remote database
+  earthdistance  - Operator for computing the distance (in miles) between
+                   two points on the earth's surface
+  fuzzystrmatch  - Levenshtein, metaphone, and soundex fuzzy string matching
+  hstore         - Store (key, value) pairs
+  intagg         - Integer aggregator/enumerator
+  _int           - Index support for arrays of int4, using GiST (benchmark
+                   needs the libdbd-pg-perl package)
+  isn            - type extensions for ISBN, ISSN, ISMN, EAN13 product numbers
+  lo             - Large Object maintenance
+  ltree          - Tree-like data structures
+  oid2name       - Maps OIDs to table names
+  pageinspect    - Inspection of database pages
+  passwordcheck  - Simple password strength checker
+  pg_buffercache - Real time queries on the shared buffer cache
+  pg_freespacemap- Displays the contents of the free space map (FSM)
+  pg_trgm        - Determine the similarity of text based on trigram matching
+  pg_standby     - Create a warm stand-by server
+  pgbench        - TPC-B like benchmark
+  pgcrypto       - Cryptographic functions
+  pgrowlocks     - A function to return row locking information
+  pgstattuple    - Returns the percentage of dead tuples in a table; this
+                   indicates whether a vacuum is required.
+  seg            - Confidence-interval datatype (GiST indexing example)
+  spi            - PostgreSQL Server Programming Interface; 4 examples of
+                   its use:
+                   autoinc    - A function for implementing AUTOINCREMENT/
+                                IDENTITY
+                   insert_username - function for inserting user names
+                   moddatetime - Update modification timestamps
+                   refint     - Functions for implementing referential
+                                integrity (foreign keys).  Note that this is
+                                now superseded by built-in referential
+                                integrity.
+                   timetravel - Re-implements in user code the time travel
+                                feature that was removed in 6.3.
+  tablefunc      - examples of functions returning tables
+  uuid-ossp      - UUID generation functions
+  vacuumlo       - Remove orphaned large objects
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-contrib-9.3
+Source: postgresql-9.3
+Version: 9.3~beta1-1.pgdg12.4+2
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 2063
+Depends: postgresql-9.3 (= 9.3~beta1-1.pgdg12.4+2), libc6 (>= 2.15), libossp-uuid16, libpq5 (>= 9.2~beta3), libssl1.0.0 (>= 1.0.0), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), zlib1g (>= 1:1.1.4)
+Suggests: libdbd-pg-perl
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-9.3/postgresql-contrib-9.3_9.3~beta1-1.pgdg12.4+2_i386.deb
+Size: 821796
+SHA256: 48b1b409d9987a8ecee4fc12f3f458aab4053983717d371b019e090063d45878
+SHA1: 03c26d10e39e535e84dd9a7d0e066b617da8f4e8
+MD5sum: 0a104f8dd8cb56f8919584239937bcc9
+Description: additional facilities for PostgreSQL
+ The PostgreSQL contrib package provides several additional features
+ for the PostgreSQL database. This version is built to work with the
+ server package postgresql-9.3.  contrib often serves as a testbed for
+ features before they are adopted into PostgreSQL proper:
+ .
+  adminpack      - File and log manipulation routines, used by pgAdmin
+  btree_gist     - B-Tree indexing using GiST (Generalised Search Tree)
+  chkpass        - An auto-encrypted password datatype
+  cube           - Multidimensional-cube datatype (GiST indexing example)
+  dblink         - Functions to return results from a remote database
+  earthdistance  - Operator for computing the distance (in miles) between
+                   two points on the earth's surface
+  fuzzystrmatch  - Levenshtein, metaphone, and soundex fuzzy string matching
+  hstore         - Store (key, value) pairs
+  intagg         - Integer aggregator/enumerator
+  _int           - Index support for arrays of int4, using GiST (benchmark
+                   needs the libdbd-pg-perl package)
+  isn            - type extensions for ISBN, ISSN, ISMN, EAN13 product numbers
+  lo             - Large Object maintenance
+  ltree          - Tree-like data structures
+  oid2name       - Maps OIDs to table names
+  pageinspect    - Inspection of database pages
+  passwordcheck  - Simple password strength checker
+  pg_buffercache - Real time queries on the shared buffer cache
+  pg_freespacemap- Displays the contents of the free space map (FSM)
+  pg_trgm        - Determine the similarity of text based on trigram matching
+  pg_standby     - Create a warm stand-by server
+  pgbench        - TPC-B like benchmark
+  pgcrypto       - Cryptographic functions
+  pgrowlocks     - A function to return row locking information
+  pgstattuple    - Returns the percentage of dead tuples in a table; this
+                   indicates whether a vacuum is required.
+  postgresql_fwd - foreign data wrapper for PostgreSQL
+  seg            - Confidence-interval datatype (GiST indexing example)
+  spi            - PostgreSQL Server Programming Interface; 4 examples of
+                   its use:
+                   autoinc    - A function for implementing AUTOINCREMENT/
+                                IDENTITY
+                   insert_username - function for inserting user names
+                   moddatetime - Update modification timestamps
+                   refint     - Functions for implementing referential
+                                integrity (foreign keys).  Note that this is
+                                now superseded by built-in referential
+                                integrity.
+                   timetravel - Re-implements in user code the time travel
+                                feature that was removed in 6.3.
+  tablefunc      - examples of functions returning tables
+  uuid-ossp      - UUID generation functions
+  vacuumlo       - Remove orphaned large objects
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-doc
+Source: postgresql-common (144.pgdg12.4+1)
+Version: 9.3+142really9.2+144.pgdg12.4+1
+Architecture: all
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 69
+Depends: postgresql-doc-9.2
+Priority: optional
+Section: doc
+Filename: pool/main/p/postgresql-common/postgresql-doc_9.3+142really9.2+144.pgdg12.4+1_all.deb
+Size: 46296
+SHA256: 7c0e6c1fa2c8105b32185e525440f6e9d753629133017022bcbdd7dc081d4add
+SHA1: dd7c655a2f3cdd1985ae187d349ca00372664986
+MD5sum: edc95050ebe708d3b9e8c12d0042dd22
+Description: documentation for the PostgreSQL database management system
+ This metapackage always depends on the currently supported PostgreSQL
+ database documentation package.
+ .
+ PostgreSQL is a fully featured object-relational database management
+ system.  It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects.  Some of the features are:
+ ACID transactions, foreign keys, views, sequences, subqueries,
+ triggers, user-defined types and functions, outer joins, multiversion
+ concurrency control.  Graphical user interfaces and bindings for many
+ programming languages are available as well.
+
+Package: postgresql-doc-8.2
+Source: postgresql-8.2
+Version: 8.2.23-1.pgdg12.4+1
+Architecture: all
+Maintainer: Martin Pitt <mpitt@debian.org>
+Installed-Size: 7928
+Conflicts: postgresql-doc (<< 7.5)
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: doc
+Filename: pool/main/p/postgresql-8.2/postgresql-doc-8.2_8.2.23-1.pgdg12.4+1_all.deb
+Size: 1251716
+SHA256: 938d097841c1063d5e1aa5e18544602271a255ad8219b870128ec99e6335c387
+SHA1: 5303990ecc61384ceebd88e6110df9b808a258a1
+MD5sum: 5fb4f024de97534bfded354ac6dec135
+Description: documentation for the PostgreSQL database management system
+ This package contains all README files, user manual, and examples for
+ PostgreSQL 8.2. The manual is in HTML format.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-doc-8.3
+Source: postgresql-8.3
+Version: 8.3.23-1.pgdg12.4+1
+Architecture: all
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 9439
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: doc
+Filename: pool/main/p/postgresql-8.3/postgresql-doc-8.3_8.3.23-1.pgdg12.4+1_all.deb
+Size: 2281016
+SHA256: 7df32ba0511d9648cc37f8e1ae51c670df0f9ea2a1ed09303ff21a0e76dd5e85
+SHA1: fe82708279a7e573c8772d9bd03bf75f0a1b3fda
+MD5sum: 859491a0822dbcac44d90647bfd7eca2
+Description: documentation for the PostgreSQL database management system
+ This package contains all README files, user manual, and examples for
+ PostgreSQL 8.3. The manual is in HTML format.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-doc-8.4
+Source: postgresql-8.4
+Version: 8.4.17-1.pgdg12.4+1
+Architecture: all
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 10373
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: doc
+Filename: pool/main/p/postgresql-8.4/postgresql-doc-8.4_8.4.17-1.pgdg12.4+1_all.deb
+Size: 2522652
+SHA256: bbfa189df9c20347ca2096ce5e9c33ebc0a4f74bd10a9518992f60c4f4eb3213
+SHA1: 092d20597d4cb936182cb48349f972f52016677b
+MD5sum: bcec1b2d416e9e12b7de36a1d9d45e69
+Description: documentation for the PostgreSQL database management system
+ This package contains all README files, user manual, and examples for
+ PostgreSQL 8.4. The manual is in HTML format.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-doc-9.0
+Source: postgresql-9.0
+Version: 9.0.13-1.pgdg12.4+1
+Architecture: all
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 11152
+Conflicts: postgresql-doc (<< 7.5)
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: doc
+Filename: pool/main/p/postgresql-9.0/postgresql-doc-9.0_9.0.13-1.pgdg12.4+1_all.deb
+Size: 2779908
+SHA256: c71cf23d77eda36ad35d249a43d3b5dfa965afa6401d26339618520286606f2f
+SHA1: 57a32ae38aedeacbd17e4ce549981c6791919220
+MD5sum: 5cfb1ba380859bf5481b235f8b5a25d9
+Description: documentation for the PostgreSQL database management system
+ This package contains all README files, user manual, and examples for
+ PostgreSQL 9.0. The manual is in HTML format.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-doc-9.1
+Source: postgresql-9.1
+Version: 9.1.9-1.pgdg12.4+1
+Architecture: all
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 12073
+Conflicts: postgresql-doc (<< 7.5)
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: doc
+Filename: pool/main/p/postgresql-9.1/postgresql-doc-9.1_9.1.9-1.pgdg12.4+1_all.deb
+Size: 2009696
+SHA256: d8eb234f1e9776f8575e80c7bef91b10152907fa94c4bfe99cf4268d725e6b90
+SHA1: d3f4b5d49ced38e493cf7bd6afc2aca30980355e
+MD5sum: f2a1f9fde97662e18e447c16f05a3a16
+Description: documentation for the PostgreSQL database management system
+ This package contains all README files, user manual, and examples for
+ PostgreSQL 9.1. The manual is in HTML format.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-doc-9.2
+Source: postgresql-9.2
+Version: 9.2.4-1.pgdg12.4+1
+Architecture: all
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 12589
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: doc
+Filename: pool/main/p/postgresql-9.2/postgresql-doc-9.2_9.2.4-1.pgdg12.4+1_all.deb
+Size: 2091654
+SHA256: 96359cc789edf32b42e23f3d04c9c090c3b19cd1f1a1b9d73e885ba6f1cb9a15
+SHA1: af2f8ac36697b537c7cf42514c3114bfecf615c5
+MD5sum: b2ba6c803b92bcab8587f0e8fb5cf545
+Description: documentation for the PostgreSQL database management system
+ This package contains all README files, user manual, and examples for
+ PostgreSQL 9.2. The manual is in HTML format.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-doc-9.3
+Source: postgresql-9.3
+Version: 9.3~beta1-1.pgdg12.4+2
+Architecture: all
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 12944
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: doc
+Filename: pool/main/p/postgresql-9.3/postgresql-doc-9.3_9.3~beta1-1.pgdg12.4+2_all.deb
+Size: 2141838
+SHA256: 096f70ddff951afe21116a2ae76f01cd6cff5411f6d8ed4ce6645b002b172dbe
+SHA1: d0da83fee67e298da5545909c884de056cea55d2
+MD5sum: 2f15da1886ca851e1a8cf5c44581e7b8
+Description: documentation for the PostgreSQL database management system
+ This package contains all README files, user manual, and examples for
+ PostgreSQL 9.3. The manual is in HTML format.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-plperl-8.2
+Source: postgresql-8.2
+Version: 8.2.23-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Martin Pitt <mpitt@debian.org>
+Installed-Size: 321
+Depends: libc6 (>= 2.11), libperl5.14 (>= 5.14.2), postgresql-8.2 (= 8.2.23-1.pgdg12.4+1), perl
+Provides: postgresql-plperl
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-8.2/postgresql-plperl-8.2_8.2.23-1.pgdg12.4+1_i386.deb
+Size: 237574
+SHA256: 3d8856a48048e3cdae1255775397fabdc0b60bc96a572d9bc4f1e9b5221e787a
+SHA1: 931f02be0ffc3bd624a74fc968ae2a27e1a5a07d
+MD5sum: 4a2865bb25f8f9d222363db2c9bdaa6b
+Description: PL/Perl procedural language for PostgreSQL 8.2
+ PL/Perl enables an SQL developer to write procedural language functions
+ for PostgreSQL 8.2 in Perl.  You need this package if you have any
+ PostgreSQL 8.2 functions that use the languages plperl or plperlu.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-plperl-8.3
+Source: postgresql-8.3
+Version: 8.3.23-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 410
+Depends: libc6 (>= 2.4), libperl5.14 (>= 5.14.2), postgresql-8.3 (= 8.3.23-1.pgdg12.4+1), perl
+Provides: postgresql-plperl
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-8.3/postgresql-plperl-8.3_8.3.23-1.pgdg12.4+1_i386.deb
+Size: 333520
+SHA256: 8313e26547c5d215727a875ddb2d2b7121bf58aefda1bf492f81978d10c9ca9b
+SHA1: 2d04b302d2d195a52898937f510cbda942f3823a
+MD5sum: ae5e97350cfa79b621e13ab0b6d5b188
+Description: PL/Perl procedural language for PostgreSQL 8.3
+ PL/Perl enables an SQL developer to write procedural language functions
+ for PostgreSQL 8.3 in Perl.  You need this package if you have any
+ PostgreSQL 8.3 functions that use the languages plperl or plperlu.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-plperl-8.4
+Source: postgresql-8.4
+Version: 8.4.17-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 563
+Depends: libc6 (>= 2.4), libperl5.14 (>= 5.14.2), postgresql-8.4 (= 8.4.17-1.pgdg12.4+1), perl
+Provides: postgresql-plperl
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-8.4/postgresql-plperl-8.4_8.4.17-1.pgdg12.4+1_i386.deb
+Size: 379012
+SHA256: ad196a95e463cb8f9dbe1d5e90ed6684d7f7daa7538a2840a3d2d5acfab6b9f1
+SHA1: 7c8ebd3d71c0d46cee2944d311da57536f509622
+MD5sum: c32feb8520310da1562ef8fbfe1b2a4b
+Description: PL/Perl procedural language for PostgreSQL 8.4
+ PL/Perl enables an SQL developer to write procedural language functions
+ for PostgreSQL 8.4 in Perl.  You need this package if you have any
+ PostgreSQL 8.4 functions that use the languages plperl or plperlu.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-plperl-9.0
+Source: postgresql-9.0
+Version: 9.0.13-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 674
+Depends: libc6 (>= 2.4), libperl5.14 (>= 5.14.2), postgresql-9.0 (= 9.0.13-1.pgdg12.4+1), perl
+Replaces: postgresql-contrib-9.0 (<< 9.0~beta1-3~)
+Provides: postgresql-plperl
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-9.0/postgresql-plperl-9.0_9.0.13-1.pgdg12.4+1_i386.deb
+Size: 429024
+SHA256: c1ae5714f872b9504aeacd9dc2e4af289d60ec616d335ea91074c10be8850709
+SHA1: a786c3aac5477a26c39b4bf26f85de5bd52420c8
+MD5sum: c00bb1721537aff7003f9ad478212d75
+Description: PL/Perl procedural language for PostgreSQL 9.0
+ PL/Perl enables an SQL developer to write procedural language functions
+ for PostgreSQL 9.0 in Perl.  You need this package if you have any
+ PostgreSQL 9.0 functions that use the languages plperl or plperlu.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-plperl-9.1
+Source: postgresql-9.1
+Version: 9.1.9-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 733
+Depends: libc6 (>= 2.4), libperl5.14 (>= 5.14.2), postgresql-9.1 (= 9.1.9-1.pgdg12.4+1), perl
+Replaces: postgresql-contrib-9.1 (<< 9.1~beta1-3~)
+Provides: postgresql-plperl
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-9.1/postgresql-plperl-9.1_9.1.9-1.pgdg12.4+1_i386.deb
+Size: 459682
+SHA256: bb65eb59803bfd518e74476fab07ee37d579896b6b88488201433b3daa5b714e
+SHA1: abc81cafc0497038e2d7881ec3876140acfca48f
+MD5sum: 2d970195d6c0417f0cc21002eefe7bb0
+Description: PL/Perl procedural language for PostgreSQL 9.1
+ PL/Perl enables an SQL developer to write procedural language functions
+ for PostgreSQL 9.1 in Perl.  You need this package if you have any
+ PostgreSQL 9.1 functions that use the languages plperl or plperlu.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-plperl-9.2
+Source: postgresql-9.2
+Version: 9.2.4-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 745
+Depends: libc6 (>= 2.4), libperl5.14 (>= 5.14.2), postgresql-9.2 (= 9.2.4-1.pgdg12.4+1), perl
+Provides: postgresql-plperl
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-9.2/postgresql-plperl-9.2_9.2.4-1.pgdg12.4+1_i386.deb
+Size: 471610
+SHA256: 40c5a54899730b2ff8ceb93c00f36220505052c70e356e857c7fd97b372f72a7
+SHA1: 4db4e21292e1da9f903e4bf4075f4b7e18cd90e1
+MD5sum: dde2883fb8b12df87faa9d491db9817c
+Description: PL/Perl procedural language for PostgreSQL 9.2
+ PL/Perl enables an SQL developer to write procedural language functions
+ for PostgreSQL 9.2 in Perl.  You need this package if you have any
+ PostgreSQL 9.2 functions that use the languages plperl or plperlu.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-plperl-9.3
+Source: postgresql-9.3
+Version: 9.3~beta1-1.pgdg12.4+2
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 742
+Depends: libc6 (>= 2.4), libperl5.14 (>= 5.14.2), postgresql-9.3 (= 9.3~beta1-1.pgdg12.4+2), perl
+Provides: postgresql-plperl
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-9.3/postgresql-plperl-9.3_9.3~beta1-1.pgdg12.4+2_i386.deb
+Size: 475182
+SHA256: 72cbf59a574175611e9b2d95817859d5d7d7736cfe57eed90737b2ba7b4317e8
+SHA1: ff77fb59818b15c4a64c099266d68cb9a98b87e6
+MD5sum: a2b7ca2f8413edb1bac10e946947c94e
+Description: PL/Perl procedural language for PostgreSQL 9.3
+ PL/Perl enables an SQL developer to write procedural language functions
+ for PostgreSQL 9.3 in Perl.  You need this package if you have any
+ PostgreSQL 9.3 functions that use the languages plperl or plperlu.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-plpython-8.2
+Source: postgresql-8.2
+Version: 8.2.23-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Martin Pitt <mpitt@debian.org>
+Installed-Size: 306
+Depends: libc6 (>= 2.11), libpython2.7 (>= 2.7), postgresql-8.2 (= 8.2.23-1.pgdg12.4+1)
+Provides: postgresql-plpython
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-8.2/postgresql-plpython-8.2_8.2.23-1.pgdg12.4+1_i386.deb
+Size: 232762
+SHA256: 334f61ff96d1cc5760e0a3e7676c36cd06f79fa804a6f4507bdc5dc389bb77fc
+SHA1: 7cfb4d0a74b3873521f65c65c3b457334335f29b
+MD5sum: a6603caa2cd7e3dc66351a313371d5aa
+Description: PL/Python procedural language for PostgreSQL 8.2
+ PL/Python enables an SQL developer to write procedural language functions
+ for PostgreSQL 8.2 in Python.  You need this package if you have any
+ PostgreSQL 8.2 functions that use the languages plpython or plpythonu.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-plpython-8.3
+Source: postgresql-8.3
+Version: 8.3.23-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 391
+Depends: libc6 (>= 2.4), libpython2.7 (>= 2.7), postgresql-8.3 (= 8.3.23-1.pgdg12.4+1)
+Provides: postgresql-plpython
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-8.3/postgresql-plpython-8.3_8.3.23-1.pgdg12.4+1_i386.deb
+Size: 326290
+SHA256: 362a63588e515d559e6588dfe2a2ce2c5140b435a8ec2135272b412900b88b3e
+SHA1: 72cffe43f9ffec4df810681bc8d70e3616eacd10
+MD5sum: 782f1c9f8c3423ee8253115e22ae63b7
+Description: PL/Python procedural language for PostgreSQL 8.3
+ PL/Python enables an SQL developer to write procedural language functions
+ for PostgreSQL 8.3 in Python.  You need this package if you have any
+ PostgreSQL 8.3 functions that use the languages plpython or plpythonu.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-plpython-8.4
+Source: postgresql-8.4
+Version: 8.4.17-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 594
+Depends: libc6 (>= 2.4), libpython2.7 (>= 2.7), postgresql-8.4 (= 8.4.17-1.pgdg12.4+1)
+Provides: postgresql-plpython
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-8.4/postgresql-plpython-8.4_8.4.17-1.pgdg12.4+1_i386.deb
+Size: 381024
+SHA256: 20d86150de7e6855b2577855b8fa15b3f127b877c023f8699012d83d7171e991
+SHA1: d1a569da9bd1e2cb96ea560d5782bfc4e5a46cf6
+MD5sum: 24e388cdfe1bc6f7632a7c04b21c6914
+Description: PL/Python procedural language for PostgreSQL 8.4
+ PL/Python enables an SQL developer to write procedural language functions
+ for PostgreSQL 8.4 in Python.  You need this package if you have any
+ PostgreSQL 8.4 functions that use the languages plpython or plpythonu.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-plpython-9.0
+Source: postgresql-9.0
+Version: 9.0.13-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 479
+Depends: libc6 (>= 2.4), libpython2.7 (>= 2.7), postgresql-9.0 (= 9.0.13-1.pgdg12.4+1)
+Replaces: postgresql-contrib-9.0 (<< 9.0~beta1-3~)
+Provides: postgresql-plpython
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-9.0/postgresql-plpython-9.0_9.0.13-1.pgdg12.4+1_i386.deb
+Size: 408672
+SHA256: bdab86d8f02fe431af6b16145700a9483ae34b6a513484e4b07a6f2a14267e7e
+SHA1: 193a5be0c982dc2d4d70173fd12b97c83efed53b
+MD5sum: 5c1f89b9ff7fad5d88f62cfae17608a9
+Description: PL/Python procedural language for PostgreSQL 9.0
+ PL/Python enables an SQL developer to write procedural language functions
+ for PostgreSQL 9.0 in Python.  You need this package if you have any
+ PostgreSQL 9.0 functions that use the languages plpython or plpythonu.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-plpython-9.1
+Source: postgresql-9.1
+Version: 9.1.9-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 551
+Depends: libc6 (>= 2.4), libpython2.7 (>= 2.7), postgresql-9.1 (= 9.1.9-1.pgdg12.4+1)
+Replaces: postgresql-contrib-9.1 (<< 9.1~beta1-3~)
+Provides: postgresql-plpython
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-9.1/postgresql-plpython-9.1_9.1.9-1.pgdg12.4+1_i386.deb
+Size: 444440
+SHA256: 41afab74253ef961502c86a03b005b7ff085092f110a415bbd79c16d994b4b34
+SHA1: e74972f7d4304a3b5e21b0f4a8d0ca3a2bff8cca
+MD5sum: 7a3508047f3c13963483b7c5a924d955
+Description: PL/Python procedural language for PostgreSQL 9.1
+ PL/Python enables an SQL developer to write procedural language functions
+ for PostgreSQL 9.1 in Python.  You need this package if you have any
+ PostgreSQL 9.1 functions that use the languages plpython or plpythonu.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-plpython-9.2
+Source: postgresql-9.2
+Version: 9.2.4-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 575
+Depends: libc6 (>= 2.4), libpython2.7 (>= 2.7), postgresql-9.2 (= 9.2.4-1.pgdg12.4+1)
+Provides: postgresql-plpython
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-9.2/postgresql-plpython-9.2_9.2.4-1.pgdg12.4+1_i386.deb
+Size: 459308
+SHA256: 2fb1ae1de317db609f5ca855933a49aada8c10dde7cc760a0369a94d4719b84c
+SHA1: adeda7fa394c286cfef15293f5aef36a58a5e161
+MD5sum: 71746345e184c3846dbe65a7ffad0e7b
+Description: PL/Python procedural language for PostgreSQL 9.2
+ PL/Python enables an SQL developer to write procedural language functions
+ for PostgreSQL 9.2 in Python.  You need this package if you have any
+ PostgreSQL 9.2 functions that use the languages plpython or plpythonu.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-plpython-9.3
+Source: postgresql-9.3
+Version: 9.3~beta1-1.pgdg12.4+2
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 580
+Depends: libc6 (>= 2.4), libpython2.7 (>= 2.7), postgresql-9.3 (= 9.3~beta1-1.pgdg12.4+2)
+Provides: postgresql-plpython
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-9.3/postgresql-plpython-9.3_9.3~beta1-1.pgdg12.4+2_i386.deb
+Size: 464428
+SHA256: 78120f7bc499bea5cd70f019895ca04da403ed68299eba84721de45beb7e62f6
+SHA1: 869a19150b9535215941beef1275c3dbeb56bc3a
+MD5sum: 58c39212729a12402e5a3198783e1a93
+Description: PL/Python procedural language for PostgreSQL 9.3
+ PL/Python enables an SQL developer to write procedural language functions
+ for PostgreSQL 9.3 in Python.  You need this package if you have any
+ PostgreSQL 9.3 functions that use the languages plpython or plpythonu.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-plpython3-9.1
+Source: postgresql-9.1
+Version: 9.1.9-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 551
+Depends: libc6 (>= 2.4), libpython3.2 (>= 3.2~a4), postgresql-9.1 (= 9.1.9-1.pgdg12.4+1)
+Breaks: postgresql-plpython-9.1 (<< 9.1.9-1.pgdg12.4+1)
+Replaces: postgresql-plpython-9.1 (<< 9.1.9-1.pgdg12.4+1)
+Provides: postgresql-plpython3
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-9.1/postgresql-plpython3-9.1_9.1.9-1.pgdg12.4+1_i386.deb
+Size: 444292
+SHA256: fc2fcf15971915c8eb4bb342e1d199ae996085ba32af9ec9061d2c9e2b842b40
+SHA1: a4af26ce500dbaca490f334ad0d38d621ea792ff
+MD5sum: cf9bd09d6f0921c598e3153180152e1f
+Description: PL/Python 3 procedural language for PostgreSQL 9.1
+ PL/Python 3 enables an SQL developer to write procedural language functions
+ for PostgreSQL 9.1 in Python 3.  You need this package if you have any
+ PostgreSQL 9.1 functions that use the languages plpython3 or plpython3u.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-plpython3-9.2
+Source: postgresql-9.2
+Version: 9.2.4-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 575
+Depends: libc6 (>= 2.4), libpython3.2 (>= 3.2~a4), postgresql-9.2 (= 9.2.4-1.pgdg12.4+1)
+Breaks: postgresql-plpython-9.2 (<< 9.2.4-1.pgdg12.4+1)
+Replaces: postgresql-plpython-9.2 (<< 9.2.4-1.pgdg12.4+1)
+Provides: postgresql-plpython3
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-9.2/postgresql-plpython3-9.2_9.2.4-1.pgdg12.4+1_i386.deb
+Size: 459218
+SHA256: 372b056e103e1ed7f07d1fa9b5f4ef31cfc77ae1b98e36e4563fec73a04bce94
+SHA1: af8f35e9107c6aa0ca8e2a6f91d9c858a5925a93
+MD5sum: 152c1005bee20f966ab7e8133e1bd174
+Description: PL/Python 3 procedural language for PostgreSQL 9.2
+ PL/Python 3 enables an SQL developer to write procedural language functions
+ for PostgreSQL 9.2 in Python 3.  You need this package if you have any
+ PostgreSQL 9.2 functions that use the languages plpython3 or plpython3u.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-plpython3-9.3
+Source: postgresql-9.3
+Version: 9.3~beta1-1.pgdg12.4+2
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 580
+Depends: libc6 (>= 2.4), libpython3.2 (>= 3.2~a4), postgresql-9.3 (= 9.3~beta1-1.pgdg12.4+2)
+Breaks: postgresql-plpython-9.3 (<< 9.3~beta1-1.pgdg12.4+2)
+Replaces: postgresql-plpython-9.3 (<< 9.3~beta1-1.pgdg12.4+2)
+Provides: postgresql-plpython3
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-9.3/postgresql-plpython3-9.3_9.3~beta1-1.pgdg12.4+2_i386.deb
+Size: 464230
+SHA256: 4f59c3b3190c3ecf51f2ce05172d0bb6f5e82755047f393e67d714e046c22994
+SHA1: 63835f6de73004ee76916f7af9228f956a9ca144
+MD5sum: bddfe26c31a02ebccb2daa476b9f1ce3
+Description: PL/Python 3 procedural language for PostgreSQL 9.3
+ PL/Python 3 enables an SQL developer to write procedural language functions
+ for PostgreSQL 9.3 in Python 3.  You need this package if you have any
+ PostgreSQL 9.3 functions that use the languages plpython3 or plpython3u.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-pltcl-8.2
+Source: postgresql-8.2
+Version: 8.2.23-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Martin Pitt <mpitt@debian.org>
+Installed-Size: 320
+Depends: libc6 (>= 2.11), tcl8.5 (>= 8.5.0), postgresql-8.2 (= 8.2.23-1.pgdg12.4+1)
+Provides: postgresql-pltcl
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-8.2/postgresql-pltcl-8.2_8.2.23-1.pgdg12.4+1_i386.deb
+Size: 231684
+SHA256: 98dda0d80c1aec5924430069647ae2b9a42c23048c2d633fc3be684ef4fb1540
+SHA1: befcdb5ecc8a8e454b8ad6433131a6891bd2fade
+MD5sum: ce3ce14910543fe036c8bd7a9a32ade2
+Description: PL/Tcl procedural language for PostgreSQL 8.2
+ PL/Tcl enables an SQL developer to write procedural language functions
+ for PostgreSQL 8.2 in Tcl.  You need this package if you have any
+ PostgreSQL 8.2 functions that use the languages pltcl or pltclu.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-pltcl-8.3
+Source: postgresql-8.3
+Version: 8.3.23-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 408
+Depends: libc6 (>= 2.4), tcl8.5 (>= 8.5.0), postgresql-8.3 (= 8.3.23-1.pgdg12.4+1)
+Provides: postgresql-pltcl
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-8.3/postgresql-pltcl-8.3_8.3.23-1.pgdg12.4+1_i386.deb
+Size: 324934
+SHA256: 37799dfc3e106e53cb259be0a532b0f41db20219e3cd6ff3220b139902e1bf9f
+SHA1: 955f4d09284fd4a3865e2e2de8d9934c1f1d180d
+MD5sum: 9b11bb2d3b803fba95a2afd27a6c40da
+Description: PL/Tcl procedural language for PostgreSQL 8.3
+ PL/Tcl enables an SQL developer to write procedural language functions
+ for PostgreSQL 8.3 in Tcl.  You need this package if you have any
+ PostgreSQL 8.3 functions that use the languages pltcl or pltclu.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-pltcl-8.4
+Source: postgresql-8.4
+Version: 8.4.17-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 539
+Depends: libc6 (>= 2.4), tcl8.5 (>= 8.5.0), postgresql-8.4 (= 8.4.17-1.pgdg12.4+1)
+Provides: postgresql-pltcl
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-8.4/postgresql-pltcl-8.4_8.4.17-1.pgdg12.4+1_i386.deb
+Size: 365698
+SHA256: b02178033f6ad672a20d38b41cf57cc4096e01142723e3e2cb3db73b25433aa2
+SHA1: 79adfb57971764c6dec4eebe3b147e551170aa63
+MD5sum: 0a50e883b6d6240377d0ee5e66870c44
+Description: PL/Tcl procedural language for PostgreSQL 8.4
+ PL/Tcl enables an SQL developer to write procedural language functions
+ for PostgreSQL 8.4 in Tcl.  You need this package if you have any
+ PostgreSQL 8.4 functions that use the languages pltcl or pltclu.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-pltcl-9.0
+Source: postgresql-9.0
+Version: 9.0.13-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 615
+Depends: libc6 (>= 2.4), tcl8.5 (>= 8.5.0), postgresql-9.0 (= 9.0.13-1.pgdg12.4+1)
+Replaces: postgresql-contrib-9.0 (<< 9.0~beta1-3~)
+Provides: postgresql-pltcl
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-9.0/postgresql-pltcl-9.0_9.0.13-1.pgdg12.4+1_i386.deb
+Size: 408360
+SHA256: cb6c1fcc8970b08c00def90aee16486859387472fe8f1535f1086a3aece5f57e
+SHA1: 78d502b558ac24ee976cbf258bb3e97b214aba8d
+MD5sum: c2078919074e3dc7d3432d7fc2fabc56
+Description: PL/Tcl procedural language for PostgreSQL 9.0
+ PL/Tcl enables an SQL developer to write procedural language functions
+ for PostgreSQL 9.0 in Tcl.  You need this package if you have any
+ PostgreSQL 9.0 functions that use the languages pltcl or pltclu.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-pltcl-9.1
+Source: postgresql-9.1
+Version: 9.1.9-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 642
+Depends: libc6 (>= 2.4), tcl8.5 (>= 8.5.0), postgresql-9.1 (= 9.1.9-1.pgdg12.4+1)
+Replaces: postgresql-contrib-9.1 (<< 9.1~beta1-3~)
+Provides: postgresql-pltcl
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-9.1/postgresql-pltcl-9.1_9.1.9-1.pgdg12.4+1_i386.deb
+Size: 435912
+SHA256: 6d140475fb837978fc5e05f5a764c9dead755425c7ff31b3e20867f14f9576e3
+SHA1: 958227e70fbd3ee7c318c431a04d87c956550f55
+MD5sum: 0086929ec353c615b701677c5e909a3a
+Description: PL/Tcl procedural language for PostgreSQL 9.1
+ PL/Tcl enables an SQL developer to write procedural language functions
+ for PostgreSQL 9.1 in Tcl.  You need this package if you have any
+ PostgreSQL 9.1 functions that use the languages pltcl or pltclu.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-pltcl-9.2
+Source: postgresql-9.2
+Version: 9.2.4-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 653
+Depends: libc6 (>= 2.4), tcl8.5 (>= 8.5.0), postgresql-9.2 (= 9.2.4-1.pgdg12.4+1)
+Provides: postgresql-pltcl
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-9.2/postgresql-pltcl-9.2_9.2.4-1.pgdg12.4+1_i386.deb
+Size: 447240
+SHA256: 37cf5079b39e5022d27a12db3b5d2c15c7d13b6a3c28347996a6513032e49746
+SHA1: 148e147a8bd88946b27b46b523d235b029287821
+MD5sum: 172fd1db843c102eff436926301544b5
+Description: PL/Tcl procedural language for PostgreSQL 9.2
+ PL/Tcl enables an SQL developer to write procedural language functions
+ for PostgreSQL 9.2 in Tcl.  You need this package if you have any
+ PostgreSQL 9.2 functions that use the languages pltcl or pltclu.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-pltcl-9.3
+Source: postgresql-9.3
+Version: 9.3~beta1-1.pgdg12.4+2
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 658
+Depends: libc6 (>= 2.4), tcl8.5 (>= 8.5.0), postgresql-9.3 (= 9.3~beta1-1.pgdg12.4+2)
+Provides: postgresql-pltcl
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-9.3/postgresql-pltcl-9.3_9.3~beta1-1.pgdg12.4+2_i386.deb
+Size: 452352
+SHA256: 18b840eebde1f91af378821681535d07a23a240019ae8de1d9a2c83bb94ce546
+SHA1: fb2485c0db4d6e6c3e19d2fee83678c339a06f48
+MD5sum: ddfb4689163e5280b04981c70623917a
+Description: PL/Tcl procedural language for PostgreSQL 9.3
+ PL/Tcl enables an SQL developer to write procedural language functions
+ for PostgreSQL 9.3 in Tcl.  You need this package if you have any
+ PostgreSQL 9.3 functions that use the languages pltcl or pltclu.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-server-dev-8.2
+Source: postgresql-8.2
+Version: 8.2.23-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Martin Pitt <mpitt@debian.org>
+Installed-Size: 2377
+Depends: libc6 (>= 2.4), libpq-dev (>= 8.2~), postgresql-common (>= 117~)
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/p/postgresql-8.2/postgresql-server-dev-8.2_8.2.23-1.pgdg12.4+1_i386.deb
+Size: 615596
+SHA256: d9cff4be2d2477fab7691d657f8b8b942243eb267632fb69b7cc1d9bea0a965d
+SHA1: cd8019aafe0b0c94d9f32d6c5fe58da40dd20ab1
+MD5sum: fe548fec48c7b79673a6220f06b536c2
+Description: development files for PostgreSQL 8.2 server-side programming
+ Header files for compiling SSI code to link into PostgreSQL's backend; for
+ example, for C functions to be called from SQL.
+ .
+ This package also contains the Makefiles necessary for building add-on
+ modules of PostgreSQL, which would otherwise have to be built in the
+ PostgreSQL source-code tree.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-server-dev-8.3
+Source: postgresql-8.3
+Version: 8.3.23-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 2753
+Depends: libc6 (>= 2.4), libpq-dev (>= 8.3~), postgresql-common (>= 130~)
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/p/postgresql-8.3/postgresql-server-dev-8.3_8.3.23-1.pgdg12.4+1_i386.deb
+Size: 883278
+SHA256: 5f6696cd0af36341a4bc409c6ecc2684acc0ad8a41ebacd5fd8a1a14e6acba00
+SHA1: 41a66344402e2d1b6b68fb81b9883d494ef98e93
+MD5sum: c72c54f457d2465666e976210cd8fdac
+Description: development files for PostgreSQL 8.3 server-side programming
+ Header files for compiling SSI code to link into PostgreSQL's backend; for
+ example, for C functions to be called from SQL.
+ .
+ This package also contains the Makefiles necessary for building add-on
+ modules of PostgreSQL, which would otherwise have to be built in the
+ PostgreSQL source-code tree.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-server-dev-8.4
+Source: postgresql-8.4
+Version: 8.4.17-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 3004
+Depends: libc6 (>= 2.4), libpq-dev (>= 8.4~), postgresql-common (>= 130~)
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/p/postgresql-8.4/postgresql-server-dev-8.4_8.4.17-1.pgdg12.4+1_i386.deb
+Size: 962470
+SHA256: 973e5e7bfd712b4384f349b73764509e989fc03abd46627e5e6c9031bc3e4c67
+SHA1: 7409e9356b8b6867c84cf77aa6f2d29be87271f9
+MD5sum: 70baa01801f1abba60f65e708d23cab5
+Description: development files for PostgreSQL 8.4 server-side programming
+ Header files for compiling SSI code to link into PostgreSQL's backend; for
+ example, for C functions to be called from SQL.
+ .
+ This package also contains the Makefiles necessary for building add-on
+ modules of PostgreSQL, which would otherwise have to be built in the
+ PostgreSQL source-code tree.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-server-dev-9.0
+Source: postgresql-9.0
+Version: 9.0.13-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 3136
+Depends: libc6 (>= 2.4), libpq-dev (>= 9.0~), postgresql-common (>= 117~)
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/p/postgresql-9.0/postgresql-server-dev-9.0_9.0.13-1.pgdg12.4+1_i386.deb
+Size: 1030164
+SHA256: c9d36d66028a1fb767dcf27776d747c286a7c35457b4f278ecea656e1c221547
+SHA1: e3c1a98e3423792337d7aa1790b3d352ea0dc160
+MD5sum: a432e451770ad3d7209a813c00f7d98c
+Description: development files for PostgreSQL 9.0 server-side programming
+ Header files for compiling SSI code to link into PostgreSQL's backend; for
+ example, for C functions to be called from SQL.
+ .
+ This package also contains the Makefiles necessary for building add-on
+ modules of PostgreSQL, which would otherwise have to be built in the
+ PostgreSQL source-code tree.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-server-dev-9.1
+Source: postgresql-9.1
+Version: 9.1.9-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 3296
+Depends: libc6 (>= 2.4), libpq-dev (>= 9.1~), postgresql-common (>= 117~)
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/p/postgresql-9.1/postgresql-server-dev-9.1_9.1.9-1.pgdg12.4+1_i386.deb
+Size: 941834
+SHA256: 71f7bd18e8bf43cb6ab740b7c78f0d8a14c98bce3dbfd4468e575a842e0d14a3
+SHA1: eb73caa3d8a7b593c4bf83aa73a87c7d80f18b5e
+MD5sum: 0dc6994d78dcd302b5833e8553c7df85
+Description: development files for PostgreSQL 9.1 server-side programming
+ Header files for compiling SSI code to link into PostgreSQL's backend; for
+ example, for C functions to be called from SQL.
+ .
+ This package also contains the Makefiles necessary for building add-on
+ modules of PostgreSQL, which would otherwise have to be built in the
+ PostgreSQL source-code tree.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-server-dev-9.2
+Source: postgresql-9.2
+Version: 9.2.4-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 3525
+Depends: libc6 (>= 2.4), libpq-dev (>= 9.2~), postgresql-common (>= 130~)
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/p/postgresql-9.2/postgresql-server-dev-9.2_9.2.4-1.pgdg12.4+1_i386.deb
+Size: 992650
+SHA256: 4d53466ddb3b6d6591ebbfe27f49acf70756676d0baa6656bc0679ae7b448504
+SHA1: 4ba4447d753f9bd2787c5aa90bf49310a118ef28
+MD5sum: 072b3d1a7884ed85cee862dd5052aec1
+Description: development files for PostgreSQL 9.2 server-side programming
+ Header files for compiling SSI code to link into PostgreSQL's backend; for
+ example, for C functions to be called from SQL.
+ .
+ This package also contains the Makefiles necessary for building add-on
+ modules of PostgreSQL, which would otherwise have to be built in the
+ PostgreSQL source-code tree.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-server-dev-9.3
+Source: postgresql-9.3
+Version: 9.3~beta1-1.pgdg12.4+2
+Architecture: i386
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 3651
+Depends: libc6 (>= 2.4), libpq-dev (>= 9.3~), postgresql-common (>= 142~)
+Homepage: http://www.postgresql.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/p/postgresql-9.3/postgresql-server-dev-9.3_9.3~beta1-1.pgdg12.4+2_i386.deb
+Size: 1019934
+SHA256: e7ffb7f1cac2ba04aed5723ae9645f0453ba9b990c342c6680c73a15d7161159
+SHA1: b527c16d93b606a917048f85b8d2860665e06033
+MD5sum: b0372d2fd1809b5bb3c6994f5c7c7a12
+Description: development files for PostgreSQL 9.3 server-side programming
+ Header files for compiling SSI code to link into PostgreSQL's backend; for
+ example, for C functions to be called from SQL.
+ .
+ This package also contains the Makefiles necessary for building add-on
+ modules of PostgreSQL, which would otherwise have to be built in the
+ PostgreSQL source-code tree.
+ .
+ PostgreSQL is an object-relational SQL database management system.
+
+Package: postgresql-server-dev-all
+Source: postgresql-common
+Version: 144.pgdg12.4+1
+Architecture: all
+Maintainer: Debian PostgreSQL Maintainers <pkg-postgresql-public@lists.alioth.debian.org>
+Installed-Size: 91
+Depends: postgresql-common (>= 117~), lsb-release, dctrl-tools, postgresql-server-dev-8.4, postgresql-server-dev-9.0, postgresql-server-dev-9.1, postgresql-server-dev-9.2
+Priority: optional
+Section: database
+Filename: pool/main/p/postgresql-common/postgresql-server-dev-all_144.pgdg12.4+1_all.deb
+Size: 50792
+SHA256: 138fb134e638ad43c6c97bee307d1f3995fedd98f639f8e65b97bd3138d3d40a
+SHA1: fd1967011f4235681e165ddb864228f1f5b47323
+MD5sum: 275bcfb42a5d61e6dc966d1ab021f2ba
+Description: extension build tool for multiple PostgreSQL versions
+ The postgresql-server-dev-all package provides the pg_buildext script for
+ simplifying packaging of a PostgreSQL extension supporting multiple major
+ versions of the product.
+ .
+ PostgreSQL is a fully featured object-relational database management
+ system. It supports a large part of the SQL standard and is designed
+ to be extensible by users in many aspects. Its features include ACID
+ transactions, foreign keys, views, sequences, subqueries, triggers,
+ outer joins, multiversion concurrency control, and user-defined types
+ and functions.
+
+Package: python-argcomplete
+Version: 0.3.3-1.pgdg12.4+1
+Architecture: all
+Maintainer: Marco Nenciarini <mnencia@debian.org>
+Installed-Size: 121
+Depends: python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8), python-setuptools, python-argparse
+Priority: optional
+Section: python
+Filename: pool/main/p/python-argcomplete/python-argcomplete_0.3.3-1.pgdg12.4+1_all.deb
+Size: 16846
+SHA256: 6012d4412067ea2b4e7bb0674c50adf8b0574e1f15353e2715a7049cc379a27f
+SHA1: 7319531a5b7f9a7e9d5b834cbca7e65fb07631f8
+MD5sum: f7b01e98d8ace9df98ba9da2310a97e3
+Description: bash tab completion for argparse
+ Argcomplete provides easy, extensible command line tab completion of
+ arguments for your Python script.
+ .
+ It makes two assumptions:
+ .
+  * You're using bash as your shell
+  * You're using argparse to manage your command line arguments/options
+ .
+ Argcomplete is particularly useful if your program has lots of
+ options or subparsers, and if your program can dynamically suggest
+ completions for your argument/option values (for example, if the user
+ is browsing resources over the network).
+
+Package: python-argh
+Version: 0.23.0-1.pgdg12.4+1
+Architecture: all
+Maintainer: Marco Nenciarini <mnencia@debian.org>
+Installed-Size: 113
+Depends: python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8), python-argparse
+Recommends: python-argcomplete
+Homepage: http://pypi.python.org/pypi/argh
+Priority: extra
+Section: python
+Filename: pool/main/p/python-argh/python-argh_0.23.0-1.pgdg12.4+1_all.deb
+Size: 22656
+SHA256: fbb57288307125e3d22f212d8344ea87cef1c25a9132e2c6e299ecbd726e63dc
+SHA1: 949c15407d73564169c2e7c650192a2d4def6dec
+MD5sum: ad39ac13304c6be5902546a3bdf8ff84
+Description: simple argparse wrapper
+ Argh provides a very simple wrapper for argparse.
+ .
+ Argparse is a very powerful tool; argh just makes it easy to use.
+ .
+ Here’s a list of features that argh adds to argparse:
+ .
+  * mark a function as a CLI command and specify its arguments before
+    the parser is instantiated;
+  * nested commands made easy: no messing with subparsers;
+  * infer command name from function name;
+  * infer agrument type from the default value;
+  * infer argument action from the default value (for booleans);
+  * infer arguments from function signature;
+  * add an alias root command help for the --help argument;
+  * enable passing unwrapped arguments to certain functions instead of
+    an argparse.Namespace object.
+ .
+ Argh is fully compatible with argparse. You can mix argh-agnostic and
+ argh-aware code. Just keep in mind that dispatch() does some extra
+ work that a custom dispatcher may not do.
+
+Package: python-pgq3
+Source: skytools3
+Version: 3.1.3-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Dimitri Fontaine <dim@tapoueh.org>
+Installed-Size: 242
+Depends: python, python-support (>= 0.90.0), python-skytools3, python-psycopg2
+Homepage: http://wiki.postgresql.org/wiki/Skytools
+Priority: extra
+Section: python
+Filename: pool/main/s/skytools3/python-pgq3_3.1.3-1.pgdg12.4+1_i386.deb
+Size: 41954
+SHA256: f971cf3e05965a2bfbe0c7ae1e812c9bd9267c18a2289507782bc4f51962d34a
+SHA1: 0cda1748ac451d505258033b5b8ab1a6552b8973
+MD5sum: e2a6f1693ce1d2245ac7bf6f734a30fd
+Description: python framework for Skype tools for PostgreSQL replication
+ This is a package of tools in use in Skype for replication and failover.
+ It includes a generic queuing mechanism PgQ and utility library for Python
+ scripts.
+
+Package: python-skytools3
+Source: skytools3
+Version: 3.1.3-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Dimitri Fontaine <dim@tapoueh.org>
+Installed-Size: 406
+Depends: libc6 (>= 2.3.6-6~), python (<< 2.8), python (>= 2.7), python-support (>= 0.90.0)
+Suggests: python-psycopg2
+Homepage: http://wiki.postgresql.org/wiki/Skytools
+Priority: extra
+Section: python
+Filename: pool/main/s/skytools3/python-skytools3_3.1.3-1.pgdg12.4+1_i386.deb
+Size: 90516
+SHA256: 091be29a3fe5e490821cfa593535a1422290ee788ae84f34f01a0bcb27fd6839
+SHA1: 7660868f540bf92dc2d78fbe98eada219b985b41
+MD5sum: 6ce3da3b41b61ef8c44173fc67d554ff
+Description: python framework for Skype tools for PostgreSQL replication
+ This is a package of tools in use in Skype for replication and failover.
+ It contains the Skytools' python framework for scripting against a
+ PostgreSQL database, which is used by londiste, walmgr and PGQ.
+
+Package: repmgr
+Version: 2.0~beta1-2.pgdg12.4+1
+Architecture: i386
+Maintainer: Marco Nenciarini <mnencia@debian.org>
+Installed-Size: 222
+Depends: postgresql-common (>= 26), rsync, libc6 (>= 2.4), libpq5 (>= 9.0~)
+Homepage: http://www.repmgr.org/
+Priority: extra
+Section: database
+Filename: pool/main/r/repmgr/repmgr_2.0~beta1-2.pgdg12.4+1_i386.deb
+Size: 72856
+SHA256: 5674493665847cc9810d1d86ecb94d0f4ca53bf142e3a0e4c5bb0da4e040b029
+SHA1: 8c176edb509ca40eb91150ca8ae17aa6a2f7e86a
+MD5sum: 245c6fb6df807afa97c9c0a2df309e44
+Description: replication manager for PostgreSQL
+ Since version 9.0, PostgreSQL allow you to have replicated hot
+ standby servers which you can query and/or use for high availability.
+ While the main components of the feature are included with
+ PostgreSQL, the user is expected to manage the high availability
+ parts.
+ .
+ repmgr allows you to monitor and manage your replicated PostgreSQL
+ databases as a single cluster.
+
+Package: repmgr-dbg
+Source: repmgr
+Version: 2.0~beta1-2.pgdg12.4+1
+Architecture: i386
+Maintainer: Marco Nenciarini <mnencia@debian.org>
+Installed-Size: 298
+Depends: repmgr (= 2.0~beta1-2.pgdg12.4+1)
+Homepage: http://www.repmgr.org/
+Priority: extra
+Section: debug
+Filename: pool/main/r/repmgr/repmgr-dbg_2.0~beta1-2.pgdg12.4+1_i386.deb
+Size: 84592
+SHA256: d96463312fb52aba03eb65c9d51914fec4b6661e9f8e9896ab93382018f735cb
+SHA1: 48dbbf7aad89f761293d7a1d9964cd593a1488bd
+MD5sum: 79979ccc64c26eba3f8da28a49a3e049
+Description: debug symbols for repmgr
+ Since version 9.0, PostgreSQL allow you to have replicated hot
+ standby servers which you can query and/or use for high availability.
+ While the main components of the feature are included with
+ PostgreSQL, the user is expected to manage the high availability
+ parts.
+ .
+ repmgr allows you to monitor and manage your replicated PostgreSQL
+ databases as a single cluster.
+ .
+ This package contains debug symbols for repmgr.
+
+Package: skytools
+Version: 2.1.13-3.pgdg12.4+1~1355141224.git4212ad2.2
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 591
+Depends: python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8), python-psycopg2, skytools-modules
+Replaces: skytools-modules-8.4 (<< 2.1.12)
+Homepage: http://wiki.postgresql.org/wiki/Skytools
+Priority: optional
+Section: database
+Filename: pool/main/s/skytools/skytools_2.1.13-3.pgdg12.4+1~1355141224.git4212ad2.2_i386.deb
+Size: 148458
+SHA256: 2f305116c5a0d705bd1b5efcf12cfa420a3e032f61a004049d507003e9b966d1
+SHA1: 48f90fa9269659283a60195f8c6e0a75f5d64be4
+MD5sum: 158ff73d212e5869b8b49953a0f9343d
+Description: Database management tools for PostgreSQL
+ Skytools is a set of PostgreSQL tools for WAL shipping, queueing and
+ replication.
+ .
+ This package contains the Python parts of skytools:
+  - londiste: PostgreSQL replication engine written
+    Python, using PgQ as event transport
+  - pgqadm: PgQ queueing administration interface
+  - walmgr: Managing WAL-based replication
+
+Package: skytools-modules-8.3
+Source: skytools
+Version: 2.1.13-3.pgdg12.4+1~1355141224.git4212ad2.2
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 290
+Depends: libc6 (>= 2.4), postgresql-8.3
+Conflicts: postgresql-8.3-pgq3
+Replaces: postgresql-8.3-pgq3
+Provides: skytools-modules
+Homepage: http://wiki.postgresql.org/wiki/Skytools
+Priority: optional
+Section: database
+Filename: pool/main/s/skytools/skytools-modules-8.3_2.1.13-3.pgdg12.4+1~1355141224.git4212ad2.2_i386.deb
+Size: 56824
+SHA256: 4cf256144f2391cfa9ca757bcab53c609343a3845bed52c478aaac605beed132
+SHA1: af78402d5318227527a0a6e5c464515242742d0e
+MD5sum: 9bd49606100c77c7f9bfb559ab78731a
+Description: PostgreSQL 8.3 modules for skytools
+ Skytools is a set of PostgreSQL tools for WAL shipping, queueing and
+ replication.
+ .
+ This package contains the PostgreSQL modules for skytools:
+  - txid: Provides 8-byte transaction ids for external usage
+  - logtriga: Trigger function for table event logging in "partial SQL"
+    format, used in londsite for replication
+  - logutriga: Trigger function for table event logging in
+    urlencoded format
+  - londiste: Database parts of replication engine
+  - pgq: Generic queue in database
+
+Package: skytools-modules-8.4
+Source: skytools
+Version: 2.1.13-3.pgdg12.4+1~1355141224.git4212ad2.2
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 290
+Depends: libc6 (>= 2.4), postgresql-8.4
+Conflicts: postgresql-8.4-pgq3
+Replaces: postgresql-8.4-pgq3
+Provides: skytools-modules
+Homepage: http://wiki.postgresql.org/wiki/Skytools
+Priority: optional
+Section: database
+Filename: pool/main/s/skytools/skytools-modules-8.4_2.1.13-3.pgdg12.4+1~1355141224.git4212ad2.2_i386.deb
+Size: 56596
+SHA256: 7d8c4315047fca2235d0f04c9a3eb509b7c9b3f9b92afd995ec50de86e54d0a9
+SHA1: 57730667bb547e77895c05b07ff8f9d5a6bcd599
+MD5sum: 70217ee56da43d3f7d1f05a6b387ccd2
+Description: PostgreSQL 8.4 modules for skytools
+ Skytools is a set of PostgreSQL tools for WAL shipping, queueing and
+ replication.
+ .
+ This package contains the PostgreSQL modules for skytools:
+  - txid: Provides 8-byte transaction ids for external usage
+  - logtriga: Trigger function for table event logging in "partial SQL"
+    format, used in londsite for replication
+  - logutriga: Trigger function for table event logging in
+    urlencoded format
+  - londiste: Database parts of replication engine
+  - pgq: Generic queue in database
+
+Package: skytools-modules-9.0
+Source: skytools
+Version: 2.1.13-3.pgdg12.4+1~1355141224.git4212ad2.2
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 289
+Depends: libc6 (>= 2.4), postgresql-9.0
+Conflicts: postgresql-9.0-pgq3
+Replaces: postgresql-9.0-pgq3
+Provides: skytools-modules
+Homepage: http://wiki.postgresql.org/wiki/Skytools
+Priority: optional
+Section: database
+Filename: pool/main/s/skytools/skytools-modules-9.0_2.1.13-3.pgdg12.4+1~1355141224.git4212ad2.2_i386.deb
+Size: 56398
+SHA256: 8504a17b1e9aebc60b089a94804bdbb1932367f5e3492053662287725eaa526d
+SHA1: be0de28838affdde0855a441924399c423175143
+MD5sum: 8a6705a39ede6eade10a58686d7c540d
+Description: PostgreSQL 9.0 modules for skytools
+ Skytools is a set of PostgreSQL tools for WAL shipping, queueing and
+ replication.
+ .
+ This package contains the PostgreSQL modules for skytools:
+  - txid: Provides 8-byte transaction ids for external usage
+  - logtriga: Trigger function for table event logging in "partial SQL"
+    format, used in londsite for replication
+  - logutriga: Trigger function for table event logging in
+    urlencoded format
+  - londiste: Database parts of replication engine
+  - pgq: Generic queue in database
+
+Package: skytools-modules-9.1
+Source: skytools
+Version: 2.1.13-3.pgdg12.4+1~1355141224.git4212ad2.2
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 289
+Depends: libc6 (>= 2.4), postgresql-9.1
+Conflicts: postgresql-9.1-pgq3
+Replaces: postgresql-9.1-pgq3
+Provides: skytools-modules
+Homepage: http://wiki.postgresql.org/wiki/Skytools
+Priority: optional
+Section: database
+Filename: pool/main/s/skytools/skytools-modules-9.1_2.1.13-3.pgdg12.4+1~1355141224.git4212ad2.2_i386.deb
+Size: 56366
+SHA256: 88de9bbffce1aa920460405900301d792518ff2e8db43df3aaacdc28e0725f6f
+SHA1: dd7bc6493aa4c66d46116ae2c3668062590f595b
+MD5sum: bfe6f219a4a01ef9397caf8254433c0c
+Description: PostgreSQL 9.1 modules for skytools
+ Skytools is a set of PostgreSQL tools for WAL shipping, queueing and
+ replication.
+ .
+ This package contains the PostgreSQL modules for skytools:
+  - txid: Provides 8-byte transaction ids for external usage
+  - logtriga: Trigger function for table event logging in "partial SQL"
+    format, used in londsite for replication
+  - logutriga: Trigger function for table event logging in
+    urlencoded format
+  - londiste: Database parts of replication engine
+  - pgq: Generic queue in database
+
+Package: skytools-modules-9.2
+Source: skytools
+Version: 2.1.13-3.pgdg12.4+1~1355141224.git4212ad2.2
+Architecture: i386
+Maintainer: Christoph Berg <myon@debian.org>
+Installed-Size: 289
+Depends: libc6 (>= 2.4), postgresql-9.2
+Conflicts: postgresql-9.2-pgq3
+Replaces: postgresql-9.2-pgq3
+Provides: skytools-modules
+Homepage: http://wiki.postgresql.org/wiki/Skytools
+Priority: optional
+Section: database
+Filename: pool/main/s/skytools/skytools-modules-9.2_2.1.13-3.pgdg12.4+1~1355141224.git4212ad2.2_i386.deb
+Size: 56366
+SHA256: e26e7c9f47e23ddffa31cd644e1db15c77c6acdd9a6446780c97c0d523f38b35
+SHA1: 4d9f15ae8c01092b8eab44c44f95bb9e7cf3f019
+MD5sum: 0c29652ac71071346a3bd18a07dfb788
+Description: PostgreSQL 9.2 modules for skytools
+ Skytools is a set of PostgreSQL tools for WAL shipping, queueing and
+ replication.
+ .
+ This package contains the PostgreSQL modules for skytools:
+  - txid: Provides 8-byte transaction ids for external usage
+  - logtriga: Trigger function for table event logging in "partial SQL"
+    format, used in londsite for replication
+  - logutriga: Trigger function for table event logging in
+    urlencoded format
+  - londiste: Database parts of replication engine
+  - pgq: Generic queue in database
+
+Package: skytools3
+Version: 3.1.3-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Dimitri Fontaine <dim@tapoueh.org>
+Installed-Size: 1273
+Depends: python, python-support (>= 0.90.0), python-pgq3, adduser
+Homepage: http://wiki.postgresql.org/wiki/Skytools
+Priority: extra
+Section: database
+Filename: pool/main/s/skytools3/skytools3_3.1.3-1.pgdg12.4+1_i386.deb
+Size: 233246
+SHA256: 9a0d756fcaae09dc2bce50950b8805712c8dec9eec210adb5ef8515f49288997
+SHA1: b6848da853327a2be35301927f26e3ad5c1b2a1e
+MD5sum: 3513adf6c65a183791466ab5706c0f76
+Description: Skype tools for PostgreSQL replication, londiste and PGQ
+ This is a package of tools in use in Skype for replication and failover. It
+ contains the Londiste and PGQ services and scripts to run.
+
+Package: skytools3-ticker
+Source: skytools3
+Version: 3.1.3-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Dimitri Fontaine <dim@tapoueh.org>
+Installed-Size: 101
+Depends: libc6 (>= 2.7), libpq5
+Homepage: http://wiki.postgresql.org/wiki/Skytools
+Priority: extra
+Section: database
+Filename: pool/main/s/skytools3/skytools3-ticker_3.1.3-1.pgdg12.4+1_i386.deb
+Size: 33966
+SHA256: 6538416aeb1874e7cad575497701de7a6483364a5329531dc5a7f1f0ac970589
+SHA1: 5230340c172e99bbaea3cc313b175a16a36288a9
+MD5sum: 2227f4830871deff20a809fe7b6a51f0
+Description: Skype tools for PostgreSQL replication, londiste and PGQ
+ This is the PGQ ticker used by Skype replication, londiste. It consists of
+ PL/pgsql, and C code in database, with Python framework on top of it.  It
+ is based on snapshot based event handling ideas from Slony-I, written for
+ general usage.
+
+Package: skytools3-walmgr
+Source: skytools3
+Version: 3.1.3-1.pgdg12.4+1
+Architecture: i386
+Maintainer: Dimitri Fontaine <dim@tapoueh.org>
+Installed-Size: 181
+Depends: python, python-skytools3, postgresql
+Enhances: postgresql-8.4, postgresql-9.0, postgresql-9.1
+Homepage: http://wiki.postgresql.org/wiki/Skytools
+Priority: extra
+Section: database
+Filename: pool/main/s/skytools3/skytools3-walmgr_3.1.3-1.pgdg12.4+1_i386.deb
+Size: 44104
+SHA256: b4cc6331109d8bb794a4233c165ad37dad061f43ac7574f275a1b217da4121de
+SHA1: 3d5efb72841d12034e1edaef31989f4944f85e05
+MD5sum: babcf7357d05a152c4f3df40daef2391
+Description: Skype tools for PostgreSQL replication and failover
+ This is a package of tools in use in Skype for replication and failover.
+ It's the WAL Shipping part of it (binary cluster-wide replication).
+

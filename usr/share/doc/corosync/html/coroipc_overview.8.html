@@ -1,0 +1,289 @@
+<!-- Creator     : groff version 1.21 -->
+<!-- CreationDate: Mon Dec 12 13:48:49 2011 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>COROIPC_OVERVIEW</title>
+
+</head>
+<body>
+
+<h1 align="center">COROIPC_OVERVIEW</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#OVERVIEW">OVERVIEW</a><br>
+<a href="#Description of the libraries">Description of the libraries</a><br>
+<a href="#Initializing the coroipcs library">Initializing the coroipcs library</a><br>
+<a href="#Communicating with the coroipcc clients">Communicating with the coroipcc clients</a><br>
+<a href="#The abstracted poll system">The abstracted poll system</a><br>
+<a href="#Initializing the coroipcc library">Initializing the coroipcc library</a><br>
+<a href="#Lifecycle of an IPC connection.">Lifecycle of an IPC connection.</a><br>
+<a href="#Synchronous communication">Synchronous communication</a><br>
+<a href="#Asynchronous communication">Asynchronous communication</a><br>
+<a href="#Performance">Performance</a><br>
+<a href="#Security">Security</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em">coroipc_overview
+&minus; Overview of coroipc libraries</p>
+
+<h2>OVERVIEW
+<a name="OVERVIEW"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The coroipcs
+and coroipcc libraries provide a generically reusable very
+high performance shared memory IPC sytem for client and
+service applications. It supports many features
+including:</p>
+
+<p style="margin-left:11%; margin-top: 1em">65536 user
+services and 65536 command ids per service.</p>
+
+<p style="margin-left:11%; margin-top: 1em">Shared memory
+implementation for very high performance.</p>
+
+<p style="margin-left:11%; margin-top: 1em">A synchronous
+request/response channel and asynchronous response channel
+per ipc connection.</p>
+
+<p style="margin-left:11%; margin-top: 1em">User defined
+private data per IPC connection.</p>
+
+<p style="margin-left:11%; margin-top: 1em">Ability to call
+a function per service on ipc connection and
+disconnection.</p>
+
+<p style="margin-left:11%; margin-top: 1em">Authenticated
+IPC connection with ability for developer to define which
+UIDs and GIDs are valid at connection time.</p>
+
+<p style="margin-left:11%; margin-top: 1em">Fully
+abstracted poll system so that any poll library may be
+used.</p>
+
+<p style="margin-left:11%; margin-top: 1em">User defined
+selector for determining the proper function to call per
+service and id.</p>
+
+<h2>Description of the libraries
+<a name="Description of the libraries"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">There are two
+shared libraries available for developing IPC client
+applications.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The first
+library is coroipcs.so which is responsible for the server
+implementation. This library should be linked with the
+server and then initialized with coroipcs_init(3).</p>
+
+<p style="margin-left:11%; margin-top: 1em">Once the
+library is initialized, it will provide service to
+coroipcc.so library users.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The second
+library is coroipcc.so which is responsible for the client
+implementation. This library should be linked with the
+client and requires no initialization. This library provides
+communication functions for sending and receiving
+synchronous requests, and also reading asynchronous message
+requests from the server.</p>
+
+<h2>Initializing the coroipcs library
+<a name="Initializing the coroipcs library"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">To use the
+coroipcs library, the developer creates a
+coroipcs_init_state structure and populates it with function
+names. The functions do various operations described in
+coroipcs_init(3) man page. Not all operations must be
+specified. If some are missing, the corosync ipcs library
+will automatically populate the structure with internal
+versions which provide basic functionality.</p>
+
+<h2>Communicating with the coroipcc clients
+<a name="Communicating with the coroipcc clients"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Every ipc
+connection is represented by a void * pointer which uniquely
+identifies the data set for the IPC connection. Each IPC
+connection also contains user defined private data. To
+obtain this private data pointer, the function
+coroipcs_private_data_get(3) function can be called.</p>
+
+<p style="margin-left:11%; margin-top: 1em">There are two
+channels for communication. The primary channel is the
+synchronous request/response channel. Another channel is
+available for out of band asynchronous responses from the
+server.</p>
+
+<p style="margin-left:11%; margin-top: 1em">To send a
+response on the syncronous channel,
+coroipcs_response_send(3) or coroipcs_response_iov_send(3)
+should be used. To send a message on the asynchronous
+channel, coroipcs_dispatch_send(3) or
+coroipc_dispatch_iov_send(3) should be used.</p>
+
+<h2>The abstracted poll system
+<a name="The abstracted poll system"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">There are many
+different poll systems in use in applications. They are
+usually intricately tied up in the implementation of the
+application and each provide different APIs and
+functionality. To manage this, the coroipcs library provides
+callbacks in coroipcs_init(3) which should be called when a
+new connection should be added for accept system calls or to
+dispatch messages.</p>
+
+<p style="margin-left:11%; margin-top: 1em">These callbacks
+add the relevant fd to the application&rsquo;s poll system.
+When the application poll system triggers the callback
+registered by the user defined poll adding functions, they
+then call either coroipc_handler_accept(3) or
+coroipc_handler_dispatch(3).</p>
+
+<h2>Initializing the coroipcc library
+<a name="Initializing the coroipcc library"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">No
+initialization is required in the coroipcc library.</p>
+
+<h2>Lifecycle of an IPC connection.
+<a name="Lifecycle of an IPC connection."></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">An IPC
+connection is made to the server with
+coroipcc_service_connect(3). This function connects to the
+server and requests channels be created for communication.
+To disconnect, the client either exits or executes the
+function coroipcc_service_disconnect(3).</p>
+
+<h2>Synchronous communication
+<a name="Synchronous communication"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">There are two
+functions for sending a request and receiving a response.
+The first function coroipcc_msg_send_reply_receive(3) sends
+an iovector request and receives a response. This function
+copies the response into the response buffer. the second
+function coroipcc_msg_end_reply_receive_in_buf(3) does not
+copy the response buffer and allows for zero-copy reading of
+the response when the lifetime of the response buffer is
+known.</p>
+
+<h2>Asynchronous communication
+<a name="Asynchronous communication"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The
+coroipcc_dispatch_recv(3) function receives an out-of-band
+asyncronous message. Unlike the synchronous communication
+channel, the asynchronous messages are queued and can
+provide very high out-of-band performance.</p>
+
+<p style="margin-left:11%; margin-top: 1em">To determine
+when to call coroipcc_dispatch_recv(3) the
+corosync_fd_get(3) call is used to obtain a file descriptor
+used in the poll(2) or select(2) system calls.</p>
+
+<p style="margin-left:11%; margin-top: 1em">Finally the
+current dispatch flow control state can be obtained with
+coroipcc_flow_control_get(3).</p>
+
+<h2>Performance
+<a name="Performance"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The ipc system
+is tuned for very high performance while also being
+comletely abstracted from the underlying poll mechanism and
+any internalisms required by the server. The ipc system
+achieves such high performance by using shared memory as
+oppossed to slower techniques such as UNIX_PF sockets.</p>
+
+<p style="margin-left:11%; margin-top: 1em">We intend to do
+further development to allow syncronous requests to return
+messages in an asyncronous way to avoid blocking involved in
+the syncronous request/response model used today for higher
+throughput in some use cases.</p>
+
+<h2>Security
+<a name="Security"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The ipc system
+uses default operating system security mechanics to ensure
+ipc connections are validated. A callback used with
+coroipcs_init(3) is called for every new ipc connection with
+the parameters of UID and GID. The callback then determines
+if the UID and GID are authenticated for communication. More
+about this topic can be viewed in the coroipcs_init(3) man
+page.</p>
+
+<h2>SEE ALSO
+<a name="SEE ALSO"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>coroipcs_ipc_init</b>(3),
+<b>coroipcs_ipc_exit</b>(3),
+<b>coroipcs_private_data_get</b>(3),
+<b>coroipcs_respone_send</b>(3),
+<b>coroipcs_response_iov_send</b>(3),
+<b>coroipcs_dispatch_send</b>(3),
+<b>coroipcs_dispatch_iov_send</b>(3),
+<b>coroipcs_refcount_inc</b>(3),
+<b>coroipcs_refcount_dec</b>(3),
+<b>coroipcs_handler_accept</b>(3),
+<b>coroipcs_handler_dispatch</b>(3),</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>cooripcc_service_connect</b>(3),
+<b>coroipcc_service_disconnect</b>(3),
+<b>coroipcc_msg_send_reply_receive</b>(3),
+<b>coroipcc_msg_send_reply_receive_in_buf</b>(3),
+<b>coroipcc_dispatch_recv</b>(3), <b>coroipcc_fd_get(3),
+coroipcc_dispatch_flow_control_get</b>(3)</p>
+<hr>
+</body>
+</html>

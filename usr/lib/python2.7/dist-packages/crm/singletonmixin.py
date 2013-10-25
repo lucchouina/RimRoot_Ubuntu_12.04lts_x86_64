@@ -1,0 +1,1 @@
+../../../../share/pyshared/crm/singletonmixin.py

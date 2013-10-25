@@ -1,0 +1,276 @@
+<!-- Creator     : groff version 1.21 -->
+<!-- CreationDate: Mon Dec 12 13:48:49 2011 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>LOGSYS_OVERVIEW</title>
+
+</head>
+<body>
+
+<h1 align="center">LOGSYS_OVERVIEW</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#OVERVIEW">OVERVIEW</a><br>
+<a href="#Declaration of the System logger">Declaration of the System logger</a><br>
+<a href="#Declaration of subsystems">Declaration of subsystems</a><br>
+<a href="#Logging Messages">Logging Messages</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em">logsys_overview
+&minus; Logsys Library Overview</p>
+
+<h2>OVERVIEW
+<a name="OVERVIEW"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The logsys
+library provides a generically usable logging and tracing
+system for use by applications. It supports many features
+including:</p>
+
+<p style="margin-left:11%; margin-top: 1em">Configurable
+subsystem logging or single system logging</p>
+
+<p style="margin-left:11%; margin-top: 1em">Threaded
+non-blocking logging of log output data for better
+non-blocking performance</p>
+
+<p style="margin-left:11%; margin-top: 1em">Support for 8
+tracing levels and tracing the entering and leaving of
+functions</p>
+
+<p style="margin-left:11%; margin-top: 1em">Declaration of
+logging system or subsystem without calling any
+functions</p>
+
+<p style="margin-left:11%; margin-top: 1em">Dynamic
+reconfiguration of the logging system parameters</p>
+
+<p style="margin-left:11%; margin-top: 1em">Logging to
+syslog, file, stderr.</p>
+
+<h2>Declaration of the System logger
+<a name="Declaration of the System logger"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The logsys
+library is initially configured by including logsys.h and
+declaring a logger. Once the logger is declared, optional
+subsystem loggers can be declared in every file.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The definition
+LOGSYS_DECLARE_SYSTEM is placed after the include section of
+one C file in the application. This declaration creates a
+constructor function which will be called automatically
+before main() is executed. This technique avoids the need
+for calling any setup functions in short applications that
+don&rsquo;t require it and enables full logging capabilities
+before any application code is executed.</p>
+
+<p style="margin-left:11%; margin-top: 1em">#define
+LOGSYS_DECLARE_SYSTEM (name, mode, debug, file,
+file_priority, syslog_facility, syslog_priority, format,
+fltsize)</p>
+
+<p style="margin-left:11%; margin-top: 1em">The name
+parameter is the name of the application or system.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The mode
+parameter is the logging mode of the system. The following
+modes can be configured by logically ORing these flags:</p>
+
+
+<p style="margin-left:11%; margin-top: 1em">LOGSYS_MODE_OUTPUT_FILE:
+Output all log data to the file parameter of this
+declaration</p>
+
+
+<p style="margin-left:11%; margin-top: 1em">LOGSYS_MODE_OUTPUT_STDERR:
+Output all log data to the stderr descriptor</p>
+
+
+<p style="margin-left:11%; margin-top: 1em">LOGSYS_MODE_OUTPUT_SYSLOG:
+Output all log data to syslog using a non-blocking
+thread</p>
+
+
+<p style="margin-left:11%; margin-top: 1em">LOGSYS_MODE_FORK:
+This flags tells logsys to queue all data untill the
+application has forked. The application is then responsible
+to call logsys_fork_completed to flush the queue and start
+logging.</p>
+
+
+<p style="margin-left:11%; margin-top: 1em">LOGSYS_MODE_THREADED:
+Starts a separate thread to handle non-blocking logging
+operations. If this flag is not specified, the logging
+operations are blocking.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The debug
+parameter, if enabled, turns off all messages priority
+filtering, recording everything everywhere.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The file
+parameter specifies the filename that should be used to log
+messages. This parameter may be NULL and no log file will be
+created.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The
+file_priority parameter specifies the message priority that
+should be logged to file.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The
+syslog_facility parameter is the syslog facility that should
+be used when logging messages.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The
+syslog_priority, similar to file_priority, specifies the
+message priority that should be logged to syslog.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The format
+parameter allows to set custom output format. Set to NULL to
+use built-in default.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The fltsize
+parameter specifies the flight recorder buffer size in
+bytes. The requested value is increased by the size of 2
+unsigned ints and rounded to the next PAGE_SIZE.</p>
+
+<p style="margin-left:11%; margin-top: 1em">An example
+declaration would be:</p>
+
+<p style="margin-left:11%; margin-top: 1em">#include
+&lt;corosync/logsys.h&gt;</p>
+
+
+<p style="margin-left:11%; margin-top: 1em">LOGSYS_DECLARE_SYSTEM
+(&quot;test&quot;, /* name */ <br>
+LOGSYS_MODE_OUTPUT_STDERR | LOGSYS_MODE_THREADED, /* mode */
+<br>
+0, /* debug */ <br>
+NULL, /* logfile path */ <br>
+LOGSYS_LEVEL_INFO, /* logfile_priority */ <br>
+LOG_DAEMON, /* syslog facility */ <br>
+LOGSYS_LEVEL_INFO, /* syslog level */ <br>
+NULL, /* use default format */ <br>
+1000000); /* flight recorder size */</p>
+
+<h2>Declaration of subsystems
+<a name="Declaration of subsystems"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The logsys
+library supports the logging of information to one main
+system or subsystem. This is specified in each individual
+object C file in the system and it is entirely optional.</p>
+
+<p style="margin-left:11%; margin-top: 1em">An example:</p>
+
+
+<p style="margin-left:11%; margin-top: 1em">LOGSYS_DECLARE_SUBSYS
+(&quot;subsystest&quot;);</p>
+
+<p style="margin-left:11%; margin-top: 1em">It is possible
+to use the same subsystem name in separate object files. In
+this case, the individual logging parameters for those
+subsystem identifier will be used.</p>
+
+<p style="margin-left:11%; margin-top: 1em">A newly created
+subsystem inherits the system configuration at the time of
+creation.</p>
+
+<p style="margin-left:11%; margin-top: 1em">It is possible
+to override every configuration option on a subsystem base
+throught the configuration API.</p>
+
+<h2>Logging Messages
+<a name="Logging Messages"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The definition
+log_printf is used to log information to the log. It works
+in a similiar fashion to printf, except it has a first
+parameter of level which may be the following:
+LOGSYS_LEVEL_EMERG LOGSYS_LEVEL_ALERT LOGSYS_LEVEL_CRIT
+LOGSYS_LEVEL_ERR LOGSYS_LEVEL_WARNING LOGSYS_LEVEL_NOTICE
+LOGSYS_LEVEL_INFO LOGSYS_LEVEL_DEBUG</p>
+
+<p style="margin-left:11%; margin-top: 1em">An example of
+using log_printf would be</p>
+
+<p style="margin-left:11%; margin-top: 1em">log_printf
+(LOGSYS_LEVEL_EMERG, &quot;This is an emergency %s value
+%d0, string, value);</p>
+
+<p style="margin-left:11%; margin-top: 1em">Tracing of
+functions can be done using ENTER(), LEAVE();</p>
+
+<p style="margin-left:11%; margin-top: 1em">An example of
+using ENTER is void function (char *name) { ENTER();
+LEAVE(); }</p>
+
+<p style="margin-left:11%; margin-top: 1em">Individual
+tracing levels are supported through the macros
+TRACE1(format, args) TRACE2(format, args) TRACE8(format,
+args)</p>
+
+<p style="margin-left:11%; margin-top: 1em">An example of
+using TRACE is</p>
+
+<p style="margin-left:11%; margin-top: 1em">char *name =
+&quot;test&quot;; TRACE7 (&quot;This is a trace 7 log with
+name %s0, name);</p>
+
+<p style="margin-left:11%; margin-top: 1em">Note that
+ENTER/LEAVE/TRACE* calls are recorded only in the flight
+recorder.</p>
+
+<h2>SEE ALSO
+<a name="SEE ALSO"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>logsys_fork_completed</b>(3),
+<b>logsys_atexit</b>(3), <b>logsys_log_rec_store</b>(3),
+<b>logsys_format_set</b>(3), <b>logsys_format_get</b>(3),
+<b>logsys_config_mode_set</b>(3),
+<b>logsys_config_file_set</b>(3),
+<b>logsys_config_syslog_facility_set</b>(3),
+<b>logsys_config_syslog_facility_get</b>(3),
+<b>logsys_config_mode_set</b>(3),
+<b>logsys_config_mode_get</b>(3),
+<b>logsys_config_file_set</b>(3),
+<b>logsys_config_logfile_priority_set</b>(3),
+<b>logsys_config_debug_set</b>(3),
+<b>logsys_facility_id_get</b>(3),
+<b>logsys_facility_name_get</b>(3),
+<b>logsys_priority_id_get</b>(3),
+<b>logsys_priority_name_get</b>(3),</p>
+<hr>
+</body>
+</html>

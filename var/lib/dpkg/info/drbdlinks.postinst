@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installinit
+if [ -x "/etc/init.d/drbdlinksclean" ]; then
+	update-rc.d drbdlinksclean defaults >/dev/null
+	invoke-rc.d drbdlinksclean start || exit $?
+fi
+# End automatically added section

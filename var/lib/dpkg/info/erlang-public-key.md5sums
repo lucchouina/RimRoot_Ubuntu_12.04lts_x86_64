@@ -1,0 +1,9 @@
+5c52d457c3d70f98d55f1e86ae95ec95  usr/lib/erlang/lib/public_key-0.13/ebin/OTP-PUB-KEY.beam
+29965162c62e03f7121e00ea4bf3876d  usr/lib/erlang/lib/public_key-0.13/ebin/pubkey_cert.beam
+eea47b2b57299b419fa7871533958f0e  usr/lib/erlang/lib/public_key-0.13/ebin/pubkey_cert_records.beam
+27d1ce4e94b8f2a69fd88ddd341cf64a  usr/lib/erlang/lib/public_key-0.13/ebin/pubkey_pem.beam
+55d3c3fcccef8c44f2a197495b3da987  usr/lib/erlang/lib/public_key-0.13/ebin/pubkey_ssh.beam
+31a877140ebc8b1f59266306100d2638  usr/lib/erlang/lib/public_key-0.13/ebin/public_key.app
+c2b49098bab029e7f5c9b4b2477d6a61  usr/lib/erlang/lib/public_key-0.13/ebin/public_key.appup
+b4e916ccb2c69db4fa69fd727f12f733  usr/lib/erlang/lib/public_key-0.13/ebin/public_key.beam
+588c39c282e1da3de1fcd0f40c685f25  usr/share/doc/erlang-public-key/copyright

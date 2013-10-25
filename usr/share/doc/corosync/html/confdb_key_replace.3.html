@@ -1,0 +1,114 @@
+<!-- Creator     : groff version 1.21 -->
+<!-- CreationDate: Mon Dec 12 13:48:49 2011 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>CONFDB_KEY_REPLACE</title>
+
+</head>
+<body>
+
+<h1 align="center">CONFDB_KEY_REPLACE</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#RETURN VALUE">RETURN VALUE</a><br>
+<a href="#ERRORS">ERRORS</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em">confdb_key_replace
+&minus; Replace a key/value pair from the Configuration
+Database</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>#include
+&lt;corosync/confdb.h&gt;</b></p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>confdb_error_t
+confdb_key_replace(confdb_handle_t</b> <i>handle</i><b>,
+unsigned int</b> <i>parent_object_handle</i><b>, void</b>
+<i>*key_name</i><b>, int</b> <i>key_name_len</i> <b>,
+void</b> <i>*old_value</i> <b>, int</b> <i>old_value_len</i>
+<b>, void</b> <i>*new_value</i> <b>, int</b>
+<i>new_value_len</i> <b>);</b></p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The
+<b>confdb_key_replace</b> function replaces the value of a
+key in the configuration database. <br>
+You must specify both the key name and its value, this is
+because keys are not unique in the database, so a value is
+not enough to uniqely identify a key belonging to a
+particular parent object. Strictly, even give the key name
+and value is not enough to uniquely identify a key, If there
+are two (or more) keys with the same name and value, only
+the first will have its value changed .</p>
+
+<h2>RETURN VALUE
+<a name="RETURN VALUE"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">This call
+returns the CONFDB_OK value if successful, otherwise an
+error is returned.</p>
+
+<h2>ERRORS
+<a name="ERRORS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The errors are
+undocumented.</p>
+
+<h2>SEE ALSO
+<a name="SEE ALSO"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>confdb_overview</b>(8),
+<b>confdb_initialize</b>(3), <b>confdb_finalize</b>(3),
+<b>confdb_dispatch</b>(3), <b>confdb_object_create</b>(3),
+<b>confdb_object_destroy</b>(3),
+<b>confdb_object_parent_get</b>(3),
+<b>confdb_key_create</b>(3), <b>confdb_key_delete</b>(3),
+<b>confdb_key_get</b>(3), <b>confdb_key_replace</b>(3),
+<b>confdb_object_find_start</b>(3),
+<b>confdb_object_find</b>(3),
+<b>confdb_object_iter_start</b>(3),
+<b>confdb_object_iter</b>(3),
+<b>confdb_key_iter_start</b>(3),
+<b>confdb_key_iter</b>(3),</p>
+<hr>
+</body>
+</html>

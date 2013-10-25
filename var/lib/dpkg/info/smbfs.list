@@ -1,0 +1,15 @@
+/.
+/sbin
+/sbin/mount.smbfs
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/smbfs
+/usr/share/doc/smbfs/copyright
+/usr/share/man
+/usr/share/man/man8
+/usr/bin
+/usr/share/doc/smbfs/changelog.Debian.gz
+/usr/share/man/man8/smbmount.8.gz
+/usr/share/man/man8/mount.smbfs.8.gz
+/usr/bin/smbmount

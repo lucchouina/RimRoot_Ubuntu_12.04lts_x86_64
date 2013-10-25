@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/man
+/usr/share/man/man8
+/usr/share/man/man8/iscsiadm.8.gz
+/usr/share/doc
+/usr/share/doc/open-iscsi-utils
+/usr/share/doc/open-iscsi-utils/copyright
+/usr/share/doc/open-iscsi-utils/changelog.Debian.gz
+/sbin
+/sbin/iscsiadm

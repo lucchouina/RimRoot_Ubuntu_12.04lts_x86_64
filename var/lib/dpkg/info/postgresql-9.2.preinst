@@ -1,0 +1,15 @@
+#!/bin/sh
+set -e
+
+# DB format changed between beta 1 and 2
+if [ "$1" = "upgrade" ] || [ "$1" = "install" ] && \
+	dpkg --compare-versions "$2" lt-nl "9.2~beta2"; then
+    if pg_lsclusters -h | grep -q '^9.2'; then
+	echo "ERROR: The database format changed between beta 1 and 2. Please dump your 9.2 clusters first and remove them, before attempting to upgrade the package." >&2
+	exit 1
+    fi
+fi
+
+
+
+exit 0

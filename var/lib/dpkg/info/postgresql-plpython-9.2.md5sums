@@ -1,0 +1,10 @@
+11e57ff75ee03dbc4c7f7796602705f6  usr/lib/postgresql/9.2/lib/plpython2.so
+2f11992b32dbb63a20a34fd266c6d0b5  usr/share/doc/postgresql-plpython-9.2/changelog.Debian.gz
+17ae2cfca31042c23ef0b8b78a6d79f8  usr/share/doc/postgresql-plpython-9.2/changelog.gz
+c62ee74874b1391c8d08243dc442658d  usr/share/doc/postgresql-plpython-9.2/copyright
+06a5a8e87f714391efa0652b79738ab4  usr/share/postgresql/9.2/extension/plpython2u--1.0.sql
+3b3610669af31fca3a2f45ebb2085e8a  usr/share/postgresql/9.2/extension/plpython2u--unpackaged--1.0.sql
+52d9bbe673f46c84940674ce5d1fbe2a  usr/share/postgresql/9.2/extension/plpython2u.control
+2bed402a9e73c487fbcd1806c2272cd0  usr/share/postgresql/9.2/extension/plpythonu--1.0.sql
+869c7a8f09bc12d2967cd6dca7dfacca  usr/share/postgresql/9.2/extension/plpythonu--unpackaged--1.0.sql
+6a776bfba666bdb9810951b938d5a80b  usr/share/postgresql/9.2/extension/plpythonu.control

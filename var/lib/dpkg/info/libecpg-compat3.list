@@ -1,0 +1,10 @@
+/.
+/usr
+/usr/lib
+/usr/lib/libecpg_compat.so.3.3
+/usr/share
+/usr/share/doc
+/usr/share/doc/libecpg-compat3
+/usr/share/doc/libecpg-compat3/copyright
+/usr/lib/libecpg_compat.so.3
+/usr/share/doc/libecpg-compat3/changelog.Debian.gz

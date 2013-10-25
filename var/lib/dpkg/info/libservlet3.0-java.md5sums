@@ -1,0 +1,11 @@
+820bb27f35c81f63f4ecc39195a450b1  usr/share/doc/libservlet3.0-java/changelog.Debian.gz
+e29d81de58a16b57e8f4f08693cca6f3  usr/share/doc/libservlet3.0-java/copyright
+0d53eb0e7ea573106ea86c1c70c0d55e  usr/share/java/tomcat-el-api-2.2.jar
+7f102113f0c35da285a82ffd3561c277  usr/share/java/tomcat-jsp-api-2.2.jar
+a0f5d68314f67de995d697bfba62b5a2  usr/share/java/tomcat-servlet-api-3.0.jar
+719398e93238cf3cc5605abc50a77875  usr/share/maven-repo/org/apache/tomcat/tomcat-el-api/2.2/tomcat-el-api-2.2.pom
+6c8d98cbc43928c455dc758ab934f449  usr/share/maven-repo/org/apache/tomcat/tomcat-el-api/debian/tomcat-el-api-debian.pom
+417e97f583c59486cec42fba52032a49  usr/share/maven-repo/org/apache/tomcat/tomcat-jsp-api/2.2/tomcat-jsp-api-2.2.pom
+b1b1af45b1384b25ff7e281c60bd90d0  usr/share/maven-repo/org/apache/tomcat/tomcat-jsp-api/debian/tomcat-jsp-api-debian.pom
+779cb08171ac2a97a2ba6dfc97b986ae  usr/share/maven-repo/org/apache/tomcat/tomcat-servlet-api/3.0/tomcat-servlet-api-3.0.pom
+d02289cb19109c5c5c3199b273b84c35  usr/share/maven-repo/org/apache/tomcat/tomcat-servlet-api/debian/tomcat-servlet-api-debian.pom

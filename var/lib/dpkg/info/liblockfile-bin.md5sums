@@ -1,0 +1,5 @@
+ac284a60d48eaa4bc811cddc377fa341  usr/share/doc/liblockfile-bin/copyright
+a29c5af2616a75c3ed322259b9f1e906  usr/share/doc/liblockfile-bin/changelog.Debian.gz
+1e0f712d8467a4ce920c5a5b040c65d3  usr/share/lintian/overrides/liblockfile-bin
+771b6803f31355d5a0a5cb833fc7727b  usr/share/man/man1/dotlockfile.1.gz
+6801b18817e0f08225b42d85849a1c9c  usr/bin/dotlockfile

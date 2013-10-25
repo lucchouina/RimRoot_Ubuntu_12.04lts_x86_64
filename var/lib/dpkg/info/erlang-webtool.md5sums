@@ -1,0 +1,11 @@
+524ca863507a13f240752db927814825  usr/lib/erlang/lib/webtool-0.8.9/ebin/webtool.app
+7ff995d6376421125f807f857c833bea  usr/lib/erlang/lib/webtool-0.8.9/ebin/webtool.appup
+46c3b40d1530053d84716723c00dd9e9  usr/lib/erlang/lib/webtool-0.8.9/ebin/webtool.beam
+b871d17ef6ba107f565df98cadd028a0  usr/lib/erlang/lib/webtool-0.8.9/ebin/webtool_sup.beam
+2f438efb196b25945a35dc6900e13d83  usr/lib/erlang/lib/webtool-0.8.9/priv/bin/start_webtool
+8a470acff00d49b8f76fd3b0559076c1  usr/lib/erlang/lib/webtool-0.8.9/priv/root/conf/mime.types
+b1e4b0e6abbba17d0ad5e8151a0c2af1  usr/lib/erlang/lib/webtool-0.8.9/priv/root/doc/index.html
+1166578dadde3156214c716847f2997b  usr/lib/erlang/lib/webtool-0.8.9/priv/root/doc/start_info.html
+eacbd56a22e885cf09dfe564113045bf  usr/lib/erlang/lib/webtool-0.8.9/priv/root/doc/tool_management.html
+588c39c282e1da3de1fcd0f40c685f25  usr/share/doc/erlang-webtool/copyright
+0ebf7bcf0f1bbd1c8e0d4188471232e2  usr/share/man/man1/start_webtool.1.gz

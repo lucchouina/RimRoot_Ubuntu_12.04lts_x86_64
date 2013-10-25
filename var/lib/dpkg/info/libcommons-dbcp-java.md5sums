@@ -1,0 +1,5 @@
+ff42ef22471fa944f9f06e2382d4ccf0  usr/share/doc/libcommons-dbcp-java/changelog.Debian.gz
+7af8b721ffc730d8ff13220ed29ad912  usr/share/doc/libcommons-dbcp-java/copyright
+fec816bdc816bf86e3fedaf609dc3863  usr/share/java/commons-dbcp-1.4.jar
+2e05a12ad8b25ab546230dac315a58b2  usr/share/maven-repo/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.pom
+bf80bad62c59d6a43b7a9c9a8f08f571  usr/share/maven-repo/commons-dbcp/commons-dbcp/debian/commons-dbcp-debian.pom

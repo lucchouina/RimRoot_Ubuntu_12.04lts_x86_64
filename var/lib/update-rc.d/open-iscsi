@@ -1,0 +1,1 @@
+update-rc.d open-iscsi start 25 S . start 41 0 1 6 .

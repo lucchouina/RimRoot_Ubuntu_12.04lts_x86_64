@@ -1,0 +1,7 @@
+0a9e9029032bc5c1be78dbbd2eb9c1e6  usr/lib/erlang/lib/parsetools-2.0.6/ebin/leex.beam
+c6aa02741db6e3fe82f7c6e87c080538  usr/lib/erlang/lib/parsetools-2.0.6/ebin/parsetools.app
+f1b84d4e197d48665c60cb155470310b  usr/lib/erlang/lib/parsetools-2.0.6/ebin/parsetools.appup
+c6446ef2d3b50ffe26b54dbbef344044  usr/lib/erlang/lib/parsetools-2.0.6/ebin/yecc.beam
+2d370f859afdb964beaf73f7beb37c46  usr/lib/erlang/lib/parsetools-2.0.6/ebin/yeccparser.beam
+cd2225abf566f190ddd58a2d66923561  usr/lib/erlang/lib/parsetools-2.0.6/ebin/yeccscan.beam
+588c39c282e1da3de1fcd0f40c685f25  usr/share/doc/erlang-parsetools/copyright

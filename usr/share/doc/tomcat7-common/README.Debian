@@ -1,0 +1,35 @@
+Getting started:
+  * After installing the tomcat7 package, the server should be accessible
+    at http://localhost:8080/
+  * If you install tomcat7-admin, then you need to edit 
+    /etc/tomcat7/tomcat-users.xml and add to it the following:
+      <role rolename="manager"/>
+      <user username="tomcat" password="s3cret" roles="manager"/>
+    Tomcat administration will be accessible on 
+    http://localhost:8080/manager/html
+  * Tomcat is not running under a Java security manager by default. If you
+    expose your Tomcat instance to the internet, please consider editing
+    your /etc/default/tomcat7 file and set TOMCAT7_SECURITY="yes", then
+    adjust policy files in /etc/tomcat7/policy.d/ as explained in
+    http://tomcat.apache.org/tomcat-7.0-doc/security-manager-howto.html
+  * To run more than one Tomcat instance on your server, install the package
+    tomcat7-user and run the tomcat7-instance-create utility.
+    You should remove the tomcat7 package if you don't want Tomcat to
+    start as a daemon at boot time.
+  * If you configure your Tomcat to listen on one
+    or more privileged ports (such as port 80 or port 443), then you
+    may now enable authbind in your /etc/default/tomcat7 file.  The
+    authbind package can allow your Tomcat JVM user (a non-root user)
+    to listen on privileged ports.  Set AUTHBIND="yes" to enable it,
+    and then configure your Tomcat to listen on any port number you
+    wish.  See the "man authbind" for information on configuring
+    authbind.
+
+Deviations from upstream's tomcat7:
+
+  * In order to prevent library duplication, this version of tomcat
+    does provide tomcat-dbcp.jar.  Instead, it uses commons-dbcp.jar 
+    from the libcommons-dbcp-java package.  This also means that
+    libtomcat7-java does not provide the tomcat-dbcp.pom for the 
+    local maven-repo.  For more information and rationale, see:  
+      https://bugs.launchpad.net/ubuntu/+source/tomcat6/+bug/283852

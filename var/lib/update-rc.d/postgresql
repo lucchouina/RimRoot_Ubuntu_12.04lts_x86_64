@@ -1,0 +1,1 @@
+update-rc.d postgresql defaults 19 21

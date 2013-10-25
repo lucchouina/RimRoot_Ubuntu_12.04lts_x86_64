@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/makedumpfile
+/usr/share/doc/makedumpfile/copyright
+/usr/share/doc/makedumpfile/changelog.Debian.gz
+/usr/share/man
+/usr/share/man/man8
+/usr/share/man/man8/makedumpfile.8.gz
+/usr/bin
+/usr/bin/makedumpfile
+/usr/bin/makedumpfile-R.pl

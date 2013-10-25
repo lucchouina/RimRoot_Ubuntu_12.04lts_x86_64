@@ -1,0 +1,159 @@
+<!-- Creator     : groff version 1.21 -->
+<!-- CreationDate: Mon Dec 12 13:48:53 2011 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>SAM_INITIALIZE</title>
+
+</head>
+<body>
+
+<h1 align="center">SAM_INITIALIZE</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#RETURN VALUE">RETURN VALUE</a><br>
+<a href="#ERRORS">ERRORS</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">sam_initialize
+&minus; Initialize health checking</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>#include
+&lt;corosync/sam.h&gt;</b></p>
+
+<p style="margin-left:11%; margin-top: 1em"><b>cs_error_t
+sam_initialize (int</b> <i>time_interval</i><b>,
+sam_recovery_policy_t</b> <i>recovery_policy</i>);</p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The
+<b>sam_initialize</b> function is used to initialize health
+checking of a process.</p>
+
+<p style="margin-left:11%; margin-top: 1em">Application can
+have only one instance of SAM. This function must be called
+before any other of SAM functions. It is recommended to
+initialize before the process begins any process
+initialization.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The
+<i>time_interval</i> parameter is a timeout in milliseconds
+before taking recovery action after having not received a
+healthcheck.</p>
+
+<p style="margin-left:11%; margin-top: 1em">If
+<i>time_interval</i> parameter is zero, there is no time
+limit and no healthcheck must be sent by the process. In
+this operational mode, a process failure will continue to
+execute the recovery policy.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The
+<i>recovery_policy</i> is defined as type:</p>
+
+<p style="margin-left:11%; margin-top: 1em">typedef enum
+{</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="8%"></td>
+<td width="7%"></td>
+<td width="85%">
+
+
+<p>SAM_RECOVERY_POLICY_QUIT = 1,</p></td></tr>
+<tr valign="top" align="left">
+<td width="8%"></td>
+<td width="7%"></td>
+<td width="85%">
+
+
+<p>SAM_RECOVERY_POLICY_RESTART = 2,</p></td></tr>
+</table>
+
+<p style="margin-left:11%;">} sam_recovery_policy_t;</p>
+
+<p style="margin-left:11%; margin-top: 1em">where <br>
+SAM_RECOVERY_POLICY_QUIT</p>
+
+<p style="margin-left:22%;">on failure, the process will
+terminate.</p>
+
+
+<p style="margin-left:11%;">SAM_RECOVERY_POLICY_RESTART</p>
+
+<p style="margin-left:22%;">on failure, the process will
+restart.</p>
+
+<p style="margin-left:11%; margin-top: 1em">To perform
+event driven healthchecking, <b>sam_register(3)</b> and
+<b>sam_start(3)</b> functions must called. Event driven
+healthchecking causes the duplicate standby process running
+the SAM serve rto periodically request healthchecks from the
+active process.</p>
+
+<h2>RETURN VALUE
+<a name="RETURN VALUE"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">This call
+return CS_OK value if successful, otherwise and error is
+returned.</p>
+
+<h2>ERRORS
+<a name="ERRORS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em">CS_ERR_BAD_HANDLE</p>
+
+<p style="margin-left:22%;">can happened in case of double
+initialization.</p>
+
+<p style="margin-left:11%;">CS_ERR_INVALID_PARAM</p>
+
+<p style="margin-left:22%;"><i>recovery_policy</i> has
+invalid value.</p>
+
+<h2>SEE ALSO
+<a name="SEE ALSO"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>sam_register</b>(3),
+<b>sam_start</b>(3), <b>sam_hc_callback_register</b>(3)</p>
+<hr>
+</body>
+</html>

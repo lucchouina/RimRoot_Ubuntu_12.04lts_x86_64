@@ -1,0 +1,677 @@
+Package: boinc-amd-opencl
+Description-md5: a856ee5c7a07345f68047fe521dd927c
+Description-en: metapackage for AMD/ATI OpenCL-savvy BOINC client and manager
+ The Berkeley Open Infrastructure for Network Computing (BOINC) is a
+ software platform for distributed computing: several initiatives of
+ various scientific disciplines all compete for the idle time of
+ desktop computers. The developers' web site at the University of
+ Berkeley serves as a common portal to the otherwise independently run
+ projects.
+ .
+ Regular users (rightously) often find it an unbearable nuissance to
+ care for the configuration of BOINC for the OpenCL-savvy AMD/ATI
+ graphics cards.  This package adds a series of dependencies from the
+ non-free section to the regular boinc package. This also meant this
+ binary package to be redistributed in the contrib section of Debian.
+ .
+ This package is not perfect, yet. A major problem for the moment
+ is the availability of the OpenCL driver for 32bit binaries for
+ amd64. If this is planned, install the amd-app package provided
+ through the AMD developer forum.
+
+Package: boinc-nvidia-cuda
+Description-md5: ddf1889572134aee037d999ee62f484a
+Description-en: metapackage for CUDA-savvy BOINC client and manager
+ The Berkeley Open Infrastructure for Network Computing (BOINC) is a
+ software platform for distributed computing: several initiatives of
+ various scientific disciplines all compete for the idle time of
+ desktop computers. The developers' web site at the University of
+ Berkeley serves as a common portal to the otherwise independently run
+ projects.
+ .
+ Regular users (rightously) often find it an unbearable nuissance to
+ care for the exact configuration of BOINC for CUDA-savvy graphics
+ cards. This package adds a series of dependencies from the non-free
+ section to the regular boinc package. This also meant this binary
+ package to be redistributed in the contrib section of Debian.
+
+Package: flashplugin-installer
+Description-md5: a03e9ebc20ce82c05567d088e79bf750
+Description-en: Adobe Flash Player plugin installer
+ Downloads and Installs the Adobe Flash Player plugin. The Adobe Flash Player
+ plugin supports playing of media and other dynamic content online.
+ .
+ The Adobe Flash Player plugin will work with a range of web-browsers including,
+ limited to:
+  * Firefox
+  * Chromium
+  * SeaMonkey
+  * Iceweasel
+  * Iceape
+  * Galeon
+  * Epiphany
+  * Konqueror
+ .
+ WARNING: Installing this Ubuntu package causes the Adobe Flash Player plugin to
+ be downloaded from the Adobe web site. The distribution license of the
+ Adobe Flash Player plugin is available at www.adobe.com. Installing this
+ Ubuntu package implies that you have accepted the terms of that license.
+
+Package: lib32cublas4
+Description-md5: b719dd06ef708f0f48aec667c1f0933e
+Description-en: NVIDIA CUDA BLAS runtime library (32-bit)
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the CUDA BLAS runtime library (32-bit).
+
+Package: lib32cudart4
+Description-md5: cd97101767d6386068f706ed6c9dc63a
+Description-en: NVIDIA CUDA runtime library (32-bit)
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the runtime library (32-bit).
+
+Package: lib32cufft4
+Description-md5: f5ff7132e62ce77a652f95b4b1a98bff
+Description-en: NVIDIA CUDA FFT runtime library (32-bit)
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the CUDA FFT runtime library (32-bit).
+
+Package: lib32curand4
+Description-md5: ba9fce43ce21bd2cbe5c83e3d1efe60b
+Description-en: NVIDIA CUDA Random Numbers Generation runtime library (32-bit)
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the CUDA Random Numbers Generation runtime library
+ (32-bit).
+
+Package: lib32cusparse4
+Description-md5: 26e560101b8adb8e25d106fc2605393b
+Description-en: NVIDIA CUDA Sparse Matrix runtime library (32-bit)
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the CUDA Sparse Matrix runtime library (32-bit).
+
+Package: lib32npp4
+Description-md5: d45e3737c60e5f97ab3bc6d64d5d9aac
+Description-en: NVIDIA Performance Primitives runtime library (32-bit)
+ NVIDIA NPP is a library of functions for performing CUDA accelerated
+ processing.  The initial set offunctionality in the library focuses on imaging
+ and video processing and is widely applicable for developers in these areas.
+ NPP will evolve over time to encompass more of the compute heavy tasks in a
+ variety of problem domains.  The NPP library is written to maximize
+ flexibility, while maintaining high performance.
+ .
+ This package contains the NVIDIA Performance Primitives runtime library
+ (32-bit).
+
+Package: libcublas4
+Description-md5: 45db8a0178cd23e2bd983749760ce542
+Description-en: NVIDIA CUDA BLAS runtime library
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the CUDA BLAS runtime library.
+
+Package: libcudart4
+Description-md5: 04039fe955d79d6a7643053c7aaffe45
+Description-en: NVIDIA CUDA runtime library
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the runtime library.
+
+Package: libcufft4
+Description-md5: 4eef387b908002cd6cf9fa8d945590f0
+Description-en: NVIDIA CUDA FFT runtime library
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the CUDA FFT runtime library.
+
+Package: libcurand4
+Description-md5: 65096ad6fa0522e6e5e89fc21e3c9b47
+Description-en: NVIDIA CUDA Random Numbers Generation runtime library
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the CUDA Random Numbers Generation runtime library.
+
+Package: libcusparse4
+Description-md5: 8b5c0bc101130280c852b365067b7927
+Description-en: NVIDIA CUDA Sparse Matrix runtime library
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the CUDA Sparse Matrix runtime library.
+
+Package: libmotif-dev
+Description-md5: b67510730f8a9ccc4aaff83f2c1adcd2
+Description-en: Open Motif - development files
+ Everything you need to build Motif applications with
+ Open Motif.  This includes header files, static libraries,
+ the manual pages for the Motif API and uil (user interface
+ language compiler)
+
+Package: libmotif4
+Description-md5: bfa9fe6024b03766c52e634f26e25427
+Description-en: Open Motif - shared libraries
+ This package includes all files you need to run Motif
+ applications which are linked against Open Motif, which
+ are the shared libraries for the most part.
+
+Package: libmotif4-dbg
+Description-md5: 84f9b90288ac2bad8b068ef0bd9d55b3
+Description-en: Open Motif - shared libraries
+ This package includes all files you need to run Motif
+ applications which are linked against Open Motif, which
+ are the shared libraries for the most part.
+ .
+ This package contains the debugging symbols.
+
+Package: libmyth-0.25-0
+Description-md5: 6233f3ed93adc17b7f228bed7bd3b300
+Description-en: Common library code for MythTV and add-on modules (runtime)
+ MythTV provides a unified graphical interface for recording and viewing
+ television programs. Refer to the mythtv package for more information.
+ .
+ This package contains a shared library, libmyth, which is used by various
+ components in the system.
+
+Package: libmyth-dev
+Description-md5: cdf4db9954271d33355a9e9377695b78
+Description-en: Common library code for MythTV and add-on modules (development)
+ MythTV provides a unified graphical interface for recording and viewing
+ television programs. Refer to the mythtv package for more information.
+ .
+ This package contains files needed for developing applications which use
+ libmyth (such as the various add-ons for MythTV)
+
+Package: libmyth-python
+Description-md5: 99e5b7fdac675ed6cfb57a0a42eb8400
+Description-en: A python library to access some MythTV features
+ MythTV provides a unified graphical interface for recording and viewing
+ television programs. Refer to the mythtv package for more information.
+ .
+ This package contains files needed for some python MythTV add-ons.
+
+Package: libmythtv-perl
+Description-md5: 47f252d2997e94bf2a23b14c005706fe
+Description-en: A PERL library to access some MythTV features
+ MythTV provides a unified graphical interface for recording and viewing
+ television programs. Refer to the mythtv package for more information.
+ .
+ This package contains files needed for some PERL MythTV add-ons like
+ nuvexport or mythrename.pl.
+
+Package: libnpp4
+Description-md5: 47dfcf01d27f66c5b47ab2e9fadd00f0
+Description-en: NVIDIA Performance Primitives runtime library
+ NVIDIA NPP is a library of functions for performing CUDA accelerated
+ processing.  The initial set offunctionality in the library focuses on imaging
+ and video processing and is widely applicable for developers in these areas.
+ NPP will evolve over time to encompass more of the compute heavy tasks in a
+ variety of problem domains.  The NPP library is written to maximize
+ flexibility, while maintaining high performance.
+ .
+ This package contains the NVIDIA Performance Primitives runtime library.
+
+Package: libstarpu-contrib-dev
+Description-md5: 967c103c8b3cf3662ee291f422fa5be6
+Description-en: Task scheduler for heterogeneous multicore machines - dev
+ StarPU is a runtime system that offers support for heterogeneous
+ multicore machines. While many efforts are devoted to design efficient
+ computation kernels for those architectures (e.g. to implement BLAS
+ kernels on GPUs or on Cell's SPUs), StarPU not only takes care of
+ offloading such kernels (and implementing data coherency across
+ the machine), but it also makes sure the kernels are executed as
+ efficiently as possible.
+ .
+ This package contains development headers and libraries.
+
+Package: libstarpu-contrib0
+Description-md5: 6e4e8db53b47fb942bef212def2a1e22
+Description-en: Task scheduler for heterogeneous multicore machines
+ StarPU is a runtime system that offers support for heterogeneous
+ multicore machines. While many efforts are devoted to design efficient
+ computation kernels for those architectures (e.g. to implement BLAS
+ kernels on GPUs or on Cell's SPUs), StarPU not only takes care of
+ offloading such kernels (and implementing data coherency across
+ the machine), but it also makes sure the kernels are executed as
+ efficiently as possible.
+ .
+ This package contains the main StarPU library
+
+Package: libstarpu-contribfft0
+Description-md5: a1e84fcd5b7aa1a04d6c8089b0a0ecef
+Description-en: Task scheduler for heterogeneous multicore machines
+ StarPU is a runtime system that offers support for heterogeneous
+ multicore machines. While many efforts are devoted to design efficient
+ computation kernels for those architectures (e.g. to implement BLAS
+ kernels on GPUs or on Cell's SPUs), StarPU not only takes care of
+ offloading such kernels (and implementing data coherency across
+ the machine), but it also makes sure the kernels are executed as
+ efficiently as possible.
+ .
+ This package contains a hybrid CPU+GPU FFT library.
+
+Package: libstarpu-contribmpi0
+Description-md5: a7034f989f1ae2e40b4db1b5bb58bd47
+Description-en: Task scheduler for heterogeneous multicore machines
+ StarPU is a runtime system that offers support for heterogeneous
+ multicore machines. While many efforts are devoted to design efficient
+ computation kernels for those architectures (e.g. to implement BLAS
+ kernels on GPUs or on Cell's SPUs), StarPU not only takes care of
+ offloading such kernels (and implementing data coherency across
+ the machine), but it also makes sure the kernels are executed as
+ efficiently as possible.
+ .
+ This package contains MPI extensions for StarPU.
+
+Package: libviennacl-dev
+Description-md5: a27fa308bc2bf6d90a053f635ae4a276
+Description-en: Scientific computing library written in C++ based on OpenCL
+ The Vienna Computing Library (ViennaCL) is a scientific computing library
+ written in C++ and based on OpenCL. It allows simple, high-level access to the
+ vast computing resources available on parallel architectures such as GPUs and
+ is primarily focused on common linear algebra operations (BLAS levels 1, 2 and
+ 3) and the solution of large systems of equations by means of iterative
+ methods with optional preconditioner.
+ .
+ ViennaCL is header-only with no binary library and projects using it only need
+ to link against a conforming OpenCL implementation.
+
+Package: libviennacl-doc
+Description-md5: 4293ec3da7d14fb3b2a1c3f988fa1e7a
+Description-en: ViennaCL API and user documentation
+ The Vienna Computing Library (ViennaCL) is a scientific computing library
+ written in C++ and based on OpenCL. It allows simple, high-level access to the
+ vast computing resources available on parallel architectures such as GPUs and
+ is primarily focused on common linear algebra operations (BLAS levels 1, 2 and
+ 3) and the solution of large systems of equations by means of iterative
+ methods with optional preconditioner.
+ .
+ This package contains the Doxygen-generated source code and the user
+ documentation.
+
+Package: linux-firmware-nonfree
+Description-md5: 856ad6fa1547f2b2a3005ee38911321a
+Description-en: Non-free firmware for Linux kernel drivers
+ This package provides non-free firmware used by Linux kernel drivers.
+ .
+ Most of the firmware in this package is for television tuner cards. However,
+ non-free firmware for other classes of devices are provided as well.
+
+Package: motif-clients
+Description-md5: 07593a41568e4216cf54490c84b57f60
+Description-en: Open Motif - X11 clients (mwm, xmbind)
+ The Motif Window Manager.
+
+Package: mplayerthumbs
+Description-md5: 584f28c998e7d68ff598733efaa7664c
+Description-en: video thumbnail generator using mplayer
+ MPlayerThumbs is a video thumbnail generator for KDE file managers
+ like Dolphin and Konqueror.  It enables them to show preview images
+ of video files using MPlayer.
+ .
+ This package is part of the KDE multimedia module.
+
+Package: mytharchive
+Description-md5: e5e7e6b2e6a78544ce0f8630283b7970
+Description-en: create and burn DVD's from MythTV - binary file
+ MythArchive is a plugin for MythTV that lets you create DVDs from your
+ recorded shows, files and any video files available on your
+ system. It can also archive recordings in a proprietary format that
+ archives not only the file but also all the associated metadata like title,
+ description and cut list information which will mean you can create backups
+ of myth recordings which can later be restored or it will also allow you to
+ move recordings between myth systems without losing any of the metadata. It
+ is a complete rewrite of the old MythBurn bash scripts, now using python,
+ and the mythfrontend UI plugin.
+
+Package: mythbrowser
+Description-md5: 778c569445bd55a1342d53b833894a61
+Description-en: A web browser for MythTV
+ Mythbrowser is a standards compliant web browser plugin for MythTV built
+ on top of Webkit.
+
+Package: mythgallery
+Description-md5: fec0a2ce379068f827fb4f32126d4bd8
+Description-en: Image gallery/slideshow add-on module for MythTV
+ MythGallery allows you to visually browse a directory tree containing image
+ files. It can display any image file format supported by Qt, and supports
+ image rotation and simple slideshows.
+
+Package: mythgame
+Description-md5: 651467626e6c8fb63c90ba608648de17
+Description-en: Emulator & PC Game frontend module for MythTV
+ MythGame can be used as a frontend to start any emulator that your host OS
+ runs.
+
+Package: mythmusic
+Description-md5: 934232dd58c42a6e29a6f5e799fd49b5
+Description-en: Music add-on module for MythTV
+ MythMusic provides a digital audio jukebox integrated with MythTV. It
+ supports Ogg Vorbis, FLAC and MP3 streams, displays visualizations, and can
+ also encode new Ogg Vorbis or FLAC streams from audio CDs using a CD-ROM
+ drive.
+
+Package: mythnetvision
+Description-md5: 45c60f5031add4d5409d92f660906d0d
+Description-en: A Internet Video Player plugin for MythTV
+ MythNetvision is a plugin designed to make adding Internet video sources to
+ MythTV fun and easy. MythNetvision consists of two components:
+ - a search screen
+ - a site/RSS browser screen.
+ When installed, MythNetvision appears on the Media Library screen as the
+ options "Search Internet Video" and "Browse Internet Video."
+
+Package: mythnews
+Description-md5: 4768e7f8feaf7629b36031e4fccbb33b
+Description-en: An RSS feed news reader module for MythTV
+ MythNews will fetch RSS feeds for you to read.
+
+Package: mythplugins
+Description-md5: 0696eb742b526df2cc968b97eaf51c2f
+Description-en: Metapackage package for MythTV plugins
+ This meta-package will install all available MythTV plugins.
+
+Package: mythtv
+Description-md5: a07ce4e68f64b7be3dc1eabe20cfb822
+Description-en: A personal video recorder application (client and server)
+ MythTV implements the following PVR features, and more, with a
+ unified graphical interface:
+ .
+  - Basic 'live-tv' functionality. Pause/Fast Forward/Rewind "live" TV.
+  - Video compression using RTjpeg or MPEG-4
+  - Program listing retrieval using XMLTV
+  - Themable, semi-transparent on-screen display
+  - Electronic program guide
+  - Scheduled recording of TV programs
+  - Resolution of conflicts between scheduled recordings
+  - Basic video editing
+ .
+ http://www.mythtv.org/
+ .
+ This package will install a complete MythTV client/server environment on a
+ single system.  If you are intended on using this as your only MythTV machine,
+ and this machine is already configured as a desktop, this package will get you
+ up and running switfly.
+ .
+ If you are intended on installing this on a standalone/non-desktop machine,
+ you should look into the metapackages available:
+ mythtv-backend-master (backend with a local database)
+ mythtv-backend (backend needing a remote database)
+
+Package: mythtv-backend
+Description-md5: b0c2dc11f48f5be52a50ec181f3d5109
+Description-en: A personal video recorder application (server)
+ MythTV provides a unified graphical interface for recording and viewing
+ television programs. Refer to the mythtv package for more information.
+ .
+ This package contains only the server software, which provides video and
+ audio capture and encoding services. In order to be useful, it requires a
+ mythtv-frontend installation, either on the same system or one reachable
+ via the network.
+ .
+ A database is also required. The mythtv-database package must be installed,
+ either on the same system, or one reachable via the network.
+ .
+ For a complete installation of all MythTV components, install the 'mythtv'
+ package.
+
+Package: mythtv-backend-master
+Description-md5: 15418a8fc285e4bfbc2fc2b519a118fd
+Description-en: Metapackage to setup and configure a "Master Backend" profile of MythTV.
+ This meta-package will install and configure all necessary packages for this
+ machine to behave as a "Master" Backend for a mythtv network.  This package
+ is intended to be installed on the machine that will behave as the first
+ (and possibly only) backend for the network.  Typically, this package will be
+ installed on a server rather then a desktop. It makes no sense to install it
+ on anything but the first backend machine on the network.
+
+Package: mythtv-common
+Description-md5: 9b0f0c7db2469a475fea68b417099898
+Description-en: A personal video recorder application (common data)
+ MythTV provides a unified graphical interface for recording and viewing
+ television programs. Refer to the mythtv package for more information.
+ .
+ This package contains infrastructure needed by both the client and the
+ server.
+
+Package: mythtv-database
+Description-md5: dd06002fc680d8ca1b30d73491183d51
+Description-en: A personal video recorder application (database)
+ MythTV provides a unified graphical interface for recording and viewing
+ television programs. Refer to the mythtv package for more information.
+ .
+ This package sets up a MySQL database for use by MythTV. It should be
+ installed on the system where the MySQL server resides.
+
+Package: mythtv-dbg
+Description-md5: b75efe12f9262ea1392215c42915eaab
+Description-en: Debug symbols for mythtv packages
+ This package provides all debug symbols for mythtv packages since ddebs
+ don't appear to always do the right thing.
+
+Package: mythtv-doc
+Description-md5: fd631a093f62384996f3bef856e18c7e
+Description-en: A personal video recorder application (documentation)
+ MythTV provides a unified graphical interface for recording and viewing
+ television programs. Refer to the mythtv package for more information.
+ .
+ This package contains documentation, including the MythTV HOWTO.
+
+Package: mythtv-frontend
+Description-md5: d64b43121a804d22ffff974211339f08
+Description-en: A personal video recorder application (client)
+ MythTV provides a unified graphical interface for recording and viewing
+ television programs. Refer to the mythtv package for more information.
+ .
+ This package contains only the client software, which provides a front-end
+ for playback and configuration. It requires access to a mythtv-backend
+ installation, either on the same system or one reachable via the network.
+ .
+ A database is also required. The mythtv-database package must be installed,
+ either on the same system, or one reachable via the network.
+ .
+ For a complete installation of all MythTV components, install the 'mythtv'
+ package.
+
+Package: mythtv-theme-mythbuntu
+Description-md5: dcafbe0ddc60ef9d4cd6528e6172ed6d
+Description-en: The mythbuntu MythTV Theme
+ This package provides the mythbuntu theme for MythTV.
+
+Package: mythtv-transcode-utils
+Description-md5: 7e2f8e36412922b733817418892a44e3
+Description-en: Utilities used for transcoding MythTV tasks
+ Some utilities are applicable for both a frontend or a backend machine.
+ This package provides utilities that can be used on both without
+ requiring an entire backend to be installed.
+
+Package: mythweather
+Description-md5: 0ee3d1458b56866d56ec87dc37b10bef
+Description-en: Weather add-on module for MythTV
+ MythWeather displays current and forecast weather information within
+ MythTV.
+
+Package: mythweb
+Description-md5: 61dcb33693d887e60efd1242bb775a3f
+Description-en: Web interface add-on module for MythTV
+ MythWeb provides a web interface which can be used to view listings,
+ schedule recordings, delete recordings, and search for programs. It can
+ also browse mythmusic's music database, and may eventually support playing
+ music streams as well.
+
+Package: mythzoneminder
+Description-md5: 8d9d41b817bbe7c1bae729f6473e40c3
+Description-en: view status and display footage recorded with zoneminder
+ MythZoneMinder interfaces with Zoneminder, a CCTV solution.
+ You can view the status of ZoneMinder and watch live camera shots and
+ recorded surveillance footage.
+
+Package: nvidia-compute-profiler
+Description-md5: c5c20f62c04c71bfac76aa9b35a615f3
+Description-en: NVIDIA Compute Visual Profiler
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the Compute Visual Profiler.
+
+Package: nvidia-cuda-dev
+Description-md5: 23a17262479fe7daf1cae67727e949c7
+Description-en: NVIDIA CUDA development files
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the development files: headers and libraries.
+
+Package: nvidia-cuda-doc
+Description-md5: 1ade4ee74357654b5ef0998d191b1349
+Description-en: NVIDIA CUDA and OpenCL documentation
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ OpenCL (Open Computing Language) is a multi-vendor open standard for
+ general-purpose parallel programming of heterogeneous systems that include
+ CPUs, GPUs and other processors.
+ .
+ This package contains the developer documentation.
+
+Package: nvidia-cuda-gdb
+Description-md5: 453091dc8f1905152f0cd17e8712b571
+Description-en: NVIDIA CUDA GDB
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the cuda-gdb debugger.
+
+Package: nvidia-cuda-toolkit
+Description-md5: 0cd19be91d76311de487c8042535dcb8
+Description-en: NVIDIA CUDA toolkit
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the nvcc compiler etc.
+
+Package: nvidia-opencl-dev
+Description-md5: 5404c4fac54bb1c7a833b77f92a02e84
+Description-en: NVIDIA OpenCL development files
+ OpenCL (Open Computing Language) is a multi-vendor open standard for
+ general-purpose parallel programming of heterogeneous systems that include
+ CPUs, GPUs and other processors.
+ .
+ This metapackage provides the development files: headers and libraries.
+
+Package: php-mythtv
+Description-md5: cc74af3e7f32031e0ca3aeeac2981c9b
+Description-en: PHP Bindings for MythTV
+ MythTV provides a unified graphical interface for recording and viewing
+ television programs. Refer to the mythtv package for more information.
+ .
+ This package contains files needed for using PHP based applications that
+ connect to MythTV backends.
+
+Package: redeclipse
+Description-md5: 5c2008bbe98e70a350dc2e5ff41c2edb
+Description-en: single-player and multi-player first-person ego-shooter
+ A single-player and multi-player first-person ego-shooter, built as a
+ total conversion of Cube Engine 2, which lends itself toward a balanced
+ gameplay, with a general theme of agility in a variety of environments.
+
+Package: redeclipse-dbg
+Description-md5: 472a3994437308850b2d85085b11423f
+Description-en: debug symbols for the Red Eclipse FPS game
+ This package contains the debugging symbols for the Red Eclipse FPS game.
+
+Package: redeclipse-server
+Description-md5: 315338a2439def5a06eb51a250e84e31
+Description-en: server for the Red Eclipse FPS game
+ This package contains the dedicated server for the Red Eclipse FPS game, it
+ also includes some example scripts for configuring the server. It contains no
+ init integration.
+
+Package: redeclipse-server-dbg
+Description-md5: 845a03d775cde2c92ef0a0d918bdbf50
+Description-en: debug symbols for the Red Eclipse dedicated server
+ This package contains the debugging symbols for the dedicated server of the
+ Red Eclipse FPS game.
+
+Package: starpu-contrib-examples
+Description-md5: 601fd3c318d53962421cdbdd364f312b
+Description-en: Task scheduler for heterogeneous multicore machines - exs
+ StarPU is a runtime system that offers support for heterogeneous
+ multicore machines. While many efforts are devoted to design efficient
+ computation kernels for those architectures (e.g. to implement BLAS
+ kernels on GPUs or on Cell's SPUs), StarPU not only takes care of
+ offloading such kernels (and implementing data coherency across
+ the machine), but it also makes sure the kernels are executed as
+ efficiently as possible.
+ .
+ This package contains application examples.
+
+Package: starpu-contrib-tools
+Description-md5: eb2ba87d4cd88833bc91b0cf6b977279
+Description-en: Task scheduler for heterogeneous multicore machines - tools
+ StarPU is a runtime system that offers support for heterogeneous
+ multicore machines. While many efforts are devoted to design efficient
+ computation kernels for those architectures (e.g. to implement BLAS
+ kernels on GPUs or on Cell's SPUs), StarPU not only takes care of
+ offloading such kernels (and implementing data coherency across
+ the machine), but it also makes sure the kernels are executed as
+ efficiently as possible.
+ .
+ This package contains StarPU tools.
+
+Package: cedarview-drm
+Description-md5: fd2f16777328bead3d341a0e233b858d
+Description-en: Cedar Trail drm driver in DKMS format.
+ This package contains the drm driver for Cedar Trail in DKMS format.
+
+Package: cedarview-graphics-drivers
+Description-md5: a1f4946f6f31c4b7767589d5c7af7699
+Description-en: Intel binary Xorg driver for GMA3600 (Cedarview) GPUs.
+ This package contains the proprietary firmware and drivers
+ needed to run hardware accelerated Open GLES 2.0 under X11
+ on Intel Cedarview based hardware.
+
+Package: flashplugin-downloader
+Description-md5: 66ea91f4e504085408ea841953dc65d0
+Description-en: Adobe Flash Player plugin installer (transitional package)
+ This package is a transitional package that can safely be removed after you installed
+ flashplugin-installer.
+
+Package: libva-cedarview-vaapi-driver
+Description-md5: 6286031b30b99a9e80b3d67ec3922974
+Description-en: VAAPI driver for Intel GMA3600 (Cedarview ) GPUs.
+ The VA-API (Video Acceleration API) enables hardware accelerated video
+ decode/encode at various entry-points (VLD, IDCT, Motion Compensation
+ etc.) for the prevailing coding standards today (MPEG-2, MPEG-4
+ ASP/H.263, MPEG-4 AVC/H.264, and VC-1/VMW3). It provides an interface
+ to fully expose the video decode capabilities in today's GPUs.
+ .
+ This package contains the video decode & encode driver backend for the
+ Imagination Technologies PowerVR chip used on Cedarview chipsets.
+

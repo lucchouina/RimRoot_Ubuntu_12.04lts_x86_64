@@ -1,0 +1,10 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libcrmcommon2
+/usr/share/doc/libcrmcommon2/copyright
+/usr/share/doc/libcrmcommon2/changelog.Debian.gz
+/usr/lib
+/usr/lib/libcrmcommon.so.2.0.0
+/usr/lib/libcrmcommon.so.2

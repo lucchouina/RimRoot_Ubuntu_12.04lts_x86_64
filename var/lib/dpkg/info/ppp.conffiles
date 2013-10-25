@@ -1,0 +1,14 @@
+/etc/logrotate.d/ppp
+/etc/bash_completion.d/pon
+/etc/pam.d/ppp
+/etc/ppp/ip-down.d/0000usepeerdns
+/etc/ppp/ip-up
+/etc/ppp/ipv6-down
+/etc/ppp/pppoe_on_boot
+/etc/ppp/options
+/etc/ppp/ip-up.d/0000usepeerdns
+/etc/ppp/ipv6-up
+/etc/ppp/ip-down
+/etc/chatscripts/pap
+/etc/chatscripts/gprs
+/etc/init.d/pppd-dns

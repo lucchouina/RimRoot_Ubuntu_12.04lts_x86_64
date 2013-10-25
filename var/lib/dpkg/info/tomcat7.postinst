@@ -1,0 +1,81 @@
+#!/bin/sh
+set -e
+
+. /usr/share/debconf/confmodule
+TEMPLATE="/usr/share/tomcat7/defaults.template"
+CONFFILE="/etc/default/tomcat7"
+JAVA_OPTS="-Djava.awt.headless=true -Xmx128m -XX:+UseConcMarkSweepGC"
+
+case "$1" in
+    configure)
+
+	# Generate $CONFFILE from debconf seetings and $TEMPLATE
+	db_version 2.0
+	db_get tomcat7/username && TOMCAT7_USER="$RET" || TOMCAT7_USER="tomcat7"
+	db_get tomcat7/groupname && TOMCAT7_GROUP="$RET" || TOMCAT7_GROUP="tomcat7"
+	db_get tomcat7/javaopts && JAVA_OPTS="$RET" || JAVA_OPTS="-Djava.awt.headless=true -Xmx128m -XX:+UseConcMarkSweepGC"
+
+	tmpfile=`mktemp /tmp/tomcat7.XXXXXXXXXX`
+	chmod 644 $tmpfile
+	cat $TEMPLATE \
+		| sed "s%^TOMCAT7_USER=.*$%TOMCAT7_USER=$TOMCAT7_USER%" \
+		| sed "s%^TOMCAT7_GROUP=.*$%TOMCAT7_GROUP=$TOMCAT7_GROUP%" \
+		| sed "s%^JAVA_OPTS=.*$%JAVA_OPTS=\"$JAVA_OPTS\"%" \
+		>> $tmpfile
+	ucf --debconf-ok --sum-file /usr/share/tomcat7/defaults.md5sum $tmpfile $CONFFILE
+	rm -f $tmpfile
+
+	if ! getent group "$TOMCAT7_GROUP" > /dev/null 2>&1 ; then
+	    addgroup --system "$TOMCAT7_GROUP" --quiet
+	fi
+	if ! id $TOMCAT7_USER > /dev/null 2>&1 ; then
+	    adduser --system --home /usr/share/tomcat7 --no-create-home \
+		--ingroup "$TOMCAT7_GROUP" --disabled-password --shell /bin/false \
+		"$TOMCAT7_USER"
+	fi
+	chown -R $TOMCAT7_USER:adm /var/log/tomcat7 /var/cache/tomcat7
+	chmod 750 /var/log/tomcat7 /var/cache/tomcat7
+
+	# replace the TOMCAT7USER token in /etc/logrotate.d/tomcat7
+	LOGROTATE_TOKEN="@@@TOMCAT7USER@@@"
+	if grep -q "$LOGROTATE_TOKEN" /etc/logrotate.d/tomcat7 ; then
+		sed --in-place "s/$LOGROTATE_TOKEN/$TOMCAT7_USER/" /etc/logrotate.d/tomcat7
+	fi
+
+	# configuration files should not be modifiable by tomcat7 user, as this can be a security issue
+	# (an attacker may insert code in a webapp and have access to all tomcat configuration)
+	# but those files should be readable by tomcat7, so we set the group to tomcat7
+	chown -Rh root:$TOMCAT7_GROUP /etc/tomcat7/*
+	chmod 640 /etc/tomcat7/tomcat-users.xml
+	chown -Rh $TOMCAT7_USER:$TOMCAT7_GROUP /var/lib/tomcat7/webapps /var/lib/tomcat7/common /var/lib/tomcat7/server /var/lib/tomcat7/shared
+	chmod 775 /var/lib/tomcat7/webapps
+	chmod 775 /etc/tomcat7/Catalina /etc/tomcat7/Catalina/localhost
+
+	# Authorize user tomcat7 to open privileged ports via authbind.
+	TOMCAT_UID="`id -u $TOMCAT7_USER`"
+	if [ ! -f "/etc/authbind/byuid/$TOMCAT_UID" ]; then
+		if [ ! -d "/etc/authbind/byuid" ]; then
+			mkdir -p /etc/authbind/byuid
+			chmod 755 /etc/authbind
+			chmod 755 /etc/authbind/byuid
+		fi
+		echo '0.0.0.0/0:1,1023' >/etc/authbind/byuid/$TOMCAT_UID
+		chown $TOMCAT7_USER:$TOMCAT7_GROUP /etc/authbind/byuid/$TOMCAT_UID
+		chmod 700 /etc/authbind/byuid/$TOMCAT_UID
+	fi
+    ;;
+esac
+
+if [ ! -d /var/lib/tomcat7/webapps/ROOT ]; then
+    cp -r /usr/share/tomcat7-root/default_root /var/lib/tomcat7/webapps/ROOT
+fi
+
+# Automatically added by dh_installinit
+if [ -x "/etc/init.d/tomcat7" ]; then
+	if [ ! -e "/etc/init/tomcat7.conf" ]; then
+		update-rc.d tomcat7 defaults 92 08 >/dev/null
+	fi
+	invoke-rc.d tomcat7 start || true
+fi
+# End automatically added section
+

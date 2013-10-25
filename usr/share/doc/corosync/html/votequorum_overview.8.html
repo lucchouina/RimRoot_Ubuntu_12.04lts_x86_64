@@ -1,0 +1,118 @@
+<!-- Creator     : groff version 1.21 -->
+<!-- CreationDate: Mon Dec 12 13:48:49 2011 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>VOTEQUORUM_OVERVIEW</title>
+
+</head>
+<body>
+
+<h1 align="center">VOTEQUORUM_OVERVIEW</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#OVERVIEW">OVERVIEW</a><br>
+<a href="#BUGS">BUGS</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em">votequorum_overview
+&minus; Votequorum Library Overview</p>
+
+<h2>OVERVIEW
+<a name="OVERVIEW"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The votequuorum
+library is delivered with the corosync project. It is the
+external interface to the vote-based quorum service. This
+service is optionally loaded into all ndes in a corosync
+cluster to avoid split-brain situations. It does this by
+having a number of votes assigned to each system in the
+cluster and ensuring that only when a majority of the votes
+are present, cluster operations are allowed to proceed.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The library
+provides a mechanism to:</p>
+
+<p style="margin-left:11%; margin-top: 1em">* Query the
+quorum status</p>
+
+<p style="margin-left:11%; margin-top: 1em">* Get a list of
+nodes known to the quorum service</p>
+
+<p style="margin-left:11%; margin-top: 1em">* Receive
+notifications of quorum state changes</p>
+
+<p style="margin-left:11%; margin-top: 1em">* Change the
+number of votes assigned to a node</p>
+
+<p style="margin-left:11%; margin-top: 1em">* Change the
+number of expected votes for a cluster to be quorate</p>
+
+<p style="margin-left:11%; margin-top: 1em">* Connect an
+additional quorum device to allow small clusters to remain
+quorate during node outages.</p>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>votequorum</b>
+reads its configuration from the objdb. The following keys
+are read when it starts up:</p>
+
+<p style="margin-left:11%; margin-top: 1em">*
+quorum.expected_votes <br>
+* quorum.votes <br>
+* quorum.quorumdev_poll <br>
+* quorum.disallowed <br>
+* quorum.two_node</p>
+
+<p style="margin-left:11%; margin-top: 1em">Most of those
+values can be changed while corosync is running with the
+following exceptions: <b>quorum.disallowed</b> cannot be
+changed, and <b>two_node</b> cannot be set on-the-fly,
+though it can be cleared. ie you can start with two nodes in
+the cluster and add a third without rebooting all the
+nodes.</p>
+
+<h2>BUGS
+<a name="BUGS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">This software
+is not yet production, so there may still be some bugs.</p>
+
+<h2>SEE ALSO
+<a name="SEE ALSO"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>corosync-quorumtool</b>(8),
+<b>votequorum_initialize</b>(3),
+<b>votequorum_finalize</b>(3), <b>votequorum_fd_get</b>(3),
+<b>votequorum_dispatch</b>(3),
+<b>votequorum_context_get</b>(3),
+<b>votequorum_context_set</b>(3),</p>
+<hr>
+</body>
+</html>

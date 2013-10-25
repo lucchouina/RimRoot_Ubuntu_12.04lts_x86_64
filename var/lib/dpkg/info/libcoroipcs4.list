@@ -1,0 +1,10 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libcoroipcs4
+/usr/share/doc/libcoroipcs4/copyright
+/usr/share/doc/libcoroipcs4/changelog.Debian.gz
+/usr/lib
+/usr/lib/libcoroipcs.so.4.0.0
+/usr/lib/libcoroipcs.so.4

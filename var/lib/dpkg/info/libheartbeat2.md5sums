@@ -1,0 +1,7 @@
+c15e8d258122fce5a7fcf3a592042616  usr/lib/libapphb.so.2.0.0
+32a100360a88cdc79d788fc1677829e5  usr/lib/libccmclient.so.1.0.0
+b45db3a32b5ca1cf1ba3e5776ce29c61  usr/lib/libclm.so.1.0.0
+367b714846ccd4d8285fc99419f65fca  usr/lib/libhbclient.so.1.0.0
+18f364c3d1213710230a50627c1f4c87  usr/share/doc/libheartbeat2/changelog.Debian.gz
+5f294eadb386f0e9e41e699cd24a0325  usr/share/doc/libheartbeat2/copyright
+13a44a382d6b93c892a1752a76e5adc0  usr/share/lintian/overrides/libheartbeat2

@@ -1,0 +1,6 @@
+a495d8ad81bc05e35063839f9c6dc6a6  usr/sbin/drbdlinks
+7a3806c0ab8df310dfa22692a13c10d6  usr/share/doc/drbdlinks/README
+9908cedec8476834ac3aa8394eea1568  usr/share/doc/drbdlinks/WHATSNEW
+d31a7de09234f483aa98e26349f2c83e  usr/share/doc/drbdlinks/changelog.Debian.gz
+2c010517f7c748f499a33f52a7abf1a6  usr/share/doc/drbdlinks/copyright
+21f873bf62779e9459a2cea738e92e5e  usr/share/man/man8/drbdlinks.8.gz

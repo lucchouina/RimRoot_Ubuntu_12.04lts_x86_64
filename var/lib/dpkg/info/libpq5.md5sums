@@ -1,0 +1,16 @@
+bb06fb2528abc0ed8fce3ebd5902bfe6  usr/lib/libpq.so.5.5
+2f11992b32dbb63a20a34fd266c6d0b5  usr/share/doc/libpq5/changelog.Debian.gz
+17ae2cfca31042c23ef0b8b78a6d79f8  usr/share/doc/libpq5/changelog.gz
+c62ee74874b1391c8d08243dc442658d  usr/share/doc/libpq5/copyright
+903bfed84f3819b3a71d196d26441c75  usr/share/locale/cs/LC_MESSAGES/libpq5-9.2.mo
+32c9c8771c1e2e797f29dfa6652fe722  usr/share/locale/de/LC_MESSAGES/libpq5-9.2.mo
+a707253fd5bb0e66983b635d9b534338  usr/share/locale/es/LC_MESSAGES/libpq5-9.2.mo
+2da1be63484b17e7da9a5f49e85948b7  usr/share/locale/fr/LC_MESSAGES/libpq5-9.2.mo
+691082e44ad3ca408903a57c88eaccca  usr/share/locale/it/LC_MESSAGES/libpq5-9.2.mo
+559b31c8bb4d983476098d3ca12869ff  usr/share/locale/ja/LC_MESSAGES/libpq5-9.2.mo
+27f4a5a8ce93b1b3de1b68ac465efb34  usr/share/locale/pl/LC_MESSAGES/libpq5-9.2.mo
+6e4db54646b8e1be7fb45609b9d3a7d6  usr/share/locale/pt_BR/LC_MESSAGES/libpq5-9.2.mo
+29aa15c0b96746a859d3ec443fec3e10  usr/share/locale/ru/LC_MESSAGES/libpq5-9.2.mo
+46853d38384dc783b07ed6cbcd5e10d0  usr/share/locale/tr/LC_MESSAGES/libpq5-9.2.mo
+c7fdb7facb4c76f03415adb5603750c1  usr/share/locale/zh_CN/LC_MESSAGES/libpq5-9.2.mo
+b0b63b1ef540f88fc9e063e91af687cf  usr/share/locale/zh_TW/LC_MESSAGES/libpq5-9.2.mo

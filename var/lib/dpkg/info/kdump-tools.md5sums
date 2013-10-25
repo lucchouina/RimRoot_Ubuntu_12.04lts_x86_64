@@ -1,0 +1,6 @@
+9ef5e2b9d4c4d9d9396fba290c561ce6  usr/sbin/kdump-config
+f997c6d8b118c9c57a4af4329e492aa8  usr/share/doc/kdump-tools/README.Debian
+b981861e2a5f5d4bba9d42ea628370c6  usr/share/doc/kdump-tools/changelog.Debian.gz
+18284b66e661af3f1a27039b49a552a9  usr/share/doc/kdump-tools/copyright
+09f7217f6af7cc78870390326ac669a2  usr/share/man/man5/kdump-tools.5.gz
+748f4fde042c0982048d982d410c568d  usr/share/man/man8/kdump-config.8.gz

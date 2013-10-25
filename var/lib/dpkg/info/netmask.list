@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/bin
+/usr/bin/netmask
+/usr/share
+/usr/share/doc
+/usr/share/doc/netmask
+/usr/share/doc/netmask/NEWS.gz
+/usr/share/doc/netmask/README
+/usr/share/doc/netmask/copyright
+/usr/share/doc/netmask/changelog.gz
+/usr/share/info
+/usr/share/info/netmask.info.gz
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/netmask.1.gz

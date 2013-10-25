@@ -1,0 +1,89 @@
+#!/bin/sh
+
+update_initramfs()
+{
+    if [ -x /usr/sbin/update-initramfs ] && \
+       [ -e /etc/initramfs-tools/initramfs.conf ] && \
+       [ -e /etc/iscsi/iscsi.initramfs ]; then
+        update-initramfs -u
+    fi
+}
+
+case "$1" in
+    configure)
+	# Move old configuration from /etc/ into /etc/iscsi/
+	# But only if configuration in /etc/iscsi is untouched
+	
+        if [ -f /etc/initiatorname.iscsi ] ; then
+            if grep -q "^GenerateName=yes" /etc/iscsi/initiatorname.iscsi ; then
+                mv /etc/initiatorname.iscsi /etc/iscsi/initiatorname.iscsi
+		chmod 600 /etc/iscsi/initiatorname.iscsi
+	    fi
+	fi
+
+	# generate a unique iSCSI InitiatorName
+      	NAMEFILE=/etc/iscsi/initiatorname.iscsi
+	if [ ! -e $NAMEFILE ] && [ -z "$2" ] ; then
+            if [ ! -x /sbin/iscsi-iname ] ; then
+                echo "Error: /sbin/iscsi-iname does not exist, driver was not successfully installed"
+                exit 1;
+            fi
+            # Generate a unique InitiatorName and save it
+            INAME=`/sbin/iscsi-iname -p iqn.1993-08.org.debian:01`
+            if [ "$INAME" != "" ] ; then
+                echo "## DO NOT EDIT OR REMOVE THIS FILE!" > $NAMEFILE
+                echo "## If you remove this file, the iSCSI daemon will not start." >> $NAMEFILE
+                echo "## If you change the InitiatorName, existing access control lists" >> $NAMEFILE
+                echo "## may reject this initiator.  The InitiatorName must be unique">> $NAMEFILE
+                echo "## for each iSCSI initiator.  Do NOT duplicate iSCSI InitiatorNames." >> $NAMEFILE
+                printf "InitiatorName=$INAME\n"  >> $NAMEFILE
+                chmod 600 $NAMEFILE
+            else
+                echo "Error: failed to generate an iSCSI InitiatorName, driver cannot start."
+                echo
+                exit 1;
+            fi
+        fi
+	
+	if [ -d /var/lib/open-iscsi ]; then
+		chmod 700   /var/lib/open-iscsi
+	else
+		mkdir /var/lib/open-iscsi
+		chmod 700   /var/lib/open-iscsi
+	fi
+
+	# Fix init script ordering on upgrades from < jaunty
+	if dpkg --compare-versions "$2" lt-nl 2.0.870-0ubuntu1
+	then
+		update-rc.d -f open-iscsi remove
+	fi
+
+	if [ -f /lib/init/rw/sendsigs.omit.d/iscsid.pid ]; then
+		mkdir -p /run/sendsigs.omit.d
+		mv /lib/init/rw/sendsigs.omit.d/iscsid.pid \
+		   /run/sendsigs.omit.d/iscsid.pid
+	fi
+
+	update_initramfs
+    ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure)
+    ;;
+
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+# Automatically added by dh_installinit
+if [ -x "/etc/init.d/open-iscsi" ]; then
+	if [ ! -e "/etc/init/open-iscsi.conf" ]; then
+		update-rc.d open-iscsi start 25 S . start 41 0 1 6 . >/dev/null
+	fi
+	invoke-rc.d open-iscsi start || exit $?
+fi
+# End automatically added section
+
+
+exit 0

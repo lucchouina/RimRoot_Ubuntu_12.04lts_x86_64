@@ -1,0 +1,12 @@
+cf8549ff9ce80d45d436ab9a29019b62  usr/lib/erlang/lib/syntax_tools-1.6.7.1/ebin/epp_dodger.beam
+3f59be4d9909aa9aa3dd9eab0b4c3866  usr/lib/erlang/lib/syntax_tools-1.6.7.1/ebin/erl_comment_scan.beam
+e4352acbc924f438117b8a41b357ac43  usr/lib/erlang/lib/syntax_tools-1.6.7.1/ebin/erl_prettypr.beam
+fed7a55fd06aecbd699f8d502a89712e  usr/lib/erlang/lib/syntax_tools-1.6.7.1/ebin/erl_recomment.beam
+4eec63086f722d3537fd976e738fc624  usr/lib/erlang/lib/syntax_tools-1.6.7.1/ebin/erl_syntax.beam
+6eeb6be4c8629a9d35be1cdb99eaf38c  usr/lib/erlang/lib/syntax_tools-1.6.7.1/ebin/erl_syntax_lib.beam
+908079f8d27f95f42f1da476980605f5  usr/lib/erlang/lib/syntax_tools-1.6.7.1/ebin/erl_tidy.beam
+22796f2cbdaf901d36d2d854e0a9774f  usr/lib/erlang/lib/syntax_tools-1.6.7.1/ebin/igor.beam
+85f5cd020b278a85175ef4202e6ec35d  usr/lib/erlang/lib/syntax_tools-1.6.7.1/ebin/prettypr.beam
+3ab7422ce638d362f627e5454918337d  usr/lib/erlang/lib/syntax_tools-1.6.7.1/ebin/syntax_tools.app
+c7092e5d3eee4338a0eadba0bb0111e4  usr/lib/erlang/lib/syntax_tools-1.6.7.1/ebin/syntax_tools.appup
+588c39c282e1da3de1fcd0f40c685f25  usr/share/doc/erlang-syntax-tools/copyright

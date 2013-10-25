@@ -1,0 +1,97 @@
+<!-- Creator     : groff version 1.21 -->
+<!-- CreationDate: Mon Dec 12 13:48:48 2011 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>COROSYNC-PLOAD</title>
+
+</head>
+<body>
+
+<h1 align="center">COROSYNC-PLOAD</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+<a href="#AUTHOR">AUTHOR</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">corosync-pload
+&minus; Start payload test.</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>corosync-pload</b></p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>corosync-pload</b>
+starts the pload service. This is used as a test tool to
+generate traffic. All nodes will begin transmitting messages
+and they will stop when 1500000 messages have been received
+per node.</p>
+
+<p style="margin-left:11%; margin-top: 1em">To view the
+progress of this execute:</p>
+
+<p style="margin-left:11%; margin-top: 1em">$
+corosync-objctl runtime.services.pload. <br>
+runtime.services.pload.service_id=13 <br>
+runtime.services.pload.0.tx=3 <br>
+runtime.services.pload.0.rx=2 <br>
+runtime.services.pload.1.tx=2478788 <br>
+runtime.services.pload.1.rx=4467870</p>
+
+<p style="margin-left:11%; margin-top: 1em">At the end of
+the run a log message will be written showing the number of
+messages written and the time that this took.</p>
+
+
+<p style="margin-left:11%; margin-top: 1em">corosync[4931]:
+[PLOAD ] 1500000 Writes 300 bytes per write 30.838 seconds
+runtime, 48640.968 TP/S, 13.916 MB/S.</p>
+
+<h2>SEE ALSO
+<a name="SEE ALSO"></a>
+</h2>
+
+
+
+<p style="margin-left:22%; margin-top: 1em"><b>corosync-objctl</b>(8)</p>
+
+<h2>AUTHOR
+<a name="AUTHOR"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Angus
+Salkeld</p>
+<hr>
+</body>
+</html>

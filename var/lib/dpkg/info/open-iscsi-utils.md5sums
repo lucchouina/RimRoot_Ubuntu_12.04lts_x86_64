@@ -1,0 +1,4 @@
+f8148d3e37b90c066f2ecb84586285b5  sbin/iscsiadm
+cfc21098a993334d4f34a03106f2283c  usr/share/doc/open-iscsi-utils/changelog.Debian.gz
+0344e00add4fffbef94a4e26352ca810  usr/share/doc/open-iscsi-utils/copyright
+99e01ac975d9183a71748db00395d5ae  usr/share/man/man8/iscsiadm.8.gz

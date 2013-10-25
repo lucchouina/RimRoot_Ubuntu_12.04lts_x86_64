@@ -1,0 +1,106 @@
+<!-- Creator     : groff version 1.21 -->
+<!-- CreationDate: Mon Dec 12 13:48:53 2011 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>SAM_START</title>
+
+</head>
+<body>
+
+<h1 align="center">SAM_START</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#RETURN VALUE">RETURN VALUE</a><br>
+<a href="#ERRORS">ERRORS</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">sam_start
+&minus; Start health checking</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>#include
+&lt;corosync/sam.h&gt;</b></p>
+
+<p style="margin-left:11%; margin-top: 1em"><b>cs_error_t
+sam_start (void);</b></p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The
+<b>sam_start</b> function is used to start health checking
+of application. After calling this function, the active
+process needs to send healthchecks within the registered
+time interval by calling <b>sam_hc_send(3)</b>. If event
+driven healthchecking is configured by calling
+<b>sam_register(3)</b>, an internal thread will be created
+and send health check confirmations four times per
+<i>time_interval</i>.</p>
+
+<p style="margin-left:11%; margin-top: 1em">Application
+must be registered by calling <b>sam_register(3)</b> before
+this function can be called.</p>
+
+<p style="margin-left:11%; margin-top: 1em">An application
+can always stop health checking by calling the
+<b>sam_stop(3)</b> function.</p>
+
+<h2>RETURN VALUE
+<a name="RETURN VALUE"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">This call
+return CS_OK value if successful, otherwise and error is
+returned.</p>
+
+<h2>ERRORS
+<a name="ERRORS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em">CS_ERR_BAD_HANDLE</p>
+
+<p style="margin-left:22%;">component was not registered by
+calling <b>sam_register(3)</b> function.</p>
+
+<h2>SEE ALSO
+<a name="SEE ALSO"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>sam_hc_send</b>(3),
+<b>sam_stop</b>(3), <b>sam_register</b>(3),
+<b>sam_hc_callback_register</b>(3)</p>
+<hr>
+</body>
+</html>

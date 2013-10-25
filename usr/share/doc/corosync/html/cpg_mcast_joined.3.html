@@ -1,0 +1,159 @@
+<!-- Creator     : groff version 1.21 -->
+<!-- CreationDate: Mon Dec 12 13:48:51 2011 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>CPG_MCAST_JOINED</title>
+
+</head>
+<body>
+
+<h1 align="center">CPG_MCAST_JOINED</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#RETURN VALUE">RETURN VALUE</a><br>
+<a href="#ERRORS">ERRORS</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em">cpg_mcast_joined
+&minus; Multicasts to all groups joined to a handle</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>#include
+&lt;sys/uio.h&gt; #include &lt;corosync/cpg.h&gt;</b></p>
+
+<p style="margin-left:11%; margin-top: 1em"><b>int
+cpg_mcast_joined(cpg_handle_t</b> <i>handle</i><b>,
+cpg_guarantee_t</b> <i>guarantee</i><b>, struct iovec
+*</b><i>iovec</i><b>, int</b> <i>iov_len</i><b>);</b></p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The
+<b>cpg_mcast_joined</b> function will multicast a message to
+all the processes that have been joined with the
+<b>cpg_join(3)</b> function for the same group name.
+Messages that are sent to any of the groups joined to the
+parameter <i>handle</i> will be delivered to all subscribed
+processes in the system.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The argument
+<i>guarantee</i> requests a delivery guarantee for the
+message to be sent. The cpg_guarantee_t type is defined
+by:</p>
+
+<p style="margin-left:22%; margin-top: 1em">typedef enum {
+<br>
+CPG_TYPE_UNORDERED, /* not implemented */ <br>
+CPG_TYPE_FIFO, /* same as agreed */ <br>
+CPG_TYPE_AGREED, /* implemented */ <br>
+CPG_TYPE_SAFE /* not implemented */ <br>
+} cpg_guarantee_t;</p>
+
+<p style="margin-left:11%; margin-top: 1em">The meanings of
+the cpg_guarantee_t typedef are: <b><br>
+CPG_TYPE_UNORDERED</b></p>
+
+<p style="margin-left:22%;">Messages are guaranteed to be
+delivered, but with no particular order. This mode is
+unimplemented in the CPG library.</p>
+
+<p style="margin-left:11%;"><b>CPG_TYPE_FIFO</b></p>
+
+<p style="margin-left:22%;">Messages are guaranteed to be
+delivered in first sent first delivery order. In fact, this
+guarantee is equivalent to the CPG_TYPE_AGREED
+guarantee.</p>
+
+<p style="margin-left:11%;"><b>CPG_TYPE_AGREED</b></p>
+
+<p style="margin-left:22%;">All processors must agree on
+the order of delivery. If a message is sent from two or more
+processes at about the same time, the delivery will occur in
+the same order to all processes.</p>
+
+<p style="margin-left:11%;"><b>CPG_TYPE_SAFE</b></p>
+
+<p style="margin-left:22%;">All processes must agree on the
+order of delivery. Further all processes must have a copy of
+the message before any delivery takes place. This mode is
+unimplemented in the CPG library.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The
+<i>iovec</i> argument describes the scatter/gather list
+which is used to transmit a message. This is a iovec
+described by:</p>
+
+<p style="margin-left:22%; margin-top: 1em">struct iovec
+<br>
+{ <br>
+void *iov_base; /* Pointer to data. */ <br>
+unsigned int iov_len; /* Length of data. */ <br>
+};</p>
+
+<p style="margin-left:11%; margin-top: 1em">The
+<i>iov_len</i> argument describes the number of entires in
+the <i>iovec</i> argument.</p>
+
+<h2>RETURN VALUE
+<a name="RETURN VALUE"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">This call
+returns the CPG_OK value if successful, otherwise an error
+is returned.</p>
+
+<h2>ERRORS
+<a name="ERRORS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The errors are
+undocumented.</p>
+
+<h2>SEE ALSO
+<a name="SEE ALSO"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>cpg_overview</b>(8),
+<b>cpg_initialize</b>(3), <b>cpg_finalize</b>(3),
+<b>cpg_fd_get</b>(3), <b>cpg_dispatch</b>(3),
+<b>cpg_join</b>(3), <b>cpg_leave</b>(3),
+<b>cpg_mcast_joined</b>(3), <b>cpg_membership_get</b>(3)
+<b>cpg_zcb_alloc</b>(3) <b>cpg_zcb_free</b>(3)
+<b>cpg_zcb_mcast_joined</b>(3) <b>cpg_context_get</b>(3)
+<b>cpg_context_set</b>(3) <b>cpg_local_get</b>(3)</p>
+<hr>
+</body>
+</html>

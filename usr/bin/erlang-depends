@@ -1,0 +1,2474 @@
+#! /usr/bin/env escript
+%% -*- erlang -*-
+%%! -smp disable
+
+-include_lib("kernel/include/file.hrl").
+
+% The current Erlang version
+-define(VERSION, "1:14.b.4-dfsg").
+-define(ABI_VERSION, "13.a").
+
+% The list of HiPE enabled architectures (with added 'all' architecture),
+% isn't used yet
+-define(HIPE_ARCHES, split("amd64 i386 powerpc sparc solaris-i386 all", $\ )).
+
+% Since all packages required built application to run may be unavailable
+% on build stage it's necessary to list all module-package relationships
+% explicitly:
+-define(MODULES, [{"erl_prim_loader", "erlang-base"},
+{"init", "erlang-base"},
+{"prim_file", "erlang-base"},
+{"prim_inet", "erlang-base"},
+{"zlib", "erlang-base"},
+{"prim_zip", "erlang-base"},
+{"otp_ring0", "erlang-base"},
+{"erlang", "erlang-base"},
+{"array", "erlang-base"},
+{"base64", "erlang-base"},
+{"beam_lib", "erlang-base"},
+{"binary", "erlang-base"},
+{"c", "erlang-base"},
+{"calendar", "erlang-base"},
+{"dets", "erlang-base"},
+{"dets_server", "erlang-base"},
+{"dets_sup", "erlang-base"},
+{"dets_utils", "erlang-base"},
+{"dets_v8", "erlang-base"},
+{"dets_v9", "erlang-base"},
+{"dict", "erlang-base"},
+{"digraph", "erlang-base"},
+{"digraph_utils", "erlang-base"},
+{"edlin", "erlang-base"},
+{"edlin_expand", "erlang-base"},
+{"epp", "erlang-base"},
+{"erl_bits", "erlang-base"},
+{"erl_compile", "erlang-base"},
+{"erl_eval", "erlang-base"},
+{"erl_expand_records", "erlang-base"},
+{"erl_internal", "erlang-base"},
+{"erl_lint", "erlang-base"},
+{"erl_parse", "erlang-base"},
+{"erl_posix_msg", "erlang-base"},
+{"erl_pp", "erlang-base"},
+{"erl_scan", "erlang-base"},
+{"erl_tar", "erlang-base"},
+{"error_logger_file_h", "erlang-base"},
+{"error_logger_tty_h", "erlang-base"},
+{"escript", "erlang-base"},
+{"ets", "erlang-base"},
+{"eval_bits", "erlang-base"},
+{"file_sorter", "erlang-base"},
+{"filelib", "erlang-base"},
+{"filename", "erlang-base"},
+{"gb_trees", "erlang-base"},
+{"gb_sets", "erlang-base"},
+{"gen", "erlang-base"},
+{"gen_event", "erlang-base"},
+{"gen_fsm", "erlang-base"},
+{"gen_server", "erlang-base"},
+{"io", "erlang-base"},
+{"io_lib", "erlang-base"},
+{"io_lib_format", "erlang-base"},
+{"io_lib_fread", "erlang-base"},
+{"io_lib_pretty", "erlang-base"},
+{"lib", "erlang-base"},
+{"lists", "erlang-base"},
+{"log_mf_h", "erlang-base"},
+{"math", "erlang-base"},
+{"ms_transform", "erlang-base"},
+{"otp_internal", "erlang-base"},
+{"orddict", "erlang-base"},
+{"ordsets", "erlang-base"},
+{"pg", "erlang-base"},
+{"re", "erlang-base"},
+{"pool", "erlang-base"},
+{"proc_lib", "erlang-base"},
+{"proplists", "erlang-base"},
+{"qlc", "erlang-base"},
+{"qlc_pt", "erlang-base"},
+{"queue", "erlang-base"},
+{"random", "erlang-base"},
+{"regexp", "erlang-base"},
+{"sets", "erlang-base"},
+{"shell", "erlang-base"},
+{"shell_default", "erlang-base"},
+{"slave", "erlang-base"},
+{"sofs", "erlang-base"},
+{"string", "erlang-base"},
+{"supervisor", "erlang-base"},
+{"supervisor_bridge", "erlang-base"},
+{"sys", "erlang-base"},
+{"timer", "erlang-base"},
+{"unicode", "erlang-base"},
+{"win32reg", "erlang-base"},
+{"zip", "erlang-base"},
+{"alarm_handler", "erlang-base"},
+{"sasl", "erlang-base"},
+{"sasl_report", "erlang-base"},
+{"sasl_report_file_h", "erlang-base"},
+{"sasl_report_tty_h", "erlang-base"},
+{"format_lib_supp", "erlang-base"},
+{"misc_supp", "erlang-base"},
+{"overload", "erlang-base"},
+{"rb", "erlang-base"},
+{"rb_format_supp", "erlang-base"},
+{"release_handler", "erlang-base"},
+{"release_handler_1", "erlang-base"},
+{"si", "erlang-base"},
+{"si_sasl_supp", "erlang-base"},
+{"systools", "erlang-base"},
+{"systools_make", "erlang-base"},
+{"systools_rc", "erlang-base"},
+{"systools_relup", "erlang-base"},
+{"systools_lib", "erlang-base"},
+{"erlsrv", "erlang-base"},
+{"target_system", "erlang-base"},
+{"application", "erlang-base"},
+{"application_controller", "erlang-base"},
+{"application_master", "erlang-base"},
+{"application_starter", "erlang-base"},
+{"auth", "erlang-base"},
+{"code", "erlang-base"},
+{"code_server", "erlang-base"},
+{"disk_log", "erlang-base"},
+{"disk_log_1", "erlang-base"},
+{"disk_log_server", "erlang-base"},
+{"disk_log_sup", "erlang-base"},
+{"dist_ac", "erlang-base"},
+{"dist_util", "erlang-base"},
+{"erl_boot_server", "erlang-base"},
+{"erl_ddll", "erlang-base"},
+{"erl_distribution", "erlang-base"},
+{"erl_epmd", "erlang-base"},
+{"erl_reply", "erlang-base"},
+{"erts_debug", "erlang-base"},
+{"error_handler", "erlang-base"},
+{"error_logger", "erlang-base"},
+{"file", "erlang-base"},
+{"file_io_server", "erlang-base"},
+{"file_server", "erlang-base"},
+{"gen_tcp", "erlang-base"},
+{"gen_udp", "erlang-base"},
+{"gen_sctp", "erlang-base"},
+{"global", "erlang-base"},
+{"global_group", "erlang-base"},
+{"global_search", "erlang-base"},
+{"group", "erlang-base"},
+{"heart", "erlang-base"},
+{"hipe_unified_loader", "erlang-base"},
+{"inet", "erlang-base"},
+{"inet6_tcp", "erlang-base"},
+{"inet6_tcp_dist", "erlang-base"},
+{"inet6_udp", "erlang-base"},
+{"inet6_sctp", "erlang-base"},
+{"inet_config", "erlang-base"},
+{"inet_db", "erlang-base"},
+{"inet_dns", "erlang-base"},
+{"inet_gethost_native", "erlang-base"},
+{"inet_hosts", "erlang-base"},
+{"inet_parse", "erlang-base"},
+{"inet_res", "erlang-base"},
+{"inet_tcp", "erlang-base"},
+{"inet_tcp_dist", "erlang-base"},
+{"inet_udp", "erlang-base"},
+{"inet_sctp", "erlang-base"},
+{"kernel", "erlang-base"},
+{"kernel_config", "erlang-base"},
+{"net", "erlang-base"},
+{"net_adm", "erlang-base"},
+{"net_kernel", "erlang-base"},
+{"os", "erlang-base"},
+{"packages", "erlang-base"},
+{"pg2", "erlang-base"},
+{"ram_file", "erlang-base"},
+{"rpc", "erlang-base"},
+{"seq_trace", "erlang-base"},
+{"standard_error", "erlang-base"},
+{"user", "erlang-base"},
+{"user_drv", "erlang-base"},
+{"user_sup", "erlang-base"},
+{"wrap_log_reader", "erlang-base"},
+{"beam_asm", "erlang-base"},
+{"beam_block", "erlang-base"},
+{"beam_bool", "erlang-base"},
+{"beam_bsm", "erlang-base"},
+{"beam_clean", "erlang-base"},
+{"beam_dead", "erlang-base"},
+{"beam_dict", "erlang-base"},
+{"beam_disasm", "erlang-base"},
+{"beam_flatten", "erlang-base"},
+{"beam_jump", "erlang-base"},
+{"beam_listing", "erlang-base"},
+{"beam_opcodes", "erlang-base"},
+{"beam_peep", "erlang-base"},
+{"beam_receive", "erlang-base"},
+{"beam_trim", "erlang-base"},
+{"beam_type", "erlang-base"},
+{"beam_utils", "erlang-base"},
+{"beam_validator", "erlang-base"},
+{"cerl", "erlang-base"},
+{"cerl_clauses", "erlang-base"},
+{"cerl_inline", "erlang-base"},
+{"cerl_trees", "erlang-base"},
+{"compile", "erlang-base"},
+{"core_lib", "erlang-base"},
+{"core_lint", "erlang-base"},
+{"core_parse", "erlang-base"},
+{"core_pp", "erlang-base"},
+{"core_scan", "erlang-base"},
+{"erl_bifs", "erlang-base"},
+{"rec_env", "erlang-base"},
+{"sys_core_dsetel", "erlang-base"},
+{"sys_core_fold", "erlang-base"},
+{"sys_core_inline", "erlang-base"},
+{"sys_expand_pmod", "erlang-base"},
+{"sys_pre_attributes", "erlang-base"},
+{"sys_pre_expand", "erlang-base"},
+{"v3_codegen", "erlang-base"},
+{"v3_core", "erlang-base"},
+{"v3_kernel", "erlang-base"},
+{"v3_kernel_pp", "erlang-base"},
+{"v3_life", "erlang-base"},
+{"hipe_consttab", "erlang-base"},
+{"hipe_gensym", "erlang-base"},
+{"hipe_main", "erlang-base"},
+{"cerl_cconv", "erlang-base"},
+{"cerl_closurean", "erlang-base"},
+{"cerl_hipeify", "erlang-base"},
+{"cerl_hybrid_transform", "erlang-base"},
+{"cerl_lib", "erlang-base"},
+{"cerl_messagean", "erlang-base"},
+{"cerl_pmatch", "erlang-base"},
+{"cerl_prettypr", "erlang-base"},
+{"cerl_to_icode", "erlang-base"},
+{"cerl_typean", "erlang-base"},
+{"erl_bif_types", "erlang-base"},
+{"erl_types", "erlang-base"},
+{"hipe_beam_to_icode", "erlang-base"},
+{"hipe_icode", "erlang-base"},
+{"hipe_icode_bincomp", "erlang-base"},
+{"hipe_icode_callgraph", "erlang-base"},
+{"hipe_icode_cfg", "erlang-base"},
+{"hipe_icode_coordinator", "erlang-base"},
+{"hipe_icode_fp", "erlang-base"},
+{"hipe_icode_exceptions", "erlang-base"},
+{"hipe_icode_inline_bifs", "erlang-base"},
+{"hipe_icode_instruction_counter", "erlang-base"},
+{"hipe_icode_liveness", "erlang-base"},
+{"hipe_icode_pp", "erlang-base"},
+{"hipe_icode_primops", "erlang-base"},
+{"hipe_icode_range", "erlang-base"},
+{"hipe_icode_split_arith", "erlang-base"},
+{"hipe_icode_ssa", "erlang-base"},
+{"hipe_icode_ssa_const_prop", "erlang-base"},
+{"hipe_icode_ssa_copy_prop", "erlang-base"},
+{"hipe_icode_ssa_struct_reuse", "erlang-base"},
+{"hipe_icode_type", "erlang-base"},
+{"hipe_icode_ebb", "erlang-base"},
+{"hipe_icode_mulret", "erlang-base"},
+{"hipe_bb", "erlang-base"},
+{"hipe_dominators", "erlang-base"},
+{"hipe_gen_cfg", "erlang-base"},
+{"hipe_timing", "erlang-base"},
+{"hipe_dot", "erlang-base"},
+{"hipe_digraph", "erlang-base"},
+{"appmon", "erlang-appmon"},
+{"appmon_a", "erlang-appmon"},
+{"appmon_dg", "erlang-appmon"},
+{"appmon_info", "erlang-appmon"},
+{"appmon_lb", "erlang-appmon"},
+{"appmon_place", "erlang-appmon"},
+{"appmon_txt", "erlang-appmon"},
+{"appmon_web", "erlang-appmon"},
+{"process_info", "erlang-appmon"},
+{"asn1_db", "erlang-asn1"},
+{"asn1ct", "erlang-asn1"},
+{"asn1ct_check", "erlang-asn1"},
+{"asn1ct_constructed_ber", "erlang-asn1"},
+{"asn1ct_constructed_ber_bin_v2", "erlang-asn1"},
+{"asn1ct_constructed_per", "erlang-asn1"},
+{"asn1ct_gen", "erlang-asn1"},
+{"asn1ct_gen_ber", "erlang-asn1"},
+{"asn1ct_gen_ber_bin_v2", "erlang-asn1"},
+{"asn1ct_gen_per", "erlang-asn1"},
+{"asn1ct_gen_per_rt2ct", "erlang-asn1"},
+{"asn1ct_name", "erlang-asn1"},
+{"asn1ct_parser2", "erlang-asn1"},
+{"asn1ct_pretty_format", "erlang-asn1"},
+{"asn1ct_tok", "erlang-asn1"},
+{"asn1ct_value", "erlang-asn1"},
+{"asn1rt", "erlang-asn1"},
+{"asn1rt_ber_bin", "erlang-asn1"},
+{"asn1rt_ber_bin_v2", "erlang-asn1"},
+{"asn1rt_check", "erlang-asn1"},
+{"asn1rt_driver_handler", "erlang-asn1"},
+{"asn1rt_per_bin", "erlang-asn1"},
+{"asn1rt_per_bin_rt2ct", "erlang-asn1"},
+{"asn1rt_uper_bin", "erlang-asn1"},
+{"ct", "erlang-common-test"},
+{"ct_config", "erlang-common-test"},
+{"ct_config_plain", "erlang-common-test"},
+{"ct_config_xml", "erlang-common-test"},
+{"ct_cover", "erlang-common-test"},
+{"ct_event", "erlang-common-test"},
+{"ct_framework", "erlang-common-test"},
+{"ct_ftp", "erlang-common-test"},
+{"ct_gen_conn", "erlang-common-test"},
+{"ct_hooks", "erlang-common-test"},
+{"ct_hooks_lock", "erlang-common-test"},
+{"ct_line", "erlang-common-test"},
+{"ct_logs", "erlang-common-test"},
+{"ct_make", "erlang-common-test"},
+{"ct_master", "erlang-common-test"},
+{"ct_master_event", "erlang-common-test"},
+{"ct_master_logs", "erlang-common-test"},
+{"ct_master_status", "erlang-common-test"},
+{"ct_repeat", "erlang-common-test"},
+{"ct_rpc", "erlang-common-test"},
+{"ct_run", "erlang-common-test"},
+{"ct_slave", "erlang-common-test"},
+{"ct_snmp", "erlang-common-test"},
+{"ct_ssh", "erlang-common-test"},
+{"ct_telnet", "erlang-common-test"},
+{"ct_telnet_client", "erlang-common-test"},
+{"ct_testspec", "erlang-common-test"},
+{"ct_util", "erlang-common-test"},
+{"unix_telnet", "erlang-common-test"},
+{"vts", "erlang-common-test"},
+{"CosEventChannelAdmin_AlreadyConnected", "erlang-corba"},
+{"CosEventChannelAdmin_ConsumerAdmin", "erlang-corba"},
+{"CosEventChannelAdmin_EventChannel", "erlang-corba"},
+{"CosEventChannelAdmin_ProxyPullConsumer", "erlang-corba"},
+{"CosEventChannelAdmin_ProxyPullConsumer_impl", "erlang-corba"},
+{"CosEventChannelAdmin_ProxyPullSupplier", "erlang-corba"},
+{"CosEventChannelAdmin_ProxyPushConsumer", "erlang-corba"},
+{"CosEventChannelAdmin_ProxyPushConsumer_impl", "erlang-corba"},
+{"CosEventChannelAdmin_ProxyPushSupplier", "erlang-corba"},
+{"CosEventChannelAdmin_SupplierAdmin", "erlang-corba"},
+{"CosEventChannelAdmin_SupplierAdmin_impl", "erlang-corba"},
+{"CosEventChannelAdmin_TypeError", "erlang-corba"},
+{"CosEventComm_Disconnected", "erlang-corba"},
+{"CosEventComm_PullConsumer", "erlang-corba"},
+{"CosEventComm_PullSupplier", "erlang-corba"},
+{"CosEventComm_PushConsumer", "erlang-corba"},
+{"CosEventComm_PushSupplier", "erlang-corba"},
+{"cosEventApp", "erlang-corba"},
+{"oe_CosEventChannelAdmin", "erlang-corba"},
+{"oe_CosEventComm", "erlang-corba"},
+{"oe_CosEventComm_CAdmin", "erlang-corba"},
+{"oe_CosEventComm_CAdmin_impl", "erlang-corba"},
+{"oe_CosEventComm_Channel", "erlang-corba"},
+{"oe_CosEventComm_Channel_impl", "erlang-corba"},
+{"oe_CosEventComm_Event", "erlang-corba"},
+{"oe_CosEventComm_PullerS", "erlang-corba"},
+{"oe_CosEventComm_PullerS_impl", "erlang-corba"},
+{"oe_CosEventComm_PusherS", "erlang-corba"},
+{"oe_CosEventComm_PusherS_impl", "erlang-corba"},
+{"oe_cosEventApp", "erlang-corba"},
+{"CosEventDomainAdmin", "erlang-corba"},
+{"CosEventDomainAdmin_AlreadyExists", "erlang-corba"},
+{"CosEventDomainAdmin_Connection", "erlang-corba"},
+{"CosEventDomainAdmin_ConnectionIDSeq", "erlang-corba"},
+{"CosEventDomainAdmin_ConnectionNotFound", "erlang-corba"},
+{"CosEventDomainAdmin_CycleCreationForbidden", "erlang-corba"},
+{"CosEventDomainAdmin_CycleSeq", "erlang-corba"},
+{"CosEventDomainAdmin_DiamondCreationForbidden", "erlang-corba"},
+{"CosEventDomainAdmin_DiamondSeq", "erlang-corba"},
+{"CosEventDomainAdmin_DomainIDSeq", "erlang-corba"},
+{"CosEventDomainAdmin_DomainNotFound", "erlang-corba"},
+{"CosEventDomainAdmin_EventDomain", "erlang-corba"},
+{"CosEventDomainAdmin_EventDomainFactory", "erlang-corba"},
+{"CosEventDomainAdmin_EventDomainFactory_impl", "erlang-corba"},
+{"CosEventDomainAdmin_EventDomain_impl", "erlang-corba"},
+{"CosEventDomainAdmin_MemberIDSeq", "erlang-corba"},
+{"CosEventDomainAdmin_RouteSeq", "erlang-corba"},
+{"cosEventDomainApp", "erlang-corba"},
+{"oe_CosEventDomainAdmin", "erlang-corba"},
+{"CosFileTransfer", "erlang-corba"},
+{"CosFileTransfer_AccessLevel", "erlang-corba"},
+{"CosFileTransfer_CommandNotImplementedException", "erlang-corba"},
+{"CosFileTransfer_Directory", "erlang-corba"},
+{"CosFileTransfer_Directory_impl", "erlang-corba"},
+{"CosFileTransfer_File", "erlang-corba"},
+{"CosFileTransfer_FileIterator", "erlang-corba"},
+{"CosFileTransfer_FileIterator_impl", "erlang-corba"},
+{"CosFileTransfer_FileList", "erlang-corba"},
+{"CosFileTransfer_FileNameList", "erlang-corba"},
+{"CosFileTransfer_FileNotFoundException", "erlang-corba"},
+{"CosFileTransfer_FileTransferSession", "erlang-corba"},
+{"CosFileTransfer_FileTransferSession_impl", "erlang-corba"},
+{"CosFileTransfer_FileWrapper", "erlang-corba"},
+{"CosFileTransfer_File_impl", "erlang-corba"},
+{"CosFileTransfer_IllegalOperationException", "erlang-corba"},
+{"CosFileTransfer_ProtocolAddressList", "erlang-corba"},
+{"CosFileTransfer_ProtocolSupport", "erlang-corba"},
+{"CosFileTransfer_RequestFailureException", "erlang-corba"},
+{"CosFileTransfer_SessionException", "erlang-corba"},
+{"CosFileTransfer_SupportedProtocolAddresses", "erlang-corba"},
+{"CosFileTransfer_TransferException", "erlang-corba"},
+{"CosFileTransfer_VirtualFileSystem", "erlang-corba"},
+{"CosFileTransfer_VirtualFileSystem_ContentList", "erlang-corba"},
+{"CosFileTransfer_VirtualFileSystem_impl", "erlang-corba"},
+{"cosFileTransferApp", "erlang-corba"},
+{"cosFileTransferNATIVE_file", "erlang-corba"},
+{"oe_CosFileTransfer", "erlang-corba"},
+{"CosNotification", "erlang-corba"},
+{"CosNotification_AdminPropertiesAdmin", "erlang-corba"},
+{"CosNotification_Common", "erlang-corba"},
+{"CosNotification_EventBatch", "erlang-corba"},
+{"CosNotification_EventHeader", "erlang-corba"},
+{"CosNotification_EventType", "erlang-corba"},
+{"CosNotification_EventTypeSeq", "erlang-corba"},
+{"CosNotification_FixedEventHeader", "erlang-corba"},
+{"CosNotification_NamedPropertyRange", "erlang-corba"},
+{"CosNotification_NamedPropertyRangeSeq", "erlang-corba"},
+{"CosNotification_Property", "erlang-corba"},
+{"CosNotification_PropertyError", "erlang-corba"},
+{"CosNotification_PropertyErrorSeq", "erlang-corba"},
+{"CosNotification_PropertyRange", "erlang-corba"},
+{"CosNotification_PropertySeq", "erlang-corba"},
+{"CosNotification_QoSAdmin", "erlang-corba"},
+{"CosNotification_StructuredEvent", "erlang-corba"},
+{"CosNotification_UnsupportedAdmin", "erlang-corba"},
+{"CosNotification_UnsupportedQoS", "erlang-corba"},
+{"CosNotifyChannelAdmin_AdminIDSeq", "erlang-corba"},
+{"CosNotifyChannelAdmin_AdminLimit", "erlang-corba"},
+{"CosNotifyChannelAdmin_AdminLimitExceeded", "erlang-corba"},
+{"CosNotifyChannelAdmin_AdminNotFound", "erlang-corba"},
+{"CosNotifyChannelAdmin_ChannelIDSeq", "erlang-corba"},
+{"CosNotifyChannelAdmin_ChannelNotFound", "erlang-corba"},
+{"CosNotifyChannelAdmin_ConnectionAlreadyActive", "erlang-corba"},
+{"CosNotifyChannelAdmin_ConnectionAlreadyInactive", "erlang-corba"},
+{"CosNotifyChannelAdmin_ConsumerAdmin", "erlang-corba"},
+{"CosNotifyChannelAdmin_ConsumerAdmin_impl", "erlang-corba"},
+{"CosNotifyChannelAdmin_EventChannel", "erlang-corba"},
+{"CosNotifyChannelAdmin_EventChannelFactory", "erlang-corba"},
+{"CosNotifyChannelAdmin_EventChannelFactory_impl", "erlang-corba"},
+{"CosNotifyChannelAdmin_EventChannel_impl", "erlang-corba"},
+{"CosNotifyChannelAdmin_NotConnected", "erlang-corba"},
+{"CosNotifyChannelAdmin_ProxyConsumer", "erlang-corba"},
+{"CosNotifyChannelAdmin_ProxyIDSeq", "erlang-corba"},
+{"CosNotifyChannelAdmin_ProxyNotFound", "erlang-corba"},
+{"CosNotifyChannelAdmin_ProxyPullConsumer", "erlang-corba"},
+{"CosNotifyChannelAdmin_ProxyPullSupplier", "erlang-corba"},
+{"CosNotifyChannelAdmin_ProxyPushConsumer", "erlang-corba"},
+{"CosNotifyChannelAdmin_ProxyPushSupplier", "erlang-corba"},
+{"CosNotifyChannelAdmin_ProxySupplier", "erlang-corba"},
+{"CosNotifyChannelAdmin_SequenceProxyPullConsumer", "erlang-corba"},
+{"CosNotifyChannelAdmin_SequenceProxyPullSupplier", "erlang-corba"},
+{"CosNotifyChannelAdmin_SequenceProxyPushConsumer", "erlang-corba"},
+{"CosNotifyChannelAdmin_SequenceProxyPushSupplier", "erlang-corba"},
+{"CosNotifyChannelAdmin_StructuredProxyPullConsumer", "erlang-corba"},
+{"CosNotifyChannelAdmin_StructuredProxyPullSupplier", "erlang-corba"},
+{"CosNotifyChannelAdmin_StructuredProxyPushConsumer", "erlang-corba"},
+{"CosNotifyChannelAdmin_StructuredProxyPushSupplier", "erlang-corba"},
+{"CosNotifyChannelAdmin_SupplierAdmin", "erlang-corba"},
+{"CosNotifyChannelAdmin_SupplierAdmin_impl", "erlang-corba"},
+{"CosNotifyComm_InvalidEventType", "erlang-corba"},
+{"CosNotifyComm_NotifyPublish", "erlang-corba"},
+{"CosNotifyComm_NotifySubscribe", "erlang-corba"},
+{"CosNotifyComm_PullConsumer", "erlang-corba"},
+{"CosNotifyComm_PullSupplier", "erlang-corba"},
+{"CosNotifyComm_PushConsumer", "erlang-corba"},
+{"CosNotifyComm_PushSupplier", "erlang-corba"},
+{"CosNotifyComm_SequencePullConsumer", "erlang-corba"},
+{"CosNotifyComm_SequencePullSupplier", "erlang-corba"},
+{"CosNotifyComm_SequencePushConsumer", "erlang-corba"},
+{"CosNotifyComm_SequencePushSupplier", "erlang-corba"},
+{"CosNotifyComm_StructuredPullConsumer", "erlang-corba"},
+{"CosNotifyComm_StructuredPullSupplier", "erlang-corba"},
+{"CosNotifyComm_StructuredPushConsumer", "erlang-corba"},
+{"CosNotifyComm_StructuredPushSupplier", "erlang-corba"},
+{"CosNotifyFilter_CallbackIDSeq", "erlang-corba"},
+{"CosNotifyFilter_CallbackNotFound", "erlang-corba"},
+{"CosNotifyFilter_ConstraintExp", "erlang-corba"},
+{"CosNotifyFilter_ConstraintExpSeq", "erlang-corba"},
+{"CosNotifyFilter_ConstraintIDSeq", "erlang-corba"},
+{"CosNotifyFilter_ConstraintInfo", "erlang-corba"},
+{"CosNotifyFilter_ConstraintInfoSeq", "erlang-corba"},
+{"CosNotifyFilter_ConstraintNotFound", "erlang-corba"},
+{"CosNotifyFilter_DuplicateConstraintID", "erlang-corba"},
+{"CosNotifyFilter_Filter", "erlang-corba"},
+{"CosNotifyFilter_FilterAdmin", "erlang-corba"},
+{"CosNotifyFilter_FilterFactory", "erlang-corba"},
+{"CosNotifyFilter_FilterFactory_impl", "erlang-corba"},
+{"CosNotifyFilter_FilterIDSeq", "erlang-corba"},
+{"CosNotifyFilter_FilterNotFound", "erlang-corba"},
+{"CosNotifyFilter_Filter_impl", "erlang-corba"},
+{"CosNotifyFilter_InvalidConstraint", "erlang-corba"},
+{"CosNotifyFilter_InvalidGrammar", "erlang-corba"},
+{"CosNotifyFilter_InvalidValue", "erlang-corba"},
+{"CosNotifyFilter_MappingConstraintInfo", "erlang-corba"},
+{"CosNotifyFilter_MappingConstraintInfoSeq", "erlang-corba"},
+{"CosNotifyFilter_MappingConstraintPair", "erlang-corba"},
+{"CosNotifyFilter_MappingConstraintPairSeq", "erlang-corba"},
+{"CosNotifyFilter_MappingFilter", "erlang-corba"},
+{"CosNotifyFilter_MappingFilter_impl", "erlang-corba"},
+{"CosNotifyFilter_UnsupportedFilterableData", "erlang-corba"},
+{"PullerConsumer_impl", "erlang-corba"},
+{"PullerSupplier_impl", "erlang-corba"},
+{"PusherConsumer_impl", "erlang-corba"},
+{"PusherSupplier_impl", "erlang-corba"},
+{"cosNotificationApp", "erlang-corba"},
+{"cosNotification_Filter", "erlang-corba"},
+{"cosNotification_Grammar", "erlang-corba"},
+{"cosNotification_Scanner", "erlang-corba"},
+{"cosNotification_eventDB", "erlang-corba"},
+{"oe_CosNotification", "erlang-corba"},
+{"oe_CosNotificationComm_Event", "erlang-corba"},
+{"oe_CosNotifyChannelAdmin", "erlang-corba"},
+{"oe_CosNotifyComm", "erlang-corba"},
+{"oe_CosNotifyFilter", "erlang-corba"},
+{"oe_cosNotificationAppComm", "erlang-corba"},
+{"CosPropertyService_ConflictingProperty", "erlang-corba"},
+{"CosPropertyService_ConstraintNotSupported", "erlang-corba"},
+{"CosPropertyService_FixedProperty", "erlang-corba"},
+{"CosPropertyService_InvalidPropertyName", "erlang-corba"},
+{"CosPropertyService_MultipleExceptions", "erlang-corba"},
+{"CosPropertyService_Properties", "erlang-corba"},
+{"CosPropertyService_PropertiesIterator", "erlang-corba"},
+{"CosPropertyService_PropertiesIterator_impl", "erlang-corba"},
+{"CosPropertyService_Property", "erlang-corba"},
+{"CosPropertyService_PropertyDef", "erlang-corba"},
+{"CosPropertyService_PropertyDefs", "erlang-corba"},
+{"CosPropertyService_PropertyException", "erlang-corba"},
+{"CosPropertyService_PropertyExceptions", "erlang-corba"},
+{"CosPropertyService_PropertyMode", "erlang-corba"},
+{"CosPropertyService_PropertyModes", "erlang-corba"},
+{"CosPropertyService_PropertyNames", "erlang-corba"},
+{"CosPropertyService_PropertyNamesIterator", "erlang-corba"},
+{"CosPropertyService_PropertyNamesIterator_impl", "erlang-corba"},
+{"CosPropertyService_PropertyNotFound", "erlang-corba"},
+{"CosPropertyService_PropertySet", "erlang-corba"},
+{"CosPropertyService_PropertySetDef", "erlang-corba"},
+{"CosPropertyService_PropertySetDefFactory", "erlang-corba"},
+{"CosPropertyService_PropertySetDefFactory_impl", "erlang-corba"},
+{"CosPropertyService_PropertySetDef_impl", "erlang-corba"},
+{"CosPropertyService_PropertySetFactory", "erlang-corba"},
+{"CosPropertyService_PropertySetFactory_impl", "erlang-corba"},
+{"CosPropertyService_PropertyTypes", "erlang-corba"},
+{"CosPropertyService_ReadOnlyProperty", "erlang-corba"},
+{"CosPropertyService_UnsupportedMode", "erlang-corba"},
+{"CosPropertyService_UnsupportedProperty", "erlang-corba"},
+{"CosPropertyService_UnsupportedTypeCode", "erlang-corba"},
+{"cosProperty", "erlang-corba"},
+{"oe_CosProperty", "erlang-corba"},
+{"CosTime_TIO", "erlang-corba"},
+{"CosTime_TIO_impl", "erlang-corba"},
+{"CosTime_TimeService", "erlang-corba"},
+{"CosTime_TimeService_impl", "erlang-corba"},
+{"CosTime_TimeUnavailable", "erlang-corba"},
+{"CosTime_UTO", "erlang-corba"},
+{"CosTime_UTO_impl", "erlang-corba"},
+{"CosTimerEvent_TimerEventHandler", "erlang-corba"},
+{"CosTimerEvent_TimerEventHandler_impl", "erlang-corba"},
+{"CosTimerEvent_TimerEventService", "erlang-corba"},
+{"CosTimerEvent_TimerEventService_impl", "erlang-corba"},
+{"CosTimerEvent_TimerEventT", "erlang-corba"},
+{"TimeBase_IntervalT", "erlang-corba"},
+{"TimeBase_UtcT", "erlang-corba"},
+{"cosTime", "erlang-corba"},
+{"oe_CosTime", "erlang-corba"},
+{"oe_CosTimerEvent", "erlang-corba"},
+{"oe_TimeBase", "erlang-corba"},
+{"CosTransactions_Control", "erlang-corba"},
+{"CosTransactions_Coordinator", "erlang-corba"},
+{"CosTransactions_HeuristicCommit", "erlang-corba"},
+{"CosTransactions_HeuristicHazard", "erlang-corba"},
+{"CosTransactions_HeuristicMixed", "erlang-corba"},
+{"CosTransactions_HeuristicRollback", "erlang-corba"},
+{"CosTransactions_Inactive", "erlang-corba"},
+{"CosTransactions_InvalidControl", "erlang-corba"},
+{"CosTransactions_NoTransaction", "erlang-corba"},
+{"CosTransactions_NotPrepared", "erlang-corba"},
+{"CosTransactions_NotSubtransaction", "erlang-corba"},
+{"CosTransactions_PropagationContext", "erlang-corba"},
+{"CosTransactions_RecoveryCoordinator", "erlang-corba"},
+{"CosTransactions_Resource", "erlang-corba"},
+{"CosTransactions_SubtransactionAwareResource", "erlang-corba"},
+{"CosTransactions_SubtransactionsUnavailable", "erlang-corba"},
+{"CosTransactions_SynchronizationUnavailable", "erlang-corba"},
+{"CosTransactions_Terminator", "erlang-corba"},
+{"CosTransactions_Terminator_impl", "erlang-corba"},
+{"CosTransactions_TransIdentity", "erlang-corba"},
+{"CosTransactions_TransactionFactory", "erlang-corba"},
+{"CosTransactions_TransactionFactory_impl", "erlang-corba"},
+{"CosTransactions_Unavailable", "erlang-corba"},
+{"CosTransactions_WrongTransaction", "erlang-corba"},
+{"CosTransactions_otid_t", "erlang-corba"},
+{"ETraP_Common", "erlang-corba"},
+{"ETraP_Server", "erlang-corba"},
+{"ETraP_Server_impl", "erlang-corba"},
+{"cosTransactions", "erlang-corba"},
+{"etrap_logmgr", "erlang-corba"},
+{"oe_CosTransactions", "erlang-corba"},
+{"CosNaming_Binding", "erlang-corba"},
+{"CosNaming_BindingIterator", "erlang-corba"},
+{"CosNaming_BindingIterator_impl", "erlang-corba"},
+{"CosNaming_BindingList", "erlang-corba"},
+{"CosNaming_Name", "erlang-corba"},
+{"CosNaming_NameComponent", "erlang-corba"},
+{"CosNaming_NamingContext", "erlang-corba"},
+{"CosNaming_NamingContextExt", "erlang-corba"},
+{"CosNaming_NamingContextExt_InvalidAddress", "erlang-corba"},
+{"CosNaming_NamingContextExt_impl", "erlang-corba"},
+{"CosNaming_NamingContext_AlreadyBound", "erlang-corba"},
+{"CosNaming_NamingContext_CannotProceed", "erlang-corba"},
+{"CosNaming_NamingContext_InvalidName", "erlang-corba"},
+{"CosNaming_NamingContext_NotEmpty", "erlang-corba"},
+{"CosNaming_NamingContext_NotFound", "erlang-corba"},
+{"OrberApp_IFR", "erlang-corba"},
+{"OrberApp_IFR_impl", "erlang-corba"},
+{"any", "erlang-corba"},
+{"cdr_decode", "erlang-corba"},
+{"cdr_encode", "erlang-corba"},
+{"cdrlib", "erlang-corba"},
+{"corba", "erlang-corba"},
+{"corba_boa", "erlang-corba"},
+{"corba_object", "erlang-corba"},
+{"erlang_binary", "erlang-corba"},
+{"erlang_pid", "erlang-corba"},
+{"erlang_port", "erlang-corba"},
+{"erlang_ref", "erlang-corba"},
+{"fixed", "erlang-corba"},
+{"iop_ior", "erlang-corba"},
+{"lname", "erlang-corba"},
+{"lname_component", "erlang-corba"},
+{"oe_CORBA", "erlang-corba"},
+{"oe_OrberIFR", "erlang-corba"},
+{"oe_cos_naming", "erlang-corba"},
+{"oe_cos_naming_ext", "erlang-corba"},
+{"oe_erlang", "erlang-corba"},
+{"orber", "erlang-corba"},
+{"orber_acl", "erlang-corba"},
+{"orber_cosnaming_utils", "erlang-corba"},
+{"orber_diagnostics", "erlang-corba"},
+{"orber_env", "erlang-corba"},
+{"orber_exceptions", "erlang-corba"},
+{"orber_ifr", "erlang-corba"},
+{"orber_ifr_aliasdef", "erlang-corba"},
+{"orber_ifr_arraydef", "erlang-corba"},
+{"orber_ifr_attributedef", "erlang-corba"},
+{"orber_ifr_constantdef", "erlang-corba"},
+{"orber_ifr_contained", "erlang-corba"},
+{"orber_ifr_container", "erlang-corba"},
+{"orber_ifr_enumdef", "erlang-corba"},
+{"orber_ifr_exceptiondef", "erlang-corba"},
+{"orber_ifr_fixeddef", "erlang-corba"},
+{"orber_ifr_idltype", "erlang-corba"},
+{"orber_ifr_interfacedef", "erlang-corba"},
+{"orber_ifr_irobject", "erlang-corba"},
+{"orber_ifr_moduledef", "erlang-corba"},
+{"orber_ifr_operationdef", "erlang-corba"},
+{"orber_ifr_orb", "erlang-corba"},
+{"orber_ifr_primitivedef", "erlang-corba"},
+{"orber_ifr_repository", "erlang-corba"},
+{"orber_ifr_sequencedef", "erlang-corba"},
+{"orber_ifr_stringdef", "erlang-corba"},
+{"orber_ifr_structdef", "erlang-corba"},
+{"orber_ifr_typecode", "erlang-corba"},
+{"orber_ifr_typedef", "erlang-corba"},
+{"orber_ifr_uniondef", "erlang-corba"},
+{"orber_ifr_utils", "erlang-corba"},
+{"orber_ifr_wstringdef", "erlang-corba"},
+{"orber_iiop", "erlang-corba"},
+{"orber_iiop_inproxy", "erlang-corba"},
+{"orber_iiop_inrequest", "erlang-corba"},
+{"orber_iiop_insup", "erlang-corba"},
+{"orber_iiop_net", "erlang-corba"},
+{"orber_iiop_net_accept", "erlang-corba"},
+{"orber_iiop_outproxy", "erlang-corba"},
+{"orber_iiop_outsup", "erlang-corba"},
+{"orber_iiop_pm", "erlang-corba"},
+{"orber_iiop_socketsup", "erlang-corba"},
+{"orber_iiop_tracer", "erlang-corba"},
+{"orber_iiop_tracer_silent", "erlang-corba"},
+{"orber_iiop_tracer_stealth", "erlang-corba"},
+{"orber_initial_references", "erlang-corba"},
+{"orber_objectkeys", "erlang-corba"},
+{"orber_pi", "erlang-corba"},
+{"orber_request_number", "erlang-corba"},
+{"orber_socket", "erlang-corba"},
+{"orber_tb", "erlang-corba"},
+{"orber_tc", "erlang-corba"},
+{"orber_typedefs", "erlang-corba"},
+{"orber_web", "erlang-corba"},
+{"orber_web_server", "erlang-corba"},
+{"crypto", "erlang-crypto"},
+{"crypto_app", "erlang-crypto"},
+{"crypto_server", "erlang-crypto"},
+{"crypto_sup", "erlang-crypto"},
+{"dbg_debugged", "erlang-debugger"},
+{"dbg_icmd", "erlang-debugger"},
+{"dbg_idb", "erlang-debugger"},
+{"dbg_ieval", "erlang-debugger"},
+{"dbg_iload", "erlang-debugger"},
+{"dbg_iserver", "erlang-debugger"},
+{"dbg_ui_break", "erlang-debugger"},
+{"dbg_ui_break_win", "erlang-debugger"},
+{"dbg_ui_edit", "erlang-debugger"},
+{"dbg_ui_edit_win", "erlang-debugger"},
+{"dbg_ui_filedialog_win", "erlang-debugger"},
+{"dbg_ui_interpret", "erlang-debugger"},
+{"dbg_ui_mon", "erlang-debugger"},
+{"dbg_ui_mon_win", "erlang-debugger"},
+{"dbg_ui_settings", "erlang-debugger"},
+{"dbg_ui_trace", "erlang-debugger"},
+{"dbg_ui_trace_win", "erlang-debugger"},
+{"dbg_ui_view", "erlang-debugger"},
+{"dbg_ui_win", "erlang-debugger"},
+{"dbg_ui_winman", "erlang-debugger"},
+{"dbg_wx_break", "erlang-debugger"},
+{"dbg_wx_break_win", "erlang-debugger"},
+{"dbg_wx_code", "erlang-debugger"},
+{"dbg_wx_filedialog_win", "erlang-debugger"},
+{"dbg_wx_interpret", "erlang-debugger"},
+{"dbg_wx_mon", "erlang-debugger"},
+{"dbg_wx_mon_win", "erlang-debugger"},
+{"dbg_wx_settings", "erlang-debugger"},
+{"dbg_wx_src_view", "erlang-debugger"},
+{"dbg_wx_trace", "erlang-debugger"},
+{"dbg_wx_trace_win", "erlang-debugger"},
+{"dbg_wx_view", "erlang-debugger"},
+{"dbg_wx_win", "erlang-debugger"},
+{"dbg_wx_winman", "erlang-debugger"},
+{"debugger", "erlang-debugger"},
+{"i", "erlang-debugger"},
+{"int", "erlang-debugger"},
+{"dialyzer", "erlang-dialyzer"},
+{"dialyzer_analysis_callgraph", "erlang-dialyzer"},
+{"dialyzer_behaviours", "erlang-dialyzer"},
+{"dialyzer_callgraph", "erlang-dialyzer"},
+{"dialyzer_cl", "erlang-dialyzer"},
+{"dialyzer_cl_parse", "erlang-dialyzer"},
+{"dialyzer_codeserver", "erlang-dialyzer"},
+{"dialyzer_contracts", "erlang-dialyzer"},
+{"dialyzer_dataflow", "erlang-dialyzer"},
+{"dialyzer_dep", "erlang-dialyzer"},
+{"dialyzer_explanation", "erlang-dialyzer"},
+{"dialyzer_gui", "erlang-dialyzer"},
+{"dialyzer_gui_wx", "erlang-dialyzer"},
+{"dialyzer_options", "erlang-dialyzer"},
+{"dialyzer_plt", "erlang-dialyzer"},
+{"dialyzer_races", "erlang-dialyzer"},
+{"dialyzer_succ_typings", "erlang-dialyzer"},
+{"dialyzer_typesig", "erlang-dialyzer"},
+{"dialyzer_utils", "erlang-dialyzer"},
+{"diameter", "erlang-diameter"},
+{"diameter_app", "erlang-diameter"},
+{"diameter_callback", "erlang-diameter"},
+{"diameter_capx", "erlang-diameter"},
+{"diameter_codec", "erlang-diameter"},
+{"diameter_codegen", "erlang-diameter"},
+{"diameter_config", "erlang-diameter"},
+{"diameter_dbg", "erlang-diameter"},
+{"diameter_dict", "erlang-diameter"},
+{"diameter_etcp", "erlang-diameter"},
+{"diameter_etcp_sup", "erlang-diameter"},
+{"diameter_exprecs", "erlang-diameter"},
+{"diameter_gen_base_accounting", "erlang-diameter"},
+{"diameter_gen_base_rfc3588", "erlang-diameter"},
+{"diameter_gen_relay", "erlang-diameter"},
+{"diameter_info", "erlang-diameter"},
+{"diameter_lib", "erlang-diameter"},
+{"diameter_misc_sup", "erlang-diameter"},
+{"diameter_peer", "erlang-diameter"},
+{"diameter_peer_fsm", "erlang-diameter"},
+{"diameter_peer_fsm_sup", "erlang-diameter"},
+{"diameter_reg", "erlang-diameter"},
+{"diameter_sctp", "erlang-diameter"},
+{"diameter_sctp_sup", "erlang-diameter"},
+{"diameter_service", "erlang-diameter"},
+{"diameter_service_sup", "erlang-diameter"},
+{"diameter_session", "erlang-diameter"},
+{"diameter_spec_scan", "erlang-diameter"},
+{"diameter_spec_util", "erlang-diameter"},
+{"diameter_stats", "erlang-diameter"},
+{"diameter_sup", "erlang-diameter"},
+{"diameter_sync", "erlang-diameter"},
+{"diameter_tcp", "erlang-diameter"},
+{"diameter_tcp_sup", "erlang-diameter"},
+{"diameter_transport_sup", "erlang-diameter"},
+{"diameter_types", "erlang-diameter"},
+{"diameter_watchdog", "erlang-diameter"},
+{"diameter_watchdog_sup", "erlang-diameter"},
+{"docb_edoc_xml_cb", "erlang-docbuilder"},
+{"docb_gen", "erlang-docbuilder"},
+{"docb_html", "erlang-docbuilder"},
+{"docb_html_layout", "erlang-docbuilder"},
+{"docb_html_ref", "erlang-docbuilder"},
+{"docb_html_util", "erlang-docbuilder"},
+{"docb_html_util_iso", "erlang-docbuilder"},
+{"docb_main", "erlang-docbuilder"},
+{"docb_pretty_format", "erlang-docbuilder"},
+{"docb_tr_application2html", "erlang-docbuilder"},
+{"docb_tr_appref2html", "erlang-docbuilder"},
+{"docb_tr_chapter2html", "erlang-docbuilder"},
+{"docb_tr_cite2html", "erlang-docbuilder"},
+{"docb_tr_comref2html", "erlang-docbuilder"},
+{"docb_tr_cref2html", "erlang-docbuilder"},
+{"docb_tr_erlref2html", "erlang-docbuilder"},
+{"docb_tr_fileref2html", "erlang-docbuilder"},
+{"docb_tr_first2html", "erlang-docbuilder"},
+{"docb_tr_index2html", "erlang-docbuilder"},
+{"docb_tr_part2html", "erlang-docbuilder"},
+{"docb_tr_refs2kwic", "erlang-docbuilder"},
+{"docb_tr_report2html", "erlang-docbuilder"},
+{"docb_tr_term2html", "erlang-docbuilder"},
+{"docb_transform", "erlang-docbuilder"},
+{"docb_util", "erlang-docbuilder"},
+{"docb_xmerl_tree_cb", "erlang-docbuilder"},
+{"docb_xmerl_xml_cb", "erlang-docbuilder"},
+{"docb_xml_check", "erlang-docbuilder"},
+{"edoc", "erlang-edoc"},
+{"edoc_data", "erlang-edoc"},
+{"edoc_doclet", "erlang-edoc"},
+{"edoc_extract", "erlang-edoc"},
+{"edoc_layout", "erlang-edoc"},
+{"edoc_lib", "erlang-edoc"},
+{"edoc_macros", "erlang-edoc"},
+{"edoc_parser", "erlang-edoc"},
+{"edoc_refs", "erlang-edoc"},
+{"edoc_report", "erlang-edoc"},
+{"edoc_run", "erlang-edoc"},
+{"edoc_scanner", "erlang-edoc"},
+{"edoc_specs", "erlang-edoc"},
+{"edoc_tags", "erlang-edoc"},
+{"edoc_types", "erlang-edoc"},
+{"edoc_wiki", "erlang-edoc"},
+{"otpsgml_layout", "erlang-edoc"},
+{"otp_specs", "erlang-erl-docgen"},
+{"et", "erlang-et"},
+{"et_collector", "erlang-et"},
+{"et_gs_contents_viewer", "erlang-et"},
+{"et_gs_viewer", "erlang-et"},
+{"et_selector", "erlang-et"},
+{"et_viewer", "erlang-et"},
+{"et_wx_contents_viewer", "erlang-et"},
+{"et_wx_viewer", "erlang-et"},
+{"eunit", "erlang-eunit"},
+{"eunit_autoexport", "erlang-eunit"},
+{"eunit_data", "erlang-eunit"},
+{"eunit_lib", "erlang-eunit"},
+{"eunit_listener", "erlang-eunit"},
+{"eunit_proc", "erlang-eunit"},
+{"eunit_serial", "erlang-eunit"},
+{"eunit_server", "erlang-eunit"},
+{"eunit_striptests", "erlang-eunit"},
+{"eunit_surefire", "erlang-eunit"},
+{"eunit_test", "erlang-eunit"},
+{"eunit_tests", "erlang-eunit"},
+{"eunit_tty", "erlang-eunit"},
+{"bonk", "erlang-gs"},
+{"bonk_sound", "erlang-gs"},
+{"bonk_square", "erlang-gs"},
+{"cols", "erlang-gs"},
+{"highscore", "erlang-gs"},
+{"mandel", "erlang-gs"},
+{"othello", "erlang-gs"},
+{"othello_adt", "erlang-gs"},
+{"othello_board", "erlang-gs"},
+{"sounder", "erlang-gs"},
+{"gs", "erlang-gs"},
+{"gs_frontend", "erlang-gs"},
+{"gs_make", "erlang-gs"},
+{"gs_packer", "erlang-gs"},
+{"gs_widgets", "erlang-gs"},
+{"gse", "erlang-gs"},
+{"gstk", "erlang-gs"},
+{"gstk_arc", "erlang-gs"},
+{"gstk_button", "erlang-gs"},
+{"gstk_canvas", "erlang-gs"},
+{"gstk_checkbutton", "erlang-gs"},
+{"gstk_db", "erlang-gs"},
+{"gstk_editor", "erlang-gs"},
+{"gstk_entry", "erlang-gs"},
+{"gstk_font", "erlang-gs"},
+{"gstk_frame", "erlang-gs"},
+{"gstk_generic", "erlang-gs"},
+{"gstk_grid", "erlang-gs"},
+{"gstk_gridline", "erlang-gs"},
+{"gstk_gs", "erlang-gs"},
+{"gstk_image", "erlang-gs"},
+{"gstk_label", "erlang-gs"},
+{"gstk_line", "erlang-gs"},
+{"gstk_listbox", "erlang-gs"},
+{"gstk_menu", "erlang-gs"},
+{"gstk_menubar", "erlang-gs"},
+{"gstk_menubutton", "erlang-gs"},
+{"gstk_menuitem", "erlang-gs"},
+{"gstk_oval", "erlang-gs"},
+{"gstk_polygon", "erlang-gs"},
+{"gstk_port_handler", "erlang-gs"},
+{"gstk_radiobutton", "erlang-gs"},
+{"gstk_rectangle", "erlang-gs"},
+{"gstk_scale", "erlang-gs"},
+{"gstk_text", "erlang-gs"},
+{"gstk_widgets", "erlang-gs"},
+{"gstk_window", "erlang-gs"},
+{"tcl2erl", "erlang-gs"},
+{"tool_file_dialog", "erlang-gs"},
+{"tool_utils", "erlang-gs"},
+{"ic", "erlang-ic"},
+{"ic_array_java", "erlang-ic"},
+{"ic_attribute_java", "erlang-ic"},
+{"ic_cbe", "erlang-ic"},
+{"ic_cclient", "erlang-ic"},
+{"ic_code", "erlang-ic"},
+{"ic_codegen", "erlang-ic"},
+{"ic_constant_java", "erlang-ic"},
+{"ic_cserver", "erlang-ic"},
+{"ic_enum_java", "erlang-ic"},
+{"ic_erl_template", "erlang-ic"},
+{"ic_erlbe", "erlang-ic"},
+{"ic_error", "erlang-ic"},
+{"ic_fetch", "erlang-ic"},
+{"ic_file", "erlang-ic"},
+{"ic_forms", "erlang-ic"},
+{"ic_genobj", "erlang-ic"},
+{"ic_java_type", "erlang-ic"},
+{"ic_jbe", "erlang-ic"},
+{"ic_noc", "erlang-ic"},
+{"ic_options", "erlang-ic"},
+{"ic_plainbe", "erlang-ic"},
+{"ic_pp", "erlang-ic"},
+{"ic_pragma", "erlang-ic"},
+{"ic_sequence_java", "erlang-ic"},
+{"ic_struct_java", "erlang-ic"},
+{"ic_symtab", "erlang-ic"},
+{"ic_union_java", "erlang-ic"},
+{"ic_util", "erlang-ic"},
+{"icenum", "erlang-ic"},
+{"iceval", "erlang-ic"},
+{"icparse", "erlang-ic"},
+{"icpreproc", "erlang-ic"},
+{"icscan", "erlang-ic"},
+{"icstruct", "erlang-ic"},
+{"ictk", "erlang-ic"},
+{"ictype", "erlang-ic"},
+{"icunion", "erlang-ic"},
+{"ftp", "erlang-inets"},
+{"ftp_progress", "erlang-inets"},
+{"ftp_response", "erlang-inets"},
+{"ftp_sup", "erlang-inets"},
+{"http", "erlang-inets"},
+{"http_chunk", "erlang-inets"},
+{"http_request", "erlang-inets"},
+{"http_response", "erlang-inets"},
+{"http_transport", "erlang-inets"},
+{"http_uri", "erlang-inets"},
+{"http_util", "erlang-inets"},
+{"httpc", "erlang-inets"},
+{"httpc_cookie", "erlang-inets"},
+{"httpc_handler", "erlang-inets"},
+{"httpc_handler_sup", "erlang-inets"},
+{"httpc_manager", "erlang-inets"},
+{"httpc_profile_sup", "erlang-inets"},
+{"httpc_request", "erlang-inets"},
+{"httpc_response", "erlang-inets"},
+{"httpc_sup", "erlang-inets"},
+{"httpd", "erlang-inets"},
+{"httpd_acceptor", "erlang-inets"},
+{"httpd_acceptor_sup", "erlang-inets"},
+{"httpd_cgi", "erlang-inets"},
+{"httpd_conf", "erlang-inets"},
+{"httpd_esi", "erlang-inets"},
+{"httpd_example", "erlang-inets"},
+{"httpd_file", "erlang-inets"},
+{"httpd_instance_sup", "erlang-inets"},
+{"httpd_log", "erlang-inets"},
+{"httpd_manager", "erlang-inets"},
+{"httpd_misc_sup", "erlang-inets"},
+{"httpd_request", "erlang-inets"},
+{"httpd_request_handler", "erlang-inets"},
+{"httpd_response", "erlang-inets"},
+{"httpd_script_env", "erlang-inets"},
+{"httpd_socket", "erlang-inets"},
+{"httpd_sup", "erlang-inets"},
+{"httpd_util", "erlang-inets"},
+{"inets", "erlang-inets"},
+{"inets_app", "erlang-inets"},
+{"inets_regexp", "erlang-inets"},
+{"inets_service", "erlang-inets"},
+{"inets_sup", "erlang-inets"},
+{"mod_actions", "erlang-inets"},
+{"mod_alias", "erlang-inets"},
+{"mod_auth", "erlang-inets"},
+{"mod_auth_dets", "erlang-inets"},
+{"mod_auth_mnesia", "erlang-inets"},
+{"mod_auth_plain", "erlang-inets"},
+{"mod_auth_server", "erlang-inets"},
+{"mod_browser", "erlang-inets"},
+{"mod_cgi", "erlang-inets"},
+{"mod_dir", "erlang-inets"},
+{"mod_disk_log", "erlang-inets"},
+{"mod_esi", "erlang-inets"},
+{"mod_get", "erlang-inets"},
+{"mod_head", "erlang-inets"},
+{"mod_htaccess", "erlang-inets"},
+{"mod_include", "erlang-inets"},
+{"mod_log", "erlang-inets"},
+{"mod_range", "erlang-inets"},
+{"mod_responsecontrol", "erlang-inets"},
+{"mod_security", "erlang-inets"},
+{"mod_security_server", "erlang-inets"},
+{"mod_trace", "erlang-inets"},
+{"tftp", "erlang-inets"},
+{"tftp_binary", "erlang-inets"},
+{"tftp_engine", "erlang-inets"},
+{"tftp_file", "erlang-inets"},
+{"tftp_lib", "erlang-inets"},
+{"tftp_logger", "erlang-inets"},
+{"tftp_sup", "erlang-inets"},
+{"inviso", "erlang-inviso"},
+{"inviso_c", "erlang-inviso"},
+{"inviso_lfm", "erlang-inviso"},
+{"inviso_lfm_tpfreader", "erlang-inviso"},
+{"inviso_tool", "erlang-inviso"},
+{"inviso_tool_lib", "erlang-inviso"},
+{"megaco", "erlang-megaco"},
+{"megaco_ber_bin_drv_media_gateway_control_prev3a", "erlang-megaco"},
+{"megaco_ber_bin_drv_media_gateway_control_prev3b", "erlang-megaco"},
+{"megaco_ber_bin_drv_media_gateway_control_prev3c", "erlang-megaco"},
+{"megaco_ber_bin_drv_media_gateway_control_v1", "erlang-megaco"},
+{"megaco_ber_bin_drv_media_gateway_control_v2", "erlang-megaco"},
+{"megaco_ber_bin_drv_media_gateway_control_v3", "erlang-megaco"},
+{"megaco_ber_bin_encoder", "erlang-megaco"},
+{"megaco_ber_bin_media_gateway_control_prev3a", "erlang-megaco"},
+{"megaco_ber_bin_media_gateway_control_prev3b", "erlang-megaco"},
+{"megaco_ber_bin_media_gateway_control_prev3c", "erlang-megaco"},
+{"megaco_ber_bin_media_gateway_control_v1", "erlang-megaco"},
+{"megaco_ber_bin_media_gateway_control_v2", "erlang-megaco"},
+{"megaco_ber_bin_media_gateway_control_v3", "erlang-megaco"},
+{"megaco_ber_encoder", "erlang-megaco"},
+{"megaco_ber_media_gateway_control_prev3a", "erlang-megaco"},
+{"megaco_ber_media_gateway_control_prev3b", "erlang-megaco"},
+{"megaco_ber_media_gateway_control_prev3c", "erlang-megaco"},
+{"megaco_ber_media_gateway_control_v1", "erlang-megaco"},
+{"megaco_ber_media_gateway_control_v2", "erlang-megaco"},
+{"megaco_ber_media_gateway_control_v3", "erlang-megaco"},
+{"megaco_binary_encoder", "erlang-megaco"},
+{"megaco_binary_encoder_lib", "erlang-megaco"},
+{"megaco_binary_name_resolver_prev3a", "erlang-megaco"},
+{"megaco_binary_name_resolver_prev3b", "erlang-megaco"},
+{"megaco_binary_name_resolver_prev3c", "erlang-megaco"},
+{"megaco_binary_name_resolver_v1", "erlang-megaco"},
+{"megaco_binary_name_resolver_v2", "erlang-megaco"},
+{"megaco_binary_name_resolver_v3", "erlang-megaco"},
+{"megaco_binary_term_id", "erlang-megaco"},
+{"megaco_binary_term_id_gen", "erlang-megaco"},
+{"megaco_binary_transformer_prev3a", "erlang-megaco"},
+{"megaco_binary_transformer_prev3b", "erlang-megaco"},
+{"megaco_binary_transformer_prev3c", "erlang-megaco"},
+{"megaco_binary_transformer_v1", "erlang-megaco"},
+{"megaco_binary_transformer_v2", "erlang-megaco"},
+{"megaco_binary_transformer_v3", "erlang-megaco"},
+{"megaco_compact_text_encoder", "erlang-megaco"},
+{"megaco_compact_text_encoder_prev3a", "erlang-megaco"},
+{"megaco_compact_text_encoder_prev3b", "erlang-megaco"},
+{"megaco_compact_text_encoder_prev3c", "erlang-megaco"},
+{"megaco_compact_text_encoder_v1", "erlang-megaco"},
+{"megaco_compact_text_encoder_v2", "erlang-megaco"},
+{"megaco_compact_text_encoder_v3", "erlang-megaco"},
+{"megaco_config", "erlang-megaco"},
+{"megaco_config_misc", "erlang-megaco"},
+{"megaco_digit_map", "erlang-megaco"},
+{"megaco_edist_compress", "erlang-megaco"},
+{"megaco_encoder", "erlang-megaco"},
+{"megaco_erl_dist_encoder", "erlang-megaco"},
+{"megaco_erl_dist_encoder_mc", "erlang-megaco"},
+{"megaco_filter", "erlang-megaco"},
+{"megaco_flex_scanner", "erlang-megaco"},
+{"megaco_flex_scanner_handler", "erlang-megaco"},
+{"megaco_messenger", "erlang-megaco"},
+{"megaco_messenger_misc", "erlang-megaco"},
+{"megaco_misc_sup", "erlang-megaco"},
+{"megaco_monitor", "erlang-megaco"},
+{"megaco_per_bin_drv_media_gateway_control_prev3a", "erlang-megaco"},
+{"megaco_per_bin_drv_media_gateway_control_prev3b", "erlang-megaco"},
+{"megaco_per_bin_drv_media_gateway_control_prev3c", "erlang-megaco"},
+{"megaco_per_bin_drv_media_gateway_control_v1", "erlang-megaco"},
+{"megaco_per_bin_drv_media_gateway_control_v2", "erlang-megaco"},
+{"megaco_per_bin_drv_media_gateway_control_v3", "erlang-megaco"},
+{"megaco_per_bin_encoder", "erlang-megaco"},
+{"megaco_per_bin_media_gateway_control_prev3a", "erlang-megaco"},
+{"megaco_per_bin_media_gateway_control_prev3b", "erlang-megaco"},
+{"megaco_per_bin_media_gateway_control_prev3c", "erlang-megaco"},
+{"megaco_per_bin_media_gateway_control_v1", "erlang-megaco"},
+{"megaco_per_bin_media_gateway_control_v2", "erlang-megaco"},
+{"megaco_per_bin_media_gateway_control_v3", "erlang-megaco"},
+{"megaco_per_encoder", "erlang-megaco"},
+{"megaco_per_media_gateway_control_prev3a", "erlang-megaco"},
+{"megaco_per_media_gateway_control_prev3b", "erlang-megaco"},
+{"megaco_per_media_gateway_control_prev3c", "erlang-megaco"},
+{"megaco_per_media_gateway_control_v1", "erlang-megaco"},
+{"megaco_per_media_gateway_control_v2", "erlang-megaco"},
+{"megaco_per_media_gateway_control_v3", "erlang-megaco"},
+{"megaco_pretty_text_encoder", "erlang-megaco"},
+{"megaco_pretty_text_encoder_prev3a", "erlang-megaco"},
+{"megaco_pretty_text_encoder_prev3b", "erlang-megaco"},
+{"megaco_pretty_text_encoder_prev3c", "erlang-megaco"},
+{"megaco_pretty_text_encoder_v1", "erlang-megaco"},
+{"megaco_pretty_text_encoder_v2", "erlang-megaco"},
+{"megaco_pretty_text_encoder_v3", "erlang-megaco"},
+{"megaco_sdp", "erlang-megaco"},
+{"megaco_stats", "erlang-megaco"},
+{"megaco_sup", "erlang-megaco"},
+{"megaco_tcp", "erlang-megaco"},
+{"megaco_tcp_accept", "erlang-megaco"},
+{"megaco_tcp_accept_sup", "erlang-megaco"},
+{"megaco_tcp_connection", "erlang-megaco"},
+{"megaco_tcp_connection_sup", "erlang-megaco"},
+{"megaco_tcp_sup", "erlang-megaco"},
+{"megaco_text_mini_decoder", "erlang-megaco"},
+{"megaco_text_mini_parser", "erlang-megaco"},
+{"megaco_text_parser_prev3a", "erlang-megaco"},
+{"megaco_text_parser_prev3b", "erlang-megaco"},
+{"megaco_text_parser_prev3c", "erlang-megaco"},
+{"megaco_text_parser_v1", "erlang-megaco"},
+{"megaco_text_parser_v2", "erlang-megaco"},
+{"megaco_text_parser_v3", "erlang-megaco"},
+{"megaco_text_scanner", "erlang-megaco"},
+{"megaco_timer", "erlang-megaco"},
+{"megaco_trans_sender", "erlang-megaco"},
+{"megaco_trans_sup", "erlang-megaco"},
+{"megaco_transport", "erlang-megaco"},
+{"megaco_udp", "erlang-megaco"},
+{"megaco_udp_server", "erlang-megaco"},
+{"megaco_udp_sup", "erlang-megaco"},
+{"megaco_user_default", "erlang-megaco"},
+{"mnesia", "erlang-mnesia"},
+{"mnesia_backup", "erlang-mnesia"},
+{"mnesia_bup", "erlang-mnesia"},
+{"mnesia_checkpoint", "erlang-mnesia"},
+{"mnesia_checkpoint_sup", "erlang-mnesia"},
+{"mnesia_controller", "erlang-mnesia"},
+{"mnesia_dumper", "erlang-mnesia"},
+{"mnesia_event", "erlang-mnesia"},
+{"mnesia_frag", "erlang-mnesia"},
+{"mnesia_frag_hash", "erlang-mnesia"},
+{"mnesia_frag_old_hash", "erlang-mnesia"},
+{"mnesia_index", "erlang-mnesia"},
+{"mnesia_kernel_sup", "erlang-mnesia"},
+{"mnesia_late_loader", "erlang-mnesia"},
+{"mnesia_lib", "erlang-mnesia"},
+{"mnesia_loader", "erlang-mnesia"},
+{"mnesia_locker", "erlang-mnesia"},
+{"mnesia_log", "erlang-mnesia"},
+{"mnesia_monitor", "erlang-mnesia"},
+{"mnesia_recover", "erlang-mnesia"},
+{"mnesia_registry", "erlang-mnesia"},
+{"mnesia_schema", "erlang-mnesia"},
+{"mnesia_snmp_hook", "erlang-mnesia"},
+{"mnesia_snmp_sup", "erlang-mnesia"},
+{"mnesia_sp", "erlang-mnesia"},
+{"mnesia_subscr", "erlang-mnesia"},
+{"mnesia_sup", "erlang-mnesia"},
+{"mnesia_text", "erlang-mnesia"},
+{"mnesia_tm", "erlang-mnesia"},
+{"crashdump_viewer", "erlang-observer"},
+{"crashdump_viewer_html", "erlang-observer"},
+{"etop", "erlang-observer"},
+{"etop_gui", "erlang-observer"},
+{"etop_tr", "erlang-observer"},
+{"etop_txt", "erlang-observer"},
+{"ttb", "erlang-observer"},
+{"ttb_et", "erlang-observer"},
+{"odbc", "erlang-odbc"},
+{"odbc_app", "erlang-odbc"},
+{"odbc_sup", "erlang-odbc"},
+{"cpu_sup", "erlang-os-mon"},
+{"disksup", "erlang-os-mon"},
+{"memsup", "erlang-os-mon"},
+{"nteventlog", "erlang-os-mon"},
+{"os_mon", "erlang-os-mon"},
+{"os_mon_mib", "erlang-os-mon"},
+{"os_mon_sysinfo", "erlang-os-mon"},
+{"os_sup", "erlang-os-mon"},
+{"leex", "erlang-parsetools"},
+{"yecc", "erlang-parsetools"},
+{"yeccparser", "erlang-parsetools"},
+{"yeccscan", "erlang-parsetools"},
+{"egd", "erlang-percept"},
+{"egd_font", "erlang-percept"},
+{"egd_png", "erlang-percept"},
+{"egd_primitives", "erlang-percept"},
+{"egd_render", "erlang-percept"},
+{"percept", "erlang-percept"},
+{"percept_analyzer", "erlang-percept"},
+{"percept_db", "erlang-percept"},
+{"percept_graph", "erlang-percept"},
+{"percept_html", "erlang-percept"},
+{"percept_image", "erlang-percept"},
+{"pman", "erlang-pman"},
+{"pman_buf", "erlang-pman"},
+{"pman_buf_buffer", "erlang-pman"},
+{"pman_buf_converter", "erlang-pman"},
+{"pman_buf_printer", "erlang-pman"},
+{"pman_buf_utils", "erlang-pman"},
+{"pman_main", "erlang-pman"},
+{"pman_module_info", "erlang-pman"},
+{"pman_options", "erlang-pman"},
+{"pman_process", "erlang-pman"},
+{"pman_relay", "erlang-pman"},
+{"pman_relay_server", "erlang-pman"},
+{"pman_shell", "erlang-pman"},
+{"pman_tool", "erlang-pman"},
+{"pman_win", "erlang-pman"},
+{"OTP-PUB-KEY", "erlang-public-key"},
+{"pubkey_cert", "erlang-public-key"},
+{"pubkey_cert_records", "erlang-public-key"},
+{"pubkey_pem", "erlang-public-key"},
+{"pubkey_ssh", "erlang-public-key"},
+{"public_key", "erlang-public-key"},
+{"reltool", "erlang-reltool"},
+{"reltool_app_win", "erlang-reltool"},
+{"reltool_fgraph", "erlang-reltool"},
+{"reltool_fgraph_win", "erlang-reltool"},
+{"reltool_mod_win", "erlang-reltool"},
+{"reltool_server", "erlang-reltool"},
+{"reltool_sys_win", "erlang-reltool"},
+{"reltool_target", "erlang-reltool"},
+{"reltool_utils", "erlang-reltool"},
+{"dbg", "erlang-runtime-tools"},
+{"erts_alloc_config", "erlang-runtime-tools"},
+{"inviso_as_lib", "erlang-runtime-tools"},
+{"inviso_autostart", "erlang-runtime-tools"},
+{"inviso_autostart_server", "erlang-runtime-tools"},
+{"inviso_rt", "erlang-runtime-tools"},
+{"inviso_rt_lib", "erlang-runtime-tools"},
+{"inviso_rt_meta", "erlang-runtime-tools"},
+{"observer_backend", "erlang-runtime-tools"},
+{"percept_profile", "erlang-runtime-tools"},
+{"runtime_tools", "erlang-runtime-tools"},
+{"runtime_tools_sup", "erlang-runtime-tools"},
+{"otp_mib", "erlang-snmp"},
+{"snmp", "erlang-snmp"},
+{"snmp_app", "erlang-snmp"},
+{"snmp_app_sup", "erlang-snmp"},
+{"snmp_community_mib", "erlang-snmp"},
+{"snmp_conf", "erlang-snmp"},
+{"snmp_config", "erlang-snmp"},
+{"snmp_framework_mib", "erlang-snmp"},
+{"snmp_generic", "erlang-snmp"},
+{"snmp_generic_mnesia", "erlang-snmp"},
+{"snmp_index", "erlang-snmp"},
+{"snmp_log", "erlang-snmp"},
+{"snmp_mini_mib", "erlang-snmp"},
+{"snmp_misc", "erlang-snmp"},
+{"snmp_note_store", "erlang-snmp"},
+{"snmp_notification_mib", "erlang-snmp"},
+{"snmp_pdus", "erlang-snmp"},
+{"snmp_shadow_table", "erlang-snmp"},
+{"snmp_standard_mib", "erlang-snmp"},
+{"snmp_target_mib", "erlang-snmp"},
+{"snmp_user_based_sm_mib", "erlang-snmp"},
+{"snmp_usm", "erlang-snmp"},
+{"snmp_verbosity", "erlang-snmp"},
+{"snmp_view_based_acm_mib", "erlang-snmp"},
+{"snmpa", "erlang-snmp"},
+{"snmpa_acm", "erlang-snmp"},
+{"snmpa_agent", "erlang-snmp"},
+{"snmpa_agent_sup", "erlang-snmp"},
+{"snmpa_app", "erlang-snmp"},
+{"snmpa_authentication_service", "erlang-snmp"},
+{"snmpa_conf", "erlang-snmp"},
+{"snmpa_discovery_handler", "erlang-snmp"},
+{"snmpa_discovery_handler_default", "erlang-snmp"},
+{"snmpa_error", "erlang-snmp"},
+{"snmpa_error_io", "erlang-snmp"},
+{"snmpa_error_logger", "erlang-snmp"},
+{"snmpa_error_report", "erlang-snmp"},
+{"snmpa_general_db", "erlang-snmp"},
+{"snmpa_local_db", "erlang-snmp"},
+{"snmpa_mib", "erlang-snmp"},
+{"snmpa_mib_data", "erlang-snmp"},
+{"snmpa_mib_lib", "erlang-snmp"},
+{"snmpa_misc_sup", "erlang-snmp"},
+{"snmpa_mpd", "erlang-snmp"},
+{"snmpa_net_if", "erlang-snmp"},
+{"snmpa_net_if_filter", "erlang-snmp"},
+{"snmpa_network_interface", "erlang-snmp"},
+{"snmpa_network_interface_filter", "erlang-snmp"},
+{"snmpa_notification_delivery_info_receiver", "erlang-snmp"},
+{"snmpa_notification_filter", "erlang-snmp"},
+{"snmpa_set", "erlang-snmp"},
+{"snmpa_set_lib", "erlang-snmp"},
+{"snmpa_set_mechanism", "erlang-snmp"},
+{"snmpa_supervisor", "erlang-snmp"},
+{"snmpa_svbl", "erlang-snmp"},
+{"snmpa_symbolic_store", "erlang-snmp"},
+{"snmpa_target_cache", "erlang-snmp"},
+{"snmpa_trap", "erlang-snmp"},
+{"snmpa_usm", "erlang-snmp"},
+{"snmpa_vacm", "erlang-snmp"},
+{"snmpc", "erlang-snmp"},
+{"snmpc_lib", "erlang-snmp"},
+{"snmpc_mib_gram", "erlang-snmp"},
+{"snmpc_mib_to_hrl", "erlang-snmp"},
+{"snmpc_misc", "erlang-snmp"},
+{"snmpc_tok", "erlang-snmp"},
+{"snmpm", "erlang-snmp"},
+{"snmpm_conf", "erlang-snmp"},
+{"snmpm_config", "erlang-snmp"},
+{"snmpm_misc_sup", "erlang-snmp"},
+{"snmpm_mpd", "erlang-snmp"},
+{"snmpm_net_if", "erlang-snmp"},
+{"snmpm_net_if_filter", "erlang-snmp"},
+{"snmpm_network_interface", "erlang-snmp"},
+{"snmpm_network_interface_filter", "erlang-snmp"},
+{"snmpm_server", "erlang-snmp"},
+{"snmpm_server_sup", "erlang-snmp"},
+{"snmpm_supervisor", "erlang-snmp"},
+{"snmpm_user", "erlang-snmp"},
+{"snmpm_user_default", "erlang-snmp"},
+{"snmpm_user_old", "erlang-snmp"},
+{"snmpm_usm", "erlang-snmp"},
+{"DSS", "erlang-ssh"},
+{"PKCS-1", "erlang-ssh"},
+{"ssh", "erlang-ssh"},
+{"ssh_acceptor", "erlang-ssh"},
+{"ssh_acceptor_sup", "erlang-ssh"},
+{"ssh_app", "erlang-ssh"},
+{"ssh_auth", "erlang-ssh"},
+{"ssh_bits", "erlang-ssh"},
+{"ssh_channel", "erlang-ssh"},
+{"ssh_channel_sup", "erlang-ssh"},
+{"ssh_cli", "erlang-ssh"},
+{"ssh_connection", "erlang-ssh"},
+{"ssh_connection_controler", "erlang-ssh"},
+{"ssh_connection_handler", "erlang-ssh"},
+{"ssh_connection_manager", "erlang-ssh"},
+{"ssh_dsa", "erlang-ssh"},
+{"ssh_file", "erlang-ssh"},
+{"ssh_io", "erlang-ssh"},
+{"ssh_math", "erlang-ssh"},
+{"ssh_no_io", "erlang-ssh"},
+{"ssh_rsa", "erlang-ssh"},
+{"ssh_sftp", "erlang-ssh"},
+{"ssh_sftpd", "erlang-ssh"},
+{"ssh_sftpd_file", "erlang-ssh"},
+{"ssh_sftpd_file_api", "erlang-ssh"},
+{"ssh_shell", "erlang-ssh"},
+{"ssh_subsystem_sup", "erlang-ssh"},
+{"ssh_sup", "erlang-ssh"},
+{"ssh_system_sup", "erlang-ssh"},
+{"ssh_transport", "erlang-ssh"},
+{"ssh_userreg", "erlang-ssh"},
+{"ssh_xfer", "erlang-ssh"},
+{"sshc_sup", "erlang-ssh"},
+{"sshd_sup", "erlang-ssh"},
+{"inet_ssl_dist", "erlang-ssl"},
+{"ssl", "erlang-ssl"},
+{"ssl_alert", "erlang-ssl"},
+{"ssl_app", "erlang-ssl"},
+{"ssl_broker", "erlang-ssl"},
+{"ssl_broker_sup", "erlang-ssl"},
+{"ssl_certificate", "erlang-ssl"},
+{"ssl_certificate_db", "erlang-ssl"},
+{"ssl_cipher", "erlang-ssl"},
+{"ssl_connection", "erlang-ssl"},
+{"ssl_connection_sup", "erlang-ssl"},
+{"ssl_debug", "erlang-ssl"},
+{"ssl_handshake", "erlang-ssl"},
+{"ssl_manager", "erlang-ssl"},
+{"ssl_prim", "erlang-ssl"},
+{"ssl_record", "erlang-ssl"},
+{"ssl_server", "erlang-ssl"},
+{"ssl_session", "erlang-ssl"},
+{"ssl_session_cache", "erlang-ssl"},
+{"ssl_session_cache_api", "erlang-ssl"},
+{"ssl_ssl2", "erlang-ssl"},
+{"ssl_ssl3", "erlang-ssl"},
+{"ssl_sup", "erlang-ssl"},
+{"ssl_tls1", "erlang-ssl"},
+{"epp_dodger", "erlang-syntax-tools"},
+{"erl_comment_scan", "erlang-syntax-tools"},
+{"erl_prettypr", "erlang-syntax-tools"},
+{"erl_recomment", "erlang-syntax-tools"},
+{"erl_syntax", "erlang-syntax-tools"},
+{"erl_syntax_lib", "erlang-syntax-tools"},
+{"erl_tidy", "erlang-syntax-tools"},
+{"igor", "erlang-syntax-tools"},
+{"prettypr", "erlang-syntax-tools"},
+{"erl2html2", "erlang-test-server"},
+{"test_server", "erlang-test-server"},
+{"test_server_ctrl", "erlang-test-server"},
+{"test_server_h", "erlang-test-server"},
+{"test_server_line", "erlang-test-server"},
+{"test_server_node", "erlang-test-server"},
+{"test_server_sup", "erlang-test-server"},
+{"vxworks_client", "erlang-test-server"},
+{"canvasbutton", "erlang-toolbar"},
+{"toolbar", "erlang-toolbar"},
+{"toolbar_graphics", "erlang-toolbar"},
+{"toolbar_lib", "erlang-toolbar"},
+{"toolbar_toolconfig", "erlang-toolbar"},
+{"cover", "erlang-tools"},
+{"cover_web", "erlang-tools"},
+{"cprof", "erlang-tools"},
+{"eprof", "erlang-tools"},
+{"fprof", "erlang-tools"},
+{"instrument", "erlang-tools"},
+{"lcnt", "erlang-tools"},
+{"make", "erlang-tools"},
+{"tags", "erlang-tools"},
+{"xref", "erlang-tools"},
+{"xref_base", "erlang-tools"},
+{"xref_compiler", "erlang-tools"},
+{"xref_parser", "erlang-tools"},
+{"xref_reader", "erlang-tools"},
+{"xref_scanner", "erlang-tools"},
+{"xref_utils", "erlang-tools"},
+{"tv", "erlang-tv"},
+{"tv_comm_func", "erlang-tv"},
+{"tv_db", "erlang-tv"},
+{"tv_db_search", "erlang-tv"},
+{"tv_db_sort", "erlang-tv"},
+{"tv_ets_rpc", "erlang-tv"},
+{"tv_etsread", "erlang-tv"},
+{"tv_info", "erlang-tv"},
+{"tv_io_lib", "erlang-tv"},
+{"tv_io_lib_format", "erlang-tv"},
+{"tv_io_lib_pretty", "erlang-tv"},
+{"tv_ip", "erlang-tv"},
+{"tv_main", "erlang-tv"},
+{"tv_mnesia_rpc", "erlang-tv"},
+{"tv_new_table", "erlang-tv"},
+{"tv_nodewin", "erlang-tv"},
+{"tv_pb", "erlang-tv"},
+{"tv_pb_funcs", "erlang-tv"},
+{"tv_pc", "erlang-tv"},
+{"tv_pc_graph_ctrl", "erlang-tv"},
+{"tv_pc_menu_handling", "erlang-tv"},
+{"tv_pd", "erlang-tv"},
+{"tv_pd_display", "erlang-tv"},
+{"tv_pd_frames", "erlang-tv"},
+{"tv_pd_scale", "erlang-tv"},
+{"tv_pg", "erlang-tv"},
+{"tv_pg_gridfcns", "erlang-tv"},
+{"tv_poll_dialog", "erlang-tv"},
+{"tv_pw", "erlang-tv"},
+{"tv_pw_window", "erlang-tv"},
+{"tv_rec_edit", "erlang-tv"},
+{"tv_table_owner", "erlang-tv"},
+{"tv_utils", "erlang-tv"},
+{"typer", "erlang-typer"},
+{"webtool", "erlang-webtool"},
+{"webtool_sup", "erlang-webtool"},
+{"gl", "erlang-wx"},
+{"glu", "erlang-wx"},
+{"wx", "erlang-wx"},
+{"wxAcceleratorEntry", "erlang-wx"},
+{"wxAcceleratorTable", "erlang-wx"},
+{"wxArtProvider", "erlang-wx"},
+{"wxAuiDockArt", "erlang-wx"},
+{"wxAuiManager", "erlang-wx"},
+{"wxAuiManagerEvent", "erlang-wx"},
+{"wxAuiNotebook", "erlang-wx"},
+{"wxAuiNotebookEvent", "erlang-wx"},
+{"wxAuiPaneInfo", "erlang-wx"},
+{"wxAuiTabArt", "erlang-wx"},
+{"wxBitmap", "erlang-wx"},
+{"wxBitmapButton", "erlang-wx"},
+{"wxBitmapDataObject", "erlang-wx"},
+{"wxBoxSizer", "erlang-wx"},
+{"wxBrush", "erlang-wx"},
+{"wxBufferedDC", "erlang-wx"},
+{"wxBufferedPaintDC", "erlang-wx"},
+{"wxButton", "erlang-wx"},
+{"wxCalendarCtrl", "erlang-wx"},
+{"wxCalendarDateAttr", "erlang-wx"},
+{"wxCalendarEvent", "erlang-wx"},
+{"wxCaret", "erlang-wx"},
+{"wxCheckBox", "erlang-wx"},
+{"wxCheckListBox", "erlang-wx"},
+{"wxChildFocusEvent", "erlang-wx"},
+{"wxChoice", "erlang-wx"},
+{"wxChoicebook", "erlang-wx"},
+{"wxClientDC", "erlang-wx"},
+{"wxClipboard", "erlang-wx"},
+{"wxCloseEvent", "erlang-wx"},
+{"wxColourData", "erlang-wx"},
+{"wxColourDialog", "erlang-wx"},
+{"wxColourPickerCtrl", "erlang-wx"},
+{"wxColourPickerEvent", "erlang-wx"},
+{"wxComboBox", "erlang-wx"},
+{"wxCommandEvent", "erlang-wx"},
+{"wxContextMenuEvent", "erlang-wx"},
+{"wxControl", "erlang-wx"},
+{"wxControlWithItems", "erlang-wx"},
+{"wxCursor", "erlang-wx"},
+{"wxDC", "erlang-wx"},
+{"wxDataObject", "erlang-wx"},
+{"wxDateEvent", "erlang-wx"},
+{"wxDatePickerCtrl", "erlang-wx"},
+{"wxDialog", "erlang-wx"},
+{"wxDirDialog", "erlang-wx"},
+{"wxDirPickerCtrl", "erlang-wx"},
+{"wxDisplayChangedEvent", "erlang-wx"},
+{"wxEraseEvent", "erlang-wx"},
+{"wxEvent", "erlang-wx"},
+{"wxEvtHandler", "erlang-wx"},
+{"wxFileDataObject", "erlang-wx"},
+{"wxFileDialog", "erlang-wx"},
+{"wxFileDirPickerEvent", "erlang-wx"},
+{"wxFilePickerCtrl", "erlang-wx"},
+{"wxFindReplaceData", "erlang-wx"},
+{"wxFindReplaceDialog", "erlang-wx"},
+{"wxFlexGridSizer", "erlang-wx"},
+{"wxFocusEvent", "erlang-wx"},
+{"wxFont", "erlang-wx"},
+{"wxFontData", "erlang-wx"},
+{"wxFontDialog", "erlang-wx"},
+{"wxFontPickerCtrl", "erlang-wx"},
+{"wxFontPickerEvent", "erlang-wx"},
+{"wxFrame", "erlang-wx"},
+{"wxGBSizerItem", "erlang-wx"},
+{"wxGLCanvas", "erlang-wx"},
+{"wxGauge", "erlang-wx"},
+{"wxGenericDirCtrl", "erlang-wx"},
+{"wxGraphicsBrush", "erlang-wx"},
+{"wxGraphicsContext", "erlang-wx"},
+{"wxGraphicsFont", "erlang-wx"},
+{"wxGraphicsMatrix", "erlang-wx"},
+{"wxGraphicsObject", "erlang-wx"},
+{"wxGraphicsPath", "erlang-wx"},
+{"wxGraphicsPen", "erlang-wx"},
+{"wxGraphicsRenderer", "erlang-wx"},
+{"wxGrid", "erlang-wx"},
+{"wxGridBagSizer", "erlang-wx"},
+{"wxGridCellAttr", "erlang-wx"},
+{"wxGridCellBoolEditor", "erlang-wx"},
+{"wxGridCellBoolRenderer", "erlang-wx"},
+{"wxGridCellChoiceEditor", "erlang-wx"},
+{"wxGridCellEditor", "erlang-wx"},
+{"wxGridCellFloatEditor", "erlang-wx"},
+{"wxGridCellFloatRenderer", "erlang-wx"},
+{"wxGridCellNumberEditor", "erlang-wx"},
+{"wxGridCellNumberRenderer", "erlang-wx"},
+{"wxGridCellRenderer", "erlang-wx"},
+{"wxGridCellStringRenderer", "erlang-wx"},
+{"wxGridCellTextEditor", "erlang-wx"},
+{"wxGridEvent", "erlang-wx"},
+{"wxGridSizer", "erlang-wx"},
+{"wxHelpEvent", "erlang-wx"},
+{"wxHtmlEasyPrinting", "erlang-wx"},
+{"wxHtmlLinkEvent", "erlang-wx"},
+{"wxHtmlWindow", "erlang-wx"},
+{"wxIcon", "erlang-wx"},
+{"wxIconBundle", "erlang-wx"},
+{"wxIconizeEvent", "erlang-wx"},
+{"wxIdleEvent", "erlang-wx"},
+{"wxImage", "erlang-wx"},
+{"wxImageList", "erlang-wx"},
+{"wxJoystickEvent", "erlang-wx"},
+{"wxKeyEvent", "erlang-wx"},
+{"wxLayoutAlgorithm", "erlang-wx"},
+{"wxListBox", "erlang-wx"},
+{"wxListCtrl", "erlang-wx"},
+{"wxListEvent", "erlang-wx"},
+{"wxListItem", "erlang-wx"},
+{"wxListItemAttr", "erlang-wx"},
+{"wxListView", "erlang-wx"},
+{"wxListbook", "erlang-wx"},
+{"wxLogNull", "erlang-wx"},
+{"wxMDIChildFrame", "erlang-wx"},
+{"wxMDIClientWindow", "erlang-wx"},
+{"wxMDIParentFrame", "erlang-wx"},
+{"wxMask", "erlang-wx"},
+{"wxMaximizeEvent", "erlang-wx"},
+{"wxMemoryDC", "erlang-wx"},
+{"wxMenu", "erlang-wx"},
+{"wxMenuBar", "erlang-wx"},
+{"wxMenuEvent", "erlang-wx"},
+{"wxMenuItem", "erlang-wx"},
+{"wxMessageDialog", "erlang-wx"},
+{"wxMiniFrame", "erlang-wx"},
+{"wxMirrorDC", "erlang-wx"},
+{"wxMouseCaptureChangedEvent", "erlang-wx"},
+{"wxMouseEvent", "erlang-wx"},
+{"wxMoveEvent", "erlang-wx"},
+{"wxMultiChoiceDialog", "erlang-wx"},
+{"wxNavigationKeyEvent", "erlang-wx"},
+{"wxNcPaintEvent", "erlang-wx"},
+{"wxNotebook", "erlang-wx"},
+{"wxNotebookEvent", "erlang-wx"},
+{"wxNotifyEvent", "erlang-wx"},
+{"wxPageSetupDialog", "erlang-wx"},
+{"wxPageSetupDialogData", "erlang-wx"},
+{"wxPaintDC", "erlang-wx"},
+{"wxPaintEvent", "erlang-wx"},
+{"wxPalette", "erlang-wx"},
+{"wxPaletteChangedEvent", "erlang-wx"},
+{"wxPanel", "erlang-wx"},
+{"wxPasswordEntryDialog", "erlang-wx"},
+{"wxPen", "erlang-wx"},
+{"wxPickerBase", "erlang-wx"},
+{"wxPostScriptDC", "erlang-wx"},
+{"wxPreviewCanvas", "erlang-wx"},
+{"wxPreviewControlBar", "erlang-wx"},
+{"wxPreviewFrame", "erlang-wx"},
+{"wxPrintData", "erlang-wx"},
+{"wxPrintDialog", "erlang-wx"},
+{"wxPrintDialogData", "erlang-wx"},
+{"wxPrintPreview", "erlang-wx"},
+{"wxPrinter", "erlang-wx"},
+{"wxPrintout", "erlang-wx"},
+{"wxProgressDialog", "erlang-wx"},
+{"wxQueryNewPaletteEvent", "erlang-wx"},
+{"wxRadioBox", "erlang-wx"},
+{"wxRadioButton", "erlang-wx"},
+{"wxRegion", "erlang-wx"},
+{"wxSashEvent", "erlang-wx"},
+{"wxSashLayoutWindow", "erlang-wx"},
+{"wxSashWindow", "erlang-wx"},
+{"wxScreenDC", "erlang-wx"},
+{"wxScrollBar", "erlang-wx"},
+{"wxScrollEvent", "erlang-wx"},
+{"wxScrollWinEvent", "erlang-wx"},
+{"wxScrolledWindow", "erlang-wx"},
+{"wxSetCursorEvent", "erlang-wx"},
+{"wxShowEvent", "erlang-wx"},
+{"wxSingleChoiceDialog", "erlang-wx"},
+{"wxSizeEvent", "erlang-wx"},
+{"wxSizer", "erlang-wx"},
+{"wxSizerFlags", "erlang-wx"},
+{"wxSizerItem", "erlang-wx"},
+{"wxSlider", "erlang-wx"},
+{"wxSpinButton", "erlang-wx"},
+{"wxSpinCtrl", "erlang-wx"},
+{"wxSpinEvent", "erlang-wx"},
+{"wxSplashScreen", "erlang-wx"},
+{"wxSplitterEvent", "erlang-wx"},
+{"wxSplitterWindow", "erlang-wx"},
+{"wxStaticBitmap", "erlang-wx"},
+{"wxStaticBox", "erlang-wx"},
+{"wxStaticBoxSizer", "erlang-wx"},
+{"wxStaticLine", "erlang-wx"},
+{"wxStaticText", "erlang-wx"},
+{"wxStatusBar", "erlang-wx"},
+{"wxStdDialogButtonSizer", "erlang-wx"},
+{"wxStyledTextCtrl", "erlang-wx"},
+{"wxStyledTextEvent", "erlang-wx"},
+{"wxSysColourChangedEvent", "erlang-wx"},
+{"wxSystemSettings", "erlang-wx"},
+{"wxTextAttr", "erlang-wx"},
+{"wxTextCtrl", "erlang-wx"},
+{"wxTextDataObject", "erlang-wx"},
+{"wxTextEntryDialog", "erlang-wx"},
+{"wxToggleButton", "erlang-wx"},
+{"wxToolBar", "erlang-wx"},
+{"wxToolTip", "erlang-wx"},
+{"wxToolbook", "erlang-wx"},
+{"wxTopLevelWindow", "erlang-wx"},
+{"wxTreeCtrl", "erlang-wx"},
+{"wxTreeEvent", "erlang-wx"},
+{"wxTreebook", "erlang-wx"},
+{"wxUpdateUIEvent", "erlang-wx"},
+{"wxWindow", "erlang-wx"},
+{"wxWindowCreateEvent", "erlang-wx"},
+{"wxWindowDC", "erlang-wx"},
+{"wxWindowDestroyEvent", "erlang-wx"},
+{"wxXmlResource", "erlang-wx"},
+{"wx_misc", "erlang-wx"},
+{"wx_object", "erlang-wx"},
+{"wxe_master", "erlang-wx"},
+{"wxe_server", "erlang-wx"},
+{"wxe_util", "erlang-wx"},
+{"xmerl", "erlang-xmerl"},
+{"xmerl_b64Bin", "erlang-xmerl"},
+{"xmerl_b64Bin_scan", "erlang-xmerl"},
+{"xmerl_eventp", "erlang-xmerl"},
+{"xmerl_html", "erlang-xmerl"},
+{"xmerl_lib", "erlang-xmerl"},
+{"xmerl_otpsgml", "erlang-xmerl"},
+{"xmerl_regexp", "erlang-xmerl"},
+{"xmerl_sax_old_dom", "erlang-xmerl"},
+{"xmerl_sax_parser", "erlang-xmerl"},
+{"xmerl_sax_parser_latin1", "erlang-xmerl"},
+{"xmerl_sax_parser_list", "erlang-xmerl"},
+{"xmerl_sax_parser_utf16be", "erlang-xmerl"},
+{"xmerl_sax_parser_utf16le", "erlang-xmerl"},
+{"xmerl_sax_parser_utf8", "erlang-xmerl"},
+{"xmerl_sax_simple_dom", "erlang-xmerl"},
+{"xmerl_scan", "erlang-xmerl"},
+{"xmerl_sgml", "erlang-xmerl"},
+{"xmerl_simple", "erlang-xmerl"},
+{"xmerl_text", "erlang-xmerl"},
+{"xmerl_ucs", "erlang-xmerl"},
+{"xmerl_uri", "erlang-xmerl"},
+{"xmerl_validate", "erlang-xmerl"},
+{"xmerl_xlate", "erlang-xmerl"},
+{"xmerl_xml", "erlang-xmerl"},
+{"xmerl_xpath", "erlang-xmerl"},
+{"xmerl_xpath_lib", "erlang-xmerl"},
+{"xmerl_xpath_parse", "erlang-xmerl"},
+{"xmerl_xpath_pred", "erlang-xmerl"},
+{"xmerl_xpath_scan", "erlang-xmerl"},
+{"xmerl_xs", "erlang-xmerl"},
+{"xmerl_xsd", "erlang-xmerl"},
+{"xmerl_xsd_type", "erlang-xmerl"},
+ {"erlang", "erlang-base"}]).
+
+% The erlang packages list (suffixes only)
+-define(PACKAGES, ["dev", "nox", "x11", "appmon", "asn1", "common-test", "corba", "crypto", "debugger", "dialyzer", "diameter", "docbuilder", "edoc", "erl-docgen", "et", "eunit", "gs", "ic-java", "ic", "inets", "inviso", "jinterface", "megaco", "mnesia", "observer", "odbc", "os-mon", "parsetools", "percept", "pman", "public-key", "reltool", "runtime-tools", "snmp", "ssh", "ssl", "syntax-tools", "test-server", "toolbar", "tools", "tv", "typer", "webtool", "wx", "xmerl"]).
+
+% main/1 --
+%
+%	Generate debhelper substitution variables for Erlang-dependent
+%	packages.
+%
+% Arguments:
+%	Options		List of debhelper options (-v, -a, -i, -p*, -N*) or -h.
+%
+% Result:
+%	None.
+%
+% Side effects:
+%	For each of the selected packages the corresponding file
+%	debian/package.substvars is created (if necessary) and filled by erlang
+%	dependencies. If -h or --help is among arguments then the usage info is
+%	printed instead and script is halted.
+
+main(Options) ->
+    {Verbosity, TmpDir, Exclude, NewOptions} =
+	lists:foldl(fun(Opt, {Sum, Dir, Ex, Opts}) ->
+			case Opt of
+			    "-h" ->
+				usage(),
+				halt(2);
+			    "--help" ->
+				usage(),
+				halt(2);
+			    "-v" ->
+				{Sum + 1, Dir, Ex, Opts};
+			    "--verbose" ->
+				{Sum + 1, Dir, Ex, Opts};
+			    "--ignore=" ++ File ->
+				{Sum, Dir, Ex ++ [File], Opts};
+			    "-P" ++ D ->
+				{Sum, D, Ex, Opts};
+			    "--tmpdir=" ++ D ->
+				{Sum, D, Ex, Opts};
+			    _ ->
+				{Sum, Dir, Ex, Opts ++ [Opt]}
+			end
+		    end, {0, [], [], []}, Options),
+    lists:foreach(
+      fun({Package, Variables}) ->
+	    PkgDir = case TmpDir of
+			 [] ->
+		    	     filename:join("debian", Package);
+			 _ ->
+		    	     TmpDir
+		     end,
+	    delsubstvar(Verbosity, Package, "erlang:Depends"),
+	    Variables2 = Variables ++
+		case lists:member("erlang:Depends", Variables) of
+		    true ->
+			Deps = ordsets:to_list(
+				 lists:foldl(
+				   fun(M, Acc) ->
+					case lists:keysearch(M, 1, ?MODULES) of
+					    {value, {_, P}} ->
+						ordsets:add_element(P, Acc);
+					    _ ->
+						io:format("WARNING: Module ~s not found~n", [M]),
+						Acc
+					end
+				   end, ordsets:new(),
+				   get_remote_modules(Verbosity, PkgDir, Exclude))),
+			Dep = join(lists:map(
+				     fun(D) ->
+					    "${" ++ D ++ ":Depends}"
+				     end, Deps), ", "),
+			addsubstvar(Verbosity, Package, "erlang:Depends", Dep),
+			lists:map(fun(D) ->
+					D ++ ":Depends"
+				  end, Deps);
+		    _ ->
+			[]
+		end,
+	    deladdsubstvar(Verbosity, Package, Variables2, "erlang-abi:Depends",
+			   "erlang-abi-" ++ ?ABI_VERSION),
+	    deladdsubstvar(Verbosity, Package, Variables2, "erlang-base:Depends",
+			   "erlang-base (>= " ++ ?VERSION ++
+			   ") | erlang-base-hipe (>= " ++ ?VERSION ++ ")"),
+	    lists:foreach(
+	      fun(Pkg) ->
+		    deladdsubstvar(Verbosity, Package, Variables2, "erlang-" ++ Pkg ++ ":Depends",
+				   "erlang-" ++ Pkg ++ " (>= " ++ ?VERSION ++ ")")
+	      end, ?PACKAGES)
+      end, get_packages(NewOptions)).
+
+% usage/0 --
+%
+%	Print a short usage info.
+%
+% Arguments:
+%	None.
+%
+% Result:
+%	ok.
+%
+% Side effects:
+%	Usage is printed to stdout.
+
+usage() ->
+    io:format("Usage: erlang-depends [options]~n"
+	      "Options:~n"
+	      "    -h, --help       Show this help message~n"
+	      "    -v, --verbose    Verbose mode~n"
+	      "    -a, --arch       Act on architecture dependent packages~n"
+	      "    -i, --indep      Act on architecture independent packages~n"
+	      "    -ppackage, --package=package~n"
+	      "                     Act on package \"package\"~n"
+	      "    -Npackage, --no-package=package~n"
+	      "                     Do not act on package \"package\"~n"
+	      "    -Ptmpdir, --tmpdir=tmpdir~n"
+	      "                     Use \"tmpdir\" for package build directory~n").
+
+% get_remote_modules/3 --
+%
+%	Return a difference between all modules used in the application and
+%	the local modules which dependencies are satisfied automagically.
+%
+% Arguments:
+%	Verbosity   Verbosity level (0 - silence, 1 - print action).
+%	Dir	    Directory where the local BEAM files are to be searched.
+%	Exclude	    Don't take into account files in this list.
+%
+% Result:
+%	The list of remote modules.
+%
+% Side effects:
+%	Application files are taken from filesystem.
+
+get_remote_modules(Verbosity, Dir, Exclude) ->
+    Mods = ordsets:to_list(ordsets:subtract(get_modules(Dir, Exclude),
+					    get_local_modules(Dir, Exclude))),
+    if  Verbosity >= 1 ->
+	    lists:foreach(fun(M) ->
+				io:format("Remote module: ~s~n", [M])
+			  end, Mods);
+	true ->
+	    ok
+    end,
+    Mods.
+
+% get_modules/2 --
+%
+%	Return an ordset of all modules found in the application.
+%
+% Arguments:
+%	Dir	    Directory where the app BEAM files are to be searched.
+%	Exclude	    Don't take into account files in this list.
+%
+% Result:
+%	The ordset of all used modules.
+%
+% Side effects:
+%	Application files are taken from filesystem.
+
+get_modules(Dir, Exclude) ->
+    Modules = lists:map(fun({M, _F, _A}) ->
+			    atom_to_list(M)
+			end, get_imports(Dir, Exclude)),
+    ordsets:from_list(Modules).
+
+% get_local_modules/2 --
+%
+%	Return an ordset of local modules found in the application (it is
+%	constructed from BEAM filenames).
+%
+% Arguments:
+%	Dir	    Directory where the app BEAM files are to be searched.
+%	Exclude	    Don't take into account files in this list.
+%
+% Result:
+%	The ordset of all local modules.
+%
+% Side effects:
+%	Files are taken from filesystem.
+
+get_local_modules(Dir, Exclude) ->
+    Files = lists:filter(fun(File) ->
+				case lists:member(File, Exclude) of
+				    true ->
+					false;
+				    _ ->
+					true
+				end
+			 end, files(Dir, ".*\\.beam$", true)),
+    Basenames = lists:map(fun(File) ->
+				filename:basename(File, ".beam")
+			  end, Files),
+    ordsets:from_list(Basenames).
+
+% get_imports/2 --
+%
+%	Get imports from all BEAM files in the specified directory and below.
+%
+% Arguments:
+%	Dir	    Directory where to search for BEAM files
+%	Exclude	    Don't take into account files in this list.
+%
+% Results:
+%	A list of imports from all found BEAM files.
+%
+% Side effects:
+%	Files are taken from filesystem.
+
+get_imports(Dir, Exclude) ->
+    Files = lists:filter(fun(File) ->
+				case lists:member(File, Exclude) of
+				    true ->
+					false;
+				    _ ->
+					true
+				end
+			 end, files(Dir, ".*\\.beam$", true)),
+    lists:foldl(fun(File, Acc) ->
+			case beam_lib:chunks(File, [imports]) of
+			    {ok, {_, [{imports, List}]}} ->
+				Acc ++ List;
+			    _ ->
+				Acc
+			end
+		end, [], Files).
+
+% split/2 --
+%
+%	Split string into a list of tokens using the specified delimiter
+%
+% Arguments:
+%	String	    String to split
+%	Delimiter   Character (delimiter)
+%
+% Results:
+%	A list of strings.
+%
+% Side effects:
+%	None.
+
+split(String, Delimiter) ->
+    split(String, Delimiter, none, []).
+
+split([], _Delimiter, Current, Res) ->
+    case Current of
+	none ->
+	    lists:reverse(Res);
+	_ ->
+	    lists:reverse([lists:reverse(Current) | Res])
+    end;
+
+split([Delimiter | Tail], Delimiter, Current, Res) ->
+    case Current of
+	none ->
+	    split(Tail, Delimiter, [], [[] | Res]);
+	_ ->
+	    split(Tail, Delimiter, [], [lists:reverse(Current) | Res])
+    end;
+
+split([Char | Tail], Delimiter, Current, Res) ->
+    case Current of
+	none ->
+	    split(Tail, Delimiter, [Char], Res);
+	_ ->
+	    split(Tail, Delimiter, [Char | Current], Res)
+    end.
+
+% join/2 --
+%
+%	Join string list into a single string using the specified delimiter
+%
+% Arguments:
+%	List	    List of strings to join
+%	Delimiter   Character or character list (delimiter)
+%
+% Results:
+%	A string.
+%
+% Side effects:
+%	None.
+
+join(List, Delimiter) ->
+    join(List, Delimiter, []).
+
+join([], _Delimiter, Res) ->
+    lists:flatten(lists:reverse(Res));
+
+join([String | Tail], Delimiter, []) ->
+    join(Tail, Delimiter, [String]);
+
+join([String | Tail], Delimiter, Res) ->
+    join(Tail, Delimiter, [String, Delimiter | Res]).
+
+% delsubstvar/3 --
+%
+%	Removes substitution variable from a substvar file for a given
+%	package in debian/ directory.
+%
+% Arguments:
+%	Verbosity   Verbosity level (0 - silence, 1 - print action)
+%	Package	    Name of a package (file Package ++ ".substvars" is used).
+%	Substvar    Name of a substitution variable to delete.
+%
+% Results:
+%	ok or halt.
+%
+% Side effects:
+%	File "debian/" ++ Package ++ ".substvars" is overwritten. The
+%	specified variable is deleted. Program is halted in case of error.
+
+delsubstvar(Verbosity, Package, Substvar) ->
+    SubstvarFile = filename:join("debian", Package ++ ".substvars"),
+    if  Verbosity >= 1 ->
+	    io:format("Deleting substvar ~s from file ~s~n", [Substvar, SubstvarFile]);
+	true ->
+	    ok
+    end,
+    case file:read_file(SubstvarFile) of
+	{ok, BinData} ->
+	    StrData = binary_to_list(BinData),
+
+	    % Remove the trailing newline if any
+
+	    Len = string:len(StrData),
+	    StrData2 = case Len - string:rstr(StrData, "\n") of
+			    0 ->
+				string:left(StrData, Len - 1);
+			    _ ->
+				StrData
+		       end,
+	    Tokens = split(StrData2, $\n),
+	    NewTokens = lists:filter(
+			    fun(S) ->
+				    case string:str(S, Substvar ++ "=") of
+					1 ->
+					    false;
+					_ ->
+					    true
+				    end
+			    end, Tokens),
+	    case file:write_file(SubstvarFile, join(NewTokens, $\n) ++ "\n") of
+		ok ->
+		    ok;
+		{error, Error} ->
+		    io:format("ERROR: Can't write ~s: ~s~n", [SubstvarFile, Error]),
+		    halt(1)
+	    end;
+	{error, enoent} ->
+	    ok;
+	{error, Error} ->
+	    io:format("ERROR: Can't read ~s: ~s~n", [SubstvarFile, Error]),
+	    halt(1)
+    end.
+
+% addsubstvar/4 --
+%
+%	Adds a dependency to a substitution variable in a substvar file
+%	for a given package in debian/ directory.
+%
+% Arguments:
+%	Verbosity   Verbosity level (0 - silence, 1 - print action)
+%	Package	    Name of a package (file Package ++ ".substvars" is used).
+%	Substvar    Name of a substitution variable to add/change.
+%	Dependency  An added substitution dependency string.
+%
+% Results:
+%	ok or halt.
+%
+% Side effects:
+%	File "debian/" ++ Package ++ ".substvars" is overwritten. The specified
+%	depandency string is added to the variable. Program is halted in case
+%	of error.
+
+addsubstvar(Verbosity, Package, Substvar, Dependency) ->
+    SubstvarFile = filename:join("debian", Package ++ ".substvars"),
+    if  Verbosity >= 1 ->
+	    io:format("Adding value ~s to substvar ~s in file ~s~n",
+		      [Substvar, Dependency, SubstvarFile]);
+	true ->
+	    ok
+    end,
+    case file:read_file(SubstvarFile) of
+	{ok, BinData} ->
+	    StrData = binary_to_list(BinData),
+
+	    % Remove the trailing newline if any
+
+	    Len = string:len(StrData),
+	    StrData2 = case Len - string:rstr(StrData, "\n") of
+			    0 ->
+				string:left(StrData, Len - 1);
+			    _ ->
+				StrData
+		       end,
+	    Tokens = split(StrData2, $\n),
+	    {NewTokens, Found} = lists:mapfoldl(
+				    fun(S, F) ->
+					    case string:str(S, Substvar ++ "=") of
+						1 ->
+						    {S ++ ", " ++ Dependency, true};
+						_ ->
+						    {S, F}
+					    end
+				    end, false, Tokens),
+	    NewTokens2 = if Found ->
+				NewTokens;
+			    true ->
+				[Substvar ++ "=" ++ Dependency | NewTokens]
+			 end,
+	    case file:write_file(SubstvarFile, join(NewTokens2, $\n) ++ "\n") of
+		ok ->
+		    ok;
+		{error, Error} ->
+		    io:format("Can't write ~s: ~s~n", [SubstvarFile, Error]),
+		    halt(1)
+	    end;
+	{error, enoent} ->
+	    case file:write_file(SubstvarFile, [Substvar, "=", Dependency, "\n"]) of
+		ok ->
+		    ok;
+		{error, Error} ->
+		    io:format("Can't write ~s: ~s~n", [SubstvarFile, Error]),
+		    halt(1)
+	    end;
+	{error, Error} ->
+	    io:format("Can't read ~s: ~s~n", [SubstvarFile, Error]),
+	    halt(1)
+    end.
+
+% deladdsubstvar/5 --
+%
+%	Delete a substitution variable from a substvar file and add a
+%	dependency to it if this substvar is present in a specified list of
+%	variables for a given package in debian/ directory.
+%
+% Arguments:
+%	Verbosity   Verbosity level (0 - silence, 1 - print action)
+%	Package	    Name of a package (file Package ++ ".substvars" is used).
+%	Variables   List of requested variables for the package.
+%	Substvar    Name of a substitution variable to add/change.
+%	Dependency  An added substitution dependency string.
+%
+% Results:
+%	ok or halt.
+%
+% Side effects:
+%	File "debian/" ++ Package ++ ".substvars" is overwritten. The specified
+%	dependency string is either deleted or replaced. Program is halted in
+%	case of error.
+
+deladdsubstvar(Verbosity, Package, Variables, Substvar, Dependency) ->
+    delsubstvar(Verbosity, Package, Substvar),
+    case lists:member(Substvar, Variables) of
+	true ->
+	    addsubstvar(Verbosity, Package, Substvar, Dependency);
+	_ ->
+	    ok
+    end.
+
+% get_packages/1 --
+%
+%	Parses debhelper command line options and debian/control file and
+%	returns packages with requested substvars to act on.
+%
+% Arguments:
+%	ArgList	    Dephelper options (only -a, -i, -p, -N options are
+%		    recognised).
+%
+% Results:
+%	{ok, [{Package,Vars}]} to work on or error message and halt if
+%	debian/control is unreadable or unknown option is specified.
+%
+% Side effects:
+%	Program is halted in case of error, packages info is taken from
+%	an external file.
+
+get_packages(ArgList) ->
+    ControlFile = filename:join("debian", "control"),
+    case file:read_file(ControlFile) of
+	{ok, BinData} ->
+	    {Arches, Excluded, Explicit} =
+		lists:foldl(fun(Arg, {A1, E1, E2}) ->
+				case Arg of
+				    % Only the last -a or -i option takes
+				    % effect
+
+				    "-a" ->
+					{arch, E1, E2};
+				    "--arch" ->
+					{arch, E1, E2};
+				    "-i" ->
+					{indep, E1, E2};
+				    "--indep" ->
+					{indep, E1, E2};
+				    "-s" ->
+					io:format("Options -s and --same-arch aren't supported yet~n"),
+					halt(1);
+				    "--same-arch" ->
+					io:format("Options -s and --same-arch aren't supported yet~n"),
+					halt(1);
+				    "-p" ++ Package ->
+					{A1, E1, E2 ++ [Package]};
+				    "--package=" ++ Package ->
+					{A1, E1, E2 ++ [Package]};
+				    "-N" ++ Package ->
+					{A1, E1 ++ [Package], E2};
+				    "--no-package=" ++ Package ->
+					{A1, E1 ++ [Package], E2};
+				    _ ->
+					io:format("Unknown option ~s~n", [Arg]),
+					halt(1)
+				end
+			    end, {all, [], []}, ArgList),
+
+	    % Join up continuation lines
+
+	    StrData = re:replace(BinData, "\\n( |\\t)", "\\1", [global, {return, list}]),
+
+	    % Add an extra empty line for the case if debian/config doesn't have a trailing LF
+
+	    Tokens = split(StrData, $\n) ++ [[]],
+	    {_Arch, _Package, _Vars, Packages, AllPackages} =
+		lists:foldl(fun(Line, {A, P, Vs, Ps, APs}) ->
+				case Line of
+				    "Package: " ++ Pkg ->
+					{A, string:strip(Pkg), Vs, Ps, APs};
+				    "Architecture: " ++ Arc ->
+					{string:strip(Arc), P, Vs, Ps, APs};
+				    "Pre-Depends: " ++ Deps ->
+					{A, P, Vs ++ find_vars(Deps), Ps, APs};
+				    "Depends: " ++ Deps ->
+					{A, P, Vs ++ find_vars(Deps), Ps, APs};
+				    "Recommends: " ++ Deps ->
+					{A, P, Vs ++ find_vars(Deps), Ps, APs};
+				    "Suggests: " ++ Deps ->
+					{A, P, Vs ++ find_vars(Deps), Ps, APs};
+				    "Enhances: " ++ Deps ->
+					{A, P, Vs ++ find_vars(Deps), Ps, APs};
+				    "Breaks: " ++ Deps ->
+					{A, P, Vs ++ find_vars(Deps), Ps, APs};
+				    "Conflicts: " ++ Deps ->
+					{A, P, Vs ++ find_vars(Deps), Ps, APs};
+				    "Provides: " ++ Deps ->
+					{A, P, Vs ++ find_vars(Deps), Ps, APs};
+				    "Replaces: " ++ Deps ->
+					{A, P, Vs ++ find_vars(Deps), Ps, APs};
+				    "" ->
+					case P of
+					    "" ->
+						% Two LF in a row or the end of a source package
+
+						{"", "", [], Ps, APs};
+					    _ ->
+						case lists:member(P, Excluded) of
+						    true ->
+							% The package is excluded by -Npackage
+
+							{"", "", [], Ps, APs};
+						    _ ->
+							case lists:member(P, Explicit) of
+							    true ->
+								% The package is explicitly required
+
+								{"", "", [], Ps ++ [{P, Vs}], APs};
+							    _ ->
+								case A of
+								    "all" ->
+									case Arches of
+									    indep ->
+										% Arch independent packages
+										% are requested
+
+										{"", "", [], Ps ++ [{P, Vs}], APs};
+									    all ->
+										{"", "", [], Ps, APs ++ [{P, Vs}]};
+									    _ ->
+										{"", "", [], Ps, APs}
+									end;
+								    _ ->
+									case Arches of
+									    arch ->
+										% Arch dependent packages
+										% are requested
+
+										{"", "", [], Ps ++ [{P, Vs}], APs};
+									    all ->
+										{"", "", [], Ps, APs ++ [{P, Vs}]};
+									    _ ->
+										{"", "", [], Ps, APs}
+									end
+								end
+							end
+						end
+					end;
+				    _ ->
+					{A, P, Vs, Ps, APs}
+				end
+			    end, {"", "", [], [], []}, Tokens),
+	    case {Arches, Packages} of
+		{all, []} ->
+		    % There aren't explicitly requested packages
+
+		    AllPackages;
+		_ ->
+		    Packages
+	    end;
+	{error, Error} ->
+	    io:format("Can't read ~s: ~s~n", [ControlFile, Error]),
+	    halt(1)
+    end.
+
+% find_vars/1 --
+%
+%	Find substitution variables in dependencies line and return list of
+%	their names.
+%
+% Arguments:
+%	Dependencies	Dependencies line from debian/control
+%
+% Result:
+%	List of substvars names (inside ${}).
+%
+% Side effects:
+%	None.
+
+find_vars(Dependencies) ->
+    case re:run(Dependencies, "\\$\\{(\\S*)\\}", [global, {capture, all_but_first, list}]) of
+	{match, Captured} ->
+	    lists:foldl(fun(M, Acc) ->
+			    Acc ++ M
+			end, [], Captured);
+	_ ->
+	    []
+    end.
+
+% files/3 --
+%
+%	Return all files in a directory which names match a given expression.
+%	(This procedure is borrowed from http://erlang.org/examples/examples-2.0.html
+%	and a bit modified.)
+%
+% Arguments:
+%	Dir	    Directory from which to search
+%	Re	    Regular expression for filename matching
+%	Recursive   Whether to search for files recursively
+%
+% Result:
+%	A list of filenames.
+%
+% Side effects:
+%	File and directory names are taken from filesystem.
+
+files(Dir, Re, Recursive) ->
+    find_files(Dir, Re, Recursive, []).
+
+% find_files/4 --
+%
+%	Find all files in a directory which names match a given expression,
+%	prepend them to a given list of files and return the total files list.
+%	(This procedure is borrowed from http://erlang.org/examples/examples-2.0.html
+%	and a bit modified.)
+%
+% Arguments:
+%	Dir	    Directory from which to search
+%	Re	    Regular expression for filename matching
+%	Recursive   Whether to search for files recursively
+%	L	    List of already found files
+%
+% Result:
+%	A list of filenames.
+%
+% Side effects:
+%	File and directory names are taken from filesystem.
+
+find_files(Dir, Re, Recursive, L) ->
+    case file:list_dir(Dir) of
+	{ok, Files} ->
+	    find_files(Files, Dir, Re, Recursive, L);
+	{error, _} ->
+	    L
+    end.
+
+% find_files/5 --
+%
+%	Check all specified filenames if they match a given expressions and
+%	prepend matched ones to a given list of filenames. If the file type is
+%	directory and search is recursive then descend into it and add found
+%	filenames to the result too. Return the total files list.
+%	(This procedure is borrowed from http://erlang.org/examples/examples-2.0.html
+%	and a bit modified.)
+%
+% Arguments:
+%	_FL	    List of files in directory Dir
+%	Dir	    Directory from which to search
+%	Re	    Regular expression for filename matching
+%	Recursive   Whether to search for files recursively
+%	L	    List of already found files
+%
+% Result:
+%	A list of filenames.
+%
+% Side effects:
+%	File and directory names are taken from filesystem.
+
+find_files(_FL = [File | T], Dir, Re, Recursive, L) ->
+    FullName = filename:join(Dir, File),
+    case file_type(FullName) of
+	regular ->
+	    case re:run(FullName, Re) of
+		{match, _}  ->
+		    find_files(T, Dir, Re, Recursive, [FullName | L]);
+		_ ->
+		    find_files(T, Dir, Re, Recursive, L)
+	    end;
+	directory ->
+	    case Recursive of
+		true ->
+		    L1 = find_files(FullName, Re, Recursive, L),
+		    find_files(T, Dir, Re, Recursive, L1);
+		false ->
+		    find_files(T, Dir, Re, Recursive, L)
+	    end;
+	error ->
+	    find_files(T, Dir, Re, Recursive, L)
+    end;
+
+find_files([], _, _, _, L) ->
+    L.
+
+% file_type/1 --
+%
+%	Return file type (regular, directory, or error) for a given filename.
+%	(This procedure is borrowed from http://erlang.org/examples/examples-2.0.html
+%	and a bit modified.)
+%
+% Arguments:
+%	File	    Filename to get type.
+%
+% Result:
+%	A file type.
+%
+% Side effects:
+%	File info is taken from the filesystem.
+
+file_type(File) ->
+    case file:read_file_info(File) of
+	{ok, FileInfo} ->
+	    case FileInfo#file_info.type of
+		regular ->
+		    regular;
+		directory ->
+		    directory;
+		_ ->
+		    error
+	    end;
+	_ ->
+	    error
+    end.
+
+% vim:ft=erlang

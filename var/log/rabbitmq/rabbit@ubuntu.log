@@ -1,0 +1,53 @@
+
+=INFO REPORT==== 7-Jan-2013::18:06:19 ===
+Limiting to approx 924 file handles (829 sockets)
+
+=INFO REPORT==== 7-Jan-2013::18:06:19 ===
+    application: mnesia
+    exited: stopped
+    type: permanent
+
+=INFO REPORT==== 7-Jan-2013::18:06:20 ===
+Memory limit set to 396MB of 992MB total.
+
+=INFO REPORT==== 7-Jan-2013::18:06:20 ===
+Adding vhost '/'
+
+=INFO REPORT==== 7-Jan-2013::18:06:20 ===
+Creating user 'guest'
+
+=INFO REPORT==== 7-Jan-2013::18:06:20 ===
+Setting user tags for user 'guest' to [administrator]
+
+=INFO REPORT==== 7-Jan-2013::18:06:20 ===
+Setting permissions for 'guest' in '/' to '.*', '.*', '.*'
+
+=INFO REPORT==== 7-Jan-2013::18:06:20 ===
+msg_store_transient: using rabbit_msg_store_ets_index to provide index
+
+=INFO REPORT==== 7-Jan-2013::18:06:20 ===
+msg_store_persistent: using rabbit_msg_store_ets_index to provide index
+
+=WARNING REPORT==== 7-Jan-2013::18:06:20 ===
+msg_store_persistent: rebuilding indices from scratch
+
+=INFO REPORT==== 7-Jan-2013::18:06:20 ===
+started TCP Listener on [::]:5672
+
+=INFO REPORT==== 7-Jan-2013::18:08:36 ===
+Limiting to approx 924 file handles (829 sockets)
+
+=INFO REPORT==== 7-Jan-2013::18:08:36 ===
+Memory limit set to 396MB of 992MB total.
+
+=INFO REPORT==== 7-Jan-2013::18:08:36 ===
+msg_store_transient: using rabbit_msg_store_ets_index to provide index
+
+=INFO REPORT==== 7-Jan-2013::18:08:36 ===
+msg_store_persistent: using rabbit_msg_store_ets_index to provide index
+
+=WARNING REPORT==== 7-Jan-2013::18:08:36 ===
+msg_store_persistent: rebuilding indices from scratch
+
+=INFO REPORT==== 7-Jan-2013::18:08:36 ===
+started TCP Listener on [::]:5672

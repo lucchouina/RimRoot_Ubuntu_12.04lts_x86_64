@@ -1,0 +1,63 @@
+Jan  7 17:44:12 ubuntu login[6549]: pam_unix(login:auth): check pass; user unknown
+Jan  7 17:44:12 ubuntu login[6549]: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=/dev/tty1 ruser= rhost= 
+Jan  7 17:44:15 ubuntu login[6549]: FAILED LOGIN (1) on '/dev/tty1' FOR 'UNKNOWN', Authentication failure
+Jan  7 17:44:22 ubuntu login[6549]: pam_unix(login:session): session opened for user s2support by LOGIN(uid=0)
+Jan  7 17:45:03 ubuntu sudo: s2support : TTY=tty1 ; PWD=/home/s2support ; USER=root ; COMMAND=/bin/bash
+Jan  7 17:45:03 ubuntu sudo: pam_unix(sudo:session): session opened for user root by s2support(uid=1000)
+Jan  7 17:56:32 ubuntu useradd[10897]: new user: name=sshd, UID=103, GID=65534, home=/var/run/sshd, shell=/usr/sbin/nologin
+Jan  7 17:56:32 ubuntu usermod[10902]: change user 'sshd' password
+Jan  7 17:56:33 ubuntu chage[10907]: changed password expiry for sshd
+Jan  7 17:56:33 ubuntu sshd[10951]: Server listening on 0.0.0.0 port 22.
+Jan  7 17:56:33 ubuntu sshd[10951]: Server listening on :: port 22.
+Jan  7 17:57:30 ubuntu sshd[10963]: Accepted password for s2support from 192.168.20.7 port 55773 ssh2
+Jan  7 17:57:30 ubuntu sshd[10963]: pam_unix(sshd:session): session opened for user s2support by (uid=0)
+Jan  7 17:57:36 ubuntu sudo: s2support : TTY=pts/0 ; PWD=/home/s2support ; USER=root ; COMMAND=/bin/bash
+Jan  7 17:57:36 ubuntu sudo: pam_unix(sudo:session): session opened for user root by s2support(uid=1000)
+Jan  7 17:58:15 ubuntu groupadd[11777]: group added to /etc/group: name=tomcat7, GID=110
+Jan  7 17:58:15 ubuntu groupadd[11777]: group added to /etc/gshadow: name=tomcat7
+Jan  7 17:58:15 ubuntu groupadd[11777]: new group: name=tomcat7, GID=110
+Jan  7 17:58:15 ubuntu useradd[11783]: new user: name=tomcat7, UID=104, GID=110, home=/usr/share/tomcat7, shell=/bin/false
+Jan  7 17:58:15 ubuntu usermod[11788]: change user 'tomcat7' password
+Jan  7 17:58:15 ubuntu chage[11793]: changed password expiry for tomcat7
+Jan  7 18:03:50 ubuntu groupadd[14052]: group added to /etc/group: name=ssl-cert, GID=111
+Jan  7 18:03:50 ubuntu groupadd[14052]: group added to /etc/gshadow: name=ssl-cert
+Jan  7 18:03:50 ubuntu groupadd[14052]: new group: name=ssl-cert, GID=111
+Jan  7 18:03:50 ubuntu groupadd[14089]: group added to /etc/group: name=postgres, GID=112
+Jan  7 18:03:50 ubuntu groupadd[14089]: group added to /etc/gshadow: name=postgres
+Jan  7 18:03:50 ubuntu groupadd[14089]: new group: name=postgres, GID=112
+Jan  7 18:03:50 ubuntu useradd[14093]: new user: name=postgres, UID=105, GID=112, home=/var/lib/postgresql, shell=/bin/bash
+Jan  7 18:03:50 ubuntu usermod[14098]: change user 'postgres' password
+Jan  7 18:03:50 ubuntu chage[14103]: changed password expiry for postgres
+Jan  7 18:03:51 ubuntu chfn[14106]: changed user 'postgres' information
+Jan  7 18:03:51 ubuntu gpasswd[14121]: user postgres added by root to group ssl-cert
+Jan  7 18:06:18 ubuntu groupadd[15787]: group added to /etc/group: name=rabbitmq, GID=113
+Jan  7 18:06:18 ubuntu groupadd[15787]: group added to /etc/gshadow: name=rabbitmq
+Jan  7 18:06:18 ubuntu groupadd[15787]: new group: name=rabbitmq, GID=113
+Jan  7 18:06:18 ubuntu useradd[15793]: new user: name=rabbitmq, UID=106, GID=113, home=/var/lib/rabbitmq, shell=/bin/false
+Jan  7 18:06:18 ubuntu chage[15798]: changed password expiry for rabbitmq
+Jan  7 18:06:18 ubuntu chfn[15801]: changed user 'rabbitmq' information
+Jan  7 18:09:19 ubuntu groupadd[16330]: group added to /etc/group: name=avahi-autoipd, GID=114
+Jan  7 18:09:19 ubuntu groupadd[16330]: group added to /etc/gshadow: name=avahi-autoipd
+Jan  7 18:09:19 ubuntu groupadd[16330]: new group: name=avahi-autoipd, GID=114
+Jan  7 18:09:19 ubuntu useradd[16334]: new user: name=avahi-autoipd, UID=107, GID=114, home=/var/lib/avahi-autoipd, shell=/bin/false
+Jan  7 18:09:19 ubuntu usermod[16339]: change user 'avahi-autoipd' password
+Jan  7 18:09:19 ubuntu chage[16344]: changed password expiry for avahi-autoipd
+Jan  7 18:09:19 ubuntu chfn[16347]: changed user 'avahi-autoipd' information
+Jan  7 18:09:29 ubuntu groupadd[16549]: group added to /etc/group: name=avahi, GID=115
+Jan  7 18:09:29 ubuntu groupadd[16549]: group added to /etc/gshadow: name=avahi
+Jan  7 18:09:29 ubuntu groupadd[16549]: new group: name=avahi, GID=115
+Jan  7 18:09:29 ubuntu useradd[16553]: new user: name=avahi, UID=108, GID=115, home=/var/run/avahi-daemon, shell=/bin/false
+Jan  7 18:09:29 ubuntu usermod[16558]: change user 'avahi' password
+Jan  7 18:09:29 ubuntu chage[16563]: changed password expiry for avahi
+Jan  7 18:09:29 ubuntu chfn[16566]: changed user 'avahi' information
+Jan  7 18:09:29 ubuntu groupadd[16574]: group added to /etc/group: name=netdev, GID=116
+Jan  7 18:09:29 ubuntu groupadd[16574]: group added to /etc/gshadow: name=netdev
+Jan  7 18:09:29 ubuntu groupadd[16574]: new group: name=netdev, GID=116
+Jan  7 18:17:01 ubuntu CRON[16914]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jan  7 18:17:01 ubuntu CRON[16914]: pam_unix(cron:session): session closed for user root
+Jan  7 18:29:45 ubuntu groupadd[18395]: group added to /etc/group: name=haclient, GID=117
+Jan  7 18:29:45 ubuntu groupadd[18395]: group added to /etc/gshadow: name=haclient
+Jan  7 18:29:45 ubuntu groupadd[18395]: new group: name=haclient, GID=117
+Jan  7 18:29:45 ubuntu useradd[18401]: new user: name=hacluster, UID=109, GID=117, home=/usr/lib/heartbeat, shell=/bin/false
+Jan  7 18:29:45 ubuntu chage[18406]: changed password expiry for hacluster
+Jan  7 18:29:45 ubuntu chfn[18409]: changed user 'hacluster' information

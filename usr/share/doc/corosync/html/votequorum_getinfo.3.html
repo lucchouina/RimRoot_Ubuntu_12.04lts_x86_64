@@ -1,0 +1,179 @@
+<!-- Creator     : groff version 1.21 -->
+<!-- CreationDate: Mon Dec 12 13:48:52 2011 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>VOTEQUORUM_GETINFO</title>
+
+</head>
+<body>
+
+<h1 align="center">VOTEQUORUM_GETINFO</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#RETURN VALUE">RETURN VALUE</a><br>
+<a href="#BUGS">BUGS</a><br>
+<a href="#ERRORS">ERRORS</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em">votequorum_getinfo
+&minus; Get information about the VoteQuorum service</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>#include
+&lt;corosync/votequorum.h&gt;</b></p>
+
+<p style="margin-left:11%; margin-top: 1em"><b>int
+votequorum_getinfo(votequorum_handle_t
+*</b><i>handle</i><b>, unsigned int</b> <i>nodeid</i><b>,
+struct votequorum_info *</b><i>info</i><b>);</b></p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The
+<b>votequorum_getinfo</b> function is used to get
+information about the voteing system and its nodes.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The
+votequorum_info structure is defined as follows:</p>
+
+<p style="margin-left:22%; margin-top: 1em">struct
+votequorum_info {</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="6%"></td>
+<td width="25%">
+
+
+<p>unsigned int node_id;</p></td>
+<td width="69%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="6%"></td>
+<td width="25%">
+
+
+<p>unsigned int node_votes;</p></td>
+<td width="69%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="6%"></td>
+<td width="25%">
+
+
+<p>unsigned int node_expected_votes;</p></td>
+<td width="69%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="6%"></td>
+<td width="25%">
+
+
+<p>unsigned int highest_expected;</p></td>
+<td width="69%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="6%"></td>
+<td width="25%">
+
+
+<p>unsigned int total_votes;</p></td>
+<td width="69%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="6%"></td>
+<td width="25%">
+
+
+<p>unsigned int quorum;</p></td>
+<td width="69%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="6%"></td>
+<td width="25%">
+
+
+<p>unsigned int flags;</p></td>
+<td width="69%">
+</td></tr>
+</table>
+
+<p style="margin-left:22%;">};</p>
+
+<p style="margin-left:22%; margin-top: 1em">#define
+VOTEQUORUM_INFO_FLAG_DIRTY 1 <br>
+#define VOTEQUORUM_INFO_FLAG_DISALLOWED 2 <br>
+#define VOTEQUORUM_INFO_FLAG_TWONODE 4 <br>
+#define VOTEQUORUM_INFO_FLAG_QUORATE 8</p>
+
+<p style="margin-left:11%; margin-top: 1em">The members
+starting node_ hold information specific to the requested
+nodeid, the other are general to the voting system.</p>
+
+<h2>RETURN VALUE
+<a name="RETURN VALUE"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">This call
+returns the CS_OK value if successful, otherwise an error is
+returned.</p>
+
+<h2>BUGS
+<a name="BUGS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Callbacks are
+not support at the moment.</p>
+
+<h2>ERRORS
+<a name="ERRORS"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The errors are
+undocumented.</p>
+
+<h2>SEE ALSO
+<a name="SEE ALSO"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>votequorum_overview</b>(8),
+<b>votequorum_finalize</b>(3), <b>votequorum_fd_get</b>(3),
+<b>votequorum_dispatch</b>(3),</p>
+<hr>
+</body>
+</html>

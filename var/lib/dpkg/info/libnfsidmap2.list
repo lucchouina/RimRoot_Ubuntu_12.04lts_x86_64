@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/man
+/usr/share/man/man5
+/usr/share/man/man5/idmapd.conf.5.gz
+/usr/share/doc
+/usr/share/doc/libnfsidmap2
+/usr/share/doc/libnfsidmap2/copyright
+/usr/share/doc/libnfsidmap2/changelog.Debian.gz
+/lib
+/lib/libnfsidmap.so.0.3.0
+/lib/libnfsidmap
+/lib/libnfsidmap/nsswitch.so
+/lib/libnfsidmap/umich_ldap.so
+/lib/libnfsidmap/static.so
+/lib/libnfsidmap.so.0

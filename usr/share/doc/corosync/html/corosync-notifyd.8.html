@@ -1,0 +1,249 @@
+<!-- Creator     : groff version 1.21 -->
+<!-- CreationDate: Mon Dec 12 13:48:48 2011 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>COROSYNC-NOTIFYD</title>
+
+</head>
+<body>
+
+<h1 align="center">COROSYNC-NOTIFYD</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#OPTIONS">OPTIONS</a><br>
+<a href="#EXAMPLES">EXAMPLES</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+<a href="#AUTHOR">AUTHOR</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em">corosync-notifyd
+&minus; Listen for important corosync events and send dbus
+and/or snmp traps.</p>
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>corosync-notifyd
+[&minus;f] [&minus;l] [&minus;o] [&minus;s] [&minus;m]
+[manager] [&minus;d] [-h]</b></p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>corosync-notifyd</b>
+uses corosync API to listen for important cluster events and
+can log them, generate dbus signals or genterate snmp
+traps.</p>
+
+<h2>OPTIONS
+<a name="OPTIONS"></a>
+</h2>
+
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p style="margin-top: 1em"><b>-f</b></p></td>
+<td width="8%"></td>
+<td width="56%">
+
+
+<p style="margin-top: 1em">Start application in
+foreground.</p> </td>
+<td width="22%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>-l</b></p></td>
+<td width="8%"></td>
+<td width="56%">
+
+
+<p>Log all events.</p></td>
+<td width="22%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>-o</b></p></td>
+<td width="8%"></td>
+<td width="56%">
+
+
+<p>Print events to stdout (turns on -l).</p></td>
+<td width="22%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>-s</b></p></td>
+<td width="8%"></td>
+<td width="56%">
+
+
+<p>Send SNMP traps on all events.</p></td>
+<td width="22%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>-m</b></p></td>
+<td width="8%"></td>
+<td width="56%">
+
+
+<p>Set the SNMP manager address.</p></td>
+<td width="22%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>-d</b></p></td>
+<td width="8%"></td>
+<td width="56%">
+
+
+<p>Send DBUS signals on all events.</p></td>
+<td width="22%">
+</td></tr>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="3%">
+
+
+<p><b>-h</b></p></td>
+<td width="8%"></td>
+<td width="56%">
+
+
+<p>Print this help</p></td>
+<td width="22%">
+</td></tr>
+</table>
+
+<h2>EXAMPLES
+<a name="EXAMPLES"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">$
+corosync-notifyd -o <br>
+corosync-notifyd[18505]: troll[23374016]
+corosync-notify:18505:12 is now connected to corosync <br>
+corosync-notifyd[18505]: troll[23374016]
+corosync-notify:18505:13 is now disconnected from corosync
+<br>
+corosync-notifyd[18505]: troll[23374016] is now quorate <br>
+corosync-notifyd[18505]: r2[1550100672] ip:192.168.100.92
+joined <br>
+corosync-notifyd[18505]: r2[1550100672] ip:192.168.100.92
+left</p>
+
+<p style="margin-left:11%; margin-top: 1em">$
+corosync-notifyd -o</p>
+
+<p style="margin-left:11%; margin-top: 1em">Note this
+output below is from &quot;dbus-monitor --system&quot;</p>
+
+<p style="margin-left:11%; margin-top: 1em">signal
+sender=:1.216 -&gt; dest=(null destination) serial=2
+path=/com/redhat/cluster/corosync; <br>
+interface=com.redhat.cluster.corosync;
+member=ConnectionStateChange <br>
+string &quot;troll&quot; <br>
+uint32 23374016 <br>
+string &quot;corosync-notify:18900:12&quot; <br>
+string &quot;connected&quot; <br>
+signal sender=:1.216 -&gt; dest=(null destination) serial=3
+path=/com/redhat/cluster/corosync; <br>
+interface=com.redhat.cluster.corosync;
+member=ConnectionStateChange <br>
+string &quot;troll&quot; <br>
+uint32 23374016 <br>
+string &quot;corosync-notify:18900:13&quot; <br>
+string &quot;disconnected&quot; <br>
+signal sender=:1.216 -&gt; dest=(null destination) serial=4
+path=/com/redhat/cluster/corosync; <br>
+interface=com.redhat.cluster.corosync;
+member=QorumStateChange <br>
+string &quot;troll&quot; <br>
+uint32 23374016 <br>
+string &quot;quorate&quot; <br>
+signal sender=:1.216 -&gt; dest=(null destination) serial=5
+path=/com/redhat/cluster/corosync; <br>
+interface=com.redhat.cluster.corosync;
+member=NodeStateChange <br>
+string &quot;r2&quot; <br>
+uint32 1550100672 <br>
+string &quot;192.168.100.92&quot; <br>
+string &quot;joined&quot; <br>
+signal sender=:1.216 -&gt; dest=(null destination) serial=6
+path=/com/redhat/cluster/corosync; <br>
+interface=com.redhat.cluster.corosync;
+member=NodeStateChange <br>
+string &quot;r2&quot; <br>
+uint32 1550100672 <br>
+string &quot;192.168.100.92&quot; <br>
+string &quot;left&quot;</p>
+
+<h2>SEE ALSO
+<a name="SEE ALSO"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>corosync</b>(8),
+<b>corosync-objctl</b>(8), <b>dbus-monitor</b>(1),</p>
+
+<h2>AUTHOR
+<a name="AUTHOR"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Angus
+Salkeld</p>
+<hr>
+</body>
+</html>

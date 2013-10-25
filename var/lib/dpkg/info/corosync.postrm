@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = purge ]; then
+  rm -rf /var/lib/corosync
+  rm -rf /var/log/corosync
+fi
+
+# Automatically added by dh_installinit
+if [ "$1" = "purge" ] ; then
+	update-rc.d corosync remove >/dev/null
+fi
+# End automatically added section
+

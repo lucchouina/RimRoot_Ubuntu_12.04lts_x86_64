@@ -1,0 +1,220 @@
+<!-- Creator     : groff version 1.21 -->
+<!-- CreationDate: Mon Dec 12 13:48:53 2011 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>SAM_OVERVIEW</title>
+
+</head>
+<body>
+
+<h1 align="center">SAM_OVERVIEW</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#OVERVIEW">OVERVIEW</a><br>
+<a href="#Initializing SAM">Initializing SAM</a><br>
+<a href="#Setting warning callback">Setting warning callback</a><br>
+<a href="#Registering the active process">Registering the active process</a><br>
+<a href="#Enabling event driven healthchecking">Enabling event driven healthchecking</a><br>
+<a href="#BUGS">BUGS</a><br>
+<a href="#SEE ALSO">SEE ALSO</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">sam_overview
+&minus; Overview of the Simple Availability Manager</p>
+
+<h2>OVERVIEW
+<a name="OVERVIEW"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The SAM library
+provide a tool to check the health of an application. The
+main purpose of SAM is to restart a local process when it
+fails to respond to a healthcheck request in a configured
+time interval.</p>
+
+<p style="margin-left:11%; margin-top: 1em">During
+<b>sam_initialize(3)</b>, a duplicate copy of the process is
+created using the <b>fork(3)</b> system call. This duplicate
+process copy contains the logic for executing the SAM
+server. The SAM server is responsible for requesting
+healthchecks from the active process, and controlling the
+lifecycle of the active process when it fails. If the active
+process fails to respond to the healthcheck request sent by
+the SAM server, it will be sent a user configurable signal
+(default SIGTERM) to request shutdown of the application.
+After a configured time interval, the process will be
+forcibly killed by being sent a SIGKILL signal. Once the
+active process terminates, the SAM server will create a new
+active process.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The Simple
+Availability Manager is meant to be used in conjunction with
+the cpg service. Used together, it is possible to restart a
+cpg process that fails healthchecking during operation.</p>
+
+<p style="margin-left:11%; margin-top: 1em">The main
+features of SAM include:</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="22%"></td>
+<td width="1%">
+
+
+<p>&bull;</p></td>
+<td width="3%"></td>
+<td width="74%">
+
+
+<p>A configurable recovery policy.</p></td></tr>
+<tr valign="top" align="left">
+<td width="22%"></td>
+<td width="1%">
+
+
+<p>&bull;</p></td>
+<td width="3%"></td>
+<td width="74%">
+
+
+<p>A configurable time interval for health check
+operations.</p> </td></tr>
+<tr valign="top" align="left">
+<td width="22%"></td>
+<td width="1%">
+
+
+<p>&bull;</p></td>
+<td width="3%"></td>
+<td width="74%">
+
+
+<p>A notification via signal before recovery action is
+taken.</p> </td></tr>
+<tr valign="top" align="left">
+<td width="22%"></td>
+<td width="1%">
+
+
+<p>&bull;</p></td>
+<td width="3%"></td>
+<td width="74%">
+
+
+<p>A mechanism to indicate to the application the number of
+times an active process has been created by the SAM
+server.</p> </td></tr>
+<tr valign="top" align="left">
+<td width="22%"></td>
+<td width="1%">
+
+
+<p>&bull;</p></td>
+<td width="3%"></td>
+<td width="74%">
+
+
+<p>Both application driven health checking and event driven
+health checking.</p></td></tr>
+</table>
+
+<h2>Initializing SAM
+<a name="Initializing SAM"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The SAM library
+is initialized by <b>sam_initialize(3)</b>.
+<b>sam_initalize(3)</b> may only be called once per process.
+Calling it more then once has undefined results and is not
+recommended or tested.</p>
+
+<h2>Setting warning callback
+<a name="Setting warning callback"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">User
+configurable signal (default <i>SIGTERM</i>) is sent to the
+application when a recovery action is planned. The
+application can use the <b>signal(3)</b> system call to
+monitor for this signal.</p>
+
+<p style="margin-left:11%; margin-top: 1em">There are no
+special constraints on what SAM apis may be called in a
+warning callback. After <i>time_interval</i> expires, a
+SIGKILL signal is sent to the active process to force its
+termination.</p>
+
+<h2>Registering the active process
+<a name="Registering the active process"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">The active
+process is registered with SAM by calling
+<b>sam_register(3)</b>. This function should only be called
+one time in a process. After a recovery action is taken, the
+new active process will begin execution at the next line of
+code in a user process after <b>sam_register(3)</b>.</p>
+
+<h2>Enabling event driven healthchecking
+<a name="Enabling event driven healthchecking"></a>
+</h2>
+
+
+<p style="margin-left:11%; margin-top: 1em">Two types of
+healthchecking are available to the user. The first model is
+one where the user application healthchecks during its
+normal operation. It is never requested to healtcheck, and
+if the active process doesn&rsquo;t respond within the time
+interval, the process will be restarted.</p>
+
+<p style="margin-left:11%; margin-top: 1em">A more useful
+mechanism for healthchecking is event driven healthchecking.
+Because this model is directed by the SAM server, It
+isn&rsquo;t necessary to guess or add timers to the active
+process to signal a healthcheck operation is successful. To
+use event driven healthchecking, the
+<b>sam_hc_callback_register(3)</b> function should be
+executed.</p>
+
+<h2>BUGS
+<a name="BUGS"></a>
+</h2>
+
+
+<h2>SEE ALSO
+<a name="SEE ALSO"></a>
+</h2>
+
+
+
+<p style="margin-left:11%; margin-top: 1em"><b>sam_initialize</b>(3),
+<b>sam_finalize</b>(3), <b>sam_start</b>(3),
+<b>sam_stop</b>(3), <b>sam_register</b>(3),
+<b>sam_warn_signal_set</b>(3), <b>sam_hc_send</b>(3),
+<b>sam_hc_callback_register</b>(3)</p>
+<hr>
+</body>
+</html>

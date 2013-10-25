@@ -1,0 +1,9 @@
+89b9ad4296dd1545044749d970b0ecdd  usr/lib/erlang/lib/inviso-0.6.2/ebin/inviso.app
+58dfc3dcef8666e2251232021da4d3e7  usr/lib/erlang/lib/inviso-0.6.2/ebin/inviso.appup
+6817d894d1fd01a52338881acc80e8b8  usr/lib/erlang/lib/inviso-0.6.2/ebin/inviso.beam
+40e8caf511c2b3378178ebe9c28568c1  usr/lib/erlang/lib/inviso-0.6.2/ebin/inviso_c.beam
+a10738a49de19ddec43399478b126e4f  usr/lib/erlang/lib/inviso-0.6.2/ebin/inviso_lfm.beam
+93957b5fbddb240241317e8233214c98  usr/lib/erlang/lib/inviso-0.6.2/ebin/inviso_lfm_tpfreader.beam
+ac2c2099b1869b6df27283e7b3fddc3b  usr/lib/erlang/lib/inviso-0.6.2/ebin/inviso_tool.beam
+e69d4412c80a5493cc8df4b49f38171d  usr/lib/erlang/lib/inviso-0.6.2/ebin/inviso_tool_lib.beam
+588c39c282e1da3de1fcd0f40c685f25  usr/share/doc/erlang-inviso/copyright

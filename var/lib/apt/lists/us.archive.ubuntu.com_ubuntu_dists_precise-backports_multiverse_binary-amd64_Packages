@@ -1,0 +1,386 @@
+Package: boinc-amd-opencl
+Priority: optional
+Section: multiverse/net
+Installed-Size: 86
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian BOINC Maintainers <pkg-boinc-devel@lists.alioth.debian.org>
+Architecture: amd64
+Source: boinc
+Version: 7.0.65+dfsg-3~ubuntu12.04.1
+Depends: boinc, fglrx-driver, amd-libopencl1 | fglrx | fglrx-updates
+Filename: pool/multiverse/b/boinc/boinc-amd-opencl_7.0.65+dfsg-3~ubuntu12.04.1_amd64.deb
+Size: 15490
+MD5sum: bf1e233951c94cae6b9d00fe88300570
+SHA1: 6ea7f0aa8a77fad81f5ae8e045afe9e8f6b6643a
+SHA256: 582663c680083f4502aa09aa4ebc5cb4a06de832c16079132eaca04f1c86deea
+Description: metapackage for AMD/ATI OpenCL-savvy BOINC client and manager
+Homepage: http://boinc.berkeley.edu/
+Description-md5: 6e0625247955d16f5c815fea6934b5fa
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: boinc-nvidia-cuda
+Priority: optional
+Section: multiverse/net
+Installed-Size: 86
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian BOINC Maintainers <pkg-boinc-devel@lists.alioth.debian.org>
+Architecture: amd64
+Source: boinc
+Version: 7.0.65+dfsg-3~ubuntu12.04.1
+Depends: boinc, libcuda1 | nvidia-current
+Recommends: libcuda1-ia32 | nvidia-current, ia32-libs | nvidia-current
+Filename: pool/multiverse/b/boinc/boinc-nvidia-cuda_7.0.65+dfsg-3~ubuntu12.04.1_amd64.deb
+Size: 15384
+MD5sum: 1ef9b1b9b6a058a8a139353489318dd6
+SHA1: 99fc9db6d79a0c0b812f1a0f5db6aac1e11e65cc
+SHA256: 9b76525c848362d0874122df0b73ba2999364271f81f38c1db91bd9faf27c1cb
+Description: metapackage for CUDA-savvy BOINC client and manager
+Homepage: http://boinc.berkeley.edu/
+Description-md5: 9384e2173f2ed43c0d057c1770da614c
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: fonts-cns11643-kai
+Priority: extra
+Section: multiverse/fonts
+Installed-Size: 32660
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Shih-Yuan Lee (FourDollars) <fourdollars@gmail.com>
+Architecture: all
+Source: fonts-cns11643
+Version: 98.1-2~ubuntu12.04.1
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/multiverse/f/fonts-cns11643/fonts-cns11643-kai_98.1-2~ubuntu12.04.1_all.deb
+Size: 15943758
+MD5sum: 82f1356ef45e118db9ec39c0aef56f80
+SHA1: a525c81e443173d6b55d498ce09bf719ec95b130
+SHA256: 78d7bdcd1e44c845025a611b4384cdc9d7fa0e717a5103019bbdf2f0a74aa15c
+Description: Chinese TrueType font, TW-Kai (non-free)
+Homepage: http://www.cns11643.gov.tw
+Description-md5: ae44427964b489279afed6333a0de52a
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: fonts-cns11643-sung
+Priority: extra
+Section: multiverse/fonts
+Installed-Size: 18986
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Shih-Yuan Lee (FourDollars) <fourdollars@gmail.com>
+Architecture: all
+Source: fonts-cns11643
+Version: 98.1-2~ubuntu12.04.1
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/multiverse/f/fonts-cns11643/fonts-cns11643-sung_98.1-2~ubuntu12.04.1_all.deb
+Size: 9563284
+MD5sum: 7fae7ba85150a18771b7665f6280f268
+SHA1: 6983c8a42e3f7f300e1147ac1a81d73e93ba7313
+SHA256: 4a159fe53275d69bd4a0f76960f401c9658abbadeb6639a001ef5ccd6f272727
+Description: Chinese TrueType font, TW-Sung (non-free)
+Homepage: http://www.cns11643.gov.tw
+Description-md5: a372238d9237841464c1a530ff2162cd
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: frogatto
+Priority: extra
+Section: multiverse/games
+Installed-Size: 4491
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Dmitry E. Oboukhov <unera@debian.org>
+Architecture: amd64
+Version: 1.2+dfsg-1~ubuntu12.04.1
+Depends: libboost-regex1.46.1 (>= 1.46.1-1), libboost-system1.46.1 (>= 1.46.1-1), libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libgl1-mesa-glx | libgl1, libglew1.5 (>= 1.5.7.is.1.5.2), libglu1-mesa | libglu1, libpng12-0 (>= 1.2.13-4), libsdl-image1.2 (>= 1.2.10), libsdl-mixer1.2, libsdl-ttf2.0-0, libsdl1.2debian (>= 1.2.10-1), libstdc++6 (>= 4.6), frogatto-data (>= 1.2)
+Filename: pool/multiverse/f/frogatto/frogatto_1.2+dfsg-1~ubuntu12.04.1_amd64.deb
+Size: 1854500
+MD5sum: 06d6f6501883148d0b618c9266743ff1
+SHA1: 2b837f76ce7667db3a970b2a0fd37d53970ca5d4
+SHA256: ff9dde58b9c75744bcd05a4f44026a8f38c410ed8b20bea143a9008288990145
+Description: 2D platformer game starring a quixotic frog
+Homepage: http://www.frogatto.com/
+Description-md5: 53484fcad72c00cc156b54442e976787
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: frogatto-data
+Priority: extra
+Section: multiverse/games
+Installed-Size: 194360
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Dmitry E. Oboukhov <unera@debian.org>
+Architecture: all
+Version: 1.2+dfsg-1~ubuntu12.04.1
+Depends: ttf-freefont, ttf-dejavu-core
+Suggests: frogatto (>= 1.2+dfsg-1~ubuntu12.04.1)
+Filename: pool/multiverse/f/frogatto-data/frogatto-data_1.2+dfsg-1~ubuntu12.04.1_all.deb
+Size: 163694966
+MD5sum: 7d1dce7904ebdd56b88d2ccd41a8daba
+SHA1: 30738a77bea04fc405024f80807b70841c29feaa
+SHA256: 7af07d2e38b9450c6d13711285b787d1811cf29d162991442e865d1c04f24e80
+Description: 2D platformer game starring a quixotic frog
+Homepage: http://www.frogatto.com/
+Description-md5: b2cb4af4d50d386414c848e79033a030
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: java-package
+Priority: optional
+Section: multiverse/misc
+Installed-Size: 84
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Architecture: all
+Version: 0.50ubuntu1.1~ubuntu12.04.1
+Depends: debconf (>= 0.5) | debconf-2.0, debhelper, fakeroot, unzip, libx11-6, libasound2
+Recommends: dpkg-dev, gcc
+Suggests: openjdk-6-jre, openjdk-7-jre
+Filename: pool/multiverse/j/java-package/java-package_0.50ubuntu1.1~ubuntu12.04.1_all.deb
+Size: 15462
+MD5sum: 5b4e7ef5c978cbd0c74bea6c9778a961
+SHA1: a9a2c2481e60ba326b69a1c3c9afac6bbabe0afc
+SHA256: 6b85695374f5cff0fab101de8a4b91c29fa85a388a9bf8ca55b2191085d28e7b
+Description: Utility for creating Java Debian packages
+Description-md5: 2421ac690bde04f56e34ab771ed1767c
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: lgc-pg
+Priority: optional
+Section: multiverse/games
+Installed-Size: 1063
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: amd64
+Source: lgeneral
+Version: 1.2.3+dfsg-1~ubuntu12.04.1
+Depends: libc6 (>= 2.14), libsdl1.2debian (>= 1.2.10-1)
+Suggests: lgeneral
+Filename: pool/multiverse/l/lgeneral/lgc-pg_1.2.3+dfsg-1~ubuntu12.04.1_amd64.deb
+Size: 417444
+MD5sum: 4c1bda76eb8914cbfd41ecb8d61f1488
+SHA1: b996a094734a2f4c548bcc9a2561c54435f6eb32
+SHA256: 04036d6679c85e857117f6909c566d0afcfe84309e0ec9834b4c19414e9cd22c
+Description: LGeneral converter for Panzer General game data
+Homepage: http://lgames.sourceforge.net
+Description-md5: 2a89246b627451616fc3d4d7401e476e
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: lgeneral
+Priority: optional
+Section: multiverse/games
+Installed-Size: 2118
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.2.3+dfsg-1~ubuntu12.04.1
+Depends: game-data-packager | lgeneral-data-nonfree, lgc-pg, libc6 (>= 2.14), libsdl-mixer1.2, libsdl1.2debian (>= 1.2.10-1)
+Filename: pool/multiverse/l/lgeneral/lgeneral_1.2.3+dfsg-1~ubuntu12.04.1_amd64.deb
+Size: 608388
+MD5sum: 6f75731519e1f4738f5680a65d4ba855
+SHA1: 6ad21a69795361f6a41e27212831ad6474a55d44
+SHA256: e9672af772912a2be0cb076528c85da48927f4b8aa0638e495e01c3b340ba756
+Description: strategy game in the tradition of Panzer General
+Homepage: http://lgames.sourceforge.net
+Description-md5: 1fbf9fae841ca4db79f72e16abe36057
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: python-pycuda
+Priority: optional
+Section: multiverse/python
+Installed-Size: 1722
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Tomasz Rybak <tomasz.rybak@post.pl>
+Architecture: amd64
+Source: pycuda
+Version: 2012.1-1ubuntu2~ubuntu12.04.1
+Depends: libboost-python1.46.1 (>= 1.46.1-1), libboost-thread1.46.1 (>= 1.46.1-1), libc6 (>= 2.14), libcurand4 (>= 4.0), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.4.0), nvidia-current, python-numpy (>= 1:1.6.1), python-numpy-abi9, python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8), python-pytools (>= 2011.5), python-decorator, nvidia-cuda-toolkit, python-pycuda-headers (= 2012.1-1ubuntu2~ubuntu12.04.1)
+Recommends: python-pycuda-doc, python-mako
+Suggests: python-pytest, python-opengl, python-matplotlib
+Filename: pool/multiverse/p/pycuda/python-pycuda_2012.1-1ubuntu2~ubuntu12.04.1_amd64.deb
+Size: 383962
+MD5sum: 99e5c74c43fb59c79745b1b67e4dfd22
+SHA1: c7ab6ea55e593d30cb38eb7c749346fe825e4152
+SHA256: ed70b825cc06c284675f228eb2cc2efe142099af4b1d14e37d7f6bfde8200987
+Description: Python module to access Nvidia‘s CUDA parallel computation API
+Homepage: http://mathema.tician.de/software/pycuda
+Description-md5: 999e10331c8e1f852d56bf92b2010d4b
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: python-pycuda-doc
+Priority: optional
+Section: multiverse/doc
+Installed-Size: 777
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Tomasz Rybak <tomasz.rybak@post.pl>
+Architecture: all
+Source: pycuda
+Version: 2012.1-1ubuntu2~ubuntu12.04.1
+Depends: libjs-sphinxdoc (>= 1.0)
+Recommends: python-pycuda, nvidia-cuda-doc
+Filename: pool/multiverse/p/pycuda/python-pycuda-doc_2012.1-1ubuntu2~ubuntu12.04.1_all.deb
+Size: 150440
+MD5sum: 2a27eb1eae5dbe6ebb43df67eb734977
+SHA1: 78676d8b25d6d424b26bd63e2a4869cfa26beb60
+SHA256: 62c42ce88125398aef142eafade32c94f5455f6029c87538dc0c8a6cc38f5f73
+Description: module to access Nvidia‘s CUDA parallel computation API (documentation)
+Homepage: http://mathema.tician.de/software/pycuda
+Description-md5: 84b605056aff156bd9240ab28abde6ff
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: python-pycuda-headers
+Priority: optional
+Section: multiverse/python
+Installed-Size: 74
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Tomasz Rybak <tomasz.rybak@post.pl>
+Architecture: all
+Source: pycuda
+Version: 2012.1-1ubuntu2~ubuntu12.04.1
+Replaces: python-pycuda (<< 2011.2.2+git20120523-1)
+Recommends: python-pycuda-doc, python-pycuda, python3-pycuda
+Breaks: python-pycuda (<< 2012.1-1ubuntu2~ubuntu12.04.1), python3-pycuda (<< 2012.1-1ubuntu2~ubuntu12.04.1)
+Filename: pool/multiverse/p/pycuda/python-pycuda-headers_2012.1-1ubuntu2~ubuntu12.04.1_all.deb
+Size: 10502
+MD5sum: d3649fe7ceedd610b0b8212456a5f32c
+SHA1: eedd13ce20976614dcbcf50210fc622d02b9474b
+SHA256: 1197221f0ea003e97d63e2aba255a3dc82d4d33123b487da483a775d04473bfa
+Description: headers for Python module to access Nvidia‘s CUDA parallel computation API
+Homepage: http://mathema.tician.de/software/pycuda
+Description-md5: dca8b65d1017572ca991858bebee0ff3
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: redeclipse
+Priority: optional
+Section: multiverse/games
+Installed-Size: 4002
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: amd64
+Version: 1.3.1-1~ubuntu12.04.1
+Depends: redeclipse-data (>= 1.3.1), libc6 (>= 2.15), libenet1a, libgl1-mesa-glx | libgl1, libsdl-image1.2 (>= 1.2.10), libsdl-mixer1.2, libsdl1.2debian (>= 1.2.10-1), libstdc++6 (>= 4.1.1), libx11-6, zlib1g (>= 1:1.2.0)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/multiverse/r/redeclipse/redeclipse_1.3.1-1~ubuntu12.04.1_amd64.deb
+Size: 1434216
+MD5sum: 2d0497f598a21cd12f62bb0c221e3a71
+SHA1: 17bf7fb4c80232ea1d2edc5432d2cebb08cc076d
+SHA256: 4f5695cfb44de2a16c242e4df0be0606582d20a82ad516736f0bd439ab281d2d
+Description: multiplayer FPS game based on Cube2
+Homepage: http://www.redeclipse.net
+Description-md5: 66f3f18253fa5179aee393c47a78544a
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: redeclipse-data
+Priority: optional
+Section: multiverse/games
+Installed-Size: 537340
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 1.3.1-1~ubuntu12.04.1
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/multiverse/r/redeclipse-data/redeclipse-data_1.3.1-1~ubuntu12.04.1_all.deb
+Size: 486150496
+MD5sum: 0e04345d020a6abde90afaefc6ac951f
+SHA1: cc0defe7b1cafdd01785d9b08a15f16b793372a4
+SHA256: 0e4c4b97329b6e9d8fc7693cbee2d2cedd8306d52ce4416e9ecff9210cb820b4
+Description: data for the Red Eclipse FPS game
+Enhances: redeclipse-server
+Homepage: http://www.redeclipse.net
+Description-md5: caa768fd43b5f3008c12364205a75427
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: redeclipse-dbg
+Priority: extra
+Section: multiverse/debug
+Installed-Size: 5402
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: amd64
+Source: redeclipse
+Version: 1.3.1-1~ubuntu12.04.1
+Depends: redeclipse (= 1.3.1-1~ubuntu12.04.1)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/multiverse/r/redeclipse/redeclipse-dbg_1.3.1-1~ubuntu12.04.1_amd64.deb
+Size: 4997964
+MD5sum: c77a1f73e752fa1431f4bd88aeb70073
+SHA1: 1fe1f49ef7f2761fa22d7f4cc1f5697e8d7c6cdb
+SHA256: 40531e80e56512b9b0e7ebfcc93563f84dd233b294e8bd6132d597e36d5bf886
+Description: debug symbols for the Red Eclipse FPS game
+Homepage: http://www.redeclipse.net
+Description-md5: 472a3994437308850b2d85085b11423f
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: redeclipse-server
+Priority: optional
+Section: multiverse/games
+Installed-Size: 932
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: amd64
+Source: redeclipse
+Version: 1.3.1-1~ubuntu12.04.1
+Depends: libc6 (>= 2.15), libenet1a, libstdc++6 (>= 4.1.1), zlib1g (>= 1:1.1.4)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/multiverse/r/redeclipse/redeclipse-server_1.3.1-1~ubuntu12.04.1_amd64.deb
+Size: 288658
+MD5sum: e12196eecbd6ac130473eb1ca5a06a3b
+SHA1: 26eb266fdd5e8a860b6e31cec4dd36b96e188d57
+SHA256: fe678c020782c98c276fec015e0995e9baf3e45ce2ecc60fba502ae850d6ba3b
+Description: server for the Red Eclipse FPS game
+Homepage: http://www.redeclipse.net
+Description-md5: 315338a2439def5a06eb51a250e84e31
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: redeclipse-server-dbg
+Priority: extra
+Section: multiverse/debug
+Installed-Size: 842
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: amd64
+Source: redeclipse
+Version: 1.3.1-1~ubuntu12.04.1
+Depends: redeclipse-server (= 1.3.1-1~ubuntu12.04.1)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/multiverse/r/redeclipse/redeclipse-server-dbg_1.3.1-1~ubuntu12.04.1_amd64.deb
+Size: 664896
+MD5sum: 5377598ce530144f7b0bc90005cad44f
+SHA1: 8c32a8ceb95be820c23c25684dec89ea56ad3a42
+SHA256: 7eab5d56eef227f0328d3e56f71dd0f6d07aafd2e20022a929725a39d3957719
+Description: debug symbols for the Red Eclipse dedicated server
+Homepage: http://www.redeclipse.net
+Description-md5: 845a03d775cde2c92ef0a0d918bdbf50
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+
+Package: ttytter
+Priority: optional
+Section: multiverse/net
+Installed-Size: 438
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Thijs Kinkhorst <thijs@debian.org>
+Architecture: all
+Version: 2.1.0-1~ubuntu12.04.1
+Depends: perl, curl | lynx
+Recommends: libterm-readline-gnu-perl, libtimedate-perl
+Filename: pool/multiverse/t/ttytter/ttytter_2.1.0-1~ubuntu12.04.1_all.deb
+Size: 125278
+MD5sum: d900111c409edad1a747011e3b434f28
+SHA1: 906977ef956fcfecc7f9ab0a93a7085104d6ce7c
+SHA256: 63bb46c94ce1e71c938af2ded7cd278742a30999315bb913317b84f883e67f78
+Description: console Twitter client
+Homepage: http://www.floodgap.com/software/ttytter/
+Description-md5: 9a146e473033d9d280ab16d4f003c589
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Origin: Ubuntu
+

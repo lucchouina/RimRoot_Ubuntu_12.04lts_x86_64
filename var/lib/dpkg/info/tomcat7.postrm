@@ -1,0 +1,89 @@
+#!/bin/sh
+set -e
+
+# Automatically added by dh_installdebconf
+if [ "$1" = purge ] && [ -e /usr/share/debconf/confmodule ]; then
+	. /usr/share/debconf/confmodule
+	db_purge
+fi
+# End automatically added section
+# Automatically added by dh_installinit
+if [ "$1" = "purge" ] ; then
+	update-rc.d tomcat7 remove >/dev/null
+fi
+# End automatically added section
+
+
+CONFFILE=/etc/default/tomcat7
+
+# Remove cached files and auto-generated catalina.policy
+rm -rf /var/cache/tomcat7/*
+
+case "$1" in
+    remove)
+        # Remove ROOT webapp if not modified
+        RWLOC="/var/lib/tomcat7/webapps/ROOT"
+        RWFILES="$RWLOC/index.html $RWLOC/META-INF/context.xml"
+        if [ "`(cat $RWFILES | md5sum -) 2>/dev/null | cut -d ' ' -f 1`" \
+                            = "c05987dd6c6bcbd651889e9a0ec98ade" ] ; then
+            rm $RWFILES
+            rmdir --ignore-fail-on-non-empty \
+                /var/lib/tomcat7/webapps/ROOT/META-INF \
+                /var/lib/tomcat7/webapps/ROOT \
+                /var/lib/tomcat7/webapps \
+                /var/lib/tomcat7 || true
+        fi
+        if [ -d /var/lib/tomcat7/common ] && [ -z "`(find var/lib/tomcat7/common/classes -type f)`" ] ; then
+            rmdir --ignore-fail-on-non-empty \
+                /var/lib/tomcat7/common/classes \
+                /var/lib/tomcat7/common || true
+        fi
+        if [ -d /var/lib/tomcat7/server ] && [ -z "`(find var/lib/tomcat7/server/classes -type f)`" ] ; then
+            rmdir --ignore-fail-on-non-empty \
+                /var/lib/tomcat7/server/classes \
+                /var/lib/tomcat7/server || true
+        fi
+        if [ -d /var/lib/tomcat7/shared ] && [ -z "`(find var/lib/tomcat7/shared/classes -type f)`" ] ; then
+            rmdir --ignore-fail-on-non-empty \
+                /var/lib/tomcat7/shared/classes \
+                /var/lib/tomcat7/shared || true
+        fi
+        if [ -d "/var/cache/tomcat7" ] ; then
+            rm -rf /var/cache/tomcat7
+        fi
+    ;;
+
+    purge)
+        # ignore errors during purge
+        set +e
+        if [ -x "/usr/bin/ucf" ]; then
+            ucf --purge $CONFFILE
+        fi
+        rm -rf /var/log/tomcat7 /var/lib/tomcat7/temp $CONFFILE
+        if [ -d "/var/lib/tomcat7" ] ; then
+            rmdir --ignore-fail-on-non-empty /var/lib/tomcat7
+        fi
+        rmdir --ignore-fail-on-non-empty /etc/tomcat7/policy.d \
+          /etc/tomcat7/Catalina/localhost /etc/tomcat7/Catalina /etc/tomcat7
+        # Put all files owned by group tomcat7 back into root group before deleting
+        # the tomcat7 user and group
+        chown -Rhf root:root /etc/tomcat7/ || true
+        # Remove user/group and log files (don't remove everything under
+        # /var/lib/tomcat7 because there might be user-installed webapps)
+        db_get tomcat7/username && TOMCAT7_USER="$RET" || TOMCAT7_USER="tomcat7"
+        db_get tomcat7/groupname && TOMCAT7_GROUP="$RET" || TOMCAT7_GROUP="tomcat7"
+        deluser $TOMCAT7_USER
+        delgroup $TOMCAT7_GROUP
+
+        set -e
+    ;;
+
+    upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
+        # Nothing to do here
+    ;;
+
+    *)
+        echo "$0 called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac

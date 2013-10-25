@@ -1,0 +1,5 @@
+[Pango]
+ModuleFiles = /usr/lib/vmware-tools/libconf/etc/pango/pango.modules
+
+[PangoX]
+AliasFiles = /usr/lib/vmware-tools/libconf/etc/pango/pango/pangox.aliases

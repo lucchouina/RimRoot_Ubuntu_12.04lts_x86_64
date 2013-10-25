@@ -1,0 +1,10 @@
+cbaedce337509506172093f4985f2b64  usr/bin/ipcalc
+138a3b6533c8121653517be09723dfe1  usr/share/doc/ipcalc/contributors
+61bc2eaf0e4d661586cc39e68201af50  usr/share/doc/ipcalc/README
+3eb921ca3e5f377f479a6299d8a80c65  usr/share/doc/ipcalc/copyright
+ba81c8b44bfe0dfa6a53d32776a2b29c  usr/share/doc/ipcalc/changelog.Debian.gz
+f7402b3f05176cb85b5ba017c945e9a1  usr/share/man/man1/ipcalc.1.gz
+1a4065cbcf2d3a39345908bfc29b5c32  usr/share/man/man1/ipcalc_cgi.1.gz
+0b63e795471e115dc5568d9b8bbea534  usr/share/images/ipcalc/ipcalc.gif
+1f19a4d2088e10295b78a16cff14ebbf  usr/share/images/ipcalc/ipcalculator.png
+77756abada89287dad2134ee206fd4e9  usr/lib/cgi-bin/ipcalc
